@@ -1,0 +1,100 @@
+--- PAGE 1 ---
+DİJİTAL 
+DÖNÜŞÜMDE 
+VERİNİN
+ÖNEMİ
+Taner TURGUT
+17.03.2026
+
+--- PAGE 2 ---
+DİJİTAL 
+DÖNÜŞÜMDE 
+VERİ
+Dijital Dönüşüm ve Veri
+Veri Stratejisi ve Karar Alma
+Büyük Veri ve Veri Analitiği
+Yapay Zeka ve Makine Öğrenimi
+--- PAGE 3 ---
+DİJİTAL DÖNÜŞÜM
+İş süreçlerinin dijital 
+teknolojilerle yeniden 
+tasarlanması
+Sadece teknoloji değil: 
+kültür, süreç ve iş 
+modeli değişimi
+• yeni iş modellerinin 
+oluşturulması, 
+• operasyonları yeniden 
+tasarlanması ve 
+• organizasyon genelinde 
+kültürel bir dönüşümü
+--- PAGE 4 ---
+“Veri yeni petroldür”
+✓Karar alma, inovasyon, müşteri deneyimi için temel kaynak
+✓2025’te dünya genelinde 175 ZB veri üretileceği öngörülüyor
+VERİ NEDEN ÖNEMLİ
+Dijital çağda veri; 
+▪ inovasyonu tetikleyen, 
+▪ stratejik kararları yönlendiren ve 
+▪ işletmeleri dönüştüren 
+yakıttır. 
+Veri 
+birçok 
+sektörde 
+çevik ve öğrenen sistemler 
+kurmanın temelini oluşturur. 
+--- PAGE 5 ---
+VERİ STRATEJİSİ VE KARAR ALMA
+Veriye dayalı karar alma 
+kültürü
+Dijital 
+dönüşümde veri 
+stratejik bir varlık olarak 
+konumlanır
+İşletmeler için verinin etkin 
+kullanımı, karar alma süreçlerini 
+kökten iyileştirir ve rekabet 
+avantajı sağlar. 
+Veriye Dayalı Karar Alma: Veri, bilinçli ve güvenilir 
+kararlar almanın temelidir. 
+CDO (Chief Data Officer) pozisyonlarının artışı
+Kültürel Değişim
+ Verinin stratejik kullanımını benimsemek yalnızca 
+teknoloji yatırımı değil, aynı zamanda bir kültürel 
+dönüşüm gerektirir. 
+--- PAGE 6 ---
+BÜYÜK VERİ NEDİR?
+3V: Volume (Hacim), Velocity (Hız), Variety (Çeşitlilik)
+Geleneksel yöntemlerle işlenmesi zor olan, hacim (volume) olarak çok büyük, çeşitlilik 
+(variety) açısından yapılandırılmış veya yapılandırılmamış farklı formatlarda gelen ve 
+yüksek hızda (velocity) üretilen veri kümeleri için “büyük veri” terimi kullanılır.
+Sosyal medya, IoT, e-ticaret, sensör verileri
+Büyük veri, sadece veri miktarının fazlalığını değil, aynı zamanda 
+verinin hızla üretilmesini ve çeşitliliğini de ifade eder.
+Dijital 
+dönüşüm ile birlikte dünya 
+adeta bir veri patlaması yaşıyor
+.
+--- PAGE 7 ---
+BÜYÜK VERİ ANALİTİĞİ
+Tanımlayıcı, tanısal, öngörücü, yönlendirici analitik
+Veri madenciliği, makine öğrenimi, görselleştirme
+Örnek: Amazon – öneri sistemleri, dinamik fiyatlama, öngörüsel lojistik
+Verinin tek başına ham haliyle çok değeri yoktur; 
+önemli olan bu büyük veriyi anlamlandırıp karar 
+süreçlerine entegre edebilmektir. 
+--- PAGE 8 ---
+ENDÜSTRİ’DE BÜYÜK VERİ
+Büyük veri sadece dijital platformlarda değil, geleneksel üretim sektöründe de devrim 
+yaratıyor. 
+Sanayide dijital dönüşüm konsepti olan Endüstri 4.0 ile fabrikalardaki sensörlerden ve 
+makinelerden akan veriler, üretimin her aşamasını optimize etmek için kullanılıyor. 
+Siemens MindSphere: 1.3 milyon cihazdan veri toplama
+Kestirimci bakım, üretim optimizasyonu
+Arçelik: Data Lake, kalite zekası, servis verisi analizi
+--- PAGE 9 ---
+TEŞEKKÜRLER
+“Dijital dönüşümde teknoloji 
+yol açar, kültür hız verir; 
+ama yönü belirleyen her 
+zaman veridir.”

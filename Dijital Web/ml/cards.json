@@ -1,0 +1,1454 @@
+[
+  {
+    "id": 1,
+    "question": "$R^2$ (R-Kare) skoru neyi ölçer?",
+    "options": [
+      "A) Gini Safsızlığı veya Entropi.",
+      "B) Özelliklerin sınıf verildiğinde birbirinden tamamen bağımsız olduğunu varsaymasıdır.",
+      "C) Bağımsız değişkenlerin, bağımlı değişkendeki varyansın ne kadarını açıkladığını.",
+      "D) Grup içi benzerliği en yüksek, gruplar arası farklılığı en fazla olacak şekilde veriyi alt gruplara ayırmak."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Bağımsız değişkenlerin, bağımlı değişkendeki varyansın ne kadarını açıkladığını."
+  },
+  {
+    "id": 2,
+    "question": "Adam optimizer'ın temel karakteristiği nedir?",
+    "options": [
+      "A) Modele eklenen anlamsız değişkenler için cezalandırma yaparak sahte başarıyı engellediği için.",
+      "B) Sınıflar arasındaki boşluğu (margin) maksimize eden karar hiperdüzlemini bulmak.",
+      "C) Verideki maksimum varyansın olduğu doğrultudadır.",
+      "D) Adaptif öğrenme hızı kullanarak her parametre için güncellemeyi ayarlar."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Adaptif öğrenme hızı kullanarak her parametre için güncellemeyi ayarlar."
+  },
+  {
+    "id": 3,
+    "question": "Açıklanan Varyans Oranı (EVR) formülü nedir?",
+    "options": [
+      "A) $EVR(k) = \\frac{\\sum_{i=1}^k \\lambda_i}{\\sum_{i=1}^d \\lambda_i}$",
+      "B) Bottleneck (Darboğaz).",
+      "C) Öklid (Euclidean) Mesafesi.",
+      "D) Özellik Seçme (Feature Selection)."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: $EVR(k) = \\frac{\\sum_{i=1}^k \\lambda_i}{\\sum_{i=1}^d \\lambda_i}$"
+  },
+  {
+    "id": 4,
+    "question": "Ağırlıkların hata payına göre güncellenmesini sağlayan matematiksel kural nedir?",
+    "options": [
+      "A) Karekök işlemi sayesinde hata birimini orijinal verinin birimine döndürdüğü için.",
+      "B) Zincir Kuralı (Chain Rule) tabanlı Geri Yayılım.",
+      "C) ReLU ($g(z) = \\max(0, z)$).",
+      "D) Boyut arttıkça noktalar arası mesafe birbirine çok benzer hale gelir ve en yakın komşu kavramı anlamını yitirir."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Zincir Kuralı (Chain Rule) tabanlı Geri Yayılım."
+  },
+  {
+    "id": 5,
+    "question": "Batch Normalization'ın temel amacı nedir?",
+    "options": [
+      "A) Bottleneck (Darboğaz).",
+      "B) Eğitimi hızlandırmak ve gradyan sorunlarını azaltmak için girdi değerlerini normalize etmek.",
+      "C) SVD, PCA hesaplamasını sayısal olarak daha kararlı bir şekilde gerçekleştirmek için kullanılır.",
+      "D) İlgili bileşenin taşıdığı varyans miktarını."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Eğitimi hızlandırmak ve gradyan sorunlarını azaltmak için girdi değerlerini normalize etmek."
+  },
+  {
+    "id": 6,
+    "question": "Bias (Önyargı) ve Varyans arasındaki ödünleşim (trade-off) neyi ifade eder?",
+    "options": [
+      "A) Yüksek varyans ve aşırı öğrenme (overfitting).",
+      "B) Model karmaşıklığı arttıkça biasın azalması ancak varyansın artması durumunu.",
+      "C) İki nokta arasındaki en kısa, doğrusal mesafe.",
+      "D) Özvektörler birbirine ortogonaldir (diktir) ve aralarında korelasyon yoktur."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Model karmaşıklığı arttıkça biasın azalması ancak varyansın artması durumunu."
+  },
+  {
+    "id": 7,
+    "question": "Bias-Variance ödünleşimi açısından 'Underfitting' (Eksik Öğrenme) ne zaman gerçekleşir?",
+    "options": [
+      "A) Model çok basit olduğunda ve verideki temel yapıyı öğrenemediğinde (Yüksek Bias).",
+      "B) Bazı katsayıları tam olarak sıfıra eşitleyerek özellik seçimi (feature selection) yapar.",
+      "C) $EVR(k) = \\frac{\\sum_{i=1}^k \\lambda_i}{\\sum_{i=1}^d \\lambda_i}$",
+      "D) Boyut Düşürme (Dimensionality Reduction)."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Model çok basit olduğunda ve verideki temel yapıyı öğrenemediğinde (Yüksek Bias)."
+  },
+  {
+    "id": 8,
+    "question": "Bilgi Kazancı (Information Gain) hesaplanırken hangi kavram temel alınır?",
+    "options": [
+      "A) Çıkış katmanındaki hatayı zincir kuralı kullanarak geriye doğru dağıtmak ve ağırlıkları güncellemek.",
+      "B) Birden fazla karar ağacını bootstrap örnekleme ve rastgele özellik seçimiyle birleştirmek.",
+      "C) Koordinat eksenleri boyunca hareket edilerek hesaplanan mutlak farkların toplamı.",
+      "D) Entropi (H)."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Entropi (H)."
+  },
+  {
+    "id": 9,
+    "question": "Boyut düşürme neden 'Gürültü Azaltma' (Noise Reduction) sağlar?",
+    "options": [
+      "A) Veri noktaları arasındaki birleşme hiyerarşisini ve kümeler arasındaki mesafe ilişkilerini.",
+      "B) Bağımsız değişkenlerin, bağımlı değişkendeki varyansın ne kadarını açıkladığını.",
+      "C) Denoising Autoencoder.",
+      "D) Az varyans taşıyan bileşenler (genellikle gürültü) atıldığı için sinyal/gürültü oranı artar."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Az varyans taşıyan bileşenler (genellikle gürültü) atıldığı için sinyal/gürültü oranı artar."
+  },
+  {
+    "id": 10,
+    "question": "Boyut düşürme yöntemlerinden PCA (Temel Bileşen Analizi) hangi tür öğrenme kategorisine girer?",
+    "options": [
+      "A) Denetimsiz (Unsupervised) Öğrenme.",
+      "B) Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi.",
+      "C) Gradyan Kaybolması (Vanishing Gradient).",
+      "D) Kernel PCA (Çekirdek Tabanlı PCA)."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Denetimsiz (Unsupervised) Öğrenme."
+  },
+  {
+    "id": 11,
+    "question": "Boyut düşürmede 'Kernel PCA' hangi tür veriler için uygundur?",
+    "options": [
+      "A) Doğrusal olarak ayrılamayan, karmaşık yapılara sahip veriler için.",
+      "B) ReLU ($g(z) = \\max(0, z)$).",
+      "C) Karar hiperdüzlemi ile en yakın veri noktaları arasındaki mesafe.",
+      "D) Bottleneck (Darboğaz)."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Doğrusal olarak ayrılamayan, karmaşık yapılara sahip veriler için."
+  },
+  {
+    "id": 12,
+    "question": "Boyut düşürmede 'Özellik Seçme' (Feature Selection) ile 'Özellik Çıkarma' arasındaki temel fark nedir?",
+    "options": [
+      "A) Entropi (H).",
+      "B) Yüksek varyans ve aşırı öğrenme (overfitting).",
+      "C) Özellik seçme orijinal değişkenlerin bir alt kümesini korurken, özellik çıkarma veriyi yeni yapay bileşenlere dönüştürür.",
+      "D) SVD, PCA hesaplamasını sayısal olarak daha kararlı bir şekilde gerçekleştirmek için kullanılır."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Özellik seçme orijinal değişkenlerin bir alt kümesini korurken, özellik çıkarma veriyi yeni yapay bileşenlere dönüştürür."
+  },
+  {
+    "id": 13,
+    "question": "Boyutların Laneti (Curse of Dimensionality) nedeniyle yüksek boyutlarda veri noktaları arasındaki mesafe nasıl değişir?",
+    "options": [
+      "A) İstatistiksel olarak bulunan kümelerin gerçek dünya iş mantığına (Örn: Pazar segmentasyonu) uygunluğunu denetlemek için.",
+      "B) Tüm noktalar birbirine neredeyse eşit uzaklıkta görünür ve 'yakınlık' kavramı anlamını yitirir.",
+      "C) Zincir Kuralı (Chain Rule) tabanlı Geri Yayılım.",
+      "D) $g(z) = \\max(0, z)$."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Tüm noktalar birbirine neredeyse eşit uzaklıkta görünür ve 'yakınlık' kavramı anlamını yitirir."
+  },
+  {
+    "id": 14,
+    "question": "Boyutların Laneti (Curse of Dimensionality) veri noktaları arasındaki mesafeyi nasıl etkiler?",
+    "options": [
+      "A) Özelliklerin sınıf verildiğinde birbirinden tamamen bağımsız olduğunu varsaymasıdır.",
+      "B) Verideki bazı gürültülü noktaların yanlış sınıfta kalmasına izin vererek daha genel bir karar sınırı oluşturmayı.",
+      "C) Boyut arttıkça noktalar arası mesafe birbirine çok benzer hale gelir ve en yakın komşu kavramı anlamını yitirir.",
+      "D) Bottleneck (Darboğaz)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Boyut arttıkça noktalar arası mesafe birbirine çok benzer hale gelir ve en yakın komşu kavramı anlamını yitirir."
+  },
+  {
+    "id": 15,
+    "question": "DBSCAN algoritması geleneksel merkez tabanlı algoritmalardan hangi özelliği ile ayrılır?",
+    "options": [
+      "A) Eksenlere dik hiperdüzlemler.",
+      "B) Sınıflar arası ayrımı (separability) maksimize etmek.",
+      "C) Birden fazla karar ağacını bootstrap örnekleme ve rastgele özellik seçimiyle birleştirmek.",
+      "D) Yoğunluk farklarına dayanarak karmaşık şekilli kümeleri bulabilmesi."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Yoğunluk farklarına dayanarak karmaşık şekilli kümeleri bulabilmesi."
+  },
+  {
+    "id": 16,
+    "question": "DBSCAN gibi yoğunluk tabanlı kümeleme algoritmalarının klasik yöntemlere göre en büyük avantajı nedir?",
+    "options": [
+      "A) Veriyi en düşük boyutlu (sıkıştırılmış) temsiline ($z$) indirgemek.",
+      "B) Kernel PCA (Çekirdek Tabanlı PCA).",
+      "C) Düzensiz ve karmaşık şekilli kümeleri tespit edebilmeleri ve gürültüyü (aykırı değerleri) ayırt edebilmeleridir.",
+      "D) ReLU ($g(z) = \\max(0, z)$)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Düzensiz ve karmaşık şekilli kümeleri tespit edebilmeleri ve gürültüyü (aykırı değerleri) ayırt edebilmeleridir."
+  },
+  {
+    "id": 17,
+    "question": "Destek Vektör Makineleri (SVM) algoritmasının temel optimizasyon hedefi nedir?",
+    "options": [
+      "A) Hataların karesini aldığı için büyük sapmaları çok daha sert (üstel olarak) cezalandırır.",
+      "B) Gerçek değer ($y_i$) ile tahmin edilen değer ($\\hat{y}_i$) arasındaki fark.",
+      "C) Koordinat eksenleri boyunca hareket edilerek hesaplanan mutlak farkların toplamı.",
+      "D) Sınıflar arasındaki boşluğu (margin) maksimize eden karar hiperdüzlemini bulmak."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Sınıflar arasındaki boşluğu (margin) maksimize eden karar hiperdüzlemini bulmak."
+  },
+  {
+    "id": 18,
+    "question": "Destek Vektör Makineleri'nde (SVM) 'Margin' neyi ifade eder?",
+    "options": [
+      "A) Bottleneck (Darboğaz).",
+      "B) Adaptif öğrenme hızı kullanarak her parametre için güncellemeyi ayarlar.",
+      "C) Karar hiperdüzlemi ile en yakın veri noktaları arasındaki mesafe.",
+      "D) Minimuma ulaşmak için her adımda atılan güncellemelerin büyüklüğünü."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Karar hiperdüzlemi ile en yakın veri noktaları arasındaki mesafe."
+  },
+  {
+    "id": 19,
+    "question": "Doğrusal Diskriminant Analizi'nin (LDA) temel amacı nedir?",
+    "options": [
+      "A) Küme içi varyasyonu (Inertia) minimize etmek.",
+      "B) Sınıflar arası ayrımı (separability) maksimize etmek.",
+      "C) $a = \\phi(\\sum w_j x_j + b)$ (Burada $\\phi$ aktivasyon fonksiyonudur).",
+      "D) Sigmoid Fonksiyonu: $\\sigma(z) = \\frac{1}{1 + e^{-z}}$."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Sınıflar arası ayrımı (separability) maksimize etmek."
+  },
+  {
+    "id": 20,
+    "question": "Doğrusal olmayan yapıdaki veriler için PCA'nın hangi türevi 'Kernel Trick' kullanarak çalışır?",
+    "options": [
+      "A) $a = \\phi(\\sum w_j x_j + b)$",
+      "B) Doğrusal olarak ayrılamayan, karmaşık yapılara sahip veriler için.",
+      "C) Kernel PCA (Çekirdek Tabanlı PCA).",
+      "D) Daha hızlı çalışması ve yeni veri noktalarını mevcut projeksiyona dahil edebilmesidir."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Kernel PCA (Çekirdek Tabanlı PCA)."
+  },
+  {
+    "id": 21,
+    "question": "Doğrusal regresyon veya lojistik regresyonun çözemediği klasik mantıksal problem hangisidir?",
+    "options": [
+      "A) Düzensiz ve karmaşık şekilli kümeleri tespit edebilmeleri ve gürültüyü (aykırı değerleri) ayırt edebilmeleridir.",
+      "B) Eğitimi hızlandırmak ve gradyan sorunlarını (vanishing gradient) azaltmak için katman girişlerini normalize eder.",
+      "C) XOR Paradoksu.",
+      "D) Aynı sınıfa ait örneklerin birbirine olabildiğince yakınlaşması."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: XOR Paradoksu."
+  },
+  {
+    "id": 22,
+    "question": "Düzeltilmiş R-Kare (Adjusted $R^2$) neden standart $R^2$'den daha güvenilirdir?",
+    "options": [
+      "A) Hataların karesini aldığı için büyük hataları daha sert cezalandırması.",
+      "B) Modele eklenen alakasız değişkenler için penalizasyon uygulayarak 'yalancı başarıyı' engellediği için.",
+      "C) Yoğunluk farklarına dayanarak karmaşık şekilli kümeleri bulabilmesi.",
+      "D) Sigmoid Fonksiyonu: $\\sigma(z) = \\frac{1}{1 + e^{-z}}$."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Modele eklenen alakasız değişkenler için penalizasyon uygulayarak 'yalancı başarıyı' engellediği için."
+  },
+  {
+    "id": 23,
+    "question": "EM (Expectation-Maximization) algoritması kümeleri nasıl tanımlar?",
+    "options": [
+      "A) Veriyi farklı olasılık dağılımlarının (genellikle Gauss) bir bileşimi olarak varsayar ve 'yumuşak' (soft) kümeleme yapar.",
+      "B) Özellik seçme orijinal değişkenlerin bir alt kümesini korurken, özellik çıkarma veriyi yeni yapay bileşenlere dönüştürür.",
+      "C) Dendrogram.",
+      "D) Modele eklenen anlamsız değişkenler için cezalandırma yaparak sahte başarıyı engellediği için."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Veriyi farklı olasılık dağılımlarının (genellikle Gauss) bir bileşimi olarak varsayar ve 'yumuşak' (soft) kümeleme yapar."
+  },
+  {
+    "id": 24,
+    "question": "Evrensel Yaklaşım Teoremi (Universal Approximation Theorem) neyi savunur?",
+    "options": [
+      "A) Yeterince geniş tek bir gizli katmana sahip MLP'nin her türlü sürekli fonksiyonu temsil edebileceğini.",
+      "B) Eğitimi hızlandırmak ve gradyan sorunlarını (vanishing gradient) azaltmak için katman girişlerini normalize eder.",
+      "C) Eğitim aşamasında bir model kurmayıp, tüm hesaplamayı tahmin anında yaptığı için.",
+      "D) Özdeğerlerin sıralı dizilimindeki 'dirsek' noktasını bularak optimal bileşen sayısını ($k$) seçmek."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Yeterince geniş tek bir gizli katmana sahip MLP'nin her türlü sürekli fonksiyonu temsil edebileceğini."
+  },
+  {
+    "id": 25,
+    "question": "Geri Yayılım (Backpropagation) algoritmasının temel amacı nedir?",
+    "options": [
+      "A) Modele eklenen anlamsız değişkenler için cezalandırma yaparak sahte başarıyı engellediği için.",
+      "B) Çıkış katmanındaki hatayı zincir kuralı kullanarak geriye doğru dağıtmak ve ağırlıkları güncellemek.",
+      "C) Eğitim aşamasında bir model kurmayıp, tüm hesaplamayı tahmin anında yaptığı için.",
+      "D) $Gini(t) = 1 - \\sum_k p_k^2$"
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Çıkış katmanındaki hatayı zincir kuralı kullanarak geriye doğru dağıtmak ve ağırlıkları güncellemek."
+  },
+  {
+    "id": 26,
+    "question": "Gini Safsızlığı formülü nedir?",
+    "options": [
+      "A) $Gini(t) = 1 - \\sum_k p_k^2$",
+      "B) Overfitting (Aşırı Öğrenme).",
+      "C) Denoising Autoencoder.",
+      "D) XOR Paradoksu."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: $Gini(t) = 1 - \\sum_k p_k^2$"
+  },
+  {
+    "id": 27,
+    "question": "Gradient Boosting yönteminin Random Forest'tan temel farkı nedir?",
+    "options": [
+      "A) İstatistiksel olarak bulunan kümelerin gerçek dünya iş mantığına (Örn: Pazar segmentasyonu) uygunluğunu denetlemek için.",
+      "B) Eğitimi hızlandırmak ve gradyan sorunlarını azaltmak için girdi değerlerini normalize etmek.",
+      "C) Ağaçların paralel değil, bir önceki ağacın hatalarını (artıkları) öğrenecek şekilde ardışıl olarak eğitilmesi.",
+      "D) Gini Safsızlığı veya Entropi."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Ağaçların paralel değil, bir önceki ağacın hatalarını (artıkları) öğrenecek şekilde ardışıl olarak eğitilmesi."
+  },
+  {
+    "id": 28,
+    "question": "Gradient Descent algoritmasındaki 'Öğrenme Oranı' ($\\alpha$) neyi belirler?",
+    "options": [
+      "A) Eğitim verisinden tekrarlı rastgele örneklemler (bootstrap) alarak birden fazla ağaç eğitmek ve sonuçları oylamak.",
+      "B) Gözetimsiz (Unsupervised) Öğrenme.",
+      "C) Minimuma ulaşmak için her adımda atılan güncellemelerin büyüklüğünü.",
+      "D) Entropi (H)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Minimuma ulaşmak için her adımda atılan güncellemelerin büyüklüğünü."
+  },
+  {
+    "id": 29,
+    "question": "Gradyan İnişi (Gradient Descent) algoritmasında öğrenme hızı ($\\alpha$) neyi belirler?",
+    "options": [
+      "A) Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi.",
+      "B) Öklid (Euclidean) Mesafesi.",
+      "C) İki küme arasındaki mesafeyi, kümelerin birbirine en yakın eleman çifti arasındaki mesafe olarak tanımlar.",
+      "D) Parametre güncellemeleri sırasında atılan adımların büyüklüğünü."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Parametre güncellemeleri sırasında atılan adımların büyüklüğünü."
+  },
+  {
+    "id": 30,
+    "question": "Hiyerarşik kümelemede 'Complete Linkage' mesafeyi nasıl ölçer?",
+    "options": [
+      "A) İki kümenin elemanları arasındaki en büyük mesafeyi temel alarak.",
+      "B) PCA denetimsiz (etiketsiz) bir yöntemken, LDA sınıfları birbirinden ayırmak için etiketli veri kullanan denetimli bir yöntemdir.",
+      "C) Düzensiz ve karmaşık şekilli kümeleri tespit edebilmeleri ve gürültüyü (aykırı değerleri) ayırt edebilmeleridir.",
+      "D) SVD, PCA hesaplamasını sayısal olarak daha kararlı bir şekilde gerçekleştirmek için kullanılır."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: İki kümenin elemanları arasındaki en büyük mesafeyi temel alarak."
+  },
+  {
+    "id": 31,
+    "question": "Hiyerarşik kümelemede 'Dendrogram' neyi temsil eder?",
+    "options": [
+      "A) $g(z) = \\max(0, z)$.",
+      "B) Bottleneck (Darboğaz).",
+      "C) Sigmoid Fonksiyonu: $\\sigma(z) = \\frac{1}{1 + e^{-z}}$.",
+      "D) Veri noktaları arasındaki birleşme hiyerarşisini ve kümeler arasındaki mesafe ilişkilerini."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Veri noktaları arasındaki birleşme hiyerarşisini ve kümeler arasındaki mesafe ilişkilerini."
+  },
+  {
+    "id": 32,
+    "question": "Hiyerarşik kümelemede 'Single Linkage' (Tekil Bağlantı) mesafeyi nasıl tanımlar?",
+    "options": [
+      "A) İstatistiksel olarak bulunan kümelerin gerçek dünya iş mantığına (Örn: Pazar segmentasyonu) uygunluğunu denetlemek için.",
+      "B) $\\tilde{X} = X - \\mu$ (Her özellikten sütun ortalamasının çıkarılması).",
+      "C) İki küme arasındaki en yakın eleman çiftleri arasındaki mesafe.",
+      "D) Çok sayıda skaler işlemi tek bir matris çarpımına dönüştürerek donanım (GPU) hızlandırması sağlar."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: İki küme arasındaki en yakın eleman çiftleri arasındaki mesafe."
+  },
+  {
+    "id": 33,
+    "question": "Hiyerarşik kümelemede 'Single Linkage' (Tekli Bağlantı) kuralı nedir?",
+    "options": [
+      "A) Boyut arttıkça noktalar arası mesafe birbirine çok benzer hale gelir ve en yakın komşu kavramı anlamını yitirir.",
+      "B) Özelliklerin sınıf verildiğinde birbirinden tamamen bağımsız olduğunu varsaymasıdır.",
+      "C) İki küme arasındaki mesafeyi, kümelerin birbirine en yakın eleman çifti arasındaki mesafe olarak tanımlar.",
+      "D) Karekök işlemi sayesinde hata birimini orijinal verinin birimine döndürdüğü için."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: İki küme arasındaki mesafeyi, kümelerin birbirine en yakın eleman çifti arasındaki mesafe olarak tanımlar."
+  },
+  {
+    "id": 34,
+    "question": "İki nokta arasındaki en kısa doğrusal mesafeyi ölçen metriğe ne denir?",
+    "options": [
+      "A) Yüksek boyutlu veriyi topolojiyi koruyarak düşük boyutlu (genellikle 2D) bir haritaya indirgemek.",
+      "B) Öklid (Euclidean) Mesafesi.",
+      "C) Boyut arttıkça noktalar arası mesafe birbirine çok benzer hale gelir ve en yakın komşu kavramı anlamını yitirir.",
+      "D) $a = \\phi(\\sum w_j x_j + b)$ (Burada $\\phi$ aktivasyon fonksiyonudur)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Öklid (Euclidean) Mesafesi."
+  },
+  {
+    "id": 35,
+    "question": "İkili sınıflandırma (Binary Classification) için kullanılan temel kayıp fonksiyonu (loss function) nedir?",
+    "options": [
+      "A) Bottleneck (Darboğaz).",
+      "B) Nöronları rastgele kapatarak aşırı öğrenmeyi (overfitting) engellemek için.",
+      "C) Binary Cross-Entropy Loss.",
+      "D) Özellik Seçme (Feature Selection)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Binary Cross-Entropy Loss."
+  },
+  {
+    "id": 36,
+    "question": "k-En Yakın Komşu (k-NN) algoritması neden 'Tembel Öğrenme' (Lazy Learning) olarak adlandırılır?",
+    "options": [
+      "A) Eğitim aşamasında bir model kurmayıp, tüm hesaplamayı tahmin anında yaptığı için.",
+      "B) Veriyi daha yüksek boyutlu bir özellik uzayına taşıyarak doğrusal olmayan sınırların çizilmesini sağlar.",
+      "C) Özelliklerin sınıf verildiğinde birbirinden tamamen bağımsız olduğunu varsaymasıdır.",
+      "D) Ridge Düzenlileştirme."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Eğitim aşamasında bir model kurmayıp, tüm hesaplamayı tahmin anında yaptığı için."
+  },
+  {
+    "id": 37,
+    "question": "K-Katlı Çapraz Doğrulama (K-Fold Cross Validation) yönteminin amacı nedir?",
+    "options": [
+      "A) Denetimli Öğrenme (Supervised Learning).",
+      "B) Overfitting (Aşırı Öğrenme).",
+      "C) Veriyi farklı parçalara bölerek modelin genelleme yeteneğini daha güvenilir bir şekilde ölçmek.",
+      "D) Ağaçlar arasındaki korelasyonu düşürerek topluluk varyansını azaltmak."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Veriyi farklı parçalara bölerek modelin genelleme yeteneğini daha güvenilir bir şekilde ölçmek."
+  },
+  {
+    "id": 38,
+    "question": "k-NN'de $K$ sayısının çok küçük seçilmesi hangi soruna yol açar?",
+    "options": [
+      "A) ReLU ($g(z) = \\max(0, z)$).",
+      "B) Minimuma ulaşmak için her adımda atılan güncellemelerin büyüklüğünü.",
+      "C) Yüksek varyans ve aşırı öğrenme (overfitting).",
+      "D) Çok sınıflı sınıflandırma problemlerinde çıkış katmanında."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Yüksek varyans ve aşırı öğrenme (overfitting)."
+  },
+  {
+    "id": 39,
+    "question": "K-Ortalamalar (K-Means) algoritmasında 'Inertia' metriği neyi ifade eder?",
+    "options": [
+      "A) $EVR(k) = \\frac{\\sum_{i=1}^k \\lambda_i}{\\sum_{i=1}^d \\lambda_i}$",
+      "B) Veri noktalarının kendi küme merkezlerine olan uzaklıklarının kareleri toplamını.",
+      "C) $\\tilde{X} = X - \\mu$ (Her özellikten sütun ortalamasının çıkarılması).",
+      "D) Yüksek boyutlu veriyi topolojiyi koruyarak düşük boyutlu (genellikle 2D) bir haritaya indirgemek."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Veri noktalarının kendi küme merkezlerine olan uzaklıklarının kareleri toplamını."
+  },
+  {
+    "id": 40,
+    "question": "K-Ortalamalar (K-Means) algoritmasının optimizasyon hedefi nedir?",
+    "options": [
+      "A) XOR verisi doğrusal olarak ayrıştırılamaz, modellemek için doğrusal olmayan bir gizli katman gerekir.",
+      "B) Verideki maksimum varyansın olduğu doğrultudadır.",
+      "C) İki kümenin elemanları arasındaki en büyük mesafeyi temel alarak.",
+      "D) Küme içi varyasyonu (Inertia) minimize etmek."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Küme içi varyasyonu (Inertia) minimize etmek."
+  },
+  {
+    "id": 41,
+    "question": "Karar ağaçlarında 'Dallanma Kriteri' olarak ne seçilir?",
+    "options": [
+      "A) En yüksek bilgi kazancını (Information Gain) sağlayan özellik ve eşik değeri.",
+      "B) Çok sayıda skaler işlemi tek bir matris çarpımına dönüştürerek donanım (GPU) hızlandırması sağlar.",
+      "C) Ölçeği büyük olan değişkenlerin varyans hesaplamasını domine etmesini engellemek için.",
+      "D) Eğitimi hızlandırmak ve gradyan sorunlarını azaltmak için girdi değerlerini normalize etmek."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: En yüksek bilgi kazancını (Information Gain) sağlayan özellik ve eşik değeri."
+  },
+  {
+    "id": 42,
+    "question": "Karar Ağaçlarında 'Gini Safsızlığı' (Gini Impurity) neyi ölçer?",
+    "options": [
+      "A) Sınıflar arası ayrımı (separability) maksimize etmek.",
+      "B) Denetimsiz (Unsupervised) Öğrenme.",
+      "C) Bir düğümdeki verilerin sınıfsal homojenliğini (karışıklığını).",
+      "D) Yanlış Negatif (Gerçekte pozitif olanın negatif tahmin edilmesi)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Bir düğümdeki verilerin sınıfsal homojenliğini (karışıklığını)."
+  },
+  {
+    "id": 43,
+    "question": "Karar ağaçlarında dallanma kriteri olarak kullanılan saflık ölçüsü nedir?",
+    "options": [
+      "A) Gini Safsızlığı veya Entropi.",
+      "B) $Gini(t) = 1 - \\sum_k p_k^2$",
+      "C) Modele eklenen alakasız değişkenler için penalizasyon uygulayarak 'yalancı başarıyı' engellediği için.",
+      "D) Öklid (Euclidean) Mesafesi."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Gini Safsızlığı veya Entropi."
+  },
+  {
+    "id": 44,
+    "question": "Karmaşıklık Matrisinde (Confusion Matrix) 'F1 Skoru' nasıl hesaplanır?",
+    "options": [
+      "A) Hassasiyet (Precision) ve Duyarlılığın (Recall) harmonik ortalaması alınarak.",
+      "B) Gaussian Naive Bayes.",
+      "C) Koordinat eksenleri boyunca hareket edilerek hesaplanan mutlak farkların toplamı.",
+      "D) $\\tilde{X} = X - \\mu$ (Her özellikten sütun ortalamasının çıkarılması)."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Hassasiyet (Precision) ve Duyarlılığın (Recall) harmonik ortalaması alınarak."
+  },
+  {
+    "id": 45,
+    "question": "KD-Ağaçları (KD-Trees) uzayı bölmek için hangi geometrik yapıyı kullanır?",
+    "options": [
+      "A) Overfitting (Aşırı Öğrenme).",
+      "B) Eksenlere dik hiperdüzlemler.",
+      "C) Doğrusal olarak ayrılamayan, karmaşık yapılara sahip veriler için.",
+      "D) Öklid (Euclidean) Mesafesi."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Eksenlere dik hiperdüzlemler."
+  },
+  {
+    "id": 46,
+    "question": "KD-Ağaçları hangi boyut aralığında verimli arama yapabilmektedir?",
+    "options": [
+      "A) Boyut Düşürme (Dimensionality Reduction).",
+      "B) Genellikle 2 ile 8 boyut arasında.",
+      "C) Ağaçların paralel değil, bir önceki ağacın hatalarını (artıkları) öğrenecek şekilde ardışıl olarak eğitilmesi.",
+      "D) Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Genellikle 2 ile 8 boyut arasında."
+  },
+  {
+    "id": 47,
+    "question": "KNN algoritmasında 'K' değerinin çok küçük seçilmesi hangi soruna yol açar?",
+    "options": [
+      "A) Veriyi farklı olasılık dağılımlarının (genellikle Gauss) bir bileşimi olarak varsayar ve 'yumuşak' (soft) kümeleme yapar.",
+      "B) Verideki bazı gürültülü noktaların yanlış sınıfta kalmasına izin vererek daha genel bir karar sınırı oluşturmayı.",
+      "C) Aşırı öğrenme (Overfitting/Yüksek Varyans).",
+      "D) Ölçeği büyük olan değişkenlerin varyans hesaplamasını domine etmesini engellemek için."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Aşırı öğrenme (Overfitting/Yüksek Varyans)."
+  },
+  {
+    "id": 48,
+    "question": "Kök Ortalama Kare Hata (RMSE) metriğinin MAE'ye göre yorumlama avantajı nedir?",
+    "options": [
+      "A) $\\tilde{X} = X - \\mu$ (Her özellikten sütun ortalamasının çıkarılması).",
+      "B) Yanlış Negatif (Gerçekte pozitif olanın negatif tahmin edilmesi).",
+      "C) Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi.",
+      "D) Binary Cross-Entropy Loss."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi."
+  },
+  {
+    "id": 49,
+    "question": "Kümeleme (Clustering) analizinin temel amacı nedir?",
+    "options": [
+      "A) Genellikle 2 ile 8 boyut arasında.",
+      "B) Zincir Kuralı (Chain Rule) tabanlı Geri Yayılım.",
+      "C) Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi.",
+      "D) Grup içi benzerliği en yüksek, gruplar arası farklılığı en fazla olacak şekilde veriyi alt gruplara ayırmak."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Grup içi benzerliği en yüksek, gruplar arası farklılığı en fazla olacak şekilde veriyi alt gruplara ayırmak."
+  },
+  {
+    "id": 50,
+    "question": "Kümeleme Analizi (Clustering) hangi tür öğrenme yöntemidir?",
+    "options": [
+      "A) Yanlış Negatif (Gerçekte pozitif olanın negatif tahmin edilmesi).",
+      "B) Gözetimsiz (Unsupervised) Öğrenme.",
+      "C) Parametre güncellemeleri sırasında atılan adımların büyüklüğünü.",
+      "D) Sınıf sayısı $K$ olmak üzere, en fazla $K-1$ bileşen üretilebilir."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Gözetimsiz (Unsupervised) Öğrenme."
+  },
+  {
+    "id": 51,
+    "question": "Kümeleme analizinde 'Öklid Mesafesi' nasıl tanımlanır?",
+    "options": [
+      "A) İki nokta arasındaki en kısa, doğrusal mesafe.",
+      "B) Scree Plot (Yamaç Grafiği).",
+      "C) Bazı katsayıları tam olarak sıfıra eşitleyerek özellik seçimi (feature selection) yapar.",
+      "D) Parametre güncellemeleri sırasında atılan adımların büyüklüğünü."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: İki nokta arasındaki en kısa, doğrusal mesafe."
+  },
+  {
+    "id": 52,
+    "question": "Kümeleme sonuçlarını ağaç benzeri bir yapıda gösteren diyagrama ne ad verilir?",
+    "options": [
+      "A) Dendrogram.",
+      "B) Gini Safsızlığı veya Entropi.",
+      "C) $a = \\phi(\\sum w_j x_j + b)$ (Burada $\\phi$ aktivasyon fonksiyonudur).",
+      "D) Nöronları rastgele kapatarak aşırı öğrenmeyi (overfitting) engellemek için."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Dendrogram."
+  },
+  {
+    "id": 53,
+    "question": "Kümelemede 'Uzman Doğrulaması' (Sanity Check) neden gereklidir?",
+    "options": [
+      "A) t-dağılımı (Student's t-distribution).",
+      "B) İstatistiksel olarak bulunan kümelerin gerçek dünya iş mantığına (Örn: Pazar segmentasyonu) uygunluğunu denetlemek için.",
+      "C) Yanlış Negatif (Gerçekte pozitif olanın negatif tahmin edilmesi).",
+      "D) İki küme arasındaki mesafeyi, kümelerin birbirine en yakın eleman çifti arasındaki mesafe olarak tanımlar."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: İstatistiksel olarak bulunan kümelerin gerçek dünya iş mantığına (Örn: Pazar segmentasyonu) uygunluğunu denetlemek için."
+  },
+  {
+    "id": 54,
+    "question": "L1 Düzenlileştirmesi (Lasso) modelde nasıl bir etki yaratır?",
+    "options": [
+      "A) t-dağılımı (Student's t-distribution).",
+      "B) Gerçek değerler sıfır veya sıfıra çok yakın olduğunda.",
+      "C) Bazı katsayıları tam olarak sıfıra eşitleyerek özellik seçimi (feature selection) yapar.",
+      "D) Model çok basit olduğunda ve verideki temel yapıyı öğrenemediğinde (Yüksek Bias)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Bazı katsayıları tam olarak sıfıra eşitleyerek özellik seçimi (feature selection) yapar."
+  },
+  {
+    "id": 55,
+    "question": "L2 Düzenlileştirmesi (Ridge) maliyet fonksiyonuna ne ekler?",
+    "options": [
+      "A) Gini Safsızlığı veya Entropi.",
+      "B) Gerçek değer ($y_i$) ile tahmin edilen değer ($\\hat{y}_i$) arasındaki fark.",
+      "C) Ağırlıkların karelerinin toplamını ($\\lambda \\cdot \\sum w_j^2$).",
+      "D) Az varyans taşıyan bileşenler (genellikle gürültü) atıldığı için sinyal/gürültü oranı artar."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Ağırlıkların karelerinin toplamını ($\\lambda \\cdot \\sum w_j^2$)."
+  },
+  {
+    "id": 56,
+    "question": "LDA (Doğrusal Diskriminant Analizi) ile PCA arasındaki en temel kavramsal fark nedir?",
+    "options": [
+      "A) Veri noktalarının kendi küme merkezlerine olan uzaklıklarının kareleri toplamını.",
+      "B) Kernel PCA (Çekirdek Tabanlı PCA).",
+      "C) Verideki bazı gürültülü noktaların yanlış sınıfta kalmasına izin vererek daha genel bir karar sınırı oluşturmayı.",
+      "D) PCA denetimsiz (etiketsiz) bir yöntemken, LDA sınıfları birbirinden ayırmak için etiketli veri kullanan denetimli bir yöntemdir."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: PCA denetimsiz (etiketsiz) bir yöntemken, LDA sınıfları birbirinden ayırmak için etiketli veri kullanan denetimli bir yöntemdir."
+  },
+  {
+    "id": 57,
+    "question": "LDA'da 'Sınıf İçi Saçılım' ($S_W$) matrisinin minimize edilmesi ne anlama gelir?",
+    "options": [
+      "A) Grup içi benzerliği en yüksek, gruplar arası farklılığı en fazla olacak şekilde veriyi alt gruplara ayırmak.",
+      "B) $\\tilde{X} = X - \\mu$ (Her özellikten sütun ortalamasının çıkarılması).",
+      "C) Aynı sınıfa ait örneklerin birbirine olabildiğince yakınlaşması.",
+      "D) Zincir Kuralı (Chain Rule) tabanlı Geri Yayılım."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Aynı sınıfa ait örneklerin birbirine olabildiğince yakınlaşması."
+  },
+  {
+    "id": 58,
+    "question": "LDA'da maksimum bileşen sayısı ne ile sınırlıdır?",
+    "options": [
+      "A) Bottleneck (Darboğaz).",
+      "B) Sınıf sayısı $K$ olmak üzere, en fazla $K-1$ bileşen üretilebilir.",
+      "C) Model, verideki değişkenliğin $\\%82$'sini açıklayabilmektedir.",
+      "D) Ağaçların paralel değil, bir önceki ağacın hatalarını (artıkları) öğrenecek şekilde ardışıl olarak eğitilmesi."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Sınıf sayısı $K$ olmak üzere, en fazla $K-1$ bileşen üretilebilir."
+  },
+  {
+    "id": 59,
+    "question": "LDA'da üretilebilecek maksimum bileşen sayısı ne ile sınırlıdır?",
+    "options": [
+      "A) $a = \\phi(\\sum w_j x_j + b)$ (Burada $\\phi$ aktivasyon fonksiyonudur).",
+      "B) Ağaçların paralel değil, bir önceki ağacın hatalarını (artıkları) öğrenecek şekilde ardışıl olarak eğitilmesi.",
+      "C) Eğitim sırasında nöronları rastgele kapatarak modelin belirli nöronlara aşırı bağımlı olmasını (overfitting) engellemek.",
+      "D) Sınıf sayısı eksi bir ($K-1$)."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Sınıf sayısı eksi bir ($K-1$)."
+  },
+  {
+    "id": 60,
+    "question": "Lojistik Regresyon modelinde çıktı olasılığını $[0, 1]$ aralığına sıkıştıran fonksiyon hangisidir?",
+    "options": [
+      "A) Özellik seçme orijinal değişkenlerin bir alt kümesini korurken, özellik çıkarma veriyi yeni yapay bileşenlere dönüştürür.",
+      "B) Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi.",
+      "C) Bazı katsayıları tam olarak sıfıra eşitleyerek özellik seçimi (feature selection) yapar.",
+      "D) Sigmoid (Lojistik) fonksiyonu: $\\sigma(z) = \\frac{1}{1 + e^{-z}}$."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Sigmoid (Lojistik) fonksiyonu: $\\sigma(z) = \\frac{1}{1 + e^{-z}}$."
+  },
+  {
+    "id": 61,
+    "question": "Lojistik regresyonda katsayıların aşırı büyümesini engellemek için kullanılan L2 düzenlileştirmesinin diğer adı nedir?",
+    "options": [
+      "A) Koşullu olasılıklar tabanlı benzerlik (t-dağılımı).",
+      "B) Hassasiyet (Precision) ve Duyarlılığın (Recall) harmonik ortalaması alınarak.",
+      "C) Ridge Düzenlileştirme.",
+      "D) SVD, PCA hesaplamasını sayısal olarak daha kararlı bir şekilde gerçekleştirmek için kullanılır."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Ridge Düzenlileştirme."
+  },
+  {
+    "id": 62,
+    "question": "Manhattan (City-block) mesafesi hangi kurala göre hesaplanır?",
+    "options": [
+      "A) Koordinat eksenleri boyunca hareket edilerek hesaplanan mutlak farkların toplamı.",
+      "B) Eğitimi hızlandırmak ve gradyan sorunlarını (vanishing gradient) azaltmak için katman girişlerini normalize eder.",
+      "C) Birden fazla karar ağacını bootstrap örnekleme ve rastgele özellik seçimiyle birleştirmek.",
+      "D) Gerçek değerler sıfıra çok yakın olduğunda sonucun matematiksel olarak belirsizleşmesi veya patlaması."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Koordinat eksenleri boyunca hareket edilerek hesaplanan mutlak farkların toplamı."
+  },
+  {
+    "id": 63,
+    "question": "Manhattan mesafesi nasıl hesaplanır?",
+    "options": [
+      "A) Eğitim aşamasında bir model kurmayıp, tüm hesaplamayı tahmin anında yaptığı için.",
+      "B) Gradyan Kaybolması (Vanishing Gradient).",
+      "C) Parametre güncellemeleri sırasında atılan adımların büyüklüğünü.",
+      "D) Koordinat eksenleri boyunca mutlak farkların toplamı ile."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Koordinat eksenleri boyunca mutlak farkların toplamı ile."
+  },
+  {
+    "id": 64,
+    "question": "MAPE metriği hangi durumlarda hatalı veya tanımsız sonuçlar üretir?",
+    "options": [
+      "A) Veri noktaları arasındaki birleşme hiyerarşisini ve kümeler arasındaki mesafe ilişkilerini.",
+      "B) $EVR(k) = \\frac{\\sum_{i=1}^k \\lambda_i}{\\sum_{i=1}^d \\lambda_i}$",
+      "C) Gerçek değerler sıfır veya sıfıra çok yakın olduğunda.",
+      "D) $a = \\phi(\\sum w_j x_j + b)$ (Burada $\\phi$ aktivasyon fonksiyonudur)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Gerçek değerler sıfır veya sıfıra çok yakın olduğunda."
+  },
+  {
+    "id": 65,
+    "question": "Mevcut özelliklerden bir alt küme seçerek orijinal değişkenlerin korunduğu işleme ne denir?",
+    "options": [
+      "A) Özvektörler birbirine ortogonaldir (diktir) ve aralarında korelasyon yoktur.",
+      "B) Özellik Seçme (Feature Selection).",
+      "C) Çıkış katmanındaki hatayı zincir kuralı kullanarak geriye doğru dağıtmak ve ağırlıkları güncellemek.",
+      "D) İki küme arasındaki en yakın eleman çiftleri arasındaki mesafe."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Özellik Seçme (Feature Selection)."
+  },
+  {
+    "id": 66,
+    "question": "Modelin eğitim verisine aşırı uyum sağlaması sonucu test verisinde düşük performans göstermesi durumuna ne denir?",
+    "options": [
+      "A) Grup içi benzerliği en yüksek, gruplar arası farklılığı en fazla olacak şekilde veriyi alt gruplara ayırmak.",
+      "B) Eğitim verisinden tekrarlı rastgele örneklemler (bootstrap) alarak birden fazla ağaç eğitmek ve sonuçları oylamak.",
+      "C) Az varyans taşıyan bileşenler (genellikle gürültü) atıldığı için sinyal/gürültü oranı artar.",
+      "D) Overfitting (Aşırı Öğrenme)."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Overfitting (Aşırı Öğrenme)."
+  },
+  {
+    "id": 67,
+    "question": "Naive Bayes algoritmasının 'Naive' (Saf) olarak adlandırılmasının sebebi nedir?",
+    "options": [
+      "A) Model çok basit olduğunda ve verideki temel yapıyı öğrenemediğinde (Yüksek Bias).",
+      "B) $EVR(k) = \\frac{\\sum_{i=1}^k \\lambda_i}{\\sum_{i=1}^d \\lambda_i}$",
+      "C) Tüm noktalar birbirine neredeyse eşit uzaklıkta görünür ve 'yakınlık' kavramı anlamını yitirir.",
+      "D) Özelliklerin sınıf verildiğinde birbirinden tamamen bağımsız olduğunu varsaymasıdır."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Özelliklerin sınıf verildiğinde birbirinden tamamen bağımsız olduğunu varsaymasıdır."
+  },
+  {
+    "id": 68,
+    "question": "Naive Bayes türlerinden hangisi sürekli (continuous) değişkenler için uygundur?",
+    "options": [
+      "A) Sınıflar arası ayrımı (separability) maksimize etmek.",
+      "B) Gaussian Naive Bayes.",
+      "C) XOR verisi doğrusal olarak ayrıştırılamaz, modellemek için doğrusal olmayan bir gizli katman gerekir.",
+      "D) Minimuma ulaşmak için her adımda atılan güncellemelerin büyüklüğünü."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Gaussian Naive Bayes."
+  },
+  {
+    "id": 69,
+    "question": "Neden 'Düzeltilmiş R-Kare' (Adjusted $R^2$) metriği standart R-Kare'den daha güvenilirdir?",
+    "options": [
+      "A) Kernel Trick (Çekirdek Yöntemi).",
+      "B) Modele eklenen anlamsız değişkenler için cezalandırma yaparak sahte başarıyı engellediği için.",
+      "C) Koordinat eksenleri boyunca mutlak farkların toplamı ile.",
+      "D) Eksenlere dik hiperdüzlemler."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Modele eklenen anlamsız değişkenler için cezalandırma yaparak sahte başarıyı engellediği için."
+  },
+  {
+    "id": 70,
+    "question": "Neden PCA uygulanmadan önce verinin standartlaştırılması (z-score scaling) önerilir?",
+    "options": [
+      "A) Ölçeği büyük olan değişkenlerin varyans hesaplamasını domine etmesini engellemek için.",
+      "B) Çıkış katmanındaki hatayı zincir kuralı kullanarak geriye doğru dağıtmak ve ağırlıkları güncellemek.",
+      "C) Özvektörler birbirine ortogonaldir (diktir) ve aralarında korelasyon yoktur.",
+      "D) Karekök işlemi sayesinde hata birimini orijinal verinin birimine döndürdüğü için."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Ölçeği büyük olan değişkenlerin varyans hesaplamasını domine etmesini engellemek için."
+  },
+  {
+    "id": 71,
+    "question": "Ortalama Kare Hata (MSE) metriği hataları nasıl cezalandırır?",
+    "options": [
+      "A) Birbirlerine diktirler (Ortogonal).",
+      "B) Veriyi farklı parçalara bölerek modelin genelleme yeteneğini daha güvenilir bir şekilde ölçmek.",
+      "C) Hataların karesini aldığı için büyük sapmaları çok daha sert (üstel olarak) cezalandırır.",
+      "D) Binary Cross-Entropy Loss."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Hataların karesini aldığı için büyük sapmaları çok daha sert (üstel olarak) cezalandırır."
+  },
+  {
+    "id": 72,
+    "question": "Ortalama Kare Hata (MSE) metriğinin MAE'den temel farkı nedir?",
+    "options": [
+      "A) Çok sınıflı sınıflandırma problemlerinde çıkış katmanında.",
+      "B) Koordinat eksenleri boyunca mutlak farkların toplamı ile.",
+      "C) Hataların karesini aldığı için büyük hataları daha sert cezalandırması.",
+      "D) Adaptif öğrenme hızı kullanarak her parametre için güncellemeyi ayarlar."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Hataların karesini aldığı için büyük hataları daha sert cezalandırması."
+  },
+  {
+    "id": 73,
+    "question": "Ortalama Mutlak Hata (MAE) metriğinin en güçlü yönü nedir?",
+    "options": [
+      "A) Aykırı değerlere (outliers) karşı dirençli ve stabil bir ölçüm sunması.",
+      "B) Minimuma ulaşmak için her adımda atılan güncellemelerin büyüklüğünü.",
+      "C) Denetimli Öğrenme (Supervised Learning).",
+      "D) Veri noktalarının kendi küme merkezlerine olan uzaklıklarının kareleri toplamını."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Aykırı değerlere (outliers) karşı dirençli ve stabil bir ölçüm sunması."
+  },
+  {
+    "id": 74,
+    "question": "Ortalama Mutlak Yüzde Hata (MAPE) metriğinin temel kısıtlaması nedir?",
+    "options": [
+      "A) Gerçek değerler sıfıra çok yakın olduğunda sonucun matematiksel olarak belirsizleşmesi veya patlaması.",
+      "B) Koordinat eksenleri boyunca hareket edilerek hesaplanan mutlak farkların toplamı.",
+      "C) Az varyans taşıyan bileşenler (genellikle gürültü) atıldığı için sinyal/gürültü oranı artar.",
+      "D) İki kümenin elemanları arasındaki en büyük mesafeyi temel alarak."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Gerçek değerler sıfıra çok yakın olduğunda sonucun matematiksel olarak belirsizleşmesi veya patlaması."
+  },
+  {
+    "id": 75,
+    "question": "Otoenkodör türlerinden hangisi gürültülü veriden temiz veriyi öğrenmek için tasarlanmıştır?",
+    "options": [
+      "A) Veriyi merkezlemek (sütun ortalamasını her gözlemden çıkarmak).",
+      "B) Denoising Autoencoder.",
+      "C) Minimuma ulaşmak için her adımda atılan güncellemelerin büyüklüğünü.",
+      "D) Eksenlere dik hiperdüzlemler."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Denoising Autoencoder."
+  },
+  {
+    "id": 76,
+    "question": "Otoenkodörlerde (Autoencoders) 'Bottleneck' katmanının görevi nedir?",
+    "options": [
+      "A) Veriyi en düşük boyutlu (sıkıştırılmış) temsiline ($z$) indirgemek.",
+      "B) Eksenlere dik hiperdüzlemler.",
+      "C) Veriyi daha yüksek boyutlu bir özellik uzayına taşıyarak doğrusal olmayan sınırların çizilmesini sağlar.",
+      "D) Yüksek boyutlu veriyi topolojiyi koruyarak düşük boyutlu (genellikle 2D) bir haritaya indirgemek."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Veriyi en düşük boyutlu (sıkıştırılmış) temsiline ($z$) indirgemek."
+  },
+  {
+    "id": 77,
+    "question": "Otoenkodörlerde (Autoencoders) verinin en düşük boyutlu temsilinin bulunduğu katmana ne denir?",
+    "options": [
+      "A) Bottleneck (Darboğaz).",
+      "B) Çok sınıflı sınıflandırma problemlerinde çıkış katmanında.",
+      "C) Aykırı değerlere (outliers) karşı dirençli ve stabil bir ölçüm sunması.",
+      "D) Öklid (Euclidean) Mesafesi."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Bottleneck (Darboğaz)."
+  },
+  {
+    "id": 78,
+    "question": "PCA (Temel Bileşen Analizi) algoritmasının ilk adımı nedir?",
+    "options": [
+      "A) Veriyi en düşük boyutlu (sıkıştırılmış) temsiline ($z$) indirgemek.",
+      "B) Veriyi merkezlemek (sütun ortalamasını her gözlemden çıkarmak).",
+      "C) Sınıf sayısı eksi bir ($K-1$).",
+      "D) Çapraz Entropi (Cross-Entropy Loss)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Veriyi merkezlemek (sütun ortalamasını her gözlemden çıkarmak)."
+  },
+  {
+    "id": 79,
+    "question": "PCA algoritmasında özdeğerlerin ($\\lambda_i$) büyüklüğü neyi temsil eder?",
+    "options": [
+      "A) Hedef değişkendeki varyansın yüzde kaçının modeldeki özellikler tarafından açıklandığını.",
+      "B) İki küme arasındaki mesafeyi, kümelerin birbirine en yakın eleman çifti arasındaki mesafe olarak tanımlar.",
+      "C) İlgili bileşenin taşıdığı varyans miktarını.",
+      "D) $g(z) = \\max(0, z)$."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: İlgili bileşenin taşıdığı varyans miktarını."
+  },
+  {
+    "id": 80,
+    "question": "PCA formülasyonunda özvektörler arasındaki ilişki nasıldır?",
+    "options": [
+      "A) Minimuma ulaşmak için her adımda atılan güncellemelerin büyüklüğünü.",
+      "B) Birden fazla karar ağacını bootstrap örnekleme ve rastgele özellik seçimiyle birleştirmek.",
+      "C) Özvektörler birbirine ortogonaldir (diktir) ve aralarında korelasyon yoktur.",
+      "D) İki nokta arasındaki en kısa, doğrusal mesafe."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Özvektörler birbirine ortogonaldir (diktir) ve aralarında korelasyon yoktur."
+  },
+  {
+    "id": 81,
+    "question": "PCA'da açıklanan varyans oranı (EVR) nasıl hesaplanır?",
+    "options": [
+      "A) Gradyan Kaybolması (Vanishing Gradient).",
+      "B) Özelliklerin sınıf verildiğinde birbirinden tamamen bağımsız olduğunu varsaymasıdır.",
+      "C) İki nokta arasındaki en kısa, doğrusal mesafe.",
+      "D) $EVR(k) = \\frac{\\sum_{i=1}^k \\lambda_i}{\\sum_{i=1}^d \\lambda_i}$"
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: $EVR(k) = \\frac{\\sum_{i=1}^k \\lambda_i}{\\sum_{i=1}^d \\lambda_i}$"
+  },
+  {
+    "id": 82,
+    "question": "PCA'da en uygun bileşen sayısını ($k$) belirlemek için kullanılan görsel grafiğe ne ad verilir?",
+    "options": [
+      "A) XOR verisi doğrusal olarak ayrıştırılamaz, modellemek için doğrusal olmayan bir gizli katman gerekir.",
+      "B) Az varyans taşıyan bileşenler (genellikle gürültü) atıldığı için sinyal/gürültü oranı artar.",
+      "C) Scree Plot (Yamaç Grafiği).",
+      "D) Koordinat eksenleri boyunca mutlak farkların toplamı ile."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Scree Plot (Yamaç Grafiği)."
+  },
+  {
+    "id": 83,
+    "question": "PCA'da her bir ana bileşenin (PC) bir sonrakine göre geometrik konumu nedir?",
+    "options": [
+      "A) Denetimsiz (Unsupervised) Öğrenme.",
+      "B) Birbirlerine diktirler (Ortogonal).",
+      "C) Yüksek boyutlu veriyi topolojiyi koruyarak düşük boyutlu (genellikle 2D) bir haritaya indirgemek.",
+      "D) Özelliklerin sınıf verildiğinde birbirinden tamamen bağımsız olduğunu varsaymasıdır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Birbirlerine diktirler (Ortogonal)."
+  },
+  {
+    "id": 84,
+    "question": "PCA'da kovaryans matrisi $C$ hangi matematiksel formülle hesaplanır?",
+    "options": [
+      "A) Model karmaşıklığı arttıkça biasın azalması ancak varyansın artması durumunu.",
+      "B) Nöronları rastgele kapatarak aşırı öğrenmeyi (overfitting) engellemek için.",
+      "C) $C = \\frac{1}{N} \\tilde{X}^T \\tilde{X}$ (Burada $\\tilde{X}$ merkezlenmiş veridir).",
+      "D) $\\tilde{X} = X - \\mu$ (Her özellikten sütun ortalamasının çıkarılması)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: $C = \\frac{1}{N} \\tilde{X}^T \\tilde{X}$ (Burada $\\tilde{X}$ merkezlenmiş veridir)."
+  },
+  {
+    "id": 85,
+    "question": "PCA'da kullanılan 'Scree Plot' grafiği neyi belirlemek için kullanılır?",
+    "options": [
+      "A) SVD, PCA hesaplamasını sayısal olarak daha kararlı bir şekilde gerçekleştirmek için kullanılır.",
+      "B) Az varyans taşıyan bileşenler (genellikle gürültü) atıldığı için sinyal/gürültü oranı artar.",
+      "C) Özdeğerlerin sıralı dizilimindeki 'dirsek' noktasını bularak optimal bileşen sayısını ($k$) seçmek.",
+      "D) Aynı sınıfa ait örneklerin birbirine olabildiğince yakınlaşması."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Özdeğerlerin sıralı dizilimindeki 'dirsek' noktasını bularak optimal bileşen sayısını ($k$) seçmek."
+  },
+  {
+    "id": 86,
+    "question": "PCA'da verinin merkezlenmesi için hangi işlem yapılır?",
+    "options": [
+      "A) $\\tilde{X} = X - \\mu$ (Her özellikten sütun ortalamasının çıkarılması).",
+      "B) En yüksek bilgi kazancını (Information Gain) sağlayan özellik ve eşik değeri.",
+      "C) Entropi (H).",
+      "D) Dendrogram."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: $\\tilde{X} = X - \\mu$ (Her özellikten sütun ortalamasının çıkarılması)."
+  },
+  {
+    "id": 87,
+    "question": "PCA'nın geometrik yorumunda birinci temel bileşen (PC1) hangi yöndedir?",
+    "options": [
+      "A) Özellik Seçme (Feature Selection).",
+      "B) Özellik seçme orijinal değişkenlerin bir alt kümesini korurken, özellik çıkarma veriyi yeni yapay bileşenlere dönüştürür.",
+      "C) Yeterince geniş tek bir gizli katmana sahip MLP'nin her türlü sürekli fonksiyonu temsil edebileceğini.",
+      "D) Verideki maksimum varyansın olduğu doğrultudadır."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Verideki maksimum varyansın olduğu doğrultudadır."
+  },
+  {
+    "id": 88,
+    "question": "R-Kare ($R^2$) skoru neyi ifade eder?",
+    "options": [
+      "A) Hedef değişkendeki varyansın yüzde kaçının modeldeki özellikler tarafından açıklandığını.",
+      "B) t-SNE ve UMAP yöntemleri.",
+      "C) Özdeğerlerin sıralı dizilimindeki 'dirsek' noktasını bularak optimal bileşen sayısını ($k$) seçmek.",
+      "D) Overfitting (Aşırı Öğrenme)."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Hedef değişkendeki varyansın yüzde kaçının modeldeki özellikler tarafından açıklandığını."
+  },
+  {
+    "id": 89,
+    "question": "Random Forest'ta her düğümde rastgele $m < d$ özellik seçilmesinin temel amacı nedir?",
+    "options": [
+      "A) Ağaçlar arasındaki korelasyonu düşürerek topluluk varyansını azaltmak.",
+      "B) Bazı katsayıları tam olarak sıfıra eşitleyerek özellik seçimi (feature selection) yapar.",
+      "C) Veri noktalarının kendi küme merkezlerine olan uzaklıklarının kareleri toplamını.",
+      "D) Yoğunluk farklarına dayanarak karmaşık şekilli kümeleri bulabilmesi."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Ağaçlar arasındaki korelasyonu düşürerek topluluk varyansını azaltmak."
+  },
+  {
+    "id": 90,
+    "question": "Rastgele Orman (Random Forest) algoritmasındaki 'Bagging' mantığı nedir?",
+    "options": [
+      "A) Model çok basit olduğunda ve verideki temel yapıyı öğrenemediğinde (Yüksek Bias).",
+      "B) Veri noktaları arasındaki birleşme hiyerarşisini ve kümeler arasındaki mesafe ilişkilerini.",
+      "C) Eğitim verisinden tekrarlı rastgele örneklemler (bootstrap) alarak birden fazla ağaç eğitmek ve sonuçları oylamak.",
+      "D) Binary Cross-Entropy Loss."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Eğitim verisinden tekrarlı rastgele örneklemler (bootstrap) alarak birden fazla ağaç eğitmek ve sonuçları oylamak."
+  },
+  {
+    "id": 91,
+    "question": "Rastgele Orman (Random Forest) algoritmasının temel çalışma prensibi nedir?",
+    "options": [
+      "A) Denetimsiz (Unsupervised) Öğrenme.",
+      "B) Gerçek değerler sıfıra çok yakın olduğunda sonucun matematiksel olarak belirsizleşmesi veya patlaması.",
+      "C) Birden fazla karar ağacını bootstrap örnekleme ve rastgele özellik seçimiyle birleştirmek.",
+      "D) Dendrogram."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Birden fazla karar ağacını bootstrap örnekleme ve rastgele özellik seçimiyle birleştirmek."
+  },
+  {
+    "id": 92,
+    "question": "Regresyon modelinde $R^2 = 0.82$ sonucu ne anlama gelir?",
+    "options": [
+      "A) Veri noktaları arasındaki birleşme hiyerarşisini ve kümeler arasındaki mesafe ilişkilerini.",
+      "B) Model, verideki değişkenliğin $\\%82$'sini açıklayabilmektedir.",
+      "C) XOR verisi doğrusal olarak ayrıştırılamaz, modellemek için doğrusal olmayan bir gizli katman gerekir.",
+      "D) Küme içi varyasyonu (Inertia) minimize etmek."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Model, verideki değişkenliğin $\\%82$'sini açıklayabilmektedir."
+  },
+  {
+    "id": 93,
+    "question": "Regresyon modellerinde 'Artık Değer' (Residual) nedir?",
+    "options": [
+      "A) Koordinat eksenleri boyunca mutlak farkların toplamı ile.",
+      "B) Gerçek değer ($y_i$) ile tahmin edilen değer ($\\hat{y}_i$) arasındaki fark.",
+      "C) Modele eklenen alakasız değişkenler için penalizasyon uygulayarak 'yalancı başarıyı' engellediği için.",
+      "D) Hassasiyet (Precision) ve Duyarlılığın (Recall) harmonik ortalaması alınarak."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Gerçek değer ($y_i$) ile tahmin edilen değer ($\\hat{y}_i$) arasındaki fark."
+  },
+  {
+    "id": 94,
+    "question": "RMSE metriği MSE'ye göre neden daha yorumlanabilirdir?",
+    "options": [
+      "A) Model çok basit olduğunda ve verideki temel yapıyı öğrenemediğinde (Yüksek Bias).",
+      "B) Aşırı öğrenme (Overfitting/Yüksek Varyans).",
+      "C) Karekök işlemi sayesinde hata birimini orijinal verinin birimine döndürdüğü için.",
+      "D) İki nokta arasındaki en kısa, doğrusal mesafe."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Karekök işlemi sayesinde hata birimini orijinal verinin birimine döndürdüğü için."
+  },
+  {
+    "id": 95,
+    "question": "Sigmoid fonksiyonunun türevinin çok küçük olması hangi eğitim problemine yol açar?",
+    "options": [
+      "A) Karekök işlemi sayesinde hata birimini orijinal verinin birimine döndürdüğü için.",
+      "B) Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi.",
+      "C) Model, verideki değişkenliğin $\\%82$'sini açıklayabilmektedir.",
+      "D) Gradyan Kaybolması (Vanishing Gradient)."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Gradyan Kaybolması (Vanishing Gradient)."
+  },
+  {
+    "id": 96,
+    "question": "Sinir ağlarında 'Batch Normalization' neden kullanılır?",
+    "options": [
+      "A) Ağaçlar arasındaki korelasyonu düşürerek topluluk varyansını azaltmak.",
+      "B) Eğitimi hızlandırmak ve gradyan sorunlarını (vanishing gradient) azaltmak için katman girişlerini normalize eder.",
+      "C) Yüksek varyans ve aşırı öğrenme (overfitting).",
+      "D) Bir düğümdeki verilerin sınıfsal homojenliğini (karışıklığını)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Eğitimi hızlandırmak ve gradyan sorunlarını (vanishing gradient) azaltmak için katman girişlerini normalize eder."
+  },
+  {
+    "id": 97,
+    "question": "Sinir ağlarında 'Dropout' tekniği neden kullanılır?",
+    "options": [
+      "A) Çapraz Entropi (Cross-Entropy Loss).",
+      "B) $a = \\phi(\\sum w_j x_j + b)$",
+      "C) Nöronları rastgele kapatarak aşırı öğrenmeyi (overfitting) engellemek için.",
+      "D) Hassasiyet (Precision) ve Duyarlılığın (Recall) harmonik ortalaması alınarak."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Nöronları rastgele kapatarak aşırı öğrenmeyi (overfitting) engellemek için."
+  },
+  {
+    "id": 98,
+    "question": "Sinir ağlarında 'ReLU' aktivasyon fonksiyonunun tanımı nedir?",
+    "options": [
+      "A) $g(z) = \\max(0, z)$.",
+      "B) $C = \\frac{1}{N} \\tilde{X}^T \\tilde{X}$ (Burada $\\tilde{X}$ merkezlenmiş veridir).",
+      "C) Çıkış katmanındaki hatayı zincir kuralı kullanarak geriye doğru dağıtmak ve ağırlıkları güncellemek.",
+      "D) Binary Cross-Entropy Loss."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: $g(z) = \\max(0, z)$."
+  },
+  {
+    "id": 99,
+    "question": "Sinir ağlarında 'Softmax' fonksiyonu genellikle hangi katmanda kullanılır?",
+    "options": [
+      "A) Gradyan Kaybolması (Vanishing Gradient).",
+      "B) Minimuma ulaşmak için her adımda atılan güncellemelerin büyüklüğünü.",
+      "C) Çok sınıflı sınıflandırma problemlerinde çıkış katmanında.",
+      "D) Ölçeği büyük olan değişkenlerin varyans hesaplamasını domine etmesini engellemek için."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Çok sınıflı sınıflandırma problemlerinde çıkış katmanında."
+  },
+  {
+    "id": 100,
+    "question": "Sinir ağlarında katmanlar boyunca verinin işlenerek tahmin üretilmesi sürecine ne ad verilir?",
+    "options": [
+      "A) Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi.",
+      "B) Öklid (Euclidean) Mesafesi.",
+      "C) İleri Besleme (Forward Propagation).",
+      "D) Adaptif öğrenme hızı kullanarak her parametre için güncellemeyi ayarlar."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: İleri Besleme (Forward Propagation)."
+  },
+  {
+    "id": 101,
+    "question": "Sinir ağlarında negatif değerleri sıfıra eşitleyen en yaygın aktivasyon fonksiyonu hangisidir?",
+    "options": [
+      "A) ReLU ($g(z) = \\max(0, z)$).",
+      "B) Eğitimi hızlandırmak ve gradyan sorunlarını (vanishing gradient) azaltmak için katman girişlerini normalize eder.",
+      "C) Boyut arttıkça noktalar arası mesafe birbirine çok benzer hale gelir ve en yakın komşu kavramı anlamını yitirir.",
+      "D) Daha hızlı çalışması ve yeni veri noktalarının projeksiyonuna izin vermesi."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: ReLU ($g(z) = \\max(0, z)$)."
+  },
+  {
+    "id": 102,
+    "question": "SOM (Kendi Kendini Organize Eden Haritalar) sinir ağı mimarisinin temel işlevi nedir?",
+    "options": [
+      "A) Bazı katsayıları tam olarak sıfıra eşitleyerek özellik seçimi (feature selection) yapar.",
+      "B) Yüksek boyutlu veriyi topolojiyi koruyarak düşük boyutlu (genellikle 2D) bir haritaya indirgemek.",
+      "C) Gerçek değer ($y_i$) ile tahmin edilen değer ($\\hat{y}_i$) arasındaki fark.",
+      "D) Kernel PCA (Çekirdek Tabanlı PCA)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Yüksek boyutlu veriyi topolojiyi koruyarak düşük boyutlu (genellikle 2D) bir haritaya indirgemek."
+  },
+  {
+    "id": 103,
+    "question": "SVD (Tekil Değer Ayrışımı) ile PCA arasındaki ilişki nedir?",
+    "options": [
+      "A) SVD, PCA hesaplamasını sayısal olarak daha kararlı bir şekilde gerçekleştirmek için kullanılır.",
+      "B) Model çok basit olduğunda ve verideki temel yapıyı öğrenemediğinde (Yüksek Bias).",
+      "C) Bottleneck (Darboğaz).",
+      "D) Model karmaşıklığı arttıkça biasın azalması ancak varyansın artması durumunu."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: SVD, PCA hesaplamasını sayısal olarak daha kararlı bir şekilde gerçekleştirmek için kullanılır."
+  },
+  {
+    "id": 104,
+    "question": "SVM algoritmasında 'Soft Margin' kullanımı neyi amaçlar?",
+    "options": [
+      "A) Gerçek değerler sıfıra çok yakın olduğunda sonucun matematiksel olarak belirsizleşmesi veya patlaması.",
+      "B) Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi.",
+      "C) Entropi (H).",
+      "D) Verideki bazı gürültülü noktaların yanlış sınıfta kalmasına izin vererek daha genel bir karar sınırı oluşturmayı."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Verideki bazı gürültülü noktaların yanlış sınıfta kalmasına izin vererek daha genel bir karar sınırı oluşturmayı."
+  },
+  {
+    "id": 105,
+    "question": "SVM'de 'Kernel Trick' ne işe yarar?",
+    "options": [
+      "A) Modele eklenen anlamsız değişkenler için cezalandırma yaparak sahte başarıyı engellediği için.",
+      "B) Karar hiperdüzlemi ile en yakın veri noktaları arasındaki mesafe.",
+      "C) Veriyi daha yüksek boyutlu bir özellik uzayına taşıyarak doğrusal olmayan sınırların çizilmesini sağlar.",
+      "D) Çok sayıda skaler işlemi tek bir matris çarpımına dönüştürerek donanım (GPU) hızlandırması sağlar."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Veriyi daha yüksek boyutlu bir özellik uzayına taşıyarak doğrusal olmayan sınırların çizilmesini sağlar."
+  },
+  {
+    "id": 106,
+    "question": "SVM'de veriyi doğrusal olmayan bir üst uzaya taşıyarak ayrıştırmayı sağlayan yönteme ne denir?",
+    "options": [
+      "A) $a = \\phi(\\sum w_j x_j + b)$",
+      "B) Kernel Trick (Çekirdek Yöntemi).",
+      "C) Özellik Seçme (Feature Selection).",
+      "D) Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Kernel Trick (Çekirdek Yöntemi)."
+  },
+  {
+    "id": 107,
+    "question": "Sınıflandırma (Classification) problemi makine öğrenmesinin hangi kategorisine girer?",
+    "options": [
+      "A) Denetimli Öğrenme (Supervised Learning).",
+      "B) Hedef değişkendeki varyansın yüzde kaçının modeldeki özellikler tarafından açıklandığını.",
+      "C) Gerçek değerler sıfıra çok yakın olduğunda sonucun matematiksel olarak belirsizleşmesi veya patlaması.",
+      "D) Aynı sınıfa ait örneklerin birbirine olabildiğince yakınlaşması."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Denetimli Öğrenme (Supervised Learning)."
+  },
+  {
+    "id": 108,
+    "question": "Sınıflandırma performansını ölçen Karmaşıklık Matrisi'nde (Confusion Matrix) FN neyi temsil eder?",
+    "options": [
+      "A) Veri noktaları arasındaki birleşme hiyerarşisini ve kümeler arasındaki mesafe ilişkilerini.",
+      "B) Yanlış Negatif (Gerçekte pozitif olanın negatif tahmin edilmesi).",
+      "C) Karar hiperdüzlemi ile en yakın veri noktaları arasındaki mesafe.",
+      "D) Özelliklerin sınıf verildiğinde birbirinden tamamen bağımsız olduğunu varsaymasıdır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Yanlış Negatif (Gerçekte pozitif olanın negatif tahmin edilmesi)."
+  },
+  {
+    "id": 109,
+    "question": "Sınıflandırma probleminde modelin çıktı olarak ürettiği olasılığı 0 veya 1'e dönüştüren fonksiyona ne denir?",
+    "options": [
+      "A) Yeterince geniş tek bir gizli katmana sahip MLP'nin her türlü sürekli fonksiyonu temsil edebileceğini.",
+      "B) Bağımsız değişkenlerin, bağımlı değişkendeki varyansın ne kadarını açıkladığını.",
+      "C) Sigmoid Fonksiyonu: $\\sigma(z) = \\frac{1}{1 + e^{-z}}$.",
+      "D) Özellik Seçme (Feature Selection)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Sigmoid Fonksiyonu: $\\sigma(z) = \\frac{1}{1 + e^{-z}}$."
+  },
+  {
+    "id": 110,
+    "question": "t-SNE algoritması yüksek boyuttaki benzerlikleri düşük boyuta taşırken hangi olasılık dağılımını kullanır?",
+    "options": [
+      "A) t-dağılımı (Student's t-distribution).",
+      "B) Aynı sınıfa ait örneklerin birbirine olabildiğince yakınlaşması.",
+      "C) Model çok basit olduğunda ve verideki temel yapıyı öğrenemediğinde (Yüksek Bias).",
+      "D) Dendrogram."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: t-dağılımı (Student's t-distribution)."
+  },
+  {
+    "id": 111,
+    "question": "UMAP algoritmasının t-SNE'ye göre en büyük pratik avantajı nedir?",
+    "options": [
+      "A) En yüksek bilgi kazancını (Information Gain) sağlayan özellik ve eşik değeri.",
+      "B) Daha hızlı çalışması ve yeni veri noktalarının projeksiyonuna izin vermesi.",
+      "C) Çapraz Entropi (Cross-Entropy Loss).",
+      "D) Veri noktalarının kendi küme merkezlerine olan uzaklıklarının kareleri toplamını."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Daha hızlı çalışması ve yeni veri noktalarının projeksiyonuna izin vermesi."
+  },
+  {
+    "id": 112,
+    "question": "UMAP yönteminin t-SNE'ye göre avantajı nedir?",
+    "options": [
+      "A) Eğitim aşamasında bir model kurmayıp, tüm hesaplamayı tahmin anında yaptığı için.",
+      "B) Gerçek değerler sıfır veya sıfıra çok yakın olduğunda.",
+      "C) Gaussian Naive Bayes.",
+      "D) Daha hızlı çalışması ve yeni veri noktalarını mevcut projeksiyona dahil edebilmesidir."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Daha hızlı çalışması ve yeni veri noktalarını mevcut projeksiyona dahil edebilmesidir."
+  },
+  {
+    "id": 113,
+    "question": "Vektörleştirme (Vectorization) sinir ağı eğitiminde neden önemlidir?",
+    "options": [
+      "A) Çok sayıda skaler işlemi tek bir matris çarpımına dönüştürerek donanım (GPU) hızlandırması sağlar.",
+      "B) Özellik Seçme (Feature Selection).",
+      "C) Hedef değişkendeki varyansın yüzde kaçının modeldeki özellikler tarafından açıklandığını.",
+      "D) Sınıf sayısı $K$ olmak üzere, en fazla $K-1$ bileşen üretilebilir."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Çok sayıda skaler işlemi tek bir matris çarpımına dönüştürerek donanım (GPU) hızlandırması sağlar."
+  },
+  {
+    "id": 114,
+    "question": "Veriyi 2D veya 3D'de görselleştirmek için t-SNE'nin kullandığı temel benzerlik ölçütü nedir?",
+    "options": [
+      "A) Dendrogram.",
+      "B) Koşullu olasılıklar tabanlı benzerlik (t-dağılımı).",
+      "C) SVD, PCA hesaplamasını sayısal olarak daha kararlı bir şekilde gerçekleştirmek için kullanılır.",
+      "D) Verideki bazı gürültülü noktaların yanlış sınıfta kalmasına izin vererek daha genel bir karar sınırı oluşturmayı."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Koşullu olasılıklar tabanlı benzerlik (t-dağılımı)."
+  },
+  {
+    "id": 115,
+    "question": "XOR problemi neden tek katmanlı (doğrusal) modellerle çözülemez?",
+    "options": [
+      "A) Hedef değişkendeki varyansın yüzde kaçının modeldeki özellikler tarafından açıklandığını.",
+      "B) XOR verisi doğrusal olarak ayrıştırılamaz, modellemek için doğrusal olmayan bir gizli katman gerekir.",
+      "C) Çıkış katmanındaki hatayı zincir kuralı kullanarak geriye doğru dağıtmak ve ağırlıkları güncellemek.",
+      "D) Çok sayıda skaler işlemi tek bir matris çarpımına dönüştürerek donanım (GPU) hızlandırması sağlar."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: XOR verisi doğrusal olarak ayrıştırılamaz, modellemek için doğrusal olmayan bir gizli katman gerekir."
+  },
+  {
+    "id": 116,
+    "question": "Yapay sinir ağlarında 'Dropout' yönteminin işlevi nedir?",
+    "options": [
+      "A) Daha hızlı çalışması ve yeni veri noktalarını mevcut projeksiyona dahil edebilmesidir.",
+      "B) Parametre güncellemeleri sırasında atılan adımların büyüklüğünü.",
+      "C) Eğitim sırasında nöronları rastgele kapatarak modelin belirli nöronlara aşırı bağımlı olmasını (overfitting) engellemek.",
+      "D) Grup içi benzerliği en yüksek, gruplar arası farklılığı en fazla olacak şekilde veriyi alt gruplara ayırmak."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Eğitim sırasında nöronları rastgele kapatarak modelin belirli nöronlara aşırı bağımlı olmasını (overfitting) engellemek."
+  },
+  {
+    "id": 117,
+    "question": "Yapay sinir ağlarında bir nöronun temel matematiksel denklemi nedir?",
+    "options": [
+      "A) Yeterince geniş tek bir gizli katmana sahip MLP'nin her türlü sürekli fonksiyonu temsil edebileceğini.",
+      "B) $a = \\phi(\\sum w_j x_j + b)$ (Burada $\\phi$ aktivasyon fonksiyonudur).",
+      "C) İki küme arasındaki mesafeyi, kümelerin birbirine en yakın eleman çifti arasındaki mesafe olarak tanımlar.",
+      "D) Az varyans taşıyan bileşenler (genellikle gürültü) atıldığı için sinyal/gürültü oranı artar."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: $a = \\phi(\\sum w_j x_j + b)$ (Burada $\\phi$ aktivasyon fonksiyonudur)."
+  },
+  {
+    "id": 118,
+    "question": "Yapay sinir ağlarında tek bir nöronun matematiksel denklemi nedir?",
+    "options": [
+      "A) $a = \\phi(\\sum w_j x_j + b)$",
+      "B) Ağırlıkların karelerinin toplamını ($\\lambda \\cdot \\sum w_j^2$).",
+      "C) İki nokta arasındaki en kısa, doğrusal mesafe.",
+      "D) Nöronları rastgele kapatarak aşırı öğrenmeyi (overfitting) engellemek için."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: $a = \\phi(\\sum w_j x_j + b)$"
+  },
+  {
+    "id": 119,
+    "question": "Yüksek boyutlu veriyi 2D veya 3D uzayda görselleştirmek için en sık tercih edilen doğrusal olmayan yöntemler hangileridir?",
+    "options": [
+      "A) t-SNE ve UMAP yöntemleri.",
+      "B) Bir düğümdeki verilerin sınıfsal homojenliğini (karışıklığını).",
+      "C) Eğitim sırasında nöronları rastgele kapatarak modelin belirli nöronlara aşırı bağımlı olmasını (overfitting) engellemek.",
+      "D) Aykırı değerlere (outliers) karşı dirençli ve stabil bir ölçüm sunması."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: t-SNE ve UMAP yöntemleri."
+  },
+  {
+    "id": 120,
+    "question": "Çok sınıflı sınıflandırma problemlerinde kullanılan hata fonksiyonu hangisidir?",
+    "options": [
+      "A) Veriyi farklı parçalara bölerek modelin genelleme yeteneğini daha güvenilir bir şekilde ölçmek.",
+      "B) $C = \\frac{1}{N} \\tilde{X}^T \\tilde{X}$ (Burada $\\tilde{X}$ merkezlenmiş veridir).",
+      "C) Gerçek değer ($y_i$) ile tahmin edilen değer ($\\hat{y}_i$) arasındaki fark.",
+      "D) Çapraz Entropi (Cross-Entropy Loss)."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Çapraz Entropi (Cross-Entropy Loss)."
+  },
+  {
+    "id": 121,
+    "question": "Özelliklerin dönüştürülerek yeni yapay bileşenlerin üretildiği işleme ne ad verilir?",
+    "options": [
+      "A) Eğitim sırasında nöronları rastgele kapatarak modelin belirli nöronlara aşırı bağımlı olmasını (overfitting) engellemek.",
+      "B) Boyut Düşürme (Dimensionality Reduction).",
+      "C) Denetimli Öğrenme (Supervised Learning).",
+      "D) Yüksek boyutlu veriyi topolojiyi koruyarak düşük boyutlu (genellikle 2D) bir haritaya indirgemek."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Boyut Düşürme (Dimensionality Reduction)."
+  }
+]

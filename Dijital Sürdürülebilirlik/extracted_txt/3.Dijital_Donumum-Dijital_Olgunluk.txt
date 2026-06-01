@@ -1,0 +1,144 @@
+--- PAGE 1 ---
+DİJİTAL DÖNÜŞÜM 
+DİJİTAL OLGUNLUK
+Taner TURGUT
+03.03.2026
+
+--- PAGE 2 ---
+OLGUNLUK VE OLGUNLUK MODELİ NEDİR?
+Olgunluk modelleri, bir kuruluşun yeteneklerinin öngörülen, istenen veya mantıklı bir 
+süreç sonucunda nasıl geliştiğine görmeye yardımcı olan yaklaşımlardır.
+Olgunluk modellerinin büyük bir çoğu 
+Deming (2018) ‘in Kalite Yönetim Sistemleri içerisinde belirlediği 
+PUKÖ (Planla-Uygula-Kontrol Et-Önlem Al) sürecini esas almaktadır (Mullaly, 2014). 
+Olgunluk modellerine ilişkin kapsayıcı tanımların 
+farklı bakış açılarıyla şekillendiği görülmektedir. →
+--- PAGE 3 ---
+DİJİTAL OLGUNLUK TANIMLARI
+Paulk, Curtis, Chrissis, ve Weber (1993), Deming’in temel yaklaşımı üzerine 
+çerçevelerini belirlemişler ve yazılım yeteneklerini arttırmak için kuruluşların 
+yazılım geliştirme süreçlerini iyileştiren aşamalar olarak olgunluk modelini 
+tanımlamıştır. 
+Klimko (2001), olgunluk durumunu bir işletmede yer alan bir varlığın zaman 
+içindeki gelişim süreci üzerinden açıklamıştır. Bu bağlamda varlık, fiziki 
+sermaye veya bir örgütsel işlev olabilir. 
+Pullen (2007) ise olgunluk modelini, gelişim sürecinin farklı aşamalarında 
+etkili işlemlerin özelliklerini tanımlayan, yapılandırılmış öğeler koleksiyonu 
+olarak betimlemiştir.
+--- PAGE 4 ---
+DİJİTAL OLGUNLUK NEDİR?
+Dijitalleşme olgusunun sanayi ve üretim sektöründe karşılığını bulduğu popüler kavram ise 
+Sanayi 4.0 olduğunu belirtmiştik. 
+Literatürde de Dijital olgunluk modellerini sanayi 4.0 kavramı üzerinden inceleyen modellerin 
+ağırlıkta olduğu görülmektedir. 
+Barata ve Cunha (2017) tarafından yürütülen çalışmada Sanayi 4.0 uygulamaları için belirlenen 
+olgunluk modellerini iki kategori altında incelemiştir. 
+❖Birinci grupta ticari işletmeler tarafından geliştirilmiş olgunluk modelleri yer alırken
+❖İkinci grubu akademik kurum ve kişiler tarafından geliştirilmiş olgunluk modelleri 
+oluşturmuştur.
+--- PAGE 5 ---
+DİJİTAL OLGUNLUK MODELLERİ HAKKINDA
+Dijitalleşmenin bütüncül etkisi, optimum dijitalleştirme stratejisinin 
+belirlenmesini şirket için oldukça kritik hale getirmektedir. Bu noktada ‘Dijital 
+Olgunluk modelleri’ ön plana çıkmaktadır. İşletmenin dijital olgunluk seviyesinin 
+belirlenmesi için özel modeller kullanılmaktadır (Bley, Leyh, ve Schäffer, 2016). 
+Olgunluk modelleri 
+• farklı sektörlere uyarlanmış ulusal politikalar ve özel sektörün oluşturmuş olduğu yeni 
+varyantlarla zengin bir literatüre sahiptir. 
+• Genel veya özel bir alana ait pek çok olgunluk modeli olduğunu ortaya koymaktadır. 
+• Bu modeller sadece genel bir bakış sağlamakla kalmayıp aynı zamanda dijitalleşme 
+konularında optimizasyon potansiyeliolan belirli alanları da işaret etmektedir. 
+--- PAGE 6 ---
+DİJİTAL OLGUNLUK MODELİ ÖRNEĞİ – 1 
+Mueller vd. (2006) dijital olgunluk seviyesini üç ana boyutta incelemiştir. 
+Bu boyutlar sırasıyla:
+1.
+ Veri 
+Olgunluğu: Dijital yöntemler ve dijital işlemler verilere 
+dayandığından verilerin zamanında ve uygun olup olmadığı kontrol 
+edilmelidir.
+2.
+ Dijital 
+Ürün Olgunluğu: Ürünün dijital modeli ile ürünün işlevsel 
+davranışı ve pazar için gerekli özellikleri arasında karşılaştırması olarak 
+değerlendirilir.
+3.
+ Mühendislik 
+Süreci Olgunluğu: Geliştirme sürecinin kalitesi, farklı 
+işletme içi entegrasyonları da dikkate alarak açıklanmaktadır.
+--- PAGE 7 ---
+DİJİTAL OLGUNLUK MODELİ ÖRNEĞİ – 2
+5 Başlıklı Dijital Olgunluk Modeli
+1.
+ Strateji 
+ve Planlama: Şirket rekabetçi dinamiklere göre yeni dijital 
+dönüşüm olanakları tespit edip iş stratejisini dijital kanallar üzerinden 
+yönetip en iyi şekilde tepki verebilmelidir.
+2.
+ İş 
+ve Liderlik: Şirket değer yaratma sürecini müşterinin ihtiyaçlarına göre 
+düzenler ayrıca net bir dijital vizyona da sahip olmalıdır.
+3.
+ Süreç 
+Yönetimi: Süreçler etkinlik ve verimlilikte kazanımlar elde edecek 
+biçimde dijital yöntemlere göre şekillendirilmelidir.
+--- PAGE 8 ---
+4.
+ Teknik Yeterlilik: Mevcut teknolojilerin şirket üzerindeki etkisi ortaya 
+konulmalı bununla birlikte yeni teknolojilerin faydaları ve 
+uygulanabilirlikleri açısından test edilmelidir.
+5.
+ Çalışanlar ve Kurum Kültürü: Çalışanlar arasındaki iş birliği dijital 
+araçlarla desteklenmelidir. Müşteriler arasında iletişim ve müşteri 
+deneyimi analiz edilmeli ve sürekli geliştirilmelidir.
+DİJİTAL OLGUNLUK MODELİ ÖRNEĞİ -2
+--- PAGE 9 ---
+DİJİTAL OLGUNLUK MODELİ ÖRNEĞİ -3 
+Berman ve Bell (2011) tarafından geliştirilen IBM Olgunluk Modeli “Müşteriye 
+önerilen değeri yeniden şekillendirme” ve “İş modelini yeniden şekillendirme” 
+olmak üzere iki farklı alt boyutu aynı anda ölçen 6 farklı alt boyuta dayanmaktadır.
+1.
+ Analitik Görü: Kestirimci tahmine ve ileri düzey veri analizine dayalı bilgi ve 
+analizler tüm süreçler için aktif olarak kullanılmalıdır.
+2.
+ Dijital olarak etkinleştirilen tedarik zinciri: Tedarik zincirinin tüm unsurları, 
+dijital olanaklar kullanılarak optimize edilmeli ve şirketler arasında entegre 
+edilmelidir. 
+3.
+ Ağa Bağlı İş Gücü: İş fırsatlarını değerlendirmek için gereken dijital yetkinlik 
+becerileri sağlanmalıdır
+--- PAGE 10 ---
+DİJİTAL OLGUNLUK MODELİ ÖRNEĞİ - 3
+4.
+ İş Modeli İnovasyonu: Her seviyede müşteri değerinin oluşturulması temel 
+yetkinlik olarak Kabul eden yeni kurumsal işi modellerinin tasarımı ve 
+entegrasyonu ile gelir akışı yapısının oluşturulması içerir.
+5.
+ Müşteri ve Toplum İş birliği: Müşteri odaklılığı işletmenin tüm bölümlerine 
+yaygınlaştırmak ve sosyal ağ araçlarını ve yeteneklerini müşteri ile yeni 
+etkileşim olanakları için kullanmak
+6.
+ Kanallar arası bütünleşme: Müşterilerle dijital ve fiziksel temas noktaları 
+şirkete bütünleştirilmelidir
+--- PAGE 11 ---
+DİJİTAL OLGUNLUK DEĞERLENDİRME ÖRNEĞİ
+Schumacher vd. (2016) 
+Radar Diyagramı ile Endüstri 4.0 Olgunluk 
+Boyutlarının Değerlendirilmesi
+Schumacher ve diğer. (2016) tarafından 
+geliştirilen modelde işletmelerin Endüstri 4.0 
+açısından olgunluk ve hazırlıklarının ölçümüne 
+yönelik bir ölçek geliştirilmiştir. 
+5’li Likert ölçeğine dayanan anket ile toplanan 
+bilgilerin analiz edilmesi sonucunda, 
+9 farklı boyutta (strateji, liderlik, ürün, müşteri, 
+operasyon, kültür, insanlar, yönetim, teknoloji) 
+değerlendirme yapılarak radar diyagramı ile bir 
+bakışta işletmenin seviyesini gösterecek bir sonuca 
+ulaşılması hedeflenmiştir.
+--- PAGE 12 ---
+TEŞEKKÜRLER
+“Dijital dönüşüm ancak ölçtüğümüz kadar 
+yönetilebilir; 
+dijital olgunluk ise geleceği 
+öngörebildiğimiz tek pusuladır.”

@@ -1,0 +1,50 @@
+İstem (Prompt) mühendisliğinin temel amacı nedir?,"Yapay zekâ ile etkileşimi tahminden çıkarıp, tekrarlanabilir bir mühendislik disiplinine dönüştürmektir."
+İstem mühendisliğindeki 'Temel Denklem' nedir?,Girdi = Çıktı.
+TÜBİTAK'a göre yapay zekâdan en verimli çıktıyı almak için ne yapılması gerekir?,Komut ve yönlendirmelerin bilinçli şekilde tasarlanması gerekir.
+Bir istemin anatomisinde 'Sistem Talimatları' (System Instructions) neyi belirler?,"Modelin benimseyeceği rolü, stili ve tonu belirler."
+İstem bileşenlerinden hangisi modelin referans alacağı arka plan bilgisini sunar?,Bağlam (Contextual Info).
+İstemde 'Görev' (Task) bileşeninin tanımı nedir?,Modelden beklenen temel işlem veya sorudur.
+İstenen formatı gösteren doğru cevap şablonlarına ne ad verilir?,Örnekler (Few-shot Examples).
+İteratif İyileştirme Döngüsü'nün ilk adımı nedir?,İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla).
+İteratif İyileştirme Döngüsü'nde komutun açık ve spesifik yazıldığı aşama hangisidir?,Yapılandır (3. Adım).
+C.R.A.F.T. formülündeki 'C' harfi neyi temsil eder?,"Context (Bağlam): Rol, hedef kitle ve ton."
+C.R.A.F.T. formülündeki 'R' harfi (Request) neyi ifade eder?,Ulaşılması gereken spesifik hedefi ifade eder.
+C.R.A.F.T. formülünde adım adım talimatların yer aldığı bölüm hangisidir?,Actions (Eylemler).
+C.R.A.F.T. formülündeki 'F' (Frame) bileşeninin görevi nedir?,Nelerin dışarıda bırakılacağını (sınırları) belirlemektir.
+C.R.A.F.T. formülündeki 'T' (Template) neyi tanımlar?,Çıktının formatını (örneğin tablo veya liste) tanımlar.
+LLM'lere bir rol (persona) vermek neden halüsinasyon oranını düşürür?,"Rol ve bağlam kombinasyonu, modelin eğitim verisindeki ilgili ve doğru bilgilere odaklanmasını sağlar."
+Kalite Kontrol için kullanılan C.L.E.A.R. listesindeki 'Concise' ne anlama gelir?,"İstemin gereksiz kelimelerden arındırılmış, kısa ve öz olmasıdır."
+C.L.E.A.R. listesinde 'Explicit' (Açık) kriteri neyi test eder?,Çıktı yönlendirmelerinin netliğini test eder (Örn: '50 kelimeyi geçme').
+C.L.E.A.R. listesindeki 'Reflective' (Düşündürücü) kriterinin odağı nedir?,Cevabın mantıklı olup olmadığı ve halüsinasyon içerip içermediğidir.
+Sentez Matrisi'ne göre CRAFT hangi aşamaya odaklanır?,Üretim (Creation) aşamasına odaklanır.
+Sentez Matrisi'ne göre CLEAR listesinin temel amacı nedir?,"Çıktıyı denetlemek, mantıksal hataları bulmak ve komutu rafine etmektir."
+İstem Olgunluk Eğrisi'nde (Maturity Curve) en düşük çaba gerektiren yöntem hangisidir?,Doğrudan Komut (Zero-Shot).
+Düşünce Zinciri (Chain of Thought) tekniğinin ana avantajı nedir?,Matematiksel veya analitik hataları sıfıra indirerek karmaşık mantık yürütmeyi sağlamasıdır.
+Hiçbir örnek vermeden doğrudan görev tanımı yapmaya ne ad verilir?,Zero-Shot Prompting.
+Modele birkaç örnek vererek istenen formatı ve tonu öğretme tekniği nedir?,Few-Shot Prompting.
+Düşünce Zinciri (CoT) yöntemini tetikleyen 'sihirli kelime' öbeği nedir?,'Adım adım düşün' veya 'Let's think step by step'.
+Karmaşık bir problemi çözmesi istenen AI'da CoT kullanılmazsa ne gibi bir risk oluşur?,Modelin mantıksal adımları atlayıp halüsinasyon görme riski artar.
+Sınırlı bağlam penceresi olan modellerde sistemin boğulmasını önleyen taktik hangisidir?,Komutu Parçalara Bölme (Chunking).
+Metin üretimi senaryolarında odaklanılması gereken temel parametreler nelerdir?,"Ton, stil ve uzunluk."
+Kod yazma istemlerinde kritik bir parametre olarak ne belirtilmelidir?,Spesifik hata mesajları (Örn: NullPointerException) ve nedenleri.
+Görsel üretimi istemlerinde 'soyut umut' yerine ne tür ifadeler kullanılmalıdır?,"Somut detaylar (Örn: 'Parlak renkli, akan şekiller')."
+Aynı soruyu birden fazla kez sorup en tutarlı cevabı seçme tekniğine ne ad verilir?,Self-Consistency (Öz-Tutarlılık).
+Self-Consistency tekniği en çok hangi durumlarda kullanılmalıdır?,"Kritik kararlar, matematik problemleri veya belirsizlik olan durumlarda."
+Çıktının makine tarafından okunabilir olması için hangi format kısıtlaması önerilir?,JSON formatı.
+İstem mühendisliğinde 'Kütüphane Tutun' tavsiyesinin amacı nedir?,"İşe yarayan istemleri kaydedip, etiketleyip yeniden kullanmaktır."
+A/B Testi istem mühendisliğinde nasıl uygulanır?,Farklı istem varyasyonlarını karşılaştırarak hangisinin daha iyi sonuç verdiğini takip ederek uygulanır.
+Yaygın bir hata olan 'Bağlam Eksikliği' nasıl düzeltilir?,AI'ya neyin 'iyi' olduğunu anlaması için spesifik kullanım alanı (Örn: SaaS startup) belirtilerek düzeltilir.
+Çok karmaşık istemlerin yaratacağı kafa karışıklığını önlemek için ne yapılmalıdır?,Görevi küçük parçalara bölüp adım adım sormak gerekir.
+CRAFTED projesindeki 'E' harfi (Example) neyi ifade eder?,İsteme en az bir adet few-shot örneği dahil edilmesini ifade eder.
+Bir istemin 'Adaptive' (Uyarlanabilir) olması ne anlama gelir?,Yapay zekânın verdiği cevaba göre komutun yeniden ayarlanmış olmasıdır.
+Persona tasarımında modelin eğitim verisindeki hangi metinlere ağırlık vermesi beklenir?,Verilen role benzer metinlere ağırlık vermesi beklenir.
+İstemde 'Frame' (Sınırlar) kullanımına bir örnek veriniz.,"'Sadece ekonomik etkilere odaklan, siyasi olayları hariç tut.'"
+Düşünce Zinciri (CoT) yönteminde matematiksel işlem hatası nasıl azaltılır?,Modelden karmaşık mantığı adım adım çözmesi istenerek azaltılır.
+Few-Shot Prompting tekniği ne zaman tercih edilmelidir?,Modelin belirli bir formatı veya tonu taklit etmesi istendiğinde tercih edilmelidir.
+İstem mühendisliğinde 'Belirsiz Sonuç' almanın en temel sebebi nedir?,Komutun çok belirsiz ve aşırı genel olmasıdır.
+Sentez Matrisi'nde 'Denetçinin Kontrol Listesi' hangi kısaltma ile temsil edilir?,CLEAR.
+C.L.E.A.R. kriterlerinden 'Logical' (Mantıksal) neyi sorgular?,Kavramların doğal ve doğru bir sırayla sunulup sunulmadığını sorgular.
+Chunking (Parçalara Bölme) tekniğinde her adımdan sonra modelden ne beklenir?,Modelin bir sonraki komut için beklemesi ve adım adım ilerlemesi beklenir.
+Görsel üretimi istemlerinde çözünürlük ve sanat akımı hangi kategoride değerlendirilir?,Odak noktası (Focus) kategorisinde değerlendirilir.
+İstem mühendisliği neden bir 'Bilimsel Metot' olarak tanımlanır?,"İhtiyaç belirleme, bağlam sunma, yapılandırma ve test etme gibi sistematik adımlar içerdiği için."
+Modelin belirli terminolojiyi 'otomatik aktive etmesi' neye bağlıdır?,Modele doğru bir rol ve persona atanmasına bağlıdır.

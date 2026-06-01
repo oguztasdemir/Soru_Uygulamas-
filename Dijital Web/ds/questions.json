@@ -1,0 +1,2402 @@
+[
+  {
+    "id": 1,
+    "question": "Joseph Schumpeter tarafından ortaya atılan, yeni teknolojilerin eski ekonomik yapıları yıkarak yerlerine daha verimli sistemler getirmesini ifade eden kavram hangisidir?",
+    "options": [
+      "A) Dijital Olgunluk",
+      "B) Yaratıcı Yıkım (Creative Destruction)",
+      "C) Tersine Lojistik",
+      "D) Ortak Malların Trajedisi"
+    ],
+    "answer": "B",
+    "explanation": "Schumpeter'in 'yaratıcı yıkım' (creative destruction) kavramı, inovasyon odaklı rekabetin ve dijitalleşmenin eski şirket yeteneklerini ve pazar yapılarını ortadan kaldırarak yeni ve verimli modeller getirmesini ifade eder."
+  },
+  {
+    "id": 2,
+    "question": "Aşağıdakilerden hangisi Tarım Toplumu döneminde ortaya çıkan krizin ve ardından yaşanan evrimin temel sebebidir?",
+    "options": [
+      "A) Tarım arazilerinin aşırı bolluğu ve iş gücü eksikliği",
+      "B) İlkel toplumun doğal kaynakları tüketmesi sonucu yaşanan kriz",
+      "C) Bilgisayar destekli üretim teknolojilerinin yetersiz kalması",
+      "D) Küreselleşmenin getirdiği standart üretim ihtiyacı"
+    ],
+    "answer": "B",
+    "explanation": "İlkel toplum doğal kaynakların kullanımına bağımlıydı. Doğal kaynaklardaki azalma (kıtlık) krize neden olmuş, bu da insanları toprağı ekip biçmeye (Tarım Devrimi'ne) yönlendirmiştir."
+  },
+  {
+    "id": 3,
+    "question": "Ürün ve hizmetlerin 'toplu olarak kişiselleştirilmesi' (mass customization) hangi toplum evresinin ana ekonomik özelliklerinden biridir?",
+    "options": [
+      "A) Bilgi Toplumu",
+      "B) Sanayi Toplumu",
+      "C) Tarım Toplumu",
+      "D) İlkel Toplum"
+    ],
+    "answer": "A",
+    "explanation": "Bilgi Toplumu döneminde, CAD/CAM gibi esnek üretim ve dijital teknolojiler sayesinde ürün ve hizmetlerin kişiye özel (mass customization) üretilmesi mümkün hale gelmiştir."
+  },
+  {
+    "id": 4,
+    "question": "Aşağıdakilerden hangisi dijital dönüşümü tanımlayan dört temel ilkeden (4C) biri değildir?",
+    "options": [
+      "A) Connection (Bağlantı)",
+      "B) Collaboration (İş Birliği)",
+      "C) Calculation (Hesaplama)",
+      "D) Coordination (Koordinasyon)"
+    ],
+    "answer": "C",
+    "explanation": "Dijital dönüşümün 4C'si: Connection (Bağlantı), Coordination (Koordinasyon), Collaboration (İş Birliği) ve Commerce (Ticaret) olarak tanımlanır. Calculation bunlardan biri değildir."
+  },
+  {
+    "id": 5,
+    "question": "Fiziksel haldeki bir belgenin taranarak bilgisayarda PDF olarak saklanması süreci kavramsal olarak aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Dijitalleşme (Digitalization)",
+      "B) Dijital Dönüşüm (Digital Transformation)",
+      "C) Sayısallaştırma (Digitization)",
+      "D) Sanal Gerçeklik (Virtualization)"
+    ],
+    "answer": "C",
+    "explanation": "Sayısallaştırma (digitization), analog veya fiziksel haldeki verinin/bilginin dijital bir formata dönüştürülüp bilgisayar sistemleri tarafından kullanılabilir hale getirilmesi sürecidir."
+  },
+  {
+    "id": 6,
+    "question": "Sayısallaştırılmış bilginin iş süreçlerini iyileştirmek, otomatikleştirmek ve veri üzerinden gelir yaratmak amacıyla kullanılması süreci hangisidir?",
+    "options": [
+      "A) Sayısallaştırma (Digitization)",
+      "B) Dijitalleşme (Digitalization)",
+      "C) Yapay Zeka Entegrasyonu",
+      "D) Sanayi 3.0"
+    ],
+    "answer": "B",
+    "explanation": "Dijitalleşme (digitalization), sayısallaştırılmış bilginin iş süreçlerini kolaylaştırmak ve gelir sağlamak amacıyla dijital araçlarla kullanılmasıdır."
+  },
+  {
+    "id": 7,
+    "question": "Dalenogare vd. (2018) çalışmasında yer alan ve gelişmekte olan ülkelerde Sanayi 4.0 kapsamında değerlendirilen beş temel teknoloji başlığından biri hangisidir?",
+    "options": [
+      "A) Geleneksel tarım aletleri",
+      "B) Analog veri saklama sistemleri",
+      "C) Simülasyonlar ve sanal modellerin analizi",
+      "D) Kağıt belgelerin manuel arşivlenmesi"
+    ],
+    "answer": "C",
+    "explanation": "Dalenogare ve ark. çalışmasına göre gelişmekte olan ülkeler için öne çıkan kritik Sanayi 4.0 teknolojilerinden biri 'Simülasyonlar/sanal modellerin analizi'dir."
+  },
+  {
+    "id": 8,
+    "question": "Kuruluşların yeteneklerinin öngörülen, istenen veya mantıklı bir süreç sonucunda nasıl geliştiğini görmeye yardımcı olan yaklaşımlara ne ad verilir?",
+    "options": [
+      "A) Üretim Modelleri",
+      "B) Olgunluk Modelleri (Maturity Models)",
+      "C) Lojistik Planlama",
+      "D) Karar Ağaçları"
+    ],
+    "answer": "B",
+    "explanation": "Olgunluk modelleri, örgütsel yeteneklerin aşamalı gelişimini ve dijital olgunluk düzeyini ölçen sistematik yapılardır."
+  },
+  {
+    "id": 9,
+    "question": "Çoğu olgunluk modelinin temelini oluşturan, Deming tarafından geliştirilmiş PUKÖ döngüsünün açılımı nedir?",
+    "options": [
+      "A) Programla-Uygula-Kriter Belirle-Önle",
+      "B) Planla-Uygula-Kontrol Et-Önlem Al",
+      "C) Paylaş-Üret-Kazan-Ölç",
+      "D) Planla-Uyar-Katıl-Öğren"
+    ],
+    "answer": "B",
+    "explanation": "PUKÖ: Planla, Uygula, Kontrol Et ve Önlem Al (PDCA - Plan, Do, Check, Act) aşamalarından oluşan sürekli kalite yönetimi döngüsüdür."
+  },
+  {
+    "id": 10,
+    "question": "Kurumsal olgunluk gelişimini bir işletmede yer alan bir varlığın (fiziki veya örgütsel işlev) zaman içindeki gelişim süreci üzerinden tanımlayan yazar kimdir?",
+    "options": [
+      "A) Pullen (2007)",
+      "B) Klimko (2001)",
+      "C) Paulk (1993)",
+      "D) Deming (2018)"
+    ],
+    "answer": "B",
+    "explanation": "Klimko (2001), olgunluğu işletmedeki bir varlığın veya fonksiyonel işlevin zaman içerisindeki gelişim süreci olarak betimlemiştir."
+  },
+  {
+    "id": 11,
+    "question": "IBM Dijital Olgunluk Modeli'nde yer alan, kestirimci tahmine ve ileri düzey veri analizine dayalı bilgi üretimini temsil eden bileşen hangisidir?",
+    "options": [
+      "A) Süreç Entegrasyonu",
+      "B) Analitik Görü (Analytical Insight)",
+      "C) İş Modeli İnovasyonu",
+      "D) Müşteri ve Toplum İş Birliği"
+    ],
+    "answer": "B",
+    "explanation": "IBM olgunluk modelindeki 'Analitik Görü' (Analytical Insight) boyutu, veriyi tahminleme ve ileri veri analitiği teknikleriyle karar almaya dönüştürmeyi ifade eder."
+  },
+  {
+    "id": 12,
+    "question": "Türkiye'deki dijitalleşme çalışmalarında, politika geliştirme süreci hangi birim tarafından üstlenilmiştir?",
+    "options": [
+      "A) KOSGEB",
+      "B) Sanayi ve Verimlilik Genel Müdürlüğü",
+      "C) Ar-Ge Teşvikleri Genel Müdürlüğü",
+      "D) TÜBİTAK"
+    ],
+    "answer": "C",
+    "explanation": "Devlet politikasında Politika Geliştirme görevi Sanayi ve Teknoloji Bakanlığı Ar-Ge Teşvikleri Genel Müdürlüğü'ne verilmiştir."
+  },
+  {
+    "id": 13,
+    "question": "Türkiye'de dijitalleşme dönüşüm sürecinde ihtiyaç duyulan finansman için belirlenen üç kurum aşağıdakilerden hangisidir?",
+    "options": [
+      "A) AB ve Dış İlişkiler Gn. Md. - TÜBİTAK - KOSGEB",
+      "B) TOBB - TİM - TÜSİAD",
+      "C) Merkez Bankası - Borsa İstanbul - KOSGEB",
+      "D) Sanayi ve Verimlilik Gn. Md. - MÜSİAD - YASED"
+    ],
+    "answer": "A",
+    "explanation": "Dönüşüm finansmanı için belirlenen resmi üç kaynak: AB ve Dış İlişkiler Genel Müdürlüğü, TÜBİTAK ve KOSGEB'dir."
+  },
+  {
+    "id": 14,
+    "question": "Türkiye'de sanayinin dijital dönüşümü için kurulan ve ilk uygulamaları Ankara ve Bursa'da gerçekleştirilen merkezler hangileridir?",
+    "options": [
+      "A) Teknoparklar",
+      "B) Dijital Model Fabrikalar",
+      "C) Ar-Ge Merkezleri",
+      "D) KOSGEB Laboratuvarları"
+    ],
+    "answer": "B",
+    "explanation": "Sanayide yalın üretim ve dijital dönüşümü öğretmek üzere Ankara ve Bursa başta olmak üzere 'Dijital Model Fabrikalar' kurulmuştur."
+  },
+  {
+    "id": 15,
+    "question": "2025 yılında dünya genelinde üretileceği öngörülen toplam veri miktarı kaç ZettaByte (ZB) seviyesindedir?",
+    "options": [
+      "A) 175 ZB",
+      "B) 59 ZB",
+      "C) 1000 ZB",
+      "D) 10 ZB"
+    ],
+    "answer": "A",
+    "explanation": "Veri stratejisi belgelerinde 2025 yılı için öngörülen küresel veri hacmi 175 ZB (Zettabyte) seviyesindedir."
+  },
+  {
+    "id": 16,
+    "question": "Şirketlerde verinin stratejik bir varlık olarak konumlandırılmasını yöneten üst düzey yönetici rolü hangisidir?",
+    "options": [
+      "A) CEO (Chief Executive Officer)",
+      "B) CDO (Chief Data Officer)",
+      "C) CFO (Chief Financial Officer)",
+      "D) CTO (Chief Technology Officer)"
+    ],
+    "answer": "B",
+    "explanation": "CDO (Chief Data Officer - Veri Başkanı), şirketlerin veri stratejilerini yöneten ve karar almayı veriye dayandıran liderlik rolüdür."
+  },
+  {
+    "id": 17,
+    "question": "Aşağıdakilerden hangisi Büyük Veri (Big Data) kavramını tanımlayan 3V bileşenlerinden biri değildir?",
+    "options": [
+      "A) Volume (Hacim)",
+      "B) Velocity (Hız)",
+      "C) Variety (Çeşitlilik)",
+      "D) Validity (Geçerlilik)"
+    ],
+    "answer": "D",
+    "explanation": "Büyük Verinin 3V'si: Volume (Hacim), Velocity (Hız) ve Variety (Çeşitlilik) bileşenleridir. Validity sonradan eklenen farklı V'lerdendir ama temel 3V içinde yoktur."
+  },
+  {
+    "id": 18,
+    "question": "Yapay Zeka optimizasyonları kapsamında, bulut tabanlı çalışan ve 1.3 milyondan fazla endüstriyel cihazdan veri toplayan Siemens platformu hangisidir?",
+    "options": [
+      "A) Data Lake",
+      "B) MindSphere",
+      "C) Watson AI",
+      "D) Azure IoT"
+    ],
+    "answer": "B",
+    "explanation": "Siemens MindSphere, endüstriyel sahadaki 1.3 milyondan fazla cihazdan akan büyük verileri toplayan ve analiz eden popüler bir platformdur."
+  },
+  {
+    "id": 19,
+    "question": "Alibaba bünyesindeki Alipay tabanlı mobil ödeme verilerini ve yapay zekayı kullanarak, 5 yılda 1 milyardan fazla müşteriye ulaşan fintech devi hangisidir?",
+    "options": [
+      "A) JPMorgan Chase",
+      "B) Ant Financial Group",
+      "C) Tencent Finance",
+      "D) SoftBank"
+    ],
+    "answer": "B",
+    "explanation": "Ant Financial Group, Alipay verilerini yapay zeka kararlarıyla birleştirerek sadece 5 yılda 1 milyar müşteriye operasyonel çalışan olmadan ulaşmıştır."
+  },
+  {
+    "id": 20,
+    "question": "Yapay Zeka Fabrikasının (AI Factory) girdisi olan verileri ölçeklenebilir ve otomatik şekilde toplayan, birleştiren ilk bileşeni hangisidir?",
+    "options": [
+      "A) Deney Platformu",
+      "B) Kestirimci Karar Motoru",
+      "C) Veri Hattı (Data Pipeline)",
+      "D) Kullanıcı Arayüzü"
+    ],
+    "answer": "C",
+    "explanation": "Yapay zeka fabrikasının 4 temel bileşeninden ilki, verileri otomatik toplayıp temizleyen yarı otomatik 'Veri Hattı'dır (Data Pipeline)."
+  },
+  {
+    "id": 21,
+    "question": "Kısıtlı tek bir etki alanında (örneğin sadece satranç oynamak veya kredi skoru tahmin etmek) insan gibi karar veren yapay zeka türü hangisidir?",
+    "options": [
+      "A) Güçlü Yapay Zeka",
+      "B) Zayıf Yapay Zeka (Narrow AI)",
+      "C) Genel Yapay Zeka (AGI)",
+      "D) Otonom Yapay Zeka"
+    ],
+    "answer": "B",
+    "explanation": "Zayıf yapay zeka (Dar yapay zeka), belirli tek bir görev alanında uzmanlaşmış, etki alanı sınırlı olan algoritmik yapılardır."
+  },
+  {
+    "id": 22,
+    "question": "Küresel nakliyatta, verimsizlikleri aşmak ve tüm tedarik zincirinde gerçek zamanlı veri şeffaflığı sağlamak için dijitalleşen dev konteyner şirketi hangisidir?",
+    "options": [
+      "A) Aeroflot",
+      "B) Maersk",
+      "C) G7 Taksi",
+      "D) Patagonia"
+    ],
+    "answer": "B",
+    "explanation": "Maersk nakliye şirketi, konteyner takibindeki verimsizlik ve şeffaflık sorunlarını aşmak amacıyla dijital sensörler ve tek veri kaynağı kullanımıyla dönüşmüştür."
+  },
+  {
+    "id": 23,
+    "question": "Aeroflot havayolu şirketinin dijital dönüşüm sonrasında Net Tavsiye Skorunda (NPS) elde ettiği artış oranı yüzde kaçtır?",
+    "options": [
+      "A) %10",
+      "B) %20",
+      "C) %44",
+      "D) %85"
+    ],
+    "answer": "C",
+    "explanation": "Aeroflot, dijitalleşmeyle operasyonlarını ve raporlamalarını düzelterek Net Tavsiye Skorunu %44 oranında artırmayı başarmıştır."
+  },
+  {
+    "id": 24,
+    "question": "1905 yılında kurulan ve Uber'in getirdiği rekabete kendi mobil rezervasyon yazılımını kurarak başarıyla yanıt veren Paris merkezli geleneksel taksi şirketi hangisidir?",
+    "options": [
+      "A) G7 Taksi",
+      "B) Champs-Élysées Cabs",
+      "C) Marriott",
+      "D) Avnet"
+    ],
+    "answer": "A",
+    "explanation": "G7 Taksi şirketi, dijital yıkım tehdidine karşı hızla dijital araçları kendi süreçlerine uygulayarak pazar payını korumayı başarmıştır."
+  },
+  {
+    "id": 25,
+    "question": "Fiziksel akıllı mağaza (smart store) ile kişisel alışveriş stilistlerini harmanlayarak 'duygusal bağ' kurmayı hedefleyen Paris merkezli lüks perakendeci hangisidir?",
+    "options": [
+      "A) Hackster.io",
+      "B) Galeries Lafayette Champs-Élysées",
+      "C) Walmart",
+      "D) Patagonia"
+    ],
+    "answer": "B",
+    "explanation": "Galeries Lafayette Champs-Élysées akıllı mağazası, fiziksel ve dijitali (stilistler ve veri entegrasyonu) harmanlayan mükemmel bir hibrit mağazacılık örneğidir."
+  },
+  {
+    "id": 26,
+    "question": "Şirketlerin satın aldığı teknoloji startup'larını kendi yavaşlığı ve bürokrasisi içinde boğmaması için önerilen çalışma şekli hangisidir?",
+    "options": [
+      "A) Startup'ı ana şirkete tamamen entegre etmek",
+      "B) Yarı bağımsız çalışmasına ve sinerji yaratmasına izin vermek",
+      "C) Startup yöneticilerini işten çıkarmak",
+      "D) Startup'ın teknolojisini kullanmayıp kapatmak"
+    ],
+    "answer": "B",
+    "explanation": "Avnet'in Hackster.io örneğinde olduğu gibi, akıllı şirketler satın aldıkları startup'ları bürokrasiden korumak için yarı bağımsız bırakır."
+  },
+  {
+    "id": 27,
+    "question": "Adobe şirketinin çalışanlarına kendi yenilikçi fikirlerini geliştirip sunma ve 6 ay boyunca bu fikir üzerinde çalışma fırsatı verdiği ödüllü projesinin adı nedir?",
+    "options": [
+      "A) Turuncu Kutu (Orange Box / Kickbox)",
+      "B) Hackathon Günü",
+      "C) Yeşil Kutu",
+      "D) Startup Kuluçka"
+    ],
+    "answer": "A",
+    "explanation": "Adobe'un 'Turuncu Kutu' (Orange Box/Kickbox) projesi, kurum içi girişimciliği ve çalışanların fikir üretmesini destekleyen bir programdır."
+  },
+  {
+    "id": 28,
+    "question": "Marriott otel zincirinin Expedia gibi çevrimiçi acentelerin (OTA) tehdidi karşısında uyguladığı başarılı strateji aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Tüm fiziksel otelleri kapatıp sanal otele geçmek",
+      "B) Bilgi sistemlerini aşamalı olarak güncelleyip pazarda test etmek",
+      "C) Tüm startup acentelerini satın almak",
+      "D) Fiyatları yarı yarıya düşürmek"
+    ],
+    "answer": "B",
+    "explanation": "Marriott, altyapısını toptan değiştirmek gibi yüksek riskli bir yol yerine, Expedia rekabetine karşı sistemlerini aşamalı güncelleyip pazarda test etmiştir."
+  },
+  {
+    "id": 29,
+    "question": "Sürdürülebilirlik kavramının en popüler tanımı olan 'Bugünün ihtiyaçlarını gelecek nesillerin yeteneklerinden ödün vermeden karşılamak' hangi raporda veya kurulda yapılmıştır?",
+    "options": [
+      "A) Kyoto Protokolü",
+      "B) Brundtland Raporu (Büyümenin Sınırları / Ortak Geleceğimiz)",
+      "C) Paris İklim Anlaşması",
+      "D) Dartmouth Konferansı"
+    ],
+    "answer": "B",
+    "explanation": "Sürdürülebilirliğin bu klasik tanımı, Birleşmiş Milletler Brundtland Komisyonu'nun 1987 tarihli 'Ortak Geleceğimiz' (Brundtland) raporunda yapılmıştır."
+  },
+  {
+    "id": 30,
+    "question": "Aşağıdakilerden hangisi sürdürülebilirliğin değerlendirildiği üç ana boyuttan (sütundan) biri değildir?",
+    "options": [
+      "A) Çevresel sürdürülebilirlik",
+      "B) Sosyal sürdürülebilirlik",
+      "C) Kültürel asimilasyon",
+      "D) Ekonomik sürdürülebilirlik"
+    ],
+    "answer": "C",
+    "explanation": "Sürdürülebilirliğin üç ana boyutu: Çevresel, Sosyal ve Ekonomik sürdürülebilirliktir."
+  },
+  {
+    "id": 31,
+    "question": "Garrett Hardin tarafından ortaya atılan, bireylerin ücretsiz ortak malları kendi çıkarları için aşırı tüketerek kaynağı yok etmesini ifade eden kuram hangisidir?",
+    "options": [
+      "A) Yaratıcı Yıkım",
+      "B) Ortak Malların Trajedisi (Tragedy of the Commons)",
+      "C) Tersine Lojistik",
+      "D) Boyutluluğun Laneti"
+    ],
+    "answer": "B",
+    "explanation": "Ortak Malların Trajedisi (Tragedy of the Commons), serbest ve ortak meraların aşırı hayvan otlatılmasıyla tükenmesi gibi durumları açıklayan kuramdır."
+  },
+  {
+    "id": 32,
+    "question": "Nike firmasının 1996 yılında karşılaştığı ve marka imajını sarsan, daha sonrasında Kurumsal Sosyal Sorumluluk (KSS) adımları atmasına neden olan skandal nedir?",
+    "options": [
+      "A) Çevreyi kimyasal atıklarla kirletmesi",
+      "B) Pakistan'da çocuk işçi çalıştırıldığının ortaya çıkması",
+      "C) Ürün fiyatlarını aşırı yüksek belirlemesi",
+      "D) Karbon ayak izini saklaması"
+    ],
+    "answer": "B",
+    "explanation": "Nike, 1996 yılında tedarikçilerinin Pakistan'da çocuk işçilere futbol topu diktirdiğinin ifşa olmasıyla büyük bir itibar krizi yaşamış ve sosyal denetim kurallarını sıkılaştırmıştır."
+  },
+  {
+    "id": 33,
+    "question": "3 Aralık 1984 tarihinde, Union Carbide firmasına ait böcek ilacı fabrikasından sızan MIC gazının binlerce insanı öldürdüğü endüstriyel çevre felaketi nerede yaşanmıştır?",
+    "options": [
+      "A) Bhopal / Hindistan",
+      "B) Çernobil / Ukrayna",
+      "C) Fukushima / Japonya",
+      "D) Londra / İngiltere"
+    ],
+    "answer": "A",
+    "explanation": "Bhopal felaketi, Hindistan'ın Bhopal kentindeki bir ABD böcek ilacı fabrikasından sızan Metil İzosiyanat gazının yol açtığı tarihin en büyük endüstriyel kazalarından biridir."
+  },
+  {
+    "id": 34,
+    "question": "Ürünlerin, hammadde ve yarı mamullerin tüketim noktasından orijine (çıkış noktasına) doğru, değer kazanımı veya imha amacıyla akışını yöneten süreç hangisidir?",
+    "options": [
+      "A) Yeşil Satın Alma",
+      "B) Tersine Lojistik (Reverse Logistics)",
+      "C) Intermodal Taşımacılık",
+      "D) Tedarikçi Envanteri"
+    ],
+    "answer": "B",
+    "explanation": "Tersine lojistik (reverse logistics), ürünlerin geri kazanılması, yenilenmesi, geri dönüştürülmesi veya yok edilmesi için tüketimden kaynağa doğru akışını yöneten lojistik disiplinidir."
+  },
+  {
+    "id": 35,
+    "question": "Yeniden üretim (re-manufacturing) süreçlerinde ihtiyaç duyulan enerji miktarı, hammaddeden sıfırdan üretim yapmaya göre yüzde kaç daha azdır?",
+    "options": [
+      "A) %10'a kadar",
+      "B) %50'ye kadar",
+      "C) %85'e kadar",
+      "D) %5'e kadar"
+    ],
+    "answer": "C",
+    "explanation": "Tersine lojistik verilerine göre yeniden üretim, ham maden çıkarmaya ve işlemeye göre %85'e varan oranda enerji tasarrufu sağlar."
+  },
+  {
+    "id": 36,
+    "question": "Geri dönüştürülmüş alüminyum üretmek, sıfırdan alüminyum üretmek için gereken enerjinin yalnızca yüzde kaçını tüketir?",
+    "options": [
+      "A) %5'ini",
+      "B) %25'ini",
+      "C) %50'sini",
+      "D) %85'ini"
+    ],
+    "answer": "A",
+    "explanation": "Alüminyumun geri dönüşümü son derece verimlidir; sıfırdan üretimin gerektirdiği devasa elektrik enerjisinin sadece %5'ini kullanır."
+  },
+  {
+    "id": 37,
+    "question": "3M firmasının, araçların yükleme yüksekliğini ayarlayan raflar geliştirerek lojistik süreçte elde ettiği günlük araç doluluk artış oranı yüzde kaçtır?",
+    "options": [
+      "A) %10",
+      "B) %20",
+      "C) %40",
+      "D) %80"
+    ],
+    "answer": "C",
+    "explanation": "3M, akıllı raf tasarımlarıyla araç yükleme verimliliğini %40 oranında artırarak daha az seferle aynı miktarda ürün taşımayı başarmıştır."
+  },
+  {
+    "id": 38,
+    "question": "Dünyada üretilen toplam enerjinin yüzde kaçı şehirlerde tüketilmektedir?",
+    "options": [
+      "A) %20'si",
+      "B) %55'i",
+      "C) %75'i",
+      "D) %95'i"
+    ],
+    "answer": "C",
+    "explanation": "Kentlerin yoğunlaşması nedeniyle, dünyada üretilen elektrik ve ısınma enerjisi gibi kaynakların %75'i şehirlerde tüketilmektedir."
+  },
+  {
+    "id": 39,
+    "question": "Günümüzde dünya nüfusunun yaklaşık %55'i şehirlerde yaşarken, 2050 yılına kadar bu oranın yüzde kaça ulaşması beklenmektedir?",
+    "options": [
+      "A) %60",
+      "B) %68",
+      "C) %85",
+      "D) %95"
+    ],
+    "answer": "B",
+    "explanation": "Projeksiyonlara göre hızlı kentleşmeyle birlikte 2050 yılına kadar dünya nüfusunun %68'i (yaklaşık 3 kişiden 2'si) şehirlerde yaşayacaktır."
+  },
+  {
+    "id": 40,
+    "question": "Kentsel planlamada 'çevre ve ekoloji' faktörünü merkeze alan kavram 'kentsel sürdürülebilirlik' iken, 'sosyal, ekonomik ve veri odaklı teknolojik katılımı' merkeze alan kavram hangisidir?",
+    "options": [
+      "A) Sanayi 4.0",
+      "B) Akıllı Şehir (Smart City)",
+      "C) Bilgi Toplumu",
+      "D) E-İş Modeli"
+    ],
+    "answer": "B",
+    "explanation": "Neirotti ve ark. çalışmasına göre kentsel sürdürülebilirlik çevreye odaklanırken; akıllı şehir kavramı daha çok sosyal, ekonomik ve ICT tabanlı teknolojik süreçleri içerir."
+  },
+  {
+    "id": 41,
+    "question": "Ateş (2018) çalışmasına göre kentsel alanlarda karbon ayak izini sürekli azaltan ve kısıtlı kaynakları verimli kullanan yapılara ne ad verilir?",
+    "options": [
+      "A) Geleneksel Şehir",
+      "B) Sürdürülebilir Akıllı Şehir",
+      "C) E-Ticaret Ekosistemi",
+      "D) Sanayi Bölgesi"
+    ],
+    "answer": "B",
+    "explanation": "Ateş'e göre 'Sürdürülebilir Akıllı Şehir', kısıtlı kaynakları etkin kullanıp kentsel karbon ayak izini azaltan ve kalkınmaya yatırım yapan şehirdir."
+  },
+  {
+    "id": 42,
+    "question": "BM Çevre Programı (UNEP) ve BM Dünya Turizm Örgütü (UNWTO) tarafından belirlenen Sürdürülebilir Turizm İlkelerinden 'Yerel Kalkınma' neyi hedefler?",
+    "options": [
+      "A) Ziyaretçilerin yerel halkla hiçbir şekilde iletişime geçmemesini",
+      "B) Turizm gelirlerinin yerel üretici ve destinasyonda kalma oranını artırmayı",
+      "C) Turist sayısını sınırsız şekilde artırmayı",
+      "D) Yerel kültürü tamamen değiştirmeyi"
+    ],
+    "answer": "B",
+    "explanation": "Yerel kalkınma ilkesi, turistlerin yerelde harcama yapmasını ve bu kazancın destinasyon halkına (yerel üreticilere) doğrudan katkı sağlamasını hedefler."
+  },
+  {
+    "id": 43,
+    "question": "Sürdürülebilir turizmde, koruma-kullanma dengesini gözeterek endemik türlerin ve yaban hayatının korunmasını destekleyen ilke hangisidir?",
+    "options": [
+      "A) İstihdam Kalitesi",
+      "B) Biyolojik Çeşitlilik (Biodiversity)",
+      "C) Ziyaretçi Memnuniyeti",
+      "D) Yerelden Kontrol"
+    ],
+    "answer": "B",
+    "explanation": "Biyolojik çeşitlilik ilkesi, yaban hayatının, türlerin ve endemizmin zarar görmeden gelecek nesillere aktarılmasını hedefler."
+  },
+  {
+    "id": 44,
+    "question": "Kültürel sürdürülebilirlik kavramında 'Kültürel Süreklilik' için ana vurgu aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Kültürün hiçbir şekilde değişmemesi ve eski halinde donması",
+      "B) Geçmiş mirasının ve yerleşim ilkelerinin çok büyük birer kaynak olarak fark edilmesi",
+      "C) Küresel kültürün yerel kültürü tamamen yok etmesi",
+      "D) Geleneklerin yasal olarak yasaklanması"
+    ],
+    "answer": "B",
+    "explanation": "Cebeci ve Çakılcıoğlu'na göre kültürel sürdürülebilirlik gelenekçi/donmuş bir tavır değil; geçmişin ve yerleşim ilkelerinin büyük birer değer kaynağı olduğunun fark edilerek yeni kuşaklara aktarılmasıdır."
+  },
+  {
+    "id": 45,
+    "question": "Avrupa Birliği genelinde yapay zekâ uygulamalarını taşıdıkları risklere göre denetleyen ilk kapsamlı yasal regülasyon hangisidir?",
+    "options": [
+      "A) KVKK",
+      "B) EU AI Act (AB Yapay Zeka Yasası)",
+      "C) GDPR",
+      "D) Brundtland Raporu"
+    ],
+    "answer": "B",
+    "explanation": "EU AI Act, yapay zeka sistemlerini taşıdıkları risklere göre sınıflandırıp denetleyen ilk ve en kapsamlı küresel yapay zeka mevzuatıdır."
+  },
+  {
+    "id": 46,
+    "question": "Aşağıdakilerden hangisi çevre dostu binaların (yeşil binalar) geleneksel binalara kıyasla sağladığı enerji tasarruf oranını göstermektedir?",
+    "options": [
+      "A) %5-10",
+      "B) %24-50",
+      "C) %90-95",
+      "D) Tasarruf sağlamaz"
+    ],
+    "answer": "B",
+    "explanation": "Çevreci binalar enerji tüketiminde %24-50 arasında yüksek bir tasarruf sağlayarak karbon salınımını büyük oranda azaltırlar."
+  },
+  {
+    "id": 47,
+    "question": "Lojistikte, taşıma araçlarının fosil yakıt motor standartlarını (Euro 5, Euro 6 gibi) iyileştirmeyi veya elektrikli araçlar kullanmayı hedefleyen strateji hangisidir?",
+    "options": [
+      "A) Daha Az Taşı",
+      "B) Daha Kısa Taşı",
+      "C) Daha Temiz Taşı",
+      "D) Tersine Taşı"
+    ],
+    "answer": "C",
+    "explanation": "Daha Temiz Taşı stratejisi, Euro 5/6 motorların seçilmesi, fosil yakıt dışı otonom/elektrikli araçların kullanılması gibi karbon emisyonunu düşüren yöntemleri içerir."
+  },
+  {
+    "id": 48,
+    "question": "İstanbul, Trieste ve Mannheim limanları arasında Ekol Lojistik tarafından gerçekleştirilen ve karayolu yerine Ro-Ro/Tren kullanılan çevre dostu lojistik modeli hangisidir?",
+    "options": [
+      "A) Havayolu Taşımacılığı",
+      "B) İntermodal Taşımacılık",
+      "C) Boru Hattı Lojistiği",
+      "D) Kurye Dağıtımı"
+    ],
+    "answer": "B",
+    "explanation": "Ekol Lojistik'in yürüttüğü bu model, birden fazla taşıma türünü (deniz, demir, kara) birleştiren ve CO2 salınımını devasa oranda düşüren bir İntermodal taşımacılık örneğidir."
+  },
+  {
+    "id": 49,
+    "question": "Tedarik zincirinde, paketleme malzemelerinin doğada kolayca çözünebilen veya tekrar kullanılabilir (reusable) materyallerden seçilmesini ifade eden kavram hangisidir?",
+    "options": [
+      "A) Çevreci Satın Alma",
+      "B) Yeşil Paketleme (Green Packaging)",
+      "C) Tersine Dağıtım",
+      "D) Ürün Yaşam Döngüsü"
+    ],
+    "answer": "B",
+    "explanation": "Yeşil paketleme (green packaging), doğaya zarar vermeyen, plastikten ziyade kağıt veya biyolojik çözünür hammaddelerden üretilen paketleme sürecidir."
+  },
+  {
+    "id": 50,
+    "question": "Sürdürülebilir kalkınmanın gerçekleşmesinde ekolojik dengenin korunmasının en temel nedeni aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Ekonomik büyümenin süreklilik arz edebilmesinin ekolojik dengeye bağlı olması",
+      "B) Teknoloji yatırımlarının maliyetini düşürmek",
+      "C) Şehir nüfusunun hızla köylere geri dönmesini sağlamak",
+      "D) Sanayi üretimini tamamen durdurmak"
+    ],
+    "answer": "A",
+    "explanation": "Ekonomik büyümenin sürdürülebilir olması ve devamlılığı için ekolojik dengenin bozulmaması, su, hava ve toprak gibi kıt kaynakların korunması zorunludur."
+  },
+  {
+    "id": 51,
+    "question": "Toplumların tarihsel gelişim evrelerinde yerleşik yaşama geçiş ve tarım arazilerinin yönetimi hangi devrimle başlamıştır?",
+    "options": [
+      "A) Sanayi Devrimi",
+      "B) Tarım Devrimi",
+      "C) Bilgi Devrimi",
+      "D) Dijital Devrim"
+    ],
+    "answer": "B",
+    "explanation": "Tarım Devrimi ile insanlar göçebe yaşamdan yerleşik yaşama geçmiş, toprağı işlemeye ve tarım arazilerini yönetmeye başlamışlardır."
+  },
+  {
+    "id": 52,
+    "question": "Sanayi Toplumu evresinin en belirgin ekonomik üretim özelliği aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Toplu kişiselleştirme (Mass customization)",
+      "B) Standart ve seri üretim (Mass production)",
+      "C) Esnek el sanatları üretimi",
+      "D) Hizmet odaklı bulut üretimi"
+    ],
+    "answer": "B",
+    "explanation": "Sanayi Toplumu döneminde fabrikaların kurulmasıyla birlikte standart, tek tip ve seri üretim (mass production) ekonominin ana unsuru haline gelmiştir."
+  },
+  {
+    "id": 53,
+    "question": "Bilgisayar destekli üretim (CAD/CAM) teknolojilerinin yaygınlaşması ve küreselleşmenin hızlanması hangi toplum evresine aittir?",
+    "options": [
+      "A) İlkel Toplum",
+      "B) Tarım Toplumu",
+      "C) Sanayi Toplumu",
+      "D) Bilgi Toplumu"
+    ],
+    "answer": "D",
+    "explanation": "Bilgi Toplumu evresinde bilgisayar destekli üretim teknolojileri (CAD/CAM) ve iletişim teknolojilerindeki gelişmeler üretimi ve küresel rekabeti yönlendirmiştir."
+  },
+  {
+    "id": 54,
+    "question": "Dijital dönüşümün 4C ilkelerinden 'Collaboration' (İş Birliği) kavramı aşağıdakilerden hangisini ifade eder?",
+    "options": [
+      "A) Şirket içindeki departmanların ve dış ekosistemlerin entegre çalışmasını",
+      "B) Sadece verilerin bir sunucuya bağlanmasını",
+      "C) Finansal işlemlerin dijitalleştirilmesini",
+      "D) Otomatik üretim bantlarının koordinasyonunu"
+    ],
+    "answer": "A",
+    "explanation": "Collaboration (İş Birliği), dijital araçları kullanarak kurum içi departmanların ve dış paydaşların iş birliği içinde değer üretmesini ifade eder."
+  },
+  {
+    "id": 55,
+    "question": "Dijital dönüşümde 'Connection' (Bağlantı) ilkesi aşağıdakilerden hangisini doğrudan sağlar?",
+    "options": [
+      "A) Fiyatların ucuzlamasını",
+      "B) Sistemlerin, sensörlerin ve verilerin birbirleriyle haberleşmesini",
+      "C) Rekabet yasalarının esnetilmesini",
+      "D) İş gücünün tamamen elenmesini"
+    ],
+    "answer": "B",
+    "explanation": "Connection (Bağlantı), nesnelerin interneti (IoT), API'ler ve ağlar aracılığıyla veri ve sistemlerin birbirine bağlanmasını temsil eder."
+  },
+  {
+    "id": 56,
+    "question": "İlkel toplumun çöküşüne ve insanların Tarım Toplumu'na geçmesine neden olan kriz aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Makinelerin yetersiz kalması krizidir",
+      "B) Doğal kaynakların kontrolsüzce tüketilmesi sonucu yaşanan kıtlıktır",
+      "C) Yazılımların çökmesi krizidir",
+      "D) Küresel ticaret savaşları krizidir"
+    ],
+    "answer": "B",
+    "explanation": "İlkel toplum doğal kaynakların toplayıcılığına bağımlıydı. Doğal kaynakların azalması bir gıda/kaynak krizine yol açmış ve insanlığı toprağı ekip biçmeye (Tarım Devrimi) yöneltmiştir."
+  },
+  {
+    "id": 57,
+    "question": "Sanayi Toplumu'ndan Bilgi Toplumu'na evrilmeyi tetikleyen temel piyasa koşulu aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Standart üretimlerin pazarda doygunluğa ulaşması ve kişiselleştirilmiş ürün talebi",
+      "B) Tarım arazilerinin tamamen çölleşmesi",
+      "C) El işçiliğinin tamamen yasaklanması",
+      "D) Para birimlerinin dijitalleşmesi"
+    ],
+    "answer": "A",
+    "explanation": "Sanayi Toplumu'nun tek tip standart üretimi pazarı doyurmuş, rekabet edebilmek için esnek ve kişiselleştirilmiş (mass customization) ürünler sunma ihtiyacı Bilgi Toplumu'nu doğurmuştur."
+  },
+  {
+    "id": 58,
+    "question": "Dijital dönüşümün nedenlerinden biri olan 'sektörel sınırların bulanıklaşması' ne anlama gelmektedir?",
+    "options": [
+      "A) Şirketlerin fiziksel mağazalarını tamamen kapatması",
+      "B) Geleneksel şirketlerin dijital teknolojiler kullanarak farklı sektörlerde (finans, lojistik vb.) hizmet vermeye başlaması",
+      "C) Şirketlerin yalnızca tek bir ürüne odaklanması",
+      "D) Devletlerin ithalat vergilerini kaldırması"
+    ],
+    "answer": "B",
+    "explanation": "Sektörel sınırların bulanıklaşması, örneğin bir perakende veya nakliye şirketinin dijital altyapısıyla finansal ödeme sistemleri (fintech) sunarak bankalarla rekabet etmesidir."
+  },
+  {
+    "id": 59,
+    "question": "Schumpeter'in ortaya attığı 'Yaratıcı Yıkım' kavramı dijitalleşme sürecinde şirketler için neyi öngörür?",
+    "options": [
+      "A) Devletin tüm şirketleri satın alacağını",
+      "B) Teknolojik yenilik yapmayan şirketlerin pazar dışı kalarak yok olacağını",
+      "C) Üretimde hiçbir zaman hata yapılmayacağını",
+      "D) Şirketlerin birleşerek tek bir dev haline geleceğini"
+    ],
+    "answer": "B",
+    "explanation": "Yaratıcı Yıkım (Creative Destruction), yeni teknolojilerin eski verimsiz iş modellerini yıkarak yerlerine daha verimli sistemler getirmesidir. Dönüşmeyen şirketler elenir."
+  },
+  {
+    "id": 60,
+    "question": "Aşağıdakilerden hangisi dijital dönüşümün 4C ilkelerinden 'Coordination' (Koordinasyon) kavramını açıklar?",
+    "options": [
+      "A) İş süreçlerinin dijital araçlarla uyumlu, akıcı ve senkronize bir şekilde yönetilmesi",
+      "B) Sadece bulut depolama alanı satın alınması",
+      "C) Startup firmaların satın alınması",
+      "D) Çocuk işçi çalıştırılmasının engellenmesi"
+    ],
+    "answer": "A",
+    "explanation": "Coordination (Koordinasyon), dijitalleşen süreçler ve departmanlar arasındaki faaliyetlerin uyumlu ve verimli şekilde senkronize edilmesidir."
+  },
+  {
+    "id": 61,
+    "question": "Bir kütüphanedeki eski el yazması kitapların sayfalarının fotoğraflanarak bilgisayar ortamına PDF olarak aktarılması işlemi hangisidir?",
+    "options": [
+      "A) Dijitalleşme (Digitalization)",
+      "B) Dijital Dönüşüm (Digital Transformation)",
+      "C) Sayısallaştırma (Digitization)",
+      "D) Sanal Gerçeklik"
+    ],
+    "answer": "C",
+    "explanation": "Analog/fiziksel verinin bilgisayarın işleyebileceği dijital formatlara (PDF, excel vb.) dönüştürülmesi sayısallaştırmadır (digitization)."
+  },
+  {
+    "id": 62,
+    "question": "Taranarak PDF yapılmış faturaların bir bulut yazılımına yüklenmesi ve otomatik onay süreçlerine dahil edilerek iş sürecinin hızlandırılması hangisidir?",
+    "options": [
+      "A) Sayısallaştırma (Digitization)",
+      "B) Dijitalleşme (Digitalization)",
+      "C) Dijital Dönüşüm (Digital Transformation)",
+      "D) Yapay Zekâ Fabrikası"
+    ],
+    "answer": "B",
+    "explanation": "Sayısallaştırılmış verinin mevcut iş süreçlerini iyileştirmek, otomatikleştirmek ve optimize etmek için kullanılması dijitalleşmedir (digitalization)."
+  },
+  {
+    "id": 63,
+    "question": "Tüm müşteri etkileşim verilerini toplayarak tamamen veriye dayalı, kişiselleştirilmiş yeni bir yayıncılık iş modeli (Netflix vb.) oluşturmak hangisidir?",
+    "options": [
+      "A) Sayısallaştırma",
+      "B) Dijitalleşme",
+      "C) Dijital Dönüşüm (Digital Transformation)",
+      "D) Sanayi 3.0"
+    ],
+    "answer": "C",
+    "explanation": "Teknoloji ve veri entegrasyonu ile şirketin iş modelinin, değer önerisinin ve operasyonel yapısının kökten değiştirilmesi dijital dönüşümdür."
+  },
+  {
+    "id": 64,
+    "question": "Aşağıdakilerden hangisi sayısallaştırma (digitization) kavramına örnek olarak gösterilemez?",
+    "options": [
+      "A) Kağıt belgelerin taranarak PDF yapılması",
+      "B) Analog ses kayıtlarının MP3 formatına dönüştürülmesi",
+      "C) Depodaki ürün listesinin Excel dosyasına manuel olarak işlenmesi",
+      "D) Müşteri şikayetlerine göre otomatik indirim kodları tanımlayan algoritma yazılması"
+    ],
+    "answer": "D",
+    "explanation": "Otomatik indirim kodu tanımlayan algoritma yazılması süreç iyileştirme ve otomasyon içerdiğinden dijitalleşme/dijital dönüşüm kapsamındadır, basit bir sayısallaştırma değildir."
+  },
+  {
+    "id": 65,
+    "question": "Dalenogare ve ark. (2018) çalışmasına göre gelişmekte olan ülkelerde Sanayi 4.0 uygulamalarında öne çıkan kritik teknoloji hangisidir?",
+    "options": [
+      "A) Manuel veri yedekleme sistemleri",
+      "B) Simülasyonlar ve sanal modellerin analizi",
+      "C) Geleneksel kağıt arşivleme",
+      "D) Standart montaj hattı robotları"
+    ],
+    "answer": "B",
+    "explanation": "Dalenogare ve ark. (2018) çalışmasında gelişmekte olan ülkeler için öne çıkan Sanayi 4.0 teknolojilerinden biri 'Simülasyonlar ve Sanal Modellerin Analizi'dir."
+  },
+  {
+    "id": 66,
+    "question": "Üretim süreçlerinin anlık izlenmesini, takibini ve siber-fiziksel entegrasyonunu sağlayan MES (Manufacturing Execution System) hangi devrin ürünüdür?",
+    "options": [
+      "A) Sanayi 1.0",
+      "B) Sanayi 2.0",
+      "C) Sanayi 3.0",
+      "D) Sanayi 4.0"
+    ],
+    "answer": "D",
+    "explanation": "Sanayi 4.0; bilgi, veri, siber-fiziksel sistemler ve IoT entegrasyonu (MES ve SCADA sistemleri) üzerine kuruludur."
+  },
+  {
+    "id": 67,
+    "question": "Sayısallaştırılmış bilginin iş süreçlerini kolaylaştırmak ve veri üzerinden değer yaratmak için kullanılması hangisidir?",
+    "options": [
+      "A) Sayısallaştırma",
+      "B) Dijitalleşme (Digitalization)",
+      "C) Sanal Modelleme",
+      "D) Kültürel Asimilasyon"
+    ],
+    "answer": "B",
+    "explanation": "Sayısallaştırılmış verinin süreç verimliliğini artırmak amacıyla iş süreçlerinde kullanılması dijitalleşmeyi (digitalization) tanımlar."
+  },
+  {
+    "id": 68,
+    "question": "Dijital dönüşümün, sayısallaştırma ve dijitalleşmeden ayrılan en temel farkı aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Sadece bilgisayar donanımı gerektirmesi",
+      "B) Şirket kültürünü, iş modellerini ve değer zincirini kökten dönüştürmesi",
+      "C) Daha ucuz bir yöntem olması",
+      "D) Sadece kağıt tasarrufu sağlaması"
+    ],
+    "answer": "B",
+    "explanation": "Dijital dönüşüm, süreç bazlı iyileştirmelerin (dijitalleşme) ötesinde, organizasyonel kültür ve iş modelini kökten değiştiren stratejik bir süreçtir."
+  },
+  {
+    "id": 69,
+    "question": "Sanayi 4.0 kapsamında kullanılan 'Sanal Modeller ve Simülasyonlar' üretim sürecinde hangi somut yararı sağlar?",
+    "options": [
+      "A) Fiziksel üretime geçilmeden önce sistemin test edilmesini ve olası hataların önlenmesini",
+      "B) Elektrik tüketiminin tamamen sıfırlanmasını",
+      "C) Lojistik maliyetlerinin sıfıra inmesini",
+      "D) Müşteri anketlerinin kaldırılmasını"
+    ],
+    "answer": "A",
+    "explanation": "Simülasyonlar ve sanal modeller (dijital ikizler), üretim hatlarındaki hataları ve darboğazları fiziksel kuruluma geçmeden analiz etme imkanı verir."
+  },
+  {
+    "id": 70,
+    "question": "Aşağıdakilerden hangisi analog verinin 0 ve 1 kodlarından oluşan dijital forma dönüştürülmesini ifade eder?",
+    "options": [
+      "A) Dijital Dönüşüm",
+      "B) Dijitalleşme",
+      "C) Sayısallaştırma (Digitization)",
+      "D) Yapay Zekâ Fabrikası"
+    ],
+    "answer": "C",
+    "explanation": "Sayısallaştırma (digitization), analog veya fiziksel girdilerin doğrudan dijital (binary) biçime dönüştürülmesidir."
+  },
+  {
+    "id": 71,
+    "question": "Analog VHS video kasetlerindeki kayıtların bilgisayara aktarılarak MP4 formatında saklanması hangi kavramla açıklanır?",
+    "options": [
+      "A) Dijital Dönüşüm",
+      "B) Sayısallaştırma (Digitization)",
+      "C) Dijitalleşme",
+      "D) Sanal Gerçeklik"
+    ],
+    "answer": "B",
+    "explanation": "VHS kasetteki analog video verisinin bilgisayara MP4 olarak kaydedilmesi sayısallaştırma (digitization) örneğidir."
+  },
+  {
+    "id": 72,
+    "question": "Hangi sanayi devrimi veri ve bilgiye olan bağımlılığı nedeniyle diğer sanayi devrimlerinden kökten ayrılmaktadır?",
+    "options": [
+      "A) Sanayi 1.0",
+      "B) Sanayi 2.0",
+      "C) Sanayi 3.0",
+      "D) Sanayi 4.0"
+    ],
+    "answer": "D",
+    "explanation": "Dördüncü Sanayi Devrimi (Sanayi 4.0), siber-fiziksel sistemler, veri analitiği ve internet teknolojilerine bağımlı olmasıyla önceki makineleşme/elektriklendirme devrimlerinden ayrılır."
+  },
+  {
+    "id": 73,
+    "question": "Fiziksel belgelerin taranıp buluta aktarılmasından sonra, bu belgelere dayalı olarak çalışanların uzaktan iş akışlarını yönetebilmesi hangisidir?",
+    "options": [
+      "A) Sayısallaştırma",
+      "B) Dijitalleşme (Digitalization)",
+      "C) Manuel Süreç",
+      "D) Sanayi 1.0"
+    ],
+    "answer": "B",
+    "explanation": "Sayısallaştırılmış belgelerin uzaktan erişim ve iş akışı yönetimi amacıyla kullanılması bir süreç iyileştirmesidir, yani dijitalleşmedir."
+  },
+  {
+    "id": 74,
+    "question": "Dördüncü Sanayi Devrimi (Sanayi 4.0) kavramı ilk kez nerede ve hangi yılda resmi olarak ortaya atılmıştır?",
+    "options": [
+      "A) ABD - Silikon Vadisi (2005)",
+      "B) Almanya - Hannover Fuarı (2011)",
+      "C) İsviçre - Davos Zirvesi (2015)",
+      "D) Japonya - Tokyo Teknoloji Forumu (2018)"
+    ],
+    "answer": "B",
+    "explanation": "Sanayi 4.0 (Industrie 4.0) terimi, ilk olarak 2011 yılında Almanya'daki Hannover Fuarı'nda Alman hükümetinin yüksek teknoloji strateji grubu tarafından sunulmuştur."
+  },
+  {
+    "id": 75,
+    "question": "Dijital dönüşümün başarıyla hayata geçirilmesinde organizasyonel düzeyde en büyük engel genellikle hangisidir?",
+    "options": [
+      "A) Bilgisayar işlemci güçlerinin yetersizliği",
+      "B) Kültürel direnç ve değişim yönetimi eksikliği",
+      "C) İnternet altyapısının bulunmaması",
+      "D) Kağıt üretiminin ucuzlaması"
+    ],
+    "answer": "B",
+    "explanation": "Dijital dönüşüm projelerinde en büyük zorluk teknolojik olmaktan ziyade, çalışanların ve yönetimin eski alışkanlıkları sürdürme eğilimi (kültürel direnç) ve liderlik eksikliğidir."
+  },
+  {
+    "id": 76,
+    "question": "Kuruluşların yeteneklerinin belirli süreçler dahilinde zaman içerisindeki gelişim durumunu tanımlayan Pullen (2007) olgunluk modelini nasıl betimler?",
+    "options": [
+      "A) Sadece teknolojik araçların listesidir",
+      "B) Gelişim sürecinin farklı aşamalarındaki etkili işlemlerin özelliklerini tanımlayan yapılandırılmış öğeler koleksiyonu",
+      "C) Şirketin yıllık finansal bütçesidir",
+      "D) Sadece yazılımcıların performans kriteridir"
+    ],
+    "answer": "B",
+    "explanation": "Pullen (2007) olgunluk modelini, gelişim sürecinin farklı aşamalarında etkili işlemlerin özelliklerini tanımlayan yapılandırılmış öğeler koleksiyonu olarak tanımlamaktadır."
+  },
+  {
+    "id": 77,
+    "question": "Kuruluşların yazılım geliştirme yeteneklerini ve olgunluk seviyelerini ölçmek amacıyla Paulk ve ark. (1993) tarafından geliştirilen model hangisidir?",
+    "options": [
+      "A) IBM Olgunluk Modeli",
+      "B) CMM (Capability Maturity Model)",
+      "C) PUKÖ Kalite Modeli",
+      "D) Dalenogare Modeli"
+    ],
+    "answer": "B",
+    "explanation": "Paulk ve ark. (1993) yazılım süreçlerini iyileştirmek ve yeteneklerini ölçmek amacıyla Yetenek Olgunluk Modeli'ni (CMM - Capability Maturity Model) geliştirmişlerdir."
+  },
+  {
+    "id": 78,
+    "question": "Deming (2018) tarafından tanımlanan Kalite Yönetim Sistemleri döngüsünün temel adımları hangi sıra ile uygulanmalıdır?",
+    "options": [
+      "A) Planla - Kontrol Et - Uygula - Önlem Al",
+      "B) Planla - Uygula - Kontrol Et - Önlem Al (PUKÖ)",
+      "C) Önlem Al - Planla - Uygula - Kontrol Et",
+      "D) Uygula - Kontrol Et - Önlem Al - Planla"
+    ],
+    "answer": "B",
+    "explanation": "Kalite ve olgunluk süreçlerinin temeli olan PUKÖ döngüsü: Planla (Plan), Uygula (Do), Kontrol Et (Check), Önlem Al (Act) sıralamasını esas alır."
+  },
+  {
+    "id": 79,
+    "question": "IBM Dijital Olgunluk Modeli'nde (Berman ve Bell, 2011) yer alan 'Süreç Entegrasyonu' boyutu aşağıdakilerden hangisini hedefler?",
+    "options": [
+      "A) Şirket içindeki tüm çalışanları işten çıkarmayı",
+      "B) Dijital olanaklar kullanılarak süreçlerin optimize edilmesi ve şirketler arasında entegre edilmesini",
+      "C) Şirketin web sitesinin tasarımını değiştirmeyi",
+      "D) Sosyal medya hesaplarının kapatılmasını"
+    ],
+    "answer": "B",
+    "explanation": "Süreç Entegrasyonu, dijital araçlarla iş süreçlerinin verimli hale getirilmesini ve iş ortaklarıyla süreç entegrasyonu kurulmasını kapsar."
+  },
+  {
+    "id": 80,
+    "question": "IBM Dijital Olgunluk Modeli'nin 'İş Modeli İnovasyonu' boyutu neye odaklanmaktadır?",
+    "options": [
+      "A) Yeni fiziksel fabrikaların kurulmasına",
+      "B) Her seviyede müşteri değerinin oluşturulmasını hedefleyen yeni iş modelleri tasarlamaya",
+      "C) Sadece bilgisayar sayısını artırmaya",
+      "D) Çalışanların maaşlarını düşürmeye"
+    ],
+    "answer": "B",
+    "explanation": "İş Modeli İnovasyonu boyutu, dijital yeteneklerle yeni gelir modelleri ve değer önerileri oluşturarak iş modellerini yenilemeye odaklanır."
+  },
+  {
+    "id": 81,
+    "question": "Aşağıdakilerden hangisi IBM Dijital Olgunluk Modeli'nde yer alan 6 ana boyuttan biri değildir?",
+    "options": [
+      "A) Analitik Görü",
+      "B) Süreç Entegrasyonu",
+      "C) Müşteri ve Toplum İş Birliği",
+      "D) Tersine Lojistik ve İmhalamalar"
+    ],
+    "answer": "D",
+    "explanation": "Berman ve Bell (2011) tarafından geliştirilen IBM modelinde Analitik Görü, Süreç Entegrasyonu ve Müşteri İş Birliği yer alır; Tersine Lojistik bu olgunluk boyutları arasında değildir."
+  },
+  {
+    "id": 82,
+    "question": "Olgunluk modelini 'bir işletmede yer alan bir varlığın zaman içindeki gelişim süreci' olarak tanımlayan akademik yazar kimdir?",
+    "options": [
+      "A) Paulk (1993)",
+      "B) Klimko (2001)",
+      "C) Pullen (2007)",
+      "D) Hardin (1968)"
+    ],
+    "answer": "B",
+    "explanation": "Klimko (2001) olgunluk durumunu, bir işletmede yer alan fiziksel veya örgütsel bir varlığın zaman içindeki gelişim süreci olarak açıklar."
+  },
+  {
+    "id": 83,
+    "question": "PUKÖ döngüsünde 'Kontrol Et' (Check) aşaması hangi faaliyeti temsil eder?",
+    "options": [
+      "A) Hedeflerin planlanması sürecini",
+      "B) Yapılan uygulamanın planlanan hedeflerle uyumunun ve performansının ölçülmesini",
+      "C) Hataların giderilmesi için aksiyon alınmasını",
+      "D) Projenin tamamen iptal edilmesini"
+    ],
+    "answer": "B",
+    "explanation": "Kontrol Et aşaması, hedefler ile gerçekleşen sonuçların karşılaştırılması ve performansın ölçülmesidir."
+  },
+  {
+    "id": 84,
+    "question": "IBM Olgunluk Modeli'nde yer alan 'Müşteri ve Toplum İş Birliği' boyutu neyi hedefler?",
+    "options": [
+      "A) Müşterilerin şirket yönetimine doğrudan atanmasını",
+      "B) Müşteri odaklılığın tüm departmanlara yayılmasını ve sosyal ağların entegre edilmesini",
+      "C) Müşterilere ücretsiz ürün dağıtılmasını",
+      "D) Sadece pazarlama reklamlarının sayısını artırmayı"
+    ],
+    "answer": "B",
+    "explanation": "Müşteri ve Toplum İş Birliği boyutu, müşteri deneyimini geliştirmek için sosyal mecralardan ve veri ağlarından iş birliği odaklı yararlanmayı ifade eder."
+  },
+  {
+    "id": 85,
+    "question": "CMMI (Yetenek Olgunluk Model Entegrasyonu) kapsamında en yüksek olgunluk seviyesi (Seviye 5) aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Tanımlanmış (Defined)",
+      "B) Yönetilen (Managed)",
+      "C) Optimize Edilen (Optimizing)",
+      "D) Başlangıç (Initial)"
+    ],
+    "answer": "C",
+    "explanation": "CMMI modelinde 5. Seviye 'Optimize Edilen' (Optimizing) seviyedir; sürekli iyileştirme ve yeniliklerin süreçlere adapte edilmesini ifade eder."
+  },
+  {
+    "id": 86,
+    "question": "Yazılım olgunluk seviyelerini ölçmede Seviye 1 (Initial) neyi ifade eder?",
+    "options": [
+      "A) Süreçlerin tamamen standartlaştırıldığını",
+      "B) Süreçlerin plansız, kaotik ve kişilere bağımlı yürütüldüğünü",
+      "C) Sürekli optimizasyon yapıldığını",
+      "D) Süreçlerin dış denetimden başarıyla geçtiğini"
+    ],
+    "answer": "B",
+    "explanation": "Olgunluk modellerinde başlangıç seviyesi (Initial/Level 1), süreçlerin tanımlanmadığı, kontrolsüz ve tamamen kahraman bireylere bağımlı olduğu aşamadır."
+  },
+  {
+    "id": 87,
+    "question": "Kalite yönetim sistemlerinin babası kabul edilen ve PUKÖ döngüsünü popülerleştiren bilim insanı kimdir?",
+    "options": [
+      "A) W. Edwards Deming",
+      "B) Joseph Juran",
+      "C) Philip Crosby",
+      "D) Garrett Hardin"
+    ],
+    "answer": "A",
+    "explanation": "Edwards Deming, sürekli kalite iyileştirme döngüsü olan PUKÖ'yü (Shewhart döngüsünden geliştirerek) popülerleştiren kalite öncüsüdür."
+  },
+  {
+    "id": 88,
+    "question": "Kuruluşların dijital olgunluğunu ölçerken 'teknoloji' boyutunun yanı sıra değerlendirilmesi gereken en kritik iki boyut hangisidir?",
+    "options": [
+      "A) Finans ve Vergiler",
+      "B) İnsan Kaynakları (Kültür) ve Süreçler",
+      "C) Ofis binalarının sayısı ve konumu",
+      "D) Rakip firmaların hisse değerleri"
+    ],
+    "answer": "B",
+    "explanation": "Dijital olgunluk sadece teknolojiyle ölçülmez; organizasyonel yapı, süreçler, liderlik ve kültür (insan) boyutlarının da değerlendirilmesi zorunludur."
+  },
+  {
+    "id": 89,
+    "question": "IBM Olgunluk Modeli'nde 'Analitik Görü' seviyesi en yüksek olan bir firma kararlarını neye dayandırır?",
+    "options": [
+      "A) Yöneticilerin hislerine ve tecrübelerine",
+      "B) Tahminleme modellerine ve ileri veri analitiğine",
+      "C) Rakip şirketlerin yaptıkları açıklamalara",
+      "D) Sadece geçmiş yılın ciro raporlarına"
+    ],
+    "answer": "B",
+    "explanation": "Analitik görü olgunluğu yüksek firmalar, sadece geçmişe bakmakla (descriptive) kalmaz, makine öğrenmesi ve yapay zeka ile geleceği tahminleyerek (predictive) karar alır."
+  },
+  {
+    "id": 90,
+    "question": "PUKÖ döngüsünün 'Önlem Al' (Act) aşaması aşağıdakilerden hangisini içerir?",
+    "options": [
+      "A) Performans ölçüm sonuçlarına göre kalıcı iyileştirmelerin standartlaştırılmasını ve yaygınlaştırılmasını",
+      "B) Sadece projenin bütçesini kontrol etmeyi",
+      "C) Yeni bir proje fikri tasarlamayı",
+      "D) Rakip firmaları analiz etmeyi"
+    ],
+    "answer": "A",
+    "explanation": "Önlem Al aşaması, test edilen ve başarılı olan iyileştirmelerin kurumsal standart haline getirilmesini ve hataların kalıcı olarak çözülmesini kapsar."
+  },
+  {
+    "id": 91,
+    "question": "Türkiye'de sanayide dijital dönüşümün pilot uygulama süreçlerinin yürütülmesi görevi hangi bakanlık birimine verilmiştir?",
+    "options": [
+      "A) Ar-Ge Teşvikleri Genel Müdürlüğü",
+      "B) Sanayi ve Verimlilik Genel Müdürlüğü",
+      "C) KOSGEB Başkanlığı",
+      "D) TÜBİTAK TEYDEB"
+    ],
+    "answer": "B",
+    "explanation": "Türkiye'deki sanayi dijitalleşme politikalarında 'Pilot Uygulama Süreçleri' Sanayi ve Verimlilik Genel Müdürlüğü uhdesindedir."
+  },
+  {
+    "id": 92,
+    "question": "Türkiye'de dijitalleşme stratejilerini geliştirmek üzere TOBB, TİM, TÜSİAD, MÜSİAD, YASED ve TTGV katılımıyla kurulan çalışma gruplarının sayısı kaçtır?",
+    "options": [
+      "A) 3",
+      "B) 6",
+      "C) 10",
+      "D) 12"
+    ],
+    "answer": "B",
+    "explanation": "Sanayinin dijital dönüşümü yol haritasını belirlemek amacıyla iş dünyası temsilcileriyle birlikte 6 ana çalışma grubu kurulmuştur."
+  },
+  {
+    "id": 93,
+    "question": "Sanayide dijital dönüşüm kapsamında kurulan 6 çalışma grubundan hangisi dijital dönüşümün insan kaynağı boyutunu ele almaktadır?",
+    "options": [
+      "A) Altyapı Çalışma Grubu",
+      "B) Eğitim Çalışma Grubu",
+      "C) Açık İnovasyon Çalışma Grubu",
+      "D) Mevzuat Çalışma Grubu"
+    ],
+    "answer": "B",
+    "explanation": "Eğitim Çalışma Grubu, dijital dönüşümün gerektirdiği nitelikli iş gücü, mühendislik ve teknik yetkinliklerin kazandırılmasını koordine eder."
+  },
+  {
+    "id": 94,
+    "question": "Türkiye'de sanayicilere uygulamalı yalın üretim ve dijital dönüşüm eğitimleri vermek amacıyla ilk olarak Ankara ve Bursa'da kurulan merkezlere ne ad verilir?",
+    "options": [
+      "A) Teknoloji Geliştirme Bölgeleri",
+      "B) Dijital Model Fabrikalar",
+      "C) KOSGEB Laboratuvarları",
+      "D) Organize Sanayi Merkezleri"
+    ],
+    "answer": "B",
+    "explanation": "Model Fabrikalar (Yetkinlik ve Dijital Dönüşüm Merkezleri), sanayicilere yaşayarak öğrenme ve dijitalleşme yetenekleri kazandıran pilot merkezlerdir."
+  },
+  {
+    "id": 95,
+    "question": "Türkiye'de kamunun ve sanayinin dijital dönüşüm koordinasyonunu sağlamak amacıyla Cumhurbaşkanlığı bünyesinde kurulan ofis hangisidir?",
+    "options": [
+      "A) İnsan Kaynakları Ofisi",
+      "B) Dijital Dönüşüm Ofisi",
+      "C) Yatırım Ofisi",
+      "D) Finans Ofisi"
+    ],
+    "answer": "B",
+    "explanation": "Cumhurbaşkanlığı Dijital Dönüşüm Ofisi, Türkiye'nin e-devlet, siber güvenlik, yapay zeka ve dijital teknolojilerdeki vizyonunu ve dönüşümünü koordine eder."
+  },
+  {
+    "id": 96,
+    "question": "Aşağıdakilerden hangisi Türkiye'de dijitalleşme projelerinin finansmanında rol alan resmi kaynak kurumlardan biri değildir?",
+    "options": [
+      "A) TÜBİTAK",
+      "B) KOSGEB",
+      "C) AB ve Dış İlişkiler Genel Müdürlüğü",
+      "D) Türkiye Odalar ve Borsalar Birliği (TOBB)"
+    ],
+    "answer": "D",
+    "explanation": "TOBB bir finansman sağlayıcı resmi devlet bütçe mercii değil; iş dünyasını temsil eden bir sivil toplum kuruluşu/meslek örgütüdür. Finansal kaynaklar TÜBİTAK, KOSGEB ve Bakanlık fonlarıdır."
+  },
+  {
+    "id": 97,
+    "question": "Türkiye'de sanayinin dijital olgunluk düzeyini ölçmek amacıyla işletmelere yönelik yapılan somut çalışma hangisidir?",
+    "options": [
+      "A) Vergi denetimleri yapılması",
+      "B) Sanayide Dijital Olgunluk Seviyesi anket ve ölçümlerinin gerçekleştirilmesi",
+      "C) Tüm fabrikalara bilgisayar dağıtılması",
+      "D) İthalat kotası konulması"
+    ],
+    "answer": "B",
+    "explanation": "Bakanlık ve paydaşlar tarafından sanayinin mevcut durumunu analiz etmek için 'Sanayide Dijital Olgunluk Seviyesi' anket ve saha çalışmaları yapılmıştır."
+  },
+  {
+    "id": 98,
+    "question": "Sanayide Dijital Dönüşüm Platformu kapsamında kurulan 6 çalışma grubundan hangisi standartların uyumlulaştırılması ve yasal süreçlerle ilgilenir?",
+    "options": [
+      "A) Altyapı Çalışma Grubu",
+      "B) Mevzuat ve Standartlar Çalışma Grubu",
+      "C) Eğitim Çalışma Grubu",
+      "D) Dijital Teknolojiler Çalışma Grubu"
+    ],
+    "answer": "B",
+    "explanation": "Mevzuat ve Standartlar Çalışma Grubu, siber güvenlik standartları, veri paylaşımı regülasyonları ve yasal altyapıyla ilgilenir."
+  },
+  {
+    "id": 99,
+    "question": "Türkiye'de Model Fabrika uygulamalarında katılımcılara öğretilen temel üretim felsefesi aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Seri ve Tek Tip Üretim",
+      "B) Yalın Üretim (Lean Production)",
+      "C) Manuel El Sanatları Üretimi",
+      "D) Stok Odaklı İtme Üretimi"
+    ],
+    "answer": "B",
+    "explanation": "Model Fabrikalarda öncelikle israfların önlenmesini hedefleyen 'Yalın Üretim' (Lean) öğretilir, ardından bu yalın süreçler dijitalleştirilir."
+  },
+  {
+    "id": 100,
+    "question": "Türkiye'nin yapay zeka alanındaki stratejik hedeflerini belirleyen ve 2021 yılında yayınlanan resmi belgenin adı nedir?",
+    "options": [
+      "A) Ulusal Yapay Zeka Stratejisi (2021-2025)",
+      "B) Dijital Yapay Zeka Kanunu",
+      "C) Sanayi 4.0 Eylem Planı",
+      "D) Kalkınma Yapay Zeka Planı"
+    ],
+    "answer": "A",
+    "explanation": "Sanayi ve Teknoloji Bakanlığı ile Cumhurbaşkanlığı Dijital Dönüşüm Ofisi iş birliğiyle hazırlanan 'Ulusal Yapay Zeka Stratejisi (2021-2025)' Türkiye'nin resmi yapay zeka yol haritasıdır."
+  },
+  {
+    "id": 101,
+    "question": "Türkiye'de dijitalleşme çalışmalarında 'Politika Geliştirme Süreci' resmi olarak hangi birimin sorumluluğundadır?",
+    "options": [
+      "A) TÜBİTAK Başkanlığı",
+      "B) Sanayi ve Teknoloji Bakanlığı Ar-Ge Teşvikleri Genel Müdürlüğü",
+      "C) KOSGEB Destek Dairesi",
+      "D) Ticaret Bakanlığı"
+    ],
+    "answer": "B",
+    "explanation": "Dijitalleşme politikalarının resmi koordinasyon ve politika geliştirme bacağı Ar-Ge Teşvikleri Genel Müdürlüğü tarafından yürütülmektedir."
+  },
+  {
+    "id": 102,
+    "question": "Türkiye'deki Model Fabrikalar projesinde devlet kurumlarının yanı sıra iş birliği yapılan uluslararası kalkınma kuruluşu hangisidir?",
+    "options": [
+      "A) Birleşmiş Milletler Kalkınma Programı (UNDP)",
+      "B) Dünya Bankası (World Bank)",
+      "C) IMF",
+      "D) UNESCO"
+    ],
+    "answer": "A",
+    "explanation": "Model Fabrikaların kurulumu ve yaygınlaştırılması süreci Türkiye Cumhuriyeti Sanayi Bakanlığı ile UNDP (Birleşmiş Milletler Kalkınma Programı) iş birliğiyle yürütülmektedir."
+  },
+  {
+    "id": 103,
+    "question": "Aşağıdakilerden hangisi Türkiye'nin sanayide dijital dönüşüm yol haritasında kurulan 6 çalışma grubundan biri değildir?",
+    "options": [
+      "A) İleri Üretim Teknikleri",
+      "B) Dijital Teknolojiler",
+      "C) Fosil Yakıt Teşvikleri",
+      "D) Açık İnovasyon"
+    ],
+    "answer": "C",
+    "explanation": "Fosil Yakıt Teşvikleri gibi çevreye zararlı bir başlık çalışma grupları arasında yer almaz. Çalışma grupları ileri teknoloji ve sürdürülebilirlik odaklıdır."
+  },
+  {
+    "id": 104,
+    "question": "Türkiye'nin dijital dönüşüm yetkinliğini artırmak için 'bilgi sermayesi' oluşturmak adına Bakanlık kaç üniversiteyle iş birliği protokolü imzalamıştır?",
+    "options": [
+      "A) 5",
+      "B) 10",
+      "C) 15",
+      "D) 50"
+    ],
+    "answer": "C",
+    "explanation": "Dijital Türkiye yol haritasında nitelikli insan kaynağı ve bilgi birikimi için 15 üniversite ile stratejik iş birliği protokolleri imzalanmıştır."
+  },
+  {
+    "id": 105,
+    "question": "Türkiye'de KOSGEB aracılığıyla KOBİ'lerin dijitalleşmesini desteklemek amacıyla sunulan popüler hibe ve destek programının adı hangisidir?",
+    "options": [
+      "A) KOBİGEL - KOBİ Gelişim Destek Programı",
+      "B) Tarımsal Kalkınma Programı",
+      "C) Esnaf Kredi Desteği",
+      "D) İthalat İkame Programı"
+    ],
+    "answer": "A",
+    "explanation": "KOSGEB, KOBİGEL programı kapsamında 'İmalat Sanayinde Dijitalleşme' başlıklarıyla KOBİ'lerin yazılım, donanım ve teknik dönüşümlerine hibe ve destek sağlamaktadır."
+  },
+  {
+    "id": 106,
+    "question": "Modern iş dünyasında verinin önemini vurgulamak için sıkça kullanılan 'Veri yeni petroldür' (Data is the new oil) sözü kime aittir?",
+    "options": [
+      "A) Bill Gates",
+      "B) Clive Humby",
+      "C) Steve Jobs",
+      "D) Garrett Hardin"
+    ],
+    "answer": "B",
+    "explanation": "Verinin işlenerek anlamlı hale getirilmesiyle değer kazanacağını ifade eden 'Veri yeni petroldür' sözü ilk kez 2006'da İngiliz matematikçi Clive Humby tarafından söylenmiştir."
+  },
+  {
+    "id": 107,
+    "question": "Büyük Veri (Big Data) analizinde, verinin metin, ses, video veya sensör sinyali gibi farklı formatlarda bulunmasını ifade eden V hangisidir?",
+    "options": [
+      "A) Volume (Hacim)",
+      "B) Velocity (Hız)",
+      "C) Variety (Çeşitlilik)",
+      "D) Veracity (Doğruluk)"
+    ],
+    "answer": "C",
+    "explanation": "Variety (Çeşitlilik), büyük veriyi oluşturan kaynakların yapılandırılmış (SQL tabloları) veya yapılandırılmamış (video, ses, sosyal medya metinleri) olarak çeşitlilik göstermesidir."
+  },
+  {
+    "id": 108,
+    "question": "Büyük Veri analitiğinde 'Kök neden analizi' yaparak 'Bir olay neden gerçekleşti?' sorusuna yanıt arayan seviye hangisidir?",
+    "options": [
+      "A) Tanımlayıcı Analitik (Descriptive)",
+      "B) Tanısal Analitik (Diagnostic)",
+      "C) Öngörücü Analitik (Predictive)",
+      "D) Yönlendirici Analitik (Prescriptive)"
+    ],
+    "answer": "B",
+    "explanation": "Tanısal analitik (Diagnostic), geçmiş verileri inceleyerek sistemlerdeki bir arızanın, satış düşüşünün veya olayın neden kaynaklandığını bulmaya çalışır."
+  },
+  {
+    "id": 109,
+    "question": "Büyük Veri analitiğinde 'Gelecekte ne olacak?' sorusunu makine öğrenmesi modelleriyle tahmin etmeye çalışan seviye hangisidir?",
+    "options": [
+      "A) Tanımlayıcı Analitik",
+      "B) Tanısal Analitik",
+      "C) Öngörücü Analitik (Predictive)",
+      "D) Yönlendirici Analitik"
+    ],
+    "answer": "C",
+    "explanation": "Öngörücü analitik (Predictive), geçmiş veri kalıplarından yararlanarak gelecekteki talebi, arıza ihtimalini veya müşteri davranışlarını tahmin eder."
+  },
+  {
+    "id": 110,
+    "question": "Siemens tarafından geliştirilen ve 1.3 milyondan fazla bağlı cihazdan gelen büyük veriyi analiz eden bulut tabanlı IoT platformunun adı nedir?",
+    "options": [
+      "A) Watson AI",
+      "B) MindSphere",
+      "C) Data Lake",
+      "D) Predix"
+    ],
+    "answer": "B",
+    "explanation": "Siemens'in endüstriyel bulut ve IoT işletim sistemi olan MindSphere, milyonlarca bağlı makineden veri toplayıp optimizasyon sağlar."
+  },
+  {
+    "id": 111,
+    "question": "Arçelik bünyesinde kalite zekası, akıllı servis yönlendirmeleri ve üretim verimliliği için oluşturulan ortak veri havuzu projesine ne ad verilir?",
+    "options": [
+      "A) MindSphere",
+      "B) Data Lake (Veri Gölü)",
+      "C) Hadoop Server",
+      "D) Enterprise Cloud"
+    ],
+    "answer": "B",
+    "explanation": "Arçelik, farklı departmanlardan akan yapısal ve yapısal olmayan verileri tek bir yerde analiz etmek için 'Data Lake' (Veri Gölü) mimarisini kurmuştur."
+  },
+  {
+    "id": 112,
+    "question": "Büyük Verinin 3V'sinden 'Velocity' (Hız) aşağıdakilerden hangisini tanımlar?",
+    "options": [
+      "A) Verilerin gigabayt veya terabayt cinsinden boyutunu",
+      "B) Verilerin ne kadar hızlı üretildiği ve ne kadar hızlı işlenmesi gerektiğini",
+      "C) Verilerin saklandığı sabit disklerin dönüş hızını",
+      "D) İnternet kablolarının veri iletim hızını"
+    ],
+    "answer": "B",
+    "explanation": "Velocity (Hız), verinin üretim sıklığı ve gerçek zamanlı analiz edilme hızını (örneğin anlık finansal işlemler veya sensör verileri) temsil eder."
+  },
+  {
+    "id": 113,
+    "question": "Şirketlerde veri ambarlarının ve veriden değer üretme süreçlerinin yönetiminden sorumlu olan üst düzey liderlik pozisyonu hangisidir?",
+    "options": [
+      "A) CFO (Finans Başkanı)",
+      "B) CDO (Chief Data Officer / Veri Başkanı)",
+      "C) CMO (Pazarlama Başkanı)",
+      "D) CEO (Genel Müdür)"
+    ],
+    "answer": "B",
+    "explanation": "CDO (Chief Data Officer), verinin toplanması, kalitesi, analitiği ve stratejik kararlara dönüştürülmesinden sorumlu üst düzey yöneticidir."
+  },
+  {
+    "id": 114,
+    "question": "Büyük Veri analitiğinde 'Ne yapmalıyız?' sorusuna yanıt veren, kararı optimize eden ve en iyi aksiyon planını sunan en üst analitik seviyesi hangisidir?",
+    "options": [
+      "A) Tanımlayıcı Analitik",
+      "B) Tanısal Analitik",
+      "C) Öngörücü Analitik",
+      "D) Yönlendirici Analitik (Prescriptive)"
+    ],
+    "answer": "D",
+    "explanation": "Yönlendirici analitik (Prescriptive), sadece tahminde bulunmaz; simülasyon ve optimizasyon algoritmalarıyla en doğru kararın ne olması gerektiğini önerir."
+  },
+  {
+    "id": 115,
+    "question": "Büyük veri platformlarında sıklıkla kullanılan ve verileri satır/sütun kısıtlaması olmadan ham biçimde depolayan havuzlara ne ad verilir?",
+    "options": [
+      "A) İlişkisel Veritabanı (SQL)",
+      "B) Veri Gölü (Data Lake)",
+      "C) Sunucu Diski",
+      "D) Excel Sayfası"
+    ],
+    "answer": "B",
+    "explanation": "Veri Gölü (Data Lake), yapısal (relational), yarı yapısal (JSON, XML) ve yapısal olmayan (video, ses, PDF) ham verileri devasa boyutta saklayan havuzdur."
+  },
+  {
+    "id": 116,
+    "question": "Büyük Verinin temel özelliklerine sonradan eklenen ve verinin 'güvenilirliği ve doğruluğu' ile ilgili olan V hangisidir?",
+    "options": [
+      "A) Volume",
+      "B) Variety",
+      "C) Veracity (Doğruluk/Güvenilirlik)",
+      "D) Value"
+    ],
+    "answer": "C",
+    "explanation": "Veracity (Doğruluk/Güvenilirlik), toplanan büyük verinin ne kadar temiz, gürültüsüz ve analiz için güvenilir olduğunu ifade eder."
+  },
+  {
+    "id": 117,
+    "question": "Aşağıdakilerden hangisi tanımlayıcı (descriptive) analitiğe örnek olarak gösterilebilir?",
+    "options": [
+      "A) Geçen ayın elektrik tüketim raporunun incelenmesi",
+      "B) Fabrikadaki bir makinenin 3 gün sonra arızalanacağının tahmin edilmesi",
+      "C) En az karbon salınımı yapacak lojistik rotanın otomatik hesaplanması",
+      "D) Müşteri kaybının (churn) nedenlerinin regresyonla bulunması"
+    ],
+    "answer": "A",
+    "explanation": "Geçen ayın elektrik tüketim raporu geçmişte 'Ne oldu?' sorusuna cevap verdiğinden tanımlayıcı (descriptive) analitik örneğidir."
+  },
+  {
+    "id": 118,
+    "question": "Sensörlerden akan sıcaklık verilerini anlık izleyip 'Sıcaklık 90 dereceye ulaştı' uyarısı veren bir IoT sistemi hangi analitik seviyesindedir?",
+    "options": [
+      "A) Tanımlayıcı Analitik (Descriptive)",
+      "B) Öngörücü Analitik (Predictive)",
+      "C) Yönlendirici Analitik (Prescriptive)",
+      "D) Zayıf Yapay Zeka"
+    ],
+    "answer": "A",
+    "explanation": "Anlık durumu veya geçmiş durumu raporlayan ve gösteren sistemler tanımlayıcı (descriptive) seviyededir."
+  },
+  {
+    "id": 119,
+    "question": "Hava tahmini verilerini, geçmiş tarım verimini ve toprak nemini analiz ederek çiftçilere 'Bu hafta ekim yapmalısınız' tavsiyesi veren sistem hangisidir?",
+    "options": [
+      "A) Tanımlayıcı Analitik",
+      "B) Tanısal Analitik",
+      "C) Yönlendirici Analitik (Prescriptive)",
+      "D) Sayısallaştırma"
+    ],
+    "answer": "C",
+    "explanation": "Sistem karar vericiye en doğru aksiyonu tavsiye ettiği için yönlendirici analitik (Prescriptive) seviyesindedir."
+  },
+  {
+    "id": 120,
+    "question": "2025 yılı için öngörülen 175 Zettabyte veri hacmi, büyük verinin 3V prensibinden en çok hangisiyle ilişkilidir?",
+    "options": [
+      "A) Velocity (Hız)",
+      "B) Variety (Çeşitlilik)",
+      "C) Volume (Hacim)",
+      "D) Veracity (Güvenilirlik)"
+    ],
+    "answer": "C",
+    "explanation": "Üretilen verinin boyutsal büyüklüğü (Zettabyte düzeyleri) doğrudan Volume (Hacim) bileşeniyle ilgilidir."
+  },
+  {
+    "id": 121,
+    "question": "Veri yönetiminde 'Veri Ambarı' (Data Warehouse) ile 'Veri Gölü' (Data Lake) arasındaki en temel fark hangisidir?",
+    "options": [
+      "A) Veri ambarında sadece videolar saklanır",
+      "B) Veri ambarı yapılandırılmış ve önceden işlenmiş verileri saklarken, veri gölü ham ve yapısal olmayan verileri saklar",
+      "C) Veri gölü sadece Excel dosyalarını saklar",
+      "D) Aralarında hiçbir fark yoktur"
+    ],
+    "answer": "B",
+    "explanation": "Data Warehouse yapılandırılmış, temizlenmiş ve şeması belirlenmiş verileri raporlama için saklar; Data Lake ise her türlü ham veriyi saklar."
+  },
+  {
+    "id": 122,
+    "question": "Büyük veri analitiğinde, verinin kalitesini artırmak ve analizlerin yanlış sonuç vermesini önlemek için yapılan ilk işlem hangisidir?",
+    "options": [
+      "A) Veri Görselleştirme",
+      "B) Veri Temizleme ve Ön İşleme (Data Cleaning)",
+      "C) Yapay Zekâ Eğitimi",
+      "D) Raporu sunucuya kaydetme"
+    ],
+    "answer": "B",
+    "explanation": "Büyük veri gürültülü ve eksik olabileceğinden, analizden önce boş değerlerin doldurulması ve hatalı kayıtların silinmesi (veri temizleme) gerekir."
+  },
+  {
+    "id": 123,
+    "question": "Hangi kavram, işletmelerin karar alma süreçlerini tamamen verilere ve algoritmalara dayandırarak objektif hale getirmesini tanımlar?",
+    "options": [
+      "A) Sezgisel Yönetim",
+      "B) Veri Odaklı Karar Alma (Data-Driven Decision Making)",
+      "C) Geleneksel Bürokrasi",
+      "D) Ortak Malların Yönetimi"
+    ],
+    "answer": "B",
+    "explanation": "Veri odaklı karar alma (DDDM), kararların varsayımlardan ziyade analiz edilmiş verilere dayandırılması sürecidir."
+  },
+  {
+    "id": 124,
+    "question": "Büyük Verinin 3V'sinden 'Variety' (Çeşitlilik) işletmeler için hangi zorluğu beraberinde getirir?",
+    "options": [
+      "A) Sabit disklerin ucuzlamasını",
+      "B) Farklı formatlardaki (video, ses, metin) verilerin birleştirilmesi ve analiz edilmesinin zor olmasını",
+      "C) Verilerin çok hızlı silinmesini",
+      "D) İnternet hızının düşmesini"
+    ],
+    "answer": "B",
+    "explanation": "Çeşitlilik nedeniyle, yapısal olmayan verileri (ses, görüntü) klasik ilişkisel veritabanlarında analiz etmek zordur; özel büyük veri teknolojileri (Hadoop, Spark vb.) gerektirir."
+  },
+  {
+    "id": 125,
+    "question": "Aşağıdakilerden hangisi bir işletmenin 'veri stratejisi' geliştirmesinin temel amaçlarından biridir?",
+    "options": [
+      "A) Verileri rakiplerle ücretsiz paylaşmak",
+      "B) Veriyi iş süreçlerini optimize etmek ve yeni iş modelleri/değer yaratmak için stratejik bir varlık haline getirmek",
+      "C) Bütün fiziksel sunucuları imha etmek",
+      "D) Çalışanların kişisel bilgilerini internete yüklemek"
+    ],
+    "answer": "B",
+    "explanation": "Veri stratejisi, işletmenin veriyi depolama, yönetme, analiz etme ve ticari değere/faydaya dönüştürme yol haritasıdır."
+  },
+  {
+    "id": 126,
+    "question": "Alibaba bünyesindeki Ant Financial firmasının, geleneksel bankalara kıyasla çok az çalışanla 1 milyar müşteriye hizmet vermesini sağlayan yapı hangisidir?",
+    "options": [
+      "A) Çok büyük çağrı merkezleri",
+      "B) Yapay Zekâ Karar Fabrikası (AI Decision Factory)",
+      "C) Ucuz iş gücü kullanımı",
+      "D) Şube sayısının çok fazla olması"
+    ],
+    "answer": "B",
+    "explanation": "Ant Financial, insan müdahalesi olmadan kredi onayı ve operasyonları yürüten algoritmik bir yapay zekâ fabrikası kurmuştur."
+  },
+  {
+    "id": 127,
+    "question": "Yapay Zekâ Fabrikası'nın (AI Factory) dört temel bileşeninden hangisi yeni algoritmaların performansını gerçek kullanıcılar üzerinde test eder?",
+    "options": [
+      "A) Veri Hattı (Data Pipeline)",
+      "B) Kestirimci Karar Motoru (Predictive Engine)",
+      "C) Deney Platformu (Experimentation Platform)",
+      "D) Yazılım Entegrasyonu"
+    ],
+    "answer": "C",
+    "explanation": "Deney Platformu (A/B testing platformu), yeni algoritmaların veya işlevlerin gerçek dünyada test edilmesini sağlar."
+  },
+  {
+    "id": 128,
+    "question": "Sadece tek bir dar alanda uzmanlaşmış (örneğin sadece kanserli hücre tespiti yapan veya satranç oynayan) yapay zekâ türü hangisidir?",
+    "options": [
+      "A) Güçlü Yapay Zeka (Strong AI)",
+      "B) Zayıf Yapay Zeka (Narrow / Weak AI)",
+      "C) Genel Yapay Zeka (AGI)",
+      "D) Süper Yapay Zeka"
+    ],
+    "answer": "B",
+    "explanation": "Dar veya Zayıf Yapay Zeka (Narrow AI), sadece belirli bir sınırlandırılmış görevde insan seviyesinde veya üzerinde performans gösteren sistemlerdir."
+  },
+  {
+    "id": 129,
+    "question": "Yapay Zekâ Fabrikasının girdisini oluşturan ve verilerin otomatik toplanmasını sağlayan bileşen hangisidir?",
+    "options": [
+      "A) Algoritmik Karar Motoru",
+      "B) Veri Hattı (Data Pipeline)",
+      "C) A/B Test Sistemi",
+      "D) Mobil Arayüz"
+    ],
+    "answer": "B",
+    "explanation": "Veri Hattı (Data Pipeline), büyük verileri toplayıp, temizleyip algoritmaların kullanacağı hale getiren otomatik altyapıdır."
+  },
+  {
+    "id": 130,
+    "question": "Yapay Zekâ Fabrikasının kalbi sayılan ve girdilere göre tahminlerde bulunan modelleri barındıran bileşen hangisidir?",
+    "options": [
+      "A) Veri Hattı",
+      "B) Kestirimci Karar Motoru (Predictive Engine)",
+      "C) Deney Platformu",
+      "D) Bulut Depolama"
+    ],
+    "answer": "B",
+    "explanation": "Kestirimci Karar Motoru (Predictive Engine), makine öğrenmesi modelleriyle girdi verilerinden kararlar ve tahminler üretir."
+  },
+  {
+    "id": 131,
+    "question": "Avrupa Birliği genelinde yapay zekânın etik ve güvenli kullanımını sağlamak amacıyla yürürlüğe giren yasal regülasyon hangisidir?",
+    "options": [
+      "A) GDPR",
+      "B) EU AI Act (AB Yapay Zeka Yasası)",
+      "C) Kyoto Protokolü",
+      "D) Brundtland Kanunu"
+    ],
+    "answer": "B",
+    "explanation": "EU AI Act, yapay zeka teknolojilerini risk seviyelerine göre sınıflandırıp denetleyen ilk kapsamlı uluslararası yapay zeka kanunudur."
+  },
+  {
+    "id": 132,
+    "question": "İnsanın sahip olduğu genel bilişsel yeteneklere sahip, her türlü değişen koşula adapte olabilen yapay zekâ seviyesi hangisidir?",
+    "options": [
+      "A) Zayıf Yapay Zeka",
+      "B) Güçlü / Genel Yapay Zeka (AGI / Strong AI)",
+      "C) Karar Motoru",
+      "D) Uzman Sistemler"
+    ],
+    "answer": "B",
+    "explanation": "Güçlü veya Genel Yapay Zeka (AGI - Artificial General Intelligence), insanın yapabildiği her türlü zihinsel görevi yerine getirebilen teorik yapay zekadır."
+  },
+  {
+    "id": 133,
+    "question": "Ant Financial firmasının 2018 sonlarında ulaştığı 150 milyar dolarlık piyasa değeri, ABD'nin hangi dev bankasının yaklaşık yarısına denk gelmektedir?",
+    "options": [
+      "A) Bank of America",
+      "B) JPMorgan Chase",
+      "C) Wells Fargo",
+      "D) Goldman Sachs"
+    ],
+    "answer": "B",
+    "explanation": "Ant Financial, çok az fiziki varlığı ve çalışanı olmasına rağmen yapay zeka gücüyle JPMorgan Chase'in (ABD'nin en büyük bankası) yarısı kadar piyasa değerine ulaşmıştır."
+  },
+  {
+    "id": 134,
+    "question": "Yapay zekâ algoritmalarının eğitilmesi ve karar alma yeteneklerinin geliştirilmesi için en kritik girdi aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Ofis binalarının konforu",
+      "B) Büyük ve kaliteli veri kümeleri (Data)",
+      "C) Sunucuların dış kasa tasarımı",
+      "D) Şirket hisselerinin fiyatı"
+    ],
+    "answer": "B",
+    "explanation": "Yapay zeka modellerinin (özellikle derin öğrenme) başarısı, eğitildikleri veri kümesinin büyüklüğüne ve kalitesine doğrudan bağlıdır."
+  },
+  {
+    "id": 135,
+    "question": "Yapay Zekâ Fabrikası'nın son bileşeni olan ve üretilen tahminleri/kararları son kullanıcı uygulamalarına entegre eden yapı hangisidir?",
+    "options": [
+      "A) Veri Hattı",
+      "B) Deney Platformu",
+      "C) Yazılım Entegrasyonu ve Altyapı",
+      "D) Veri Gölü"
+    ],
+    "answer": "C",
+    "explanation": "Yazılım Entegrasyonu ve Altyapı, algoritmaların çıktılarını web/mobil uygulamalar gibi arayüzlere gömerek müşteriye ulaştırır."
+  },
+  {
+    "id": 136,
+    "question": "Aşağıdakilerden hangisi zayıf yapay zekâya (Narrow AI) bir örnek değildir?",
+    "options": [
+      "A) E-ticaret sitelerindeki ürün tavsiye algoritmaları",
+      "B) İnsan gibi duygusal bilince sahip olan ve her konuda muhakeme yapabilen bir android robot",
+      "C) Spam e-postaları filtreleyen sistemler",
+      "D) Fotoğraftaki nesneleri etiketleyen görüntü işleme yazılımları"
+    ],
+    "answer": "B",
+    "explanation": "Duygusal bilince sahip, genel muhakeme yeteneği olan robot 'Güçlü/Genel Yapay Zeka' (AGI) sınıfına girer; günümüzde henüz örneği yoktur."
+  },
+  {
+    "id": 137,
+    "question": "Yapay zekânın kurumlara sağladığı operasyonel ölçeklenebilirlik avantajı neyi ifade eder?",
+    "options": [
+      "A) Şirketin fiziksel büyüklüğünü artırmasını",
+      "B) Müşteri sayısı artsa bile operasyonel maliyetlerin doğrusal artmamasını, algoritmaların aynı anda milyonlarca işleme bakabilmesini",
+      "C) Şirketin hisse senetlerini satmasını",
+      "D) Tüm işleri yöneticilerin yapmasını"
+    ],
+    "answer": "B",
+    "explanation": "Operasyonel ölçeklenebilirlik, insan gücünün aksine algoritmaların marjinal maliyeti neredeyse sıfıra yakın olacak şekilde milyonlarca kullanıcıya aynı anda hizmet verebilmesidir."
+  },
+  {
+    "id": 138,
+    "question": "AB Yapay Zeka Yasası (EU AI Act) yapay zeka sistemlerini risk derecelerine göre sınıflandırırken, 'sosyal puanlama' yapan sistemleri hangi risk grubuna dahil etmiştir?",
+    "options": [
+      "A) Düşük Risk",
+      "B) Kabul Edilemez Risk (Yasaklı sistemler)",
+      "C) Yüksek Risk",
+      "D) Sınırlı Risk"
+    ],
+    "answer": "B",
+    "explanation": "Vatandaşların davranışlarına göre puanlandığı 'sosyal puanlama' sistemleri ve biyometrik gözetim sistemleri AB Yapay Zeka Yasası'na göre 'Kabul Edilemez Risk' sınıfında olup yasaklanmıştır."
+  },
+  {
+    "id": 139,
+    "question": "Yapay zeka modellerinde 'aşırı öğrenme' (overfitting) ne anlama gelmektedir?",
+    "options": [
+      "A) Modelin veriyi çok yavaş öğrenmesi",
+      "B) Modelin eğitim verilerini ezberlemesi ancak yeni/farklı verilerde başarısız olması",
+      "C) Modelin tüm dilleri öğrenmesi",
+      "D) Modelin çalışmayı durdurması"
+    ],
+    "answer": "B",
+    "explanation": "Overfitting, modelin eğitim veri kümesindeki gürültüleri ezberlemesi ve gerçek hayattaki genel verilere uygulandığında tahmin gücünün düşmesidir."
+  },
+  {
+    "id": 140,
+    "question": "Yapay zekânın 'karar destek sistemi' olarak kullanılması ne demektir?",
+    "options": [
+      "A) Kararları tamamen yöneticilerin hislerine bırakması",
+      "B) Kararın yapay zeka analiz ve önerileri doğrultusunda insan yönetici tarafından verilmesi",
+      "C) Kararı sadece yazılımcıların alması",
+      "D) Karar alma sürecinin tamamen kaldırılması"
+    ],
+    "answer": "B",
+    "explanation": "Karar destek sistemlerinde yapay zeka büyük veriyi işleyip seçenekler sunar ve kararı optimize eder; son onayı insan yönetici verir."
+  },
+  {
+    "id": 141,
+    "question": "Sürücüsüz otonom araçların kaza anında vereceği kararların ahlaki boyutu yapay zekânın hangi alanıyla ilgilidir?",
+    "options": [
+      "A) Donanım Mühendisliği",
+      "B) Yapay Zekâ Etiği",
+      "C) Veritabanı Yönetimi",
+      "D) Ağ Altyapısı"
+    ],
+    "answer": "B",
+    "explanation": "Yapay zeka etiği (AI Ethics), algoritmik kararların adil, güvenli, şeffaf olmasını ve ahlaki değerlerle çelişmemesini inceleyen disiplindir."
+  },
+  {
+    "id": 142,
+    "question": "Yapay Zeka Fabrikası mimarisinde 'A/B Testi' ne amaçla kullanılır?",
+    "options": [
+      "A) Verilerin yedeklenmesi için",
+      "B) İki farklı algoritmanın/tasarımın kullanıcı grubu üzerinde test edilip hangisinin daha başarılı olduğunu belirlemek için",
+      "C) Çalışanların performansını ölçmek için",
+      "D) Finansal bütçeyi denetlemek için"
+    ],
+    "answer": "B",
+    "explanation": "A/B testi, sistemdeki bir değişikliğin veya yeni bir modelin (A sürümü vs B sürümü) kullanıcılar üzerindeki etkisini bilimsel olarak ölçmeye yarar."
+  },
+  {
+    "id": 143,
+    "question": "Büyük dil modellerinin (LLM) eğitilmesinde kullanılan ve insan beynindeki sinapsları taklit eden yapılara ne ad verilir?",
+    "options": [
+      "A) Optik Kablolar",
+      "B) Yapay Sinir Ağları (Artificial Neural Networks)",
+      "C) Karar Ağaçları",
+      "D) Veri Tabanı İndeksleri"
+    ],
+    "answer": "B",
+    "explanation": "Yapay Sinir Ağları (ANN), katmanlar halinde birbirine bağlı yapay nöronlardan oluşan ve karmaşık örüntüleri öğrenen algoritmik yapılardır."
+  },
+  {
+    "id": 144,
+    "question": "Yapay zekâ projelerinde 'kara kutu' (black box) problemi neyi ifade eder?",
+    "options": [
+      "A) Sunucuların siyah renkte olmasını",
+      "B) Özellikle derin öğrenme modellerinin kararları nasıl aldığının (hangi mantığa dayandırdığının) insanlar tarafından şeffaf olarak görülememesi",
+      "C) Verilerin şifrelenip silinmesini",
+      "D) Uçaklardaki kara kutunun bozulmasını"
+    ],
+    "answer": "B",
+    "explanation": "Kara kutu problemi, karmaşık modellerin (derin öğrenme) karar mekanizmasının açıklanabilir olmaması (şeffaflık eksikliği) sorunudur."
+  },
+  {
+    "id": 145,
+    "question": "Görsel veya metinsel girdilerden yola çıkarak sıfırdan yeni içerik (resim, kod, makale) üretebilen yapay zeka türü hangisidir?",
+    "options": [
+      "A) Tanımlayıcı Yapay Zeka",
+      "B) Üretken Yapay Zekâ (Generative AI)",
+      "C) Kural Tabanlı Sistemler",
+      "D) Otonom Lojistik Algoritması"
+    ],
+    "answer": "B",
+    "explanation": "Üretken Yapay Zekâ (Generative AI - ChatGPT, Midjourney vb.), eğitildiği verilerden yeni özgün çıktılar üreten yapay zeka alanıdır."
+  },
+  {
+    "id": 146,
+    "question": "Aeroflot havayolu şirketinin dijital dönüşüm başarısı, dijitalleşmeyle ilgili hangi efsanenin yanlış olduğunu kanıtlar?",
+    "options": [
+      "A) Startup satın almanın zorunlu olduğunu",
+      "B) Dijital dönüşümün sadece devasa yatırımlar ve iş modelinde radikal yıkımlar gerektirdiği efsanesini",
+      "C) Fiziksel kanalların tamamen kalkacağını",
+      "D) Altyapıyı toptan yenilemek gerektiğini"
+    ],
+    "answer": "B",
+    "explanation": "Aeroflot, iş modelini yıkmadan süreçlerini dijitalleştirip raporlamayı düzelterek ve operasyonel verim kazanarak NPS skorunu %44 artırmış, yıkım efsanesini çürütmüştür."
+  },
+  {
+    "id": 147,
+    "question": "Galeries Lafayette Champs-Élysées mağazası, fiziksel akıllı mağaza tasarımıyla hangi dijital dönüşüm gerçeğini temsil eder?",
+    "options": [
+      "A) Fiziksel mağazaların tamamen öleceğini",
+      "B) Dijital teknolojiler ile fiziksel deneyimin (stilistler aracılığıyla kurulan duygusal bağ) harmanlandığı hibrit modeli",
+      "C) Müşterilerin robotlarla alışveriş yapacağını",
+      "D) E-ticaretin yasaklanacağını"
+    ],
+    "answer": "B",
+    "explanation": "Akıllı lüks mağaza, dijital veri toplama ile stilistlerin fiziksel temasını harmanlayarak müşterilerle güçlü bir duygusal bağ kurmuştur."
+  },
+  {
+    "id": 148,
+    "question": "Avnet firmasının Hackster.io startup'ını satın alıp onu kendi hiyerarşisinde boğmak yerine yarı bağımsız bırakması hangi efsaneyi çürütür?",
+    "options": [
+      "A) Şirketlerin startup satın almaması gerektiği efsanesini",
+      "B) Satın alınan startup'ların ana firmanın bürokratik yapısına tamamen entegre edilmesi gerektiği efsanesini",
+      "C) Startup'ların vergi ödemediği efsanesini",
+      "D) Teknolojinin gereksiz olduğu efsanesini"
+    ],
+    "answer": "B",
+    "explanation": "Büyük şirketlerin startup'ları entegrasyon adı altında bürokraside boğduğu bilinir. Avnet, Hackster.io'yu bağımsız bırakarak sinerji yaratılmasını sağlamıştır."
+  },
+  {
+    "id": 149,
+    "question": "Adobe firmasının çalışanlarına fikir üretme fırsatı tanıyan 'Turuncu Kutu' (Orange Box) projesi, dönüşümün hangi boyutunun önemini vurgular?",
+    "options": [
+      "A) Sadece sunucu donanımının",
+      "B) İnsan kaynağı, kurum kültürü ve çalışan katılımının",
+      "C) Ofis malzemelerinin kalitesinin",
+      "D) Reklam bütçelerinin büyüklüğünün"
+    ],
+    "answer": "B",
+    "explanation": "Adobe Turuncu Kutu projesi, dijital dönüşümün sadece teknoloji değil, insan ve kültür değişimiyle gerçekleşeceğini gösteren bir vaka örneğidir."
+  },
+  {
+    "id": 150,
+    "question": "Marriott otel zincirinin Expedia rekabetinde altyapıyı toptan değiştirmek yerine aşamalı ilerlemesi hangi dönüşüm efsanesine yanıttır?",
+    "options": [
+      "A) Otelciliğin tamamen biteceği efsanesine",
+      "B) Eski bilgi sistemleri altyapısını tamamen sıfırlayarak işe başlamak gerektiği efsanesine (bunun yerine aşamalı test önerilir)",
+      "C) Müşterilerin sadece internetten rezervasyon yapacağı efsanesine",
+      "D) Fiyatların sabit kalması gerektiğine"
+    ],
+    "answer": "B",
+    "explanation": "Altyapıyı bir gecede değiştirmek (legacy system replacement) yüksek risklidir. Marriott, aşamalı geçiş yaparak riskleri azaltmıştır."
+  },
+  {
+    "id": 151,
+    "question": "Maersk firmasının konteyner taşımacılığında IoT sensörler kullanarak tedarik zincirinde şeffaflık sağlaması hangi dönüşüm gerçeğini gösterir?",
+    "options": [
+      "A) Nakliye şirketlerinin tamamen yazılım şirketine dönüşmesi gerektiğini",
+      "B) Mevcut çekirdek değer önermesinin (nakliye) dijital araçlarla daha şeffaf ve verimli sunulabileceğini",
+      "C) Gemilerin artık kaptansız çalışacağını",
+      "D) Limanların kapatılacağını"
+    ],
+    "answer": "B",
+    "explanation": "Maersk, ana işini (konteyner taşımacılığını) IoT sensör verileriyle şeffaflaştırarak müşteriye daha yüksek değer sunmuştur."
+  },
+  {
+    "id": 152,
+    "question": "Yöneticilerin 'Dijital dönüşüm fiziksel kanalları tamamen ortadan kaldıracak' inancı neden bir efsanedir?",
+    "options": [
+      "A) Fiziksel kanallar daha ucuz olduğu için",
+      "B) İnsanların güven ve duygusal bağ kurmak için fiziksel temas/deneyim aramaya devam etmesi ve hibrit modelin başarısı nedeniyle",
+      "C) İnternetin yakında çökecek olması nedeniyle",
+      "D) Devletlerin e-ticareti sınırlandırması yüzünden"
+    ],
+    "answer": "B",
+    "explanation": "Saf dijital kanalların müşteri bağlılığı yaratmada zorlandığı, bu yüzden fiziksel ve dijitalin birleştiği 'phygital' hibrit modellerin yükseldiği görülmektedir."
+  },
+  {
+    "id": 153,
+    "question": "Paris merkezli G7 Taksi şirketinin Uber rekabetine karşı kendi çağırma uygulamasını geliştirmesi hangi stratejiye örnektir?",
+    "options": [
+      "A) Şirketi tamamen kapatıp kaçma",
+      "B) Teknolojik tehdide karşı dijital araçları hızla kendi süreçlerine entegre ederek direnç oluşturma",
+      "C) Uber'i mahkemeye vererek yasaklatma",
+      "D) Fiyatları tamamen bedava yapma"
+    ],
+    "answer": "B",
+    "explanation": "G7 Taksi, dijital yıkım tehdidine karşı yenilikçi bir rezervasyon algoritması geliştirerek pazar payını korumayı başarmıştır."
+  },
+  {
+    "id": 154,
+    "question": "Dijital dönüşümde 'eski sistemlerin' (legacy systems) tamamen yenilenmesi girişimleri neden sıklıkla başarısızlıkla sonuçlanır?",
+    "options": [
+      "A) Yeni yazılımların çok çirkin olması nedeniyle",
+      "B) Büyük bütçeli, uzun süren, iş süreçlerini kesintiye uğratan yüksek riskler ve adaptasyon zorlukları nedeniyle",
+      "C) Bilgisayar virüsleri yüzünden",
+      "D) Yöneticilerin emekli olması nedeniyle"
+    ],
+    "answer": "B",
+    "explanation": "Legacy sistemleri bir kerede değiştirmek (big bang migration), veri kaybı ve iş durması gibi büyük riskler taşır. Aşamalı dönüşüm tercih edilmelidir."
+  },
+  {
+    "id": 155,
+    "question": "Startup satın alan büyük ölçekli geleneksel şirketlerin yaptığı en yaygın yönetim hatası aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Startup'a çok yüksek maaş ödemek",
+      "B) Startup'ı kendi kurumsal bürokrasisi, ağır onay mekanizmaları ve hiyerarşisiyle boğmak",
+      "C) Startup çalışanlarını eğitime göndermek",
+      "D) Şirketin logosunu değiştirmek"
+    ],
+    "answer": "B",
+    "explanation": "Geleneksel kurumsal yapı, startup'ın çevik ve hızlı karar alma kültürünü yok ederse satın alma başarısız olur. Yarı bağımsız yapı korunmalıdır."
+  },
+  {
+    "id": 156,
+    "question": "Yıkıcı inovasyon ve dijital dönüşüm süreçlerinde 'organizasyonel çeviklik' (agility) neyi ifade eder?",
+    "options": [
+      "A) Şirket çalışanlarının spor yapmasını",
+      "B) Değişen pazar koşullarına, teknolojilere ve müşteri taleplerine şirketin hızla adapte olabilme yeteneğini",
+      "C) Şirketin hisse değerinin hızla yükselmesini",
+      "D) Sunucu sayısının hızlıca artırılmasını"
+    ],
+    "answer": "B",
+    "explanation": "Çeviklik, bürokratik yavaşlığı azaltarak pazardaki fırsat veya tehditlere hızlı cevap verebilme kabiliyetidir."
+  },
+  {
+    "id": 157,
+    "question": "Maersk vaka analizinde, IoT sensör verilerinin müşterilerle paylaşılması şirkette hangi kavramın gelişimini sağlamıştır?",
+    "options": [
+      "A) Gizlilik ihlali",
+      "B) Tedarik zincirinde şeffaflık ve güven (transparency)",
+      "C) Müşteri şikayetlerinin artışı",
+      "D) Fiyat artışları"
+    ],
+    "answer": "B",
+    "explanation": "Verilerin şeffaf paylaşımı, müşterilerin yüklerinin nerede olduğunu ve sıcaklığını anlık görmesini sağlayarak güven ilişkisini pekiştirmiştir."
+  },
+  {
+    "id": 158,
+    "question": "Aeroflot havayolu firmasının Net Tavsiye Skorunu (NPS) artırmasında rol oynayan dijital veri kullanımı hangisidir?",
+    "options": [
+      "A) Müşterilerin sosyal medya şifrelerini toplamak",
+      "B) Operasyonel aksaklıkların, uçuş gecikmelerinin ve müşteri geri bildirimlerinin anlık veri analitiğiyle izlenip iyileştirilmesi",
+      "C) Uçak biletlerinin fiyatlarını gizlemek",
+      "D) Sadece business class müşterilerine anket yapmak"
+    ],
+    "answer": "B",
+    "explanation": "Aeroflot, uçuş operasyon verilerini ve müşteri şikayetlerini dijital entegrasyonla takip edip hızlı aksiyon alarak müşteri memnuniyetini (NPS) artırmıştır."
+  },
+  {
+    "id": 159,
+    "question": "Dijital dönüşüm stratejilerinde 'müşteri odaklılık' (customer-centricity) neyi önceler?",
+    "options": [
+      "A) Şirketin kârını her koşulda maksimize etmeyi",
+      "B) Müşteri ihtiyaçlarını, beklentilerini ve deneyimini dijital süreçlerin merkezine koyarak değer üretmeyi",
+      "C) Sadece yeni müşteriler bulmayı",
+      "D) Ürün fiyatlarını artırmayı"
+    ],
+    "answer": "B",
+    "explanation": "Müşteri odaklılık, dijital dönüşüm teknolojilerini kurarken müşteri deneyimini kolaylaştırmaya ve değer sunmaya odaklanmaktır."
+  },
+  {
+    "id": 160,
+    "question": "Adobe'un 'Turuncu Kutu' projesinde çalışanlara fikir geliştirirken bütçe ve süre vermesi hangi kültürel mesajı taşır?",
+    "options": [
+      "A) Şirketin parasının çok olduğunu",
+      "B) Yenilikçi fikirlerin denenebilmesi için kontrollü başarısızlığa ve denemeye alan açılması gerektiğini (inovasyon kültürü)",
+      "C) Çalışanların çok çalışması gerektiğini",
+      "D) Şirketin yazılımlarını satamadığını"
+    ],
+    "answer": "B",
+    "explanation": "Turuncu Kutu, çalışanların risk almasını ve yeni dijital fikirleri test etmesini teşvik ederek inovasyonu tabana yayan bir kültür çalışmasıdır."
+  },
+  {
+    "id": 161,
+    "question": "Garrett Hardin'in 'Ortak Malların Trajedisi' makalesinde kullandığı klasik merada aşırı otlatma örneğinde, bireyin rasyonel kararı topluluk için nasıl bir sonuç doğurur?",
+    "options": [
+      "A) Meraların daha çok yeşillenmesini sağlar",
+      "B) Bireyin kısa vadeli çıkarı (+1 hayvan), uzun vadede kaynağın (meranın) yok olmasına ve herkesin kaybetmesine yol açar",
+      "C) Devletin meraları satın almasıyla sonuçlanır",
+      "D) Hayvan fiyatlarının düşmesini sağlar"
+    ],
+    "answer": "B",
+    "explanation": "Ortak malların trajedisinde, bireylerin kendi faydalarını sınırsızca maksimize etme çabası, paylaşılan sınırlı kaynağın yok olmasıyla felakete yol açar."
+  },
+  {
+    "id": 162,
+    "question": "3 Aralık 1984'te Hindistan'ın Bhopal kentinde binlerce insanın ölümüne yol açan Union Carbide böcek ilacı fabrikasından sızan zehirli gaz hangisidir?",
+    "options": [
+      "A) Karbondioksit",
+      "B) Metil İzosiyanat (MIC)",
+      "C) Sülfürdioksit",
+      "D) Karbonmonoksit"
+    ],
+    "answer": "B",
+    "explanation": "Bhopal felaketine yol açan ve tarihin en ölümcül endüstriyel gaz sızıntısı kabul edilen madde Metil İzosiyanat (MIC) gazıdır."
+  },
+  {
+    "id": 163,
+    "question": "1996 yılında Nike firmasının Pakistan'daki tedarik zincirinde çocuk işçi çalıştırdığının ortaya çıkması, kurumsal yönetimde hangi kavramın doğuşunu hızlandırmıştır?",
+    "options": [
+      "A) Tedarik Zinciri Otomasyonu",
+      "B) Kurumsal Sosyal Sorumluluk (KSS) ve sosyal denetim standartları",
+      "C) İthalat Vergileri",
+      "D) Reklam Bütçesi Planlaması"
+    ],
+    "answer": "B",
+    "explanation": "Nike skandalı, küresel markaların sadece kendi fabrikalarından değil, tüm tedarik zincirindeki sosyal ve etik koşullardan (KSS) sorumlu olduğunu göstermiştir."
+  },
+  {
+    "id": 164,
+    "question": "Gelecek nesillerin kendi ihtiyaçlarını karşılama yeteneğinden ödün vermeden bugünün ihtiyaçlarını karşılamayı hedefleyen kavram hangisidir?",
+    "options": [
+      "A) Ekonomik Büyüme",
+      "B) Sürdürülebilirlik (Sustainability)",
+      "C) Yaratıcı Yıkım",
+      "D) Dijital Olgunluk"
+    ],
+    "answer": "B",
+    "explanation": "Brundtland Raporu'nda yapılan bu tanım sürdürülebilirlik (sustainability) kavramının en yaygın kabul gören tanımıdır."
+  },
+  {
+    "id": 165,
+    "question": "Sürdürülebilirliğin değerlendirildiği üç ana boyuttan biri olan 'Sosyal Sürdürülebilirlik' aşağıdakilerden hangisini kapsar?",
+    "options": [
+      "A) Şirketin kâr marjlarını",
+      "B) İnsan hakları, çalışma koşulları, fırsat eşitliği ve toplumsal refahı",
+      "C) Fabrikadaki robot sayısını",
+      "D) Karbon salınım oranını"
+    ],
+    "answer": "B",
+    "explanation": "Sosyal sürdürülebilirlik; adalet, çalışan hakları, topluluk refahı ve insan sağlığı gibi sosyal adalet konularını ele alır."
+  },
+  {
+    "id": 166,
+    "question": "Aşağıdakilerden hangisi 'Ortak Malların Trajedisi'ne günümüz küresel çevre sorunlarından bir örnek olarak gösterilebilir?",
+    "options": [
+      "A) Özel bir tarlada domates yetiştirilmesi",
+      "B) Okyanuslardaki aşırı avlanma ve deniz kaynaklarının tükenmesi",
+      "C) Şirketlerin ofis yazılımları satın alması",
+      "D) Bireylerin evlerinde su tasarrufu yapması"
+    ],
+    "answer": "B",
+    "explanation": "Okyanuslar ve denizler kamuya açık, ücretsiz ortak kaynaklardır. Sınırsız ve denetimsiz balık avcılığı bu kaynağı yok ederek trajediyi doğrular."
+  },
+  {
+    "id": 167,
+    "question": "Garrett Hardin'in 'Ortak Malların Trajedisi' teorisine göre ortak kaynakların yok olmasını engellemek için önerilen iki temel çözüm yolu hangisidir?",
+    "options": [
+      "A) Kaynağın tamamen kullanıma kapatılması veya bedava yapılması",
+      "B) Özel mülkiyet haline getirme (özelleştirme) veya devlet eliyle düzenleme/denetleme (yasal kısıtlamalar)",
+      "C) Hayvan sayısının sınırsız artırılması veya meraların yakılması",
+      "D) Hiçbir çözüm yolu yoktur"
+    ],
+    "answer": "B",
+    "explanation": "Hardin, ortak malların korunması için ya mülkiyetin özelleştirilmesini ya da devlet denetimi ve hukuki sınırlandırmalar (vergiler, kotalar) getirilmesini önermiştir."
+  },
+  {
+    "id": 168,
+    "question": "Kurumsal Sosyal Sorumluluk (KSS) kapsamında bir şirketin çevreye verdiği zararları en aza indirmesi hangi sürdürülebilirlik boyutuyla ilgilidir?",
+    "options": [
+      "A) Ekonomik boyut",
+      "B) Çevresel boyut",
+      "C) Sosyal boyut",
+      "D) Kültürel boyut"
+    ],
+    "answer": "B",
+    "explanation": "Çevresel sürdürülebilirlik; karbon salınımının azaltılması, atık yönetimi ve doğal kaynakların korunmasını hedefler."
+  },
+  {
+    "id": 169,
+    "question": "Bhopal felaketinin ardından küresel ölçekte kimya endüstrisinde güvenlik standartlarını artırmak amacıyla başlatılan gönüllü programın adı nedir?",
+    "options": [
+      "A) Yeşil Barış (Greenpeace)",
+      "B) Üçlü Sorumluluk (Responsible Care)",
+      "C) Kyoto Protokolü",
+      "D) ISO 9001"
+    ],
+    "answer": "B",
+    "explanation": "Responsible Care (Üçlü Sorumluluk), kimya sanayinin çevre, iş sağlığı ve güvenliği performansını sürekli iyileştirmeyi taahhüt ettiği küresel bir girişimdir."
+  },
+  {
+    "id": 170,
+    "question": "Nike firmasının 1990'lardaki çocuk işçi krizinden sonra tedarikçilerini denetlemek için kurduğu bağımsız yapı hangisidir?",
+    "options": [
+      "A) FLA (Fair Labor Association / Adil Emeği Koruma Derneği)",
+      "B) FIFA Denetim Kurulu",
+      "C) Birleşmiş Milletler",
+      "D) Dünya Ticaret Örgütü"
+    ],
+    "answer": "A",
+    "explanation": "Nike ve diğer giyim markaları, çalışma standartlarını denetlemek ve işçi haklarını korumak için FLA'nın kurulmasına öncülük etmiştir."
+  },
+  {
+    "id": 171,
+    "question": "Geleneksel 'kâr odaklı' kurumsal yönetim anlayışının yerine, şirketin Çevresel, Sosyal ve Yönetişimsel (ESG) performansını da ölçen yaklaşım hangisidir?",
+    "options": [
+      "A) Tek Yönlü Finans",
+      "B) Üçlü Bilanço (Triple Bottom Line - People, Planet, Profit)",
+      "C) Schumpeterci Analiz",
+      "D) IBM Olgunluk Analizi"
+    ],
+    "answer": "B",
+    "explanation": "Triple Bottom Line (Üçlü Bilanço), şirketlerin sadece finansal kârını (profit) değil, insan (people) ve çevre (planet) üzerindeki etkilerini de raporlamasını savunur."
+  },
+  {
+    "id": 172,
+    "question": "Atmosferdeki karbondioksit miktarını artırarak küresel ısınmaya yol açan sera gazlarının en temel kaynağı aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Rüzgar türbinleri",
+      "B) Fosil yakıtların (kömür, petrol, doğalgaz) enerji ve üretimde aşırı tüketimi",
+      "C) Tarımda damlama sulama yapılması",
+      "D) Dijital kitap okunması"
+    ],
+    "answer": "B",
+    "explanation": "Sera gazı salınımlarının (karbon ayak izi) en büyük nedeni sanayide, elektrik üretiminde ve ulaşımda kullanılan fosil yakıtlardır."
+  },
+  {
+    "id": 173,
+    "question": "Ortak malların trajedisinde meraların aşırı otlatılması gibi bir durumun önüne geçmek için uygulanan 'kota sistemi' neyi ifade eder?",
+    "options": [
+      "A) Meraların tamamen kapatılmasını",
+      "B) Her çobanın meraya salabileceği maksimum hayvan sayısının yasal olarak sınırlandırılmasını",
+      "C) Her çobana ücretsiz yem verilmesini",
+      "D) Hayvanların vergilendirilmesini"
+    ],
+    "answer": "B",
+    "explanation": "Kota sistemi, kaynağın kendini yenileyebilme kapasitesini aşmamak için kullanıcılara getirilen yasal tüketim sınırlandırmasıdır."
+  },
+  {
+    "id": 174,
+    "question": "Aşağıdakilerden hangisi bir işletmenin 'sosyal sürdürülebilirlik' ilkelerine aykırı hareket ettiğini gösterir?",
+    "options": [
+      "A) Çalışanlarına sendikalaşma ve toplu sözleşme hakkı tanıması",
+      "B) Kadın ve erkek çalışanlara aynı iş için farklı ücretler (ücret adaletsizliği) ödemesi",
+      "C) Çalışma saatlerini yasal sınırlarda tutması",
+      "D) İş sağlığı ve güvenliği eğitimleri vermesi"
+    ],
+    "answer": "B",
+    "explanation": "Cinsiyete dayalı ücret ayrımcılığı fırsat eşitliği ve sosyal adalet ilkelerine aykırı olup, sosyal sürdürülebilirliği zedeler."
+  },
+  {
+    "id": 175,
+    "question": "Ortak Malların Trajedisi kavramının yaratıcısı Garrett Hardin hangi bilim dalında çalışmalar yapmıştır?",
+    "options": [
+      "A) Yazılım Mühendisliği",
+      "B) Ekoloji ve Biyoloji",
+      "C) Finansal Muhasebe",
+      "D) Siyaset Bilimi"
+    ],
+    "answer": "B",
+    "explanation": "Garrett Hardin Amerikalı bir ekolog ve biyologdur. Çevresel kıtlıklar ve nüfus artışı üzerine çalışmalar yürütmüştür."
+  },
+  {
+    "id": 176,
+    "question": "Lojistikte, ürünlerin değer kazanımı, geri kazanımı, yenilenmesi veya uygun şekilde imha edilmesi amacıyla tüketim noktasından çıkış noktasına geri akışını yöneten süreç hangisidir?",
+    "options": [
+      "A) İleri Lojistik",
+      "B) Tersine Lojistik (Reverse Logistics)",
+      "C) Intermodal Lojistik",
+      "D) Soğuk Zincir Lojistiği"
+    ],
+    "answer": "B",
+    "explanation": "Tersine lojistik, geri dönüşüm, tamirat, iade yönetimi ve yeniden üretim süreçleri için ürünlerin tüketimden kaynağa doğru ters yönlü akışıdır."
+  },
+  {
+    "id": 177,
+    "question": "Yeniden üretim (re-manufacturing) süreçlerinin, hammadde kullanarak sıfırdan üretime kıyasla sağladığı enerji tasarrufu oranı en fazla yüzde kaçtır?",
+    "options": [
+      "A) %10",
+      "B) %50",
+      "C) %85",
+      "D) Tasarruf sağlamaz"
+    ],
+    "answer": "C",
+    "explanation": "Yeniden üretim süreçleri, maden çıkarma ve ilk işleme adımlarını atladığı için sıfırdan üretime göre %85'e varan enerji tasarrufu sağlar."
+  },
+  {
+    "id": 178,
+    "question": "Geri dönüştürülmüş alüminyum üretmek, sıfırdan boksit madeninden alüminyum üretmek için gereken enerjinin yalnızca yüzde kaçını tüketir?",
+    "options": [
+      "A) %5'ini",
+      "B) %25'ini",
+      "C) %50'sini",
+      "D) %85'ini"
+    ],
+    "answer": "A",
+    "explanation": "Maden işleme çok yüksek elektrik gerektirir. Alüminyumu geri dönüştürmek ise bu enerjinin sadece %5'i ile (yani %95 tasarrufla) gerçekleştirilir."
+  },
+  {
+    "id": 179,
+    "question": "3M firmasının lojistik araçlarında yükleme yüksekliğini ayarlayan raflar geliştirerek araç doluluk oranlarında elde ettiği artış oranı yüzde kaçtır?",
+    "options": [
+      "A) %10",
+      "B) %20",
+      "C) %40",
+      "D) %80"
+    ],
+    "answer": "C",
+    "explanation": "3M, araç doluluk oranını %40 oranında artırarak sefer sayısını azaltmış ve lojistik kaynaklı karbon emisyonlarını düşürmüştür."
+  },
+  {
+    "id": 180,
+    "question": "İstanbul, Trieste ve Mannheim arasında karayolu yerine Ro-Ro gemisi ve tren hatlarını birleştirerek karbon salınımını azaltan Ekol Lojistik modeli hangisidir?",
+    "options": [
+      "A) Havayolu Taşımacılığı",
+      "B) İntermodal Taşımacılık (Intermodal Transport)",
+      "C) Karayolu Kamyon Lojistiği",
+      "D) Kurye Dağıtımı"
+    ],
+    "answer": "B",
+    "explanation": "İntermodal taşımacılık, yükün araç değiştirmeden birden fazla taşıma türüyle (deniz, demir, kara) taşınarak çevre dostu lojistik kurulmasıdır."
+  },
+  {
+    "id": 181,
+    "question": "Çevre dostu binaların (yeşil binalar) geleneksel binalara kıyasla sağladığı enerji tasarrufu aralığı aşağıdakilerden hangisidir?",
+    "options": [
+      "A) %5 - %10",
+      "B) %24 - %50",
+      "C) %80 - %95",
+      "D) Tasarruf sağlamaz"
+    ],
+    "answer": "B",
+    "explanation": "Yeşil binalar yalıtım, güneş paneli ve akıllı otomasyon sistemleri sayesinde geleneksel binalara göre %24 ile %50 arasında enerji tasarrufu sunar."
+  },
+  {
+    "id": 182,
+    "question": "Tedarik zincirinde paketleme malzemelerinin biyolojik olarak doğada çözünebilen karton veya nişasta bazlı malzemelerden seçilmesi hangisidir?",
+    "options": [
+      "A) Yeşil Satın Alma",
+      "B) Yeşil Paketleme (Green Packaging)",
+      "C) Tersine Lojistik",
+      "D) İntermodal Dağıtım"
+    ],
+    "answer": "B",
+    "explanation": "Plastik yerine doğa dostu, çözünür ve tekrar kullanılabilir paketleme malzemelerinin kullanılması Yeşil Paketleme (Green Packaging) kapsamındadır."
+  },
+  {
+    "id": 183,
+    "question": "Lojistikte araçların motor teknolojilerini iyileştirerek (Euro 5/6 standardı) veya elektrikli araçlarla karbon salınımını düşürmeyi hedefleyen yeşil strateji hangisidir?",
+    "options": [
+      "A) Daha Az Taşı",
+      "B) Daha Kısa Taşı",
+      "C) Daha Temiz Taşı (Transport Cleaner)",
+      "D) Tersine Taşı"
+    ],
+    "answer": "C",
+    "explanation": "Daha Temiz Taşı stratejisi, taşıma araçlarının yakıt verimliliğini artırmayı, temiz enerji ve Euro 5/6 motor standartlarını kullanmayı hedefler."
+  },
+  {
+    "id": 184,
+    "question": "Lojistik süreçleri planlarken rota optimizasyonu yazılımları kullanarak kat edilen toplam mesafeyi azaltmayı hedefleyen yeşil lojistik stratejisi hangisidir?",
+    "options": [
+      "A) Daha Az Taşı",
+      "B) Daha Kısa Taşı (Transport Shorter)",
+      "C) Daha Temiz Taşı",
+      "D) Tersine Taşı"
+    ],
+    "answer": "B",
+    "explanation": "Daha Kısa Taşı stratejisi, akıllı rota planlama (routing) ve depoların doğru konumlandırılmasıyla kat edilen kilometreyi ve emisyonları azaltmayı amaçlar."
+  },
+  {
+    "id": 185,
+    "question": "Tedarik zincirinde tedarikçi seçim kriterlerine 'karbon ayak izi', 'çevre sertifikaları (ISO 14001)' gibi maddelerin eklenmesi hangisidir?",
+    "options": [
+      "A) Yeşil Satın Alma (Green Procurement)",
+      "B) Tersine Dağıtım",
+      "C) Fiyat Odaklı Satın Alma",
+      "D) Tedarikçi Entegrasyonu"
+    ],
+    "answer": "A",
+    "explanation": "Yeşil Satın Alma, hammadde ve hizmet alımlarında çevresel performans kriterlerinin (ISO 14001, geri dönüştürülebilir malzeme vb.) önceliklendirilmesidir."
+  },
+  {
+    "id": 186,
+    "question": "Yeşil binaların tescillenmesinde dünyada en yaygın kullanılan sertifikasyon sistemlerinden biri aşağıdakilerden hangisidir?",
+    "options": [
+      "A) ISO 9001",
+      "B) LEED (Leadership in Energy and Environmental Design)",
+      "C) CMMI Level 5",
+      "D) Brundtland Belgesi"
+    ],
+    "answer": "B",
+    "explanation": "LEED sertifikası, binaların enerji verimliliği, su tasarrufu, malzeme seçimi gibi çevresel sürdürülebilirlik kriterlerini ölçen küresel derecelendirme sistemidir."
+  },
+  {
+    "id": 187,
+    "question": "Tersine lojistikte 'yeniden kullanım' (reuse) ile 'geri dönüşüm' (recycling) arasındaki fark hangisidir?",
+    "options": [
+      "A) Geri dönüşüm daha ucuzdur",
+      "B) Yeniden kullanım ürünü yapısını bozmadan tekrar kullanırken, geri dönüşüm ürünü eriterek hammaddesine dönüştürür",
+      "C) Yeniden kullanım sadece plastiklerde geçerlidir",
+      "D) Hiçbir fark yoktur"
+    ],
+    "answer": "B",
+    "explanation": "Yeniden kullanımda (örneğin cam şişelerin yıkanıp tekrar doldurulması) enerji harcanmaz. Geri dönüşümde ise ürün (örneğin camın eritilmesi) hammaddeye dönüştürülür ve enerji harcanır."
+  },
+  {
+    "id": 188,
+    "question": "Tedarik zincirinde 'Karbon Ayak İzi' (Carbon Footprint) neyi temsil eder?",
+    "options": [
+      "A) Fabrikada çalışan işçi sayısını",
+      "B) Üretim ve lojistik faaliyetleri sonucu doğrudan veya dolaylı olarak atmosfere salınan sera gazlarının karbondioksit (CO2) cinsinden toplam miktarını",
+      "C) Kömür depolarının fiziksel alanını",
+      "D) Fabrika bacalarının uzunluğunu"
+    ],
+    "answer": "B",
+    "explanation": "Karbon ayak izi, bir kurumun veya ürünün yaşam döngüsü boyunca iklim değişikliğine neden olan sera gazı emisyonlarının ton CO2 eşdeğeri olarak ölçülmesidir."
+  },
+  {
+    "id": 189,
+    "question": "Lojistikte 'Daha Az Taşı' (Transport Less) yeşil stratejisi aşağıdakilerden hangisiyle gerçekleştirilebilir?",
+    "options": [
+      "A) Üretimi tamamen durdurarak",
+      "B) Paketleme boyutlarını küçülterek ve araç doluluk oranlarını (konsolidasyon) maksimize ederek sefer sayılarını azaltmak",
+      "C) Kamyon hızlarını düşürerek",
+      "D) Sadece yerel pazarda satış yapmak"
+    ],
+    "answer": "B",
+    "explanation": "Daha Az Taşı stratejisi, yükleme planlama algoritmaları ve paketleme optimizasyonu ile gereksiz taşımaları (boş git-gelleri) önlemeyi amaçlar."
+  },
+  {
+    "id": 190,
+    "question": "Geri kazanım süreçlerinde 'upcycling' (ileri dönüşüm) kavramı neyi ifade eder?",
+    "options": [
+      "A) Ürünün eritilip kalitesiz plastik yapılması",
+      "B) Atık veya eski malzemelerin orijinalinden daha yüksek değere veya kaliteye sahip yeni bir ürüne dönüştürülmesi",
+      "C) Atıkların yakılarak yok edilmesi",
+      "D) Ürünün yurtdışına satılması"
+    ],
+    "answer": "B",
+    "explanation": "İleri dönüşüm (upcycling), atık malzemelerin yaratıcı fikirlerle (örneğin araba lastiğinden lüks mobilya tasarlamak) katma değerli hale getirilmesidir."
+  },
+  {
+    "id": 191,
+    "question": "Ekolojik faktörleri korumaya odaklanan 'kentsel sürdürülebilirlik' ile teknoloji odaklı 'akıllı şehir' kavramlarını sürdürülebilir akıllı şehir çatısında birleştiren Neirotti vd. (2014) çalışmasına göre akıllı şehirleşmenin esası nedir?",
+    "options": [
+      "A) Şehir nüfusunun azaltılmasıdır",
+      "B) Bilgi ve iletişim teknolojilerini kullanarak kaynakları etkin yönetmek, karbon ayak izini azaltmak ve yaşam kalitesini artırmaktır",
+      "C) Şehirdeki tüm yolların paralı yapılmasıdır",
+      "D) Sanayi tesislerinin tamamen kapatılmasıdır"
+    ],
+    "answer": "B",
+    "explanation": "Sürdürülebilir akıllı şehir, teknolojiyi çevre koruma, kaynak verimliliği ve kentsel yaşam kalitesini artırma aracı olarak entegre eder."
+  },
+  {
+    "id": 192,
+    "question": "Küresel enerji tüketiminin yüzde 75'i ve karbondioksit (CO2) salınımının yüzde 80'i aşağıdakilerden hangisinden kaynaklanmaktadır?",
+    "options": [
+      "A) Tarım ve hayvancılık alanlarından",
+      "B) Şehirlerden (kentsel alanlardan)",
+      "C) Okyanus taşımacılığından",
+      "D) Orman yangınlarından"
+    ],
+    "answer": "B",
+    "explanation": "Şehirler, nüfusun ve sanayinin yoğunlaşması nedeniyle küresel enerjinin %75'ini tüketmekte ve emisyonların %80'ine neden olmaktadır."
+  },
+  {
+    "id": 193,
+    "question": "Gül ve Çobanoğlu (2017) çalışmasına göre akıllı şehir mimarisinin entegre olması gereken dört temel bileşen hangisidir?",
+    "options": [
+      "A) Finans, Politika, Reklam ve İthalat",
+      "B) Bilgi, Teknoloji, Sürdürülebilirlik ve Katılım",
+      "C) Binalar, Yollar, Arabalar ve Fabrikalar",
+      "D) İnternet, Bilgisayar, Yazılım ve Donanım"
+    ],
+    "answer": "B",
+    "explanation": "Gül ve Çobanoğlu'na göre akıllı kent; bilginin üretildiği, teknolojinin kullanıldığı, ekolojik dengenin (sürdürülebilirlik) korunduğu ve vatandaşların yönetime katıldığı yapıdır."
+  },
+  {
+    "id": 194,
+    "question": "Projeksiyonlara göre bugün dünya nüfusunun yüzde 55'i kentlerde yaşarken, 2050 yılına kadar bu oranın yüzde kaça ulaşması beklenmektedir?",
+    "options": [
+      "A) %60",
+      "B) %68",
+      "C) %85",
+      "D) %95"
+    ],
+    "answer": "B",
+    "explanation": "Birleşmiş Milletler nüfus projeksiyonlarına göre hızlı göç ve kentleşme sonucu 2050 yılında dünya nüfusunun %68'i şehirlerde yaşayacaktır."
+  },
+  {
+    "id": 195,
+    "question": "UNEP ve UNWTO sürdürülebilir turizm ilkelerinden hangisi turizm gelirlerinin yerel halk ve yerel üreticilere doğrudan ulaşmasını hedefler?",
+    "options": [
+      "A) Ekonomik Süreklilik",
+      "B) Yerel Kalkınma (Local Prosperity)",
+      "C) İstihdam Kalitesi",
+      "D) Çevresel Etki"
+    ],
+    "answer": "B",
+    "explanation": "Yerel kalkınma (local prosperity) ilkesi, turist harcamalarının destinasyondaki yerel esnaf, çiftçi ve üreticide kalma oranını artırarak sızıntıları (leakage) önlemeyi amaçlar."
+  },
+  {
+    "id": 196,
+    "question": "Sürdürülebilir turizm ilkelerinde 'biyolojik çeşitlilik' (biodiversity) kavramı neyi önceler?",
+    "options": [
+      "A) Turistlerin her alana serbestçe girebilmesini",
+      "B) Koruma-kullanma dengesi gözetilerek doğal ekosistemlerin, endemik flora ve faunanın korunmasını",
+      "C) Şehirdeki hayvanat bahçesi sayısını artırmayı",
+      "D) Tarım arazilerini turizme açmayı"
+    ],
+    "answer": "B",
+    "explanation": "Biyolojik çeşitlilik ilkesi, hassas ekosistemlerin (örneğin mercan resifleri, milli parklar) turizm baskısıyla tahrip edilmesini engellemeyi amaçlar."
+  },
+  {
+    "id": 197,
+    "question": "Kültürel sürdürülebilirlik ve süreklilik kapsamında vurgulanmak istenen ana düşünce aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Kültürün hiçbir şekilde değiştirilmeden eski haliyle dondurulması",
+      "B) Geçmişin mimari, yerleşim ve toplumsal ilkelerinin günümüz için sürdürülebilir büyük birer değer kaynağı olduğunun fark edilmesi",
+      "C) Küresel popüler kültürün yerel kültürü yok etmesi",
+      "D) Tarihi binaların yıkılıp yerine akıllı gökdelenler yapılması"
+    ],
+    "answer": "B",
+    "explanation": "Kültürel sürdürülebilirlik gelenekçi/donmuş bir tavır değildir. Geçmiş yerleşim ve yaşam pratiklerinin (örneğin kerpiç evler, su sarnıçları gibi yeşil tekniklerin) değer kaynağı olarak günümüze aktarılmasıdır."
+  },
+  {
+    "id": 198,
+    "question": "Ekonomik sürdürülebilirlik kapsamında Burns ve Holden (1995) çalışmasına göre ikame olanağı bulunmayan hangi kaynakların kullanımına sınır getirilmelidir?",
+    "options": [
+      "A) Yenilenebilir kaynaklar (güneş, rüzgar)",
+      "B) Yenilenemeyen kaynaklar (fosil yakıtlar, madenler)",
+      "C) Dijital veri kaynakları",
+      "D) İnsan gücü kaynakları"
+    ],
+    "answer": "B",
+    "explanation": "Burns ve Holden'a göre ikamesi olmayan, tükenebilir (yenilenemeyen) kaynakların tüketimine sınırlama getirmek ekonomik sürdürülebilirliğin temel şartıdır."
+  },
+  {
+    "id": 199,
+    "question": "Ateş (2018) çalışmasına göre sürdürülebilir akıllı şehirleşmede kentsel karbon ayak izini azaltmak için atılması gereken en öncelikli ulaşım adımı hangisidir?",
+    "options": [
+      "A) Bireysel otomobil kullanımını teşvik etmek",
+      "B) Toplu taşıma sistemlerinin raylı ve elektrikli alternatiflerle güçlendirilmesi ve mikromobilite (bisiklet vb.) entegrasyonu",
+      "C) Tüm yollara hız sınırı koymak",
+      "D) Toplu taşımayı tamamen kaldırmak"
+    ],
+    "answer": "B",
+    "explanation": "Kentsel ulaşımdan kaynaklanan karbon emisyonlarını azaltmanın en etkin yolu elektrikli toplu taşıma, raylı sistemler ve bisiklet gibi çevre dostu ulaşım entegrasyonlarıdır."
+  },
+  {
+    "id": 200,
+    "question": "Sürdürülebilir kalkınmanın gerçekleşmesinde ekolojik dengenin korunması neden zorunludur?",
+    "options": [
+      "A) Teknoloji fiyatlarının ucuzlaması buna bağlı olduğu için",
+      "B) Ekonomik faaliyetlerin sürekliliğinin, ekosistemin sunduğu su, hava, toprak ve hammadde gibi kaynakların varlığına bağımlı olması nedeniyle",
+      "C) İnsanların köylere göç etmesini sağlamak için",
+      "D) Fabrika kârlarını artırmak için"
+    ],
+    "answer": "B",
+    "explanation": "Ekolojik denge bozulduğunda su kıtlığı, iklim krizleri ve kaynak tükenmesi başlar; bu da ekonomik üretimin ve kalkınmanın tamamen durmasına yol açar."
+  }
+]

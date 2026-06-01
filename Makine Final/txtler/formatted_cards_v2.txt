@@ -1,0 +1,726 @@
+\begin{learningcard}
+\textbf{Soru:} $R^2$ (R-Kare) skoru neyi ölçer? \\
+\vspace{0.5em}
+\textbf{Cevap:} Bağımsız değişkenlerin, bağımlı değişkendeki varyansın ne kadarını açıkladığını.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Adam optimizer'ın temel karakteristiği nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Adaptif öğrenme hızı kullanarak her parametre için güncellemeyi ayarlar.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Açıklanan Varyans Oranı (EVR) formülü nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} $EVR(k) = \frac{\sum_{i=1}^k \lambda_i}{\sum_{i=1}^d \lambda_i}$
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Ağırlıkların hata payına göre güncellenmesini sağlayan matematiksel kural nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Zincir Kuralı (Chain Rule) tabanlı Geri Yayılım.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Batch Normalization'ın temel amacı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Eğitimi hızlandırmak ve gradyan sorunlarını azaltmak için girdi değerlerini normalize etmek.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Bias (Önyargı) ve Varyans arasındaki ödünleşim (trade-off) neyi ifade eder? \\
+\vspace{0.5em}
+\textbf{Cevap:} Model karmaşıklığı arttıkça biasın azalması ancak varyansın artması durumunu.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Bias-Variance ödünleşimi açısından 'Underfitting' (Eksik Öğrenme) ne zaman gerçekleşir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Model çok basit olduğunda ve verideki temel yapıyı öğrenemediğinde (Yüksek Bias).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Bilgi Kazancı (Information Gain) hesaplanırken hangi kavram temel alınır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Entropi (H).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Boyut düşürme neden 'Gürültü Azaltma' (Noise Reduction) sağlar? \\
+\vspace{0.5em}
+\textbf{Cevap:} Az varyans taşıyan bileşenler (genellikle gürültü) atıldığı için sinyal/gürültü oranı artar.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Boyut düşürme yöntemlerinden PCA (Temel Bileşen Analizi) hangi tür öğrenme kategorisine girer? \\
+\vspace{0.5em}
+\textbf{Cevap:} Denetimsiz (Unsupervised) Öğrenme.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Boyut düşürmede 'Kernel PCA' hangi tür veriler için uygundur? \\
+\vspace{0.5em}
+\textbf{Cevap:} Doğrusal olarak ayrılamayan, karmaşık yapılara sahip veriler için.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Boyut düşürmede 'Özellik Seçme' (Feature Selection) ile 'Özellik Çıkarma' arasındaki temel fark nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Özellik seçme orijinal değişkenlerin bir alt kümesini korurken, özellik çıkarma veriyi yeni yapay bileşenlere dönüştürür.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Boyutların Laneti (Curse of Dimensionality) nedeniyle yüksek boyutlarda veri noktaları arasındaki mesafe nasıl değişir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Tüm noktalar birbirine neredeyse eşit uzaklıkta görünür ve 'yakınlık' kavramı anlamını yitirir.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Boyutların Laneti (Curse of Dimensionality) veri noktaları arasındaki mesafeyi nasıl etkiler? \\
+\vspace{0.5em}
+\textbf{Cevap:} Boyut arttıkça noktalar arası mesafe birbirine çok benzer hale gelir ve en yakın komşu kavramı anlamını yitirir.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} DBSCAN algoritması geleneksel merkez tabanlı algoritmalardan hangi özelliği ile ayrılır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Yoğunluk farklarına dayanarak karmaşık şekilli kümeleri bulabilmesi.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} DBSCAN gibi yoğunluk tabanlı kümeleme algoritmalarının klasik yöntemlere göre en büyük avantajı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Düzensiz ve karmaşık şekilli kümeleri tespit edebilmeleri ve gürültüyü (aykırı değerleri) ayırt edebilmeleridir.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Destek Vektör Makineleri (SVM) algoritmasının temel optimizasyon hedefi nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Sınıflar arasındaki boşluğu (margin) maksimize eden karar hiperdüzlemini bulmak.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Destek Vektör Makineleri'nde (SVM) 'Margin' neyi ifade eder? \\
+\vspace{0.5em}
+\textbf{Cevap:} Karar hiperdüzlemi ile en yakın veri noktaları arasındaki mesafe.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Doğrusal Diskriminant Analizi'nin (LDA) temel amacı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Sınıflar arası ayrımı (separability) maksimize etmek.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Doğrusal olmayan yapıdaki veriler için PCA'nın hangi türevi 'Kernel Trick' kullanarak çalışır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Kernel PCA (Çekirdek Tabanlı PCA).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Doğrusal regresyon veya lojistik regresyonun çözemediği klasik mantıksal problem hangisidir? \\
+\vspace{0.5em}
+\textbf{Cevap:} XOR Paradoksu.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Düzeltilmiş R-Kare (Adjusted $R^2$) neden standart $R^2$'den daha güvenilirdir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Modele eklenen alakasız değişkenler için penalizasyon uygulayarak 'yalancı başarıyı' engellediği için.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} EM (Expectation-Maximization) algoritması kümeleri nasıl tanımlar? \\
+\vspace{0.5em}
+\textbf{Cevap:} Veriyi farklı olasılık dağılımlarının (genellikle Gauss) bir bileşimi olarak varsayar ve 'yumuşak' (soft) kümeleme yapar.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Evrensel Yaklaşım Teoremi (Universal Approximation Theorem) neyi savunur? \\
+\vspace{0.5em}
+\textbf{Cevap:} Yeterince geniş tek bir gizli katmana sahip MLP'nin her türlü sürekli fonksiyonu temsil edebileceğini.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Geri Yayılım (Backpropagation) algoritmasının temel amacı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Çıkış katmanındaki hatayı zincir kuralı kullanarak geriye doğru dağıtmak ve ağırlıkları güncellemek.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Gini Safsızlığı formülü nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} $Gini(t) = 1 - \sum_k p_k^2$
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Gradient Boosting yönteminin Random Forest'tan temel farkı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Ağaçların paralel değil, bir önceki ağacın hatalarını (artıkları) öğrenecek şekilde ardışıl olarak eğitilmesi.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Gradient Descent algoritmasındaki 'Öğrenme Oranı' ($\alpha$) neyi belirler? \\
+\vspace{0.5em}
+\textbf{Cevap:} Minimuma ulaşmak için her adımda atılan güncellemelerin büyüklüğünü.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Gradyan İnişi (Gradient Descent) algoritmasında öğrenme hızı ($\alpha$) neyi belirler? \\
+\vspace{0.5em}
+\textbf{Cevap:} Parametre güncellemeleri sırasında atılan adımların büyüklüğünü.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Hiyerarşik kümelemede 'Complete Linkage' mesafeyi nasıl ölçer? \\
+\vspace{0.5em}
+\textbf{Cevap:} İki kümenin elemanları arasındaki en büyük mesafeyi temel alarak.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Hiyerarşik kümelemede 'Dendrogram' neyi temsil eder? \\
+\vspace{0.5em}
+\textbf{Cevap:} Veri noktaları arasındaki birleşme hiyerarşisini ve kümeler arasındaki mesafe ilişkilerini.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Hiyerarşik kümelemede 'Single Linkage' (Tekil Bağlantı) mesafeyi nasıl tanımlar? \\
+\vspace{0.5em}
+\textbf{Cevap:} İki küme arasındaki en yakın eleman çiftleri arasındaki mesafe.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Hiyerarşik kümelemede 'Single Linkage' (Tekli Bağlantı) kuralı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} İki küme arasındaki mesafeyi, kümelerin birbirine en yakın eleman çifti arasındaki mesafe olarak tanımlar.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} İki nokta arasındaki en kısa doğrusal mesafeyi ölçen metriğe ne denir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Öklid (Euclidean) Mesafesi.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} İkili sınıflandırma (Binary Classification) için kullanılan temel kayıp fonksiyonu (loss function) nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Binary Cross-Entropy Loss.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} k-En Yakın Komşu (k-NN) algoritması neden 'Tembel Öğrenme' (Lazy Learning) olarak adlandırılır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Eğitim aşamasında bir model kurmayıp, tüm hesaplamayı tahmin anında yaptığı için.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} K-Katlı Çapraz Doğrulama (K-Fold Cross Validation) yönteminin amacı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Veriyi farklı parçalara bölerek modelin genelleme yeteneğini daha güvenilir bir şekilde ölçmek.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} k-NN'de $K$ sayısının çok küçük seçilmesi hangi soruna yol açar? \\
+\vspace{0.5em}
+\textbf{Cevap:} Yüksek varyans ve aşırı öğrenme (overfitting).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} K-Ortalamalar (K-Means) algoritmasında 'Inertia' metriği neyi ifade eder? \\
+\vspace{0.5em}
+\textbf{Cevap:} Veri noktalarının kendi küme merkezlerine olan uzaklıklarının kareleri toplamını.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} K-Ortalamalar (K-Means) algoritmasının optimizasyon hedefi nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Küme içi varyasyonu (Inertia) minimize etmek.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Karar ağaçlarında 'Dallanma Kriteri' olarak ne seçilir? \\
+\vspace{0.5em}
+\textbf{Cevap:} En yüksek bilgi kazancını (Information Gain) sağlayan özellik ve eşik değeri.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Karar Ağaçlarında 'Gini Safsızlığı' (Gini Impurity) neyi ölçer? \\
+\vspace{0.5em}
+\textbf{Cevap:} Bir düğümdeki verilerin sınıfsal homojenliğini (karışıklığını).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Karar ağaçlarında dallanma kriteri olarak kullanılan saflık ölçüsü nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Gini Safsızlığı veya Entropi.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Karmaşıklık Matrisinde (Confusion Matrix) 'F1 Skoru' nasıl hesaplanır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Hassasiyet (Precision) ve Duyarlılığın (Recall) harmonik ortalaması alınarak.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} KD-Ağaçları (KD-Trees) uzayı bölmek için hangi geometrik yapıyı kullanır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Eksenlere dik hiperdüzlemler.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} KD-Ağaçları hangi boyut aralığında verimli arama yapabilmektedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Genellikle 2 ile 8 boyut arasında.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} KNN algoritmasında 'K' değerinin çok küçük seçilmesi hangi soruna yol açar? \\
+\vspace{0.5em}
+\textbf{Cevap:} Aşırı öğrenme (Overfitting/Yüksek Varyans).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Kök Ortalama Kare Hata (RMSE) metriğinin MAE'ye göre yorumlama avantajı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Hata birimini orijinal hedef değişken birimine (Örn: Dolar, Derece) geri döndürmesi.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Kümeleme (Clustering) analizinin temel amacı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Grup içi benzerliği en yüksek, gruplar arası farklılığı en fazla olacak şekilde veriyi alt gruplara ayırmak.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Kümeleme Analizi (Clustering) hangi tür öğrenme yöntemidir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Gözetimsiz (Unsupervised) Öğrenme.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Kümeleme analizinde 'Öklid Mesafesi' nasıl tanımlanır? \\
+\vspace{0.5em}
+\textbf{Cevap:} İki nokta arasındaki en kısa, doğrusal mesafe.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Kümeleme sonuçlarını ağaç benzeri bir yapıda gösteren diyagrama ne ad verilir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Dendrogram.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Kümelemede 'Uzman Doğrulaması' (Sanity Check) neden gereklidir? \\
+\vspace{0.5em}
+\textbf{Cevap:} İstatistiksel olarak bulunan kümelerin gerçek dünya iş mantığına (Örn: Pazar segmentasyonu) uygunluğunu denetlemek için.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} L1 Düzenlileştirmesi (Lasso) modelde nasıl bir etki yaratır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Bazı katsayıları tam olarak sıfıra eşitleyerek özellik seçimi (feature selection) yapar.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} L2 Düzenlileştirmesi (Ridge) maliyet fonksiyonuna ne ekler? \\
+\vspace{0.5em}
+\textbf{Cevap:} Ağırlıkların karelerinin toplamını ($\lambda \cdot \sum w_j^2$).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} LDA (Doğrusal Diskriminant Analizi) ile PCA arasındaki en temel kavramsal fark nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} PCA denetimsiz (etiketsiz) bir yöntemken, LDA sınıfları birbirinden ayırmak için etiketli veri kullanan denetimli bir yöntemdir.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} LDA'da 'Sınıf İçi Saçılım' ($S_W$) matrisinin minimize edilmesi ne anlama gelir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Aynı sınıfa ait örneklerin birbirine olabildiğince yakınlaşması.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} LDA'da maksimum bileşen sayısı ne ile sınırlıdır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Sınıf sayısı $K$ olmak üzere, en fazla $K-1$ bileşen üretilebilir.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} LDA'da üretilebilecek maksimum bileşen sayısı ne ile sınırlıdır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Sınıf sayısı eksi bir ($K-1$).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Lojistik Regresyon modelinde çıktı olasılığını $[0, 1]$ aralığına sıkıştıran fonksiyon hangisidir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Sigmoid (Lojistik) fonksiyonu: $\sigma(z) = \frac{1}{1 + e^{-z}}$.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Lojistik regresyonda katsayıların aşırı büyümesini engellemek için kullanılan L2 düzenlileştirmesinin diğer adı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Ridge Düzenlileştirme.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Manhattan (City-block) mesafesi hangi kurala göre hesaplanır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Koordinat eksenleri boyunca hareket edilerek hesaplanan mutlak farkların toplamı.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Manhattan mesafesi nasıl hesaplanır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Koordinat eksenleri boyunca mutlak farkların toplamı ile.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} MAPE metriği hangi durumlarda hatalı veya tanımsız sonuçlar üretir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Gerçek değerler sıfır veya sıfıra çok yakın olduğunda.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Mevcut özelliklerden bir alt küme seçerek orijinal değişkenlerin korunduğu işleme ne denir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Özellik Seçme (Feature Selection).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Modelin eğitim verisine aşırı uyum sağlaması sonucu test verisinde düşük performans göstermesi durumuna ne denir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Overfitting (Aşırı Öğrenme).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Naive Bayes algoritmasının 'Naive' (Saf) olarak adlandırılmasının sebebi nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Özelliklerin sınıf verildiğinde birbirinden tamamen bağımsız olduğunu varsaymasıdır.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Naive Bayes türlerinden hangisi sürekli (continuous) değişkenler için uygundur? \\
+\vspace{0.5em}
+\textbf{Cevap:} Gaussian Naive Bayes.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Neden 'Düzeltilmiş R-Kare' (Adjusted $R^2$) metriği standart R-Kare'den daha güvenilirdir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Modele eklenen anlamsız değişkenler için cezalandırma yaparak sahte başarıyı engellediği için.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Neden PCA uygulanmadan önce verinin standartlaştırılması (z-score scaling) önerilir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Ölçeği büyük olan değişkenlerin varyans hesaplamasını domine etmesini engellemek için.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Ortalama Kare Hata (MSE) metriği hataları nasıl cezalandırır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Hataların karesini aldığı için büyük sapmaları çok daha sert (üstel olarak) cezalandırır.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Ortalama Kare Hata (MSE) metriğinin MAE'den temel farkı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Hataların karesini aldığı için büyük hataları daha sert cezalandırması.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Ortalama Mutlak Hata (MAE) metriğinin en güçlü yönü nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Aykırı değerlere (outliers) karşı dirençli ve stabil bir ölçüm sunması.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Ortalama Mutlak Yüzde Hata (MAPE) metriğinin temel kısıtlaması nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Gerçek değerler sıfıra çok yakın olduğunda sonucun matematiksel olarak belirsizleşmesi veya patlaması.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Otoenkodör türlerinden hangisi gürültülü veriden temiz veriyi öğrenmek için tasarlanmıştır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Denoising Autoencoder.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Otoenkodörlerde (Autoencoders) 'Bottleneck' katmanının görevi nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Veriyi en düşük boyutlu (sıkıştırılmış) temsiline ($z$) indirgemek.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Otoenkodörlerde (Autoencoders) verinin en düşük boyutlu temsilinin bulunduğu katmana ne denir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Bottleneck (Darboğaz).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} PCA (Temel Bileşen Analizi) algoritmasının ilk adımı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Veriyi merkezlemek (sütun ortalamasını her gözlemden çıkarmak).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} PCA algoritmasında özdeğerlerin ($\lambda_i$) büyüklüğü neyi temsil eder? \\
+\vspace{0.5em}
+\textbf{Cevap:} İlgili bileşenin taşıdığı varyans miktarını.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} PCA formülasyonunda özvektörler arasındaki ilişki nasıldır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Özvektörler birbirine ortogonaldir (diktir) ve aralarında korelasyon yoktur.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} PCA'da açıklanan varyans oranı (EVR) nasıl hesaplanır? \\
+\vspace{0.5em}
+\textbf{Cevap:} $EVR(k) = \frac{\sum_{i=1}^k \lambda_i}{\sum_{i=1}^d \lambda_i}$
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} PCA'da en uygun bileşen sayısını ($k$) belirlemek için kullanılan görsel grafiğe ne ad verilir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Scree Plot (Yamaç Grafiği).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} PCA'da her bir ana bileşenin (PC) bir sonrakine göre geometrik konumu nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Birbirlerine diktirler (Ortogonal).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} PCA'da kovaryans matrisi $C$ hangi matematiksel formülle hesaplanır? \\
+\vspace{0.5em}
+\textbf{Cevap:} $C = \frac{1}{N} \tilde{X}^T \tilde{X}$ (Burada $\tilde{X}$ merkezlenmiş veridir).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} PCA'da kullanılan 'Scree Plot' grafiği neyi belirlemek için kullanılır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Özdeğerlerin sıralı dizilimindeki 'dirsek' noktasını bularak optimal bileşen sayısını ($k$) seçmek.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} PCA'da verinin merkezlenmesi için hangi işlem yapılır? \\
+\vspace{0.5em}
+\textbf{Cevap:} $\tilde{X} = X - \mu$ (Her özellikten sütun ortalamasının çıkarılması).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} PCA'nın geometrik yorumunda birinci temel bileşen (PC1) hangi yöndedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Verideki maksimum varyansın olduğu doğrultudadır.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} R-Kare ($R^2$) skoru neyi ifade eder? \\
+\vspace{0.5em}
+\textbf{Cevap:} Hedef değişkendeki varyansın yüzde kaçının modeldeki özellikler tarafından açıklandığını.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Random Forest'ta her düğümde rastgele $m < d$ özellik seçilmesinin temel amacı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Ağaçlar arasındaki korelasyonu düşürerek topluluk varyansını azaltmak.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Rastgele Orman (Random Forest) algoritmasındaki 'Bagging' mantığı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Eğitim verisinden tekrarlı rastgele örneklemler (bootstrap) alarak birden fazla ağaç eğitmek ve sonuçları oylamak.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Rastgele Orman (Random Forest) algoritmasının temel çalışma prensibi nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Birden fazla karar ağacını bootstrap örnekleme ve rastgele özellik seçimiyle birleştirmek.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Regresyon modelinde $R^2 = 0.82$ sonucu ne anlama gelir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Model, verideki değişkenliğin $\%82$'sini açıklayabilmektedir.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Regresyon modellerinde 'Artık Değer' (Residual) nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Gerçek değer ($y_i$) ile tahmin edilen değer ($\hat{y}_i$) arasındaki fark.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} RMSE metriği MSE'ye göre neden daha yorumlanabilirdir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Karekök işlemi sayesinde hata birimini orijinal verinin birimine döndürdüğü için.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Sigmoid fonksiyonunun türevinin çok küçük olması hangi eğitim problemine yol açar? \\
+\vspace{0.5em}
+\textbf{Cevap:} Gradyan Kaybolması (Vanishing Gradient).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Sinir ağlarında 'Batch Normalization' neden kullanılır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Eğitimi hızlandırmak ve gradyan sorunlarını (vanishing gradient) azaltmak için katman girişlerini normalize eder.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Sinir ağlarında 'Dropout' tekniği neden kullanılır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Nöronları rastgele kapatarak aşırı öğrenmeyi (overfitting) engellemek için.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Sinir ağlarında 'ReLU' aktivasyon fonksiyonunun tanımı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} $g(z) = \max(0, z)$.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Sinir ağlarında 'Softmax' fonksiyonu genellikle hangi katmanda kullanılır? \\
+\vspace{0.5em}
+\textbf{Cevap:} Çok sınıflı sınıflandırma problemlerinde çıkış katmanında.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Sinir ağlarında katmanlar boyunca verinin işlenerek tahmin üretilmesi sürecine ne ad verilir? \\
+\vspace{0.5em}
+\textbf{Cevap:} İleri Besleme (Forward Propagation).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Sinir ağlarında negatif değerleri sıfıra eşitleyen en yaygın aktivasyon fonksiyonu hangisidir? \\
+\vspace{0.5em}
+\textbf{Cevap:} ReLU ($g(z) = \max(0, z)$).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} SOM (Kendi Kendini Organize Eden Haritalar) sinir ağı mimarisinin temel işlevi nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Yüksek boyutlu veriyi topolojiyi koruyarak düşük boyutlu (genellikle 2D) bir haritaya indirgemek.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} SVD (Tekil Değer Ayrışımı) ile PCA arasındaki ilişki nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} SVD, PCA hesaplamasını sayısal olarak daha kararlı bir şekilde gerçekleştirmek için kullanılır.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} SVM algoritmasında 'Soft Margin' kullanımı neyi amaçlar? \\
+\vspace{0.5em}
+\textbf{Cevap:} Verideki bazı gürültülü noktaların yanlış sınıfta kalmasına izin vererek daha genel bir karar sınırı oluşturmayı.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} SVM'de 'Kernel Trick' ne işe yarar? \\
+\vspace{0.5em}
+\textbf{Cevap:} Veriyi daha yüksek boyutlu bir özellik uzayına taşıyarak doğrusal olmayan sınırların çizilmesini sağlar.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} SVM'de veriyi doğrusal olmayan bir üst uzaya taşıyarak ayrıştırmayı sağlayan yönteme ne denir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Kernel Trick (Çekirdek Yöntemi).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Sınıflandırma (Classification) problemi makine öğrenmesinin hangi kategorisine girer? \\
+\vspace{0.5em}
+\textbf{Cevap:} Denetimli Öğrenme (Supervised Learning).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Sınıflandırma performansını ölçen Karmaşıklık Matrisi'nde (Confusion Matrix) FN neyi temsil eder? \\
+\vspace{0.5em}
+\textbf{Cevap:} Yanlış Negatif (Gerçekte pozitif olanın negatif tahmin edilmesi).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Sınıflandırma probleminde modelin çıktı olarak ürettiği olasılığı 0 veya 1'e dönüştüren fonksiyona ne denir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Sigmoid Fonksiyonu: $\sigma(z) = \frac{1}{1 + e^{-z}}$.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} t-SNE algoritması yüksek boyuttaki benzerlikleri düşük boyuta taşırken hangi olasılık dağılımını kullanır? \\
+\vspace{0.5em}
+\textbf{Cevap:} t-dağılımı (Student's t-distribution).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} UMAP algoritmasının t-SNE'ye göre en büyük pratik avantajı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Daha hızlı çalışması ve yeni veri noktalarının projeksiyonuna izin vermesi.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} UMAP yönteminin t-SNE'ye göre avantajı nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Daha hızlı çalışması ve yeni veri noktalarını mevcut projeksiyona dahil edebilmesidir.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Vektörleştirme (Vectorization) sinir ağı eğitiminde neden önemlidir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Çok sayıda skaler işlemi tek bir matris çarpımına dönüştürerek donanım (GPU) hızlandırması sağlar.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Veriyi 2D veya 3D'de görselleştirmek için t-SNE'nin kullandığı temel benzerlik ölçütü nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Koşullu olasılıklar tabanlı benzerlik (t-dağılımı).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} XOR problemi neden tek katmanlı (doğrusal) modellerle çözülemez? \\
+\vspace{0.5em}
+\textbf{Cevap:} XOR verisi doğrusal olarak ayrıştırılamaz, modellemek için doğrusal olmayan bir gizli katman gerekir.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Yapay sinir ağlarında 'Dropout' yönteminin işlevi nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Eğitim sırasında nöronları rastgele kapatarak modelin belirli nöronlara aşırı bağımlı olmasını (overfitting) engellemek.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Yapay sinir ağlarında bir nöronun temel matematiksel denklemi nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} $a = \phi(\sum w_j x_j + b)$ (Burada $\phi$ aktivasyon fonksiyonudur).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Yapay sinir ağlarında tek bir nöronun matematiksel denklemi nedir? \\
+\vspace{0.5em}
+\textbf{Cevap:} $a = \phi(\sum w_j x_j + b)$
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Yüksek boyutlu veriyi 2D veya 3D uzayda görselleştirmek için en sık tercih edilen doğrusal olmayan yöntemler hangileridir? \\
+\vspace{0.5em}
+\textbf{Cevap:} t-SNE ve UMAP yöntemleri.
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Çok sınıflı sınıflandırma problemlerinde kullanılan hata fonksiyonu hangisidir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Çapraz Entropi (Cross-Entropy Loss).
+\end{learningcard}
+
+\begin{learningcard}
+\textbf{Soru:} Özelliklerin dönüştürülerek yeni yapay bileşenlerin üretildiği işleme ne ad verilir? \\
+\vspace{0.5em}
+\textbf{Cevap:} Boyut Düşürme (Dimensionality Reduction).
+\end{learningcard}
+

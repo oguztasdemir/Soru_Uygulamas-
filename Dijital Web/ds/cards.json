@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "question": "Dijital Dönüşüm nedir?",
+    "options": [
+      "A) Kağıt belgelerin taratılıp PDF yapılmasıdır.",
+      "B) İş süreçlerinin ve modellerinin dijital teknolojilerle kökten yeniden tasarlanmasıdır.",
+      "C) Sadece yeni bir bilgisayar satın almaktır.",
+      "D) İnternet hızının artırılmasıdır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: İş süreçlerinin, kültürün ve iş modellerinin dijital teknolojiler aracılığıyla kökten yeniden tasarlanması ve değiştirilmesidir."
+  },
+  {
+    "id": 2,
+    "question": "Sayısallaştırma (Digitization) nedir?",
+    "options": [
+      "A) Bulut tabanlı Google E-Tablolar kullanımıdır.",
+      "B) İş modelinin tamamen değiştirilmesidir.",
+      "C) Fiziksel bilginin dijital forma dönüştürülmesidir (Örn: Kağıdı tarayıp PDF yapmak).",
+      "D) Yapay zeka kararlarıyla kredi onaylamaktır."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Fiziksel haldeki bilginin dijital bir forma dönüştürülüp bilgisayar sistemleri tarafından kullanılabilir hale getirilmesidir."
+  },
+  {
+    "id": 3,
+    "question": "Dijitalleşme (Digitalization) nedir?",
+    "options": [
+      "A) Sayısallaştırılmış bilginin iş süreçlerini iyileştirmek ve otomatikleştirmek için kullanılmasıdır.",
+      "B) Sadece analog kasetleri CD'ye kaydetmektir.",
+      "C) Tüm şirketin kapatılıp internete taşınmasıdır.",
+      "D) Şirketteki tüm çalışanların yerine yapay zeka konmasıdır."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Sayısallaştırılmış verilerin ve dijital araçların, iş süreçlerini kolaylaştırmak ve gelir üretmek amacıyla kullanılmasıdır."
+  },
+  {
+    "id": 4,
+    "question": "Yaratıcı Yıkım (Creative Destruction) nedir?",
+    "options": [
+      "A) Şirketteki eski bilgisayarların kırılarak çöpe atılmasıdır.",
+      "B) Yeni teknolojilerin eski yapıları ortadan kaldırarak daha verimli yenilerini kurmasıdır.",
+      "C) Siber saldırılarla veri tabanının yok edilmesidir.",
+      "D) Sürdürülebilirlik projelerinin bütçesinin kesilmesidir."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Yenilikçi teknolojilerin eski üretim süreçlerini, iş modellerini ve yeterlilikleri yıkarak daha verimli sistemler getirmesidir."
+  },
+  {
+    "id": 5,
+    "question": "Toplu Kişiselleştirme (Mass Customization) nedir?",
+    "options": [
+      "A) Herkese tamamen standart ve aynı tek tip ürünlerin satılmasıdır.",
+      "B) Ürün ve hizmetlerin dijital teknolojilerle kişisel tercihlere göre esnekçe üretilmesidir.",
+      "C) Reklamların tüm dünyaya ortak dil olarak yayınlanmasıdır.",
+      "D) Fiyatların tek bir elden belirlenmesidir."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Bilgi toplumu döneminde, esnek üretim teknolojileriyle ürün ve hizmetlerin kişiye özel olarak seri üretilebilmesidir."
+  },
+  {
+    "id": 6,
+    "question": "Sanayi 4.0 nedir?",
+    "options": [
+      "A) Buhar gücünün üretime ilk kez entegre edilmesidir.",
+      "B) Veri ve bilgiye bağımlı olan, siber-fiziksel sistemler üzerine kurulu dördüncü sanayi devrimidir.",
+      "C) Sadece internetten e-ticaret yapılmasıdır.",
+      "D) Bilgisayarların ilk kez icat edildiği dönemdir."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Büyük veri, IoT, siber-fiziksel sistemler ve bulut bilişimin entegrasyonuyla şekillenen modern sanayi devrimidir."
+  },
+  {
+    "id": 7,
+    "question": "Olgunluk Modeli (Maturity Model) nedir?",
+    "options": [
+      "A) Şirket çalışanlarının yaş ortalamasını ölçen tablodur.",
+      "B) Yeteneklerin öngörülen mantıklı süreçlerle nasıl geliştiğini gösteren yaklaşımlardır.",
+      "C) Sadece finansal kârlılık durumunu gösteren grafiktir.",
+      "D) Yeni kurulan startup'ların büyüklük endeksidir."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Bir kuruluşun süreç, teknoloji ve yönetim yeteneklerinin aşama aşama nasıl geliştiğini izlemeyi ve iyileştirmeyi sağlayan çerçevedir."
+  },
+  {
+    "id": 8,
+    "question": "Deming'in PUKÖ Döngüsü nedir?",
+    "options": [
+      "A) Programla-Uyar-Katıl-Öğren sistemidir.",
+      "B) Planla-Uygula-Kontrol Et-Önlem Al aşamalarından oluşan kalite yönetimi modelidir.",
+      "C) En az maliyetle üretim yapma algoritmasıdır.",
+      "D) Şirketin yıllık bütçe planlamasıdır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Sürekli iyileştirmeyi (kaizen) hedefleyen; Planla, Uygula, Kontrol Et ve Önlem Al adımlarından oluşan döngüdür."
+  },
+  {
+    "id": 9,
+    "question": "Büyük Verinin 3V Prensibi nedir?",
+    "options": [
+      "A) Volume (Hacim), Velocity (Hız), Variety (Çeşitlilik).",
+      "B) Value (Değer), Validity (Geçerlilik), Vision (Vizyon).",
+      "C) Vector (Vektör), Vertex (Köşe), Volume (Hacim).",
+      "D) Virtual (Sanal), Visual (Görsel), Value (Değer)."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Büyük verinin temelini oluşturan Hacim (Volume), Hız (Velocity) ve Çeşitlilik (Variety) kriterleridir."
+  },
+  {
+    "id": 10,
+    "question": "Yapay Zeka Fabrikası (AI Factory) nedir?",
+    "options": [
+      "A) Şirketlerde robotların fiziksel üretim yaptığı bant sistemidir.",
+      "B) Karar verme sürecini algoritmalarla bilimsel ve sistematik hale getiren karar merkezidir.",
+      "C) Sadece bilgisayar parçaları üreten tesislerdir.",
+      "D) İnternette otomatik olarak web sitesi oluşturan yazılımlardır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Karar alma süreçlerini veri hattı, tahmin motoru ve hipotez testleriyle algoritmik hale getiren yazılımsal yapay zeka merkezidir."
+  },
+  {
+    "id": 11,
+    "question": "Zayıf Yapay Zeka (Narrow AI) nedir?",
+    "options": [
+      "A) İşlemci gücü ve belleği çok düşük olan bilgisayardır.",
+      "B) Tek bir dar görev alanında uzmanlaşmış yapay zekadır (Örn: Alipay kredi skoru tahmini).",
+      "C) İnsan gibi her konuda düşünebilen genel zekadır.",
+      "D) Sürekli hata yapan ve uyduran yazılımlardır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Belirli bir sınırlı görev veya alan için tasarlanmış ve eğitilmiş yapay zeka sistemleridir."
+  },
+  {
+    "id": 12,
+    "question": "Güçlü Yapay Zeka (Strong AI) nedir?",
+    "options": [
+      "A) Elektrik tüketimi ve işlem gücü en yüksek olan sunuculardır.",
+      "B) Etki alanı sınırlamalarıyla kısıtlanmamış, değişen koşullara adapte olabilen genel zekadır.",
+      "C) Sadece büyük şirketlerin kullandığı özel algoritmalardır.",
+      "D) Otonom fabrikalardaki kaynak robotlarıdır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: İnsan bilişsel yeteneklerini genel olarak simüle edebilen ve kısıtsız alanlarda problem çözebilen yapay zeka düzeyidir."
+  },
+  {
+    "id": 13,
+    "question": "Sürdürülebilirlik nedir?",
+    "options": [
+      "A) Ekonominin sürekli büyümesini ve fabrikaların aralıksız çalışmasını sağlamaktır.",
+      "B) Gelecek nesillerin ihtiyaçlarından ödün vermeden bugünün ihtiyaçlarını karşılamaktır.",
+      "C) Doğal kaynakların kullanımının tamamen yasaklanmasıdır.",
+      "D) Şirketin kârlılığını sonsuza kadar korumasıdır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: 1987 Brundtland Raporu'ndaki tanımıyla, ekolojik dengeyi koruyarak gelecek nesillerin yaşam haklarını garanti altına alan kalkınmadır."
+  },
+  {
+    "id": 14,
+    "question": "Ortak Malların Trajedisi nedir?",
+    "options": [
+      "A) Ortaklığın son bulmasıyla şirketlerin iflas etmesidir.",
+      "B) Bireylerin serbest ortak kaynakları aşırı tüketerek kaynağın yok olmasına sebep olmasıdır.",
+      "C) Devlet hazinesinin siber saldırılarla çalınmasıdır.",
+      "D) Özel mülkiyetin yasaklanmasıdır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Bireylerin kişisel çıkarlarını maksimize etmek için ortak ve ücretsiz doğal kaynakları (meralar vb.) aşırı kullanarak tüketmesidir."
+  },
+  {
+    "id": 15,
+    "question": "Tersine Lojistik (Reverse Logistics) nedir?",
+    "options": [
+      "A) Ürünlerin depolardan yanlışlıkla çıkış noktasına geri gönderilmesidir.",
+      "B) Ürünlerin değer kazanımı veya imhası için tüketimden orijine (kaynağa) doğru akışıdır.",
+      "C) Taşımacılıkta sadece geri geri giden kamyonların planlanmasıdır.",
+      "D) İthalat işlemlerinin tamamen durdurulmasıdır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Yeniden kullanım, geri dönüşüm veya imha amacıyla ürün ve ambalajların müşteriden geri toplanması sürecidir."
+  },
+  {
+    "id": 16,
+    "question": "Yeşil Tedarik Zinciri Yönetimi nedir?",
+    "options": [
+      "A) Satın alma süreçlerinde sadece yeşil renkli ürünlerin tercih edilmesidir.",
+      "B) Satın almadan paketlemeye kadar tüm tedarik adımlarına çevresel faktörlerin dahil edilmesidir.",
+      "C) Şirket bahçelerinin ağaçlandırılması faaliyetidir.",
+      "D) Sadece yerel üreticilerden mal alınması kuralıdır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Tedarik zincirindeki tüm süreçlerin (tasarım, üretim, lojistik, ambalaj) çevre duyarlılığı ve atık yönetimi ilkeleriyle yönetilmesidir."
+  },
+  {
+    "id": 17,
+    "question": "Sürdürülebilir Akıllı Şehir nedir?",
+    "options": [
+      "A) Her vatandaşın elinde akıllı telefon olan şehirlerdir.",
+      "B) Bilgi ve iletişim teknolojilerini kullanarak karbon ayak izini azaltan ve kalkınan şehirdir.",
+      "C) Tarım arazilerinin tamamen imara açıldığı modern şehirlerdir.",
+      "D) Trafik ışıklarının tamamen otonom çalıştığı küçük ilçelerdir."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Kaynakları etkin kullanmak, karbon salınımını düşürmek ve yaşam kalitesini artırmak için teknolojiyi sürdürülebilirlikle birleştiren kent modelidir."
+  },
+  {
+    "id": 18,
+    "question": "Kentsel Sürdürülebilirlik kentsel alanlarda hangi boyutu öncelikli olarak ele alır?",
+    "options": [
+      "A) Bilgi teknolojilerini ve hızlı interneti",
+      "B) Çevre faktörünü ve ekolojik dengeleri",
+      "C) Şirketlerin ekonomik kârlarını",
+      "D) Nüfusun göç etme oranlarını"
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Kentsel sürdürülebilirlik, çevre kirliliği ve ekolojik dengeyi koruma faktörünü (Neirotti vd. 2014) ön plana çıkarır."
+  },
+  {
+    "id": 19,
+    "question": "Sürdürülebilir Kalkınma nedir?",
+    "options": [
+      "A) Hızlı sanayileşmeyle tüm kaynakları bir an önce ekonomik büyümeye dönüştürmektir.",
+      "B) Ekonomik büyümeyi ekolojik dengelerle ve doğal kaynak yenilenme sınırlarıyla uyumlu yapmaktır.",
+      "C) Sadece devlet yardımlarıyla geçinen ekonomidir.",
+      "D) İthalatı tamamen kesip sadece yerli malı tüketmektir."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Ekolojik dengeyi ve kıt kaynakları koruyarak sürekli kılınan dengeli bir ekonomik büyüme stratejisidir."
+  },
+  {
+    "id": 20,
+    "question": "Kültürel Sürdürülebilirlik nedir?",
+    "options": [
+      "A) Gelenekçi bir tavırla geçmişi hiç değiştirmeden korumaya çalışmaktır.",
+      "B) Geçmişin mirasını ve yerleşim ilkelerini sürdürülebilir bir kaynak olarak kuşaklara aktarmaktır.",
+      "C) Tüm yerel dillerin unutturulmasıdır.",
+      "D) Küresel kültür standartlarına uymaktır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Bir toplumun geçmiş mirasını ve kültürel değerlerini, dinamik bir süreç içinde koruyarak gelecek kuşaklara aktarabilmesidir."
+  }
+]

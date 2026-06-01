@@ -1,0 +1,1236 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[turkish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+
+\definecolor{testblue}{RGB}{30, 144, 255}
+\definecolor{ansgreen}{RGB}{34, 139, 34}
+
+\newtcolorbox{testcard}[1]{
+    enhanced,
+    colback=white,
+    colframe=testblue!70!white,
+    boxrule=0.6pt,
+    arc=0pt, % Sharp corners like the request
+    outer arc=0pt,
+    title={\textbf{#1}},
+    coltitle=white,
+    colbacktitle=testblue!80!black,
+    fonttitle=\large\bfseries,
+    left=10pt, right=10pt, top=10pt, bottom=10pt,
+    segmentation style={draw=testblue!30!white, solid, linewidth=1pt},
+    lower separated=true
+}
+
+\geometry{margin=0.8in}
+
+% --- Kapak Bilgileri ---
+\title{\textbf{Makine Öğrenmesi Test Bankası}}
+\author{Oğuz Taşdemir}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Giriş}
+Bu doküman, makine öğrenmesi konularını kapsayan 90 soruluk kapsamlı bir test setidir. Her soru, konunun temel mantığını ve teknik detaylarını ölçmek amacıyla hazırlanmıştır.
+
+\newpage
+\section{Test Soruları}
+
+\subsection{Algoritma Testi}
+
+\begin{testcard}{Soru 1}
+    Bir veri setinde bağımsız değişkenlerin (X) bağımlı değişkeni (y) tahmin etmek için kullanıldığı, k-NN veya Lojistik Regresyon gibi algoritmaları kapsayan öğrenme türü hangisidir?
+    \begin{itemize}
+        \item[A)] Denetimsiz Öğrenme
+        \item[B)] Denetimli Öğrenme
+        \item[C)] Takviyeli Öğrenme
+        \item[D)] Yarı Denetimli Öğrenme
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Denetimli öğrenmede her girdinin bir karşılık gelen etiketi bulunur; model bu eşleşmeyi öğrenir.
+\end{testcard}
+
+\begin{testcard}{Soru 2}
+    Denetimsiz öğrenme algoritmalarının temel amacı aşağıdakilerden hangisidir?
+    \begin{itemize}
+        \item[A)] Veri setindeki etiketleri tahmin etmek
+        \item[B)] Verideki gizli yapıları ve grupları (kümeleri) keşfetmek
+        \item[C)] Bir regresyon doğrusu oluşturmak
+        \item[D)] Hata payını sıfıra indirmek
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Denetimsiz öğrenmede etiket yoktur, amaç verinin kendi içindeki benzerlikleri bulmaktır.
+\end{testcard}
+
+\begin{testcard}{Soru 3}
+    "Eğer bir ördek gibi yürüyorsa ve ördek gibi vakvaklıyorsa, o bir ördektir" mantığıyla çalışan, en yakın komşularına bakarak sınıflandırma yapan algoritma hangisidir?
+    \begin{itemize}
+        \item[A)] k-NN (k-En Yakın Komşu)
+        \item[B)] Destek Vektör Makineleri (SVM)
+        \item[C)] Karar Ağaçları
+        \item[D)] PCA
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} k-NN, "benzer şeyler birbirine yakındır" ilkesiyle en yakın komşuların oylamasına dayanır.
+\end{testcard}
+
+\begin{testcard}{Soru 4}
+    K-Means algoritmasında, verilerin hangi kümeye ait olduğunu belirlemek için genellikle hangi mesafe ölçütü kullanılır?
+    \begin{itemize}
+        \item[A)] Manhattan Mesafesi
+        \item[B)] Öklid Mesafesi
+        \item[C)] Jaccard Benzerliği
+        \item[D)] Kosinüs Benzerliği
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} K-Means, küme içi varyansı minimize etmek için noktaların merkezlere olan Öklid mesafesini kullanır.
+\end{testcard}
+
+\begin{testcard}{Soru 5}
+    Karar Ağaçlarında (Decision Trees), bir düğümü bölmek için kullanılan ve "safsızlık" (impurity) ölçen temel metriklerden biri hangisidir?
+    \begin{itemize}
+        \item[A)] Gini Katsayısı / Entropi
+        \item[B)] R-Kare
+        \item[C)] F1 Skoru
+        \item[D)] Ortalama Mutlak Hata (MAE)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Karar ağaçları, dallanma kararlarını verinin saflığını artıran Gini veya Bilgi Kazancı değerlerine göre verir.
+\end{testcard}
+
+\begin{testcard}{Soru 6}
+    Destek Vektör Makineleri (SVM) algoritmasında, sınıfları birbirinden ayıran en geniş boşluğu (margin) bulmak için kullanılan veri noktalarına ne ad verilir?
+    \begin{itemize}
+        \item[A)] Aykırı Değerler (Outliers)
+        \item[B)] Destek Vektörleri (Support Vectors)
+        \item[C)] Merkez Noktaları (Centroids)
+        \item[D)] Karar Sınırları
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Destek vektörleri, karar sınırını "ayakta tutan" ve sınırın yerini belirleyen en yakın örneklerdir.
+\end{testcard}
+
+\begin{testcard}{Soru 7}
+    Rastgele Orman (Random Forest) algoritması, birden fazla karar ağacını birleştirerek daha güçlü bir model oluşturur. Bu yönteme genel olarak ne ad verilir?
+    \begin{itemize}
+        \item[A)] Boosting
+        \item[B)] Bagging (Bootstrap Aggregating)
+        \item[C)] Dimensionality Reduction
+        \item[D)] Clustering
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Random Forest, veriden farklı alt kümeler çekerek çok sayıda ağaç eğitir ve sonuçları oylar.
+\end{testcard}
+
+\begin{testcard}{Soru 8}
+    Bir modelin eğitim verisine çok iyi uyum sağlayıp, test (yeni) verisinde kötü performans göstermesi durumuna ne ad verilir?
+    \begin{itemize}
+        \item[A)] Eksik Öğrenme (Underfitting)
+        \item[B)] Aşırı Öğrenme (Overfitting)
+        \item[C)] Doğrusal Regresyon
+        \item[D)] Bias (Yanlılık)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Model verideki gürültüyü ezberlemiş ve yeni verilere karşı genelleme yapamaz hale gelmiştir.
+\end{testcard}
+
+\begin{testcard}{Soru 9}
+    Yapay Sinir Ağlarında, girdilerin ağırlıklarla çarpılıp toplandığı ve bir eşik değerinden geçirilerek çıktının üretildiği temel yapı birimine ne denir?
+    \begin{itemize}
+        \item[A)] Katman (Layer)
+        \item[B)] Nöron (Perceptron)
+        \item[C)] Aktivasyon Fonksiyonu
+        \item[D)] Optimizer
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Perceptron, bir sinir ağındaki en küçük ve temel işlem birimidir.
+\end{testcard}
+
+\begin{testcard}{Soru 10}
+    Boyut indirgeme (Dimensionality Reduction) amacıyla kullanılan ve verideki varyansı en çok koruyan yeni bileşenleri bulan algoritma hangisidir?
+    \begin{itemize}
+        \item[A)] K-Means
+        \item[B)] PCA (Temel Bileşen Analizi)
+        \item[C)] Lojistik Regresyon
+        \item[D)] Destek Vektör Makineleri (SVM)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} PCA (Principal Component Analysis), verideki en yüksek varyansı koruyacak şekilde boyut indirgeme yapan temel algoritmadır.
+\end{testcard}
+
+\begin{testcard}{Soru 11}
+    Boyut indirgeme (Dimensionality Reduction) amacıyla kullanılan ve verideki maksimum varyansı koruyarak yeni bileşenler oluşturan algoritma hangisidir?
+    \begin{itemize}
+        \item[A)] DBSCAN
+        \item[B)] PCA (Temel Bileşen Analizi)
+        \item[C)] Naive Bayes
+        \item[D)] Lojistik Regresyon
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} PCA, verideki en yüksek değişkenliği temsil eden ana yönleri (temel bileşenler) bularak bilgiyi sıkıştırır.
+\end{testcard}
+
+\begin{testcard}{Soru 12}
+    k-NN algoritmasında "k" parametresinin çok küçük seçilmesi (örneğin k=1) aşağıdakilerden hangisine neden olabilir?
+    \begin{itemize}
+        \item[A)] Modelin çok basitleşmesine
+        \item[B)] Aşırı öğrenmeye (Overfitting) ve gürültüye duyarlılığa
+        \item[C)] Eksik öğrenmeye (Underfitting)
+        \item[D)] Hesaplama maliyetinin azalmasına
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} k=1 olduğunda model her noktayı kendisine en yakın tek bir komşuya göre atar, bu da verideki rastgele gürültülerin model sınırlarını bozmasına yol açar.
+\end{testcard}
+
+\begin{testcard}{Soru 13}
+    Lojistik Regresyon algoritması, doğrusal regresyonun aksine çıktıyı 0 ile 1 arasında bir olasılık değerine dönüştürmek için hangi fonksiyonu kullanır?
+    \begin{itemize}
+        \item[A)] ReLU Fonksiyonu
+        \item[B)] Sigmoid (Lojistik) Fonksiyonu
+        \item[C)] Tanh Fonksiyonu
+        \item[D)] Step Fonksiyonu
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Sigmoid fonksiyonu, her türlü sayısal değeri [0, 1] aralığına haritalayarak modelin "sınıf olasılığı" üretmesini sağlar.
+\end{testcard}
+
+\begin{testcard}{Soru 14}
+    Naive Bayes algoritmasının ismindeki "Naive" (Saf/Safdil) ifadesi hangi varsayımdan kaynaklanır?
+    \begin{itemize}
+        \item[A)] Verilerin doğrusal olduğu
+        \item[B)] Özelliklerin (features) birbirinden bağımsız olduğu varsayımı
+        \item[C)] Veride hiç gürültü olmadığı
+        \item[D)] Tüm verilerin normal dağıldığı
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Naive Bayes, hesaplamayı kolaylaştırmak için özelliklerin birbirini etkilemediğini (bağımsız olduğunu) varsayar; bu varsayım gerçek dünyada nadiren tam olarak sağlanır.
+\end{testcard}
+
+\begin{testcard}{Soru 15}
+    Gradient Boosting algoritmalarında (XGBoost, LightGBM vb.), modeller nasıl eğitilir?
+    \begin{itemize}
+        \item[A)] Ağaçlar birbirine paralel olarak eğitilir
+        \item[B)] Her yeni ağaç, bir önceki ağacın yaptığı hataları (artıkları) azaltacak şekilde sıralı eğitilir
+        \item[C)] Ağaçlar rastgele seçilir
+        \item[D)] Sadece tek bir ağaç kullanılır
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Boosting, zayıf öğrenicileri (weak learners) ardışıl olarak ekleyerek her adımda toplam hatayı minimize etmeye çalışır.
+\end{testcard}
+
+\begin{testcard}{Soru 16}
+    Veri seti dairesel veya karmaşık şekilli kümeleri tespit etmekte K-Means'ten daha başarılı olan, yoğunluk tabanlı kümeleme algoritması hangisidir?
+    \begin{itemize}
+        \item[A)] Hiyerarşik Kümeleme
+        \item[B)] DBSCAN
+        \item[C)] PCA
+        \item[D)] Karar Ağaçları
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} DBSCAN, noktaların birbirine yakınlık yoğunluğuna odaklanır; bu da onun dairesel olmayan kümeleri ve gürültüyü (noise) tespit etmesini sağlar.
+\end{testcard}
+
+\begin{testcard}{Soru 17}
+    Denetimsiz öğrenmede, veriler arasındaki hiyerarşiyi bir "Dendrogram" (ağaç diyagramı) yardımıyla gösteren yöntem hangisidir?
+    \begin{itemize}
+        \item[A)] Lojistik Regresyon
+        \item[B)] Hiyerarşik Kümeleme (Hierarchical Clustering)
+        \item[C)] Rastgele Orman
+        \item[D)] k-NN
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Dendrogram, verilerin hangi benzerlik seviyelerinde birleştiğini en aşağıdan yukarıya doğru bir ağaç yapısıyla gösterir.
+\end{testcard}
+
+\begin{testcard}{Soru 18}
+    Boyut indirgemede kullanılan LDA (Doğrusal Diskriminant Analizi) algoritmasını PCA'dan ayıran temel özellik nedir?
+    \begin{itemize}
+        \item[A)] LDA'nın denetimli (sınıf etiketlerini kullanan) bir yöntem olması
+        \item[B)] LDA'nın sadece regresyonda kullanılması
+        \item[C)] LDA'nın daha yavaş çalışması
+        \item[D)] LDA'nın gürültüyü artıran bir yöntem olması
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} PCA verinin genel yapısını korurken etiketlere bakmaz; LDA ise sınıfları birbirinden ayırmak için verideki etiket bilgisini (labels) kullanır.
+\end{testcard}
+
+\begin{testcard}{Soru 19}
+    Bir regresyon modelinde, gerçek değerler ile tahmin edilen değerler arasındaki farkların karelerinin ortalamasına ne ad verilir?
+    \begin{itemize}
+        \item[A)] Ortalama Mutlak Hata (MAE)
+        \item[B)] Ortalama Kare Hata (MSE)
+        \item[C)] F1 Skoru
+        \item[D)] Hassasiyet (Precision)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} MSE (Mean Squared Error), hataların karesini aldığı için büyük hataları küçük hatalara göre çok daha sert cezalandırır.
+\end{testcard}
+
+\begin{testcard}{Soru 20}
+    Karar ağaçlarında, aşırı öğrenmeyi (overfitting) engellemek için ağacın gereksiz dallarının temizlenmesi işlemine ne denir?
+    \begin{itemize}
+        \item[A)] Budama (Pruning)
+        \item[B)] Dallanma (Branching)
+        \item[C)] Ölçeklendirme (Scaling)
+        \item[D)] Normalizasyon
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Budama, ağacı basitleştirerek modelin eğitim verisini ezberlemesini önler ve genelleme gücünü artırır.
+\end{testcard}
+
+\begin{testcard}{Soru 21}
+    Yapay Sinir Ağlarında, hatanın çıktıdan girdiye doğru yayılarak ağırlıkların güncellendiği temel öğrenme mekanizması hangisidir?
+    \begin{itemize}
+        \item[A)] İleri Besleme (Forward Propagation)
+        \item[B)] Geri Yayılım (Backpropagation)
+        \item[C)] Aktivasyon
+        \item[D)] Pooling
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Backpropagation, gradyan inişi ile ağırlıkların hatayı azaltacak şekilde optimize edilmesini sağlayan temel eğitim mekanizmasıdır.
+\end{testcard}
+
+\begin{testcard}{Soru 22}
+    Temel Bileşen Analizi (PCA) ve Doğrusal Diskriminant Analizi (LDA) arasındaki en temel fark aşağıdakilerden hangisidir?
+    \begin{itemize}
+        \item[A)] LDA doğrusal bir dönüşüm yaparken, PCA yalnızca doğrusal olmayan verilerde çalışır.
+        \item[B)] PCA denetimsiz bir yöntemken, LDA sınıf etiketlerini kullanan denetli bir yöntemdir.
+        \item[C)] LDA bileşenler arasında korelasyon bırakırken, PCA bileşenleri birbirinden bağımsız hale getirir.
+        \item[D)] PCA gürültü azaltma için kullanılırken, LDA yalnızca veri sıkıştırma için kullanılır.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} PCA verinin toplam varyansına (bilgisine) odaklanırken, LDA sınıfları birbirinden en uzağa itecek (separability) yönü bulur.
+\end{testcard}
+
+\begin{testcard}{Soru 23}
+    PCA algoritmasında verinin hangi yöne projekte edileceğine karar vermek için hangi matematiksel yapıdan yararlanılır?
+    \begin{itemize}
+        \item[A)] Kovaryans matrisinin özvektörleri (eigenvectors)
+        \item[B)] Veri matrisinin standart sapma değerleri
+        \item[C)] Sigmoid fonksiyonunun türevi
+        \item[D)] Sınıflar arası saçılım matrisinin izi (trace)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Özvektörler verideki varyansın (bilginin) yönünü, özdeğerler ise bu yönün önem derecesini belirtir.
+\end{testcard}
+
+\begin{testcard}{Soru 24}
+    Kümeleme analizinde kullanılan 'Dirsek (Elbow) Yöntemi' temel olarak neyi belirlemek için kullanılır?
+    \begin{itemize}
+        \item[A)] Hiyerarşik kümelemedeki en uzun mesafe eşiğini
+        \item[B)] Optimum küme sayısı olan $K$ değerini
+        \item[C)] Küme merkezlerinin başlangıç koordinatlarını
+        \item[D)] Verideki aykırı değerlerin (outliers) miktarını
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Dirsek yöntemi, küme sayısı arttıkça toplam hata düşüşünün yavaşladığı "dirsek" noktasını bularak en verimli K değerini seçer.
+\end{testcard}
+
+\begin{testcard}{Soru 25}
+    Regresyon modellerinde Ortalama Kare Hata (MSE) metriğinin Ortalama Mutlak Hata (MAE) metriğine göre en belirgin dezavantajı nedir?
+    \begin{itemize}
+        \item[A)] Aykırı değerlere (outliers) karşı aşırı duyarlı olması ve hatayı cezalandırması
+        \item[B)] Matematiksel olarak türevinin alınmasının zor olması
+        \item[C)] Modelin açıklanan varyansını ölçememesi
+        \item[D)] Sonucun hedef değişkenle aynı birimde olmaması
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} MSE hataların karesini aldığı için, büyük sapmalar skoru dramatik şekilde artırır; bu da aykırı değerlerin modeli domine etmesine yol açabilir.
+\end{testcard}
+\begin{testcard}{Soru 26}
+    Lojistik Regresyon modelinde doğrusal kombinasyonun ($z = w^T x + b$) sonucunu 0 ile 1 arasında bir olasılık değerine dönüştüren fonksiyon hangisidir?
+    \begin{itemize}
+        \item[A)] ReLU Fonksiyonu: $g(z) = \max(0, z)$
+        \item[B)] Sigmoid Fonksiyonu: $\sigma(z) = \frac{1}{1 + e^{-z}}$
+        \item[C)] Softmax Fonksiyonu
+        \item[D)] Minkowski Uzaklığı
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Sigmoid fonksiyonu, herhangi bir gerçel sayı değerini 0 ile 1 arasına sıkıştırarak sınıf olasılığı üretir.
+\end{testcard}
+
+\begin{testcard}{Soru 27}
+    Yapay Sinir Ağlarında 'Geri Yayılım' (Backpropagation) algoritmasının temel amacı nedir?
+    \begin{itemize}
+        \item[A)] Girdi verilerini bir katmandan diğerine doğrusal olmayan şekilde aktarmak
+        \item[B)] Aşırı öğrenmeyi (overfitting) önlemek için nöronları rastgele kapatmak
+        \item[C)] Zincir kuralı kullanarak kaybın ağırlıklara göre gradyanını hesaplamak ve ağırlıkları güncellemek
+        \item[D)] Verideki eksik özellikleri istatistiksel yöntemlerle tamamlamak
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Geri yayılım, gradyan inişi (gradient descent) ile modelin ağırlıklarını hatayı azaltacak yönde optimize etmek için kullanılır.
+\end{testcard}
+
+\begin{testcard}{Soru 28}
+    Destek Vektör Makineleri'nde (SVM) 'Kernel Trick' kullanımı hangi senaryoda gereklidir?
+    \begin{itemize}
+        \item[A)] Sınıf dengesizliği (class imbalance) problemi yaşandığında
+        \item[B)] Eğitim verisi setinde çok fazla gürültü ve eksik veri olduğunda
+        \item[C)] Veri noktaları mevcut boyutta doğrusal bir hiper-düzlem ile ayrılamadığında
+        \item[D)] Modelin eğitim süresini kısaltmak ve hesaplama maliyetini düşürmek istendiğinde
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Kernel hilesi, veriyi yüksek boyutlu bir uzaya izdüşürerek doğrusal olmayan verilerin ayrılabilir hale gelmesini sağlar.
+\end{testcard}
+
+\begin{testcard}{Soru 29}
+    Düzeltilmiş R-Kare (Adjusted $R^2$) metriğinin standart R-Kare metriğinden üstünlüğü nedir?
+    \begin{itemize}
+        \item[A)] Modelin tahmin hızını matematiksel olarak ölçebilmesi
+        \item[B)] Sadece lojistik regresyon gibi sınıflandırma modellerinde kullanılabilmesi
+        \item[C)] Her zaman 0 ile 1 arasında bir değer alması
+        \item[D)] Modele eklenen ve anlamlı katkısı olmayan 'gürültü' özellikler için modeli cezalandırması
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Adjusted R2, sadece modele gerçekten bilgi katan değişkenler eklendiğinde yükselir; gereksiz değişken eklenmesi durumunda ise cezalandırma yaparak düşer.
+\end{testcard}
+
+\begin{testcard}{Soru 30}
+    DBSCAN kümeleme algoritmasının K-Means algoritmasına göre en önemli avantajı aşağıdakilerden hangisidir?
+    \begin{itemize}
+        \item[A)] Bayes teoremini temel alarak yumuşak (soft) kümeleme yapması
+        \item[B)] Küme sayısını ($K$) kullanıcıdan parametre olarak alması
+        \item[C)] Büyük veri setlerinde çok daha hızlı ve düşük bellek maliyetiyle çalışması
+        \item[D)] Karmaşık ve düzensiz şekilli kümeleri tespit edebilmesi ve aykırı değerleri gürültü olarak işaretleyebilmesi
+    \end{itemize}
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} DBSCAN, K-Means'in aksine küme sayısını önceden bilmeye gerek duymaz ve hem yoğunluk tabanlı karmaşık şekilleri bulabilir hem de aykırı değerleri (noise) başarıyla eleyebilir.
+\end{testcard}
+
+\begin{testcard}{Soru 31}
+    K-Katlı Çapraz Doğrulama (k-Fold Cross Validation) yönteminin temel avantajı aşağıdakilerden hangisidir?
+    \begin{itemize}
+        \item[A)] Modelin eğitim süresini k kat azaltması
+        \item[B)] Veri setindeki tüm örneklerin hem eğitim hem de test aşamasında kullanılarak verinin daha verimli değerlendirilmesi
+        \item[C)] Sadece doğrusal modellerde en yüksek doğruluğu garanti etmesi
+        \item[D)] Veri setindeki aykırı değerleri otomatik olarak temizlemesi
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Çapraz doğrulama, veriyi k parçaya bölüp her birini test seti olarak kullanarak modelin performansının tüm veri seti üzerinden daha güvenilir şekilde ölçülmesini sağlar.
+\end{testcard}
+
+\begin{testcard}{Soru 32}
+    Model doğrulama sürecinde veri seti genellikle hangi oranlarda eğitim, doğrulama ve test setlerine ayrılır?
+    \begin{itemize}
+        \item[A)] \%80 Eğitim, \%10 Doğrulama, \%10 Test
+        \item[B)] \%70 Eğitim, \%30 Test
+        \item[C)] \%50 Eğitim, \%25 Doğrulama, \%25 Test
+        \item[D)] \%60 Eğitim, \%20 Doğrulama, \%20 Test
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Verinin büyük kısmı öğrenme için ayrılırken, hiperparametre ayarı (validation) ve son tarafsız ölçüm (test) için küçük ama dengeli paylar bırakılır.
+\end{testcard}
+
+\begin{testcard}{Soru 33}
+    Bir modelin eğitim verisindeki gürültüleri ezberleyip, doğrulama setinde başarısız olması durumu aşağıdakilerden hangisidir?
+    \begin{itemize}
+        \item[A)] Eksik Öğrenme (Underfitting)
+        \item[B)] Tam Kararında (Optimum)
+        \item[C)] Yüksek Yanlılık (High Bias)
+        \item[D)] Aşırı Öğrenme (Overfitting)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Aşırı öğrenme (Overfitting), modelin verideki örüntüler yerine rastgele gürültüleri ezberlemesi sonucu genelleme yeteneğini kaybetmesidir.
+\end{testcard}
+
+\begin{testcard}{Soru 34}
+    Yanlılık ve Varyans dengesiyle ilgili aşağıdakilerden hangisi doğrudur?
+    \begin{itemize}
+        \item[A)] Yanlılık (Bias), basit modelden kaynaklanan sistematik hatadır.
+        \item[B)] Düşük varyans, modelin verideki gürültüyü ezberlediği anlamına gelir.
+        \item[C)] Doğrulama süreci sadece yanlılık hatasını sıfırlamayı amaçlar.
+        \item[D)] Varyans arttıkça model daha kararlı hale gelir.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Yanlılık (Bias), modelin verideki temel ilişkiyi kavrayamayacak kadar basit olmasından kaynaklanan hatadır.
+\end{testcard}
+
+\begin{testcard}{Soru 35}
+    LOOCV (Leave-One-Out Cross Validation) yöntemi için aşağıdakilerden hangisi bir dezavantajdır?
+    \begin{itemize}
+        \item[A)] Veri israfı
+        \item[B)] Yüksek yanlılık (Bias)
+        \item[C)] Yüksek hesaplama maliyeti
+        \item[D)] Rastgelelikten kaynaklanan yüksek belirsizlik
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} LOOCV, veri setindeki her bir gözlem için ayrı bir model eğittiğinden, büyük veri setlerinde işlem süresi aşırı derecede artar.
+\end{testcard}
+
+\begin{testcard}{Soru 36}
+    Sektör standardı olarak kabul edilen k-Katlı Çapraz Doğrulama (k-Fold CV) için yaygın olarak tercih edilen $k$ değerleri nelerdir?
+    \begin{itemize}
+        \item[A)] $k = n$ (Gözlem sayısı)
+        \item[B)] $k = 100$
+        \item[C)] $k = 2$ veya $k = 3$
+        \item[D)] $k = 5$ veya $k = 10$
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} k=5 veya k=10 değerleri, varyans ve hesaplama maliyeti arasındaki en dengeli sonuçları verdiği için standart olarak kabul edilir.
+\end{testcard}
+
+\begin{testcard}{Soru 37}
+    İç İçe (Nested) CV yönteminin temel kullanım amacı nedir?
+    \begin{itemize}
+        \item[A)] Küçük veri setlerinde veri üretimini artırmak
+        \item[B)] Aynı anda hem hiperparametre ayarlamak hem de tarafsız performans ölçmek
+        \item[C)] Veri setindeki sınıf dengesizliğini gidermek
+        \item[D)] İki farklı algoritmanın performansını istatistiksel olarak karşılaştırmak
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} İç içe çapraz doğrulamada iç döngü parametre seçer, dış döngü ise seçilen modelin başarısını tarafsız bir şekilde test eder.
+\end{testcard}
+
+\begin{testcard}{Soru 38}
+    Bootstrap (Önyükleme) yöntemini diğer doğrulama yöntemlerinden ayıran temel özellik nedir?
+    \begin{itemize}
+        \item[A)] Hata payının sadece eğitim seti üzerinden hesaplanması
+        \item[B)] Sınıf oranlarının korunması
+        \item[C)] Veriden yerine koyarak (with replacement) örnek çekilmesi
+        \item[D)] Verinin sadece bir kez bölünmesi
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Bootstrap yönteminde orijinal veri setinden, aynı örneklerin tekrar seçilebildiği yeni alt kümeler oluşturulur.
+\end{testcard}
+
+\begin{testcard}{Soru 39}
+    Sınıflandırma problemlerinde başarının ölçülmesi için kullanılan 'Confusion Matrix' yapısında, gerçekte pozitif olup model tarafından negatif tahmin edilen değer hangisidir?
+    \begin{itemize}
+        \item[A)] False Positive (Yanlış Pozitif)
+        \item[B)] False Negative (Yanlış Negatif)
+        \item[C)] True Positive (Doğru Pozitif)
+        \item[D)] True Negative (Doğru Negatif)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Modelin gerçek bir vakayı kaçırması durumudur; "Pozitif" olan veri "Negatif" olarak hatalı (False) tahmin edilmiştir.
+\end{testcard}
+
+\begin{testcard}{Soru 40}
+    Regresyon problemlerinde model başarısını değerlendirmek için kullanılan temel metrik aşağıdakilerden hangisidir?
+    \begin{itemize}
+        \item[A)] F1 Skoru
+        \item[B)] Doğruluk (Accuracy)
+        \item[C)] Duyarlılık (Recall)
+        \item[D)] Ortalama Kare Hata (MSE)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Sayısal değer tahmin edilen regresyon modellerinde hata, gerçek ve tahmin edilen değerler arasındaki farkın karesi (MSE) ile ölçülür.
+\end{testcard}
+
+\begin{testcard}{Soru 41}
+    Karar ağacı rehberine göre, elinizde çok küçük bir veri seti varsa hangi yöntemi seçmeniz önerilir?
+    \begin{itemize}
+        \item[A)] LOOCV
+        \item[B)] 5x2 Çapraz Doğrulama
+        \item[C)] Basit Doğrulama Seti
+        \item[D)] Bootstrap
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Veri seti çok küçükse, her bir gözlemden maksimum faydayı sağlamak için her seferinde sadece bir örneği dışarıda bırakan LOOCV önerilir.
+\end{testcard}
+
+\begin{testcard}{Soru 42}
+    Makine öğrenmesi modellerinde "İç Ağırlıklar" ile "Hiperparametreler" arasındaki temel fark nedir?
+    \begin{itemize}
+        \item[A)] Hiperparametreler eğitim sırasında veriden öğrenilir, iç ağırlıklar ise kullanıcı tarafından manuel olarak girilir.
+        \item[B)] İç ağırlıklar eğitim sırasında veriden öğrenilirken, hiperparametreler dışarıdan ayarlanan kontrol değişkenleridir.
+        \item[C)] İç ağırlıklar modelin karmaşıklığını belirlerken, hiperparametreler sadece tahmin hızını etkiler.
+        \item[D)] Hiperparametreler sadece k-NN gibi basit algoritmalarda kullanılır, iç ağırlıklar ise tüm algoritmalarda bulunur.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Ağırlıklar modelin veriden öğrendiği parametrelerdir; hiperparametreler ise k (komşu sayısı) veya öğrenme hızı gibi kullanıcı ayarlarıdır.
+\end{testcard}
+
+\begin{testcard}{Soru 43}
+    Grid Search (Izgara Araması) yönteminin hesaplama maliyeti $O(L^F)$ formülü ile ifade edilir. Buradaki $F$ değişkeni neyi temsil etmektedir?
+    \begin{itemize}
+        \item[A)] Optimize edilen toplam faktör (hiperparametre) sayısı.
+        \item[B)] Veri setindeki katlama (fold) sayısı.
+        \item[C)] Her faktörün sahip olduğu seviye sayısı.
+        \item[D)] Toplam eğitilecek model sayısı.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} F (Factor), ayarlanmak istenen hiperparametre sayısını; L (Level) ise her parametre için denenecek değer sayısını temsil eder.
+\end{testcard}
+
+\begin{testcard}{Soru 44}
+    Aynı model bütçesi (örneğin 25 deneme) kullanıldığında, Random Search'ün Grid Search'e göre ana stratejik avantajı nedir?
+    \begin{itemize}
+        \item[A)] Deneme sayısını her zaman 25'ten daha az tutması
+        \item[B)] Önemli hiperparametreler üzerinde daha fazla benzersiz değer deneme olasılığının olması
+        \item[C)] Her zaman mutlak küresel optimumu bulmayı garanti etmesi
+        \item[D)] Sadece tek bir hiperparametre varken daha hızlı olması
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Random Search, parametre uzayında rastgele noktalar seçtiği için, önemli parametre eksenlerinde ızgara aramasına göre daha fazla farklı değer yakalayabilir.
+\end{testcard}
+
+\begin{testcard}{Soru 45}
+    Bayesyen Optimizasyon yöntemini Random Search'ten ayıran temel fark nedir?
+    \begin{itemize}
+        \item[A)] Daha fazla bellek kullanması
+        \item[B)] Her denemeyi rastgele seçmek yerine geçmiş denemelerin sonuçlarından öğrenerek bir sonraki adımı planlaması
+        \item[C)] Sadece görsel verilerde çalışabilmesi
+        \item[D)] Hiçbir matematiksel model kullanmaması
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Bayesyen optimizasyon, amaç fonksiyonunun bir olasılıksal modelini (surrogate model) kurarak aramayı akıllıca yönlendirir.
+\end{testcard}
+
+\begin{testcard}{Soru 46}
+    Aşağıdakilerden hangisi Grid Search yönteminin "Garantici" karakteristiğini en iyi açıklar?
+    \begin{itemize}
+        \item[A)] Belirlenen parametre kümesi üzerindeki tüm kombinasyonları istisnasız test etmesi.
+        \item[B)] Rastgele seçimlerle en iyi noktayı tesadüfen bulması.
+        \item[C)] Daima küresel zirveyi (global optimum) bulmayı vaat etmesi.
+        \item[D)] Hesaplama maliyetini her zaman minimumda tutması.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Grid Search, tanımlanan aralıktaki hiçbir noktayı atlamadan "kaba kuvvet" (brute force) ile tarama yapar.
+\end{testcard}
+
+\begin{testcard}{Soru 47}
+    Genetik Algoritmalar, parametre kombinasyonlarını iyileştirmek için hangi iki temel mekanizmayı kullanır?
+    \begin{itemize}
+        \item[A)] Izgara tarama ve rastgele örnekleme.
+        \item[B)] Isıtma ve soğutma döngüleri.
+        \item[C)] Mutasyon ve çaprazlama.
+        \item[D)] Doğrusal regresyon ve gradyan inişi.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} En iyi parametreleri "ebeveyn" olarak seçip mutasyon ve çaprazlama ile yeni nesillere daha başarılı kombinasyonlar aktarmaya çalışır.
+\end{testcard}
+
+\begin{testcard}{Soru 48}
+    SVM (Destek Vektör Makineleri) algoritmasında kullanılan $C$ parametresi ne tür bir değişkendir?
+    \begin{itemize}
+        \item[A)] Bir model hiperparametresidir.
+        \item[B)] Bir veri temizleme yöntemidir.
+        \item[C)] Veriden öğrenilen bir iç ağırlıktır.
+        \item[D)] Bir performans metriğidir.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} C parametresi, modelin marjin genişliği ile hata toleransı arasındaki dengeyi kontrol eden kullanıcı ayarıdır.
+\end{testcard}
+
+\begin{testcard}{Soru 49}
+    Hiperparametre arama uzayında "Hesaplama Darboğazı" (Computational Bottleneck) terimi ne zaman ortaya çıkar?
+    \begin{itemize}
+        \item[A)] Veri seti çok küçük olduğunda.
+        \item[B)] Grid Search yönteminde faktör veya seviye sayısı arttığında.
+        \item[C)] Random Search bütçesi çok düşük tutulduğunda.
+        \item[D)] Çapraz doğrulama katlamaları tek bir grupta toplandığında.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Grid Search her yeni parametre veya seviye eklendiğinde model sayısını üstel olarak artırdığı için sistem kaynaklarını tüketir.
+\end{testcard}
+
+\newpage
+\subsection{Model Testi}
+
+\begin{testcard}{Soru 50}
+    Bir makine öğrenmesi modelinin toplam hata miktarını ($MSE$) belirleyen bileşenler düşünüldüğünde, model iyileştirilerek azaltılamayan hata türü aşağıdakilerden hangisidir?
+    \begin{itemize}
+        \item[A)] Varyans (Variance)
+        \item[B)] Eğitim Hatası (Training Error)
+        \item[C)] İndirgenemez Hata ($\sigma^2$ - Gürültü)
+        \item[D)] Yanlılık (Bias)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} İndirgenemez hata, verinin doğasından gelen gürültüdür; model ne kadar karmaşık olursa olsun bu hata payı sıfırlanamaz.
+\end{testcard}
+
+\begin{testcard}{Soru 51}
+    Izgara Araması (Grid Search) stratejisinde, her bir hiperparametrenin seviye sayısı $L$ ve toplam hiperparametre sayısı $F$ ise, hesaplama maliyeti hangi formülle ifade edilir?
+    \begin{itemize}
+        \item[A)] $O(L \cdot F)$
+        \item[B)] $O(\log(L^F))$
+        \item[C)] $O(L^F)$
+        \item[D)] $O(F^L)$
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Grid Search'te her parametrenin her seviyesi birbiriyle eşleştiği için toplam kombinasyon sayısı üsteldir.
+\end{testcard}
+
+\begin{testcard}{Soru 52}
+    Bir ölçümün matematiksel olarak 'metrik' sayılabilmesi için üç temel kuralı sağlaması gerekir. Aşağıdakilerden hangisi bu kurallardan biridir?
+    \begin{itemize}
+        \item[A)] Normalizasyon ([0, 1] aralığı)
+        \item[B)] Üçgen Eşitsizliği ($d(x, y) \leq d(x, z) + d(z, y)$)
+        \item[C)] Yön Bağımlılığı
+        \item[D)] Kosinüs Benzerliği
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Bir metrik; negatif olmama, simetri ve üçgen eşitsizliği (doğrudan yol dolaylı yoldan uzun olamaz) kurallarını sağlamalıdır.
+\end{testcard}
+
+\begin{testcard}{Soru 53}
+    Yetersiz Uyum (Underfitting) yaşayan bir modeli iyileştirmek için aşağıdakilerden hangisi uygun bir çözüm stratejisidir?
+    \begin{itemize}
+        \item[A)] Erken Durdurma (Early Stopping) uygulamak
+        \item[B)] Düzenlileştirme (Regularization) katsayısını ($\lambda$) artırmak
+        \item[C)] Daha fazla eğitim verisi toplamak
+        \item[D)] Modelin esnekliğini/karmaşıklığını artırmak
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Underfitting, modelin veriyi kavrayamayacak kadar basit olmasından kaynaklanır; çözüm modelin karmaşıklığını artırmaktır.
+\end{testcard}
+
+\begin{testcard}{Soru 54}
+    Kosinüs Benzerliği (Cosine Similarity) ölçütü kullanılırken odak noktası aşağıdakilerden hangisidir?
+    \begin{itemize}
+        \item[A)] Vektörlerin bileşenlerinin toplamı
+        \item[B)] İki nokta arasındaki en kısa kuş uçuşu mesafe
+        \item[C)] Vektörlerin mutlak büyüklükleri (Magnitude)
+        \item[D)] Vektörlerin yönü ve aralarındaki açı
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Kosinüs benzerliği vektörlerin uzunluğundan bağımsızdır, sadece aralarındaki açıya bakarak yönsel benzerliği ölçer.
+\end{testcard}
+
+\begin{testcard}{Soru 55}
+    Rastgele Arama (Random Search) stratejisinin, Izgara Araması'na (Grid Search) göre yüksek boyutlu arama uzaylarında daha avantajlı olmasının temel sebebi nedir?
+    \begin{itemize}
+        \item[A)] Hesaplama maliyetinin üstel olarak artması
+        \item[B)] Önemli hiperparametreler üzerinde daha fazla benzersiz değer denemesi
+        \item[C)] Her zaman mutlak küresel optimumu garanti etmesi
+        \item[D)] Sadece doğrusal modellerde çalışması
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Random Search, önemsiz parametrelere vakit harcamak yerine, rastgele seçimlerle önemli parametre eksenlerini daha yoğun tarar.
+\end{testcard}
+\begin{testcard}{Soru 56}
+    Aşırı Uyum (Overfitting) problemi yaşayan bir modelde Yanlılık (Bias) ve Varyans (Variance) değerlerinin durumu nasıldır?
+    \begin{itemize}
+        \item[A)] Hem Yanlılık hem Varyans çok yüksektir
+        \item[B)] Düşük Yanlılık, Yüksek Varyans
+        \item[C)] Yüksek Yanlılık, Düşük Varyans
+        \item[D)] Hem Yanlılık hem Varyans çok düşüktür
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Aşırı uyumda model veriye çok iyi oturur (Düşük Yanlılık) ancak yeni verilere karşı aşırı tepki verir (Yüksek Varyans).
+\end{testcard}
+
+\begin{testcard}{Soru 57}
+    Manhattan Mesafesi ($L_1$ - City Block), hangi veri özelliklerine sahip durumlarda Öklid Mesafesine ($L_2$) göre daha dirençli ve uygundur?
+    \begin{itemize}
+        \item[A)] Yüksek boyutlu uzaylarda ve ayrık (discrete) özelliklerde
+        \item[B)] Sürekli ve düşük boyutlu verilerde
+        \item[C)] Sadece metin verilerinin yönsel karşılaştırmasında
+        \item[D)] Veri setinde hiç aykırı değer bulunmadığında
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Yüksek boyutlu veya seyrek (sparse) verilerde Manhattan mesafesi, Öklid mesafesine göre daha kararlı sonuçlar verir.
+\end{testcard}
+
+\begin{testcard}{Soru 58}
+    Regresyon modellerinde kullanılan $AIC$ (Akaike Bilgi Kriteri) ve $BIC$ (Bayesian Bilgi Kriteri) için aşağıdakilerden hangisi doğrudur?
+    \begin{itemize}
+        \item[A)] Daha küçük değer, daha az karmaşıklıkla daha iyi uyum sağlayan modeli gösterir.
+        \item[B)] Sadece eğitim hatasına odaklanırlar, model karmaşıklığını görmezden gelirler.
+        \item[C)] Değer ne kadar büyükse model o kadar başarılıdır.
+        \item[D)] AIC ve BIC değerleri her zaman negatif olmak zorundadır.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Bu kriterler model başarısını karmaşıklıkla cezalandırır; dolayısıyla daha düşük skor, daha "optimal" (yeterince basit ve başarılı) modeli gösterir.
+\end{testcard}
+
+\begin{testcard}{Soru 59}
+    Jaccard Benzerliği, özellikle hangi tür veri yapılarının karşılaştırılmasında merkezde yer alır?
+    \begin{itemize}
+        \item[A)] Kümelerin (sets) örtüşme miktarı
+        \item[B)] Vektörlerin uzaydaki açısal farkı
+        \item[C)] Zaman serilerindeki trend yönü
+        \item[D)] Sayısal vektörlerin büyüklük farkı
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Jaccard benzerliği, iki kümenin kesişiminin birleşimine oranıdır; örneğin metin benzerliğinde kelime örtüşmelerini ölçer.
+\end{testcard}
+
+\newpage
+\subsection{Regresyon Testi}
+
+\begin{testcard}{Soru 60}
+    Regresyon modellerinde 'Hata' veya 'Artık Değer' (Residual) kavramı matematiksel olarak nasıl ifade edilir?
+    \begin{itemize}
+        \item[A)] $Hata = y_i^2 - \hat{y}_i^2$
+        \item[B)] $Hata = |y_i + \hat{y}_i|$
+        \item[C)] $Hata = y_i - \hat{y}_i$
+        \item[D)] $Hata = \frac{y_i}{\hat{y}_i}$
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Hata, verideki gerçek değer ile modelin yaptığı tahmin arasındaki basit farktır.
+\end{testcard}
+
+\begin{testcard}{Soru 61}
+    Aykırı değerlerin (outliers) yoğun olduğu bir veri setinde model performansını ölçmek için hangi metrik 'daha stabil' bir sonuç verir?
+    \begin{itemize}
+        \item[A)] Ortalama Kare Hata (MSE)
+        \item[B)] R-Kare ($R^2$)
+        \item[C)] Kök Ortalama Kare Hata (RMSE)
+        \item[D)] Ortalama Mutlak Hata (MAE)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} MAE hataların mutlak değerini aldığı için, büyük sapmaları karesel olarak cezalandırmaz ve daha dengeli bir skor verir.
+\end{testcard}
+
+\begin{testcard}{Soru 62}
+    Ortalama Kare Hata (MSE) metriğinin makine öğrenmesi algoritmalarının optimizasyon aşamasında tercih edilmesinin temel nedeni nedir?
+    \begin{itemize}
+        \item[A)] Her zaman 0 ile 1 arasında sonuç vermesi
+        \item[B)] Sonuçların hedef değişkenle aynı birimde olması
+        \item[C)] Türevinin kolay alınabilmesi (differentiability)
+        \item[D)] Aykırı değerleri tamamen yok sayması
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} MSE, matematiksel olarak türetilebilir bir fonksiyon olduğu için gradyan inişi (gradient descent) optimizasyonunda yaygın olarak tercih edilir.
+\end{testcard}
+
+\begin{testcard}{Soru 63}
+    Ridge ve LASSO regresyon modellerinde kullanılan ceza (penalty) teriminin temel amacı nedir?
+    \begin{itemize}
+        \item[A)] Modelin eğitim süresini kısaltmak
+        \item[B)] Katsayıları (ağırlıkları) sınırlayarak aşırı öğrenmeyi (overfitting) engellemek
+        \item[C)] Veri setindeki eksik değerleri tahmin etmek
+        \item[D)] Sınıflandırma doğruluğunu artırmak
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Düzenlileştirme (regularization), katsayıların aşırı büyümesini engelleyerek modelin daha basit ve genellenebilir kalmasını sağlar.
+\end{testcard}
+
+\begin{testcard}{Soru 64}
+    Lojistik Regresyon modelinde 'Log-Odds' (Lojit) ifadesinin doğrusal bir formülle ($w^T x$) modellenmesinin asıl amacı nedir?
+    \begin{itemize}
+        \item[A)] Çıktıyı doğrudan bir sınıfa atamak
+        \item[B)] Olasılık değerini (0,1) tüm reel sayılar uzayına ($-\infty, +\infty$) haritalamak
+        \item[C)] Modeli daha karmaşık hale getirmek
+        \item[D)] Sadece kategorik değişkenlerle çalışabilmek
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Odds oranının logaritması alınarak, sınırlı olan olasılık uzayı doğrusal modellerin çalışabileceği sınırsız bir uzaya dönüştürülür.
+\end{testcard}
+
+\begin{testcard}{Soru 65}
+    Dengesiz bir veri setinde (örn: \%99 Negatif, \%1 Pozitif), model başarısını ölçmek için hangisi en az güvenilir metriktir?
+    \begin{itemize}
+        \item[A)] Precision (Kesinlik)
+        \item[B)] Recall (Duyarlılık)
+        \item[C)] F1-Skoru
+        \item[D)] Accuracy (Doğruluk)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Doğruluk (Accuracy), azınlık sınıfını tamamen görmezden gelen bir modeli bile başarılı gösterebileceği için dengesiz verilerde yanıltıcıdır.
+\end{testcard}
+
+\begin{testcard}{Soru 66}
+    $R^2 = 0.82$ olan bir model için aşağıdakilerden hangisi en doğru yorumdur?
+    \begin{itemize}
+        \item[A)] Modeldeki özelliklerin \%82'si tahmin yapmak için gereksizdir.
+        \item[B)] Hedef değişkendeki değişkenliğin \%82'si modeldeki özellikler tarafından açıklanabiliyor.
+        \item[C)] Model yapılan tahminlerde ortalama \%82 oranında hata yapmaktadır.
+        \item[D)] Modelin tahminleri ile gerçek değerler arasındaki fark 0.82 birimdir.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} R-Kare, modelin verideki değişkenliği (varyansı) açıklama yüzdesini gösterir.
+\end{testcard}
+
+\begin{testcard}{Soru 67}
+    Modele tamamen alakasız (gürültü) değişkenler eklendiğinde $R^2$ ve Düzeltilmiş $R^2$ (Adjusted $R^2$) değerleri nasıl değişir?
+    \begin{itemize}
+        \item[A)] Her iki değer de her zaman azalır.
+        \item[B)] Alakasız değişkenler hiçbir metriği etkilemez.
+        \item[C)] $R^2$ artar veya aynı kalır, Düzeltilmiş $R^2$ ise puanı düşürerek cezalandırır.
+        \item[D)] $R^2$ azalır, Düzeltilmiş $R^2$ ise her zaman artmaya devam eder.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} R-Kare modele eklenen her şeyi kabul edip yükselir; Düzeltilmiş R-Kare ise değişken sayısına göre cezalandırma yapar.
+\end{testcard}
+
+\begin{testcard}{Soru 68}
+    Bir model karnesinde RMSE değerinin (53.85), MAE değerinden (42.79) belirgin şekilde yüksek olması neyin kanıtıdır?
+    \begin{itemize}
+        \item[A)] Veri setindeki tüm hataların birbirine eşit büyüklükte olduğunun.
+        \item[B)] Modelin aşırı öğrenme (overfitting) yaptığının.
+        \item[C)] Modelin mükemmel bir tahmin kapasitesine sahip olduğunun.
+        \item[D)] Veri setinde bazı tahminlerin çok büyük hatalara (aykırı değerlere) sahip olduğunun.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} RMSE büyük hataları kare alarak büyüteceği için, MAE ile arasındaki farkın açılması veri setindeki büyük sapmaları işaret eder.
+\end{testcard}
+
+\begin{testcard}{Soru 69}
+    Scikit-learn kütüphanesini kullanarak bir regresyon modelinin başarısını (açıklanan varyans) ölçmek için hangi fonksiyon çağrılmalıdır?
+    \begin{itemize}
+        \item[A)] `regression_accuracy(y_true, y_pred)`
+        \item[B)] `mae_score(y_true, y_pred)`
+        \item[C)] `r2_score(y_true, y_pred)`
+        \item[D)] `mean_squared_error(y_true, y_pred, squared=False)`
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Sklearn'de varyans açıklama skoru `r2_score` fonksiyonu ile hesaplanır.
+\end{testcard}
+
+\newpage
+\subsection{Sınıflandırma Testi}
+
+\begin{testcard}{Soru 70}
+    Sınıflandırma biliminin temel amacı aşağıdakilerden hangisidir?
+    \begin{itemize}
+        \item[A)] Veri setindeki gürültüyü tamamen yok ederek hatasız modeller üretmek.
+        \item[B)] Ham verileri analiz ederek bunları kesin kategorik kararlara dönüştürmek.
+        \item[C)] Sürekli sayısal değerleri tahmin etmek için regresyon modelleri oluşturmak.
+        \item[D)] Sadece görsel verileri işleyerek nesne tanıma gerçekleştirmek.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Sınıflandırma, girdileri önceden belirlenmiş sınıflara atama işlemidir.
+\end{testcard}
+
+\begin{testcard}{Soru 71}
+    Temel Hata Oranı ($E$) hesaplanırken kullanılan $E = \frac{1}{n} |\{i | \hat{v}_i \neq v_i\}|$ formülündeki $\hat{v}_i \neq v_i$ ifadesi neyi ifade eder?
+    \begin{itemize}
+        \item[A)] Modelin yaptığı doğru tahminlerin toplam sayısını.
+        \item[B)] Modelin tahmin yaparken kullandığı güven aralığının genişliğini.
+        \item[C)] Tahmin edilen değerin gerçek değerden farklı olduğu durumları.
+        \item[D)] Veri setindeki toplam örnek sayısının tahmin edilen sınıflara oranını.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Bu ifade "eşitsizlik" belirtir; yani tahmin edilen sınıfın gerçek sınıf ile aynı olmadığı durumları sayar.
+\end{testcard}
+
+\begin{testcard}{Soru 72}
+    Bir spam filtresinin önemli bir iş e-postasını yanlışlıkla 'Spam' klasörüne taşıması hangi hata türüne örnektir?
+    \begin{itemize}
+        \item[A)] Tip I Hata (Yalancı Alarm)
+        \item[B)] Doğru Negatif (True Negative)
+        \item[C)] Bayes Hatası
+        \item[D)] Tip II Hata (Kaçırılan Tehlike)
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Tip I Hata (False Positive), negatif olması gereken bir durumun "pozitif" olarak yanlış alarm vermesidir.
+\end{testcard}
+
+\begin{testcard}{Soru 73}
+    Karmaşıklık Matrisi (Confusion Matrix) içerisinde yer alan 'Köşegen Dışı' ($Off-Diagonal$) elemanlar bize hangi bilgiyi verir?
+    \begin{itemize}
+        \item[A)] İki farklı hata tipinin (FP ve FN) sayılarını.
+        \item[B)] Veri setindeki toplam örnek sayısını ($n$).
+        \item[C)] Modelin doğru tahmin ettiği sınıfların dağılımını.
+        \item[D)] Modelin tahmin yaparken duyduğu olasılıksal güven değerini.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Matrisin ana köşegeni doğru tahminleri, köşegen dışındaki hücreler ise yanlış tahminleri gösterir.
+\end{testcard}
+
+\begin{testcard}{Soru 74}
+    Hangi durumda 'Kesinlik' ($Precision$) metriğinin yüksek olması, 'Duyarlılık' ($Recall$) metriğinden daha kritik kabul edilir?
+    \begin{itemize}
+        \item[A)] Sınıfların veri setinde tamamen dengeli dağıldığı durumlarda.
+        \item[B)] Kanser teşhisi gibi bir vakanın atlanmasının ölümcül sonuçlar doğurabileceği durumlarda.
+        \item[C)] Yalancı Alarların (Yanlış Pozitif) maliyetinin çok yüksek olduğu durumlarda.
+        \item[D)] Modelin tüm sınıfları birbirinden ayırt etme gücünü tek bir skorla görmek istediğimizde.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Yanlış alarm vermenin maliyeti çok fazlaysa (örn: masum birini suçlu bulmak), kesinlik (precision) önceliklendirilir.
+\end{testcard}
+
+\begin{testcard}{Soru 75}
+    1000 kişilik bir veri setinde 990 sağlıklı, 10 hasta birey bulunmaktadır. Herkese 'Sağlıklı' diyen bir modelin başarısı hakkında hangisi söylenebilir?
+    \begin{itemize}
+        \item[A)] Modelin F1-Skoru \%100 seviyesindedir.
+        \item[B)] Model \%99 Doğruluk (Accuracy) oranına sahip olduğu için mükemmeldir.
+        \item[C)] Modelin Duyarlılık (Recall) değeri \%0 olduğu için hastalık tespiti görevinde başarısızdır.
+        \item[D)] Model yüksek bir Logaritmik Kayıp (Log Loss) puanı alarak ödüllendirilir.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Model çoğunluk sınıfını tahmin ederek \%99 doğruluk alsa da, asıl amaç olan 10 hastanın hiçbirini bulamadığı için başarısızdır.
+\end{testcard}
+
+
+\newpage
+\subsection{Performans ve Özellik Analizi}
+
+\begin{testcard}{Soru 76}
+    F1-Skoru hesaplanırken aritmetik ortalama yerine neden harmonik ortalama tercih edilir?
+    \begin{itemize}
+        \item[A)] Sadece Boolean sınıflandırıcılarda kullanılabildiği için.
+        \item[B)] Uç değerleri (aşırı düşük puanları) şiddetli bir şekilde cezalandırmak için.
+        \item[C)] Hesaplanması daha kolay ve işlem maliyeti daha düşük olduğu için.
+        \item[D)] Veri setindeki toplam örnek sayısı çok fazla olduğunda daha stabil sonuç verdiği için.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Harmonik ortalama, precision veya recall'dan biri çok düşük olduğunda skoru aşağı çeker; dengeyi zorunlu kılar.
+\end{testcard}
+
+\begin{testcard}{Soru 77}
+    AUC (Area Under the Curve) metriği için aşağıdakilerden hangisi doğrudur?
+    \begin{itemize}
+        \item[A)] AUC değeri arttıkça modelin hata oranı ($E$) da artar.
+        \item[B)] Sadece belirli bir eşik (threshold) değeri için modelin performansını ölçer.
+        \item[C)] 0.5 değeri, modelin rastgele tahmin yapmaktan daha iyi bir iş çıkarmadığını gösterir.
+        \item[D)] Değer 0 ile 1 arasında değil, $-\infty$ ile $+\infty$ arasındadır.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} AUC 0.5 ise model şans eseri tahmin yapıyor demektir; 1.0 değeri ise mükemmel ayrımı ifade eder.
+\end{testcard}
+
+\begin{testcard}{Soru 78}
+    Neyman-Pearson metriğinde ($E_{NP} = \lambda \frac{C_{fn}}{n} + \frac{C_{fp}}{n}$), $\lambda > 1$ olarak seçilirse bu model hakkında ne söylenebilir?
+    \begin{itemize}
+        \item[A)] Yanlış Negatiflerin (vaka kaçırmanın) maliyeti, yanlış alarmlardan daha kritik kabul edilmektedir.
+        \item[B)] Modelin toplam hata oranı her zaman matematiksel olarak minimize edilir.
+        \item[C)] Model Yanlış Pozitifleri (False Positive) önlemeye daha çok odaklanır.
+        \item[D)] Tüm hata türleri model için eşit derecede önemsiz hale gelir.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Lambda katsayısı FN (vaka kaçırma) hatasını daha büyük bir sayıyla çarparak modeli bu hatayı yapmamaya zorlar.
+\end{testcard}
+
+\begin{testcard}{Soru 79}
+    $K$ adet sınıfa sahip çok sınıflı bir sistemde, sadece bir doğru tahmin senaryosu varken tam olarak kaç farklı hatalı senaryo mevcuttur?
+    \begin{itemize}
+        \item[A)] $K(K-1)$
+        \item[B)] $K^2$
+        \item[C)] $K-1$
+        \item[D)] $2^K$
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Toplam K sınıf varsa, bir tanesi doğru sınıf, geri kalan K-1 tanesi ise yanlış sınıf tahminleridir.
+\end{testcard}
+
+\newpage
+\subsection{Özellik Testi}
+
+\begin{testcard}{Soru 80}
+    Boyutluluk Laneti (Curse of Dimensionality) model eğitimi için gereken örnek sayısı ile özellik sayısı ($d$) arasındaki ilişkiyi nasıl tanımlar?
+    \begin{itemize}
+        \item[A)] Özellik sayısı arttıkça gereken örnek sayısı azalır çünkü veri daha detaylıdır.
+        \item[B)] Özellik sayısı ile örnek sayısı arasında matematiksel bir ilişki yoktur.
+        \item[C)] Örnek sayısı özellik sayısına göre doğrusal bir artış gösterir: $N \propto d$.
+        \item[D)] Gereken örnek sayısı özellik sayısıyla birlikte üstel olarak artar: $N \propto e^d$.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Her yeni özellik uzayı genişlettiği için, veriyi temsil edecek örnek sayısının üstel bir hızla artması gerekir.
+\end{testcard}
+
+\begin{testcard}{Soru 81}
+    Filtre (Filter) yöntemlerinin sarma (Wrapper) yöntemlerine göre en belirgin avantajı aşağıdakilerden hangisidir?
+    \begin{itemize}
+        \item[A)] Özellikler arasındaki karmaşık etkileşimleri yakalayabilmeleri.
+        \item[B)] Hesaplama maliyetinin düşük olması ve hızlı çalışmaları.
+        \item[C)] En yüksek tahmin doğruluğunu garanti etmeleri.
+        \item[D)] Model performansını doğrudan optimize etmeleri.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Filtre yöntemleri istatistiksel testlere dayandığı için model eğitmeden hızlıca karar verebilir; Wrapper'lar ise her seferinde model eğitir.
+\end{testcard}
+
+\begin{testcard}{Soru 82}
+    Pearson Korelasyonu ($r$) kullanılarak yapılan özellik seçiminde, hangi durum özelliğin hedef değişkenle yüksek derecede ilgili olduğunu gösterir?
+    \begin{itemize}
+        \item[A)] $r$ değerinin negatif olması.
+        \item[B)] $r$ değerinin sonsuza yaklaşması.
+        \item[C)] $|r|$ değerinin 1'e yakın olması.
+        \item[D)] $r$ değerinin 0 olması.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} Mutlak değeri 1'e yakın olan bir katsayı, değişkenler arasında çok güçlü bir doğrusal ilişki (pozitif/negatif) olduğunu gösterir.
+\end{testcard}
+
+\begin{testcard}{Soru 83}
+    ANOVA F-Testi yönteminde, bir özelliğin sınıfları ayırt etme gücünün yüksek olduğu nasıl anlaşılır?
+    \begin{itemize}
+        \item[A)] Yüksek bir $F$ değeri elde edilmesiyle.
+        \item[B)] Sınıf içi varyansın ($MSW$) sınıflar arası varyanstan ($MSB$) büyük olmasıyla.
+        \item[C)] Özellik değerlerinin standart sapmasının 0 olmasıyla.
+        \item[D)] $F$ skorunun düşük olmasıyla.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Yüksek F skoru, sınıflar arasındaki farkın, sınıf içi değişkenlikten çok daha büyük olduğunu kanıtlar.
+\end{testcard}
+
+\begin{testcard}{Soru 84}
+    Sarma (Wrapper) yöntemlerinden biri olan İleriye Doğru Seçim (Forward Selection) süreci nasıl başlar?
+    \begin{itemize}
+        \item[A)] Sadece hedef değişkenle korelasyonu en düşük olan özelliklerle başlar.
+        \item[B)] Tüm özelliklerin bulunduğu tam küme ile başlar.
+        \item[C)] Boş bir özellik kümesi ($S = \emptyset$) ile başlar.
+        \item[D)] Rastgele seçilmiş bir özellik alt kümesi ile başlar.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: A} \\
+    \textbf{Açıklama:} İleriye doğru seçimde başlangıçta hiçbir özellik yoktur; model başarısını en çok artıran özellikler tek tek kümeye eklenir.
+\end{testcard}
+
+\begin{testcard}{Soru 85}
+    LASSO ($L1$ Düzenlileştirmesi) yöntemini Ridge ($L2$) yönteminden ayıran ve özellik seçimi yapmasını sağlayan temel mekanizma nedir?
+    \begin{itemize}
+        \item[A)] Hesaplama karmaşıklığının $O(d^2)$ olması.
+        \item[B)] Sadece doğrusal olmayan modellerde kullanılabilmesi.
+        \item[C)] Bazı katsayıları tam olarak sıfıra eşitleyerek değişkenleri elemesi.
+        \item[D)] Katsayıları sadece küçültmesi ama asla sıfır yapmaması.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} LASSO, mutlak değer cezası kullanarak gereksiz gördüğü özelliklerin katsayılarını sıfıra indirir.
+\end{testcard}
+
+\begin{testcard}{Soru 86}
+    Özellik seçiminde Mutual Information (Karşılıklı Bilgi) yönteminin Pearson korelasyonuna göre en büyük avantajı nedir?
+    \begin{itemize}
+        \item[A)] Sadece kategorik verilerle çalışabilmesi.
+        \item[B)] Hesaplamasının çok daha hızlı olması.
+        \item[C)] Sarma (Wrapper) yöntemleri sınıfına girmesi.
+        \item[D)] Değişkenler arasındaki doğrusal olmayan (non-linear) ilişkileri de yakalayabilmesi.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} Korelasyon sadece doğrusal bağları görürken, Mutual Information herhangi bir istatistiksel bağımlılığı tespit edebilir.
+\end{testcard}
+
+\begin{testcard}{Soru 87}
+    Öz yinelemeli Özellik Eleme ($RFE$) algoritması, özelliklerin önemini belirlemek için neyi kullanır?
+    \begin{itemize}
+        \item[A)] Özellikler arasındaki Pearson korelasyon matrisini.
+        \item[B)] Özelliklerin tek başına varyans değerlerini.
+        \item[C)] Eğitilen modelden elde edilen katsayı ağırlıkları veya önem skorlarını ($|w_j|$).
+        \item[D)] Veri setindeki eksik değer oranlarını.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: C} \\
+    \textbf{Açıklama:} RFE, modeli tüm özelliklerle eğitir ve her adımda en düşük ağırlığa (öneme) sahip özelliği kümeden atarak ilerler.
+\end{testcard}
+
+\begin{testcard}{Soru 88}
+    Ağaç tabanlı modellerde Permütasyon Önemi ($MDA$), Safsızlık Azalmasına ($MDI$) göre neden daha güvenilir kabul edilir?
+    \begin{itemize}
+        \item[A)] Yüksek kardinaliteli (çok sayıda eşsiz değer içeren) değişkenlere karşı daha az yanlı olması.
+        \item[B)] Hesaplamasının çok daha hızlı olması nedeniyle.
+        \item[C)] Matematiksel olarak daha basit bir formüle sahip olması.
+        \item[D)] Sadece eğitim verisi üzerinde hesaplandığı için.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} MDI, çok sayıda eşsiz sayısal değere sahip değişkenleri haksız yere önemli gösterme eğilimindedir; MDA bu yanlılığı aşar.
+\end{testcard}
+
+\begin{testcard}{Soru 89}
+    Elastic Net yönteminde kullanılan $\alpha = \frac{\lambda_1}{\lambda_1 + \lambda_2}$ parametresi neyi kontrol eder?
+    \begin{itemize}
+        \item[A)] Veri setindeki aykırı değerlerin etkisini.
+        \item[B)] Karar ağacının maksimum derinliğini.
+        \item[C)] Modelin öğrenme hızını (learning rate).
+        \item[D)] $L1$ (LASSO) ve $L2$ (Ridge) düzenlileştirmeleri arasındaki karışım oranını.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: D} \\
+    \textbf{Açıklama:} Alpha parametresi, Elastic Net'in ne kadar LASSO'ya ne kadar Ridge'e benzeyeceğini belirleyen karışım oranıdır.
+\end{testcard}
+
+\begin{testcard}{Soru 90}
+    Makine öğrenmesinde "Özellik Mühendisliği" (Feature Engineering) sürecinin temel amacı nedir?
+    \begin{itemize}
+        \item[A)] Verileri sadece görselleştirmek.
+        \item[B)] Mevcut verilerden modele ek bilgi sağlayacak yeni ve daha anlamlı değişkenler üretmek.
+        \item[C)] Veri setini tamamen silip yeniden oluşturmak.
+        \item[D)] Modelin eğitim süresini sonsuza kadar uzatmak.
+    \end{itemize}
+    \tcblower
+    \textbf{Doğru Cevap: B} \\
+    \textbf{Açıklama:} Verideki ham bilgiyi, modelin daha kolay öğrenebileceği ve performansı artıracak yeni özelliklere dönüştürme sürecidir.
+\end{testcard}
+\end{document}

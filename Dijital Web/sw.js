@@ -1,0 +1,43 @@
+const CACHE_NAME = 'ml-app-v2';
+const ASSETS = [
+  'index.html',
+  'style.css',
+  'app.js',
+  'ml/notes.js',
+  'gai/notes.js',
+  'ml/questions.json',
+  'gai/questions.json',
+  'ml/cards.json',
+  'gai/cards.json',
+  'manifest.json',
+  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
+];
+
+// Install Event
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.addAll(ASSETS);
+    })
+  );
+});
+
+// Activate Event
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(keys => {
+      return Promise.all(
+        keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))
+      );
+    })
+  );
+});
+
+// Fetch Event
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request).then(cachedResponse => {
+      return cachedResponse || fetch(event.request);
+    })
+  );
+});

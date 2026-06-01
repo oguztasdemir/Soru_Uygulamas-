@@ -1,0 +1,201 @@
+                                                                OLS
+
+Regresyon Modelleri                                             Ridge
+
+
+Klasikten Güncele: OLS, Ridge, Lasso, Polinom ve RANSAC         Lasso
+
+
+                                                               Polinom
+
+
+                                                               RANSAC
+
+
+
+
+Makine Öğrenmesine Giriş | Karşılaştırmalı Python Uygulaması
+Regresyon Nedir?
+
+Temel Kavram                                             Matematiksel Gösterim
+
+                                                         Basit Doğrusal:
+
+ Regresyon; bağımsız değişken(ler) X ile bağımlı          y = β₀ + β₁x + ε
+ değişken y arasındaki ilişkiyi öğrenen denetimli
+ öğrenme yöntemidir.                                     Çoklu Doğrusal:
+
+ Amaç: X bilindiğinde y'nin sürekli (sayısal) değerini    y = β₀ + β₁x₁ + … + βₙxₙ + ε
+ tahmin etmek.
+                                                         Polinom:
+ Günlük hayattan örnekler:
+  • Ev fiyatı tahmini (m², konum → fiyat)                 y = β₀ + β₁x + β₂x² + … + βₙxⁿ
+  • Hisse senedi değeri
+  • Enerji tüketim tahmini                               Matris biçimi:
+
+                                                          ŷ = Xβ
+OLS – En Küçük Kareler Regresyonu
+
+Amaç: Artıkların (residuals) kareleri toplamını minimize et → SSE = Σ(yᵢ – ŷᵢ)²
+
+
+
+Analitik Çözüm (Normal Denklem)                        Python Kodu
+
+
+              β = (XᵀX)⁻¹ Xᵀy                          from sklearn.linear_model import LinearRegression
+                                                       from sklearn.metrics import r2_score
+
+   Kapalı form çözümü mevcut                           model = LinearRegression()
+                                                       model.fit(X_train, y_train)
+   Hesaplama: O(n·p²) – büyük veri için yavaş          y_pred = model.predict(X_test)
+
+   Aykırı değerlere duyarlı                            print(model.coef_)       # β₁ ... βₙ
+                                                       print(model.intercept_) # β₀
+                                                       print(r2_score(y_test, y_pred))
+   Gürültülü veriyle yanlı sonuç üretebilir
+Regülarizasyon: Ridge & Lasso
+💡 Neden? OLS, yüksek boyutlu ya da çok korelasyonlu verilerde aşırı öğrenir (overfitting). Regülarizasyon katsayıları kısıtlayarak
+modeli sadeleştirir.
+
+
+Ridge Regresyon (L2)                                                 Lasso Regresyon (L1)
+
+                  SSE + α · Σβᵢ²                                                          SSE + α · Σ|βᵢ|
+
+   Tüm katsayıları sıfıra yaklaştırır, hiçbirini tam sıfır yapmaz        Bazı katsayıları tam sıfır yapar → Özellik seçimi!
+
+
+   Çoklu doğrusallıkta güçlü                                             Seyrek (sparse) modeller üretir
+
+
+   α hiperparametresi CV ile seçilir                                     Yüksek boyutlu verilerde tercih edilir
+
+
+   sklearn: Ridge(alpha=α)                                               sklearn: Lasso(alpha=α)
+Polinomiyal Regresyon
+
+Temel Fikir                                                                    Pipeline
+
+
+Doğrusal modeli polinom özelliklerle zenginleştir; model özü itibarıyla hâlâ
+doğrusaldır — parametrelerde.                                                  from sklearn.pipeline import Pipeline
+                                                                               from sklearn.preprocessing import \
+                                                                                   PolynomialFeatures
+                                                                               from sklearn.linear_model import \
+            y = β₀ + β₁x + β₂x² + β₃x³ + … + βₙxⁿ                                  LinearRegression
+
+                                                                               model = Pipeline([
+                                                                                  ('poly',
+   Derece 1 → Doğrusal (OLS ile özdeş)                                              PolynomialFeatures(
+                                                                                      degree=3)),
+                                                                                  ('ols',
+   Derece 2 → Parabol (kuadratik)                                                   LinearRegression())
+                                                                               ])
+
+   Derece 3+ → Daha karmaşık eğriler                                           model.fit(X_train, y_train)
+                                                                               y_pred = model.predict(X_test)
+
+   ⚠ Yüksek derece = Overfitting riski
+
+   sklearn: PolynomialFeatures(degree=d)
+RANSAC – Sağlam (Robust) Regresyon
+
+Problem: OLS, tek bir aykırı değerden bile büyük ölçüde etkilenebilir. RANSAC bunu çözer.
+
+
+
+Algoritma Adımları                                             Kullanım & Parametreler
+
+ 1   1. Rastgele küçük alt küme seç                            from sklearn.linear_model import (
+                                                                 RANSACRegressor,
+                                                                 LinearRegression)
+ 2   2. Model uydur (min_samples)
+                                                               ransac = RANSACRegressor(
+                                                                 estimator=LinearRegression(),
+ 3   3. Tüm noktaları sınıflandır:                               min_samples=0.5,
+       İnlier / Outlier (residual_threshold)                     residual_threshold=5.0,
+                                                                 max_trials=200,
+ 4   4. İyi model adaysa kaydet                                  random_state=42
+                                                               )
+                                                               ransac.fit(X, y)
+ 5   5. max_trials kez tekrarla
+                                                               # İnlier maskesi
+                                                               mask = ransac.inlier_mask_
+ 6   6. En iyi adayı seç, tüm inlier'lar                       print(f'İnlier: {mask.sum()}')
+       ile modeli yeniden eğit
+ Modeller Arası Karşılaştırma
+
+Model     Kriter       Güçlü Yönü                       Zayıf Yönü                            Ne Zaman Kullan?
+
+
+OLS       SSE          Hızlı, analitik çözüm            Aykırı değer & overfitting            Temiz, az boyutlu veri
+
+
+
+
+Ridge     SSE+α·Σβ²    Çoklu doğrusallık                Özellik seçimi yapmaz                 Tüm özellikler anlamlı
+
+
+
+
+Lasso     SSE+α·Σ|β|   Özellik seçimi (sparse)          Büyük α'da bilgi kaybı                Yüksek boyutlu, seyrek veri
+
+
+
+
+Polinom   SSE          Doğrusal olmayan örüntüler       Yüksek derecede overfitting           Eğrisel ilişkiler
+
+
+
+
+RANSAC    Consensus    Aykırı değerlere çok dayanıklı   Deterministik değil, yavaş olabilir   Gürültülü / kirli veri
+Python Demo – Grafik Sonuçları
+
+
+
+
+                           regresyon_karsilastirma.png
+
+               Kodu çalıştırarak elde ettiğiniz grafiği buraya ekleyin.
+
+
+                    python regresyon_karsilastirma.py
+
+
+
+
+     OLS        Ridge                   Lasso                   Polinom    RANSAC
+   β₁≈2.07     β₁≈2.04                 β₁≈0.89*                   R²↑     β₁≈2.50 ✓
+Hangi Modeli Ne Zaman Kullanmalı?
+
+
+
+           ✔                         🔗                        ✂
+     Verini temiz mi?          Özellikler arasında      Gereksiz özellikler
+    Özellik sayısı az mı?   yüksek korelasyon var mı?    var olabilir mi?
+
+       OLS ile başla              Ridge kullan            Lasso kullan
+
+
+
+
+           〜                         🛡
+                               Veri gürültülü ya da
+     İlişki eğrisel mi?
+                              aykırı değer çok mu?
+
+      Polinom dene               RANSAC kullan
+                        Teşekkürler!
+                                                Özet
+
+              OLS → Ridge → Lasso → Polinom → RANSAC
+
+Regresyon; veriyi en iyi temsil eden parametreleri öğrenmektir.
+
+Regularizasyon overfitting'i önler; L1 özellik seçer, L2 sadece kısar.
+
+RANSAC gürültülü ve kirli verilerde OLS'tan çok daha güvenilirdir.
+
+Model seçimi: veri yapısına, boyuta ve gürültüye göre değişir.
+

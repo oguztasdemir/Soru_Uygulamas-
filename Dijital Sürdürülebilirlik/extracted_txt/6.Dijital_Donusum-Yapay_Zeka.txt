@@ -1,0 +1,181 @@
+--- PAGE 1 ---
+YAPAY ZEKA VE 
+DİJİTAL DÖNÜŞÜM
+Taner TURGUT
+24.03.2026
+
+--- PAGE 2 ---
+ANT FINANCIAL GROUP ’un piyasaya girmesinin üzerinden yalnızca beş yıl geçtikten 
+sonra, 2019'da firmanın hizmetlerinden yararlanan tüketici sayısı 1 milyar sınırını aştı. 
+→ Bunun arkasında yatan güç neydi? 
+Hizmet verilen alanlar: tüketici kredisi, para piyasası fonları, varlık yönetimi, sağlık sigortası, 
+kredi derecelendirme hizmetleri ve hatta karbon ayak izini azaltmayı özendiren bir çevrimiçi 
+oyun sayılabilir. 
+Hizmet verilen müşteri sayısı: ABD'nin en büyük bankalarından on kat fazla; üstelik bunu 
+onların onda birinden daha az çalışanla yapıyor. 
+*2018'deki sonlarına doğru; Ant Financial'ın piyasa değeri, dünyanın en değerli finansal 
+hizmetler şirketi JPMorgan Chase 'in neredeyse yarısı olan 150 milyar dolara ulaşmıştı. 
+ANT FINANCIAL & REKABETİN DEĞİŞEN YÜZÜ
+❖ Alibaba'nın bir yan kuruluşu 
+❖ Çekirdek mobil ödeme platformu 
+❖ Alipay 'den alınan veriler ve 
+❖ Yapay zeka kullanımı
+❖ Çok farklı alanlarda verilen hizmet
+--- PAGE 3 ---
+◊ Şirkette ne kredileri onaylayan bir müdür ne finansal tavsiyeler veren bir 
+çalışan var 
+◊ Ne de sağlık harcamalarına onay veren bir müşteri temsilcisi var.
+◊ Operasyonel faaliyetler kritik yolunda hiç çalışanı yok
+◊ Bütün işi yapay zeka yapıyor 
+Geleneksel firmaları sınırlayan operasyonel kısıtlamaların olmadığı böyle bir 
+ortamda Ant Financial, daha önce benzeri görülmedik şekilde rekabet edebiliyor, 
+dizginlenemeyen bir büyüme yakalıyor ve çeşitli endüstrilere etki ediyor. 
+Ant Financial; geleneksel bankalar, yatırım 
+kuruluşları ve sigorta şirketlerinin aksine, 
+bir dijital çekirdek üzerine kurulmuş bir yapı
+ANT FINANCIAL & REKABETİN DEĞİŞEN YÜZÜ
+--- PAGE 4 ---
+YAPAY ZEKA
+YENİ İŞLEYİŞ MEKANİZMASI
+YAPAY ZEKA ÇAĞINA GİRİYORUZ…
+Operasyonel sınırlamalardan arınmış bu yeni şirket türünün ortaya çıkışıyla birlikte yapay zeka çağına girmiş 
+oluyoruz. 
+Bu çağa hızlı adapte olan şirket örnekleri:  
+Büyük ölçekli şirketler: Google, Facebook, Alibaba
+Küçük/Orta ölçekli şirketler: Zebra Medical Vision, Wayfair, Indigo Ag, Ocado
+Bu şirketlerde ne değişti?
+❖Çalışanlar, yöneticiler, süreç mühendisleri, şefler ya da müşteri hizmetleri temsilcileri tarafından yürütülen 
+geleneksel iş süreçleri yerine, algoritmalar ile değer üretilmeye başladı. 
+❖Yöneticiler ve mühendisler, yapa zeka ve yazılımları algoritmaların çalışmasını sağlayacak şekilde tasarlamaya 
+başladı. 
+Microsoft’ un CEO'su, yapay zekadan, şirketin 
+"yeni işleyiş mekanizması” olarak söz ediyor. 
+--- PAGE 5 ---
+ve ÜRETKEN YAPAY ZEKA… 
+Bilgisayar sistemlerinin metin, görüntü, ses gibi farklı veri türlerini işleyerek 
+orijinal içerik oluşturmasına yarayan ileri düzey yeni bir yapay zeka teknolojisi 
+ortaya çıktı. 
+o Öncekilerin aksine eğitim verilerinin ötesine geçerek yeni içerikler 
+oluşturabilme
+o Gerek kısa ve basit gerekse çok uzun ve karmaşık komutlara yanıt olarak 
+hızla içerik oluşturma becerisi
+o İnsan gibi yazı, görüntü, ses ve video üretme becerisi
+YAPAY ZEKA
+YENİ İŞLEYİŞ MEKANİZMASI
+❖Dijital otomasyon ya da şirket dışı bir ekosistemden 
+yararlanarak kendi başına değer yaratabilen bir 
+mekanizma ortaya çıktı.
+• Amazon'da fiyatları yapay zekâ 
+belirliyor, 
+• Spotify 'da şarkı öneriyor, 
+• Indigo 'nun pazaryerinde alıcıyla 
+satıcıyı eşleştiriyor ve 
+• Ant Financial 'da kredi 
+alabilecekleri değerlendiriyor. 
+İnsanların hayal gücünü 
+en çok harekete geçiren, 
+metin odaklı sohbet 
+yapay zekası olmuştur
+İnsanlar metinle eğitilmiş 
+üretken yapay zeka 
+modelleriyle insanlarla 
+konuştukları gibi konuşarak 
+onlardan bilgi edinebilir.
+OpenAI | GPT-3.5 
+[Kasım 2022]
+--- PAGE 6 ---
+YAPAY ZEKA’NIN PAZARA ETKİSİ
+PAZARDAKİ DEĞİŞİM ve  ‘YENİ ŞİRKET TÜRLERİ’
+Yapay zeka kullanımıyla yeni şirket türlerinin ortaya çıktı. 
+Değer sunma ve yaratmanın temel kaynağı yapay zeka olarak ön plana  çıktı. 
+MEYDAN OKUMA 
+Yapay zeka içerikli çalışmaları kullanan firmalar, sektörleri ayıran ve rekabetin kurallarını 
+belirleyen bazı kırmızı çizgileri ortadan kaldırdı. 
+AVANTAJ
+Hem dijital alanda yer alan şirketlerin hem de geleneksel şirketlerin bu alana girmesi ve 
+Yapay zekanın operasyonlar, strateji ve rekabet üzerindeki devrim niteliğindeki etkisini 
+anlaması zorunlu hale geldi. 
+--- PAGE 7 ---
+YAPAYZEKA FABRİKASI 
+Yeni şirketlerin merkezinde “yapay zeka fabrikası” denilen bir karar fabrikası yer alıyor. 
+• Google’da her gün milyonlarca reklam açık artırmasını yöneten yapı buna bir örnektir.
+• Didi, Grab, Lyft ve Uber'de hangi araçlar için öneri götürüleceğine algoritmalar karar 
+veriyor. 
+• Amazon'daki kulaklıkların ve polo yaka tişörtlerin fiyatını yapay zeka belirliyor
+• Walmart mağazalarında yerleri temizleyen robotları yapay zeka yönetiyor. 
+• Fidelity'de müşteriye yapay zekalı robotlarla hizmet sunuluyor
+• Zebra Medical'da röntgen filmlerini yapay zeka yorumluyor. 
+Yapay zeka, tüm bu işlemleri yaparken karar verme sürecine bilimsel olarak yaklaşıyor. 
+Analitik iç ve dış verileri sistematik şekilde tahmin, içgörü ve seçimlere dönüştürüyor. 
+Operasyonel iş akışı yönlendiriliyor ve otomatikleştiriliyor.
+--- PAGE 8 ---
+Dijital şirketlerin muazzam ölçüde büyümesini sağlayan yapay zeka, her 
+zaman çok karmaşık bir yapıya sahip değildir. Bu bağlamda kendi içinde 
+yapay zeka çalışmalarını yapılan çalışmanın karmaşıklığına bağlı olarak güçlü 
+ve zayıf yapay zeka olarak sınıflandırabiliriz:
+❖Güçlü yapay zeka: genellikle etki alanı sınırlamalarıyla kısıtlanmamış insan 
+kavrayışına sahip bir düşünme makinesidir ve bir insanın yapabileceği herhangi bir 
+entelektüel görevi yerine getirebilir.
+❖Zayıf yapay zeka: Geleneksel anlamda insanın yaptığı işleri yapabilmesi için sadece 
+bir bilgisayar sistemi kullanılarak yapılan basit çalışmalardır. Bilgi işlem özellikleri, 
+algoritmalar ve tasarlanma amacı olan belirli görevler ile sınırlıdır.
+YAPAYZEKA FABRİKASI 
+--- PAGE 9 ---
+Genel zeka: İnsanların belirli bir görev için eğitilmeden çeşitli zorlukların üstesinden gelebilmeleri 
+gibi, Güçlü YZ de bilgisini birden fazla alanda uygulama yeteneğine sahiptir.
+Muhakeme ve problem çözme: Bir karar vermeden önce farklı faktörleri dikkatlice ele alındığı gibi, 
+Güçlü Yapay Zeka da, karmaşık durumları detaylı bir anlayışla analiz edilerek ve optimum hareket 
+tarzını belirlemek için çeşitli değişkenleri değerlendirir.
+Uyarlanabilirlik: İnsanlar doğal olarak yeni koşullara uyum sağlar ve beklenmedik olaylardan ders 
+çıkarır. Benzer bir şekilde, Güçlü Yapay Zeka da değişen koşullara hızla uyum sağlayacak şekilde 
+tasarlanır ve yeni zorluklar ortaya çıktıkça tepkilerini gerçek zamanlı olarak gerçekleştirir.
+Öz farkındalık: İnsanlar sadece bilgi işlemenin ötesinde, düşünceleri ve eylemleri üzerinde 
+düşünebilirler. Güçlü YZ, kendi performansını izleyerek değerlendirir ve bir öz farkındalık ile hareket 
+eder.
+YAPAYZEKA FABRİKASI
+GÜÇLÜ YAPAY ZEKANIN TEMEL ÖZELLİKLERİ 
+
+--- PAGE 10 ---
+Yapay zeka fabrikalarında zayıf yapay zekayla bir dizi kritik karar alabiliyor. 
+❖Google ve Facebook örneklerinde olduğu gibi bazı durumlarda bilgilendirme 
+amaçlı hizmet verilirken aşağıdaki örneklerde ise üretim ve taşımacılık gibi 
+fiziki hizmetler verebiliyor:
+❖Amazon'un depolarındaki robotlar 
+❖Google'ın otonom araba hizmeti
+❖Waymo’dafiziksel ürünlerini imal edilmesi, 
+Tüm durumlarda dijital karar fabrikası, bazı en kritik süreçleri yönetiyor ve iş 
+kararlarını hayata geçiriyor. Yazılım, şirketin çekirdeğini oluştururken, insanlar 
+yavaş yavaş uçlara doğru itiliyor.
+DİJİTAL KARAR FABRİKASI 
+--- PAGE 11 ---
+YAPAY ZEKA FABRİKASI 
+Yapay Zeka fabrikaları dört temel bileşenden oluşuyor:
+1. İlki sistematik, sürdürülebilir ve ölçeklendirilebilir şekilde veri toplayan, 
+ayıklayan, birleştiren ve koruyan yarı otomatik bir veri hattıdır.
+2. İkincisi, alınacak işin gelecekteki durum ya da aksiyonlarına ilişkin kestirimlerde 
+bulunan algoritmalardır. 
+3. Üçüncüsü, yeni algoritmalara ilişkin hipotezlerin test edilmesini ve bu sayede 
+önerilerinin istenen etkiyi yaratmasını sağlayan deney platformudur. 
+4. Dördüncüsüyse, bu süreci yazılıma gömen ve onu iç ve dış kullanıcılara 
+bağlayan altyapıdır. 
+
+--- PAGE 12 ---
+YAPAY ZEKA - ÖRNEK
+Google/ Bing arama motorlarını örneği: 
+✓Arama çubuğuna birkaç harf yazmaya başladığınız anda, algoritma, 
+aramak istediğiniz terimin tamamını dinamik şekilde tahmin edebiliyor. 
+✓Bunu yaparken, başka kullanıcıların daha önce aradığı terimleri ve o 
+sırada arama yapan kullanıcının geçmiş hareketlerini dikkate alıyor. 
+✓Bu tahminler bir açılır menüde (“otomatik öneri kutusu”) toplanıyor ve 
+bu sayede kullanıcı, hızlıca tüm dikkatini yaptığı aramaya verebiliyor. 
+
+--- PAGE 13 ---
+YAPAY ZEKA FABRİKASI 
+Her bir tıklama veri noktaları olarak toplanıyor ve 
+Her veri noktası gelecekteki aramalar için yapılacak tahminleri iyileştiriyor. 
+Yapay zeka aynı zamanda organik arama sonuçlarını da ortaya koyuyor. ➔
+önceki aramaların sonuçlarıyla ortaya çıkan tıklamalar dikkate alınarak önceden toplanan ve 
+optimize edilen web endeksinden elde edilen verileri de kullanıyor. 
+Arama sonuçları ek deneylemeler ve öğrenme döngüleriyle şekilleniyor. 
+Yapılan arama sayısı arttıkça tahminler de iyileşiyor. 
+Tahminlerin iyileşmesiyse arama motorunun daha fazla kullanılmasını sağlıyor.

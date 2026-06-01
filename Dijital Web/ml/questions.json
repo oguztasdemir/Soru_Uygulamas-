@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 1,
+    "question": "Bir veri setinde bağımsız değişkenlerin (X) bağımlı değişkeni (y) tahmin etmek için kullanıldığı, k-NN veya Lojistik Regresyon gibi algoritmalar kapsayan öğrenme türü hangisidir?",
+    "options": [
+      "A) Denetimsiz Öğrenme",
+      "B) Denetimli Öğrenme",
+      "C) Takviyeli Öğrenme",
+      "D) Yarı Denetimli Öğrenme"
+    ],
+    "answer": "D",
+    "explanation": "Denetimli öğrenmede her girdinin bir karşılık gelen etiketi bulunur; model bu eşleşmeyi öğrenir."
+  },
+  {
+    "id": 2,
+    "question": "Denetimsiz öğrenme algoritmalarının temel amacı aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Veri setindeki etiketleri tahmin etmek",
+      "B) Verideki gizli yapılar ve gruplar (kümeleri) keşfetmek",
+      "C) Bir regresyon doğrusu oluşturmak",
+      "D) Hata payını sıfıra indirmek"
+    ],
+    "answer": "D",
+    "explanation": "Denetimsiz öğrenmede etiket yoktur, amaç verinin kendi içindeki benzerlikleri bulmaktır."
+  },
+  {
+    "id": 3,
+    "question": "\"Eğer bir ördek gibi yürüyorsa ve ördek gibi vakvak yapıyorsa, o bir ördektir\" mantığıyla çalışan, en yakın komşularına bakarak sınıflandırma yapan algoritma hangisidir?",
+    "options": [
+      "A) k-NN (k-En Yakın Komşu)",
+      "B) Destek Vektör Makineleri (SVM)",
+      "C) Karar Ağaçları",
+      "D) PCA"
+    ],
+    "answer": "D",
+    "explanation": "k-NN, \"benzer şeyler birbirine yakındar\" ilkesiyle en yakın komşularının oylamasına dayanır."
+  },
+  {
+    "id": 4,
+    "question": "K-Means algoritmasında, verilerin hangi kümeye ait olduğunu belirlemek için genellikle hangi mesafe ölçütü kullanılır?",
+    "options": [
+      "A) Manhattan Mesafesi",
+      "B) Öklid Mesafesi",
+      "C) Jaccard Benzerliği",
+      "D) Kosinüs Benzerliği"
+    ],
+    "answer": "D",
+    "explanation": "K-Means, küme içi varyans minimize etmek için noktaların merkezlere olan Öklid mesafesini kullanır."
+  },
+  {
+    "id": 5,
+    "question": "Karar Ağaçlarında (Decision Trees), bir düğümü bölmek için kullanılan ve \"safsızlık\" (impurity) ölçen temel metriklerden biri hangisidir?",
+    "options": [
+      "A) Gini Katsayısı / Entropi",
+      "B) R-Kare",
+      "C) F1 Skoru",
+      "D) Ortalama Mutlak Hata (MAE)"
+    ],
+    "answer": "D",
+    "explanation": "Karar ağaçları, dallanma kararlarını verinin saflığını artıran Gini veya Bilgi Kazancı değerlerine göre verir."
+  },
+  {
+    "id": 6,
+    "question": "Destek Vektör Makineleri (SVM) algoritmasında, sınıfları birbirinden ayıran en geniş boşluğu (margin) bulmak için kullanılan veri noktalarına ne ad verilir?",
+    "options": [
+      "A) Aykırı Değerler (Outliers)",
+      "B) Destek Vektörleri (Support Vectors)",
+      "C) Merkez Noktalar (Centroids)",
+      "D) Karar Sınırları"
+    ],
+    "answer": "C",
+    "explanation": "Destek vektörleri, karar sınırını \"ayakta tutan\" ve sınırın yerini belirleyen en yakın örneklerdir."
+  },
+  {
+    "id": 7,
+    "question": "Rastgele Orman (Random Forest) algoritması, birden fazla karar ağacını birleştirerek daha güçlü bir model oluşturur. Bu yönteme genel olarak ne ad verilir?",
+    "options": [
+      "A) Boosting",
+      "B) Bagging (Bootstrap Aggregating)",
+      "C) Dimensionality Reduction",
+      "D) Clustering"
+    ],
+    "answer": "B",
+    "explanation": "Random Forest, veriden farklı alt kümeler çekerek çok sayıda ağaç eğitir ve sonuçları oylar."
+  },
+  {
+    "id": 8,
+    "question": "Bir modelin eğitim verisine çok iyi uyum sağlayıp, test (yeni) verisinde kötü performans göstermesi durumuna ne ad verilir?",
+    "options": [
+      "A) Eksik Öğrenme (Underfitting)",
+      "B) Aşırı Öğrenme (Overfitting)",
+      "C) Doğrusal Regresyon",
+      "D) Bias (Yanlılık)"
+    ],
+    "answer": "C",
+    "explanation": "Model verideki gürültüyü ezberlemiş ve yeni verilere karşı genelleme yapamaz hale gelmiştir."
+  },
+  {
+    "id": 9,
+    "question": "Yapay Sinir Ağlarında, girdilerin ağırlıklarla çarpılıp toplandığı ve bir eşik değerinden geçirilerek çıktısının üretildiği temel yapı birimine ne denir?",
+    "options": [
+      "A) Katman (Layer)",
+      "B) Nöron (Perceptron)",
+      "C) Aktivasyon Fonksiyonu",
+      "D) Optimizer"
+    ],
+    "answer": "D",
+    "explanation": "Perceptron, bir sinir ağındaki en küçük ve temel işlem birimidir."
+  },
+  {
+    "id": 10,
+    "question": "Boyut indirgeme (Dimensionality Reduction) amacıyla kullanılan ve verideki varyans en çok koruyan yeni bileşenleri bulan algoritma hangisidir?",
+    "options": [
+      "A) K-Means",
+      "B) PCA (Temel Bileşen Analizi)",
+      "C) Lojistik Regresyon",
+      "D) Destek Vektör Makineleri (SVM)"
+    ],
+    "answer": "D",
+    "explanation": "PCA (Principal Component Analysis), verideki en yüksek varyans koruyacak şekilde boyut indirgeme yapan temel algoritmadır."
+  },
+  {
+    "id": 11,
+    "question": "Boyut indirgeme (Dimensionality Reduction) amacıyla kullanılan ve verideki maksimum varyans koruyarak yeni bileşenler oluşturan algoritma hangisidir?",
+    "options": [
+      "A) DBSCAN",
+      "B) PCA (Temel Bileşen Analizi)",
+      "C) Naive Bayes",
+      "D) Lojistik Regresyon"
+    ],
+    "answer": "D",
+    "explanation": "PCA, verideki en yüksek değişkenliği temsil eden ana yönleri (temel bileşenler) bularak bilgiyi sıkıştırır."
+  },
+  {
+    "id": 12,
+    "question": "k-NN algoritmasında \"k\" parametresinin çok küçük seçilmesi (örneğin k=1) aşağıdakilerden hangisine neden olabilir?",
+    "options": [
+      "A) Modelin çok basitleşmesine",
+      "B) Aşırı öğrenmeye (Overfitting) ve gürültüye duyarlılığa",
+      "C) Eksik öğrenmeye (Underfitting)",
+      "D) Hesaplama maliyetinin azalmasına"
+    ],
+    "answer": "D",
+    "explanation": "k=1 olduğunda model her noktayı kendisine en yakın tek bir komşuya göre atar, bu da verideki rastgele gürültülerin model sınırlarn bozmasına yol açar."
+  },
+  {
+    "id": 13,
+    "question": "Lojistik Regresyon algoritması, doğrusal regresyonun aksine çıktıyı 0 ile 1 arasında bir olasılık değerine dönüştürmek için hangi fonksiyonu kullanır?",
+    "options": [
+      "A) ReLU Fonksiyonu",
+      "B) Sigmoid (Lojistik) Fonksiyonu",
+      "C) Tanh Fonksiyonu",
+      "D) Step Fonksiyonu"
+    ],
+    "answer": "B",
+    "explanation": "Sigmoid fonksiyonu, her türlü sayısal değeri [0, 1] aralığına haritalayarak modelin \"sınıf olasılığı\" üretmesini sağlar."
+  },
+  {
+    "id": 14,
+    "question": "Naive Bayes algoritmasının ismindeki \"Naive\" (Saf/Safdil) ifadesi hangi varsayımdan kaynaklanır?",
+    "options": [
+      "A) Verilerin doğrusal olduğu",
+      "B) Özelliklerin (features) birbirinden bağımsız olduğu varsayım",
+      "C) Veride hiç gürültü olmadığı",
+      "D) Tüm verilerin normal dağıldığı"
+    ],
+    "answer": "D",
+    "explanation": "Naive Bayes, hesaplamay kolaylaştırmak için özelliklerin birbirini etkilemediğini (bağımsız olduğunu) varsayar; bu varsayım gerçek dünyada nadiren tam olarak sağlanır."
+  },
+  {
+    "id": 15,
+    "question": "Gradient Boosting algoritmalarında (XGBoost, LightGBM vb.), modeller nasıl eğitilir?",
+    "options": [
+      "A) Ağaçlar birbirine paralel olarak eğitilir",
+      "B) Her yeni ağaç, bir önceki ağacını yaptığı hataları (artıkları) azaltacak şekilde sıralı eğitilir",
+      "C) Ağaçlar rastgele seçilir",
+      "D) Sadece tek bir ağaç kullanılır"
+    ],
+    "answer": "D",
+    "explanation": "Boosting, zayıf öğrenicileri (weak learners) ardışıl olarak ekleyerek her adımda toplam hatayı minimize etmeye çalışır."
+  },
+  {
+    "id": 16,
+    "question": "Veri seti dairesel veya karmaşık şekilli kümeleri tespit etmekte K-Means'ten daha başarılı olan, yoğunluk tabanlı kümeleme algoritması hangisidir?",
+    "options": [
+      "A) Hiyerarşik Kümeleme",
+      "B) DBSCAN",
+      "C) PCA",
+      "D) Karar Ağaçları"
+    ],
+    "answer": "B",
+    "explanation": "DBSCAN, noktaların birbirine yakınlık yoğunluğuna odaklanr; bu da onun dairesel olmayan kümeleri ve gürültüyü (noise) tespit etmesini sağlar."
+  },
+  {
+    "id": 17,
+    "question": "Denetimsiz öğrenmede, veriler arasındaki hiyerarşiyi bir \"Dendrogram\" (ağaç diyagram) yardımıyla gösteren yöntem hangisidir?",
+    "options": [
+      "A) Lojistik Regresyon",
+      "B) Hiyerarşik Kümeleme (Hierarchical Clustering)",
+      "C) Rastgele Orman",
+      "D) k-NN"
+    ],
+    "answer": "B",
+    "explanation": "Dendrogram, verilerin hangi benzerlik seviyelerinde birleştiğini en aşağıdan yukarıya doğru bir ağaç yapısıyla gösterir."
+  },
+  {
+    "id": 18,
+    "question": "Boyut indirgemede kullanılan LDA (Doğrusal Diskriminant Analizi) algoritmasını PCA'dan ayıran temel özellik nedir?",
+    "options": [
+      "A) LDA'nn denetimli (sınıf etiketlerini kullanan) bir yöntem olması",
+      "B) LDA'nn sadece regresyonda kullanılması",
+      "C) LDA'nn daha yavaş çalışmas",
+      "D) LDA'nn gürültüyü artıran bir yöntem olması"
+    ],
+    "answer": "A",
+    "explanation": "PCA verinin genel yapısını korurken etiketlere bakmaz; LDA ise sınır birbirinden ayırmak için verideki etiket bilgisini (labels) kullanır."
+  },
+  {
+    "id": 19,
+    "question": "Bir regresyon modelinde, gerçek değerler ile tahmin edilen değerler arasındaki farklarının karelerinin ortalamasına ne ad verilir?",
+    "options": [
+      "A) Ortalama Mutlak Hata (MAE)",
+      "B) Ortalama Kare Hata (MSE)",
+      "C) F1 Skoru",
+      "D) Hassasiyet (Precision)"
+    ],
+    "answer": "A",
+    "explanation": "MSE (Mean Squared Error), hataların karesini aldığı için büyük hataları küçük hatalara göre çok daha sert cezalandırır."
+  },
+  {
+    "id": 20,
+    "question": "Karar ağaçlarında, aşırı öğrenmeyi (overfitting) engellemek için ağacının gereksiz dallarının temizlenmesi işlemine ne denir?",
+    "options": [
+      "A) Budama (Pruning)",
+      "B) Dallanma (Branching)",
+      "C) Ölçeklendirme (Scaling)",
+      "D) Normalizasyon"
+    ],
+    "answer": "A",
+    "explanation": "Budama, ağacı basitleştirerek modelin eğitim verisini ezberlemesini önler ve genelleme gücünü artırır."
+  },
+  {
+    "id": 21,
+    "question": "Yapay Sinir Ağlarında, hatanın çıktıdan girdiye doğru yayılarak ağırlıkların güncellendiği temel öğrenme mekanizması hangisidir?",
+    "options": [
+      "A) leri Besleme (Forward Propagation)",
+      "B) Geri Yayılım (Backpropagation)",
+      "C) Aktivasyon",
+      "D) Pooling"
+    ],
+    "answer": "D",
+    "explanation": "Backpropagation, gradyan inişi ile ağırlıkların hatay azaltacak şekilde optimize edilmesini sağlayan temel eğitim mekanizmasıdır."
+  },
+  {
+    "id": 22,
+    "question": "Temel Bileşen Analizi (PCA) ve Doğrusal Diskriminant Analizi (LDA) arasındaki en temel fark aşağıdakilerden hangisidir?",
+    "options": [
+      "A) LDA doğrusal bir dönüşüm yaparken, PCA yalnızca doğrusal olmayan verilerde çalışır.",
+      "B) PCA denetimsiz bir yöntemken, LDA sınıf etiketlerini kullanan denetimli bir yöntemdir.",
+      "C) LDA bileşenler arasında korelasyon bırakırken, PCA bileşenleri birbirinden bağımsız hale getirir.",
+      "D) PCA gürültü azaltma için kullanılırken, LDA yalnızca veri sıkıştırma için kullanılır."
+    ],
+    "answer": "B",
+    "explanation": "PCA verinin toplam varyansına (bilgisine) odaklanırken, LDA sınır birbirinden en uzağa itecek (separability) yönü bulur."
+  },
+  {
+    "id": 23,
+    "question": "PCA algoritmasında verinin hangi yöne projekte edileceğine karar vermek için hangi matematiksel yapdan yararlanılır?",
+    "options": [
+      "A) Kovaryans matrisinin özvektörleri (eigenvectors)",
+      "B) Veri matrisinin standart sapma değerleri",
+      "C) Sigmoid fonksiyonunun türevi",
+      "D) Sınıflar arası saçılım matrisinin izi (trace)"
+    ],
+    "answer": "C",
+    "explanation": "Özvektörler verideki varyansın (bilginin) yönünü, özdeğerler ise bu yönün önem derecesini belirtir."
+  },
+  {
+    "id": 24,
+    "question": "Kümeleme analizinde kullanılan 'Dirsek (Elbow) Yöntemi' temel olarak neyi belirlemek için kullanılır?",
+    "options": [
+      "A) Hiyerarşik kümelemedeki en uzun mesafe eşiğini",
+      "B) Optimum küme sayısı olan K değerini",
+      "C) Küme merkezlerinin başlangıç koordinatlarn",
+      "D) Verideki aykırı değerlerin (outliers) miktarını"
+    ],
+    "answer": "A",
+    "explanation": "Dirsek yöntemi, küme sayısı arttıkça toplam hata düşüşünün yavaşladığı \"dirsek\" noktasını bularak en verimli K değerini seçer."
+  },
+  {
+    "id": 25,
+    "question": "Regresyon modellerinde Ortalama Kare Hata (MSE) metriğinin Ortalama Mutlak Hata (MAE) metriğine göre en belirgin dezavantaj nedir?",
+    "options": [
+      "A) Aykırı değerlere (outliers) karşı aşırı duyarlı olması ve hatay cezalandırması",
+      "B) Matematiksel olarak türevinin alınmasının zor olması",
+      "C) Modelin açıklanan varyansın ölçememesi",
+      "D) Sonucun hedef değişkenle aynı birimde olmaması"
+    ],
+    "answer": "C",
+    "explanation": "MSE hataların karesini aldığı için, büyük sapmalar skoru dramatik şekilde artırır; bu da aykırı değerlerin modeli domine etmesine yol açabilir."
+  },
+  {
+    "id": 26,
+    "question": "Lojistik Regresyon modelinde doğrusal kombinasyonun (z = wᵎx + b) sonucunu 0 ile 1 arasında bir olasılık değerine dönüştüren fonksiyon hangisidir?",
+    "options": [
+      "A) ReLU Fonksiyonu: g(z) = max(0, z)",
+      "B) Sigmoid Fonksiyonu: σ(z) = 1 1+e−z",
+      "C) Softmax Fonksiyonu",
+      "D) Minkowski Uzaklığı"
+    ],
+    "answer": "C",
+    "explanation": "Sigmoid fonksiyonu, any gerçel say değerini 0 ile 1 arasına sıkıştırarak sınıf olasılığı üretir."
+  },
+  {
+    "id": 27,
+    "question": "Yapay Sinir Ağlarında 'Geri Yayılım' (Backpropagation) algoritmasının temel amacı nedir?",
+    "options": [
+      "A) Girdi verilerini bir katmandan diğerine doğrusal olmayan şekilde aktarmak",
+      "B) Aşırı öğrenmeyi (overfitting) önlemek için nöronlar rastgele kapatmak",
+      "C) Zincir kural kullanarak kaybın ağırlıklara göre gradyanının hesaplamak ve ağırlıklar güncellemek",
+      "D) Verideki eksik özellikleri istatistiksel yöntemlerle tamamlamak"
+    ],
+    "answer": "D",
+    "explanation": "Geri yayılım, gradyan inişi (gradient descent) ile modelin ağırlıkların hatay azaltacak yönde optimize etmek için kullanılır."
+  },
+  {
+    "id": 28,
+    "question": "Destek Vektör Makineleri'nde (SVM) 'Kernel Trick' kullanımı hangi senaryoda gereklidir?",
+    "options": [
+      "A) Sınıf dengesizliği (class imbalance) problemi yaşandığında",
+      "B) Eğitim verisi setinde çok fazla gürültü ve eksik veri olduğunda",
+      "C) Veri noktalar mevcut boyutta doğrusal bir hiper-düzlem ile ayrılamadığında",
+      "D) Modelin eğitim süresini kısaltmak ve hesaplama maliyetini düşürmek istendiğinde"
+    ],
+    "answer": "C",
+    "explanation": "Kernel hilesi, veriyi yüksek boyutlu bir uzaya izdüşürerek doğrusal olmayan verilerin ayrılabilir hale gelmesini sağlar."
+  },
+  {
+    "id": 29,
+    "question": "Düzeltilmiş R-Kare (Adjusted R2) metriğinin standart R-Kare metriğinden üstünlüğü nedir?",
+    "options": [
+      "A) Modelin tahmin hızını matematiksel olarak ölçebilmesi",
+      "B) Sadece lojistik regresyon gibi sınıflandırma modellerinde kullanılabilmesi",
+      "C) Her zaman 0 ile 1 arasında bir değer almas",
+      "D) Modele eklenen ve anlaml katkısı olmayan 'gürültü' özellikler için modeli cezalandırması"
+    ],
+    "answer": "A",
+    "explanation": "Adjusted R2, sadece modele gerçekten bilgi katan değişkenler eklendiğinde yükselir; gereksiz değişken eklenmesi durumunda ise cezalandırma yaparak düşer."
+  },
+  {
+    "id": 30,
+    "question": "DBSCAN kümeleme algoritmasının K-Means algoritmasına göre en önemli avantaj aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Bayes teoremini temel alarak yumuşak (soft) kümeleme yapmas",
+      "B) Küme sayısını (K) kullanıcıdan parametre olarak almas",
+      "C) Büyük veri setlerinde çok daha hızlı ve düşük bellek maliyetiyle çalışmas",
+      "D) Karmaşk ve düzensiz şekilli kümeleri tespit edebilmesi ve aykırı değerleri gürültü olarak işaretleyebilmesi"
+    ],
+    "answer": "D",
+    "explanation": "DBSCAN, K-Means'in aksine küme sayısını önceden bilmeye gerek duymaz ve hem yoğunluk tabanlı karmaşık şekilleri bulabilir hem de aykırı değerleri (noise) başarıyla eleyebilir."
+  },
+  {
+    "id": 31,
+    "question": "K-Katl Çapraz Doğrulama (k-Fold Cross Validation) yönteminin temel avantajı aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Modelin eğitim süresini k kat azaltması",
+      "B) Veri setindeki tüm örneklerin hem eğitim hem de test aşamasında kullanılarak verinin daha verimli değerlendirilmesi",
+      "C) Sadece doğrusal modellerde en yüksek doğruluğu garanti etmesi",
+      "D) Veri setindeki aykırı değerleri otomatik olarak temizlemesi"
+    ],
+    "answer": "D",
+    "explanation": "Çapraz doğrulama, veriyi k parçaya bölüp her birini test seti olarak kullanarak modelin performansının tüm veri seti üzerinden daha güvenilir şekilde ölçülmesini sağlar."
+  },
+  {
+    "id": 32,
+    "question": "Model doğrulama sürecinde veri seti genellikle hangi oranlarda eğitim, doğrulama ve test setlerine ayrılır?",
+    "options": [
+      "A) %80 Eğitim, %10 Doğrulama, %10 Test",
+      "B) %70 Eğitim, %30 Test",
+      "C) %50 Eğitim, %25 Doğrulama, %25 Test",
+      "D) %60 Eğitim, %20 Doğrulama, %20 Test"
+    ],
+    "answer": "D",
+    "explanation": "Verinin büyük kısım öğrenme için ayrılırken, hiperparametre ayarı (validation) ve son tarafsız ölçüm (test) için küçük ama dengeli paylar bırakılır."
+  },
+  {
+    "id": 33,
+    "question": "Bir modelin eğitim verisindeki gürültüleri ezberleyip, doğrulama setinde başarısız olması durumu aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Eksik Öğrenme (Underfitting)",
+      "B) Tam Kararında (Optimum)",
+      "C) Yüksek Yanlılık (High Bias)",
+      "D) Aşırı Öğrenme (Overfitting)"
+    ],
+    "answer": "A",
+    "explanation": "Aşırı öğrenme (Overfitting), modelin verideki örüntüler yerine rastgele gürültüleri ezberlemesi sonucu genelleme yeteneğini kaybetmesidir."
+  },
+  {
+    "id": 34,
+    "question": "Yanlılık ve Varyans dengesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      "A) Yanlılık (Bias), basit modelden kaynaklanan sistematik hatadır.",
+      "B) Düşük varyans, modelin verideki gürültüyü ezberlediği anlamına gelir.",
+      "C) Doğrulama süreci sadece yanlılık hatasını sıfırlamayı amaçlar.",
+      "D) Varyans arttıkça model daha kararl hale gelir."
+    ],
+    "answer": "C",
+    "explanation": "Yanlılık (Bias), modelin verideki temel ilişkiyi kavrayamayacak kadar basit olmasından kaynaklanan hatadr."
+  },
+  {
+    "id": 35,
+    "question": "LOOCV (Leave-One-Out Cross Validation) yöntemi için aşağıdakilerden hangisi bir dezavantajdır?",
+    "options": [
+      "A) Veri israfı",
+      "B) Yüksek yanlılık (Bias)",
+      "C) Yüksek hesaplama maliyeti",
+      "D) Rastgelelikten kaynaklanan yüksek belirsizlik"
+    ],
+    "answer": "D",
+    "explanation": "LOOCV, veri setindeki her bir gözlem için ayr bir model eğittiğinden, büyük veri setlerinde işlem süresi aşırı derecede artar."
+  },
+  {
+    "id": 36,
+    "question": "Sektör standard olarak kabul edilen k-Katl Çapraz Doğrulama (k-Fold CV) için yaygın olarak tercih edilen k değerleri nelerdir?",
+    "options": [
+      "A) k = n (Gözlem sayısı)",
+      "B) k = 100",
+      "C) k = 2 veya k = 3",
+      "D) k = 5 veya k = 10"
+    ],
+    "answer": "A",
+    "explanation": "k=5 veya k=10 değerleri, varyans ve hesaplama maliyeti arasındaki en dengeli sonuçlar verdiği için standart olarak kabul edilir."
+  },
+  {
+    "id": 37,
+    "question": "İİç içe (Nested) CV yönteminin temel kullanımı amacı nedir?",
+    "options": [
+      "A) Küçük veri setlerinde veri üretimini artırmak",
+      "B) Aynı anda hem hiperparametre ayarlamak hem de tarafsız performans ölçmek",
+      "C) Veri setindeki sınıf dengesizliğini gidermek",
+      "D) ki farklı algoritmann performansını istatistiksel olarak karşılaştırmak"
+    ],
+    "answer": "C",
+    "explanation": "İç içe çapraz doğrulamada iç döngü parametre seçer, dış döngü ise seçilen modelin başarısını tarafsız bir şekilde test eder."
+  },
+  {
+    "id": 38,
+    "question": "Bootstrap (Önyükleme) yöntemini diğer doğrulama yöntemlerinden ayıran temel özellik nedir?",
+    "options": [
+      "A) Hata payının sadece eğitim seti üzerinden hesaplanmas",
+      "B) Sınıf oranlarının korunmas",
+      "C) Veriden yerine koyarak (with replacement) örnek çekilmesi",
+      "D) Verinin sadece bir kez bölünmesi"
+    ],
+    "answer": "B",
+    "explanation": "Bootstrap yönteminde orijinal veri setinden, aynı örneklerin tekrar seçilebildiği yeni alt kümeler oluşturulur."
+  },
+  {
+    "id": 39,
+    "question": "Sınıflandırma problemlerinde başarının ölçülmesi için kullanılan 'Confusion Matrix' yapısında, gerçekte pozitif olup model tarafından negatif tahmin edilen değer hangisidir?",
+    "options": [
+      "A) False Positive (Yanlış Pozitif)",
+      "B) False Negative (Yanlış Negatif)",
+      "C) True Positive (Doğru Pozitif)",
+      "D) True Negative (Doğru Negatif)"
+    ],
+    "answer": "D",
+    "explanation": "Modelin gerçek bir vakay kaçırması durumudur; \"Pozitif\" olan veri \"Negatif\" olarak hatalı (False) tahmin edilmiştir."
+  },
+  {
+    "id": 40,
+    "question": "Regresyon problemlerinde model başarısını değerlendirmek için kullanılan temel metrik aşağıdakilerden hangisidir?",
+    "options": [
+      "A) F1 Skoru",
+      "B) Doğruluk (Accuracy)",
+      "C) Duyarlılık (Recall)",
+      "D) Ortalama Kare Hata (MSE)"
+    ],
+    "answer": "D",
+    "explanation": "Saysal değer tahmin edilen regresyon modellerinde hata, gerçek ve tahmin edilen değerler arasındaki farkının karesi (MSE) ile ölçülür."
+  },
+  {
+    "id": 41,
+    "question": "Karar ağac rehberine göre, elinizde çok küçük bir veri seti varsa hangi yöntemi seçmeniz önerilir?",
+    "options": [
+      "A) LOOCV",
+      "B) 5x2 Çapraz Doğrulama",
+      "C) Basit Doğrulama Seti",
+      "D) Bootstrap"
+    ],
+    "answer": "B",
+    "explanation": "Veri seti çok küçükse, her bir gözlemden maksimum faydayı sağlamak için her seferinde sadece bir örneği dşarda brakan LOOCV önerilir."
+  },
+  {
+    "id": 42,
+    "question": "Makine öğrenmesi modellerinde \"İç Ağırlıklar\" ile \"Hiperparametreler\" arasındaki temel fark nedir?",
+    "options": [
+      "A) Hiperparametreler eğitim sırasında veriden öğrenilir, iç ağırlıklar ise kullanıcı tarafından manuel olarak girilir.",
+      "B) iç ağırlıklar eğitim sırasında veriden öğrenilirken, hiperparametreler dışarıdan ayarlanan kontrol değişkenleridir.",
+      "C) iç ağırlıklar modelin karmaşıklığını belirlerken, hiperparametreler sadece tahmin hızını etkiler.",
+      "D) Hiperparametreler sadece k-NN gibi basit algoritmalarda kullanılır, iç ağırlıklar ise tüm algoritmalarda bulunur."
+    ],
+    "answer": "C",
+    "explanation": "Ağırlıklar modelin veriden öğrendiği parametrelerdir; hiperparametreler ise k (komşu sayısı) veya öğrenme hızı gibi kullanıcı ayarlarıdır."
+  },
+  {
+    "id": 43,
+    "question": "Grid Search (Izgara Araması) yönteminin hesaplama maliyeti O(L^F) formülü ile ifade edilir. Buradaki F değişkeni neyi temsil etmektedir?",
+    "options": [
+      "A) Optimize edilen toplam faktör (hiperparametre) sayısı.",
+      "B) Veri setindeki katlama (fold) sayısı.",
+      "C) Her faktörün sahip olduğu seviye sayısı.",
+      "D) Toplam eğitilecek model sayısı."
+    ],
+    "answer": "A",
+    "explanation": "F (Factor), ayarlanmak istenen hiperparametre sayısını; L (Level) ise her parametre için denenecek değer sayısını temsil eder."
+  },
+  {
+    "id": 44,
+    "question": "Aynı model bütçesi (örneğin 25 deneme) kullanıldığında, Random Search'ün Grid Search'e göre ana stratejik avantaj nedir?",
+    "options": [
+      "A) Deneme sayısını her zaman 25'ten daha az tutması",
+      "B) Önemli hiperparametreler üzerinde daha fazla benzersiz değer deneme olasılığının olması",
+      "C) Her zaman mutlak küresel optimumu bulmayı garanti etmesi",
+      "D) Sadece tek bir hiperparametre varken daha hızlı olması"
+    ],
+    "answer": "A",
+    "explanation": "Random Search, parametre uzayında rastgele noktalar seçtiği için, önemli parametre eksenlerinde ızgara aramasına göre daha fazla farklı değer yakalayabilir."
+  },
+  {
+    "id": 45,
+    "question": "Bayesyen Optimizasyon yöntemini Random Search'ten ayıran temel fark nedir?",
+    "options": [
+      "A) Daha fazla bellek kullanılması",
+      "B) Her denemeyi rastgele seçmek yerine geçmiş denemelerin sonuçlarından öğrenerek bir sonraki adımı planlamas",
+      "C) Sadece görsel verilerde çalışabilmesi",
+      "D) Hiçbir matematiksel model kullanılmaması"
+    ],
+    "answer": "C",
+    "explanation": "Bayesyen optimizasyon, amaç fonksiyonunun bir olasılıksal modelini (surrogate model) kurarak aramay akıllıca yönlendirir."
+  },
+  {
+    "id": 46,
+    "question": "Aşağıdakilerden hangisi Grid Search yönteminin \"Garantici\" karakteristiğini en iyi açıklar?",
+    "options": [
+      "A) Belirlenen parametre kümesi üzerindeki tüm kombinasyonlar istisnasz test etmesi.",
+      "B) Rastgele seçimlerle en iyi noktay tesadüfen bulmas.",
+      "C) Daima küresel zirveyi (global optimum) bulmay vaat etmesi.",
+      "D) Hesaplama maliyetini her zaman minimumda tutmas."
+    ],
+    "answer": "D",
+    "explanation": "Grid Search, tanımlanan aralıktaki hiçbir noktay atlamadan \"kaba kuvvet\" (brute force) ile tarama yapar."
+  },
+  {
+    "id": 47,
+    "question": "Genetik Algoritmalar, parametre kombinasyonlarını iyileştirmek için hangi iki temel mekanizmayı kullanır?",
+    "options": [
+      "A) Izgara tarama ve rastgele örnekleme.",
+      "B) Isıtma ve soğutma döngüleri.",
+      "C) Mutasyon ve çaprazlama.",
+      "D) Doğrusal regresyon ve gradyan inişi."
+    ],
+    "answer": "B",
+    "explanation": "En iyi parametreleri \"ebeveyn\" olarak seçip mutasyon ve çaprazlama ile yeni nesillere daha başarılı kombinasyonlar aktarmaya çalışır."
+  },
+  {
+    "id": 48,
+    "question": "SVM (Destek Vektör Makineleri) algoritmasında kullanılan C parametresi ne tür bir değişkendir?",
+    "options": [
+      "A) Bir model hiperparametresidir.",
+      "B) Bir veri temizleme yöntemidir.",
+      "C) Veriden öğrenilen bir iç ağırlıktır.",
+      "D) Bir performans metriğidir."
+    ],
+    "answer": "C",
+    "explanation": "C parametresi, modelin marjin genişliği ile hata tolerans arasındaki dengeyi kontrol eden kullanıcı ayarlarıdır."
+  },
+  {
+    "id": 49,
+    "question": "Hiperparametre arama uzayında \"Hesaplama Darboğaz terimi ne zaman ortaya çıkar?",
+    "options": [
+      "A) Veri seti çok küçük olduğunda.",
+      "B) Grid Search yönteminde faktör veya seviye sayısı arttığında.",
+      "C) Random Search bütçesi çok düşük tutulduğunda.",
+      "D) Çapraz doğrulama katlamaları tek bir grupta toplandığında."
+    ],
+    "answer": "A",
+    "explanation": "Grid Search her yeni parametre veya seviye eklendiğinde model sayısını üstel olarak artırdığı için sistem kaynaklarını tüketir."
+  },
+  {
+    "id": 50,
+    "question": "Bir makine öğrenmesi modelinin toplam hata miktarını (MSE) belirleyen bileşenler düşünüldüğünde, model iyileştirilerek azaltılamayan hata türü aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Varyans (Variance)",
+      "B) Eğitim Hatası (Training Error)",
+      "C) İndirgenemez Hata (σ2 - Gürültü)",
+      "D) Yanlılık (Bias)"
+    ],
+    "answer": "A",
+    "explanation": "İndirgenemez hata, verinin doğasından gelen gürültüdür; model ne kadar karmaşık olursa olsun bu hata pay sıfırlanamaz."
+  },
+  {
+    "id": 51,
+    "question": "Izgara Araması (Grid Search) stratejisinde, her bir hiperparametrenin seviye sayısı L ve toplam hiperparametre sayısı F ise, hesaplama maliyeti hangi formülle ifade edilir?",
+    "options": [
+      "A) O(L · F)",
+      "B) O(log(LF))",
+      "C) O(L^F)",
+      "D) O(F^L)"
+    ],
+    "answer": "B",
+    "explanation": "Grid Search'te her parametrenin her seviyesi birbiriyle eşleştiği için toplam kombinasyon sayısı üsteldir."
+  },
+  {
+    "id": 52,
+    "question": "Bir ölçümün matematiksel olarak 'metrik' sayılabilmesi için üç temel kural sağlamas gerekir. Aşağıdakilerden hangisi bu kurallardan biridir?",
+    "options": [
+      "A) Normalizasyon ([0, 1] aralığı)",
+      "B) Üçgen Eşitsizliği (d(x, y) ≤d(x, z) + d(z, y))",
+      "C) Yön Bağımlılığı",
+      "D) Kosinüs Benzerliği"
+    ],
+    "answer": "A",
+    "explanation": "Bir metrik; negatif olmama, simetri ve üçgen eşitsizliği (doğrudan yol dolayl yoldan uzun olamaz) kurallarn sağlamalıdır."
+  },
+  {
+    "id": 53,
+    "question": "Yetersiz Uyum (Underfitting) yaşayan bir modeli iyileştirmek için aşağıdakilerden hangisi uygun bir çözüm stratejisidir?",
+    "options": [
+      "A) Erken Durdurma (Early Stopping) uygulamak",
+      "B) Düzenlileştirme (Regularization) katsayısını (λ) artırmak",
+      "C) Daha fazla eğitim verisi toplamak",
+      "D) Modelin esnekliğini/karmaşıklığın artırmak"
+    ],
+    "answer": "D",
+    "explanation": "Underfitting, modelin veriyi kavrayamayacak kadar basit olmasından kaynaklanır; çözüm modelin karmaşıklığın artırmaktır."
+  },
+  {
+    "id": 54,
+    "question": "Kosinüs Benzerliği (Cosine Similarity) ölçütü kullanılırken odak noktası aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Vektörlerin bileşenlerinin toplam",
+      "B) ki nokta arasındaki en ksa kuş uçuşu mesafe",
+      "C) Vektörlerin mutlak büyüklükleri (Magnitude)",
+      "D) Vektörlerin yönü ve aralarındaki aç"
+    ],
+    "answer": "C",
+    "explanation": "Kosinüs benzerliği vektörlerin uzunluğundan bağımsızdır, sadece aralarındaki açıya bakarak yönsel benzerliği ölçer."
+  },
+  {
+    "id": 55,
+    "question": "Rastgele Arama (Random Search) stratejisinin, Izgara Araması'na (Grid Search) göre yüksek boyutlu arama uzaylarında daha avantajl olmasının temel sebebi nedir?",
+    "options": [
+      "A) Hesaplama maliyetinin üstel olarak artması",
+      "B) Önemli hiperparametreler üzerinde daha fazla benzersiz değer denemesi",
+      "C) Her zaman mutlak küresel optimumu garanti etmesi",
+      "D) Sadece doğrusal modellerde çalışmas"
+    ],
+    "answer": "A",
+    "explanation": "Random Search, önemsiz parametrelere vakit harcamak yerine, rastgele seçimlerle önemli parametre eksenlerini daha yoğun tarar."
+  },
+  {
+    "id": 56,
+    "question": "Aşırı Uyum (Overfitting) problemi yaşayan bir modelde Yanlılık (Bias) ve Varyans (Variance) değerlerinin durumu nasıldır?",
+    "options": [
+      "A) Hem Yanlılık hem Varyans çok yüksektir",
+      "B) Düşük Yanlılık, Yüksek Varyans",
+      "C) Yüksek Yanlılık, Düşük Varyans",
+      "D) Hem Yanlılık hem Varyans çok düşüktür"
+    ],
+    "answer": "B",
+    "explanation": "Aşırı uyumda model veriye çok iyi oturur (Düşük Yanlılık) ancak yeni verilere karşı aşırı tepki verir (Yüksek Varyans)."
+  },
+  {
+    "id": 57,
+    "question": "Manhattan Mesafesi (L1 - City Block), hangi veri özelliklerine sahip durumlarda Öklid Mesafesine (L2) göre daha dirençli ve uygundur?",
+    "options": [
+      "A) Yüksek boyutlu uzaylarda ve ayrık (discrete) özelliklerde",
+      "B) Sürekli ve düşük boyutlu verilerde",
+      "C) Sadece metin verilerinin yönsel karşılaştırmasında",
+      "D) Veri setinde hiç aykırı değer bulunmadığında"
+    ],
+    "answer": "A",
+    "explanation": "Yüksek boyutlu veya seyrek (sparse) verilerde Manhattan mesafesi, Öklid mesafesine göre daha kararl sonuçlar verir."
+  },
+  {
+    "id": 58,
+    "question": "Regresyon modellerinde kullanılan AIC (Akaike Bilgi Kriteri) ve BIC (Bayesian Bilgi Kriteri) için aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      "A) Daha küçük değer, daha az karmaşıklıkla daha iyi uyum sağlayan modeli gösterir.",
+      "B) Sadece eğitim hatasına odaklanırlar, model karmaşıklığın görmezden gelirler.",
+      "C) Değer ne kadar büyükse model o kadar başarılıdır.",
+      "D) AIC ve BIC değerleri her zaman negatif olmak zorundadır."
+    ],
+    "answer": "B",
+    "explanation": "Bu kriterler model başarısını karmaşıklıkla cezalandırır; dolayısıyla daha düşük skor, daha \"optimal\" (yeterince basit ve başarl) modeli gösterir."
+  },
+  {
+    "id": 59,
+    "question": "Jaccard Benzerliği, özellikle hangi tür veri yapılarının karşılaştırılmasında merkezde yer alr?",
+    "options": [
+      "A) Kümelerin (sets) örtüşme miktar",
+      "B) Vektörlerin uzaydaki açsal fark",
+      "C) Zaman serilerindeki trend yönü",
+      "D) Saysal vektörlerin büyüklük fark"
+    ],
+    "answer": "A",
+    "explanation": "Jaccard benzerliği, iki kümenin kesişiminin birleşime oranıdır; örneğin metin benzerliğinde kelime örtüşmelerini ölçer."
+  },
+  {
+    "id": 60,
+    "question": "Regresyon modellerinde 'Hata' veya 'Artık Değer' (Residual) kavram matematiksel olarak nasıl ifade edilir?",
+    "options": [
+      "A) Hata = y2 i −ˆy2 i",
+      "B) Hata = |yi + ˆyi|",
+      "C) Hata = yi −ˆyi",
+      "D) Hata = yi ˆyi"
+    ],
+    "answer": "A",
+    "explanation": "Hata, verideki gerçek değer ile modelin yaptığı tahmin arasındaki basit farktır."
+  },
+  {
+    "id": 61,
+    "question": "Aykırı değerlerin (outliers) yoğun olduğu bir veri setinde model performansını ölçmek için hangi metrik 'daha stabil' bir sonuç verir?",
+    "options": [
+      "A) Ortalama Kare Hata (MSE)",
+      "B) R-Kare (R2)",
+      "C) Kök Ortalama Kare Hata (RMSE)",
+      "D) Ortalama Mutlak Hata (MAE)"
+    ],
+    "answer": "D",
+    "explanation": "MAE hataların mutlak değerini aldığı için, büyük sapmalar karesel olarak cezalandırmaz ve daha dengeli bir skor verir."
+  },
+  {
+    "id": 62,
+    "question": "Ortalama Kare Hata (MSE) metriğinin makine öğrenmesi algoritmalarının optimizasyon aşamasında tercih edilmesinin temel nedeni nedir?",
+    "options": [
+      "A) Her zaman 0 ile 1 arasında sonuç vermesi",
+      "B) Sonuçlarn hedef değişkenle aynı birimde olması",
+      "C) Türevinin kolay alınabilmesi (differentiability)",
+      "D) Aykırı değerleri tamamen yok saymas"
+    ],
+    "answer": "D",
+    "explanation": "MSE, matematiksel olarak türetilebilir bir fonksiyon olduğu için gradyan inişi (gradient descent) optimizasyonunda yaygın olarak tercih edilir."
+  },
+  {
+    "id": 63,
+    "question": "Ridge ve LASSO regresyon modellerinde kullanılan ceza (penalty) teriminin temel amacı nedir?",
+    "options": [
+      "A) Modelin eğitim süresini kısaltmak",
+      "B) Katsaylar (ağırlıklar) sınırlayarak aşırı öğrenmeyi (overfitting) engellemek",
+      "C) Veri setindeki eksik değerleri tahmin etmek",
+      "D) Sınıflandırma doğruluğunu artırmak"
+    ],
+    "answer": "D",
+    "explanation": "Düzenlileştirme (regularization), katsayıların aşırı büyümesini engelleyerek modelin daha basit ve genellenebilir kalmasını sağlar."
+  },
+  {
+    "id": 64,
+    "question": "Lojistik Regresyon modelinde 'Log-Odds' (Lojit) ifadesinin doğrusal bir formülle (wᵎx) modellenmesinin asl amacı nedir?",
+    "options": [
+      "A) Çıktıyı doğrudan bir sınıfa atamak",
+      "B) Olasılık değerini (0,1) tüm reel sayılar uzayına (−∞, +∞) haritalamak",
+      "C) Modeli daha karmaşık hale getirmek",
+      "D) Sadece kategorik değişkenlerle çalşabilmek"
+    ],
+    "answer": "A",
+    "explanation": "Odds oranının logaritması alnarak, sınırlı olan olasılık uzay doğrusal modellerin çalışabileceği sınırsız bir uzaya dönüştürülür."
+  },
+  {
+    "id": 65,
+    "question": "Dengesiz bir veri setinde (örn: %99 Negatif, %1 Pozitif), model başarısını ölçmek için hangisi en az güvenilir metriktir?",
+    "options": [
+      "A) Precision (Kesinlik)",
+      "B) Recall (Duyarlılık)",
+      "C) F1-Skoru",
+      "D) Accuracy (Doğruluk)"
+    ],
+    "answer": "C",
+    "explanation": "Doğruluk (Accuracy), azınlık sınıfın tamamen görmezden gelen bir modeli bile başarılı gösterebileceği için dengesiz verilerde yanıltıcıdır."
+  },
+  {
+    "id": 66,
+    "question": "R2 = 0.82 olan bir model için aşağıdakilerden hangisi en doğru yorumdur?",
+    "options": [
+      "A) Modeldeki özelliklerin %82'si tahmin yapmak için gereksizdir.",
+      "B) Hedef değişkendeki değişkenliğin %82'si modeldeki özellikler tarafından açıklanabiliyor.",
+      "C) Model yapılan tahminlerde ortalama %82 oranında hata yapmaktadır.",
+      "D) Modelin tahminleri ile gerçek değerler arasındaki fark 0.82 birimdir."
+    ],
+    "answer": "B",
+    "explanation": "R-Kare, modelin verideki değişkenliği (varyans) açıklama yüzdesini gösterir."
+  },
+  {
+    "id": 67,
+    "question": "Modele tamamen alakasz (gürültü) değişkenler eklendiğinde R2 ve Düzeltilmiş R2 (Adjusted R2) değerleri nasıl değişir?",
+    "options": [
+      "A) Her iki değer de her zaman azalır.",
+      "B) Alakasız değişkenler hiçbir metriği etkilemez.",
+      "C) R2 artar veya aynı kalır, Düzeltilmiş R2 ise puan düşürerek cezalandırır.",
+      "D) R2 azalır, Düzeltilmiş R2 ise her zaman artmaya devam eder."
+    ],
+    "answer": "D",
+    "explanation": "R-Kare modele eklenen her şeyi kabul edip yükselir; Düzeltilmiş R-Kare ise değişken sayısına göre cezalandırma yapar."
+  },
+  {
+    "id": 68,
+    "question": "Bir model karnesinde RMSE değerinin (53.85), MAE değerinden (42.79) belirgin şekilde yüksek olması neyin kanıtıdır?",
+    "options": [
+      "A) Veri setindeki tüm hataların birbirine eşit büyüklükte olduğunun.",
+      "B) Modelin aşırı öğrenme (overfitting) yaptığının.",
+      "C) Modelin mükemmel bir tahmin kapasitesine sahip olduğunun.",
+      "D) Veri setinde baz tahminlerin çok büyük hatalara (aykırı değerlere) sahip olduğunun."
+    ],
+    "answer": "C",
+    "explanation": "RMSE büyük hataları kare alarak büyüteceği için, MAE ile arasındaki farkının açılması veri setindeki büyük sapmalar işaret eder."
+  },
+  {
+    "id": 69,
+    "question": "Scikit-learn kütüphanesini kullanarak bir regresyon modelinin başarısını (açıklanan varyans) ölçmek için hangi fonksiyon çağırılmalıdır?",
+    "options": [
+      "A) `regression_accuracy(y_true, y_pred)`",
+      "B) `mean_absolute_error(y_true, y_pred)`",
+      "C) `r2_score(y_true, y_pred)`",
+      "D) `mean_squared_error(y_true, y_pred, squared=False)`"
+    ],
+    "answer": "C",
+    "explanation": "Sklearn'de varyans açıklama skoru `r2_score` fonksiyonu ile hesaplanır."
+  },
+  {
+    "id": 70,
+    "question": "Sınıflandırma biliminin temel amacı aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Veri setindeki gürültüyü tamamen yok ederek hatasız modeller üretmek.",
+      "B) Ham verileri analiz ederek bunlar kesin kategorik kararlara dönüştürmek.",
+      "C) Sürekli sayısal değerleri tahmin etmek için regresyon modelleri oluşturmak.",
+      "D) Sadece görsel verileri işleyerek nesne tanıma gerçekleştirmek."
+    ],
+    "answer": "A",
+    "explanation": "Sınıflandırma, girdileri önceden belirlenmiş sınıflara atama işlemidir."
+  },
+  {
+    "id": 71,
+    "question": "Temel Hata Oranı (E) hesaplanırken kullanılan E = (1/n) * |{i | v̂_i ≠ v_i}| formülündeki v̂_i ≠ v_i ifadesi neyi ifade eder?",
+    "options": [
+      "A) Modelin yaptığı doğru tahminlerin toplam sayısını.",
+      "B) Modelin tahmin yaparken kullandığı güven aralığının genişliğini.",
+      "C) Tahmin edilen değerin gerçek değerden farklı olduğu durumlar.",
+      "D) Veri setindeki toplam örnek sayısını tahmin edilen sınıra oranını."
+    ],
+    "answer": "A",
+    "explanation": "Bu ifade \"eşitsizlik\" belirtir; yani tahmin edilen sınıfın gerçek sınıf ile aynı olmadığı durumlar sayar."
+  },
+  {
+    "id": 72,
+    "question": "Bir spam filtresinin önemli bir iş e-postasını yanlışlıkla 'Spam' klasörüne taşıması hangi hata türüne örnektir?",
+    "options": [
+      "A) Tip I Hata (Yalancı Alarm)",
+      "B) Doğru Negatif (True Negative)",
+      "C) Bayes Hack",
+      "D) Tip II Hata (Kaçırılan Tehlike)"
+    ],
+    "answer": "B",
+    "explanation": "Tip I Hata (False Positive), negatif olması gereken bir durumun \"pozitif\" olarak yanlış alarm vermesidir."
+  },
+  {
+    "id": 73,
+    "question": "Karmaşıklık Matrisi (Confusion Matrix) içerisinde yer alan 'Köşegen Dş' (Off − Diagonal) elemanlar bize hangi bilgiyi verir?",
+    "options": [
+      "A) ki farklı hata tipinin (FP ve FN) saylarn.",
+      "B) Veri setindeki toplam örnek sayısını (n).",
+      "C) Modelin doğru tahmin ettiği sınırn dağılımını.",
+      "D) Modelin tahmin yaparken duyduğu olasılıksal güven değerini."
+    ],
+    "answer": "D",
+    "explanation": "Matrisin ana köşegeni doğru tahminleri, köşegen dışındaki hücreler ise yanlış tahminleri gösterir."
+  },
+  {
+    "id": 74,
+    "question": "Hangi durumda 'Kesinlik' (Precision) metriğinin yüksek olması, 'Duyarlılık' (Recall) metriğinden daha kritik kabul edilir?",
+    "options": [
+      "A) Sn arn veri setinde tamamen dengeli dağıldığı durumlarda.",
+      "B) Kanser teşhisi gibi bir vakann atlanmasının ölümcül sonuçlar doğurabileceği durumlarda.",
+      "C) Yalanc Alarlarn (Yanlış Pozitif) maliyetinin çok yüksek olduğu durumlarda.",
+      "D) Modelin tüm sınır birbirinden ayırt etme gücünü tek bir skorla görmek istediğimizde."
+    ],
+    "answer": "B",
+    "explanation": "Yanlış alarm vermenin maliyeti çok fazlaysa (örn: masum birini suçlu bulmak), kesinlik (precision) önceliklendirilir."
+  },
+  {
+    "id": 75,
+    "question": "1000 kişilik bir veri setinde 990 sağlıklı, 10 hasta birey bulunmaktadr. Herkese 'Sağlıklı' diyen bir modelin başarısı hakkında hangisi söylenebilir?",
+    "options": [
+      "A) Modelin F1-Skoru %100 seviyesindedir.",
+      "B) Model %99 Doğruluk (Accuracy) oranına sahip olduğu için mükemmeldir.",
+      "C) Modelin Duyarlılık (Recall) değeri %0 olduğu için hastalık tespiti görevinde başarısızdır.",
+      "D) Model yüksek bir Logaritmik Kayp (Log Loss) puan alarak ödüllendirilir."
+    ],
+    "answer": "B",
+    "explanation": "Model çoğunluk sınıfın tahmin ederek %99 doğruluk alsa da, asl amaç olan 10 hastann hiçbirini bulamadığı için başarısızdır."
+  },
+  {
+    "id": 76,
+    "question": "F1-Skoru hesaplanırken aritmetik ortalama yerine neden harmonik ortalama tercih edilir?",
+    "options": [
+      "A) Sadece Boolean sınıflandırıcılarda kullanlabildiği için.",
+      "B) Uç değerleri (aşırı düşük puanlar) şiddetli bir şekilde cezalandırmak için.",
+      "C) Hesaplanmas daha kolay ve işlem maliyeti daha düşük olduğu için.",
+      "D) Veri setindeki toplam örnek sayısı çok fazla olduğunda daha stabil sonuç verdiği için."
+    ],
+    "answer": "D",
+    "explanation": "Harmonik ortalama, precision veya recall'dan biri çok düşük olduğunda skoru aşağ çeker; dengeyi zorunlu klar."
+  },
+  {
+    "id": 77,
+    "question": "AUC (Area Under the Curve) metriği için aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      "A) AUC değeri arttıkça modelin hata oran (E) da artar.",
+      "B) Sadece belirli bir eşik (threshold) değeri için modelin performansını ölçer.",
+      "C) 0.5 değeri, modelin rastgele tahmin yapmaktan daha iyi bir iş çıkarmadığını gösterir.",
+      "D) Değer 0 ile 1 arasında değil, −∞ile +∞arasındadr."
+    ],
+    "answer": "D",
+    "explanation": "AUC 0.5 ise model şans eseri tahmin yapyor demektir; 1.0 değeri ise mükemmel ayrımı ifade eder."
+  },
+  {
+    "id": 78,
+    "question": "Neyman-Pearson metriğinde (ENP = λCfn n + Cfp n ), λ > 1 olarak seçilirse bu model hakkında ne söylenebilir?",
+    "options": [
+      "A) Yanlış Negatiflerin (vaka kaçırmanın) maliyeti, yanlış alarmlardan daha kritik kabul edilmektedir.",
+      "B) Modelin toplam hata oran her zaman matematiksel olarak minimize edilir.",
+      "C) Model Yanlış Poziti eri (False Positive) önlemeye daha çok odaklanr.",
+      "D) Tüm hata türleri model için eşit derecede önemsiz hale gelir."
+    ],
+    "answer": "A",
+    "explanation": "Lambda katsayısı FN (vaka kaçırma) hatasını daha büyük bir sayıyla çarparak modeli bu hatay yapmamaya zorlar."
+  },
+  {
+    "id": 79,
+    "question": "K adet sınıfa sahip çok sınıflı bir sistemde, sadece bir doğru tahmin senaryosu varken tam olarak kaç farklı hatalı senaryo mevcuttur?",
+    "options": [
+      "A) K(K −1)",
+      "B) K2",
+      "C) K −1",
+      "D) 2K"
+    ],
+    "answer": "C",
+    "explanation": "Toplam K sınıf varsa, bir tanesi doğru sınıf, geri kalan K-1 tanesi ise yanlış sınıf tahminleridir."
+  },
+  {
+    "id": 80,
+    "question": "Boyutluluk Laneti (Curse of Dimensionality) model eğitimi için gereken örnek sayısı ile özellik sayısı (d) arasındaki ilişkiyi nasıl tanımlar?",
+    "options": [
+      "A) Özellik sayısı arttıkça gereken örnek sayısı azalır çünkü veri daha detaylıdır.",
+      "B) Özellik sayısı ile örnek sayısı arasında matematiksel bir ilişki yoktur.",
+      "C) Örnek sayısı özellik sayısına göre doğrusal bir artış gösterir: N ∝d.",
+      "D) Gereken örnek sayısı özellik sayısıyla birlikte üstel olarak artar: N ∝ed."
+    ],
+    "answer": "D",
+    "explanation": "Her yeni özellik uzay genişlettiği için, veriyi temsil edecek örnek sayısını üstel bir hızla artması gerekir."
+  },
+  {
+    "id": 81,
+    "question": "Filtre (Filter) yöntemlerinin sarma (Wrapper) yöntemlerine göre en belirgin avantaj aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Özellikler arasındaki karmaşık etkileşimleri yakalayabilmeleri.",
+      "B) Hesaplama maliyetinin düşük olması ve hızlı çalışmaları.",
+      "C) En yüksek tahmin doğruluğunu garanti etmeleri.",
+      "D) Model performance doğrudan optimize etmeleri."
+    ],
+    "answer": "B",
+    "explanation": "Filtre yöntemleri istatistiksel testlere dayandığı için model eğitmeden hızlıca karar verebilir; Wrapper'lar ise her seferinde model eğitir."
+  },
+  {
+    "id": 82,
+    "question": "Pearson Korelasyonu (r) kullanılarak yapılan özellik seçiminde, hangi durum özelliğin hedef değişkenle yüksek derecede ilgili olduğunu gösterir?",
+    "options": [
+      "A) r değerinin negatif olması.",
+      "B) r değerinin sonsuza yaklaşmas.",
+      "C) |r| değerinin 1'e yakın olması.",
+      "D) r değerinin 0 olması."
+    ],
+    "answer": "A",
+    "explanation": "Mutlak değeri 1'e yakın olan bir katsay, değişkenler arasında çok güçlü bir doğrusal ilişki (pozitif/negatif) olduğunu gösterir."
+  },
+  {
+    "id": 83,
+    "question": "ANOVA F-Testi yönteminde, bir özelliğin sınır ayırt etme gücünün yüksek olduğu nasıl anlaşılır?",
+    "options": [
+      "A) Yüksek bir F değeri elde edilmesiyle.",
+      "B) Sınıf içi varyansın (MSW) sınır aras varyanstan (MSB) büyük olmasıyla.",
+      "C) Özellik değerlerinin standart sapmasının 0 olmasıyla.",
+      "D) F skorunun düşük olmasıyla."
+    ],
+    "answer": "B",
+    "explanation": "Yüksek F skoru, sınır arasındaki farkının, sınıf içi değişkenlikten çok daha büyük olduğunu kanıtlar."
+  },
+  {
+    "id": 84,
+    "question": "Sarma (Wrapper) yöntemlerinden biri olan leriye Doğru Seçim (Forward Selection) süreci nasıl başlar?",
+    "options": [
+      "A) Sadece hedef değişkenle korelasyonu en düşük olan özelliklerle başlar.",
+      "B) Tüm özelliklerin bulunduğu tam küme ile başlar.",
+      "C) Boş bir özellik kümesi (S = ∅) ile başlar.",
+      "D) Rastgele seçilmiş bir özellik alt kümesi ile başlar."
+    ],
+    "answer": "A",
+    "explanation": "leriye doğru seçimde başlangıçta hiçbir özellik yoktur; model başarısını en çok artıran özellikler tek tek kümeye eklenir."
+  },
+  {
+    "id": 85,
+    "question": "LASSO (L1 Düzenlileştirmesi) yöntemini Ridge (L2) yönteminden ayıran ve özellik seçimi yapmasını sağlayan temel mekanizma nedir?",
+    "options": [
+      "A) Hesaplama karmaşıklığınn O(d2) olması.",
+      "B) Sadece doğrusal olmayan modellerde kullanılabilmesi.",
+      "C) Baz katsayıları tam olarak sıfıra eşitleyerek değişkenleri elemesi.",
+      "D) Katsaylar sadece küçültmesi ama asla sıfır yapmamas."
+    ],
+    "answer": "B",
+    "explanation": "LASSO, mutlak değer cezası kullanarak gereksiz gördüğü özelliklerin katsayıların sıfıra indirir."
+  },
+  {
+    "id": 86,
+    "question": "Özellik seçiminde Mutual Information (Karşılıklı Bilgi) yönteminin Pearson korelasyonuna göre en büyük avantaj nedir?",
+    "options": [
+      "A) Sadece kategorik verilerle çalışabilmesi.",
+      "B) Hesaplamasının çok daha hızlı olması.",
+      "C) Sarma (Wrapper) yöntemleri sınıfna girmesi.",
+      "D) Değişkenler arasındaki doğrusal olmayan (non-linear) ilişkileri de yakalayabilmesi."
+    ],
+    "answer": "C",
+    "explanation": "Korelasyon sadece doğrusal bağlar görürken, Mutual Information herhangi bir istatistiksel bağımlılığı tespit edebilir."
+  },
+  {
+    "id": 87,
+    "question": "Öz yinelemeli Özellik Eleme (RFE) algoritması, özelliklerin önemini belirlemek için neyi kullanır?",
+    "options": [
+      "A) Özellikler arasındaki Pearson korelasyon matrisini.",
+      "B) Özelliklerin tek başna varyans değerlerini.",
+      "C) Eğitilen modelden elde edilen katsay ağırlıklar veya önem skorlarn (|w_j|).",
+      "D) Veri setindeki eksik değer oranlarn."
+    ],
+    "answer": "C",
+    "explanation": "RFE, modeli tüm özelliklerle eğitir ve her adımda en düşük ağırlığa (öneme) sahip özelliği kümeden atarak ilerler."
+  },
+  {
+    "id": 88,
+    "question": "Ağaç tabanlı modellerde Permütasyon Önemi (MDA), Safsızlık Azalmasına (MDI) göre neden daha güvenilir kabul edilir?",
+    "options": [
+      "A) Yüksek kardinaliteli (çok sayıda eşsiz değer içeren) değişkenlere karşı daha az yanlı olması.",
+      "B) Hesaplamasının çok daha hızlı olması nedeniyle.",
+      "C) Matematiksel olarak daha basit bir formüle sahip olması.",
+      "D) Sadece eğitim verisi üzerinde hesaplandığı için."
+    ],
+    "answer": "D",
+    "explanation": "MDI, çok sayıda eşsiz sayısal değere sahip değişkenleri haksız yere önemli gösterme eğilimindedir; MDA bu yanlılığı aşar."
+  },
+  {
+    "id": 89,
+    "question": "Elastic Net yönteminde kullanılan α = λ1 λ1+λ2 parametresi neyi kontrol eder?",
+    "options": [
+      "A) Veri setindeki aykırı değerlerin etkisini.",
+      "B) Karar ağacının maksimum derinliğini.",
+      "C) Modelin öğrenme hızını (learning rate).",
+      "D) L1 (LASSO) ve L2 (Ridge) düzenlileştirmeleri arasındaki karışım oranını."
+    ],
+    "answer": "D",
+    "explanation": "Alpha parametresi, Elastic Net'in ne kadar LASSO'ya ne kadar Ridge'e benzeyeceğini belirleyen karışım oranıdır."
+  },
+  {
+    "id": 90,
+    "question": "Makine öğrenmesinde \"Özellik Mühendisliği\" (Feature Engineering) sürecinin temel amacı nedir?",
+    "options": [
+      "A) Verileri sadece görselleştirmek.",
+      "B) Mevcut verilerden modele ek bilgi sağlayacak yeni ve daha anlaml değişkenler üretmek.",
+      "C) Veri setini tamamen silip yeniden oluşturmak.",
+      "D) Modelin eğitim süresini sonsuza kadar uzatmak."
+    ],
+    "answer": "B",
+    "explanation": "Verideki ham bilgiyi, modelin daha kolay öğrenebileceği ve performans artıracak yeni özelliklere dönüştürme sürecidir."
+  }
+]

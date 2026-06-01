@@ -1,0 +1,142 @@
+--- PAGE 1 ---
+DİJİTALLEŞME VE 
+DİJİTAL DÖNÜŞÜMÜN
+TARİHÇESİ
+Taner TURGUT
+03.03.2026
+
+--- PAGE 2 ---
+DİJİTAL DÖNÜŞÜME DOĞRU…
+PROBLEM
+ Fiziki kaynak açısından sınırlı kaynaklara sahip olan firmalar, yenilikçi fikirlerini ancak 
+zamanında ve sistematik olarak müşterilerine sundukları takdirde rekabet avantajını devam 
+ettirebilirler.
+ Birçok işletme mevcut kaynakları ile yenilikçi fikirlerini doğru şekilde sunma ve yönetme 
+becerisini kazanma konusunda zorluk çekmektedir. 
+ÇÖZÜM
+ Temel yetkinlikleri ve kaynaklarını iş süreçleri ve faaliyetlerinde etkin biçimde kullanmak
+ «Sürekli Gelişim», «İyileştirme» ve «Dönüşüm Süreçleri» nin nasıl yönetileceğine cevap 
+bulmak
+--- PAGE 3 ---
+DİJİTALLEŞME, SAYISALLAŞMA ve DİJİTAL DÖNÜŞÜM
+Örnekler:
+❑Bir kâğıt belgeyi tarayıcıdan geçirmek ve 
+bilgisayarda PDF olarak saklamak.
+❑Elinizdeki kâğıt notları Excel dosyasına 
+işlemek.
+❑Analog VHS kasetlerini dijital veri saklayan CD, 
+DVD ya da Blue-Ray disklere kaydetmek
+Sayısallaştırma fiziksel haldeki bir bilgiyi dijital hale getirme 
+sürecidir. 
+→ Diğer bir deyişle; dijital olmayan bir şeyi dijital bir forma 
+dönüştürüp bilgisayar sistemleri tarafından kullanılabilir hale 
+getirmeye ve süreçleri otomatikleştirmeye denir.
+Örnekler:
+❑ Bir bilgisayarda tutulan bir PDF belgesini bulut 
+ortamına yüklemek ve verileri analiz etmek için başka 
+kişilerle paylaşmak
+❑ Bir Excel dosyasını bulutta depolanan bir Google E-
+tablosuna dönüştürmek
+❑ .CD, DVD ya da Blue-Ray disklerde yer alan dijital 
+filmleri online servislere yüklemek. 
+Dijitalleşme, sayısallaştırma araçlarından faydalanarak iş 
+süreçlerini iyileştirmeye denir. 
+→ Diğer bir deyişle; dijitalleşme araçları, sayısallaştırılmış bilginin 
+sizin işinize yaramasını sağlar. dijital teknolojilerin ve verilerin gelir 
+elde etmek, iş süreçlerini iyileştirmek ve merkezine dijital bilgiyi 
+alan dijital kültürü yaratmak için kullanılması anlamına gelir.
+Örnekler:
+❑Çevrimiçi bir PDF dosyasından verileri okumak 
+ya da Google Tablolarda yer alan bir veriyi bir 
+uygulama ya da sisteme analiz etmesi için 
+aktarmak. 
+❑Filmleri çevrimiçi yayınlamak. Müşterilerden 
+veriler elde etmek, kişisel öneriler, teklifler ve 
+reklamlar hazırlamak.
+Dijital Dönüşüm, dijital teknoloji fırsatlarını tam anlamıyla 
+kullanarak iş faaliyetlerini, süreçlerini, ürünlerini ve 
+modellerinin dönüşümüdür. 
+→ Ana amaç, verimliliği artırmak, riskleri yönetmek ya da yeni 
+para kazanma fırsatları keşfetmektir. Diğer bir deyişle dijital 
+dönüşüm, işleri yeni (dijital) bir yolla yapmaktır.
+--- PAGE 4 ---
+DİJİTALLEŞME – DİJİTAL DÖNÜŞÜM
+Dijitalleşme ve dijital dönüşüm genellikle mekanikleşme, otomasyon, sanayileşme ve 
+robotlaşma gibi büyük teknik dönüşümleri tanımlamak olarak da anlaşılmaktadır.
+Fakat, işletmelerin birbirleriyle iş yaparken dijital kanalları kullanmaları sadece teknik 
+anlamda değil, iş yapış kültürü anlamında da ihtiyaç duyulan değişikliklere hizmet 
+etmiştir.
+Degryse (2016) dijitalleşmenin mümkün olması için üç önemli gelişmenin altını çizmiştir. 
+İnternet ve yüksek hızlı ağların gelişmesi
+Ticari, kişisel, coğrafi verilerin bir araya geldiği 
+«Büyük Veri» yapılarının oluşturulması
+Mobil cihazların sayısındaki hızlı artışlar
+--- PAGE 5 ---
+DİJİTALLEŞME – DİJİTAL DÖNÜŞÜM
+ İletişim, bağlantı ve bilgi teknolojilerindeki ilerlemeler; geleneksel işletme 
+stratejilerinin yeniden şekillenmesine olanak vermekte ve zaman, mesafe ve 
+sınırlardan bağımsız iş yürütülebilmesini mümkün kılmaktadır.
+ Degryse’in dile getirdiği bu gelişmeler ve dijital teknolojilerin yaşamımızda 
+yaygın kullanılmaya başlanması ciddi dönüşümleri de beraberinde 
+getirmiştir.
+İnternet ve yüksek hızlı ağların gelişmesi
+Ticari, kişisel, coğrafi verilerin bir araya geldiği 
+«Büyük Veri» yapılarının oluşturulması
+Mobil cihazların sayısındaki hızlı artışlar
+--- PAGE 6 ---
+SANAYİ 4.0
+Dördüncü sanayi devrimi (Sanayi 4.0) veri ve bilgiye olan bağımlılığı nedeniyle
+dijitalleşme olgusunu ciddi anlamda içermektedir. 
+Dijitalleşme olgusunun sanayi ve üretim sektöründe karşılığını bulduğu popüler 
+kavram ise Sanayi 4.0’dır. 
+Ghobakhloo (2018) Sanayi 4.0’ı genel olarak siber fiziksel sistemlerin sanayi 
+üretim sistemlerinde uygulanması olarak ifade ederken ve Posada vd. (2015) 
+General Electric firmasının Kuzey Amerika’da ortaya koyduğu sanayi interneti 
+(endüstriyel internet) ile eş anlamda olduğu belirtmektedir.
+* Endüstriyel İnternet, büyük verilerin, analitik araçların ve kablosuz ağların fiziksel ve 
+endüstriyel ekipmanla entegrasyonu ve bağlanması veya başka şekilde meta düzey ağ 
+oluşturma işlevlerinin dağıtılmış sistemlere uygulanmasıdır.
+--- PAGE 7 ---
+• Dalenogare vd. (2018) Sanayi 4.0 ile ilgili teknolojileri yürüttükleri çalışmada gelişmekte 
+olan ülkelere olan faydaları üzerinden incelerken 10 teknoloji başlığı altında 
+incelemiştir. 
+• Bu teknoloji başlıkları şunlardır: 
+1) Bilgisayar destekli Tasarım ve Üretim (Computer-Aided Design and Manufacturing-CAD/CAM) 
+2) Entegre mühendislik sistemleri (Integrated engineering systems) 
+3) Sensörlerle Dijital Otomasyon (Digital Automation with sensors) 
+4) Esnek Üretim Hatları (Flexible manufacturing lines) 
+5) Simülasyonlar/sanal modellerin analizi (Simulations/analysis of virtual models) 
+SANAYİ 4.0
+10 FAYDA SAĞLAYAN TEKNOLOJİ [ Dalenogare vd. (2018) ] 
+--- PAGE 8 ---
+6) Üretim Yönetim Sistemleri (Manufacturing Execution Systems) ve Denetimsel kontrol ve veri 
+sağlama (Supervisory control and data acquisition) 
+7) Büyük veri toplama ve analizi (Big data collection and analysis) 
+8) Dijital Ürün-Hizmet Sistemleri (Digital Product-Service Systems) 
+9) Eklemeli Üretim, Hızlı prototiplendirme ve 3 boyutlu baskı (Additive Manufacturing, Fast
+prototyping or 3D impression) 
+10) Ürünler için bulut hizmetleri (Cloud services for Product)
+SANAYİ 4.0
+10 FAYDA SAĞLAYAN TEKNOLOJİ [ Dalenogare vd. (2018) ] 
+--- PAGE 9 ---
+DİJİTALLEŞME ÖNÜNDEKİ ENGELLER
+Akademik araştırmalar dijitalleşmenin genellikle büyük ölçekli kurumlarda 
+daha başarılı yürütüldüğünü ve kısıtlı sayıda da küçük/orta ölçekli 
+işletmelerde başarı yakalandığını vurgulamaktadır.  → Sizce Neden?
+Bu durum bir 
+PROBLEM
+’i
+ de beraberinde getirmektedir: 
+Tedarik zinciri içerisinde birbirleriyle bağlantılı olan büyük ve küçük/orta ölçekli kuruluşların 
+yürüttükleri faaliyetler birbirlerini etkilemektedir. 
+Dünya çapında tüm işletmelerin önemli bir kısmını oluşturan küçük/orta ölçekli firmaların 
+ekonomiye ve istihdama katkısı bakımından önemli bir yeri vardır. 
+→ Bu nedenle de Kök Neden’lere yoğunlaşıp çözüm üretilmesi kaçınılmazdır. 
+--- PAGE 10 ---
+TEŞEKKÜRLER
+“Dijital dönüşüm, 
+geçmişin teknolojilerini geride 
+bırakmak değil; 
+bugünün kararlarını, yarının 
+dünyasına hazır hale 
+getirmektir.”
