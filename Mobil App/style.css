@@ -752,70 +752,117 @@ body {
 .note-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    margin-bottom: 10px;
+    border-radius: 14px;
+    margin-bottom: 12px;
     overflow: hidden;
+    transition: border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.note-card:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.note-card.active {
+    border-color: var(--primary-light);
+    box-shadow: 0 8px 24px rgba(var(--theme-color-rgb), 0.12);
 }
 
 .note-header {
     width: 100%;
     background: none;
     border: none;
-    padding: 16px;
+    padding: 18px 20px;
     color: var(--text-main);
-    font-family: var(--font-body);
-    font-size: 1rem;
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
     font-weight: 600;
     text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    transition: background-color 0.25s, color 0.25s;
 }
 
 .note-header:active {
     background-color: var(--bg-card-hover);
 }
 
+.note-card.active .note-header {
+    color: var(--primary-light);
+    background: rgba(255, 255, 255, 0.01);
+}
+
 .note-header i {
-    transition: transform 0.2s;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .note-card.active .note-header i {
     transform: rotate(180deg);
+    color: var(--primary-light);
 }
 
 .note-body {
-    padding: 0 16px;
+    padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out, padding 0.2s ease-out;
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    line-height: 1.5;
+    transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    font-size: 0.9rem;
+    color: var(--text-main);
+    line-height: 1.6;
 }
 
 .note-card.active .note-body {
-    padding-bottom: 16px;
+    padding-bottom: 22px;
+}
+
+.note-body p {
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+}
+
+.note-body strong {
+    color: var(--primary-light);
+    font-weight: 600;
 }
 
 .note-body ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 12px 0;
 }
 
 .note-body li {
-    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px 12px 10px 30px;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    color: var(--text-main);
+    line-height: 1.45;
     position: relative;
-    padding-left: 14px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.note-body li:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .note-body li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
+    content: '\f054'; /* fontawesome chevron-right */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 0.65rem;
     color: var(--primary-light);
-    font-size: 1.2rem;
-    line-height: 1;
+    position: absolute;
+    left: 12px;
+    top: 15px;
 }
 
 /* Nav Bar styles */
