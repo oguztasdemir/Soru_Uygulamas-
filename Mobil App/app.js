@@ -194,7 +194,6 @@ function selectCourse(courseId) {
     
     // Reveal Navigation and header features
     document.querySelector('.app-nav').classList.remove('hidden');
-    document.getElementById('header-progress-text').style.display = 'block';
     document.getElementById('change-course-btn').style.display = 'flex';
     document.getElementById('settings-toggle-btn').style.display = 'flex';
     
@@ -217,7 +216,6 @@ function backToLanding() {
     document.body.classList.remove('theme-gai', 'theme-ds', 'theme-isg');
     document.getElementById('app-logo-title').innerText = 'Mobil App';
     document.getElementById('app-logo-icon').className = 'fa-solid fa-brain-circuit brain-icon';
-    document.getElementById('header-progress-text').style.display = 'none';
     document.getElementById('change-course-btn').style.display = 'none';
     document.getElementById('settings-toggle-btn').style.display = 'none';
     
@@ -780,9 +778,10 @@ function showQuestion() {
     const totalCount = activeQuiz.questions.length;
     const currentCorrectCount = activeQuiz.answers.filter(a => a.isCorrect).length;
     const currentWrongCount = activeQuiz.answers.filter(a => !a.isCorrect).length;
-    const indexText = `Soru ${activeQuiz.currentIndex + 1} / ${totalCount} (D: ${currentCorrectCount} | Y: ${currentWrongCount})`;
-    document.getElementById('quiz-question-number').innerText = indexText;
-    document.getElementById('header-progress-text').innerText = indexText;
+    const indexHTML = `<span style="color: var(--text-main); font-weight: 600;">Soru ${activeQuiz.currentIndex + 1} / ${totalCount}</span> 
+                       <span style="color: var(--success-light); font-weight: 700; margin-left: 10px;"><i class="fa-solid fa-circle-check"></i> D: ${currentCorrectCount}</span> 
+                       <span style="color: var(--wrong-light); font-weight: 700; margin-left: 10px;"><i class="fa-solid fa-circle-xmark"></i> Y: ${currentWrongCount}</span>`;
+    document.getElementById('quiz-question-number').innerHTML = indexHTML;
     
     const progressPercent = ((activeQuiz.currentIndex) / totalCount) * 100;
     document.getElementById('quiz-progress-fill').style.width = `${progressPercent}%`;
@@ -1001,7 +1000,6 @@ function showResults() {
         textContainer.innerText = `Yanlışlarını inceleyerek tekrar dene. Başarı oranınız %${ratio}.`;
     }
     
-    document.getElementById('header-progress-text').innerText = "Sonuçlar";
     updateWrongCountBadge();
 
     // Trigger confetti for celebration
@@ -1200,7 +1198,6 @@ function showCardsQuestion() {
     const totalCount = activeCardsQuiz.questions.length;
     const indexText = `Terim ${activeCardsQuiz.currentIndex + 1} / ${totalCount}`;
     document.getElementById('cards-question-number').innerText = indexText;
-    document.getElementById('header-progress-text').innerText = indexText;
     
     const progressPercent = ((activeCardsQuiz.currentIndex) / totalCount) * 100;
     document.getElementById('cards-progress-fill').style.width = `${progressPercent}%`;
@@ -1369,7 +1366,7 @@ function showCardsResults() {
         textContainer.innerText = `Ders notlarını ve kartları çalışarak tekrar dene. Başarı oranınız %${ratio}.`;
     }
     
-    document.getElementById('header-progress-text').innerText = "Sonuçlar";
+    // Trigger confetti for celebration
 
     // Trigger confetti for celebration
     if (typeof confetti === 'function') {
