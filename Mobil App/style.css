@@ -82,6 +82,7 @@ body {
     font-weight: 700;
     background: linear-gradient(135deg, #E2E8F0, #A0AEC0);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -221,7 +222,7 @@ body {
     width: 66px;
     height: 66px;
     border-radius: 50%;
-    background-color: #121826;
+    background-color: var(--bg-progress-ring-inner, #121826);
 }
 
 .progress-value {
@@ -1063,6 +1064,26 @@ body {
     box-shadow: 0 8px 25px rgba(168, 85, 247, 0.2) !important;
 }
 
+.ds-card {
+    border-left: 4px solid #10B981 !important;
+}
+
+.ds-card:hover, .ds-card:active {
+    border-color: #10B981 !important;
+    background: linear-gradient(145deg, rgba(30, 41, 67, 0.9), rgba(16, 185, 129, 0.2)) !important;
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.2) !important;
+}
+
+.isg-card {
+    border-left: 4px solid #F97316 !important;
+}
+
+.isg-card:hover, .isg-card:active {
+    border-color: #F97316 !important;
+    background: linear-gradient(145deg, rgba(30, 41, 67, 0.9), rgba(249, 115, 22, 0.2)) !important;
+    box-shadow: 0 8px 25px rgba(249, 115, 22, 0.2) !important;
+}
+
 .subject-icon {
     width: 52px !important;
     height: 52px !important;
@@ -1077,6 +1098,16 @@ body {
 .gai-card .subject-icon {
     color: #A855F7 !important;
     background: rgba(168, 85, 247, 0.15) !important;
+}
+
+.ds-card .subject-icon {
+    color: #10B981 !important;
+    background: rgba(16, 185, 129, 0.15) !important;
+}
+
+.isg-card .subject-icon {
+    color: #F97316 !important;
+    background: rgba(249, 115, 22, 0.15) !important;
 }
 
 /* Header Course Switcher */
@@ -1116,6 +1147,38 @@ body.theme-gai .welcome-card:not(.landing-welcome) {
 body.theme-gai .action-card {
     border-color: var(--primary);
     box-shadow: 0 4px 15px rgba(107, 70, 193, 0.1);
+}
+
+/* Dynamic theme overrides for DS */
+body.theme-ds {
+    --primary: #059669;
+    --primary-light: #34D399;
+    --primary-gradient: linear-gradient(135deg, #064E3B, #34D399);
+}
+
+body.theme-ds .welcome-card:not(.landing-welcome) {
+    box-shadow: 0 8px 20px rgba(6, 78, 59, 0.3);
+}
+
+body.theme-ds .action-card {
+    border-color: var(--primary);
+    box-shadow: 0 4px 15px rgba(6, 78, 59, 0.1);
+}
+
+/* Dynamic theme overrides for ISG */
+body.theme-isg {
+    --primary: #DD6B20;
+    --primary-light: #F6AD55;
+    --primary-gradient: linear-gradient(135deg, #C05621, #F6AD55);
+}
+
+body.theme-isg .welcome-card:not(.landing-welcome) {
+    box-shadow: 0 8px 20px rgba(192, 86, 33, 0.3);
+}
+
+body.theme-isg .action-card {
+    border-color: var(--primary);
+    box-shadow: 0 4px 15px rgba(192, 86, 33, 0.1);
 }
 
 /* Navigation Hidden state */
@@ -1178,3 +1241,423 @@ body.theme-gai .action-card {
     pointer-events: none;
     border-color: rgba(255, 255, 255, 0.04);
 }
+
+/* Edit Answer System Styles */
+.edit-badge-btn {
+    background: rgba(183, 148, 244, 0.1);
+    border: 1px solid rgba(183, 148, 244, 0.4);
+    color: #B794F4;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.edit-badge-btn:hover {
+    background: rgba(183, 148, 244, 0.25);
+    border-color: #B794F4;
+    transform: translateY(-1px);
+}
+
+.select-opt-label:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: var(--primary-light) !important;
+}
+
+.select-opt-label input[type="radio"] {
+    accent-color: var(--primary-light);
+    width: 18px;
+    height: 18px;
+}
+
+/* Light Theme overrides */
+body.light-theme {
+    --bg-main: #F7FAFC;
+    --bg-header: rgba(255, 255, 255, 0.85);
+    --bg-card: rgba(255, 255, 255, 0.9);
+    --bg-card-hover: rgba(243, 244, 246, 0.95);
+    --text-main: #1A202C;
+    --text-secondary: #4A5568;
+    --border-color: rgba(0, 0, 0, 0.08);
+    --shadow-color: rgba(0, 0, 0, 0.06);
+    --bg-progress-ring-inner: #F7FAFC;
+}
+
+body.light-theme .circular-progress::before {
+    background-color: #F7FAFC;
+}
+
+body.light-theme .note-body {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+body.light-theme .wrong-item-exp {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+body.light-theme .modal-content {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #1A202C;
+}
+
+body.light-theme .setting-item {
+    background: rgba(0, 0, 0, 0.02) !important;
+    border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Header control buttons */
+.header-control-btn {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.header-control-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+/* Star Badge Button */
+.star-badge-btn {
+    background: rgba(236, 201, 75, 0.1);
+    border: 1px solid rgba(236, 201, 75, 0.4);
+    color: #ECC94B;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.star-badge-btn:hover {
+    background: rgba(236, 201, 75, 0.25);
+    border-color: #ECC94B;
+    transform: translateY(-1px);
+}
+
+.star-badge-btn.active i {
+    font-weight: 900; /* Solid star */
+}
+
+/* Sub Tab Bar */
+.sub-tab-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.sub-tab-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.sub-tab-btn:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.sub-tab-btn.active {
+    color: var(--text-main);
+    background: var(--primary-gradient);
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.2);
+}
+
+/* Custom switch slider */
+.switch-container input:checked + .slider {
+    background-color: #48BB78;
+    box-shadow: 0 0 12px rgba(72, 187, 120, 0.4);
+    border-color: #48BB78;
+}
+
+.switch-container input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Resume Card styles */
+.resume-card {
+    background: linear-gradient(135deg, rgba(236, 201, 75, 0.12), rgba(246, 173, 85, 0.18));
+    border: 1.5px solid #ECC94B;
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(236, 201, 75, 0.1);
+    margin-bottom: 18px;
+    animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+.resume-card:active {
+    transform: scale(0.97);
+}
+
+.resume-content h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ECC94B;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.resume-content p {
+    font-size: 0.8rem;
+    color: var(--text-main);
+    opacity: 0.95;
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 4px 15px rgba(236, 201, 75, 0.15); border-color: rgba(236, 201, 75, 0.8); }
+    50% { box-shadow: 0 4px 25px rgba(236, 201, 75, 0.35); border-color: rgba(236, 201, 75, 1); }
+    100% { box-shadow: 0 4px 15px rgba(236, 201, 75, 0.15); border-color: rgba(236, 201, 75, 0.8); }
+}
+
+/* Adjust navigation bar sizing for 6 buttons */
+.app-nav {
+    padding: 0 4px;
+}
+.nav-item {
+    font-size: 0.62rem;
+    gap: 2px;
+}
+.nav-item i {
+    font-size: 1.1rem;
+}
+
+/* All Questions Screen Styling */
+.all-questions-table-container {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.all-questions-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.all-questions-table th, 
+.all-questions-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.all-questions-table th:first-child,
+.all-questions-table td:first-child {
+    text-align: left;
+    padding-left: 16px;
+}
+
+.all-questions-table th {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--primary-light);
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.01);
+    transition: background-color 0.2s;
+}
+
+.all-questions-table th:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.all-questions-table tr.question-row {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.all-questions-table tr.question-row:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.all-questions-table tr.question-row:active {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Row columns colors */
+.all-questions-table td.col-id {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.all-questions-table td.col-total {
+    color: var(--text-main);
+}
+
+.all-questions-table td.col-correct {
+    color: var(--success-light);
+    font-weight: 600;
+}
+
+.all-questions-table td.col-wrong {
+    color: var(--wrong-light);
+    font-weight: 600;
+}
+
+.sort-icon {
+    font-size: 0.75rem;
+    margin-left: 4px;
+    color: var(--text-secondary);
+    opacity: 0.7;
+    display: inline-block;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.sort-icon.active {
+    color: var(--primary-light);
+    opacity: 1;
+}
+
+/* Wrong list cursor pointer */
+.wrong-item-card {
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.wrong-item-card:hover {
+    background-color: var(--bg-card-hover);
+}
+
+.wrong-item-card:active {
+    transform: scale(0.99);
+}
+
+/* Prevent clicking solve button / star removal buttons from triggering card click details */
+.wrong-action-bar {
+    position: relative;
+    z-index: 5;
+}
+
+/* Mathematical/Formula styling rules */
+.formula-block {
+    background: rgba(var(--theme-color-rgb, 66, 153, 225), 0.03);
+    border: 1px dashed rgba(var(--theme-color-rgb, 66, 153, 225), 0.35);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-family: var(--font-heading);
+    text-align: center;
+    color: var(--theme-color, var(--primary-light));
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.formula-block i {
+    font-family: serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.math-expr {
+    background: rgba(var(--theme-color-rgb, 66, 153, 225), 0.05);
+    border: 1px solid rgba(var(--theme-color-rgb, 66, 153, 225), 0.25);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-family: var(--font-heading);
+    color: var(--theme-color, var(--primary-light));
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.math-expr i {
+    font-family: serif;
+    font-size: 0.95rem;
+}
+
+/* Accordion cards active state adaptive styling */
+.note-card {
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.note-card.active {
+    border-color: var(--theme-color, var(--primary-light));
+    background-color: rgba(var(--theme-color-rgb, 66, 153, 225), 0.02);
+}
+
+.note-card.active .note-header {
+    color: var(--theme-color, var(--primary-light));
+}
+
+/* Inline star icon column inside all-questions table */
+.star-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 4px;
+    color: var(--text-secondary);
+    transition: transform 0.15s, color 0.15s;
+}
+
+.star-toggle-btn:hover {
+    transform: scale(1.15);
+}
+
+.star-toggle-btn.starred {
+    color: #ECC94B;
+}
+
+/* Chart Canvas adjustments */
+#performanceChart {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+

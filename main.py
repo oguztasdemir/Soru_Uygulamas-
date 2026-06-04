@@ -11,9 +11,9 @@ if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8')
 
 
-# Change working directory to "Dijital Web" so the server serves the web application
+# Change working directory to "Mobil App" so the server serves the web application
 script_dir = os.path.dirname(os.path.abspath(__file__))
-os.chdir(os.path.join(script_dir, "Dijital Web"))
+os.chdir(os.path.join(script_dir, "Mobil App"))
 
 # Auto-install qrcode library if missing
 try:
@@ -59,13 +59,43 @@ qr.make(fit=True)
 # print_ascii prints the QR code directly to standard terminal output
 qr.print_ascii(invert=True)
 
+def kill_process_on_port(port):
+    import subprocess
+    import time
+    try:
+        result = subprocess.run(
+            ["netstat", "-ano"],
+            capture_output=True,
+            text=True
+        )
+        if result.returncode == 0:
+            for line in result.stdout.splitlines():
+                if f":{port}" in line and "LISTENING" in line:
+                    parts = line.strip().split()
+                    pid = parts[-1]
+                    print(f"\n[Sistem] Port {port} adresi PID {pid} tarafından kullanılıyor. Sonlandırılıyor...")
+                    subprocess.run(["taskkill", "/F", "/PID", pid], capture_output=True)
+                    time.sleep(1) # Portun serbest kalması için kısa bir süre bekle
+                    return True
+    except Exception as e:
+        print(f"[Uyarı] Port {port} temizlenemedi: {e}")
+    return False
+
 # Start simple web server serving current directory ("Mobil App")
 Handler = http.server.SimpleHTTPRequestHandler
-# Add fallback binding to run on all network interfaces (0.0.0.0)
-with socketserver.TCPServer(("", PORT), Handler) as httpd:
+socketserver.TCPServer.allow_reuse_address = True
+
+try:
+    httpd = socketserver.TCPServer(("", PORT), Handler)
+except OSError:
+    kill_process_on_port(PORT)
+    httpd = socketserver.TCPServer(("", PORT), Handler)
+
+with httpd:
     print(f"\n[INFO] Sunucu port {PORT} üzerinde aktif.")
     print("Kapatmak için: Ctrl + C tuşlarına basın.\n")
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
         print("\n[INFO] Sunucu durduruldu.")
+

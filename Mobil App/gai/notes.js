@@ -35,24 +35,24 @@ const studyNotesGAI = [
         content: `
             <p><strong>Ayrıştırıcı (Discriminative) vs Üretken (Generative) Modeller:</strong>
                 <ul>
-                    <li><strong>Ayrıştırıcı Modeller:</strong> Veriler arasındaki sınırları öğrenir ve girdileri sınıflandırır ($P(y|x)$). (Örn: Bir resmin kedi mi köpek mi olduğunu belirlemek).</li>
-                    <li><strong>Üretken Modeller:</strong> Eğitildikleri veri kümesinin genel olasılık dağılımını ($P(x)$ veya $P(x,y)$) öğrenerek, bu dağılıma dayalı <strong>tamamen yeni, özgün ve gerçekçi içerikler</strong> (metin, resim, ses, video) üretir (Soru 70, 84).</li>
+                    <li><strong>Ayrıştırıcı Modeller:</strong> Veriler arasındaki sınırları öğrenir ve girdileri sınıflandırır (<strong>P(y|x)</strong>). (Örn: Bir resmin kedi mi köpek mi olduğunu belirlemek).</li>
+                    <li><strong>Üretken Modeller:</strong> Eğitildikleri veri kümesinin genel olasılık dağılımını (<strong>P(x)</strong> veya <strong>P(x,y)</strong>) öğrenerek, bu dağılıma dayalı <strong>tamamen yeni, özgün ve gerçekçi içerikler</strong> (metin, resim, ses, video) üretir (Soru 70, 84).</li>
                 </ul>
             </p>
             <p><strong>Üretken Sinir Ağı Mimarileri:</strong>
                 <ul>
-                    <li><strong>GAN (Generative Adversarial Networks - Üretken Çekişmeli Ağlar):</strong> İki sinir ağının birbiriyle yarışmasına dayanır. **Oluşturucu (Generator)** sahte veriler üreterek gerçekçiliği artırmaya çalışır; **Ayırt Edici (Discriminator)** ise gelen verinin gerçek mi yoksa oluşturucu tarafından üretilmiş sahte mi olduğunu denetler. İkisi arasındaki bu çekişmeli eğitim, modellerin aşırı gerçekçi veriler üretmesini sağlar (Soru 66).</li>
-                    <li><strong>Difüzyon (Diffusion) Modelleri:</strong> İki aşamalı çalışır. İleri difüzyon aşamasında görsele aşamalı olarak rastgele Gauss gürültüsü eklenerek tamamen bozuluş sağlanır. Geri difüzyon (denoising) aşamasında ise sinir ağı, rastgele gürültüden aşama aşama gürültüyü temizleyerek **tamamen net, özgün görseller** üretmeyi öğrenir (Örn: Midjourney, Stable Diffusion, DALL-E) (Soru 74).
+                    <li><strong>GAN (Generative Adversarial Networks - Üretken Çekişmeli Ağlar):</strong> İki sinir ağının birbiriyle yarışmasına dayanır. <strong>Oluşturucu (Generator)</strong> sahte veriler üreterek gerçekçiliği artırmaya çalışır; <strong>Ayırt Edici (Discriminator)</strong> ise gelen verinin gerçek mi yoksa oluşturucu tarafından üretilmiş sahte mi olduğunu denetler. İkisi arasındaki bu çekişmeli eğitim, modellerin aşırı gerçekçi veriler üretmesini sağlar (Soru 66).</li>
+                    <li><strong>Difüzyon (Diffusion) Modelleri:</strong> İki aşamalı çalışır. İleri difüzyon aşamasında görsele aşamalı olarak rastgele Gauss gürültüsü eklenerek tamamen bozuluş sağlanır. Geri difüzyon (denoising) aşamasında ise sinir ağı, rastgele gürültüden aşama aşama gürültüyü temizleyerek <strong>tamamen net, özgün görseller</strong> üretmeyi öğrenir (Örn: Midjourney, Stable Diffusion, DALL-E) (Soru 74).
                         <br><em>Stable Diffusion Farkı:</em> Diğer ticari ve kapalı kodlu modellerin aksine, açık kaynak kodlu olması ve kullanıcıların kendi yerel donanımlarında çalıştırıp ince ayar yapabilmelerine olanak tanımasıyla ayrılır (Soru 53).
-                        <br><em>Adobe Firefly Farkı:</em> Adobe Stock ve telif hakkı bulunmayan temiz görsellerle eğitildiğinden, profesyonel tasarımcılara **telif hakkı riski taşımayan** güvenli ticari çıktılar sunmasıyla öne çıkar (Soru 54, 63).
+                        <br><em>Adobe Firefly Farkı:</em> Adobe Stock ve telif hakkı bulunmayan temiz görsellerle eğitildiğinden, profesyonel tasarımcılara <strong>telif hakkı riski taşımayan</strong> güvenli ticari çıktılar sunmasıyla öne çıkar (Soru 54, 63).
                     </li>
                 </ul>
             </p>
             <p><strong>Transformer Mimarisi ve Dil Devrimi:</strong>
-                <br>Üretken yapay zekada modern dönemi başlatan ve öz-dikkat (self-attention) mekanizmasını tanıtan dönüm noktası makale **"Attention Is All You Need"** **2017** yılında yayımlanmıştır (Soru 68). 
-                <br>Transformer, RNN ve LSTM gibi eski mimarilerin sıralı (kelime kelime) çalışma darboğazını aşarak, veriler arasındaki ilişkileri **paralel olarak** aynı anda işler ve devasa eğitim hızları sunar (Soru 76).
+                <br>Üretken yapay zekada modern dönemi başlatan ve öz-dikkat (self-attention) mekanizmasını tanıtan dönüm noktası makale <strong>"Attention Is All You Need"</strong>, <strong>2017</strong> yılında yayımlanmıştır (Soru 68). 
+                <br>Transformer, RNN ve LSTM gibi eski mimarilerin sıralı (kelime kelime) çalışma darboğazını aşarak, veriler arasındaki ilişkileri <strong>paralel olarak</strong> aynı anda işler ve devasa eğitim hızları sunar (Soru 76).
                 <ul>
-                    <li><strong>Öz-Dikkat (Self-Attention):</strong> Cümledeki kelimelerin birbirleriyle olan anlamsal bağlarını **Query (Sorgu), Key (Anahtar) ve Value (Değer)** vektörleri aracılığıyla hesaplar. Böylece model, kelimenin cümlenin neresinde olduğuna bakmaksızın bağlamı kavrar (Soru 72).</li>
+                    <li><strong>Öz-Dikkat (Self-Attention):</strong> Cümledeki kelimelerin birbirleriyle olan anlamsal bağlarını <strong>Query (Sorgu), Key (Anahtar) ve Value (Değer)</strong> vektörleri aracılığıyla hesaplar. Böylece model, kelimenin cümlenin neresinde olduğuna bakmaksızın bağlamı kavrar (Soru 72).</li>
                 </ul>
             </p>
         `
@@ -64,16 +64,16 @@ const studyNotesGAI = [
             <p><strong>Sistemik İstem Tasarımı Formülleri:</strong>
                 <ul>
                     <li><strong>C.R.A.F.T.E.D. Formülü:</strong> Mükemmel istem inşası için kullanılan 7 temel bileşendir:
-                        <br>1. **Character (Karakter):** Modele atanan rol veya persona (Örn: "Kıdemli Yazılım Mimarı gibi davran") (Soru 13, 24, 32).
-                        <br>2. **Request (Görev):** Modelden beklenen temel eylem veya soru (Soru 6).
-                        <br>3. **Action (Eylemler):** Görevi yerine getirirken izlemesi gereken adım adım yönergeler (Soru 22).
-                        <br>4. **Focus (Bağlam):** Konunun sınırları ve arka plan detayları (Soru 5).
-                        <br>5. **Type (Biçim/Format):** Çıktının yapısı (tablo, liste, kod bloğu vb.) (Soru 14, 31).
-                        <br>6. **Extra Info (Bilgi Havuzu):** Gem veya Custom GPT'lere yüklenen harici bilgi tabanı.
-                        <br>7. **Do's and Dont's (Kurallar):** Modelin kesinlikle uyması gereken kısıtlamalar (Soru 6).
+                        <br>1. <strong>Character (Karakter):</strong> Modele atanan rol veya persona (Örn: "Kıdemli Yazılım Mimarı gibi davran") (Soru 13, 24, 32).
+                        <br>2. <strong>Request (Görev):</strong> Modelden beklenen temel eylem veya soru (Soru 6).
+                        <br>3. <strong>Action (Eylemler):</strong> Görevi yerine getirirken izlemesi gereken adım adım yönergeler (Soru 22).
+                        <br>4. <strong>Focus (Bağlam):</strong> Konunun sınırları ve arka plan detayları (Soru 5).
+                        <br>5. <strong>Type (Biçim/Format):</strong> Çıktının yapısı (tablo, liste, kod bloğu vb.) (Soru 14, 31).
+                        <br>6. <strong>Extra Info (Bilgi Havuzu):</strong> Gem veya Custom GPT'lere yüklenen harici bilgi tabanı.
+                        <br>7. <strong>Do's and Dont's (Kurallar):</strong> Modelin kesinlikle uyması gereken kısıtlamalar (Soru 6).
                     </li>
                     <li><strong>C.L.E.A.R. Kalite Kontrol Listesi:</strong> Üretilen çıktıyı denetlemek ve istemi rafine etmek için kullanılır (Soru 29, 38).
-                        <br>*Explicit (Açık)* kriteri çıktı sınırlandırma komutlarının yoruma açık olmayacak şekilde net ve ölçülebilir olmasını ifade eder (Örn: "Kısa yaz" yerine "50 kelimeyi geçme") (Soru 23, 36).
+                        <br><em>Explicit (Açık)</em> kriteri çıktı sınırlandırma komutlarının yoruma açık olmayacak şekilde net ve ölçülebilir olmasını ifade eder (Örn: "Kısa yaz" yerine "50 kelimeyi geçme") (Soru 23, 36).
                     </li>
                 </ul>
             </p>
@@ -81,7 +81,7 @@ const studyNotesGAI = [
                 <ul>
                     <li><strong>Zero-Shot (Sıfır Örnekli):</strong> Modele daha önce hiç örnek göstermeden doğrudan talimatı çözmesini beklemektir (Soru 86).</li>
                     <li><strong>Few-Shot (Az Örnekli):</strong> Modele ne yapacağını sadece tarif etmek yerine, girdilerin ve istenen çıktıların birkaç somut örneğini göstererek ton ve format uyumunu artırma tekniğidir (Soru 26, 33).</li>
-                    <li><strong>Düşünce Zinciri (Chain-of-Thought - CoT):</strong> Modelin karmaşık mantıksal veya matematiksel problemleri çözerken ara adımları ve mantık silsilesini takip edebilmesi için **"Adım adım düşün"** sihirli komutuyla akıl yürütmesini sağlamaktır (Soru 25, 34, 65).</li>
+                    <li><strong>Düşünce Zinciri (Chain-of-Thought - CoT):</strong> Modelin karmaşık mantıksal veya matematiksel problemleri çözerken ara adımları ve mantık silsilesini takip edebilmesi için <strong>"Adım adım düşün"</strong> sihirli komutuyla akıl yürütmesini sağlamaktır (Soru 25, 34, 65).</li>
                     <li><strong>Self-Consistency (Öz-Tutarlılık):</strong> Modelin aynı soruya birden fazla farklı CoT akıl yürütme yoluyla yanıtlar üretip, aralarından en tutarlı ve en çok tekrarlanan yanıtı seçerek doğruluk oranını artırmasıdır (Soru 28, 39).</li>
                     <li><strong>Chunking (Parçalara Bölme):</strong> Çok büyük veya karmaşık görevlerin tek seferde verilip modelin bağlam sınırlarını zorlayarak sığ/eksik yanıtlar üretmesini (Darboğaz) önlemek amacıyla görevi küçük parçalara bölme işlemidir (Soru 27, 35).</li>
                 </ul>
@@ -92,7 +92,7 @@ const studyNotesGAI = [
         title: "Bölüm 4: Gelişmiş Mimariler ve Yapay Zekâ Araçları",
         content: `
             <p><strong>RAG Mimarisi (Retrieval-Augmented Generation - Arama Destekli Üretim):</strong> 
-            Dil modelleri eğitildikleri tarihe kadar olan bilgileri bilirler. RAG, dil modeline bir dış bilgi kaynağı entegre ederek (genellikle metinlerin yüksek boyutlu sayısal vektörlere dönüştürülüp vektör veritabanlarında saklandığı yapı), sorulan soruyla ilgili güncel belgeleri dinamik olarak getirir ve modele bağlam olarak sunar. Böylece model güncel verilere erişir ve **halüsinasyon riski sıfıra yakın** çıktılar üretir (Soru 88, 92).</p>
+            Dil modelleri eğitildikleri tarihe kadar olan bilgileri bilirler. RAG, dil modeline bir dış bilgi kaynağı entegre ederek (genellikle metinlerin yüksek boyutlu sayısal vektörlere dönüştürülüp vektör veritabanlarında saklandığı yapı), sorulan soruyla ilgili güncel belgeleri dinamik olarak getirir ve modele bağlam olarak sunar. Böylece model güncel verilere erişir ve <strong>halüsinasyon riski sıfıra yakın</strong> çıktılar üretir (Soru 88, 92).</p>
             <p><strong>Özel Yapay Zekâ Asistan Platformları:</strong>
                 <ul>
                     <li><strong>OpenAI Custom GPTs:</strong> Harici API entegrasyonu (Actions) sunması ve şirket içi/ekip içi paylaşım kolaylıkları sayesinde startup ekiplerinin entegrasyonları için çok elverişlidir. Mayıs 2024 itibarıyla Custom GPT'leri kullanmak ücretsiz üyeler için de aktifleştirilmiştir (Soru 4, 7).</li>
@@ -112,18 +112,18 @@ const studyNotesGAI = [
     {
         title: "Bölüm 5: Etik, Hukuk, Güvenlik ve Regülasyonlar",
         content: `
-            <p><strong>Halüsinasyon (Uydurma):</strong> Modellerin uydurma ve yanlış bilgileri son derece ikna edici ve akıcı bir üslupla üretmesi durumudur. Akademik çalışmalarda yapay zekanın ürettiği kaynakçaların hatalı olma riski **%30 civarındadır**; bu yüzden kaynakçadaki her referans manuel olarak doğrulanmalıdır (Soru 44, 48, 62, 98).</p>
+            <p><strong>Halüsinasyon (Uydurma):</strong> Modellerin uydurma ve yanlış bilgileri son derece ikna edici ve akıcı bir üslupla üretmesi durumudur. Akademik çalışmalarda yapay zekanın ürettiği kaynakçaların hatalı olma riski <strong>%30 civarındadır</strong>; bu yüzden kaynakçadaki her referans manuel olarak doğrulanmalıdır (Soru 44, 48, 62, 98).</p>
             <p><strong>Akademik Etik Kuralları:</strong>
                 <ul>
-                    <li>Yapay zeka ortak yazarlık kriterlerini (fikri katkı sağlama ve yasal/entelektüel sorumluluk üstlenme) karşılayamadığı için bilimsel yayınlarda **yazar (co-author) olarak listelenemez** (Soru 42, 45).</li>
-                    <li>Her türlü bilimsel hata, intihal veya yanlış beyandan doğacak sorumluluk doğrudan **insan araştırmacıya (aracın kendisine) aittir** (Soru 42, 61).</li>
-                    <li>Şeffaflık (Transparency) ilkesi gereği, bilimsel çalışmalarda kullanılan yapay zeka aracının adı, sürüm bilgisi ve tam olarak hangi amaçla kullanıldığı metodoloji bölümünde **açıkça belirtilmelidir** (Soru 43, 60).</li>
+                    <li>Yapay zeka ortak yazarlık kriterlerini (fikri katkı sağlama ve yasal/entelektüel sorumluluk üstlenme) karşılayamadığı için bilimsel yayınlarda <strong>yazar (co-author) olarak listelenemez</strong> (Soru 42, 45).</li>
+                    <li>Her türlü bilimsel hata, intihal veya yanlış beyandan doğacak sorumluluk doğrudan <strong>insan araştırmacıya (yazarın kendisine) aittir</strong> (Soru 42, 61).</li>
+                    <li>Şeffaflık (Transparency) ilkesi gereği, bilimsel çalışmalarda kullanılan yapay zeka aracının adı, sürüm bilgisi ve tam olarak hangi amaçla kullanıldığı metodoloji bölümünde <strong>açıkça belirtilmelidir</strong> (Soru 43, 60).</li>
                     <li>Yapay zeka kullanıldığını saklamak/gizlemek ciddi bir akademik etik ihlali ve suçtur (Soru 49).</li>
                 </ul>
             </p>
             <p><strong>Veri Gizliliği ve Siber Tehditler:</strong>
                 <ul>
-                    <li>Katılımcı verilerinin veya hassas kurumsal verilerin yapay zekaya yüklenip işlenmesinden önce mutlaka **anonimleştirilmesi** (kimlik bilgilerinden arındırılması) gerekir (Soru 46, 69).</li>
+                    <li>Katılımcı verilerinin veya hassas kurumsal verilerin yapay zekaya yüklenip işlenmesinden önce mutlaka <strong>anonimleştirilmesi</strong> (kimlik bilgilerinden arındırılması) gerekir (Soru 46, 69).</li>
                     <li><strong>Prompt Injection (İstem Enjeksiyonu):</strong> Üçüncü taraf veya kullanıcı girdileriyle modelin orijinal sistem talimatlarının sabote edilip devre dışı bırakılmasıdır.</li>
                     <li><strong>Jailbreaking (Sınırları Aşma):</strong> Özel olarak tasarlanmış istemlerle modelin güvenlik filtrelerini aşarak, modelin zararlı, yasa dışı veya etik dışı çıktılar üretmeye zorlanmasıdır.</li>
                 </ul>

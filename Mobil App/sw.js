@@ -1,14 +1,20 @@
-const CACHE_NAME = 'ml-app-v2';
+const CACHE_NAME = 'ml-app-v3';
 const ASSETS = [
   'index.html',
   'style.css',
   'app.js',
   'ml/notes.js',
   'gai/notes.js',
+  'ds/notes.js',
+  'isg/notes.js',
   'ml/questions.json',
   'gai/questions.json',
+  'ds/questions.json',
+  'isg/questions.json',
   'ml/cards.json',
   'gai/cards.json',
+  'ds/cards.json',
+  'isg/cards.json',
   'manifest.json',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
 ];

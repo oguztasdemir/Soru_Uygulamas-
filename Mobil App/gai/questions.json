@@ -1,222 +1,6 @@
 [
   {
-    "id": 2,
-    "question": "Google Gemini Gems'in en güçlü özelliği aşağıdakilerden hangisidir?",
-    "options": [
-      "A) Asistanı herkesle açık bir link üzerinden paylaşma",
-      "B) Google Workspace (Gmail, Drive, Docs) entegrasyonu",
-      "C) Harici API'lar ile karmaşık otomasyonlar kurma",
-      "D) GPT Store üzerinden para kazanma imkanı"
-    ],
-    "answer": "B",
-    "explanation": "Google Gemini Gems'in en ayırt edici ve güçlü yönlerinden biri, Google ekosistemiyle olan yerleşik uyumudur. Kullanıcılar Google Drive, Gmail ve Docs gibi Workspace uygulamalarındaki verilerini doğrudan asistanın kullanımına sunabilirler."
-  },
-  {
-    "id": 3,
-    "question": "OpenAI Custom GPTs oluştururken bilgi tabanı (knowledge base) için en fazla kaç dosya yüklenebilir?",
-    "options": [
-      "A) Sınırsız dosya",
-      "B) 50 dosya",
-      "C) 20 dosya",
-      "D) 10 dosya"
-    ],
-    "answer": "C",
-    "explanation": "OpenAI platformunda bir Custom GPT oluştururken bilgi tabanına (Knowledge Base) yüklenebilecek maksimum dosya sayısı 20 olarak sınırlandırılmıştır."
-  },
-  {
-    "id": 4,
-    "question": "Aşağıdaki platformlardan hangisi ücretsiz olarak özelleştirilmiş AI asistanı oluşturmaya olanak tanır?",
-    "options": [
-      "A) Claude Projects",
-      "B) OpenAI Custom GPTs",
-      "C) GPT Store",
-      "D) Google Gemini Gems"
-    ],
-    "answer": "B",
-    "explanation": "Gelişmiş asistan oluşturma özellikleri (Claude Projects, OpenAI Custom GPTs ve Google Gemini Gems) normal şartlarda ilgili platformların ücretli aboneliklerini (Claude Pro, ChatGPT Plus, Gemini Advanced) gerektirir. Ancak OpenAI, Mayıs 2024 güncellemesiyle daha önceden oluşturulmuş Custom GPT'lerin kullanımını ücretsiz kullanıcılara açmıştır. Bu doğrultuda soruda hedeflenen en yakın seçenek B'dir."
-  },
-  {
-    "id": 5,
-    "question": "Bağlam (context) penceresi bakımından en geniş kapasiteyi hangi platform sunmaktadır?",
-    "options": [
-      "A) Google Gemini Gems (1M token)",
-      "B) Claude Projects (200K token)",
-      "C) Tüm platformlar 128K token sunar",
-      "D) OpenAI Custom GPTs (128K token)"
-    ],
-    "answer": "B",
-    "explanation": "Gemini 2.5 Pro modelinin en belirgin teknik üstünlüğü, 1 milyon tokenlik devasa bağlam (context) penceresi sayesinde çok büyük veri dosyalarını tek seferde işleyebilmesidir."
-  },
-  {
-    "id": 6,
-    "question": "İyi bir asistan oluşturmak için hazırlanan prompt şablonunda 'KURALLAR' bölümünün amacı nedir?",
-    "options": [
-      "A) Asistanın neyi yapması ve kesinlikle neyi yapmaması gerektiğini belirlemek",
-      "B) Asistanın sadece hangi dilde konuşacağını seçmek",
-      "C) Yüklenecek dosyaların formatını denetlemek",
-      "D) Sadece asistanın ismini belirlemek"
-    ],
-    "answer": "A",
-    "explanation": "Prompt şablonundaki 'KURALLAR' veya 'TALİMATLAR' bölümü, asistanın davranış sınırlarını çizer. Asistanın hangi görevleri yerine getireceğini, hangi üslubu kullanacağını ve özellikle neleri yapmaktan kaçınması gerektiğini (kısıtlamaları) netleştirir."
-  },
-  {
-    "id": 7,
-    "question": "Bir startup ekibi için 'Custom GPTs' platformunun 'Gems'e göre en büyük avantajı nedir?",
-    "options": [
-      "A) Sadece Google Drive dosyalarıyla çalışması",
-      "B) Ücretsiz olması sayesinde maliyet düşürmesi",
-      "C) Ekiple paylaşılabilir olması ve API entegrasyonu sunması",
-      "D) Prompt yazmaya ihtiyaç duymaması"
-    ],
-    "answer": "C",
-    "explanation": "OpenAI Custom GPTs, API entegrasyonları (Actions) ve ekiple/kurum içi paylaşım imkanı sunarak startup ekiplerinin kendi sistemleriyle entegre çalışabilen özelleştirilmiş botlar geliştirmesine daha elverişlidir."
-  },
-  {
-    "id": 8,
-    "question": "Özelleştirilmiş bir AI oluştururken yapılan en yaygın hata aşağıdakilerden hangisidir?",
-    "options": [
-      "A) 'Yardımcı ol' gibi çok genel ve belirsiz talimatlar kullanmak",
-      "B) Bilgi tabanına örnek dosyalar eklemek",
-      "C) Asistanı yayınlamadan önce test etmek",
-      "D) Çok spesifik talimatlar vermek"
-    ],
-    "answer": "A",
-    "explanation": "Yapay zeka asistanı oluştururken en yaygın hata, \"Kullanıcıya her konuda yardımcı ol\" veya \"İyi bir asistan ol\" gibi yoruma açık, belirsiz ve çok genel talimatlar vermektir. Bu durum asistanın tutarsız ve verimsiz çalışmasına yol açar."
-  },
-  {
-    "id": 9,
-    "question": "Claude Projects hakkında dokümanda verilen bilgilerden yola çıkarak, paylaşım özelliği için ne söylenebilir?",
-    "options": [
-      "A) Google Gems gibi hiç paylaşım yapılamaz",
-      "B) Sadece link ile dünya çapında paylaşılabilir",
-      "C) Paylaşım seçenekleri sınırlıdır",
-      "D) Tamamen herkese açık bir marketplace'e sahiptir"
-    ],
-    "answer": "C",
-    "explanation": "Claude Projects'te projeler yalnızca organizasyon (Team) içindeki diğer kullanıcılarla paylaşılabilir. ChatGPT'deki gibi genel kullanıma açık bir linkle dış dünyayla paylaşma veya GPT Store benzeri herkese açık bir pazaryeri (marketplace) bulunmamaktadır. Bu yüzden paylaşım seçenekleri sınırlıdır."
-  },
-  {
-    "id": 10,
-    "question": "Aşağıdaki senaryolardan hangisi için Google Gemini Gems kullanmak en mantıklıdır?",
-    "options": [
-      "A) Harici bir stok takip yazılımına API ile bağlanan bir bot",
-      "B) Asistanı GPT Store'da satarak gelir elde etmek",
-      "C) Müşteri destek botunu tüm dünya ile paylaşmak",
-      "D) Drive'daki ders notlarına erişip özet çıkaran bir öğrenci asistanı"
-    ],
-    "answer": "D",
-    "explanation": "Google Gemini Gems, Google Workspace (Google Drive, Gmail, Docs) araçlarıyla yerleşik entegrasyona sahiptir. Dolayısıyla Google Drive'daki notlara doğrudan erişip bunlardan özet çıkarma senaryosu Gemini Gems için en uygun ve verimli kullanım alanıdır."
-  },
-  {
-    "id": 11,
-    "question": "Gem mimarisinin temel amacı aşağıdakilerden hangisidir?",
-    "options": [
-      "A) Sadece metin tabanlı yanıtların hızını artırmak.",
-      "B) Yapay zekanın genel bilgi birikimini tamamen sıfırlamak.",
-      "C) İnternet bağlantısı olmadan Gemini kullanımını sağlamak.",
-      "D) Her sohbette yeni bir istem (prompt) yazma zorunluluğunu ortadan kaldırmak."
-    ],
-    "answer": "D",
-    "explanation": "Gem'lerin temel amacı, kullanıcının belirli görev ve roller için özelleştirilmiş talimatları bir kez tanımlayıp kaydetmesini sağlayarak, her sohbette aynı promptu yazma zorunluluğunu ortadan kaldırmaktır."
-  },
-  {
-    "id": 12,
-    "question": "Gem kurulum sürecinde 'Laboratuvar' olarak adlandırılan aşamalardan hangisi sistemin aktifleşmesini sağlar?",
-    "options": [
-      "A) Keşfet",
-      "B) Test Et",
-      "C) Kimlik Ver",
-      "D) Sisteme Ekle"
-    ],
-    "answer": "D",
-    "explanation": "Gem oluşturma sürecinde yapılandırma tamamlandıktan sonra asistanı kaydetmek ve kullanıma sunmak (aktifleşmesini sağlamak) için 'Sisteme Ekle' seçeneği kullanılır."
-  },
-  {
-    "id": 13,
-    "question": "Gem'in hangi rolü oynayacağını ve nasıl bir persona çizeceğini belirleyen yapı taşı hangisidir?",
-    "options": [
-      "A) Görev",
-      "B) Karakter",
-      "C) Bağlam",
-      "D) Biçim"
-    ],
-    "answer": "B",
-    "explanation": "Gem'in veya promptun hangi kimliğe bürüneceğini, nasıl bir ses tonu ve üslup kullanacağını (personayı) belirleyen yapı taşı 'Karakter'dir."
-  },
-  {
-    "id": 14,
-    "question": "Bir Gem tasarlarken çıktının madde işaretleri veya tablolar şeklinde olmasını istiyorsanız hangi sütuna ayrıntı eklemelisiniz?",
-    "options": [
-      "A) Karakter",
-      "B) Görev",
-      "C) Biçim",
-      "D) Bağlam"
-    ],
-    "answer": "C",
-    "explanation": "Çıktının görsel yapısını, listeler, tablolar, kod blokları veya paragraflar halinde mi olacağını belirleyen prompt bileşeni 'Biçim' (Format) seçeneğidir."
-  },
-  {
-    "id": 15,
-    "question": "Beyin Fırtınası Yardımcısı (Fikir Üretim Motoru) olarak tasarlanan bir Gem'de hangi sütunların vurgusu en yüksektir?",
-    "options": [
-      "A) Karakter ve Biçim",
-      "B) Görev ve Biçim",
-      "C) Sadece Görev",
-      "D) Karakter ve Bağlam"
-    ],
-    "answer": "B",
-    "explanation": "Beyin fırtınası yardımcısında fikirlerin listelenmesi ve yapılandırılması için en kritik bileşenler yerine getirilecek 'Görev' ve çıktının yapısını belirleyen 'Biçim'dir."
-  },
-  {
-    "id": 16,
-    "question": "Gem'inize 'Hafıza' eklemek için kullanılan yöntem aşağıdakilerden hangisidir?",
-    "options": [
-      "A) Gemini'ye önceki sohbetleri hatırlatmasını söylemek.",
-      "B) Karakter sütununa daha fazla cümle yazmak.",
-      "C) Talimat Döngüsünü daha fazla tekrarlamak.",
-      "D) Harici dosya (PDF, Drive vb.) yükleme."
-    ],
-    "answer": "D",
-    "explanation": "Gem'lere bilgi tabanı (hafıza) eklemek ve kendi verilerimiz üzerinde çalışmasını sağlamak için harici dosya (PDF, TXT, Google Drive vb.) yükleme yöntemi kullanılır."
-  },
-  {
-    "id": 17,
-    "question": "Gem'in yanıt verirken bilgi alıntılarından gizlemesini sağlayan özellik hangisidir?",
-    "options": [
-      "A) Hafıza Temizleyici",
-      "B) Görünmez Kaynaklar",
-      "C) Alıntı Filtresi",
-      "D) Bağlam Kilidi"
-    ],
-    "answer": "C",
-    "explanation": "Yapay zekanın yüklenen dosyalardan alıntı göstermesini engelleyen veya gizleyen ayara 'Alıntı Filtresi' denir."
-  },
-  {
-    "id": 18,
-    "question": "Mükemmel Gem'in Formülü (Sentez) aşağıdakilerden hangisinin birleşimidir?",
-    "options": [
-      "A) 4 Temel Sütun + Özel Bilgi Havuzu + Talimat Döngüsü",
-      "B) Karakter + Görev + Bağlam + Biçim",
-      "C) Test Et + Kaydet + Paylaş",
-      "D) İstem (Prompt) + Analiz + Çıktı"
-    ],
-    "answer": "A",
-    "explanation": "Sentez formülü; prompt tasarımının yapı taşları olan 4 Temel Sütunu (Karakter, Görev, Bağlam, Biçim), Gem'in kullanacağı Özel Bilgi Havuzunu (Knowledge Base) ve sürekli geri bildirimle iyileştirme sağlayan Talimat Döngüsünü kapsar."
-  },
-  {
-    "id": 19,
-    "question": "Kodlama Yardımcısı olarak tasarlanan bir Gem'in 'Biçim' (Format) beklentisi aşağıdakilerden hangisidir?",
-    "options": [
-      "A) Kopyalanabilir bloklar halinde ve değişken açıklamalarıyla sunum.",
-      "B) Şiirsel ve coşkulu bir üslup.",
-      "C) En az 3 farklı programlama dilinde çıktı.",
-      "D) Sadece metin üzerinden teorik anlatım."
-    ],
-    "answer": "A",
-    "explanation": "Bir kodlama yardımcısının en verimli çıktısı, kullanıcının doğrudan kopyalayıp editörüne yapıştırabileceği kod blokları (markdown syntax) sunması ve bu koddaki değişkenleri/fonksiyonları anlaşılır açıklamalarla detaylandırmasıdır."
-  },
-  {
-    "id": 20,
+    "id": 1,
     "question": "İstem (Prompt) mühendisliğinin temel amacı aşağıdakilerden hangisidir?",
     "options": [
       "A) Yapay zekâ ile etkileşimi tahminden çıkarıp tekrarlanabilir bir disipline dönüştürmek.",
@@ -225,34 +9,34 @@
       "D) Yapay zekânın işlemci hızını donanımsal olarak artırmak."
     ],
     "answer": "A",
-    "explanation": "İstem Mühendisliğinin temel amacı, yapay zekayla etkileşimi rastgele denemelerden çıkarıp sistemli, öngörülebilir ve tekrarlanabilir bir disipline dönüştürmektir."
+    "explanation": "İstem mühendisliği, tesadüfi sonuçlar yerine mühendislik disipliniyle tutarlı ve yüksek kaliteli çıktılar almayı hedefler."
   },
   {
-    "id": 21,
+    "id": 2,
     "question": "İstem Mühendisliğindeki 'Temel Denklem' aşağıdakilerden hangisidir?",
     "options": [
-      "A) Donanım + Yazılım = YapayZekâ",
-      "B) Hız x Veri = Doğruluk",
+      "A) Donanım + Yazılım = Yapay Zekâ",
+      "B) Hız × Veri = Doğruluk",
       "C) Girdi = Çıktı",
       "D) Prompt - Bağlam = Yanıt"
     ],
     "answer": "C",
-    "explanation": "İstem mühendisliğindeki temel denklem 'Girdi = Çıktı' (GIGO - Garbage In, Garbage Out) prensibidir; modele ne kadar kaliteli girdi sağlanırsa o kadar kaliteli çıktı alınır."
+    "explanation": "Yapay zekâ sihir değildir; çıktı kalitesi doğrudan girdinin netliğine ve kalitesine bağlıdır."
   },
   {
-    "id": 22,
+    "id": 3,
     "question": "C.R.A.F.T. oluşturma formülündeki 'A' (Actions) harfi neyi temsil eder?",
     "options": [
       "A) Kullanılacak olan yapay zekâ modelinin adı.",
       "B) Modelin izlemesi gereken adım adım talimatlar.",
       "C) Yapay zekânın hata yapma olasılığı.",
-      "D) Analitik verilerin tabloya dönüştürmesi."
+      "D) Analitik verilerin tabloya dönüştürülmesi."
     ],
     "answer": "B",
-    "explanation": "C.R.A.F.T. formülünde 'A' (Actions - Eylemler) harfi, yapay zekanın görevi yerine getirirken izlemesi gereken adım adım talimatları ve gerçekleştireceği eylemleri temsil eder."
+    "explanation": "Eylemler (Actions), görevin başarıyla tamamlanması için gereken operasyonel adımları tanımlar."
   },
   {
-    "id": 23,
+    "id": 4,
     "question": "C.L.E.A.R. kalite kontrol listesine göre 'Explicit' (Açık) kriteri ne anlama gelir?",
     "options": [
       "A) Modelin internete bağlı olup olmadığının kontrolü.",
@@ -261,10 +45,10 @@
       "D) Çıktı yönlendirmelerinin 'Kısa cevap ver' yerine '50 kelimeyi geçme' gibi net olması."
     ],
     "answer": "D",
-    "explanation": "C.L.E.A.R. kalite kontrol listesindeki 'Explicit' (Açık/Net) kriteri, yapay zekaya verilen çıktı komutlarının ve sınırlamaların (örneğin '50 kelimeyi geçme') net ve ölçülebilir olması gerektiğini belirtir."
+    "explanation": "Belirsiz ifadeler yerine ölçülebilir ve spesifik kısıtlamalar kullanmak modelin sınırlarını netleştirir."
   },
   {
-    "id": 24,
+    "id": 5,
     "question": "Modele bir Persona (Rol) atamanın en önemli avantajlarından biri nedir?",
     "options": [
       "A) Halüsinasyon (uydurma) oranını düşürmesi ve göreve özgü terminolojiyi aktive etmesi.",
@@ -273,10 +57,10 @@
       "D) Modelin daha hızlı yanıt vermesini sağlaması."
     ],
     "answer": "A",
-    "explanation": "Modele belirli bir rol veya persona atamak, yapay zekanın o konuya özgü terminolojiyi ve üslubu kullanmasını tetiklerken, aynı zamanda alakasız bilgiler üretmesini (halüsinasyonu) azaltır."
+    "explanation": "Rol atamak, modelin eğitim verisindeki ilgili uzmanlık alanına odaklanmasını sağlayarak tutarlılığı artırır."
   },
   {
-    "id": 25,
+    "id": 6,
     "question": "İstem Olgunluk Eğrisi'ne (Maturity Curve) göre, modelden karmaşık mantık yürütmesini beklediğimiz en üst seviye teknik hangisidir?",
     "options": [
       "A) Düşünce Zinciri (Chain of Thought - CoT)",
@@ -285,10 +69,10 @@
       "D) Karakter Sınırlama"
     ],
     "answer": "A",
-    "explanation": "İstem Olgunluk Eğrisi'nin en üst düzey tekniklerinden biri olan Düşünce Zinciri (Chain of Thought), modelin karmaşık problemleri çözerken adım adım akıl yürüterek doğru sonuca ulaşmasını kolaylaştırır."
+    "explanation": "CoT, modelin bir sonuca varmadan önce mantıksal adımları sırayla işlemesini zorunlu kılarak hata payını minimize eder."
   },
   {
-    "id": 26,
+    "id": 7,
     "question": "Few-Shot (Az Örnekli) istemleme tekniğinin temel farkı nedir?",
     "options": [
       "A) AI'ya sadece tek bir kelime söyleyip geri kalanını tahmin etmesini beklemek.",
@@ -297,10 +81,10 @@
       "D) AI'ya istenen formatı tarif etmek yerine birkaç örnekle göstermek."
     ],
     "answer": "D",
-    "explanation": "Few-shot (Az Örnekli) istemleme, modele ne yapacağını sadece tarif etmek yerine girdilerin ve istenen çıktıların birkaç örneğini göstererek format ve ton uyumunu artırmak için kullanılır."
+    "explanation": "Model, verilen örneklerdeki girdi-çıktı kalıplarını analiz ederek yeni görevde aynı yapıyı taklit eder."
   },
   {
-    "id": 27,
+    "id": 8,
     "question": "İleri düzey bir taktik olan 'Chunking' (Parçalara Bölme) neden gereklidir?",
     "options": [
       "A) Yapay zekânın daha fazla elektrik tüketmesini sağlamak için.",
@@ -309,11 +93,11 @@
       "D) Modelin belleğini tamamen sıfırlamak için."
     ],
     "answer": "C",
-    "explanation": "Chunking (Parçalara Bölme), çok büyük veya karmaşık görevlerin tek seferde verilip modelin bağlam sınırlarını zorlayarak sığ veya eksik cevaplar üretmesini engellemek için görevi küçük parçalara bölme işlemidir."
+    "explanation": "Sınırlı bağlam penceresi olan modeller, çok karmaşık görevlerde odağını kaybedebilir; parçalara bölmek derinliği artırır."
   },
   {
-    "id": 28,
-    "question": "Self-Consistency (Öz-Tutarlılık) tekniği hangi durumlarda en etkilidir?",
+    "id": 9,
+    "question": "Self-Consistency (Öz-Tutarlılık) tekniđi hangi durumlarda en etkilidir?",
     "options": [
       "A) Modelin sürekli aynı şakayı yapmasını sağlamak için.",
       "B) Kritik kararlar, matematik problemleri veya belirsizlik içeren durumlarda en tutarlı cevabı seçmek için.",
@@ -321,142 +105,142 @@
       "D) Kullanıcının şifrelerini hatırlatması için."
     ],
     "answer": "B",
-    "explanation": "Self-Consistency (Öz-Tutarlılık), modelin aynı soruya birden fazla farklı düşünce yoluyla yanıtlar üretip aralarından en tutarlı ve en çok tekrarlanan yanıtı seçerek doğruluk oranını artırma tekniğidir."
+    "explanation": "Aynı soruyu farklı yöntemlerle sormak, rastgele hataları elemeye ve doğru sonuca olan güveni artırmaya yarar."
   },
   {
-    "id": 29,
+    "id": 10,
     "question": "Sentez Matrisi'ne göre 'Denetçinin Kontrol Listesi' hangisidir ve amacı nedir?",
     "options": [
-      "A) CRAFTED listesidir; amacı ilk talimatı kusursuzca inşa etmektir.",
+      "A) CRAFT listesidir; amacı ilk talimatı kusursuzca inşa etmektir.",
       "B) CLEAR listesidir; amacı çıktıyı denetlemek ve komutu rafine etmektir.",
       "C) JSON formatıdır; amacı veriyi tabloya dönüştürmektir.",
       "D) Python kodudur; amacı algoritmayı çalıştırmaktır."
     ],
     "answer": "B",
-    "explanation": "Sentez Matrisinde 'Denetçinin Kontrol Listesi' CLEAR kontrol listesidir. Bu liste, üretilen çıktıyı ve komutları denetleyip en verimli şekilde rafine etmek için kullanılır."
+    "explanation": "CRAFT inşa etmek için, CLEAR ise inşa edilen çıktının kalitesini ölçmek ve iyileştirmek için kullanılır."
   },
   {
-    "id": 30,
-    "question": "İstem (Prompt) Mühendisliği mimarisindeki 'Temel Denklem' aşağıdakilerden hangisidir?",
+    "id": 11,
+    "question": "Özelleştirilmiş AI asistanlarının temel amacı aşağıdakilerden hangisidir?",
     "options": [
-      "A) Yapay Zekâ + Veri = Bilgi",
-      "B) Girdi = Çıktı",
-      "C) Komut x Bağlam = Tahmin",
-      "D) Algoritma = Sonuç"
+      "A) Yapay zekanın internet erişimini tamamen kesmek",
+      "B) Yapay zekanın işlem hızını donanımsal olarak artırmak",
+      "C) Genel bir yapay zekayı belirli ihtiyaçlar ve görevler için uzmanlaştırmak",
+      "D) Sadece görsel oluşturma yeteneklerini geliştirmek"
+    ],
+    "answer": "C",
+    "explanation": "Bu sistemler, kullanıcının kendi talimatları ve bilgi tabanı ile genel bir modeli belirli bir alana odaklamasını sağlar."
+  },
+  {
+    "id": 12,
+    "question": "Google Gemini Gems'in en güçlü özelliği aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Asistanı herkesle açık bir link üzerinden paylaşma",
+      "B) Google Workspace (Gmail, Drive, Docs) entegrasyonu",
+      "C) Harici API'lar ile karmaşık otomasyonlar kurma",
+      "D) GPT Store üzerinden para kazanma imkanı"
     ],
     "answer": "B",
-    "explanation": "İstem Mühendisliği mimarisindeki temel denklem, 'Girdi = Çıktı' (Input = Output) şeklinde ifade edilerek girdinin çıktıyı doğrudan belirlediğini vurgular."
+    "explanation": "Gems'in en büyük avantajı, kullanıcının Google ekosistemindeki dosyalarına ve e-postalarına doğrudan erişebilmesidir."
   },
   {
-    "id": 31,
-    "question": "CRAFTED formülündeki 'F' harfi neyi temsil eder ve ne amaçla kullanılır?",
+    "id": 13,
+    "question": "OpenAI Custom GPTs oluştururken bilgi tabanı (knowledge base) için en fazla kaç dosya yüklenebilir?",
     "options": [
-      "A) Format (Biçim): Çıktının hangi yapıda olacağını belirlemek için kullanılır.",
-      "B) Function (İşlev): Modelin gerçekleştireceği ana eylemi tanımlar.",
-      "C) Frame (Sınurlar): Nelerin dışarıda bırakılacağını belirlemek için kullanılır.",
-      "D) Feedback (Geri Bildirim): Modelin yanıtını iyileştirmek için kullanılır."
+      "A) Sınırsız dosya",
+      "B) 50 dosya",
+      "C) 20 dosya",
+      "D) 10 dosya"
     ],
-    "answer": "A",
-    "explanation": "CRAFTED formülünde 'F' harfi 'Format' (Biçim) anlamına gelir ve yapay zekanın üreteceği çıktının görsel yapısını, listeler, tablolar veya kod blokları halinde olacağını belirler."
+    "answer": "C",
+    "explanation": "OpenAI platformu, bir GPT'nin uzmanlaşması için sisteme en fazla 20 adet referans dosyası yüklenmesine izin verir."
   },
   {
-    "id": 32,
-    "question": "Modele bir 'Rol' veya 'Persona' atamanın temel faydalarından biri aşağıdakilerden hangisidir?",
+    "id": 14,
+    "question": "Aşağıdaki platformlardan hangisi ücretsiz olarak özelleştirilmiş AI asistanı oluşturmaya olanak tanır?",
     "options": [
-      "A) Modelin halüsinasyon (uydurma) oranını düşürmesi.",
-      "B) Modelin internetten güncel veri çekmesini sağlaması.",
-      "C) Modelin daha az kelime kullanarak yanıt vermesini sağlaması.",
-      "D) Modelin işlem hızını (token/saniye) artırması."
-    ],
-    "answer": "A",
-    "explanation": "Yapay zeka modellerine bir 'Rol' veya 'Persona' atandığında, model o göreve odaklanır ve rastgele veya alakasız bilgiler uydurma (halüsinasyon) oranı önemli ölçüde düşer."
-  },
-  {
-    "id": 33,
-    "question": "Few-Shot Prompting (Az Örnekli İstem) tekniği en çok hangi durumda tercih edilir?",
-    "options": [
-      "A) Modelin belleğinin tamamen temizlenmesi gerektiğinde.",
-      "B) Çok basit ve doğrudan bir çeviri görevi yapıldığında.",
-      "C) Karmaşık bir matematik problemini tek adımda çözmek için.",
-      "D) Modelin belirli bir formatı veya tonu taklit etmesi istendiğinde."
+      "A) Claude Projects",
+      "B) OpenAI Custom GPTs",
+      "C) GPT Store",
+      "D) Google Gemini Gems"
     ],
     "answer": "D",
-    "explanation": "Few-shot (Az Örnekli) istemleme, modele ne yapacağını sadece tarif etmek yerine girdilerin ve istenen çıktıların birkaç örneğini göstererek format ve ton uyumunu artırmak için kullanılır."
+    "explanation": "Gems, listedeki seçenekler arasında tamamen ücretsiz olarak asistan oluşturmaya izin veren platformdur. Claude Projects ve OpenAI Custom GPTs ücretli abonelik gerektirirken, GPT Store ise bir oluşturma platformu değil, bir mağazadır."
   },
   {
-    "id": 34,
-    "question": "Chain-of-Thought (CoT) tekniğinin 'Sihirli Kelimesi' veya ana mantığı nedir?",
+    "id": 15,
+    "question": "Bağlam (context) penceresi bakımından en geniş kapasiteyi hangi platform sunmaktadır?",
     "options": [
-      "A) Kısa ve öz cevap ver.",
-      "B) Tablo formatında sun.",
-      "C) Bir uzman gibi davran.",
-      "D) Adım adım düşün."
-    ],
-    "answer": "D",
-    "explanation": "Chain-of-Thought (CoT) tekniğinin temel mantığı, yapay zekanın karmaşık mantıksal veya matematiksel problemleri çözerken 'adım adım düşünmesini' sağlamaktır."
-  },
-  {
-    "id": 35,
-    "question": "Chunking (Parçalara Bölme) tekniği hangi problemi çözmek için kullanılır?",
-    "options": [
-      "A) Modelin eğitim verisini güncellemek.",
-      "B) Modelin daha yaratıcı şiirler yazmasını sağlamak.",
-      "C) Modelin halüsinasyon görmesini tamamen durdurmak.",
-      "D) Darboğaz (Bottleneck) sorunu ve sistemin boğulmasını önlemek."
-    ],
-    "answer": "D",
-    "explanation": "Chunking (Parçalara Bölme) tekniği, modelin tek seferde işleyemeyeceği büyüklükteki görevlerde sistemin boğulmasını ve sığ yanıtlar vermesini (darboğaz sorununu) önlemek amacıyla kullanılır."
-  },
-  {
-    "id": 36,
-    "question": "Kalite kontrol için kullanılan C.L.E.A.R. listesindeki 'Explicit' (Açık) kriteri neyi ifade eder?",
-    "options": [
-      "A) Kavramların doğru bir sırayla sunulması.",
-      "B) Çıktı yönlendirmelerinin net olması (Örn: '50 kelimeyi geçme').",
-      "C) Cevabın mantıklı olup olmadığının kontrol edilmesi.",
-      "D) Gereksiz kelimelerden arındırılmış bir komut yazılması."
-    ],
-    "answer": "B",
-    "explanation": "C.L.E.A.R. kontrol listesindeki 'Explicit' (Açık) kriteri, yapay zekaya verilen çıktı sınırlandırma komutlarının net ve ölçülebilir olmasını (örneğin '50 kelimeyi geçme') ifade eder."
-  },
-  {
-    "id": 37,
-    "question": "Görsel Üretimi (DALL-E, Midjourney vb.) için yapılan istemlerde hangi parametre 'Kritik' olarak belirtilmiştir?",
-    "options": [
-      "A) Zaman karmaşıklığını O(n log n) olarak optimize etmek.",
-      "B) Kavramları değil, somut detayları betimlemek.",
-      "C) Hedef kitleyi kesin olarak belirtmek.",
-      "D) Kaynak ve hedef dilleri tanımlamak."
-    ],
-    "answer": "B",
-    "explanation": "Görsel üretimi yapan yapay zeka modellerine komut yazılırken, soyut kavramlar yerine somut ve net detayların betimlenmesi çıktının kalitesini doğrudan artırır."
-  },
-  {
-    "id": 38,
-    "question": "İstem Mühendisliği 'Sentez Matrisi'ne göre CRAFTED ve CLEAR arasındaki ilişki nasıldır?",
-    "options": [
-      "A) CRAFTED ile inşa et, CLEAR ile test et ve iyileştir.",
-      "B) CRAFTED ve CLEAR birbirine zıt iki farklı metoddur.",
-      "C) CLEAR ile ilk taslağı oluştur, CRAFTED ile son formatı ver.",
-      "D) CRAFTED sadece metin, CLEAR sadece görsel için kullanılır."
+      "A) Google Gemini Gems (1M token)",
+      "B) Claude Projects (200K token)",
+      "C) Tüm platformlar 128K token sunar",
+      "D) OpenAI Custom GPTs (128K token)"
     ],
     "answer": "A",
-    "explanation": "Sentez Matrisine göre, CRAFTED formülüyle istemi mükemmel şekilde inşa ederken, CLEAR listesiyle de üretilen çıktıyı test edip komutu rafine ederiz."
+    "explanation": "Gems, 1 milyon tokenlik devasa bağlam penceresi ile rakiplerinden çok daha uzun verileri analiz edebilir."
   },
   {
-    "id": 39,
-    "question": "Self-Consistency (Öz-Tutarlılık) tekniği en iyi hangi durumlarda sonuç verir?",
+    "id": 16,
+    "question": "İyi bir asistan oluşturmak için hazırlanan prompt şablonunda 'KURALLAR' bölümünün amacı nedir?",
     "options": [
-      "A) Modelin sistem komutlarını unutması durumunda.",
-      "B) Kritik kararlar ve belirsizliğin olduğu matematik/mantık problemleri.",
-      "C) Modelin bir çocuğa masal anlatması istendiğinde.",
-      "D) Bir metni sadece başka bir dile çevirirken."
+      "A) Asistanın neyi yapması ve kesinlikle neyi yapmaması gerektiğini belirlemek",
+      "B) Asistanın sadece hangi dilde konuşacağını seçmek",
+      "C) Yüklenecek dosyaların formatını denetlemek",
+      "D) Sadece asistanın ismini belirlemek"
     ],
-    "answer": "B",
-    "explanation": "Self-Consistency (Öz-Tutarlılık) tekniği, özellikle kesin cevap gerektiren kritik kararlarda, matematik veya mantık problemlerinde en tutarlı sonucu seçmek için idealdir."
+    "answer": "A",
+    "explanation": "Kurallar bölümü, AI'nın sınırlarını çizer ve istenmeyen davranışları engellemek için kritik öneme sahiptir."
   },
   {
-    "id": 40,
+    "id": 17,
+    "question": "Bir startup ekibi için 'Custom GPTs' platformunun 'Gems'e göre en büyük avantajı nedir?",
+    "options": [
+      "A) Sadece Google Drive dosyalarıyla çalışması",
+      "B) Ücretsiz olması sayesinde maliyet düşürmesi",
+      "C) Ekiple paylaşılabilir olması ve API entegrasyonu sunması",
+      "D) Prompt yazmaya ihtiyaç duymaması"
+    ],
+    "answer": "C",
+    "explanation": "GPTs, profesyonel ekiplerin asistanları birbiriyle paylaşmasına ve harici araçları sisteme bağlamasına izin verir."
+  },
+  {
+    "id": 18,
+    "question": "Özelleştirilmiş bir AI oluştururken yapılan en yaygın hata aşağıdakilerden hangisidir?",
+    "options": [
+      "A) 'Yardımcı ol' gibi çok genel ve belirsiz talimatlar kullanmak",
+      "B) Bilgi tabanına örnek dosyalar eklemek",
+      "C) Asistanı yayınlamadan önce test etmek",
+      "D) Çok spesifik talimatlar vermek"
+    ],
+    "answer": "A",
+    "explanation": "AI'ya net bir görev tanımı verilmediğinde, sistem genel bir chatbot gibi davranır ve özelleştirme amacı kaybolur."
+  },
+  {
+    "id": 19,
+    "question": "Claude Projects hakkında dokümanda verilen bilgilerden yola çıkarak, paylaşım özelliği için ne söylenebilir?",
+    "options": [
+      "A) Google Gems gibi hiç paylaşım yapılamaz",
+      "B) Sadece link ile dünya çapında paylaşılabilir",
+      "C) Paylaşım seçenekleri sınırlıdır",
+      "D) Tamamen herkese açık bir marketplace'e sahiptir"
+    ],
+    "answer": "C",
+    "explanation": "Dokümanda Claude Projects için 'sınırlı paylaşım' ve 'bağlama dayalı çalışma alanları' ifadesi kullanılmıştır."
+  },
+  {
+    "id": 20,
+    "question": "Aşağıdaki senaryolardan hangisi için Google Gemini Gems kullanmak en mantıklıdır?",
+    "options": [
+      "A) Harici bir stok takip yazılımına API ile bağlanan bir bot",
+      "B) Asistanı GPT Store'da satarak gelir elde etmek",
+      "C) Müşteri destek botunu tüm dünya ile paylaşmak",
+      "D) Drive'daki ders notlarına erişip özet çıkaran bir öğrenci asistanı"
+    ],
+    "answer": "D",
+    "explanation": "Gems ücretsizdir ve Drive entegrasyonu sayesinde kişisel öğrenci notlarını işlemek için idealdir."
+  },
+  {
+    "id": 21,
     "question": "Üretken Yapay Zeka (ÜYZ) araçlarının akademik araştırmalardaki temel rolü aşağıdakilerden hangisi olarak tanımlanmıştır?",
     "options": [
       "A) Veri toplama sürecini insan müdahalesi olmadan tamamlayan bir otopilot.",
@@ -465,10 +249,10 @@
       "D) Tüm nihai kararları veren bağımsız bir araştırmacı."
     ],
     "answer": "C",
-    "explanation": "Üretken Yapay Zeka (ÜYZ) araçları, akademik çalışmalarda nihai bir karar verici veya otopilot değil; araştırma süreçlerini hızlandıran ve verimliliği artıran sistematik bir destekçi (yardımcı pilot) rolündedir."
+    "explanation": "ÜYZ, hipotez önerileri, literatür özeti ve dil iyileştirme gibi alanlarda araştırmacıya yardımcı bir asistan görevi görür."
   },
   {
-    "id": 41,
+    "id": 22,
     "question": "ÜYZ modellerinin sunduğu çıktıların altında yatan 'Görünmez Önyargılar' (Bias) temel olarak nereden kaynaklanmaktadır?",
     "options": [
       "A) Kullanıcının yazdığı komutların (prompt) uzunluğundan.",
@@ -477,10 +261,10 @@
       "D) Kullanılan donanımın işlemci hızından."
     ],
     "answer": "C",
-    "explanation": "Yapay zeka modellerinin sunduğu çıktılardaki görünmez önyargılar (bias), doğrudan modellerin eğitilmesinde kullanılan veri setlerindeki dengesizliklerden ve insan önyargılarından kaynaklanır."
+    "explanation": "Eğitim verilerindeki cinsiyet, etnik köken veya ideolojik çarpıklıklar doğrudan çıktıya yansır."
   },
   {
-    "id": 42,
+    "id": 23,
     "question": "Etik ihlal durumunda araştırmacının 'Hata ÜYZ kaynaklıydı' savunmasının kabul edilmemesinin temel sebebi nedir?",
     "options": [
       "A) ÜYZ kullanımının tüm akademik dergiler tarafından yasaklanmış olması.",
@@ -489,10 +273,10 @@
       "D) ÜYZ sistemlerinin hata yapma ihtimalinin sıfır olması."
     ],
     "answer": "B",
-    "explanation": "Yapay zeka araçları fikri ve entelektüel sorumluluk taşıyamayacakları için akademik çalışmalarda yazar olamazlar; dolayısıyla her türlü etik ve yasal sorumluluk nihai karar verici olan insana aittir."
+    "explanation": "Kritik kural gereği, asistanın hatasından araştırmacı kendi bilimsel birikimiyle yaptığı denetimden sorumlu tutulur."
   },
   {
-    "id": 43,
+    "id": 24,
     "question": "Şeffaflık (Transparency) ilkesi gereği, bir araştırmanın metodoloji bölümünde ÜYZ kullanımına dair hangi detayların verilmesi zorunludur?",
     "options": [
       "A) Aracın adı, sürüm bilgisi ve kullanım amacı.",
@@ -501,22 +285,22 @@
       "D) Sadece yapay zeka ile yapılan sohbetlerin tam dökümü."
     ],
     "answer": "A",
-    "explanation": "Şeffaflık (Transparency) ilkesi gereği, bilimsel çalışmalarda kullanılan yapay zeka aracının adı, sürüm/versiyon bilgisi ve tam olarak hangi amaçla kullanıldığı metodoloji bölümünde açıkça belirtilmelidir."
+    "explanation": "Etik sütunlar uyarınca hangi aracın hangi amaçla (veri analizi, dil düzeltme vb.) kullanıldığı açıkça beyan edilmelidir."
   },
   {
-    "id": 44,
+    "id": 25,
     "question": "Özen (Care) ilkesine göre, ÜYZ tarafından üretilen referanslar hakkında bilinen risk oranı nedir?",
     "options": [
-      "A) %50'ye varan oranda hatalı olabilir. (Not: Orijinal görselde metin \"'a varan oranda hatalı olabilir\" şeklindedir.)",
+      "A) ' a varan oranda hatalı olabilir.",
       "B) Hata riski sadece matematiksel formüllerde geçerlidir.",
       "C) hata payı ile kabul edilebilir.",
       "D) güvenilirdir."
     ],
-    "answer": "B",
-    "explanation": "Araştırmalara göre, üretken yapay zeka modelleri tarafından uydurulan veya hatalı üretilen akademik kaynakça ve referansların oranı yaklaşık %30'dur."
+    "answer": "A",
+    "explanation": "Kaynak materyalde ÜYZ sistemlerinin ürettiği referansların yüksek bir hata riski taşıdığı vurgulanmaktadır."
   },
   {
-    "id": 45,
+    "id": 26,
     "question": "ÜYZ araçlarının akademik çalışmalarda 'yazar' olarak kaydedilememesinin temel nedeni nedir?",
     "options": [
       "A) Üretilen metinlerin her zaman çok kısa olması.",
@@ -525,10 +309,10 @@
       "D) Türk Dil Kurumu sözlüğünde 'yazar' tanımına uymamaları."
     ],
     "answer": "C",
-    "explanation": "Yapay zeka araçları, ortak yazarlık kriterlerini (entelektüel katkı ve sorumluluk alma) karşılayamadıkları için bilimsel yayınlarda yazar (co-author) olarak listelenemezler."
+    "explanation": "ÜYZ bir araçtır; akademik dürüstlük gereği yazarın özgün fikirleri ve sorumluluk bilinci olması gerekir."
   },
   {
-    "id": 46,
+    "id": 27,
     "question": "Gizlilik ve Mahremiyet ilkesi çerçevesinde, hassas verilerin ÜYZ modellerine yüklenmeden önce geçmesi gereken işlem nedir?",
     "options": [
       "A) Verilerin İngilizceye çevrilmesi.",
@@ -536,11 +320,11 @@
       "C) Verilerin bir Word dosyası olarak yüklenmesi.",
       "D) Anonimleştirme (Kişisel verilerin temizlenmesi)."
     ],
-    "answer": "C",
-    "explanation": "Yapay zeka etiği gereği, hassas veya kişisel verilerin sisteme yüklenmeden önce kimlik bilgilerinden arındırılması yani tamamen anonimleştirilmesi zorunludur."
+    "answer": "D",
+    "explanation": "Sağlık, genetik gibi hassas veriler sisteme aktarılmadan önce kimliksizleştirilmelidir."
   },
   {
-    "id": 47,
+    "id": 28,
     "question": "'Dengeyi Kurmak: Pilot vs. Otopilot' görselinde vurgulanan ana mesaj nedir?",
     "options": [
       "A) Otopilot modu bilimsel araştırmalarda en güvenli yöntemdir.",
@@ -549,22 +333,22 @@
       "D) Araştırmacılar sadece veri girişinden sorumludur."
     ],
     "answer": "C",
-    "explanation": "Akademik çalışmalarda insan araştırmacı her zaman süreci yöneten ve kararları veren 'kaptan/pilot' konumundadır; yapay zeka ise sadece ona yardımcı olan bir 'otopilot/yardımcı pilot' rolündedir."
+    "explanation": "Teknolojik ilerleme kaçınılmazdır ancak bilimsel güvenilirlik araştırmacının denetimine bağlıdır."
   },
   {
-    "id": 48,
+    "id": 29,
     "question": "Sorumlu Kullanım Kontrol Listesi'ne (Checklist) göre, yayını göndermeden önce yapılması gereken son adımlardan biri hangisidir?",
     "options": [
       "A) Tüm metni yapay zekaya yeniden yazdırtmak.",
       "B) Kaynakça listesindeki her bir eserin gerçek ve doğru olduğunu teyit etmek.",
-      "C) Yapay zeka çalışmayı beğenip beğenmediğini sormak.",
+      "C) Yapay zekaya çalışmayı beğenip beğenmediğini sormak.",
       "D) Yapay zekanın kullandığı elektrik miktarını hesaplamak."
     ],
     "answer": "B",
-    "explanation": "Sorumlu kullanım kontrol listesine göre, akademik yayını göndermeden önce kaynakçada yer alan tüm referansların uydurma olmadığını ve gerçek eserlere dayandığını manuel olarak doğrulamak kritik bir son adımdır."
+    "explanation": "Halüsinasyon riskine karşı referansların orijinal kaynaklardan doğrulanması zorunludur."
   },
   {
-    "id": 49,
+    "id": 30,
     "question": "Adalet ve Saygı (Justice & Respect) sütununda belirtilen 'Disiplin' gereği aşağıdakilerden hangisi bir akademik suç olarak tanımlanmıştır?",
     "options": [
       "A) Birden fazla ÜYZ aracını aynı anda kullanmak.",
@@ -573,10 +357,10 @@
       "D) ÜYZ kullanımının gizlenmesi."
     ],
     "answer": "D",
-    "explanation": "Yapay zeka kullanıldığını saklamak veya gizlemek ciddi bir akademik etik ihlali ve suç olarak kabul edilir."
+    "explanation": "Yapay zeka desteği alındığı halde bunun beyan edilmemesi şeffaflığa aykırıdır ve akademik suç sayılır."
   },
   {
-    "id": 50,
+    "id": 31,
     "question": "Görsel yapay zekanın temel çalışma prensibi aşağıdakilerden hangisidir?",
     "options": [
       "A) Metin komutlarından özgün görseller yaratmak",
@@ -585,10 +369,10 @@
       "D) İnternetteki görselleri telif haklarına bakmadan kopyalamak"
     ],
     "answer": "A",
-    "explanation": "Görsel yapay zekanın (DALL-E, Midjourney, Stable Diffusion vb.) temel çalışma prensibi, kullanıcının girdiği metinsel tanımlardan (prompt) yola çıkarak tamamen özgün ve yeni görseller yaratmaktır."
+    "explanation": "Görsel yapay zeka, büyük veri setlerini ve öğrenme algoritmalarını kullanarak metinsel girdileri görsel çıktılara dönüştürür."
   },
   {
-    "id": 51,
+    "id": 32,
     "question": "DALL-E 2 modelinin kullanıcılar için sunduğu en belirgin avantaj hangisidir?",
     "options": [
       "A) Yalnızca topluluk üzerinden erişilebilir olması",
@@ -597,11 +381,11 @@
       "D) Teknik bilgi gerektirmeyen kullanıcı dostu arayüz"
     ],
     "answer": "D",
-    "explanation": "DALL-E 2 modeli, teknik veya yazılımsal bilgi gerektirmeyen son derece basit, web tabanlı ve kullanıcı dostu bir arayüz sunduğu için geniş kitleler tarafından tercih edilmiştir."
+    "explanation": "Model, her seviyeden kullanıcının kolayca fotogerçekçi veya soyut görseller oluşturabilmesi için tasarlanmıştır."
   },
   {
-    "id": 52,
-    "question": "Sanatsal ve sinematik estetiği ile ön plana çıkan, topluluk odaklı platform aşağıdakilerden hangisidir?",
+    "id": 33,
+    "question": "Sanatsal ve sinematik estetiği ile ön plana çıkan, topluluk odaklı platform aşağıdakilerinden hangisidir?",
     "options": [
       "A) Midjourney",
       "B) DALL-E 2",
@@ -609,10 +393,10 @@
       "D) Stable Diffusion"
     ],
     "answer": "A",
-    "explanation": "Midjourney, ürettiği görsellerdeki yüksek sanatsal detay, sinematik estetik ve Discord tabanlı topluluk yapısıyla görsel yapay zeka araçları arasında öne çıkmaktadır."
+    "explanation": "Midjourney, toplulukla etkileşim içinde sanatsal ve estetik değeri yüksek görseller oluşturma konusunda uzmanlaşmıştır."
   },
   {
-    "id": 53,
+    "id": 34,
     "question": "Stable Diffusion modelini diğer yapay zeka araçlarından ayıran temel teknik özellik nedir?",
     "options": [
       "A) Ücretli abonelik zorunluluğu olan tek model olması",
@@ -621,10 +405,10 @@
       "D) Telif hakkı riskini tamamen ortadan kaldırması"
     ],
     "answer": "B",
-    "explanation": "Stable Diffusion modelini diğer ticari araçlardan ayıran en temel fark, açık kaynak kodlu olması ve kullanıcıların kendi yerel donanımlarında çalıştırıp özelleştirebilmelerine olanak tanımasıdır."
+    "explanation": "Açık kaynak yapısı, kullanıcılara sistemi kendi ihtiyaçlarına göre değiştirme ve teknik esneklik sağlama imkanı tanır."
   },
   {
-    "id": 54,
+    "id": 35,
     "question": "Adobe Firefly'ın özellikle profesyonel tasarımcılar tarafından tercih edilme sebebi nedir?",
     "options": [
       "A) Telif hakkı riski olmayan içerikler sunması",
@@ -633,10 +417,10 @@
       "D) İnternet bağlantısı olmadan çalışması"
     ],
     "answer": "A",
-    "explanation": "Adobe Firefly, lisanslı ve telif hakkı temiz veri setleriyle eğitildiği için profesyonel tasarımcılara ve kurumlara telif hakkı riski taşımayan güvenli ticari görseller üretme avantajı sağlar."
+    "explanation": "Profesyonel iş akışlarında yasal güvenliği sağlamak için telifli içeriklerle eğitilmiş olması kritik bir avantajdır."
   },
   {
-    "id": 55,
+    "id": 36,
     "question": "Sunumda 'Yaratıcı Deneyim' başlığı altında hangi araçlar bir arada anılmıştır?",
     "options": [
       "A) Photoshop ve Illustrator",
@@ -645,10 +429,10 @@
       "D) Leonardo AI ve Artbreeder"
     ],
     "answer": "D",
-    "explanation": "Yaratıcı Deneyim başlığı altında GauGAN ve NightCafe gibi araçlar yer alırken, sunumda bu başlık altında Leonardo AI ve Artbreeder araçları da bir arada anılmıştır. Doğru cevap D şıkkıdır."
+    "explanation": "Bu iki araç, kullanıcılara görseller üzerinde farklı yaratıcı kontrol mekanizmaları sunarak deneyimi zenginleştirir."
   },
   {
-    "id": 56,
+    "id": 37,
     "question": "Bir yapay zeka aracı seçilirken dikkat edilmesi gereken kriterler arasında aşağıdakilerden hangisi yer almaz?",
     "options": [
       "A) Kullanıcının eğitim seviyesi",
@@ -657,10 +441,10 @@
       "D) Çıktı kalitesi ve stil uygunluğu"
     ],
     "answer": "A",
-    "explanation": "Bir yapay zeka aracı seçilirken kullanıcının kendi eğitim seviyesi teknik bir kriter değildir; asıl olarak maliyet, hız, telif hakları, çıktı kalitesi ve stil uygunluğu gibi kriterlere bakılır."
+    "explanation": "Sunumda seçim kriterleri olarak çıktı kalitesi, maliyet, hız, güvenlik ve telif hakları vurgulanmıştır; kullanıcı eğitimi bir kriter değildir."
   },
   {
-    "id": 57,
+    "id": 38,
     "question": "Görsel üretim dünyasının geleceği hakkında yapılan öngörü aşağıdakilerden hangisidir?",
     "options": [
       "A) Geleneksel sanatın tamamen sona ermesi",
@@ -669,10 +453,10 @@
       "D) İnsan ve yapay zeka iş birliği"
     ],
     "answer": "D",
-    "explanation": "Görsel yapay zeka teknolojilerinin geleceğinde, geleneksel sanatın tamamen yok olması değil; insan yaratıcılığı ile yapay zekanın gücünün birleştiği bir insan-makine iş birliği öngörülmektedir."
+    "explanation": "Gelecek, yapay zekanın insan yaratıcılığını yok etmesi değil, her iki gücün birleşerek üretimi artırması üzerine kuruludur."
   },
   {
-    "id": 58,
+    "id": 39,
     "question": "Betül Hiçdurmaz tarafından hazırlanan bu sunumda vurgulanan temel tema nedir?",
     "options": [
       "A) Sosyal medya kullanımının yaygınlaşması",
@@ -681,10 +465,10 @@
       "D) Eski resimlerin restorasyonu"
     ],
     "answer": "B",
-    "explanation": "Betül Hiçdurmaz tarafından hazırlanan sunumda, yapay zekanın görsel üretim alanında gerçekleştirdiği devrim, kullanılan araçlar ve bunların tasarım süreçlerine etkileri ele alınmıştır."
+    "explanation": "Sunumun başlığı ve içeriği, 2026 yılı itibarıyla görsel üretim süreçlerinin yapay zeka ile nasıl dönüştüğünü ele almaktadır."
   },
   {
-    "id": 59,
+    "id": 40,
     "question": "GauGAN ve NightCafe gibi araçlar hangi başlık altında sınıflandırılmıştır?",
     "options": [
       "A) Yüksek Kaliteli Ana Modeller",
@@ -693,7 +477,235 @@
       "D) Özel Kullanım Alanları"
     ],
     "answer": "D",
-    "explanation": "GauGAN (karalamaları gerçekçi manzaralara dönüştürme) ve NightCafe (farklı sanatsal stiller uygulama) gibi araçlar, genel amaçlı modellerden ziyade belirli özel kullanım alanlarına hitap eder."
+    "explanation": "Bu araçlar genel amaçlı modellerden farklı olarak daha niş veya belirli fonksiyonlara odaklanan kullanım senaryoları sunar."
+  },
+  {
+    "id": 41,
+    "question": "İstem (Prompt) Mühendisliği mimarisindeki 'Temel Denklem' aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Yapay Zekâ + Veri = Bilgi",
+      "B) Girdi = Çıktı",
+      "C) Komut x Bağlam = Tahmin",
+      "D) Algoritma = Sonuç"
+    ],
+    "answer": "B",
+    "explanation": "Yapay zekanın ürettiği sonuçların kalitesi, ona verilen talimatların ve verilerin bir yansımasıdır."
+  },
+  {
+    "id": 42,
+    "question": "CRAFT formülündeki 'F' harfi neyi temsil eder ve ne amaçla kullanılır?",
+    "options": [
+      "A) Format (Biçim): Çıktının hangi yapıda olacağını belirlemek için kullanılır.",
+      "B) Function (İşlev): Modelin gerçekleştireceği ana eylemi tanımlar.",
+      "C) Frame (Sınırlar): Nelerin dışarıda bırakılacağını belirlemek için kullanılır.",
+      "D) Feedback (Geri Bildirim): Modelin yanıtını iyileştirmek için kullanılır."
+    ],
+    "answer": "C",
+    "explanation": "Frame bileşeni, modelin odaklanmaması gereken konuları veya eklememesi gereken yorumları tanımlar."
+  },
+  {
+    "id": 43,
+    "question": "Modele bir 'Rol' veya 'Persona' atamanın temel faydalarından biri aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Modelin halüsinasyon (uydurma) oranını düşürmesi.",
+      "B) Modelin internetten güncel veri çekmesini sağlaması.",
+      "C) Modelin daha az kelime kullanarak yanıt vermesini sağlaması.",
+      "D) Modelin işlem hızını (token/saniye) artırması."
+    ],
+    "answer": "A",
+    "explanation": "Rol ve bağlam kombinasyonu, modelin eğitim verisindeki ilgili uzmanlık alanına odaklanmasını sağlayarak hataları azaltır."
+  },
+  {
+    "id": 44,
+    "question": "Few-Shot Prompting (Az Örnekli İstem) tekniği en çok hangi durumda tercih edilir?",
+    "options": [
+      "A) Modelin belleğinin tamamen temizlenmesi gerektiğinde.",
+      "B) Çok basit ve doğrudan bir çeviri görevi yapıldığında.",
+      "C) Karmaşık bir matematik problemini tek adımda çözmek için.",
+      "D) Modelin belirli bir formatı veya tonu taklit etmesi istendiğinde."
+    ],
+    "answer": "D",
+    "explanation": "Birkaç örnek vermek, modelin istenen şablonu ve üslubu kavramasını sağlayarak daha tutarlı sonuçlar üretir."
+  },
+  {
+    "id": 45,
+    "question": "Chain-of-Thought (CoT) tekniğinin 'Sihirli Kelimesi' veya ana mantığı nedir?",
+    "options": [
+      "A) Kısa ve öz cevap ver.",
+      "B) Tablo formatında sun.",
+      "C) Bir uzman gibi davran.",
+      "D) Adım adım düşün."
+    ],
+    "answer": "D",
+    "explanation": "Modele mantıksal adımları atlamaması ve süreci parçalara bölerek analiz etmesi talimatını verir."
+  },
+  {
+    "id": 46,
+    "question": "Chunking (Parçalara Bölme) tekniği hangi problemi çözmek için kullanılır?",
+    "options": [
+      "A) Modelin eğitim verisini güncellemek.",
+      "B) Modelin daha yaratıcı şiirler yazmasını sağlamak.",
+      "C) Modelin halüsinasyon görmesini tamamen durdurmak.",
+      "D) Darboğaz (Bottleneck) sorunu ve sistemin boğulmasını önlemek."
+    ],
+    "answer": "D",
+    "explanation": "Büyük ve karmaşık görevleri küçük komutlara bölmek, modelin sınırlı bağlam penceresinde daha verimli çalışmasını sağlar."
+  },
+  {
+    "id": 47,
+    "question": "Kalite kontrol için kullanılan C.L.E.A.R. listesindeki 'Explicit' (Açık) kriteri neyi ifade eder?",
+    "options": [
+      "A) Kavramların doğru bir sırayla sunulması.",
+      "B) Çıktı yönlendirmelerinin net olması (Örn: '50 kelimeyi geçme').",
+      "C) Cevabın mantıklı olup olmadığının kontrol edilmesi.",
+      "D) Gereksiz kelimelerden arındırılmış bir komut yazılması."
+    ],
+    "answer": "B",
+    "explanation": "Muğlak ifadeler yerine ölçülebilir ve kesin kısıtlamalar koymak çıktı kalitesini artırır."
+  },
+  {
+    "id": 48,
+    "question": "Görsel Üretimi (DALL-E, Midjourney vb.) için yapılan istemlerde hangi parametre 'Kritik' olarak belirtilmiştir?",
+    "options": [
+      "A) Zaman karmaşıklığını O(n log n) olarak optimize etmek.",
+      "B) Kavramları değil, somut detayları betimlemek.",
+      "C) Hedef kitleyi kesin olarak belirtmek.",
+      "D) Kaynak ve hedef dilleri tanımlamak."
+    ],
+    "answer": "B",
+    "explanation": "Soyut kavramlar yerine ışık, sanat akımı ve çözünürlük gibi somut detaylar görsel kalitesini belirler."
+  },
+  {
+    "id": 49,
+    "question": "İstem Mühendisliği 'Sentez Matrisi'ne göre CRAFT ve CLEAR arasındaki ilişki nasıldır?",
+    "options": [
+      "A) CRAFT ile inşa et, CLEAR ile test et ve iyileştir.",
+      "B) CRAFT ve CLEAR birbirine zıt iki farklı metotdur.",
+      "C) CLEAR ile ilk taslağı oluştur, CRAFT ile son formatı ver.",
+      "D) CRAFT sadece metin, CLEAR sadece görsel için kullanılır."
+    ],
+    "answer": "A",
+    "explanation": "CRAFT üretim aşamasının mimari formülü, CLEAR ise denetçinin değerlendirme kontrol listesidir."
+  },
+  {
+    "id": 50,
+    "question": "Self-Consistency (Öz-Tutarlılık) tekniği en iyi hangi durumlarda sonuç verir?",
+    "options": [
+      "A) Modelin sistem komutlarını unutması durumunda.",
+      "B) Kritik kararlar ve belirsizliğin olduğu matematik/mantık problemleri.",
+      "C) Modelin bir çocuğa masal anlatması istendiğinde.",
+      "D) Bir metni sadece başka bir dile çevirirken."
+    ],
+    "answer": "B",
+    "explanation": "Aynı soruyu farklı yöntemlerle sorup tutarlı cevabı seçmek, hata payını minimize eder."
+  },
+  {
+    "id": 51,
+    "question": "Gem mimarisinin temel amacı aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Sadece metin tabanlı yanıtların hızını artırmak.",
+      "B) Yapay zekanın genel bilgi birikimini tamamen sıfırlamak.",
+      "C) İnternet bağlantısı olmadan Gemini kullanımını sağlamak.",
+      "D) Her sohbette yeni bir istem (prompt) yazma zorunluluğunu ortadan kaldırmak."
+    ],
+    "answer": "D",
+    "explanation": "Gem'ler, her seferinde kuralları baştan anlatmak yerine bir kez tasarlanıp sürekli kullanılabilen kalıcı modüllerdir."
+  },
+  {
+    "id": 52,
+    "question": "Gem kurulum sürecinde 'Laboratuvar' olarak adlandırılan aşamalardan hangisi sistemin aktifleşmesini sağlar?",
+    "options": [
+      "A) Keşfet",
+      "B) Test Et",
+      "C) Kimlik Ver",
+      "D) Sisteme Ekle"
+    ],
+    "answer": "D",
+    "explanation": "Düzenlemeler bittikten sonra 'Kaydet' butonuna basılması asistanı aktif hale getiren son adımdır."
+  },
+  {
+    "id": 53,
+    "question": "Gem'in hangi rolü oynayacağını ve nasıl bir persona çizeceğini belirleyen yapı taşı hangisidir?",
+    "options": [
+      "A) Görev",
+      "B) Karakter",
+      "C) Bağlam",
+      "D) Biçim"
+    ],
+    "answer": "B",
+    "explanation": "Karakter sütunu, asistanın kimliğini, ses tonunu ve kullanıcıya karşı takınacağı tavrı belirler."
+  },
+  {
+    "id": 54,
+    "question": "Bir Gem tasarlarken çıktının madde işaretleri veya tablolar şeklinde olmasını istiyorsanız hangi sütuna ayrıntı eklemelisiniz?",
+    "options": [
+      "A) Karakter",
+      "B) Görev",
+      "C) Biçim",
+      "D) Bağlam"
+    ],
+    "answer": "C",
+    "explanation": "Biçim sütunu, istenilen çıktının yapısını, numaralandırmasını ve görsel düzenini tanımlamak için kullanılır."
+  },
+  {
+    "id": 55,
+    "question": "Beyin Fırtınası Yardımcısı (Fikir Üretim Motoru) olarak tasarlanan bir Gem'de hangi sütunların vurgusu en yüksektir?",
+    "options": [
+      "A) Karakter ve Biçim",
+      "B) Görev ve Biçim",
+      "C) Sadece Görev",
+      "D) Karakter ve Bağlam"
+    ],
+    "answer": "D",
+    "explanation": "Yaratıcı süreçlerde asistanın ilham verici bir karaktere ve derinlemesine bir arka plan bilgisine (bağlam) ihtiyacı vardır."
+  },
+  {
+    "id": 56,
+    "question": "Gem'inize 'Hafıza' eklemek için kullanılan yöntem aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Gemini'ye önceki sohbetleri hatırlatmasını söylemek.",
+      "B) Karakter sütununa daha fazla cümle yazmak.",
+      "C) Talimat Döngüsünü daha fazla tekrarlamak.",
+      "D) Harici dosya (PDF, Drive vb.) yükleme."
+    ],
+    "answer": "D",
+    "explanation": "Hafıza eklemek, asistanın genel bilgisinin yanına size özel belgeleri (Özel Bağlam Havuzu) dahil etmektir."
+  },
+  {
+    "id": 57,
+    "question": "Gem'in yanıt verirken bilgi alıntılarını gizlemesini sağlayan özellik hangisidir?",
+    "options": [
+      "A) Hafıza Temizleyici",
+      "B) Görünmez Kaynaklar",
+      "C) Alıntı Filtresi",
+      "D) Bağlam Kilidi"
+    ],
+    "answer": "C",
+    "explanation": "Alıntı filtresi, bilgi alıntılarını devre dışı bırakma seçeneği ile referansların görünmesini engeller."
+  },
+  {
+    "id": 58,
+    "question": "Mükemmel Gem'in Formülü (Sentez) aşağıdakilerden hangisinin birleşimidir?",
+    "options": [
+      "A) 4 Temel Sütun + Özel Bilgi Havuzu + Talimat Döngüsü",
+      "B) Karakter + Görev + Bağlam + Biçim",
+      "C) Test Et + Kaydet + Paylaş",
+      "D) İstem (Prompt) + Analiz + Çıktı"
+    ],
+    "answer": "A",
+    "explanation": "Yüksek verimli bir asistan için hem yapısal talimatlar (sütunlar), hem veri (havuz), hem de optimize edilmiş yapı (döngü) gerekir."
+  },
+  {
+    "id": 59,
+    "question": "Kodlama Yardımcısı olarak tasarlanan bir Gem'in 'Biçim' (Format) beklentisi aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Kopyalanabilir bloklar halinde ve değişken açıklamalarıyla sunum.",
+      "B) Şiirsel ve coşkulu bir üslup.",
+      "C) En az 3 farklı programlama dilinde çıktı.",
+      "D) Sadece metin üzerinden teorik anlatım."
+    ],
+    "answer": "A",
+    "explanation": "Kodlama Gem'lerinde teknik verimlilik için kodun kopyalanabilir olması ve değişkenlerin açıklanması kritiktir."
   },
   {
     "id": 60,
@@ -705,7 +717,7 @@
       "D) Kullanılan aracın adı, sürüm bilgisi ve kullanım amacı."
     ],
     "answer": "D",
-    "explanation": "Araştırmalarda Üretken Yapay Zeka kullanımında şeffaflık ilkesi gereği, metodoloji bölümünde kullanılan yapay zeka aracının adı, sürümü (versiyonu) ve kullanım amacı açıkça belirtilmelidir."
+    "explanation": "Bilimsel dürüstlük ve güvenin tesisi için ÜYZ'nin hangi bölümde ve ne ölçüde kullanıldığı açıkça beyan edilmelidir."
   },
   {
     "id": 61,
@@ -717,7 +729,7 @@
       "D) Araştırmanın kendisine (nihai karar verici olan insana)."
     ],
     "answer": "D",
-    "explanation": "Yapay zeka entelektüel bir sorumluluk üstlenemeyeceği için, üretilen çıktılarda oluşabilecek bilimsel hata, intihal veya yanlış beyanlardan doğrudan çalışmayı yürüten insan araştırmacı sorumludur."
+    "explanation": "ÜYZ bir asistandır ancak etik ihlal durumunda 'hata sistem kaynaklıydı' savunması akademik dünyada kabul edilemez."
   },
   {
     "id": 62,
@@ -729,7 +741,7 @@
       "D) 10%"
     ],
     "answer": "B",
-    "explanation": "Araştırma verilerine göre, yapay zekanın uydurduğu veya hatalı ürettiği akademik referansların oranı yaklaşık %30'dur. Bu yüzden her referans doğrulanmalıdır."
+    "explanation": "Kaynak metinlerde ÜYZ tarafından otomatik üretilen referansların bu oranda hatalı olabileceği vurgulanarak 'güven ama doğrula' prensibi hatırlatılmaktadır."
   },
   {
     "id": 63,
@@ -741,7 +753,7 @@
       "D) Açık kaynak kodlu ve tamamen ücretsiz olması."
     ],
     "answer": "A",
-    "explanation": "Adobe Firefly, Adobe Stock ve telifsiz görsellerle eğitildiğinden, profesyonel tasarımcılara kurumsal entegrasyon kolaylığı ve telif hakkı riski olmayan güvenli bir çalışma ortamı sunar."
+    "explanation": "Lisanslı veri setleri ile eğitilmesi sayesinde profesyonel kullanımda yasal güvenlik standartları sağlar."
   },
   {
     "id": 64,
@@ -753,7 +765,7 @@
       "D) Karakter, Görev, Bağlam, Biçim."
     ],
     "answer": "D",
-    "explanation": "Özel bir Gem asistanı tasarlarken sistemi yapılandıran ve promptun temelini oluşturan 4 kolon: Karakter (Persona), Görev (Task), Bağlam (Context) ve Biçim (Format) olarak tanımlanır."
+    "explanation": "Yüksek verimli bir dijital asistan için asistanın rolü, yapacağı iş, arka plan bilgisi ve çıktının yapısı net bir şekilde tanımlanmalıdır."
   },
   {
     "id": 65,
@@ -765,7 +777,7 @@
       "D) Modelin çıktıyı daha hızlı üretmesini sağlamak."
     ],
     "answer": "B",
-    "explanation": "Düşünce Zinciri (Chain of Thought) yöntemi, modelin bir problemi çözerken ara adımları ve mantık silsilesini takip etmesini sağlayarak karmaşık problemlerde daha doğru yanıtlar üretmesini amaçlar."
+    "explanation": "Mantık hatalarını azaltmak için modelin çözüm sürecini ara adımlara bölmesi teşvik edilir."
   },
   {
     "id": 66,
@@ -777,7 +789,7 @@
       "D) Veri Temizleyici ve Veri Düzenleyici."
     ],
     "answer": "A",
-    "explanation": "GAN (Üretken Çekişmeli Ağlar) mimarisinde, yeni veri üreten Oluşturucu (Generator) ile üretilen verinin gerçek mi yoksa sahte mi olduğunu denetleyen Ayırt Edici (Discriminator) olmak üzere iki sinir ağı birbiriyle yarışır."
+    "explanation": "Oluşturucu sahte veriler üretirken, ayırt edici bunların gerçek olup olmadığını denetleyerek çıktının kalitesini artırır."
   },
   {
     "id": 67,
@@ -789,7 +801,7 @@
       "D) Paralel hesaplamaya uygun değildir ve RNN'lerden daha yavaştır."
     ],
     "answer": "D",
-    "explanation": "Transformer mimarisinin RNN ve LSTM gibi eski yapılara kıyasla en büyük avantajlarından biri, dizi öğeleri arasındaki ilişkileri paralel olarak işleyebilmesidir."
+    "explanation": "Aksine, Transformerlar paralel işleme uygun oldukları için çok daha hızlı eğitilebilir ve çalıştırılabilirler."
   },
   {
     "id": 68,
@@ -801,7 +813,7 @@
       "D) 2017"
     ],
     "answer": "D",
-    "explanation": "Üretken yapay zekada bir dönüm noktası kabul edilen ve self-attention mekanizmasını tanıtan 'Attention Is All You Need' makalesiyle Transformer mimarisi 2017 yılında yayımlanmıştır."
+    "explanation": "Google Research tarafından yayınlanan Transformer mimarisi, bugünkü GPT ve benzeri modellerin temelini atmıştır."
   },
   {
     "id": 69,
@@ -813,7 +825,7 @@
       "D) Veriler sadece İngilizceye çevrilmelidir."
     ],
     "answer": "C",
-    "explanation": "Yapay zeka etiği gereği, hassas veya kişisel verilerin sisteme yüklenmeden önce kimlik bilgilerinden arındırılması yani tamamen anonimleştirilmesi zorunludur."
+    "explanation": "Hassas kişisel verilerin (sağlık, biyometrik vb.) halka açık modellere sızmasını önlemek için kimlik bilgileri temizlenmelidir."
   },
   {
     "id": 70,
@@ -825,7 +837,7 @@
       "D) Üretken modeller açık talimatlar (programlama) ile çalışırken, ayrıştırıcı modeller kendi kendine öğrenir."
     ],
     "answer": "A",
-    "explanation": "Ayrıştırıcı (Discriminative) modeller verinin hangi sınıfa ait olduğunu (sınıf sınırlarını) öğrenirken; Üretken (Generative) modeller verinin dağılımını öğrenerek tamamen yeni ve özgün içerikler oluşturur."
+    "explanation": "Üretken modellerin ayırt edici özelliği, sadece var olanı analiz etmekle kalmayıp, yeni ve orijinal veriler 'yaratma' yeteneğidir."
   },
   {
     "id": 71,
@@ -837,11 +849,11 @@
       "D) En pahalı abonelik modeline sahip olması."
     ],
     "answer": "B",
-    "explanation": "DeepSeek R1 modeli, akıl yürütme (reasoning) adımlarını ve düşünme sürecini (thought process) şeffaf bir şekilde arayüzde göstererek kullanıcılara açıklanabilir bir deneyim sunar."
+    "explanation": "DeepSeek R1'in en büyük avantajı, işlem sırasını ve hataları takip etmeyi sağlayan şeffaf düşünme zinciridir."
   },
   {
     "id": 72,
-    "question": "Transformer mimarisinin 'Öz-dikkat' (Self-attention) mekanizmasında kullanılan üç ana bileşen hangisidir?",
+    "question": "Transformer mimarisinin 'Öz-dikkat' (Self - attention) mekanizmasında kullanılan üç ana bileşen hangisidir?",
     "options": [
       "A) Generator, Discriminator, Noise",
       "B) Encoder, Decoder, Latent",
@@ -849,7 +861,7 @@
       "D) Input, Hidden, Output"
     ],
     "answer": "C",
-    "explanation": "Transformer mimarisindeki Öz-Dikkat (Self-Attention) mekanizması, girdi kelimelerinin birbirleriyle olan anlamsal ilişkilerini Query (Sorgu), Key (Anahtar) ve Value (Değer) vektörleri aracılığıyla hesaplar."
+    "explanation": "Self-attention süreci, her kelime için oluşturulan sorgu (Q), anahtar (K) ve değer (V) vektörleri arasındaki benzerliklerin hesaplanmasına dayanır."
   },
   {
     "id": 73,
@@ -861,7 +873,7 @@
       "D) Genel amaçlı muhakeme ve bilgi işi"
     ],
     "answer": "B",
-    "explanation": "Claude 4.5 Sonnet modeli, özellikle kod yazma yeteneği, bağımsız çalışan yapay zeka ajanları (agents) oluşturma ve bilgisayar ekranını insan gibi kontrol edebilme (computer use) becerileriyle öne çıkmaktadır."
+    "explanation": "Claude Sonnet 4.5, SWE-bench başarısı ve otonom çalışma yeteneğiyle yazılım geliştirme ve ajanlar konusunda uzmanlaşmıştır."
   },
   {
     "id": 74,
@@ -873,7 +885,7 @@
       "D) Veriyi daha basit bir temsile sıkıştırıp sonra yeniden oluşturması."
     ],
     "answer": "C",
-    "explanation": "Difüzyon (Diffusion) modelleri, rastgele gürültü içeren bir görselden yola çıkıp, ters difüzyon (denoising) adımlarıyla gürültüyü aşamalı olarak azaltarak net ve anlamlı görseller üretir."
+    "explanation": "Difüzyon modelleri, görüntü üretiminde gürültü ekleme ve geri çıkarma sürecini kullanarak istenen sonuca ulaşır."
   },
   {
     "id": 75,
@@ -885,23 +897,23 @@
       "D) Açık kaynak kodlu tek lider model olması."
     ],
     "answer": "B",
-    "explanation": "Gemini 2.5 Pro modelinin en belirgin teknik üstünlüğü, 1 milyon tokenlik devasa bağlam (context) penceresi sayesinde çok büyük veri dosyalarını tek seferde işleyebilmesidir."
+    "explanation": "Gemini 2.5 Pro, çok büyük belgeleri ve veri setlerini tek seferde işleyebilen 1 milyon tokenlık kapasitesiyle liderdir."
   },
   {
     "id": 76,
     "question": "Transformer mimarisinin RNN (Tekrarlayan Sinir Ağları) gibi eski yöntemlere göre en büyük avantajı nedir?",
     "options": [
-      "A) Eğitim için GPU donanımına ihtiyaç duymaması.",
+      "A) Eğitim için GPU donanımına ihtiyaç duymamaması.",
       "B) Veri setindeki tüm öğeler arasındaki ilişkileri aynı anda (paralel) değerlendirebilmesi.",
       "C) Sadece sayısal veriler üzerinde uzmanlaşmış olması.",
       "D) Verileri sıralı bir şekilde tek tek okuması."
     ],
     "answer": "B",
-    "explanation": "Transformer mimarisi, RNN'lerin aksine verileri sıralı değil, paralel olarak işler ve tüm dizi öğeleri arasındaki ilişkileri aynı anda değerlendirerek devasa bir eğitim avantajı sağlar."
+    "explanation": "Transformer modelleri, dikkat mekanizması sayesinde tüm girdiyi aynı anda işleyerek uzun mesafeli bağlamları daha iyi yakalar."
   },
   {
     "id": 77,
-    "question": "Yapay zeka eğitim sürecinde 'İnce Ayar' (Fine-tuning) aşamasının temel amacı nedir?",
+    "question": "Yapay zeka eğitim sürecinde 'İnce Ayar' (Fine - tuning) aşamasının temel amacı nedir?",
     "options": [
       "A) Modeli tamamen sıfırdan eğiterek yeni bir dil öğretmek.",
       "B) Modelin belirli görevlerde daha başarılı olması ve çıktı güvenliğinin sağlanması.",
@@ -909,7 +921,7 @@
       "D) Modelin donanım hızını artırmak."
     ],
     "answer": "B",
-    "explanation": "İnce Ayar (Fine-tuning), genel yeteneklere sahip bir ön eğitimli modeli (pre-trained), belirli bir sektörel alanda veya özel görevlerde daha yüksek performans ve güvenlik standartlarıyla çalıştırmak için ek verilerle eğitmektir."
+    "explanation": "İnce ayar, önceden eğitilmiş genel modellerin özel görevlere uyarlanması ve istenmeyen önyargıların azaltılması için kullanılır."
   },
   {
     "id": 78,
@@ -921,7 +933,7 @@
       "D) Modellerin çok hızlı yanıt vermesi."
     ],
     "answer": "A",
-    "explanation": "Üretken yapay zekanın en büyük sosyal ve etik riskleri arasında deepfake teknolojisi ile dezenformasyon yayılması ve çeşitli meslek dallarındaki istihdam endişeleri yer alır."
+    "explanation": "Kaynaklara göre güvenlik (deepfake), hukuk (telif) ve sosyal (istihdam) konular temel risk alanlarıdır."
   },
   {
     "id": 79,
@@ -933,7 +945,7 @@
       "D) İnsan beynini tamamen taklit eden ilk sinir ağını kurması."
     ],
     "answer": "A",
-    "explanation": "Yapay zeka tarihinin en önemli dönüm noktalarından biri, IBM tarafından geliştirilen 'Deep Blue' bilgisayarının 1997 yılında dünya satranç şampiyonu Garry Kasparov'u yenmesidir."
+    "explanation": "1997 yılında Deep Blue'nun satranç şampiyonunu yenmesi, yapay zekanın hesaplama gücünün sembolik bir göstergesi olmuştur."
   },
   {
     "id": 80,
@@ -945,7 +957,7 @@
       "D) Donanım üretimini artırmak için"
     ],
     "answer": "A",
-    "explanation": "Üretken yapay zeka modelleri (LLM'ler), girdilerin (prompt) formülasyonuna son derece duyarlıdır. Üstün kalitede, doğru ve işlevsel sonuçlar almak için doğru prompt tasarımı kritik öneme sahiptir."
+    "explanation": "Prompt mühendisliği, yapay zeka modellerine verilen girdilerin (isteklerin) kalitesini artırarak modelin daha doğru, ilgili ve yüksek performanslı sonuçlar üretmesini sağlar. Modellerin potansiyelini tam olarak kullanabilmek için kritik bir beceri haline gelmiştir."
   },
   {
     "id": 81,
@@ -955,7 +967,7 @@
       "B) true"
     ],
     "answer": "B",
-    "explanation": "Yerel çalışan modeller veriyi dış sunuculara veya buluta göndermediği için tam veri gizliliği sağlar."
+    "explanation": "Yerelde çalışan yapay zeka modelleri, verileri harici bir sunucuya göndermek yerine kullanıcının kendi cihazında işlediği için veri gizliliğini ve güvenliğini önemli ölçüde artırır."
   },
   {
     "id": 82,
@@ -967,7 +979,7 @@
       "D) Yasal düzenlemeler"
     ],
     "answer": "C",
-    "explanation": "Yapay zeka problemleri güncel teknik sınırlılıklardır; gelecek yönelimli birer trend değillerdir."
+    "explanation": "Gelecek trendleri, teknolojinin evrimiyle beklenen spesifik gelişimleri (küçülen modeller, gelişen donanımlar) ve toplumsal uyum süreçlerini (yasal düzenlemeler) ifade eder. 'Yapay zeka problemleri' ise genel bir durumdur ve bir gelecek trendi olarak tanımlanmaz."
   },
   {
     "id": 83,
@@ -979,7 +991,7 @@
       "D) Kullanıcı deneyimi"
     ],
     "answer": "B",
-    "explanation": "Modellerin devasa veriyle eğitilmesi fikri mülkiyet ve telif hakları tartışmalarını ön plana çıkarır; düzenlemeler bu alana odaklanır."
+    "explanation": "Üretken yapay zeka sistemlerinin büyük veri setleriyle eğitilmesi ve yeni içerikler üretmesi, fikri mülkiyet ve kişisel verilerin korunması konularını ön plana çıkararak yasal düzenlemelerin odak noktası haline getirmiştir."
   },
   {
     "id": 84,
@@ -991,7 +1003,7 @@
       "D) Sunucu yönetimi"
     ],
     "answer": "A",
-    "explanation": "Üretken yapay zekanın temel varlık amacı yeni ve özgün metin, resim, ses vb. içerikler üretmektir."
+    "explanation": "Üretken yapay zeka (Generative AI), var olan verileri kullanarak metin, görsel, ses ve video gibi yeni ve özgün içerikler üretme kabiliyetine sahip bir yapay zeka dalıdır. Bu yüzden en temel fonksiyonu içerik üretimidir."
   },
   {
     "id": 85,
@@ -1003,7 +1015,7 @@
       "D) Modelin performansını artırmak için"
     ],
     "answer": "A",
-    "explanation": "Yapay zekanın kontrolsüz gelişimini, etik dışı kullanımları ve güvenlik risklerini yasal sınırlarla yönetmek regülasyonların temel amacıdır."
+    "explanation": "Üretken yapay zeka teknolojilerinin gelişimiyle beraber ortaya çıkan veri gizliliği, siber güvenlik riskleri ve etik kaygıların toplum yararına yönetilebilmesi için yasal düzenlemeler ve denetim mekanizmaları kritik bir ihtiyaç haline gelmektedir."
   },
   {
     "id": 86,
@@ -1015,7 +1027,7 @@
       "D) Modelin hata yapması"
     ],
     "answer": "A",
-    "explanation": "Zero-shot, modelin daha önce özel eğitim görmediği yepyeni görevleri ön eğitim becerileriyle çözmesidir."
+    "explanation": "Zero-shot learning (sıfır vuruşlu öğrenme), yapay zeka modellerinin daha önce özel bir eğitim almadıkları veya örneğini görmedikleri yeni görevleri, sahip oldukları genel dil ve örüntü anlama yetenekleri sayesinde doğrudan yerine getirebilmesini sağlar."
   },
   {
     "id": 87,
@@ -1027,7 +1039,7 @@
       "D) Kısa ve öz olmasına"
     ],
     "answer": "D",
-    "explanation": "Aşırı karmaşıklıktan uzak, açık, net, kısa ve öz girdiler yapay zekadan en yüksek performansı almamızı sağlar."
+    "explanation": "Yapay zeka modellerinden en verimli sonucu almak için hazırlanan promptların (komutların) net, anlaşılır, kısa ve öz olması gerekir. Gereksiz karmaşıklık modelin odaklanmasını zorlaştırabilir."
   },
   {
     "id": 88,
@@ -1037,7 +1049,7 @@
       "B) true"
     ],
     "answer": "A",
-    "explanation": "Vektör veritabanları metni doğrudan saklamaz, öncelikle yüksek boyutlu sayısal vektörlere (embedding) dönüştürüp saklar."
+    "explanation": "Vektör veritabanları, metin gibi verileri doğrudan ham haliyle saklamak yerine, onları 'embedding' adı verilen çok boyutlu sayısal vektörlere dönüştürerek depolar. Bu işlem, benzer içeriklerin matematiksel olarak birbirine yakın olmasını sağlayarak anlamsal aramayı mümkün kılar."
   },
   {
     "id": 89,
@@ -1045,11 +1057,11 @@
     "options": [
       "A) Komutu karmaşık hale getirmek",
       "B) Komutu rastgele oluşturmak",
-      "C) Çok fazla onay parametresi belirtmek",
+      "C) Çok fazla parametre belirtmek",
       "D) Açık ve net bir komut vermek"
     ],
     "answer": "D",
-    "explanation": "Prompt mühendisliğinin altın kuralı doğrudan, açık ve net komutlar vermektir."
+    "explanation": "Prompt mühendisliğinde, yapay zekanın istenen görevi doğru bir şekilde anlayıp yerine getirebilmesi için komutların açık, net ve spesifik olması en temel gerekliliktir. Karmaşıklık veya belirsizlik, modelin yanlış çıktılar üretmesine neden olabilir."
   },
   {
     "id": 90,
@@ -1059,7 +1071,7 @@
       "B) true"
     ],
     "answer": "A",
-    "explanation": "Prompt mühendisliği model eğitiminde değil, eğitilmiş modelden çıktı alırken (inference) kullanılır."
+    "explanation": "Prompt mühendisliği, modellerin eğitimi tamamlandıktan sonra, yani kullanıcıların modelle etkileşime geçtiği çıkarım (inference) aşamasında modelleri en iyi şekilde yönlendirmek ve istenen sonuçları almak için kullanılan bir yöntemdir. Bu nedenle sadece eğitim aşamasıyla sınırlı değildir."
   },
   {
     "id": 91,
@@ -1071,7 +1083,7 @@
       "D) İçeriklerin yasal olarak korunması gerektiği için"
     ],
     "answer": "D",
-    "explanation": "Yapay zeka ürünlerinin yasal sahipliği ve yasal koruma altına alınması, ticari hak ihlallerinin önlenmesi açısından telif hakları en önemli konudur."
+    "explanation": "Telif hakları, fikri mülkiyetin yasal olarak kime ait olduğunu belirler ve üretilen içeriğin izinsiz kullanımını engelleyerek yaratıcı haklarını korur. Üretken yapay zeka bağlamında içeriklerin mülkiyet durumu yasal bir çerçeve gerektirdiği için bu konu kritiktir."
   },
   {
     "id": 92,
@@ -1083,7 +1095,7 @@
       "D) Model parametrelerine"
     ],
     "answer": "B",
-    "explanation": "RAG sistemleri, dış bilgi kaynaklarından dinamik veri çekerek LLM'lerin güncel kalmasını ve bağlama dayalı doğru üretim yapmasını sağlar."
+    "explanation": "Retrieval Augmented Generation (RAG), dil modelinin kendi eğitim verileri dışındaki harici bir bilgi kaynağından (external knowledge source) ilgili verileri geri getirip bu verileri kullanarak daha doğru ve güncel yanıtlar üretmesini sağlayan bir yöntemdir."
   },
   {
     "id": 93,
@@ -1095,7 +1107,7 @@
       "D) Modelin eğitim verilerini"
     ],
     "answer": "A",
-    "explanation": "Prompt, modele yöneltilen her türlü yazılı talimat, soru veya girdidir."
+    "explanation": "Prompt, üretken yapay zeka modellerine belirli bir çıktıyı üretmeleri için verilen metin tabanlı girdi, komut veya yönerge anlamına gelir. Kullanıcının modelle etkileşime girdiği temel araçtır."
   },
   {
     "id": 94,
@@ -1105,7 +1117,7 @@
       "B) true"
     ],
     "answer": "B",
-    "explanation": "Yapay zeka güvenliği ve dezenformasyonun önlenmesi gibi amaçlarla yasal denetimlerin artacağı kesin olarak öngörülmektedir."
+    "explanation": "Üretken yapay zeka teknolojilerinin etik, veri gizliliği, telif hakları ve güvenlik gibi alanlarda oluşturabileceği riskleri yönetmek adına dünya çapında yasal düzenlemelerin ve standartların artması genel bir beklentidir."
   },
   {
     "id": 95,
@@ -1117,7 +1129,7 @@
       "D) Bir kelimenin ya da parçanın sayısal karşılığını"
     ],
     "answer": "D",
-    "explanation": "Dil modelleri metinleri doğrudan okuyamaz. Öncelikle her kelime veya hece token adı verilen ve sayısal karşılığı (ID) olan parçalara bölünür."
+    "explanation": "Dil modellerinde metinler 'token' adı verilen daha küçük birimlere (kelimeler, karakterler veya alt kelime parçaları) bölünür. Bu birimlerin her biri, yapay zekanın matematiksel olarak işleyebilmesi için belirli sayısal değerlere dönüştürülür."
   },
   {
     "id": 96,
@@ -1129,7 +1141,7 @@
       "D) Biyolojik veri şifreleme"
     ],
     "answer": "C",
-    "explanation": "Metin, görsel, ses ve video üretme yeteneği sayesinde otonom içerik üretimi süreçleri en çok etkilenecek sektördür."
+    "explanation": "Üretken yapay zeka (Generative AI), mevcut verilerden öğrenerek yeni ve özgün içerikler (metin, ses, görüntü, video) üretebilme yeteneği sayesinde içerik üretim süreçlerini otomatize etmekte ve bu alanı kökten değiştirmektedir."
   },
   {
     "id": 97,
@@ -1141,7 +1153,7 @@
       "D) Metin ve sunum hazırlama"
     ],
     "answer": "D",
-    "explanation": "Modern yapay zeka ofis araçları (Copilot vb.) metin yazımı, veri analizi ve otomatik sunum hazırlama gibi işlerde etkin rol oynar."
+    "explanation": "Yapay zeka destekli ofis araçları, kullanıcıların metin yazma, özet çıkarma ve sunum slaytları oluşturma gibi üretkenlik odaklı görevleri daha hızlı ve verimli bir şekilde yapmalarına olanak tanır."
   },
   {
     "id": 98,
@@ -1153,7 +1165,7 @@
       "D) Daha az esneklik"
     ],
     "answer": "C",
-    "explanation": "Yapay zeka modellerinin tamamen uydurma ve yanlış bilgileri son derece ikna edici biçimde üretmesine halüsinasyon denir; en büyük dezavantajlardan biridir."
+    "explanation": "Üretken yapay zeka modelleri, bazen eğitim verilerindeki desenleri yanlış yorumlayarak veya yetersiz veri nedeniyle gerçeğe aykırı, hatalı veya yanıltıcı içerikler üretebilir. Bu durum 'halüsinasyon' olarak adlandırılır ve teknolojinin güvenilirliği açısından önemli bir dezavantajdır."
   },
   {
     "id": 99,
@@ -1163,6 +1175,6 @@
       "B) true"
     ],
     "answer": "A",
-    "explanation": "Yapay zeka destekli ofis araçları yazı dışında veri analizi yapma, sunum hazırlama, grafik çizme ve özet çıkarma gibi birçok karmaşık görevi yapabilir."
+    "explanation": "Yapay zeka destekli ofis araçları sadece metin yazmakla sınırlı değildir; veri analizi, grafik oluşturma, sunum hazırlama ve e-posta yönetimi gibi pek çok farklı alanda kullanılabilmektedir."
   }
 ]

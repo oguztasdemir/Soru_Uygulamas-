@@ -44,7 +44,7 @@ const studyNotesDS = [
                     <br><em>Örnekler:</em> Çevrimiçi yayıncılıktan elde edilen verilerle kişiselleştirilmiş film önerileri sunarak yeni bir iş modeli kurmak.
                 </li>
             </ul>
-            <p><strong>Sanayi 4.0 (Dördüncü Sanayi Devrimi):</strong> Veri ve bilgiye bağımlı olan, siber-fiziksel sistemler üzerine kurulu devrimdir. Dalenogare vd. (2018) çalışmasına göre 5 temel sütundan biri **Simülasyonlar/Sanal Modellerin Analizi**dir. Temel bileşenleri:
+            <p><strong>Sanayi 4.0 (Dördüncü Sanayi Devrimi):</strong> Veri ve bilgiye bağımlı olan, siber-fiziksel sistemler üzerine kurulu devrimdir. Dalenogare vd. (2018) çalışmasına göre 5 temel sütundan biri <strong>Simülasyonlar/Sanal Modellerin Analizi</strong>dir. Temel bileşenleri:
                 <ul>
                     <li>Endüstriyel İnternet (IoT), Kablosuz Sensör Ağları.</li>
                     <li>Büyük veri toplama ve analizi, Bulut bilişim.</li>
@@ -176,13 +176,13 @@ const studyNotesDS = [
                 </ul>
             </p>
             <p><strong>Efsane 3: Şirketler yenilikçilik için teknoloji startup'ları satın almalıdır.</strong>
-                <br><em>Gerçek:</em> Startup'ları satın alıp ana firmanın bürokrasi ve yavaşlığıyla boğmak yerine, yarı bağımsız çalışıp sinerji yaratmalarına izin verilmelidir (Örn: **Avnet**'in Hackster.io'yu satın alıp bağımsız bırakması).
+                <br><em>Gerçek:</em> Startup'ları satın alıp ana firmanın bürokrasi ve yavaşlığıyla boğmak yerine, yarı bağımsız çalışıp sinerji yaratmalarına izin verilmelidir (Örn: <strong>Avnet</strong>'in Hackster.io'yu satın alıp bağımsız bırakması).
             </p>
             <p><strong>Efsane 4: Dijital dönüşüm sadece teknoloji yatırımıdır.</strong>
-                <br><em>Gerçek:</em> Dönüşüm insan kaynağını ve kültürel değişimi gerektirir (Örn: **Adobe**'un çalışanlara fikir geliştirme fırsatı veren **"Turuncu Kutu" (Orange Box)** projesi).
+                <br><em>Gerçek:</em> Dönüşüm insan kaynağını ve kültürel değişimi gerektirir (Örn: <strong>Adobe</strong>'un çalışanlara fikir geliştirme fırsatı veren <strong>"Turuncu Kutu" (Orange Box)</strong> projesi).
             </p>
             <p><strong>Efsane 5: Eski bilgi sistemleri altyapısını tamamen yenileyerek başlamak gerekir.</strong>
-                <br><em>Gerçek:</em> Altyapıyı toptan değiştirmek çok risklidir. Dönüşüm aşamalı olmalı ve pazarda test edilerek ilerlenmelidir (Örn: **Marriott**'un Expedia rekabetinde aşamalı güncellemesi).
+                <br><em>Gerçek:</em> Altyapıyı toptan değiştirmek çok risklidir. Dönüşüm aşamalı olmalı ve pazarda test edilerek ilerlenmelidir (Örn: <strong>Marriott</strong>'un Expedia rekabetinde aşamalı güncellemesi).
             </p>
         `
     },

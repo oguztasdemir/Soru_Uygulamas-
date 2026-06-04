@@ -3,48 +3,48 @@
     "id": 1,
     "question": "İstem (Prompt) mühendisliğinin temel amacı nedir?",
     "options": [
-      "A) Komut ve yönlendirmelerin bilinçli şekilde tasarlanması gerekir.",
-      "B) Girdi = Çıktı.",
-      "C) Modelden beklenen temel işlem veya sorudur.",
-      "D) Yapay zekâ ile etkileşimi tahminden çıkarıp, tekrarlanabilir bir mühendislik disiplinine dönüştürmektir."
+      "A) Zero-shot Prompting.",
+      "B) Bağlam (Contextual Info).",
+      "C) Yapay zekâ ile etkileşimi tahminden çıkarıp, tekrarlanabilir bir mühendislik disiplinine dönüştürmektir.",
+      "D) İstemin gereksiz kelimelerden arındırılmış, kısa ve öz olmasıdır."
     ],
-    "answer": "D",
+    "answer": "C",
     "explanation": "Doğru terim açıklaması: Yapay zekâ ile etkileşimi tahminden çıkarıp, tekrarlanabilir bir mühendislik disiplinine dönüştürmektir."
   },
   {
     "id": 2,
     "question": "İstem mühendisliğindeki 'Temel Denklem' nedir?",
     "options": [
-      "A) Komut ve yönlendirmelerin bilinçli şekilde tasarlanması gerekir.",
-      "B) Girdi = Çıktı.",
-      "C) Nelerin dışarıda bırakılacağını (sınırları) belirlemektir.",
-      "D) İstemin gereksiz kelimelerden arındırılmış, kısa ve öz olmasıdır."
+      "A) Rol ve bağlam kombinasyonu, modelin eğitim verisindeki ilgili ve doğru bilgilere odaklanmasını sağlar.",
+      "B) Üretim (Creation) aşamasına odaklanır.",
+      "C) Firefly.",
+      "D) Girdi = Çıktı."
     ],
-    "answer": "B",
+    "answer": "D",
     "explanation": "Doğru terim açıklaması: Girdi = Çıktı."
   },
   {
     "id": 3,
     "question": "TÜBİTAK'a göre yapay zekâdan en verimli çıktıyı almak için ne yapılması gerekir?",
     "options": [
-      "A) Çıktıyı denetlemek, mantıksal hataları bulmak ve komutu rafine etmektir.",
-      "B) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla).",
-      "C) Modelden beklenen temel işlem veya sorudur.",
-      "D) Komut ve yönlendirmelerin bilinçli şekilde tasarlanması gerekir."
+      "A) Nelerin dışarıda bırakılacağını (sınırları) belirlemektir.",
+      "B) Bağlam (Contextual Info).",
+      "C) Komut ve yönlendirmelerin bilinçli şekilde tasarlanması gerekir.",
+      "D) Modelden beklenen temel işlem veya sorudur."
     ],
-    "answer": "D",
+    "answer": "C",
     "explanation": "Doğru terim açıklaması: Komut ve yönlendirmelerin bilinçli şekilde tasarlanması gerekir."
   },
   {
     "id": 4,
     "question": "Bir istemin anatomisinde 'Sistem Talimatları' (System Instructions) neyi belirler?",
     "options": [
-      "A) Örnekler (Few-shot Examples).",
-      "B) Yapılandır (3. Adım).",
-      "C) Context (Bağlam): Rol, hedef kitle ve ton.",
-      "D) Modelin benimseyeceği rolü, stili ve tonu belirler."
+      "A) Komutu Parçalara Bölme (Chunking).",
+      "B) Midjourney.",
+      "C) Modelin benimseyeceği rolü, stili ve tonu belirler.",
+      "D) Biçim (Biçim)."
     ],
-    "answer": "D",
+    "answer": "C",
     "explanation": "Doğru terim açıklaması: Modelin benimseyeceği rolü, stili ve tonu belirler."
   },
   {
@@ -52,9 +52,9 @@
     "question": "İstem bileşenlerinden hangisi modelin referans alacağı arka plan bilgisini sunar?",
     "options": [
       "A) Bağlam (Contextual Info).",
-      "B) Cevabın mantıklı olup olmadığı ve halüsinasyon içerip içermediğidir.",
-      "C) Yapılandır (3. Adım).",
-      "D) Rol ve bağlam kombinasyonu, modelin eğitim verisindeki ilgili ve doğru bilgilere odaklanmasını sağlar."
+      "B) Yapay zekâ ile etkileşimi tahminden çıkarıp, tekrarlanabilir bir mühendislik disiplinine dönüştürmektir.",
+      "C) Görevi küçük parçalara bölüp adım adım sormak gerekir.",
+      "D) Karakter, Görev, Bağlam ve Biçim."
     ],
     "answer": "A",
     "explanation": "Doğru terim açıklaması: Bağlam (Contextual Info)."
@@ -63,10 +63,10 @@
     "id": 6,
     "question": "İstemde 'Görev' (Task) bileşeninin tanımı nedir?",
     "options": [
-      "A) Yapılandır (3. Adım).",
+      "A) Görevi küçük parçalara bölüp adım adım sormak gerekir.",
       "B) Modelden beklenen temel işlem veya sorudur.",
-      "C) Modelin benimseyeceği rolü, stili ve tonu belirler.",
-      "D) Çıktının formatını (örneğin tablo veya liste) tanımlar."
+      "C) Doğrudan Komut (Zero-Shot).",
+      "D) CLEAR."
     ],
     "answer": "B",
     "explanation": "Doğru terim açıklaması: Modelden beklenen temel işlem veya sorudur."
@@ -75,34 +75,34 @@
     "id": 7,
     "question": "İstenen formatı gösteren doğru cevap şablonlarına ne ad verilir?",
     "options": [
-      "A) Context (Bağlam): Rol, hedef kitle ve ton.",
-      "B) Nelerin dışarıda bırakılacağını (sınırları) belirlemektir.",
-      "C) Örnekler (Few-shot Examples).",
-      "D) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla)."
+      "A) Örnekler (Few-shot Examples).",
+      "B) Çıktının formatını (örneğin tablo veya liste) tanımlar.",
+      "C) Nelerin dışarıda bırakılacağını (sınırları) belirlemektir.",
+      "D) Modele doğru bir rol ve persona atanmasına bağlıdır."
     ],
-    "answer": "C",
+    "answer": "A",
     "explanation": "Doğru terim açıklaması: Örnekler (Few-shot Examples)."
   },
   {
     "id": 8,
     "question": "İteratif İyileştirme Döngüsü'nün ilk adımı nedir?",
     "options": [
-      "A) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla).",
-      "B) Modelden beklenen temel işlem veya sorudur.",
-      "C) İstemin gereksiz kelimelerden arındırılmış, kısa ve öz olmasıdır.",
-      "D) Bağlam (Contextual Info)."
+      "A) Paralel hesaplamaya uygun olması.",
+      "B) Dikkat (Attention) mekanizması.",
+      "C) Modelden beklenen temel işlem veya sorudur.",
+      "D) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla)."
     ],
-    "answer": "A",
+    "answer": "D",
     "explanation": "Doğru terim açıklaması: İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla)."
   },
   {
     "id": 9,
     "question": "İteratif İyileştirme Döngüsü'nde komutun açık ve spesifik yazıldığı aşama hangisidir?",
     "options": [
-      "A) Modelden beklenen temel işlem veya sorudur.",
+      "A) DALL-E 2.",
       "B) Yapılandır (3. Adım).",
-      "C) Çıktı yönlendirmelerinin netliğini test eder (Örn: '50 kelimeyi geçme').",
-      "D) Bağlam (Contextual Info)."
+      "C) Chain of Thought (CoT - Düşünce Zinciri).",
+      "D) Yapay zekânın verdiği cevaba göre komutun yeniden ayarlanmış olmasıdır."
     ],
     "answer": "B",
     "explanation": "Doğru terim açıklaması: Yapılandır (3. Adım)."
@@ -111,60 +111,60 @@
     "id": 10,
     "question": "C.R.A.F.T. formülündeki 'C' harfi neyi temsil eder?",
     "options": [
-      "A) Nelerin dışarıda bırakılacağını (sınırları) belirlemektir.",
-      "B) Örnekler (Few-shot Examples).",
-      "C) Context (Bağlam): Rol, hedef kitle ve ton.",
-      "D) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla)."
+      "A) Yapılandır (3. Adım).",
+      "B) Context (Bağlam): Rol, hedef kitle ve ton.",
+      "C) Modelden beklenen temel işlem veya sorudur.",
+      "D) Şeffaflık."
     ],
-    "answer": "C",
+    "answer": "B",
     "explanation": "Doğru terim açıklaması: Context (Bağlam): Rol, hedef kitle ve ton."
   },
   {
     "id": 11,
     "question": "C.R.A.F.T. formülündeki 'R' harfi (Request) neyi ifade eder?",
     "options": [
-      "A) Örnekler (Few-shot Examples).",
-      "B) Bağlam (Contextual Info).",
-      "C) Ulaşılması gereken spesifik hedefi ifade eder.",
-      "D) Çıktı yönlendirmelerinin netliğini test eder (Örn: '50 kelimeyi geçme')."
+      "A) Ulaşılması gereken spesifik hedefi ifade eder.",
+      "B) Modele doğru bir rol ve persona atanmasına bağlıdır.",
+      "C) Self-Consistency (Öz-Tutarlılık).",
+      "D) Çıktının formatını (örneğin tablo veya liste) tanımlar."
     ],
-    "answer": "C",
+    "answer": "A",
     "explanation": "Doğru terim açıklaması: Ulaşılması gereken spesifik hedefi ifade eder."
   },
   {
     "id": 12,
     "question": "C.R.A.F.T. formülünde adım adım talimatların yer aldığı bölüm hangisidir?",
     "options": [
-      "A) Cevabın mantıklı olup olmadığı ve halüsinasyon içerip içermediğidir.",
-      "B) Actions (Eylemler).",
-      "C) Nelerin dışarıda bırakılacağını (sınırları) belirlemektir.",
-      "D) Örnekler (Few-shot Examples)."
+      "A) Actions (Eylemler).",
+      "B) Modelin bir sonraki komut için beklemesi ve adım adım ilerlemesi beklenir.",
+      "C) İhtiyaç belirleme, bağlam sunma, yapılandırma ve test etme gibi sistematik adımlar içerdiği için.",
+      "D) Matematiksel veya analitik hataları sıfıra indirerek karmaşık mantık yürütmeyi sağlamasıdır."
     ],
-    "answer": "B",
+    "answer": "A",
     "explanation": "Doğru terim açıklaması: Actions (Eylemler)."
   },
   {
     "id": 13,
     "question": "C.R.A.F.T. formülündeki 'F' (Frame) bileşeninin görevi nedir?",
     "options": [
-      "A) Rol ve bağlam kombinasyonu, modelin eğitim verisindeki ilgili ve doğru bilgilere odaklanmasını sağlar.",
-      "B) Nelerin dışarıda bırakılacağını (sınırları) belirlemektir.",
-      "C) Modelin benimseyeceği rolü, stili ve tonu belirler.",
-      "D) Çıktı yönlendirmelerinin netliğini test eder (Örn: '50 kelimeyi geçme')."
+      "A) Dış Hafıza Ekleme (Harici Bağlam Havuzu).",
+      "B) Few-shot Prompting.",
+      "C) ÜYZ yardımcı pilottur, ancak kaptan (sorumlu) her zaman araştırmacıdır.",
+      "D) Nelerin dışarıda bırakılacağını (sınırları) belirlemektir."
     ],
-    "answer": "B",
+    "answer": "D",
     "explanation": "Doğru terim açıklaması: Nelerin dışarıda bırakılacağını (sınırları) belirlemektir."
   },
   {
     "id": 14,
     "question": "C.R.A.F.T. formülündeki 'T' (Template) neyi tanımlar?",
     "options": [
-      "A) Çıktı yönlendirmelerinin netliğini test eder (Örn: '50 kelimeyi geçme').",
-      "B) Çıktının formatını (örneğin tablo veya liste) tanımlar.",
-      "C) Girdi = Çıktı.",
-      "D) Örnekler (Few-shot Examples)."
+      "A) Çıktının formatını (örneğin tablo veya liste) tanımlar.",
+      "B) Paralel hesaplamaya uygun olması.",
+      "C) JSON formatı.",
+      "D) $\\%30$."
     ],
-    "answer": "B",
+    "answer": "A",
     "explanation": "Doğru terim açıklaması: Çıktının formatını (örneğin tablo veya liste) tanımlar."
   },
   {
@@ -172,9 +172,9 @@
     "question": "LLM'lere bir rol (persona) vermek neden halüsinasyon oranını düşürür?",
     "options": [
       "A) Rol ve bağlam kombinasyonu, modelin eğitim verisindeki ilgili ve doğru bilgilere odaklanmasını sağlar.",
-      "B) Komut ve yönlendirmelerin bilinçli şekilde tasarlanması gerekir.",
-      "C) İstemin gereksiz kelimelerden arındırılmış, kısa ve öz olmasıdır.",
-      "D) Cevabın mantıklı olup olmadığı ve halüsinasyon içerip içermediğidir."
+      "B) Çıktı kalitesi/stil, maliyet/hız ve telif hakları/güvenlik.",
+      "C) Zero-shot Prompting.",
+      "D) AI'ya neyin 'iyi' olduğunu anlaması için spesifik kullanım alanı (Örn: SaaS startup) belirtilerek düzeltilir."
     ],
     "answer": "A",
     "explanation": "Doğru terim açıklaması: Rol ve bağlam kombinasyonu, modelin eğitim verisindeki ilgili ve doğru bilgilere odaklanmasını sağlar."
@@ -183,9 +183,9 @@
     "id": 16,
     "question": "Kalite Kontrol için kullanılan C.L.E.A.R. listesindeki 'Concise' ne anlama gelir?",
     "options": [
-      "A) Örnekler (Few-shot Examples).",
-      "B) Modelin benimseyeceği rolü, stili ve tonu belirler.",
-      "C) Yapılandır (3. Adım).",
+      "A) Self-Consistency (Öz-Tutarlılık).",
+      "B) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla).",
+      "C) Lisanslı ve kullanım hakkı alınmış.",
       "D) İstemin gereksiz kelimelerden arındırılmış, kısa ve öz olmasıdır."
     ],
     "answer": "D",
@@ -195,24 +195,24 @@
     "id": 17,
     "question": "C.L.E.A.R. listesinde 'Explicit' (Açık) kriteri neyi test eder?",
     "options": [
-      "A) Yapay zekâ ile etkileşimi tahminden çıkarıp, tekrarlanabilir bir mühendislik disiplinine dönüştürmektir.",
-      "B) Çıktı yönlendirmelerinin netliğini test eder (Örn: '50 kelimeyi geçme').",
-      "C) Komut ve yönlendirmelerin bilinçli şekilde tasarlanması gerekir.",
-      "D) Çıktının formatını (örneğin tablo veya liste) tanımlar."
+      "A) Spesifik hata mesajları (Örn: NullPointerException) ve nedenleri.",
+      "B) AI'ya neyin 'iyi' olduğunu anlaması için spesifik kullanım alanı (Örn: SaaS startup) belirtilerek düzeltilir.",
+      "C) Çıktı yönlendirmelerinin netliğini test eder (Örn: '50 kelimeyi geçme').",
+      "D) Yapılandır (3. Adım)."
     ],
-    "answer": "B",
+    "answer": "C",
     "explanation": "Doğru terim açıklaması: Çıktı yönlendirmelerinin netliğini test eder (Örn: '50 kelimeyi geçme')."
   },
   {
     "id": 18,
     "question": "C.L.E.A.R. listesindeki 'Reflective' (Düşündürücü) kriterinin odağı nedir?",
     "options": [
-      "A) Modelin benimseyeceği rolü, stili ve tonu belirler.",
-      "B) Girdi = Çıktı.",
-      "C) Cevabın mantıklı olup olmadığı ve halüsinasyon içerip içermediğidir.",
-      "D) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla)."
+      "A) Few-shot Prompting.",
+      "B) Cevabın mantıklı olup olmadığı ve halüsinasyon içerip içermediğidir.",
+      "C) Dikkat (Attention) mekanizması.",
+      "D) Geleneksel uygulamalar açık talimatlar (programlama) gerektirirken, ÜYZ makine öğrenmesine ve veri modellerini tanımaya dayanır."
     ],
-    "answer": "C",
+    "answer": "B",
     "explanation": "Doğru terim açıklaması: Cevabın mantıklı olup olmadığı ve halüsinasyon içerip içermediğidir."
   },
   {
@@ -220,9 +220,9 @@
     "question": "Sentez Matrisi'ne göre CRAFT hangi aşamaya odaklanır?",
     "options": [
       "A) Üretim (Creation) aşamasına odaklanır.",
-      "B) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla).",
-      "C) Modelin benimseyeceği rolü, stili ve tonu belirler.",
-      "D) Yapılandır (3. Adım)."
+      "B) JSON formatı.",
+      "C) Midjourney.",
+      "D) Makine Öğrenmesi (Machine Learning)."
     ],
     "answer": "A",
     "explanation": "Doğru terim açıklaması: Üretim (Creation) aşamasına odaklanır."
@@ -231,12 +231,972 @@
     "id": 20,
     "question": "Sentez Matrisi'ne göre CLEAR listesinin temel amacı nedir?",
     "options": [
-      "A) Komut ve yönlendirmelerin bilinçli şekilde tasarlanması gerekir.",
-      "B) Çıktıyı denetlemek, mantıksal hataları bulmak ve komutu rafine etmektir.",
-      "C) Modelin benimseyeceği rolü, stili ve tonu belirler.",
-      "D) Yapay zekâ ile etkileşimi tahminden çıkarıp, tekrarlanabilir bir mühendislik disiplinine dönüştürmektir."
+      "A) ELIZA.",
+      "B) Odak noktası (Focus) kategorisinde değerlendirilir.",
+      "C) Çıktıyı denetlemek, mantıksal hataları bulmak ve komutu rafine etmektir.",
+      "D) Gem inşa etmek."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Çıktıyı denetlemek, mantıksal hataları bulmak ve komutu rafine etmektir."
+  },
+  {
+    "id": 21,
+    "question": "İstem Olgunluk Eğrisi'nde (Maturity Curve) en düşük çaba gerektiren yöntem hangisidir?",
+    "options": [
+      "A) Actions (Eylemler).",
+      "B) Gem'lerin kuralları, tonu ve kısıtlamaları her sohbette baştan anlatmaya gerek kalmadan hafızasında tutması.",
+      "C) Örnekler (Few-shot Examples).",
+      "D) Doğrudan Komut (Zero-Shot)."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Doğrudan Komut (Zero-Shot)."
+  },
+  {
+    "id": 22,
+    "question": "Düşünce Zinciri (Chain of Thought) tekniğinin ana avantajı nedir?",
+    "options": [
+      "A) Gem'in hangi rolü (persona) oynayacağı ve nasıl bir ses tonuna sahip olacağı.",
+      "B) Grafik İşlem Birimleri (GPU'lar) ve Tensor İşlem Birimleri (TPU'lar).",
+      "C) ÜYZ yardımcı pilottur, ancak kaptan (sorumlu) her zaman araştırmacıdır.",
+      "D) Matematiksel veya analitik hataları sıfıra indirerek karmaşık mantık yürütmeyi sağlamasıdır."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Matematiksel veya analitik hataları sıfıra indirerek karmaşık mantık yürütmeyi sağlamasıdır."
+  },
+  {
+    "id": 23,
+    "question": "Hiçbir örnek vermeden doğrudan görev tanımı yapmaya ne ad verilir?",
+    "options": [
+      "A) Gem'in hangi rolü (persona) oynayacağı ve nasıl bir ses tonuna sahip olacağı.",
+      "B) Zero-Shot Prompting.",
+      "C) Güven ama Doğrula (Trust but Verify).",
+      "D) Sorgu ($Q$ - Query), Anahtar ($K$ - Key) ve Değer ($V$ - Value)."
     ],
     "answer": "B",
-    "explanation": "Doğru terim açıklaması: Çıktıyı denetlemek, mantıksal hataları bulmak ve komutu rafine etmektir."
+    "explanation": "Doğru terim açıklaması: Zero-Shot Prompting."
+  },
+  {
+    "id": 24,
+    "question": "Modele birkaç örnek vererek istenen formatı ve tonu öğretme tekniği nedir?",
+    "options": [
+      "A) Few-Shot Prompting.",
+      "B) ÜYZ yardımcı pilottur, ancak kaptan (sorumlu) her zaman araştırmacıdır.",
+      "C) Rol ve bağlam kombinasyonu, modelin eğitim verisindeki ilgili ve doğru bilgilere odaklanmasını sağlar.",
+      "D) Adalet ve Saygı (Emeğe Saygı)."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Few-Shot Prompting."
+  },
+  {
+    "id": 25,
+    "question": "Düşünce Zinciri (CoT) yöntemini tetikleyen 'sihirli kelime' öbeği nedir?",
+    "options": [
+      "A) Yapay zekânın verdiği cevaba göre komutun yeniden ayarlanmış olmasıdır.",
+      "B) 'Adım adım düşün' veya 'Let's think step by step'.",
+      "C) Üreteç (Generator) ve Ayırt Edici (Discriminator).",
+      "D) Rol ve bağlam kombinasyonu, modelin eğitim verisindeki ilgili ve doğru bilgilere odaklanmasını sağlar."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: 'Adım adım düşün' veya 'Let's think step by step'."
+  },
+  {
+    "id": 26,
+    "question": "Karmaşık bir problemi çözmesi istenen AI'da CoT kullanılmazsa ne gibi bir risk oluşur?",
+    "options": [
+      "A) Araştırmacının çalışmanın her aşamasından şahsen sorumlu olması.",
+      "B) Modelin mantıksal adımları atlayıp halüsinasyon görme riski artar.",
+      "C) Farklı istem varyasyonlarını karşılaştırarak hangisinin daha iyi sonuç verdiğini takip ederek uygulanır.",
+      "D) Adalet ve Saygı (Emeğe Saygı)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Modelin mantıksal adımları atlayıp halüsinasyon görme riski artar."
+  },
+  {
+    "id": 27,
+    "question": "Sınırlı bağlam penceresi olan modellerde sistemin boğulmasını önleyen taktik hangisidir?",
+    "options": [
+      "A) Verilen role benzer metinlere ağırlık vermesi beklenir.",
+      "B) Zero-shot Prompting.",
+      "C) Komutu Parçalara Bölme (Chunking).",
+      "D) Chain of Thought (CoT - Düşünce Zinciri)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Komutu Parçalara Bölme (Chunking)."
+  },
+  {
+    "id": 28,
+    "question": "Metin üretimi senaryolarında odaklanılması gereken temel parametreler nelerdir?",
+    "options": [
+      "A) Anonimleştirme.",
+      "B) $59$ Milyar USD.",
+      "C) Doğrudan Komut (Zero-Shot).",
+      "D) Ton, stil ve uzunluk."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Ton, stil ve uzunluk."
+  },
+  {
+    "id": 29,
+    "question": "Kod yazma istemlerinde kritik bir parametre olarak ne belirtilmelidir?",
+    "options": [
+      "A) Rol ve bağlam kombinasyonu, modelin eğitim verisindeki ilgili ve doğru bilgilere odaklanmasını sağlar.",
+      "B) Spesifik hata mesajları (Örn: NullPointerException) ve nedenleri.",
+      "C) Taraflılık (Bias).",
+      "D) Komut ve yönlendirmelerin bilinçli şekilde tasarlanması gerekir."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Spesifik hata mesajları (Örn: NullPointerException) ve nedenleri."
+  },
+  {
+    "id": 30,
+    "question": "Görsel üretimi istemlerinde 'soyut umut' yerine ne tür ifadeler kullanılmalıdır?",
+    "options": [
+      "A) Kritik kararlar, matematik problemleri veya belirsizlik olan durumlarda.",
+      "B) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla).",
+      "C) Stable Diffusion.",
+      "D) Somut detaylar (Örn: 'Parlak renkli, akan şekiller')."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Somut detaylar (Örn: 'Parlak renkli, akan şekiller')."
+  },
+  {
+    "id": 31,
+    "question": "Aynı soruyu birden fazla kez sorup en tutarlı cevabı seçme tekniğine ne ad verilir?",
+    "options": [
+      "A) $59$ Milyar USD.",
+      "B) $\\%30$.",
+      "C) Self-Consistency (Öz-Tutarlılık).",
+      "D) Yapılandır (3. Adım)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Self-Consistency (Öz-Tutarlılık)."
+  },
+  {
+    "id": 32,
+    "question": "Self-Consistency tekniği en çok hangi durumlarda kullanılmalıdır?",
+    "options": [
+      "A) DALL-E 2.",
+      "B) Matematiksel veya analitik hataları sıfıra indirerek karmaşık mantık yürütmeyi sağlamasıdır.",
+      "C) Kritik kararlar, matematik problemleri veya belirsizlik olan durumlarda.",
+      "D) Farklı istem varyasyonlarını karşılaştırarak hangisinin daha iyi sonuç verdiğini takip ederek uygulanır."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Kritik kararlar, matematik problemleri veya belirsizlik olan durumlarda."
+  },
+  {
+    "id": 33,
+    "question": "Çıktının makine tarafından okunabilir olması için hangi format kısıtlaması önerilir?",
+    "options": [
+      "A) JSON formatı.",
+      "B) ELIZA.",
+      "C) Biçim (Biçim).",
+      "D) 'Sadece ekonomik etkilere odaklan, siyasi olayları hariç tut.'"
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: JSON formatı."
+  },
+  {
+    "id": 34,
+    "question": "İstem mühendisliğinde 'Kütüphane Tutun' tavsiyesinin amacı nedir?",
+    "options": [
+      "A) Kritik kararlar, matematik problemleri veya belirsizlik olan durumlarda.",
+      "B) Spesifik hata mesajları (Örn: NullPointerException) ve nedenleri.",
+      "C) İstemin gereksiz kelimelerden arındırılmış, kısa ve öz olmasıdır.",
+      "D) İşe yarayan istemleri kaydedip, etiketleyip yeniden kullanmaktır."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: İşe yarayan istemleri kaydedip, etiketleyip yeniden kullanmaktır."
+  },
+  {
+    "id": 35,
+    "question": "A/B Testi istem mühendisliğinde nasıl uygulanır?",
+    "options": [
+      "A) Somut detaylar (Örn: 'Parlak renkli, akan şekiller').",
+      "B) DALL-E 2.",
+      "C) Farklı istem varyasyonlarını karşılaştırarak hangisinin daha iyi sonuç verdiğini takip ederek uygulanır.",
+      "D) Karakter, Görev, Bağlam ve Biçim."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Farklı istem varyasyonlarını karşılaştırarak hangisinin daha iyi sonuç verdiğini takip ederek uygulanır."
+  },
+  {
+    "id": 36,
+    "question": "Yaygın bir hata olan 'Bağlam Eksikliği' nasıl düzeltilir?",
+    "options": [
+      "A) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla).",
+      "B) Chain of Thought (CoT - Düşünce Zinciri).",
+      "C) AI'ya neyin 'iyi' olduğunu anlaması için spesifik kullanım alanı (Örn: SaaS startup) belirtilerek düzeltilir.",
+      "D) Şeffaflık."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: AI'ya neyin 'iyi' olduğunu anlaması için spesifik kullanım alanı (Örn: SaaS startup) belirtilerek düzeltilir."
+  },
+  {
+    "id": 37,
+    "question": "Çok karmaşık istemlerin yaratacağı kafa karışıklığını önlemek için ne yapılmalıdır?",
+    "options": [
+      "A) Görevi küçük parçalara bölüp adım adım sormak gerekir.",
+      "B) Context (Bağlam): Rol, hedef kitle ve ton.",
+      "C) Şeffaflık (Transparency).",
+      "D) Komutun çok belirsiz ve aşırı genel olmasıdır."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Görevi küçük parçalara bölüp adım adım sormak gerekir."
+  },
+  {
+    "id": 38,
+    "question": "CRAFTED projesindeki 'E' harfi (Example) neyi ifade eder?",
+    "options": [
+      "A) Anonimleştirme.",
+      "B) Ton, stil ve uzunluk.",
+      "C) İsteme en az bir adet few-shot örneği dahil edilmesini ifade eder.",
+      "D) Çıktı yönlendirmelerinin netliğini test eder (Örn: '50 kelimeyi geçme')."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: İsteme en az bir adet few-shot örneği dahil edilmesini ifade eder."
+  },
+  {
+    "id": 39,
+    "question": "Bir istemin 'Adaptive' (Uyarlanabilir) olması ne anlama gelir?",
+    "options": [
+      "A) Nelerin dışarıda bırakılacağını (sınırları) belirlemektir.",
+      "B) GAN (Generative Adversarial Networks - Üretken Çekişmeli Ağlar).",
+      "C) 'Adım adım düşün' veya 'Let's think step by step'.",
+      "D) Yapay zekânın verdiği cevaba göre komutun yeniden ayarlanmış olmasıdır."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Yapay zekânın verdiği cevaba göre komutun yeniden ayarlanmış olmasıdır."
+  },
+  {
+    "id": 40,
+    "question": "Persona tasarımında modelin eğitim verisindeki hangi metinlere ağırlık vermesi beklenir?",
+    "options": [
+      "A) Modelin bir sonraki komut için beklemesi ve adım adım ilerlemesi beklenir.",
+      "B) Verilen role benzer metinlere ağırlık vermesi beklenir.",
+      "C) Grafik İşlem Birimleri (GPU'lar) ve Tensor İşlem Birimleri (TPU'lar).",
+      "D) GAN (Generative Adversarial Networks - Üretken Çekişmeli Ağlar)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Verilen role benzer metinlere ağırlık vermesi beklenir."
+  },
+  {
+    "id": 41,
+    "question": "İstemde 'Frame' (Sınırlar) kullanımına bir örnek veriniz.",
+    "options": [
+      "A) Ön eğitim (Pre-training).",
+      "B) Softmax.",
+      "C) Few-shot Prompting.",
+      "D) 'Sadece ekonomik etkilere odaklan, siyasi olayları hariç tut.'"
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: 'Sadece ekonomik etkilere odaklan, siyasi olayları hariç tut.'"
+  },
+  {
+    "id": 42,
+    "question": "Düşünce Zinciri (CoT) yönteminde matematiksel işlem hatası nasıl azaltılır?",
+    "options": [
+      "A) Çıktının formatını (örneğin tablo veya liste) tanımlar.",
+      "B) CLEAR.",
+      "C) Modelden karmaşık mantığı adım adım çözmesi istenerek azaltılır.",
+      "D) Paralel hesaplamaya uygun olması."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Modelden karmaşık mantığı adım adım çözmesi istenerek azaltılır."
+  },
+  {
+    "id": 43,
+    "question": "Few-Shot Prompting tekniği ne zaman tercih edilmelidir?",
+    "options": [
+      "A) Dizideki bir sonraki kelimeyi (token) tahmin eder.",
+      "B) $\\%30$.",
+      "C) Modelin belirli bir formatı veya tonu taklit etmesi istendiğinde tercih edilmelidir.",
+      "D) Cevabın mantıklı olup olmadığı ve halüsinasyon içerip içermediğidir."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Modelin belirli bir formatı veya tonu taklit etmesi istendiğinde tercih edilmelidir."
+  },
+  {
+    "id": 44,
+    "question": "İstem mühendisliğinde 'Belirsiz Sonuç' almanın en temel sebebi nedir?",
+    "options": [
+      "A) Sorgu ($Q$ - Query), Anahtar ($K$ - Key) ve Değer ($V$ - Value).",
+      "B) Komutun çok belirsiz ve aşırı genel olmasıdır.",
+      "C) Kritik kararlar, matematik problemleri veya belirsizlik olan durumlarda.",
+      "D) Context (Bağlam): Rol, hedef kitle ve ton."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Komutun çok belirsiz ve aşırı genel olmasıdır."
+  },
+  {
+    "id": 45,
+    "question": "Sentez Matrisi'nde 'Denetçinin Kontrol Listesi' hangi kısaltma ile temsil edilir?",
+    "options": [
+      "A) Örnekler (Few-shot Examples).",
+      "B) Ön eğitim (Pre-training).",
+      "C) Anonimleştirme.",
+      "D) CLEAR."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: CLEAR."
+  },
+  {
+    "id": 46,
+    "question": "C.L.E.A.R. kriterlerinden 'Logical' (Mantıksal) neyi sorgular?",
+    "options": [
+      "A) GAN (Generative Adversarial Networks - Üretken Çekişmeli Ağlar).",
+      "B) Matematiksel veya analitik hataları sıfıra indirerek karmaşık mantık yürütmeyi sağlamasıdır.",
+      "C) Kavramların doğal ve doğru bir sırayla sunulup sunulmadığını sorgular.",
+      "D) Taraflılık (Bias)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Kavramların doğal ve doğru bir sırayla sunulup sunulmadığını sorgular."
+  },
+  {
+    "id": 47,
+    "question": "Chunking (Parçalara Bölme) tekniğinde her adımdan sonra modelden ne beklenir?",
+    "options": [
+      "A) Modele doğru bir rol ve persona atanmasına bağlıdır.",
+      "B) Matematiksel veya analitik hataları sıfıra indirerek karmaşık mantık yürütmeyi sağlamasıdır.",
+      "C) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla).",
+      "D) Modelin bir sonraki komut için beklemesi ve adım adım ilerlemesi beklenir."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Modelin bir sonraki komut için beklemesi ve adım adım ilerlemesi beklenir."
+  },
+  {
+    "id": 48,
+    "question": "Görsel üretimi istemlerinde çözünürlük ve sanat akımı hangi kategoride değerlendirilir?",
+    "options": [
+      "A) Dikkat (Attention) mekanizması.",
+      "B) Görevi küçük parçalara bölüp adım adım sormak gerekir.",
+      "C) Odak noktası (Focus) kategorisinde değerlendirilir.",
+      "D) Grafik İşlem Birimleri (GPU'lar) ve Tensor İşlem Birimleri (TPU'lar)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Odak noktası (Focus) kategorisinde değerlendirilir."
+  },
+  {
+    "id": 49,
+    "question": "İstem mühendisliği neden bir 'Bilimsel Metot' olarak tanımlanır?",
+    "options": [
+      "A) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla).",
+      "B) İsteme en az bir adet few-shot örneği dahil edilmesini ifade eder.",
+      "C) Ton, stil ve uzunluk.",
+      "D) İhtiyaç belirleme, bağlam sunma, yapılandırma ve test etme gibi sistematik adımlar içerdiği için."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: İhtiyaç belirleme, bağlam sunma, yapılandırma ve test etme gibi sistematik adımlar içerdiği için."
+  },
+  {
+    "id": 50,
+    "question": "Modelin belirli terminolojiyi 'otomatik aktive etmesi' neye bağlıdır?",
+    "options": [
+      "A) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla).",
+      "B) Modele doğru bir rol ve persona atanmasına bağlıdır.",
+      "C) Örnekler (Few-shot Examples).",
+      "D) Gem inşa etmek."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Modele doğru bir rol ve persona atanmasına bağlıdır."
+  },
+  {
+    "id": 51,
+    "question": "Yeni ve özgün içerik (metin, görsel, ses, kod) üretebilen algoritmalara ne ad verilir?",
+    "options": [
+      "A) Ulaşılması gereken spesifik hedefi ifade eder.",
+      "B) Şeffaflık (Transparency).",
+      "C) Üretken Yapay Zeka (ÜYZ).",
+      "D) İhtiyacı Belirle (İstenen çıktıyı açıkça tanımla)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Üretken Yapay Zeka (ÜYZ)."
+  },
+  {
+    "id": 52,
+    "question": "Geleneksel bilgisayar uygulamaları ile Üretken Yapay Zeka arasındaki temel fark nedir?",
+    "options": [
+      "A) Softmax.",
+      "B) ELIZA.",
+      "C) Self-Consistency (Öz-Tutarlılık).",
+      "D) Geleneksel uygulamalar açık talimatlar (programlama) gerektirirken, ÜYZ makine öğrenmesine ve veri modellerini tanımaya dayanır."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Geleneksel uygulamalar açık talimatlar (programlama) gerektirirken, ÜYZ makine öğrenmesine ve veri modellerini tanımaya dayanır."
+  },
+  {
+    "id": 53,
+    "question": "MIT tarafından 1960'larda geliştirilen ilk chatbot örneği hangisidir?",
+    "options": [
+      "A) Modelden beklenen temel işlem veya sorudur.",
+      "B) Gem'in hangi rolü (persona) oynayacağı ve nasıl bir ses tonuna sahip olacağı.",
+      "C) Gem inşa etmek.",
+      "D) ELIZA."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: ELIZA."
+  },
+  {
+    "id": 54,
+    "question": "Ian Goodfellow tarafından 2014 yılında tanıtılan ve iki sinir ağının birbiriyle yarıştığı mimari hangisidir?",
+    "options": [
+      "A) VAE (Variational Autoencoders - Değişken Otomatik Kodlayıcılar).",
+      "B) İşe yarayan istemleri kaydedip, etiketleyip yeniden kullanmaktır.",
+      "C) GAN (Generative Adversarial Networks - Üretken Çekişmeli Ağlar).",
+      "D) Komutu Parçalara Bölme (Chunking)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: GAN (Generative Adversarial Networks - Üretken Çekişmeli Ağlar)."
+  },
+  {
+    "id": 55,
+    "question": "2017 yılında Google Research tarafından tanıtılan ve modern dil modellerinin temelini oluşturan mimari hangisidir?",
+    "options": [
+      "A) Transformer (Dönüştürücü) mimarisi.",
+      "B) VAE (Variational Autoencoders - Değişken Otomatik Kodlayıcılar).",
+      "C) Üretken Yapay Zeka (ÜYZ).",
+      "D) Çıktı yönlendirmelerinin netliğini test eder (Örn: '50 kelimeyi geçme')."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Transformer (Dönüştürücü) mimarisi."
+  },
+  {
+    "id": 56,
+    "question": "Üretken yapay zeka modellerinin eğitilmesi ve çalıştırılması için gereken devasa hesaplamaları yöneten donanım birimleri nelerdir?",
+    "options": [
+      "A) Gem'lerin kuralları, tonu ve kısıtlamaları her sohbette baştan anlatmaya gerek kalmadan hafızasında tutması.",
+      "B) Grafik İşlem Birimleri (GPU'lar) ve Tensor İşlem Birimleri (TPU'lar).",
+      "C) Context (Bağlam): Rol, hedef kitle ve ton.",
+      "D) Girdi = Çıktı."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Grafik İşlem Birimleri (GPU'lar) ve Tensor İşlem Birimleri (TPU'lar)."
+  },
+  {
+    "id": 57,
+    "question": "GAN mimarisinde gerçekçi içerik üretmek için birbiriyle rekabet eden iki ağın isimleri nelerdir?",
+    "options": [
+      "A) Ton, stil ve uzunluk.",
+      "B) Context (Bağlam): Rol, hedef kitle ve ton.",
+      "C) Üreteç (Generator) ve Ayırt Edici (Discriminator).",
+      "D) $\\%30$."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Üreteç (Generator) ve Ayırt Edici (Discriminator)."
+  },
+  {
+    "id": 58,
+    "question": "Rastgele gürültü ile başlayıp bunu yavaş yavaş net bir görsele dönüştüren modelleme yöntemi hangisidir?",
+    "options": [
+      "A) Odak noktası (Focus) kategorisinde değerlendirilir.",
+      "B) Yapılandır (3. Adım).",
+      "C) Difüzyon (Diffusion) Modelleri.",
+      "D) Kritik kararlar, matematik problemleri veya belirsizlik olan durumlarda."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Difüzyon (Diffusion) Modelleri."
+  },
+  {
+    "id": 59,
+    "question": "Büyük Dil Modelleri (LLM), bir metin dizisinde çıktı üretirken temelde hangi işlemi yapar?",
+    "options": [
+      "A) Yapay zekânın verdiği cevaba göre komutun yeniden ayarlanmış olmasıdır.",
+      "B) Anonimleştirme.",
+      "C) Şeffaflık.",
+      "D) Dizideki bir sonraki kelimeyi (token) tahmin eder."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Dizideki bir sonraki kelimeyi (token) tahmin eder."
+  },
+  {
+    "id": 60,
+    "question": "Dönüştürücü (Transformer) mimarisinde kelimeler veya pikseller arasındaki bağlamsal ilişkileri öğrenmeyi sağlayan mekanizma nedir?",
+    "options": [
+      "A) İnce ayar (Fine-tuning).",
+      "B) Cevabın mantıklı olup olmadığı ve halüsinasyon içerip içermediğidir.",
+      "C) Dikkat (Attention) mekanizması.",
+      "D) Çıktının formatını (örneğin tablo veya liste) tanımlar."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Dikkat (Attention) mekanizması."
+  },
+  {
+    "id": 61,
+    "question": "Transformer modellerinde her token için oluşturulan üç ana vektör bileşeni hangileridir?",
+    "options": [
+      "A) Çıktıyı denetlemek, mantıksal hataları bulmak ve komutu rafine etmektir.",
+      "B) Sorgu ($Q$ - Query), Anahtar ($K$ - Key) ve Değer ($V$ - Value).",
+      "C) Makine Öğrenmesi (Machine Learning).",
+      "D) DALL-E 2."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Sorgu ($Q$ - Query), Anahtar ($K$ - Key) ve Değer ($V$ - Value)."
+  },
+  {
+    "id": 62,
+    "question": "Bir öğenin diğer tüm öğelerle olan bağlam ilişkilerini aynı anda değerlendiren mekanizmaya ne ad verilir?",
+    "options": [
+      "A) Öz-dikkat (Self-attention).",
+      "B) Biçim (Biçim).",
+      "C) Komutu Parçalara Bölme (Chunking).",
+      "D) Komutun çok belirsiz ve aşırı genel olmasıdır."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Öz-dikkat (Self-attention)."
+  },
+  {
+    "id": 63,
+    "question": "ÜYZ modellerinin tarihsel olaylar veya istatistikler hakkında gerçek olmayan, yanlış veri üretmesi durumuna ne ad verilir?",
+    "options": [
+      "A) Örnekler (Few-shot Examples).",
+      "B) Dijital Halüsinasyon (Hallucination).",
+      "C) JSON formatı.",
+      "D) Actions (Eylemler)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Dijital Halüsinasyon (Hallucination)."
+  },
+  {
+    "id": 64,
+    "question": "Eğitim verilerindeki cinsiyet, etnik köken veya ideolojik önyargıların çıktıya yansıması durumuna ne ad verilir?",
+    "options": [
+      "A) Taraflılık (Bias).",
+      "B) Lisanslı ve kullanım hakkı alınmış.",
+      "C) Modelin belirli bir formatı veya tonu taklit etmesi istendiğinde tercih edilmelidir.",
+      "D) Yapay zekâ ile etkileşimi tahminden çıkarıp, tekrarlanabilir bir mühendislik disiplinine dönüştürmektir."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Taraflılık (Bias)."
+  },
+  {
+    "id": 65,
+    "question": "Akademik araştırmalarda ÜYZ kullanımıyla ilgili temel etik ilke nedir?",
+    "options": [
+      "A) Doğrudan Komut (Zero-Shot).",
+      "B) ÜYZ bir asistandır; nihai kararlar ve sorumluluk her zaman araştırmacıya aittir.",
+      "C) Firefly.",
+      "D) Üreteç (Generator) ve Ayırt Edici (Discriminator)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: ÜYZ bir asistandır; nihai kararlar ve sorumluluk her zaman araştırmacıya aittir."
+  },
+  {
+    "id": 66,
+    "question": "Etik ihlal durumunda 'Hata ÜYZ kaynaklıydı' savunmasının kabul edilmemesinin sebebi nedir?",
+    "options": [
+      "A) Çıktı kalitesi/stil, maliyet/hız ve telif hakları/güvenlik.",
+      "B) Araştırmacının çalışmanın her aşamasından şahsen sorumlu olması.",
+      "C) Context (Bağlam): Rol, hedef kitle ve ton.",
+      "D) Rol ve bağlam kombinasyonu, modelin eğitim verisindeki ilgili ve doğru bilgilere odaklanmasını sağlar."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Araştırmacının çalışmanın her aşamasından şahsen sorumlu olması."
+  },
+  {
+    "id": 67,
+    "question": "ÜYZ kullanımının hangi bölümde, hangi amaçla ve hangi araçla (sürüm bilgisiyle) yapıldığının beyan edilmesi hangi etik sütuna girer?",
+    "options": [
+      "A) Gem inşa etmek.",
+      "B) Şeffaflık (Transparency).",
+      "C) DALL-E 2.",
+      "D) Odak noktası (Focus) kategorisinde değerlendirilir."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Şeffaflık (Transparency)."
+  },
+  {
+    "id": 68,
+    "question": "Araştırmacının entelektüel katkısının ÜYZ tarafından ikame edilmesi riskine ne ad verilir?",
+    "options": [
+      "A) Verilen role benzer metinlere ağırlık vermesi beklenir.",
+      "B) Modelin bir sonraki komut için beklemesi ve adım adım ilerlemesi beklenir.",
+      "C) Modelden beklenen temel işlem veya sorudur.",
+      "D) Özgünlük Erozyonu."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Özgünlük Erozyonu."
+  },
+  {
+    "id": 69,
+    "question": "ÜYZ sistemlerinin ürettiği referansların hatalı olma riskine karşı önerilen zorunlu eylem nedir?",
+    "options": [
+      "A) VAE (Variational Autoencoders - Değişken Otomatik Kodlayıcılar).",
+      "B) Kritik kararlar, matematik problemleri veya belirsizlik olan durumlarda.",
+      "C) ÜYZ yardımcı pilottur, ancak kaptan (sorumlu) her zaman araştırmacıdır.",
+      "D) Güven ama Doğrula (Trust but Verify)."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Güven ama Doğrula (Trust but Verify)."
+  },
+  {
+    "id": 70,
+    "question": "ÜYZ tarafından üretilen referansların yaklaşık yüzde kaçının hatalı olabileceği belirtilmektedir?",
+    "options": [
+      "A) Çıktıyı denetlemek, mantıksal hataları bulmak ve komutu rafine etmektir.",
+      "B) Makine Öğrenmesi (Machine Learning).",
+      "C) $\\%30$.",
+      "D) Modelin ilgili uzmanlık terminolojisini aktive etmesini sağlar ve halüsinasyon oranını düşürür."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: $\\%30$."
+  },
+  {
+    "id": 71,
+    "question": "Hassas verilerin (sağlık, genetik vb.) halka açık ÜYZ modellerine yüklenmeden önce yapılması gereken işlem nedir?",
+    "options": [
+      "A) Zero-Shot Prompting.",
+      "B) Anonimleştirme.",
+      "C) ELIZA.",
+      "D) Modelin benimseyeceği rolü, stili ve tonu belirler."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Anonimleştirme."
+  },
+  {
+    "id": 72,
+    "question": "OpenAI tarafından geliştirilen, metin komutlarından fotogerçekçi ve soyut görseller oluşturan öncü model hangisidir?",
+    "options": [
+      "A) Doğrudan Komut (Zero-Shot).",
+      "B) Dış Hafıza Ekleme (Harici Bağlam Havuzu).",
+      "C) Farklı istem varyasyonlarını karşılaştırarak hangisinin daha iyi sonuç verdiğini takip ederek uygulanır.",
+      "D) DALL-E 2."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: DALL-E 2."
+  },
+  {
+    "id": 73,
+    "question": "Sanatsal ve sinematik estetiğiyle bilinen, topluluk odaklı görsel üretim platformu hangisidir?",
+    "options": [
+      "A) Midjourney.",
+      "B) Spesifik hata mesajları (Örn: NullPointerException) ve nedenleri.",
+      "C) Sorgu ($Q$ - Query), Anahtar ($K$ - Key) ve Değer ($V$ - Value).",
+      "D) Modelin mantıksal adımları atlayıp halüsinasyon görme riski artar."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Midjourney."
+  },
+  {
+    "id": 74,
+    "question": "Açık kaynak kodu ile teknik esneklik sağlayan ve yerel cihazlarda çalışabilen görsel ÜYZ aracı hangisidir?",
+    "options": [
+      "A) Stable Diffusion.",
+      "B) Spesifik hata mesajları (Örn: NullPointerException) ve nedenleri.",
+      "C) Modelin benimseyeceği rolü, stili ve tonu belirler.",
+      "D) Somut detaylar (Örn: 'Parlak renkli, akan şekiller')."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Stable Diffusion."
+  },
+  {
+    "id": 75,
+    "question": "Adobe'nin profesyonel tasarımcılar için geliştirdiği telif hakkı riski taşımayan içerik sunan yapay zeka aracı hangisidir?",
+    "options": [
+      "A) Adobe Firefly.",
+      "B) Lisanslı ve kullanım hakkı alınmış.",
+      "C) AI'ya neyin 'iyi' olduğunu anlaması için spesifik kullanım alanı (Örn: SaaS startup) belirtilerek düzeltilir.",
+      "D) Yapılandır (3. Adım)."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Adobe Firefly."
+  },
+  {
+    "id": 76,
+    "question": "Gemini platformunda, tekrarlayan istemler yerine özelleştirilmiş ve tekrar kullanılabilir zeka modülleri kurmaya ne ad verilir?",
+    "options": [
+      "A) Güven ama Doğrula (Trust but Verify).",
+      "B) Softmax.",
+      "C) Modelin belirli bir formatı veya tonu taklit etmesi istendiğinde tercih edilmelidir.",
+      "D) Gem inşa etmek."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Gem inşa etmek."
+  },
+  {
+    "id": 77,
+    "question": "Bir Gem mimarisini oluşturan 4 temel yapı taşı (kolon) nelerdir?",
+    "options": [
+      "A) Adobe Firefly.",
+      "B) Zero-Shot Prompting.",
+      "C) İşe yarayan istemleri kaydedip, etiketleyip yeniden kullanmaktır.",
+      "D) Karakter, Görev, Bağlam ve Biçim."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Karakter, Görev, Bağlam ve Biçim."
+  },
+  {
+    "id": 78,
+    "question": "Gem mimarisinde 'Karakter' bileşeni neyi ifade eder?",
+    "options": [
+      "A) CLEAR.",
+      "B) Gem'in hangi rolü (persona) oynayacağı ve nasıl bir ses tonuna sahip olacağı.",
+      "C) Paralel hesaplamaya uygun olması.",
+      "D) 'Sadece ekonomik etkilere odaklan, siyasi olayları hariç tut.'"
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Gem'in hangi rolü (persona) oynayacağı ve nasıl bir ses tonuna sahip olacağı."
+  },
+  {
+    "id": 79,
+    "question": "Gem mimarisinde istenen çıktının yapısını (madde işaretleri, tablolar vb.) belirleyen bileşen hangisidir?",
+    "options": [
+      "A) 'Adım adım düşün' veya 'Let's think step by step'.",
+      "B) Modele doğru bir rol ve persona atanmasına bağlıdır.",
+      "C) Biçim (Format).",
+      "D) Stable Diffusion."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Biçim (Format)."
+  },
+  {
+    "id": 80,
+    "question": "Bir Gem'in mükemmel komutlara sahip olması için kendi talimatlarını Gemini'ye yazdırarak optimize edilmesine ne ad verilir?",
+    "options": [
+      "A) Talimat Döngüsü (Instruction Loop).",
+      "B) Şeffaflık (Transparency).",
+      "C) Güven ama Doğrula (Trust but Verify).",
+      "D) Yapay zekâ ile etkileşimi tahminden çıkarıp, tekrarlanabilir bir mühendislik disiplinine dönüştürmektir."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Talimat Döngüsü (Instruction Loop)."
+  },
+  {
+    "id": 81,
+    "question": "Üretken yapay zeka modellerine bir 'Rol' veya 'Persona' atamanın temel faydası nedir?",
+    "options": [
+      "A) Yapılandır (3. Adım).",
+      "B) Modelin ilgili uzmanlık terminolojisini aktive etmesini sağlar ve halüsinasyon oranını düşürür.",
+      "C) Modelin belirli bir formatı veya tonu taklit etmesi istendiğinde tercih edilmelidir.",
+      "D) VAE (Variational Autoencoders - Değişken Otomatik Kodlayıcılar)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Modelin ilgili uzmanlık terminolojisini aktive etmesini sağlar ve halüsinasyon oranını düşürür."
+  },
+  {
+    "id": 82,
+    "question": "Modelin mantık yürütmesini ve karmaşık problemleri çözmesini sağlamak için kullanılan 'Adım adım düşün' komutu hangi tekniğe girer?",
+    "options": [
+      "A) Chain of Thought (CoT - Düşünce Zinciri).",
+      "B) Adalet ve Saygı (Emeğe Saygı).",
+      "C) ÜYZ bir asistandır; nihai kararlar ve sorumluluk her zaman araştırmacıya aittir.",
+      "D) Yapay zekânın verdiği cevaba göre komutun yeniden ayarlanmış olmasıdır."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Chain of Thought (CoT - Düşünce Zinciri)."
+  },
+  {
+    "id": 83,
+    "question": "Modelin bir görevi hiçbir örnek görmeden yapmasına ne ad verilir?",
+    "options": [
+      "A) Modelden karmaşık mantığı adım adım çözmesi istenerek azaltılır.",
+      "B) Zero-shot Prompting.",
+      "C) Dış Hafıza Ekleme (Harici Bağlam Havuzu).",
+      "D) Geleneksel uygulamalar açık talimatlar (programlama) gerektirirken, ÜYZ makine öğrenmesine ve veri modellerini tanımaya dayanır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Zero-shot Prompting."
+  },
+  {
+    "id": 84,
+    "question": "Modelin belirli bir formatı veya tonu taklit etmesi için istem içinde birkaç örnek verilmesine ne ad verilir?",
+    "options": [
+      "A) 'Adım adım düşün' veya 'Let's think step by step'.",
+      "B) Few-shot Prompting.",
+      "C) GAN (Generative Adversarial Networks - Üretken Çekişmeli Ağlar).",
+      "D) VAE (Variational Autoencoders - Değişken Otomatik Kodlayıcılar)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Few-shot Prompting."
+  },
+  {
+    "id": 85,
+    "question": "ÜYZ modellerinin eğitim sürecinde verilerin temizlenmesinden sonra yapılan büyük ölçekli ilk aşama hangisidir?",
+    "options": [
+      "A) Biçim (Format).",
+      "B) Ön eğitim (Pre-training).",
+      "C) Midjourney.",
+      "D) Yapay zekânın verdiği cevaba göre komutun yeniden ayarlanmış olmasıdır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Ön eğitim (Pre-training)."
+  },
+  {
+    "id": 86,
+    "question": "Önceden eğitilmiş bir modelin belirli bir görev veya alan için daha spesifik hale getirilmesi sürecine ne ad verilir?",
+    "options": [
+      "A) İnce ayar (Fine-tuning).",
+      "B) Yapay zekânın verdiği cevaba göre komutun yeniden ayarlanmış olmasıdır.",
+      "C) Görevi küçük parçalara bölüp adım adım sormak gerekir.",
+      "D) Komutu Parçalara Bölme (Chunking)."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: İnce ayar (Fine-tuning)."
+  },
+  {
+    "id": 87,
+    "question": "Veriyi basit bir temsile sıkıştırıp ardından orijinalin özünü yakalayan varyasyonlar üretmek için kullanılan mimari hangisidir?",
+    "options": [
+      "A) VAE (Variational Autoencoders - Değişken Otomatik Kodlayıcılar).",
+      "B) Softmax.",
+      "C) Üreteç (Generator) ve Ayırt Edici (Discriminator).",
+      "D) Dikkat (Attention) mekanizması."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: VAE (Variational Autoencoders - Değişken Otomatik Kodlayıcılar)."
+  },
+  {
+    "id": 88,
+    "question": "Transformer modellerinde Query ($Q$) ve Key ($K$) arasındaki benzerlik skorlarını normalize etmek için kullanılan matematiksel fonksiyon nedir?",
+    "options": [
+      "A) Ön eğitim (Pre-training).",
+      "B) Matematiksel veya analitik hataları sıfıra indirerek karmaşık mantık yürütmeyi sağlamasıdır.",
+      "C) Firefly.",
+      "D) Softmax."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Softmax."
+  },
+  {
+    "id": 89,
+    "question": "Araştırmalarda ÜYZ kullanımının 'Pilot-Otopilot' benzetmesindeki yeri nedir?",
+    "options": [
+      "A) Actions (Eylemler).",
+      "B) Self-Consistency (Öz-Tutarlılık).",
+      "C) ÜYZ yardımcı pilottur, ancak kaptan (sorumlu) her zaman araştırmacıdır.",
+      "D) Gem'lerin kuralları, tonu ve kısıtlamaları her sohbette baştan anlatmaya gerek kalmadan hafızasında tutması."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: ÜYZ yardımcı pilottur, ancak kaptan (sorumlu) her zaman araştırmacıdır."
+  },
+  {
+    "id": 90,
+    "question": "Görsel yapay zeka araçları seçiminde göz önünde bulundurulması gereken üç temel kriter nedir?",
+    "options": [
+      "A) Modelin benimseyeceği rolü, stili ve tonu belirler.",
+      "B) Çıktı kalitesi/stil, maliyet/hız ve telif hakları/güvenlik.",
+      "C) Modelden beklenen temel işlem veya sorudur.",
+      "D) Üretim (Creation) aşamasına odaklanır."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Çıktı kalitesi/stil, maliyet/hız ve telif hakları/güvenlik."
+  },
+  {
+    "id": 91,
+    "question": "Gem'lerin genel bilgilerin ötesinde, kullanıcıya özel belgelerle çalışmasını sağlayan özelliğe ne ad verilir?",
+    "options": [
+      "A) Dış Hafıza Ekleme (Harici Bağlam Havuzu).",
+      "B) Modelin ilgili uzmanlık terminolojisini aktive etmesini sağlar ve halüsinasyon oranını düşürür.",
+      "C) GAN (Generative Adversarial Networks - Üretken Çekişmeli Ağlar).",
+      "D) Dizideki bir sonraki kelimeyi (token) tahmin eder."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Dış Hafıza Ekleme (Harici Bağlam Havuzu)."
+  },
+  {
+    "id": 92,
+    "question": "Metodoloji bölümüne ÜYZ Kullanım Beyanı eklenmesi, Sorumlu Kullanım Kontrol Listesi'nde hangi başlık altındadır?",
+    "options": [
+      "A) Kritik kararlar, matematik problemleri veya belirsizlik olan durumlarda.",
+      "B) Şeffaflık.",
+      "C) Geleneksel uygulamalar açık talimatlar (programlama) gerektirirken, ÜYZ makine öğrenmesine ve veri modellerini tanımaya dayanır.",
+      "D) Taraflılık (Bias)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Şeffaflık."
+  },
+  {
+    "id": 93,
+    "question": "İş geliştirme uzmanı gibi davranarak B2B müşteriye e-posta yazma isteminde '3 paragraf olması' hangi Gem kolonuna örnektir?",
+    "options": [
+      "A) Gem'lerin kuralları, tonu ve kısıtlamaları her sohbette baştan anlatmaya gerek kalmadan hafızasında tutması.",
+      "B) Lisanslı ve kullanım hakkı alınmış.",
+      "C) Biçim (Biçim).",
+      "D) Çıktının formatını (örneğin tablo veya liste) tanımlar."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: Biçim (Biçim)."
+  },
+  {
+    "id": 94,
+    "question": "ÜYZ'nin beslendiği veri setlerinin ve alıntı yapılan yazarların haklarının gözetilmesi hangi etik ilke kapsamındadır?",
+    "options": [
+      "A) Çıktı kalitesi/stil, maliyet/hız ve telif hakları/güvenlik.",
+      "B) Dikkat (Attention) mekanizması.",
+      "C) Şeffaflık (Transparency).",
+      "D) Adalet ve Saygı (Emeğe Saygı)."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Adalet ve Saygı (Emeğe Saygı)."
+  },
+  {
+    "id": 95,
+    "question": "Self-attention mekanizmasının geleneksel RNN modellerine göre hız avantajı sağlamasının sebebi nedir?",
+    "options": [
+      "A) Paralel hesaplamaya uygun olması.",
+      "B) İstemin gereksiz kelimelerden arındırılmış, kısa ve öz olmasıdır.",
+      "C) Dizideki bir sonraki kelimeyi (token) tahmin eder.",
+      "D) Cevabın mantıklı olup olmadığı ve halüsinasyon içerip içermediğidir."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Paralel hesaplamaya uygun olması."
+  },
+  {
+    "id": 96,
+    "question": "Difüzyon modellerinin Adobe ekosistemindeki temel örneği hangisidir?",
+    "options": [
+      "A) Firefly.",
+      "B) Gem'lerin kuralları, tonu ve kısıtlamaları her sohbette baştan anlatmaya gerek kalmadan hafızasında tutması.",
+      "C) Üreteç (Generator) ve Ayırt Edici (Discriminator).",
+      "D) Biçim (Format)."
+    ],
+    "answer": "A",
+    "explanation": "Doğru terim açıklaması: Firefly."
+  },
+  {
+    "id": 97,
+    "question": "Metin verilerindeki gizli desenleri (patterns) tanıyarak sonuç çıkarma sürecine ne denir?",
+    "options": [
+      "A) Firefly.",
+      "B) Makine Öğrenmesi (Machine Learning).",
+      "C) Doğrudan Komut (Zero-Shot).",
+      "D) Sorgu ($Q$ - Query), Anahtar ($K$ - Key) ve Değer ($V$ - Value)."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Makine Öğrenmesi (Machine Learning)."
+  },
+  {
+    "id": 98,
+    "question": "Prompt yazmanın 'geçici', Gem inşa etmenin ise 'kalıcı' olmasının temel sebebi nedir?",
+    "options": [
+      "A) Chain of Thought (CoT - Düşünce Zinciri).",
+      "B) Gem'lerin kuralları, tonu ve kısıtlamaları her sohbette baştan anlatmaya gerek kalmadan hafızasında tutması.",
+      "C) AI'ya neyin 'iyi' olduğunu anlaması için spesifik kullanım alanı (Örn: SaaS startup) belirtilerek düzeltilir.",
+      "D) Lisanslı ve kullanım hakkı alınmış."
+    ],
+    "answer": "B",
+    "explanation": "Doğru terim açıklaması: Gem'lerin kuralları, tonu ve kısıtlamaları her sohbette baştan anlatmaya gerek kalmadan hafızasında tutması."
+  },
+  {
+    "id": 99,
+    "question": "2025 yılı için öngörülen küresel Üretken AI pazar büyüklüğü kaç milyar dolardır?",
+    "options": [
+      "A) Context (Bağlam): Rol, hedef kitle ve ton.",
+      "B) AI'ya neyin 'iyi' olduğunu anlaması için spesifik kullanım alanı (Örn: SaaS startup) belirtilerek düzeltilir.",
+      "C) $59$ Milyar USD.",
+      "D) Üreteç (Generator) ve Ayırt Edici (Discriminator)."
+    ],
+    "answer": "C",
+    "explanation": "Doğru terim açıklaması: $59$ Milyar USD."
+  },
+  {
+    "id": 100,
+    "question": "ÜYZ sistemlerinin eğitiminde kullanılan verilerin profesyonel kullanım için nasıl olması istenir?",
+    "options": [
+      "A) Modelin belirli bir formatı veya tonu taklit etmesi istendiğinde tercih edilmelidir.",
+      "B) 'Sadece ekonomik etkilere odaklan, siyasi olayları hariç tut.'",
+      "C) $\\%30$.",
+      "D) Lisanslı ve kullanım hakkı alınmış."
+    ],
+    "answer": "D",
+    "explanation": "Doğru terim açıklaması: Lisanslı ve kullanım hakkı alınmış."
   }
 ]

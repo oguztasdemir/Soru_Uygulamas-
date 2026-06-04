@@ -55,7 +55,7 @@ function switchInstallTab(platform) {
 }
 
 // Global App State
-let activeCourse = null; // 'ml' or 'gai'
+let activeCourse = null; // 'ml', 'gai', 'ds', or 'isg'
 let allQuestions = [];
 let allCardsQuestions = [];
 let activeQuiz = {
@@ -73,11 +73,25 @@ let activeCardsQuiz = {
     seconds: 0
 };
 let wrongQuestionIds = [];
+let starredQuestionIds = [];
+let activeWrongTab = 'wrong'; // 'wrong' or 'starred'
+let questionStats = {}; // { qId: { correct: X, wrong: Y } }
 let userStats = { correct: 0, wrong: 0 };
 let studyNotes = [];
+let answerOverrides = {};
+let allQuestionsSort = { col: 'id', desc: false };
 
 // App Initialization
 document.addEventListener('DOMContentLoaded', () => {
+    // Load theme
+    const savedTheme = localStorage.getItem('app_theme') || 'dark';
+    if (savedTheme === 'light') {
+        document.body.classList.add('light-theme');
+        const themeIcon = document.querySelector('#theme-toggle-btn i');
+        if (themeIcon) {
+            themeIcon.className = 'fa-solid fa-sun';
+        }
+    }
     backToLanding();
 });
 
@@ -87,11 +101,41 @@ function selectCourse(courseId) {
     
     // Load localstorage data based on selected course
     wrongQuestionIds = JSON.parse(localStorage.getItem(`${activeCourse}_wrong_questions`)) || [];
+    starredQuestionIds = JSON.parse(localStorage.getItem(`${activeCourse}_starred_questions`)) || [];
+    questionStats = JSON.parse(localStorage.getItem(`${activeCourse}_question_stats`)) || {};
     userStats = JSON.parse(localStorage.getItem(`${activeCourse}_stats`)) || { correct: 0, wrong: 0 };
+    answerOverrides = JSON.parse(localStorage.getItem(`${activeCourse}_answer_overrides`)) || {};
+    
+    // Restore active quiz session if it exists
+    const savedQuiz = localStorage.getItem(`${activeCourse}_active_quiz`);
+    if (savedQuiz) {
+        const parsed = JSON.parse(savedQuiz);
+        activeQuiz.questions = parsed.questions || [];
+        activeQuiz.currentIndex = parsed.currentIndex || 0;
+        activeQuiz.answers = parsed.answers || [];
+        activeQuiz.seconds = parsed.seconds || 0;
+    } else {
+        activeQuiz.questions = [];
+        activeQuiz.currentIndex = 0;
+        activeQuiz.answers = [];
+        activeQuiz.seconds = 0;
+    }
+    
+    activeWrongTab = 'wrong';
+    
+    // Set settings UI checkbox
+    const smartQuizEnabled = localStorage.getItem(`${activeCourse}_smart_quiz`) !== 'false';
+    const smartQuizCheckbox = document.getElementById('setting-smart-quiz');
+    if (smartQuizCheckbox) {
+        smartQuizCheckbox.checked = smartQuizEnabled;
+        updateSmartQuizStatusUI();
+    }
     
     // Apply subject theme classes and contents
     if (activeCourse === 'ml') {
-        document.body.classList.remove('theme-gai');
+        document.body.classList.remove('theme-gai', 'theme-ds', 'theme-isg');
+        document.documentElement.style.setProperty('--theme-color', '#4299E1');
+        document.documentElement.style.setProperty('--theme-color-rgb', '66, 153, 225');
         document.getElementById('app-logo-title').innerText = 'Makine Öğrenmesi';
         document.getElementById('app-logo-icon').className = 'fa-solid fa-brain-circuit brain-icon';
         document.getElementById('dashboard-welcome-title').innerText = 'Selam Geleceğin ML Uzmanı! 👋';
@@ -100,7 +144,10 @@ function selectCourse(courseId) {
         loadQuestions('ml/questions.json');
         loadCards('ml/cards.json');
     } else if (activeCourse === 'gai') {
+        document.body.classList.remove('theme-ds', 'theme-isg');
         document.body.classList.add('theme-gai');
+        document.documentElement.style.setProperty('--theme-color', '#A855F7');
+        document.documentElement.style.setProperty('--theme-color-rgb', '168, 85, 247');
         document.getElementById('app-logo-title').innerText = 'Üretken Yapay Zeka';
         document.getElementById('app-logo-icon').className = 'fa-solid fa-wand-magic-sparkles brain-icon';
         document.getElementById('dashboard-welcome-title').innerText = 'Selam Geleceğin Yapay Zeka Uzmanı! 👋';
@@ -108,12 +155,48 @@ function selectCourse(courseId) {
         
         loadQuestions('gai/questions.json');
         loadCards('gai/cards.json');
+    } else if (activeCourse === 'ds') {
+        document.body.classList.remove('theme-gai', 'theme-isg');
+        document.body.classList.add('theme-ds');
+        document.documentElement.style.setProperty('--theme-color', '#10B981');
+        document.documentElement.style.setProperty('--theme-color-rgb', '16, 185, 129');
+        document.getElementById('app-logo-title').innerText = 'Dijital Sürdürülebilirlik';
+        document.getElementById('app-logo-icon').className = 'fa-solid fa-leaf brain-icon';
+        document.getElementById('dashboard-welcome-title').innerText = 'Selam Sürdürülebilirlik Elçisi! 🌿';
+        studyNotes = studyNotesDS;
+        
+        loadQuestions('ds/questions.json');
+        loadCards('ds/cards.json');
+    } else if (activeCourse === 'isg') {
+        document.body.classList.remove('theme-gai', 'theme-ds');
+        document.body.classList.add('theme-isg');
+        document.documentElement.style.setProperty('--theme-color', '#F97316');
+        document.documentElement.style.setProperty('--theme-color-rgb', '249, 115, 22');
+        document.getElementById('app-logo-title').innerText = 'İş Sağlığı ve Güvenliği';
+        document.getElementById('app-logo-icon').className = 'fa-solid fa-shield-halved brain-icon';
+        document.getElementById('dashboard-welcome-title').innerText = 'Selam İSG Sorumlusu! 🛡️';
+        studyNotes = studyNotesISG;
+        
+        loadQuestions('isg/questions.json');
+        loadCards('isg/cards.json');
+    }
+    
+    // Show/hide ISG Hoca Tips buttons
+    const isgTipsCard = document.getElementById('dashboard-isg-tips-card');
+    const isgTipsBtn = document.getElementById('btn-isg-tips-quiz');
+    if (activeCourse === 'isg') {
+        if (isgTipsCard) isgTipsCard.style.display = 'block';
+        if (isgTipsBtn) isgTipsBtn.style.display = 'flex';
+    } else {
+        if (isgTipsCard) isgTipsCard.style.display = 'none';
+        if (isgTipsBtn) isgTipsBtn.style.display = 'none';
     }
     
     // Reveal Navigation and header features
     document.querySelector('.app-nav').classList.remove('hidden');
     document.getElementById('header-progress-text').style.display = 'block';
     document.getElementById('change-course-btn').style.display = 'flex';
+    document.getElementById('settings-toggle-btn').style.display = 'flex';
     
     switchTab('dashboard');
 }
@@ -125,15 +208,24 @@ function backToLanding() {
     allQuestions = [];
     allCardsQuestions = [];
     wrongQuestionIds = [];
+    starredQuestionIds = [];
+    questionStats = {};
     userStats = { correct: 0, wrong: 0 };
     studyNotes = [];
     
     // Reset Header and Theme
-    document.body.classList.remove('theme-gai');
+    document.body.classList.remove('theme-gai', 'theme-ds', 'theme-isg');
     document.getElementById('app-logo-title').innerText = 'Mobil App';
     document.getElementById('app-logo-icon').className = 'fa-solid fa-brain-circuit brain-icon';
     document.getElementById('header-progress-text').style.display = 'none';
     document.getElementById('change-course-btn').style.display = 'none';
+    document.getElementById('settings-toggle-btn').style.display = 'none';
+    
+    // Hide ISG Hoca Tips buttons
+    const isgTipsCard = document.getElementById('dashboard-isg-tips-card');
+    const isgTipsBtn = document.getElementById('btn-isg-tips-quiz');
+    if (isgTipsCard) isgTipsCard.style.display = 'none';
+    if (isgTipsBtn) isgTipsBtn.style.display = 'none';
     
     // Hide nav and show landing
     document.querySelector('.app-nav').classList.add('hidden');
@@ -152,6 +244,13 @@ function loadQuestions(jsonFileName) {
         .then(data => {
             allQuestions = data;
             
+            // Apply answer overrides
+            allQuestions.forEach(q => {
+                if (answerOverrides[q.id]) {
+                    q.answer = answerOverrides[q.id];
+                }
+            });
+            
             // Dynamically update the main test button text to show the correct total count
             const fullDenemeBtn = document.querySelector('button[onclick^="startQuiz("]:nth-child(3)');
             if (fullDenemeBtn) {
@@ -166,9 +265,50 @@ function loadQuestions(jsonFileName) {
                 actionCardText.innerText = `${allQuestions.length} soruluk sınav soru havuzundan hemen çalışmaya başla.`;
             }
 
+            // Check if categories exist and toggle category quiz button
+            const hasCategories = allQuestions.some(q => q.category);
+            const categoryQuizBtn = document.getElementById('btn-category-quiz');
+            if (categoryQuizBtn) {
+                if (hasCategories) {
+                    categoryQuizBtn.style.display = 'flex';
+                } else {
+                    categoryQuizBtn.style.display = 'none';
+                }
+            }
+
+            // Populate all-questions-category-filter
+            const catFilter = document.getElementById('all-questions-category-filter');
+            if (catFilter) {
+                catFilter.innerHTML = '<option value="">Tüm Konular</option>';
+                const categories = [];
+                allQuestions.forEach(q => {
+                    if (q.category && !categories.includes(q.category.trim())) {
+                        categories.push(q.category.trim());
+                    }
+                });
+                categories.sort().forEach(cat => {
+                    const opt = document.createElement('option');
+                    opt.value = cat;
+                    opt.innerText = cat;
+                    catFilter.appendChild(opt);
+                });
+            }
+
+            // Starred Quiz button visibility
+            const btnStarredQuiz = document.getElementById('btn-starred-quiz');
+            if (btnStarredQuiz) {
+                if (starredQuestionIds.length > 0) {
+                    btnStarredQuiz.style.display = 'flex';
+                    document.getElementById('btn-starred-quiz-desc').innerText = `Yıldızla işaretlediğiniz ${starredQuestionIds.length} soruyu test olarak çözün.`;
+                } else {
+                    btnStarredQuiz.style.display = 'none';
+                }
+            }
+
             renderStudyNotes();
             updateDashboardStats();
             updateWrongCountBadge();
+            renderPerformanceChart();
         })
         .catch(err => {
             console.error("Questions could not be loaded:", err);
@@ -197,6 +337,16 @@ function loadCards(jsonFileName) {
 
 // Navigation / Screen Switching
 function switchTab(tabId) {
+    // Pause running timers when navigating away from the active screen
+    if (tabId !== 'quiz' && activeQuiz.timer) {
+        clearInterval(activeQuiz.timer);
+        activeQuiz.timer = null;
+    }
+    if (tabId !== 'cards' && activeCardsQuiz.timer) {
+        clearInterval(activeCardsQuiz.timer);
+        activeCardsQuiz.timer = null;
+    }
+
     // Update nav items active state
     document.querySelectorAll('.nav-item').forEach(item => {
         item.classList.remove('active');
@@ -214,8 +364,54 @@ function switchTab(tabId) {
     // Render screen specific data
     if (tabId === 'dashboard') {
         updateDashboardStats();
+    } else if (tabId === 'quiz') {
+        // Reset quiz subviews
+        document.getElementById('quiz-init-view').classList.add('active');
+        const categoryView = document.getElementById('quiz-category-view');
+        if (categoryView) {
+            categoryView.style.display = 'none';
+            categoryView.classList.remove('active');
+        }
+        document.getElementById('quiz-active-view').classList.remove('active');
+        document.getElementById('quiz-results-view').classList.remove('active');
+        
+        // Show/hide wrong questions quiz button based on stats
+        const btnWrongQuiz = document.getElementById('btn-wrong-quiz');
+        if (btnWrongQuiz) {
+            if (wrongQuestionIds.length > 0) {
+                btnWrongQuiz.style.display = 'flex';
+                const descText = document.getElementById('btn-wrong-quiz-desc');
+                if (descText) descText.innerText = `Kayıtlı ${wrongQuestionIds.length} yanlış sorunu çözerek hatalarını düzelt.`;
+            } else {
+                btnWrongQuiz.style.display = 'none';
+            }
+        }
+        
+        // Update visibility of the starred quiz button
+        const btnStarredQuiz = document.getElementById('btn-starred-quiz');
+        if (btnStarredQuiz) {
+            if (starredQuestionIds.length > 0) {
+                btnStarredQuiz.style.display = 'flex';
+                document.getElementById('btn-starred-quiz-desc').innerText = `Yıldızla işaretlediğiniz ${starredQuestionIds.length} soruyu test olarak çözün.`;
+            } else {
+                btnStarredQuiz.style.display = 'none';
+            }
+        }
+        
+        // Update visibility and state of the resume card
+        updateResumeCard();
+    } else if (tabId === 'cards') {
+        // Reset terminology cards subviews
+        document.getElementById('cards-init-view').classList.add('active');
+        document.getElementById('cards-active-view').classList.remove('active');
+        document.getElementById('cards-results-view').classList.remove('active');
+
+        // Update visibility and state of the terminology resume card
+        updateCardsResumeCard();
     } else if (tabId === 'wrong') {
         renderWrongQuestions();
+    } else if (tabId === 'all-questions') {
+        renderAllQuestionsTable();
     }
 }
 
@@ -278,7 +474,64 @@ function updateDashboardStats() {
         summaryText.innerText = `Toplam ${total} soru çözdün. Başarı oranınız %${ratio}.`;
     }
     
+    // Konu Bazlı Başarı Analizi (Category Breakdown)
+    const categoryCard = document.getElementById('dashboard-category-card');
+    const categoryBarsContainer = document.getElementById('dashboard-category-bars');
+    
+    if (categoryCard && categoryBarsContainer) {
+        const catStats = {}; // { categoryName: { correct: 0, total: 0 } }
+        
+        allQuestions.forEach(q => {
+            const stat = questionStats[q.id];
+            if (stat && (stat.correct > 0 || stat.wrong > 0) && q.category) {
+                const cat = q.category.trim();
+                if (!catStats[cat]) {
+                    catStats[cat] = { correct: 0, total: 0 };
+                }
+                catStats[cat].correct += stat.correct;
+                catStats[cat].total += (stat.correct + stat.wrong);
+            }
+        });
+        
+        const catKeys = Object.keys(catStats);
+        if (catKeys.length > 0) {
+            categoryCard.style.display = 'block';
+            categoryBarsContainer.innerHTML = '';
+            
+            catKeys.sort().forEach(catName => {
+                const data = catStats[catName];
+                const percent = Math.round((data.correct / data.total) * 100);
+                
+                // Beautiful status colors
+                let barColor = 'var(--wrong-light)';
+                if (percent >= 80) {
+                    barColor = 'var(--success-light)';
+                } else if (percent >= 50) {
+                    barColor = 'var(--primary-light)';
+                }
+                
+                const barRow = document.createElement('div');
+                barRow.style.display = 'flex';
+                barRow.style.flexDirection = 'column';
+                barRow.style.gap = '6px';
+                barRow.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; font-size: 0.8rem; align-items: center;">
+                        <span style="font-weight: 600; color: var(--text-main);">${catName}</span>
+                        <span style="color: var(--text-secondary); font-weight: 500;">%${percent} (${data.total} Soru)</span>
+                    </div>
+                    <div style="width: 100%; height: 6px; background-color: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden;">
+                        <div style="width: ${percent}%; height: 100%; background-color: ${barColor}; border-radius: 3px; transition: width 0.6s cubic-bezier(0.1, 1, 0.1, 1);"></div>
+                    </div>
+                `;
+                categoryBarsContainer.appendChild(barRow);
+            });
+        } else {
+            categoryCard.style.display = 'none';
+        }
+    }
+    
     updateWrongCountBadge();
+    renderPerformanceChart();
 }
 
 function updateWrongCountBadge() {
@@ -292,11 +545,79 @@ function updateWrongCountBadge() {
     }
 }
 
+function openCategorySelection() {
+    const listContainer = document.getElementById('quiz-categories-list');
+    if (!listContainer) return;
+    listContainer.innerHTML = '';
+
+    // Group questions by category
+    const categoryMap = {};
+    allQuestions.forEach(q => {
+        if (q.category) {
+            const cat = q.category.trim();
+            categoryMap[cat] = (categoryMap[cat] || 0) + 1;
+        }
+    });
+
+    // Render each category as a menu-item
+    Object.keys(categoryMap).sort().forEach(category => {
+        const count = categoryMap[category];
+        const button = document.createElement('button');
+        button.className = 'menu-item';
+        button.onclick = () => startCategoryQuiz(category);
+        button.innerHTML = `
+            <div class="menu-icon"><i class="fa-solid fa-tags"></i></div>
+            <div class="menu-text">
+                <h4>${category}</h4>
+                <p>Bu konuya ait ${count} adet soru bulunmaktadır.</p>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow-icon" style="margin-left: auto;"></i>
+        `;
+        listContainer.appendChild(button);
+    });
+
+    document.getElementById('quiz-init-view').classList.remove('active');
+    document.getElementById('quiz-category-view').style.display = 'block';
+    document.getElementById('quiz-category-view').classList.add('active');
+}
+
+function backToQuizInit() {
+    document.getElementById('quiz-category-view').style.display = 'none';
+    document.getElementById('quiz-category-view').classList.remove('active');
+    document.getElementById('quiz-init-view').classList.add('active');
+}
+
+function startCategoryQuiz(categoryName) {
+    // Filter questions
+    const categoryQuestions = allQuestions.filter(q => q.category && q.category.trim() === categoryName.trim());
+    if (categoryQuestions.length === 0) return;
+
+    // Shuffle questions
+    activeQuiz.questions = [...categoryQuestions].sort(() => 0.5 - Math.random());
+    activeQuiz.currentIndex = 0;
+    activeQuiz.answers = [];
+    activeQuiz.seconds = 0;
+
+    // Start Timer
+    clearInterval(activeQuiz.timer);
+    activeQuiz.timer = setInterval(() => {
+        activeQuiz.seconds++;
+        updateQuizTimer();
+    }, 1000);
+
+    // Switch Quiz views
+    document.getElementById('quiz-category-view').style.display = 'none';
+    document.getElementById('quiz-category-view').classList.remove('active');
+    document.getElementById('quiz-active-view').classList.add('active');
+    document.getElementById('quiz-results-view').classList.remove('active');
+
+    // Show first question
+    showQuestion();
+}
+
 // Quiz Engine functions
 function startQuiz(count) {
     if (allQuestions.length === 0) return;
-
-    activeQuiz.isInfinite = (count === Infinity);
 
     // Reset Active Quiz State
     activeQuiz.questions = getRandomQuestions(count);
@@ -320,53 +641,172 @@ function startQuiz(count) {
     showQuestion();
 }
 
+function startTipsQuiz() {
+    if (allQuestions.length === 0) return;
+
+    // Filter questions based on Hoca's tips (ID >= 308)
+    const tipsQuestions = allQuestions.filter(q => q.id >= 308);
+    if (tipsQuestions.length === 0) return;
+
+    // Set up quiz state
+    activeQuiz.questions = [...tipsQuestions].sort(() => 0.5 - Math.random());
+    activeQuiz.currentIndex = 0;
+    activeQuiz.answers = [];
+    activeQuiz.seconds = 0;
+
+    // Start Timer
+    clearInterval(activeQuiz.timer);
+    activeQuiz.timer = setInterval(() => {
+        activeQuiz.seconds++;
+        updateQuizTimer();
+    }, 1000);
+
+    // Switch Quiz views
+    document.getElementById('quiz-init-view').classList.remove('active');
+    document.getElementById('quiz-active-view').classList.add('active');
+    document.getElementById('quiz-results-view').classList.remove('active');
+
+    // Show first question
+    showQuestion();
+}
+
+function startTipsQuizFromDashboard() {
+    switchTab('quiz');
+    startTipsQuiz();
+}
+
 function updateQuizTimer() {
     const min = String(Math.floor(activeQuiz.seconds / 60)).padStart(2, '0');
     const sec = String(activeQuiz.seconds % 60).padStart(2, '0');
     document.getElementById('quiz-timer').innerHTML = `<i class="fa-solid fa-clock"></i> ${min}:${sec}`;
+    saveQuizSession();
 }
 
 function exitQuiz() {
     clearInterval(activeQuiz.timer);
+    clearQuizSession();
     document.getElementById('quiz-init-view').classList.add('active');
+    const categoryView = document.getElementById('quiz-category-view');
+    if (categoryView) {
+        categoryView.style.display = 'none';
+        categoryView.classList.remove('active');
+    }
     document.getElementById('quiz-active-view').classList.remove('active');
     document.getElementById('quiz-results-view').classList.remove('active');
     switchTab('dashboard');
 }
 
 function getRandomQuestions(count) {
-    // Shuffle copy of questions array
-    const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
-    if (count === Infinity) {
-        return shuffled;
+    const isSmartEnabled = localStorage.getItem(`${activeCourse}_smart_quiz`) !== 'false';
+    if (!isSmartEnabled) {
+        // Standard random shuffle
+        const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, Math.min(count, shuffled.length));
     }
-    return shuffled.slice(0, Math.min(count, shuffled.length));
+    
+    // Weighted smart distribution logic
+    // Build list of questions with calculated weights
+    const pool = [];
+    allQuestions.forEach(q => {
+        const stat = questionStats[q.id] || { correct: 0, wrong: 0 };
+        let weight = 3; // Base weight for never attempted
+        if (stat.correct > 0 || stat.wrong > 0) {
+            // Priority: more wrong answers -> higher weight
+            // Correctly answered -> lower weight
+            weight = 1 + (2 * stat.wrong);
+        }
+        pool.push({ question: q, weight: weight });
+    });
+    
+    // Choose count questions using weighted sampling without replacement
+    const selected = [];
+    const poolCopy = [...pool];
+    
+    for (let i = 0; i < Math.min(count, allQuestions.length); i++) {
+        // Calculate total weight of remaining questions
+        const totalWeight = poolCopy.reduce((sum, item) => sum + item.weight, 0);
+        if (totalWeight <= 0) break;
+        
+        let randomVal = Math.random() * totalWeight;
+        let cumulativeWeight = 0;
+        let chosenIndex = -1;
+        
+        for (let j = 0; j < poolCopy.length; j++) {
+            cumulativeWeight += poolCopy[j].weight;
+            if (randomVal <= cumulativeWeight) {
+                chosenIndex = j;
+                break;
+            }
+        }
+        
+        if (chosenIndex !== -1) {
+            selected.push(poolCopy[chosenIndex].question);
+            poolCopy.splice(chosenIndex, 1);
+        }
+    }
+    return selected;
 }
 
 function showQuestion() {
     const question = activeQuiz.questions[activeQuiz.currentIndex];
     
+    // Shuffle options dynamically and store on the question object if not already done
+    if (!question.shuffledOptions) {
+        const prefixLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+        const cleanOptionText = (opt) => opt.replace(/^[A-Za-z]\s*[\)\.-]?\s*/, '').trim();
+        const originalCorrectLetter = question.answer.trim();
+        const correctIndex = question.options.findIndex(opt => opt.trim().startsWith(originalCorrectLetter));
+        
+        if (correctIndex !== -1) {
+            const originalCorrectText = cleanOptionText(question.options[correctIndex]);
+            const cleanedOptions = question.options.map(opt => cleanOptionText(opt));
+            
+            // Random shuffle using modern sort
+            const shuffledCleaned = [...cleanedOptions].sort(() => Math.random() - 0.5);
+            
+            question.shuffledOptions = shuffledCleaned.map((text, idx) => `${prefixLetters[idx]}) ${text}`);
+            const newCorrectIndex = shuffledCleaned.indexOf(originalCorrectText);
+            question.shuffledAnswer = prefixLetters[newCorrectIndex] || originalCorrectLetter;
+        } else {
+            question.shuffledOptions = question.options;
+            question.shuffledAnswer = question.answer;
+        }
+    }
+
+    const currentOptions = question.shuffledOptions || question.options;
+    const currentAnswer = question.shuffledAnswer || question.answer;
+
     // Header Info & Progress
     const totalCount = activeQuiz.questions.length;
-    let indexText = "";
-    if (activeQuiz.isInfinite) {
-        indexText = `Soru ${activeQuiz.currentIndex + 1} (Sonsuz Döngü)`;
-        document.getElementById('quiz-progress-fill').style.width = `100%`;
-    } else {
-        indexText = `Soru ${activeQuiz.currentIndex + 1} / ${totalCount}`;
-        const progressPercent = ((activeQuiz.currentIndex) / totalCount) * 100;
-        document.getElementById('quiz-progress-fill').style.width = `${progressPercent}%`;
-    }
+    const currentCorrectCount = activeQuiz.answers.filter(a => a.isCorrect).length;
+    const currentWrongCount = activeQuiz.answers.filter(a => !a.isCorrect).length;
+    const indexText = `Soru ${activeQuiz.currentIndex + 1} / ${totalCount} (D: ${currentCorrectCount} | Y: ${currentWrongCount})`;
     document.getElementById('quiz-question-number').innerText = indexText;
     document.getElementById('header-progress-text').innerText = indexText;
+    
+    const progressPercent = ((activeQuiz.currentIndex) / totalCount) * 100;
+    document.getElementById('quiz-progress-fill').style.width = `${progressPercent}%`;
 
     // Question Text
-    document.getElementById('quiz-question-text').innerText = `${question.id}. ${question.question}`;
+    document.getElementById('quiz-question-text').innerHTML = `${question.id}. ${question.question}`;
 
     // Options list
     const optionsContainer = document.getElementById('quiz-options-list');
     optionsContainer.innerHTML = '';
     
+    // Update star button UI
+    const starBtn = document.getElementById('quiz-star-btn');
+    if (starBtn) {
+        const isStarred = starredQuestionIds.includes(question.id);
+        if (isStarred) {
+            starBtn.classList.add('active');
+            starBtn.innerHTML = '<i class="fa-solid fa-star"></i> Yıldızlı';
+        } else {
+            starBtn.classList.remove('active');
+            starBtn.innerHTML = '<i class="fa-regular fa-star"></i> Yıldızla';
+        }
+    }
+
     // Hide feedback card, reset next button and hint
     document.getElementById('quiz-feedback-card').style.display = 'none';
     document.getElementById('quiz-hint-text-box').style.display = 'none';
@@ -379,33 +819,59 @@ function showQuestion() {
     nextBtn.disabled = true;
     nextBtn.innerText = "Devam Et";
 
-    // Shuffle options dynamically for this presentation
-    const correctPrefix = question.answer.trim();
-    const correctOptionObj = question.options.find(opt => opt.trim().startsWith(correctPrefix));
-    const correctOptionText = correctOptionObj ? correctOptionObj.replace(/^[A-D]\s*[\)\.-]?\s*/i, '').trim() : '';
+    const existingAnswer = activeQuiz.answers.find(ans => ans.questionId === question.id);
 
-    const cleanedOptions = question.options.map(opt => opt.replace(/^[A-D]\s*[\)\.-]?\s*/i, '').trim());
-    const shuffledCleaned = [...cleanedOptions].sort(() => Math.random() - 0.5);
-    
-    const newCorrectIdx = shuffledCleaned.indexOf(correctOptionText);
-    const newCorrectLetter = String.fromCharCode(65 + newCorrectIdx);
-    
-    question._shuffledOptions = shuffledCleaned.map((opt, idx) => `${String.fromCharCode(65 + idx)}) ${opt}`);
-    question._shuffledAnswer = newCorrectLetter;
+    if (existingAnswer) {
+        // Render already answered question state
+        hintBtn.disabled = true;
+        nextBtn.disabled = false;
+        if (activeQuiz.currentIndex === activeQuiz.questions.length - 1) {
+            nextBtn.innerHTML = 'Sonuçları Gör <i class="fa-solid fa-square-poll-vertical"></i>';
+        }
 
-    question._shuffledOptions.forEach((option) => {
-        const optKey = option.trim().charAt(0); // gets A, B, C, D
-        const button = document.createElement('button');
-        button.className = 'option-btn';
-        button.innerText = option;
-        button.onclick = () => selectOption(button, optKey);
-        optionsContainer.appendChild(button);
-    });
+        currentOptions.forEach((option) => {
+            const optKey = option.trim().charAt(0);
+            const button = document.createElement('button');
+            button.className = 'option-btn';
+            button.innerText = option;
+            button.disabled = true;
+
+            const correctKey = currentAnswer.trim();
+            if (optKey === correctKey) {
+                button.classList.add('correct');
+            } else if (optKey === existingAnswer.chosenAnswer && !existingAnswer.isCorrect) {
+                button.classList.add('wrong');
+            }
+            optionsContainer.appendChild(button);
+        });
+
+        // Show Feedback Card
+        const feedbackCard = document.getElementById('quiz-feedback-card');
+        const feedbackTitle = document.getElementById('quiz-feedback-title');
+        const feedbackText = document.getElementById('quiz-feedback-text');
+
+        feedbackCard.className = 'feedback-card ' + (existingAnswer.isCorrect ? 'correct-feedback' : 'wrong-feedback');
+        feedbackTitle.innerHTML = existingAnswer.isCorrect ? 
+            '<i class="fa-solid fa-circle-check"></i> Doğru Cevap!' : 
+            '<i class="fa-solid fa-circle-xmark"></i> Yanlış Cevap!';
+        feedbackText.innerHTML = question.explanation || "Bu soru için ek açıklama bulunmamaktadır.";
+        feedbackCard.style.display = 'block';
+    } else {
+        // Normal unanswered question flow
+        currentOptions.forEach((option) => {
+            const optKey = option.trim().charAt(0); // gets A, B, C, D
+            const button = document.createElement('button');
+            button.className = 'option-btn';
+            button.innerText = option;
+            button.onclick = () => selectOption(button, optKey);
+            optionsContainer.appendChild(button);
+        });
+    }
 }
 
 function selectOption(selectedButton, chosenKey) {
     const question = activeQuiz.questions[activeQuiz.currentIndex];
-    const correctKey = (question._shuffledAnswer || question.answer).trim();
+    const correctKey = (question.shuffledAnswer || question.answer).trim();
 
     // Disable all option buttons and hint button
     const optionsContainer = document.getElementById('quiz-options-list');
@@ -427,9 +893,15 @@ function selectOption(selectedButton, chosenKey) {
     });
 
     // Save statistics & local storage with namespace
+    if (!questionStats[question.id]) {
+        questionStats[question.id] = { correct: 0, wrong: 0 };
+    }
+
     if (isCorrect) {
+        questionStats[question.id].correct++;
         userStats.correct++;
     } else {
+        questionStats[question.id].wrong++;
         userStats.wrong++;
         // Add to wrong questions list if not already there
         if (!wrongQuestionIds.includes(question.id)) {
@@ -437,6 +909,7 @@ function selectOption(selectedButton, chosenKey) {
             localStorage.setItem(`${activeCourse}_wrong_questions`, JSON.stringify(wrongQuestionIds));
         }
     }
+    localStorage.setItem(`${activeCourse}_question_stats`, JSON.stringify(questionStats));
     localStorage.setItem(`${activeCourse}_stats`, JSON.stringify(userStats));
 
     // Show Feedback Card
@@ -448,7 +921,7 @@ function selectOption(selectedButton, chosenKey) {
     feedbackTitle.innerHTML = isCorrect ? 
         '<i class="fa-solid fa-circle-check"></i> Doğru Cevap!' : 
         '<i class="fa-solid fa-circle-xmark"></i> Yanlış Cevap!';
-    feedbackText.innerText = question.explanation || "Bu soru için ek açıklama bulunmamaktadır.";
+    feedbackText.innerHTML = question.explanation || "Bu soru için ek açıklama bulunmamaktadır.";
     feedbackCard.style.display = 'block';
 
     // Save Quiz answers state
@@ -461,30 +934,25 @@ function selectOption(selectedButton, chosenKey) {
     // Enable next button
     const nextBtn = document.getElementById('quiz-next-btn');
     nextBtn.disabled = false;
-    if (!activeQuiz.isInfinite && activeQuiz.currentIndex === activeQuiz.questions.length - 1) {
+    if (activeQuiz.currentIndex === activeQuiz.questions.length - 1) {
         nextBtn.innerHTML = 'Sonuçları Gör <i class="fa-solid fa-square-poll-vertical"></i>';
-    } else {
-        nextBtn.innerHTML = 'Devam Et <i class="fa-solid fa-arrow-right"></i>';
     }
+    saveQuizSession();
 }
 
 function nextQuestion() {
     activeQuiz.currentIndex++;
+    saveQuizSession();
     if (activeQuiz.currentIndex < activeQuiz.questions.length) {
         showQuestion();
     } else {
-        if (activeQuiz.isInfinite) {
-            const newBatch = getRandomQuestions(Infinity);
-            activeQuiz.questions = activeQuiz.questions.concat(newBatch);
-            showQuestion();
-        } else {
-            showResults();
-        }
+        showResults();
     }
 }
 
 function showResults() {
     clearInterval(activeQuiz.timer);
+    clearQuizSession();
     
     // Switch views
     document.getElementById('quiz-active-view').classList.remove('active');
@@ -494,13 +962,27 @@ function showResults() {
     const total = activeQuiz.questions.length;
     const correctCount = activeQuiz.answers.filter(a => a.isCorrect).length;
     const wrongCount = total - correctCount;
+    const ratio = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+
+    // Save test result to history
+    let testHistory = JSON.parse(localStorage.getItem(`${activeCourse}_test_history`)) || [];
+    testHistory.push({
+        date: new Date().toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' }) + ' ' + new Date().toLocaleDateString('tr-TR', { day: '2-digit', month: '2-digit' }),
+        correct: correctCount,
+        total: total,
+        ratio: ratio
+    });
+    if (testHistory.length > 5) {
+        testHistory.shift();
+    }
+    localStorage.setItem(`${activeCourse}_test_history`, JSON.stringify(testHistory));
 
     document.getElementById('res-total').innerText = total;
     document.getElementById('res-correct').innerText = correctCount;
     document.getElementById('res-wrong').innerText = wrongCount;
 
     // Customize results card details
-    const ratio = Math.round((correctCount / total) * 100);
+    ratio = total > 0 ? Math.round((correctCount / total) * 100) : 0;
     const emojiContainer = document.getElementById('result-emoji-container');
     const titleContainer = document.getElementById('result-title');
     const textContainer = document.getElementById('result-text');
@@ -529,30 +1011,54 @@ function renderWrongQuestions() {
     const wrongSummary = document.getElementById('wrong-questions-summary');
     wrongListContainer.innerHTML = '';
 
-    const wrongCount = wrongQuestionIds.length;
-    wrongSummary.innerText = `Kayıtlı ${wrongCount} yanlış sorunuz var.`;
+    const listIds = (activeWrongTab === 'wrong') ? wrongQuestionIds : starredQuestionIds;
+    const count = listIds.length;
+    
+    if (activeWrongTab === 'wrong') {
+        wrongSummary.innerText = `Kayıtlı ${count} yanlış sorunuz var.`;
+    } else {
+        wrongSummary.innerText = `Kayıtlı ${count} yıldızlı sorunuz var.`;
+    }
 
-    if (wrongCount === 0) {
-        wrongListContainer.innerHTML = `
-            <div class="empty-state">
-                <i class="fa-solid fa-face-smile-beam empty-icon"></i>
-                <h3>Harika! Hiç yanlış sorunuz yok.</h3>
-                <p>Test çözdükçe yanlış cevaplarınız burada listelenecektir.</p>
-            </div>
-        `;
+    if (count === 0) {
+        if (activeWrongTab === 'wrong') {
+            wrongListContainer.innerHTML = `
+                <div class="empty-state">
+                    <i class="fa-solid fa-face-smile-beam empty-icon"></i>
+                    <h3>Harika! Hiç yanlış sorunuz yok.</h3>
+                    <p>Test çözdükçe yanlış cevaplarınız burada listelenecektir.</p>
+                </div>
+            `;
+        } else {
+            wrongListContainer.innerHTML = `
+                <div class="empty-state">
+                    <i class="fa-regular fa-star empty-icon" style="color: #ECC94B;"></i>
+                    <h3>Yıldızlı sorunuz bulunmuyor.</h3>
+                    <p>Çalışırken beğendiğiniz soruları yıldızlayarak buraya ekleyebilirsiniz.</p>
+                </div>
+            `;
+        }
         return;
     }
 
-    wrongQuestionIds.forEach(id => {
+    listIds.forEach(id => {
         const question = allQuestions.find(q => q.id === id);
         if (!question) return;
 
         const card = document.createElement('div');
         card.className = 'wrong-item-card';
+        card.onclick = (e) => {
+            if (e.target.closest('.wrong-action-bar')) {
+                return;
+            }
+            showQuestionDetailModal(question.id);
+        };
         card.innerHTML = `
             <div class="wrong-item-header">
                 <span>ID: ${question.id}</span>
-                <span class="wrong-badge">Hatalı</span>
+                <span class="${activeWrongTab === 'wrong' ? 'wrong-badge' : 'star-badge-btn active'}" style="border: none; padding: 2px 8px; border-radius: 20px; font-weight: 600; font-size: 0.75rem; pointer-events: none;">
+                    ${activeWrongTab === 'wrong' ? 'Hatalı' : '<i class="fa-solid fa-star"></i> Yıldızlı'}
+                </span>
             </div>
             <div class="wrong-item-question">
                 ${question.question}
@@ -564,8 +1070,8 @@ function renderWrongQuestions() {
                 <strong>Açıklama:</strong> ${question.explanation || "Açıklama bulunmamaktadır."}
             </div>
             <div class="wrong-action-bar">
-                <button class="wrong-action-btn delete-btn" onclick="removeWrongQuestion(${question.id})">
-                    <i class="fa-solid fa-trash"></i> Sil
+                <button class="wrong-action-btn delete-btn" onclick="${activeWrongTab === 'wrong' ? 'removeWrongQuestion' : 'toggleStarQuestionId'}(${question.id})">
+                    <i class="fa-solid ${activeWrongTab === 'wrong' ? 'fa-trash' : 'fa-star-slash'}"></i> ${activeWrongTab === 'wrong' ? 'Sil' : 'Yıldızı Kaldır'}
                 </button>
                 <button class="wrong-action-btn solve-btn" onclick="retryWrongQuestion(${question.id})">
                     <i class="fa-solid fa-rotate-right"></i> Tekrar Çöz
@@ -655,6 +1161,32 @@ function getRandomCardsQuestions(count) {
 function showCardsQuestion() {
     const question = activeCardsQuiz.questions[activeCardsQuiz.currentIndex];
     
+    // Shuffle options dynamically and store on the question object if not already done
+    if (!question.shuffledOptions) {
+        const prefixLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+        const cleanOptionText = (opt) => opt.replace(/^[A-Za-z]\s*[\)\.-]?\s*/, '').trim();
+        const originalCorrectLetter = question.answer.trim();
+        const correctIndex = question.options.findIndex(opt => opt.trim().startsWith(originalCorrectLetter));
+        
+        if (correctIndex !== -1) {
+            const originalCorrectText = cleanOptionText(question.options[correctIndex]);
+            const cleanedOptions = question.options.map(opt => cleanOptionText(opt));
+            
+            // Random shuffle using modern sort
+            const shuffledCleaned = [...cleanedOptions].sort(() => Math.random() - 0.5);
+            
+            question.shuffledOptions = shuffledCleaned.map((text, idx) => `${prefixLetters[idx]}) ${text}`);
+            const newCorrectIndex = shuffledCleaned.indexOf(originalCorrectText);
+            question.shuffledAnswer = prefixLetters[newCorrectIndex] || originalCorrectLetter;
+        } else {
+            question.shuffledOptions = question.options;
+            question.shuffledAnswer = question.answer;
+        }
+    }
+
+    const currentOptions = question.shuffledOptions || question.options;
+    const currentAnswer = question.shuffledAnswer || question.answer;
+
     // Header Info & Progress
     const totalCount = activeCardsQuiz.questions.length;
     const indexText = `Terim ${activeCardsQuiz.currentIndex + 1} / ${totalCount}`;
@@ -683,19 +1215,59 @@ function showCardsQuestion() {
     nextBtn.disabled = true;
     nextBtn.innerText = "Devam Et";
 
-    question.options.forEach((option) => {
-        const optKey = option.trim().charAt(0); // gets A, B, C, D
-        const button = document.createElement('button');
-        button.className = 'option-btn';
-        button.innerText = option;
-        button.onclick = () => selectCardsOption(button, optKey);
-        optionsContainer.appendChild(button);
-    });
+    const existingAnswer = activeCardsQuiz.answers.find(ans => ans.questionId === question.id);
+
+    if (existingAnswer) {
+        // Render already answered terminology question state
+        hintBtn.disabled = true;
+        nextBtn.disabled = false;
+        if (activeCardsQuiz.currentIndex === activeCardsQuiz.questions.length - 1) {
+            nextBtn.innerHTML = 'Sonuçları Gör <i class="fa-solid fa-square-poll-vertical"></i>';
+        }
+
+        currentOptions.forEach((option) => {
+            const optKey = option.trim().charAt(0);
+            const button = document.createElement('button');
+            button.className = 'option-btn';
+            button.innerText = option;
+            button.disabled = true;
+
+            const correctKey = currentAnswer.trim();
+            if (optKey === correctKey) {
+                button.classList.add('correct');
+            } else if (optKey === existingAnswer.chosenAnswer && !existingAnswer.isCorrect) {
+                button.classList.add('wrong');
+            }
+            optionsContainer.appendChild(button);
+        });
+
+        // Show Feedback Card
+        const feedbackCard = document.getElementById('cards-feedback-card');
+        const feedbackTitle = document.getElementById('cards-feedback-title');
+        const feedbackText = document.getElementById('cards-feedback-text');
+
+        feedbackCard.className = 'feedback-card ' + (existingAnswer.isCorrect ? 'correct-feedback' : 'wrong-feedback');
+        feedbackTitle.innerHTML = existingAnswer.isCorrect ? 
+            '<i class="fa-solid fa-circle-check"></i> Doğru Cevap!' : 
+            '<i class="fa-solid fa-circle-xmark"></i> Yanlış Cevap!';
+        feedbackText.innerText = question.explanation || "Bu terim için ek açıklama bulunmamaktadır.";
+        feedbackCard.style.display = 'block';
+    } else {
+        // Normal unanswered terminology question flow
+        currentOptions.forEach((option) => {
+            const optKey = option.trim().charAt(0); // gets A, B, C, D
+            const button = document.createElement('button');
+            button.className = 'option-btn';
+            button.innerText = option;
+            button.onclick = () => selectCardsOption(button, optKey);
+            optionsContainer.appendChild(button);
+        });
+    }
 }
 
 function selectCardsOption(selectedButton, chosenKey) {
     const question = activeCardsQuiz.questions[activeCardsQuiz.currentIndex];
-    const correctKey = question.answer.trim();
+    const correctKey = (question.shuffledAnswer || question.answer).trim();
 
     // Disable all option buttons and hint button
     const optionsContainer = document.getElementById('cards-options-list');
@@ -808,8 +1380,9 @@ function showQuizHint() {
     let hintStr = question.explanation || "Açıklama veya formüllere Notlar sekmesinden göz atabilirsiniz!";
     
     // Mask correct answer word inside explanation to prevent spoilers
-    const correctKey = (question._shuffledAnswer || question.answer).trim();
-    const correctOpt = (question._shuffledOptions || question.options).find(opt => opt.trim().startsWith(correctKey));
+    const correctKey = (question.shuffledAnswer || question.answer).trim();
+    const currentOptions = question.shuffledOptions || question.options;
+    const correctOpt = currentOptions.find(opt => opt.trim().startsWith(correctKey));
     if (correctOpt) {
         let cleanOptText = correctOpt.replace(/^[A-D]\s*[\)\.-]?\s*/i, '').trim();
         if (cleanOptText.length > 2) {
@@ -854,8 +1427,9 @@ function showCardsHint() {
     let hintStr = question.explanation || "Açıklama veya formüllere Notlar sekmesinden göz atabilirsiniz!";
     
     // Mask correct answer word inside explanation to prevent spoilers
-    const correctKey = question.answer.trim();
-    const correctOpt = question.options.find(opt => opt.trim().startsWith(correctKey));
+    const correctKey = (question.shuffledAnswer || question.answer).trim();
+    const currentOptions = question.shuffledOptions || question.options;
+    const correctOpt = currentOptions.find(opt => opt.trim().startsWith(correctKey));
     if (correctOpt) {
         let cleanOptText = correctOpt.replace(/^[A-D]\s*[\)\.-]?\s*/i, '').trim();
         if (cleanOptText.length > 2) {
@@ -883,3 +1457,657 @@ function showCardsHint() {
         randomWrongBtn.disabled = true;
     }
 }
+
+// Edit Answer Modal Functions
+function openEditAnswer() {
+    const question = activeQuiz.questions[activeQuiz.currentIndex];
+    if (!question) return;
+
+    document.getElementById('edit-question-id').innerText = question.id;
+    
+    const radios = document.getElementsByName('new-correct-ans');
+    radios.forEach(radio => {
+        radio.checked = (radio.value === question.answer.trim());
+    });
+
+    document.getElementById('edit-answer-modal').style.display = 'flex';
+}
+
+function closeEditAnswer() {
+    document.getElementById('edit-answer-modal').style.display = 'none';
+}
+
+function saveAnswerOverride() {
+    const question = activeQuiz.questions[activeQuiz.currentIndex];
+    if (!question) return;
+
+    const radios = document.getElementsByName('new-correct-ans');
+    let selectedValue = null;
+    radios.forEach(radio => {
+        if (radio.checked) {
+            selectedValue = radio.value;
+        }
+    });
+
+    if (!selectedValue) {
+        alert("Lütfen bir şık seçin.");
+        return;
+    }
+
+    // Save in active quiz question
+    question.answer = selectedValue;
+    delete question.shuffledOptions;
+    delete question.shuffledAnswer;
+    
+    // Save in master list allQuestions
+    const masterQuestion = allQuestions.find(q => q.id === question.id);
+    if (masterQuestion) {
+        masterQuestion.answer = selectedValue;
+        delete masterQuestion.shuffledOptions;
+        delete masterQuestion.shuffledAnswer;
+    }
+
+    // Save to localStorage
+    answerOverrides[question.id] = selectedValue;
+    localStorage.setItem(`${activeCourse}_answer_overrides`, JSON.stringify(answerOverrides));
+
+    // Close modal
+    closeEditAnswer();
+
+    // Re-show question to apply new answer key rules
+    showQuestion();
+}
+
+// ==========================================
+// THEME, SETTINGS & BOOKMARKS ENGINE
+// ==========================================
+
+function toggleTheme() {
+    const isLight = document.body.classList.toggle('light-theme');
+    localStorage.setItem('app_theme', isLight ? 'light' : 'dark');
+    
+    const themeIcon = document.querySelector('#theme-toggle-btn i');
+    if (themeIcon) {
+        themeIcon.className = isLight ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+    }
+}
+
+function openSettings() {
+    if (!activeCourse) return;
+    const modal = document.getElementById('settings-modal');
+    if (modal) modal.style.display = 'flex';
+}
+
+function closeSettings() {
+    const modal = document.getElementById('settings-modal');
+    if (modal) modal.style.display = 'none';
+}
+
+function toggleSmartQuizSetting() {
+    if (!activeCourse) return;
+    const checkbox = document.getElementById('setting-smart-quiz');
+    if (checkbox) {
+        localStorage.setItem(`${activeCourse}_smart_quiz`, checkbox.checked ? 'true' : 'false');
+        updateSmartQuizStatusUI();
+    }
+}
+
+function updateSmartQuizStatusUI() {
+    const checkbox = document.getElementById('setting-smart-quiz');
+    const statusText = document.getElementById('smart-quiz-status-text');
+    if (checkbox && statusText) {
+        if (checkbox.checked) {
+            statusText.innerText = "AÇIK";
+            statusText.style.color = "#48BB78"; // beautiful bright success green
+        } else {
+            statusText.innerText = "KAPALI";
+            statusText.style.color = "var(--text-secondary)";
+        }
+    }
+}
+
+function toggleStarActiveQuestion() {
+    const question = activeQuiz.questions[activeQuiz.currentIndex];
+    if (!question) return;
+    
+    const index = starredQuestionIds.indexOf(question.id);
+    if (index === -1) {
+        starredQuestionIds.push(question.id);
+    } else {
+        starredQuestionIds.splice(index, 1);
+    }
+    
+    localStorage.setItem(`${activeCourse}_starred_questions`, JSON.stringify(starredQuestionIds));
+    
+    // Update star button UI dynamically
+    const starBtn = document.getElementById('quiz-star-btn');
+    if (starBtn) {
+        const isStarred = starredQuestionIds.includes(question.id);
+        if (isStarred) {
+            starBtn.classList.add('active');
+            starBtn.innerHTML = '<i class="fa-solid fa-star"></i> Yıldızlı';
+        } else {
+            starBtn.classList.remove('active');
+            starBtn.innerHTML = '<i class="fa-regular fa-star"></i> Yıldızla';
+        }
+    }
+}
+
+function toggleStarQuestionId(id) {
+    const index = starredQuestionIds.indexOf(id);
+    if (index !== -1) {
+        starredQuestionIds.splice(index, 1);
+        localStorage.setItem(`${activeCourse}_starred_questions`, JSON.stringify(starredQuestionIds));
+    }
+    renderWrongQuestions();
+}
+
+function switchWrongTab(tabType) {
+    activeWrongTab = tabType;
+    
+    // Toggle active classes on sub-tab buttons
+    const wrongBtn = document.getElementById('subtab-wrong');
+    const starredBtn = document.getElementById('subtab-starred');
+    
+    if (tabType === 'wrong') {
+        if (wrongBtn) wrongBtn.classList.add('active');
+        if (starredBtn) starredBtn.classList.remove('active');
+    } else {
+        if (wrongBtn) wrongBtn.classList.remove('active');
+        if (starredBtn) starredBtn.classList.add('active');
+    }
+    
+    renderWrongQuestions();
+}
+
+// ==========================================
+// RESUME & TIMER PAUSE HELPER FUNCTIONS
+// ==========================================
+
+function updateResumeCard() {
+    const resumeCard = document.getElementById('quiz-resume-card');
+    if (!resumeCard) return;
+
+    // A quiz is in progress if there are questions and we haven't answered them all
+    const inProgress = activeQuiz.questions.length > 0 && activeQuiz.answers.length < activeQuiz.questions.length;
+    if (inProgress) {
+        resumeCard.style.display = 'flex';
+        const current = activeQuiz.currentIndex + 1;
+        const total = activeQuiz.questions.length;
+        const min = String(Math.floor(activeQuiz.seconds / 60)).padStart(2, '0');
+        const sec = String(activeQuiz.seconds % 60).padStart(2, '0');
+        document.getElementById('quiz-resume-status').innerText = `Soru ${current} / ${total} - Geçen Süre: ${min}:${sec}`;
+    } else {
+        resumeCard.style.display = 'none';
+    }
+}
+
+function updateCardsResumeCard() {
+    const resumeCard = document.getElementById('cards-resume-card');
+    if (!resumeCard) return;
+
+    // A terminology quiz is in progress if there are questions and we haven't answered them all
+    const inProgress = activeCardsQuiz.questions.length > 0 && activeCardsQuiz.answers.length < activeCardsQuiz.questions.length;
+    if (inProgress) {
+        resumeCard.style.display = 'flex';
+        const current = activeCardsQuiz.currentIndex + 1;
+        const total = activeCardsQuiz.questions.length;
+        const min = String(Math.floor(activeCardsQuiz.seconds / 60)).padStart(2, '0');
+        const sec = String(activeCardsQuiz.seconds % 60).padStart(2, '0');
+        document.getElementById('cards-resume-status').innerText = `Terim ${current} / ${total} - Geçen Süre: ${min}:${sec}`;
+    } else {
+        resumeCard.style.display = 'none';
+    }
+}
+
+function resumeQuiz() {
+    if (activeQuiz.questions.length === 0) return;
+    
+    // Restart timer if it was paused
+    if (!activeQuiz.timer) {
+        activeQuiz.timer = setInterval(() => {
+            activeQuiz.seconds++;
+            updateQuizTimer();
+        }, 1000);
+    }
+    
+    // Switch views to the active quiz layout
+    document.getElementById('quiz-init-view').classList.remove('active');
+    document.getElementById('quiz-active-view').classList.add('active');
+    document.getElementById('quiz-results-view').classList.remove('active');
+    
+    // Show the current active question
+    showQuestion();
+}
+
+function resumeCardsQuiz() {
+    if (activeCardsQuiz.questions.length === 0) return;
+    
+    // Restart timer if it was paused
+    if (!activeCardsQuiz.timer) {
+        activeCardsQuiz.timer = setInterval(() => {
+            activeCardsQuiz.seconds++;
+            updateCardsQuizTimer();
+        }, 1000);
+    }
+    
+    // Switch views to the active terminology card layout
+    document.getElementById('cards-init-view').classList.remove('active');
+    document.getElementById('cards-active-view').classList.add('active');
+    document.getElementById('cards-results-view').classList.remove('active');
+    
+    // Show the current active terminology question
+    showCardsQuestion();
+}
+
+function resetCourseData() {
+    if (!activeCourse) return;
+    
+    // Attempt to show custom premium confirmation modal
+    const modal = document.getElementById('confirm-modal');
+    if (!modal) {
+        // Fallback to standard confirm if modal element is not found
+        if (confirm("Bu derse ait tüm ilerlemeyi, doğru/yanlış istatistiklerini, hatalı ve yıldızlı soruları tamamen sıfırlamak istediğinize emin misiniz?")) {
+            executeReset();
+        }
+        return;
+    }
+    
+    modal.style.display = 'flex';
+    
+    // Configure buttons in the modal
+    const cancelBtn = document.getElementById('confirm-modal-cancel-btn');
+    const okBtn = document.getElementById('confirm-modal-ok-btn');
+    
+    cancelBtn.onclick = () => {
+        modal.style.display = 'none';
+    };
+    
+    okBtn.onclick = () => {
+        modal.style.display = 'none';
+        executeReset();
+    };
+}
+
+function executeReset() {
+    // Clear LocalStorage values
+    localStorage.removeItem(`${activeCourse}_stats`);
+    localStorage.removeItem(`${activeCourse}_wrong_questions`);
+    localStorage.removeItem(`${activeCourse}_starred_questions`);
+    localStorage.removeItem(`${activeCourse}_question_stats`);
+    localStorage.removeItem(`${activeCourse}_answer_overrides`);
+    localStorage.removeItem(`${activeCourse}_test_history`);
+    clearQuizSession();
+    
+    // Reset local memory state
+    userStats = { correct: 0, wrong: 0 };
+    wrongQuestionIds = [];
+    starredQuestionIds = [];
+    questionStats = {};
+    answerOverrides = {};
+    activeQuiz = {
+        questions: [],
+        currentIndex: 0,
+        answers: [],
+        timer: null,
+        seconds: 0
+    };
+
+    // Update UI
+    updateDashboardStats();
+    updateWrongCountBadge();
+    
+    // Close settings modal
+    closeSettings();
+    
+    alert("Bu dersin tüm verileri başarıyla sıfırlandı!");
+}
+
+function startWrongQuestionsQuiz() {
+    if (wrongQuestionIds.length === 0) return;
+    
+    // Get all master questions corresponding to wrong IDs
+    const questionsPool = allQuestions.filter(q => wrongQuestionIds.includes(q.id));
+    if (questionsPool.length === 0) return;
+    
+    // Shuffle the wrong questions
+    activeQuiz.questions = [...questionsPool].sort(() => 0.5 - Math.random());
+    activeQuiz.currentIndex = 0;
+    activeQuiz.answers = [];
+    activeQuiz.seconds = 0;
+    
+    // Start Timer
+    clearInterval(activeQuiz.timer);
+    activeQuiz.timer = setInterval(() => {
+        activeQuiz.seconds++;
+        updateQuizTimer();
+    }, 1000);
+    
+    // Switch Quiz views
+    document.getElementById('quiz-init-view').classList.remove('active');
+    document.getElementById('quiz-active-view').classList.add('active');
+    document.getElementById('quiz-results-view').classList.remove('active');
+    
+    // Show first question
+    showQuestion();
+}
+
+function filterStudyNotes() {
+    const query = document.getElementById('notes-search-input').value.toLowerCase().trim();
+    const noteCards = document.querySelectorAll('.note-card');
+    
+    noteCards.forEach((card, index) => {
+        const note = studyNotes[index];
+        if (!note) return;
+        
+        const titleMatch = note.title.toLowerCase().includes(query);
+        const contentMatch = note.content.toLowerCase().includes(query);
+        
+        if (titleMatch || contentMatch) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+// Session Persistence Helpers
+function saveQuizSession() {
+    if (!activeCourse) return;
+    const sessionData = {
+        questions: activeQuiz.questions,
+        currentIndex: activeQuiz.currentIndex,
+        answers: activeQuiz.answers,
+        seconds: activeQuiz.seconds
+    };
+    localStorage.setItem(`${activeCourse}_active_quiz`, JSON.stringify(sessionData));
+}
+
+function clearQuizSession() {
+    if (!activeCourse) return;
+    localStorage.removeItem(`${activeCourse}_active_quiz`);
+}
+
+// Question Detail Popup
+function showQuestionDetailModal(questionId) {
+    const question = allQuestions.find(q => q.id === questionId);
+    if (!question) return;
+
+    document.getElementById('detail-question-text').innerHTML = `${question.id}. ${question.question}`;
+    
+    const optionsContainer = document.getElementById('detail-options-list');
+    optionsContainer.innerHTML = '';
+    
+    const correctLetter = question.answer.trim();
+    
+    question.options.forEach(option => {
+        const div = document.createElement('div');
+        div.className = 'option-btn';
+        div.style.pointerEvents = 'none';
+        div.innerText = option;
+        
+        const optKey = option.trim().charAt(0);
+        if (optKey === correctLetter) {
+            div.classList.add('correct');
+        }
+        optionsContainer.appendChild(div);
+    });
+    
+    document.getElementById('detail-correct-answer').innerText = question.answer;
+    document.getElementById('detail-explanation-text').innerHTML = question.explanation || "Açıklama bulunmamaktadır.";
+    
+    document.getElementById('question-detail-modal').style.display = 'flex';
+}
+
+function closeQuestionDetail() {
+    document.getElementById('question-detail-modal').style.display = 'none';
+}
+
+// All Questions Screen Core Logic
+function renderAllQuestionsTable() {
+    const listContainer = document.getElementById('all-questions-list');
+    if (!listContainer) return;
+    listContainer.innerHTML = '';
+
+    const query = document.getElementById('all-questions-search-input').value.toLowerCase().trim();
+    const categoryFilter = document.getElementById('all-questions-category-filter').value;
+
+    // Map questions to enrich with stats and star state
+    let enriched = allQuestions.map(q => {
+        const stats = questionStats[q.id] || { correct: 0, wrong: 0 };
+        const correct = stats.correct || 0;
+        const wrong = stats.wrong || 0;
+        const total = correct + wrong;
+        const isStarred = starredQuestionIds.includes(q.id) ? 1 : 0;
+        return {
+            question: q,
+            id: q.id,
+            total: total,
+            correct: correct,
+            wrong: wrong,
+            starred: isStarred
+        };
+    });
+
+    // Filter by search query
+    if (query) {
+        enriched = enriched.filter(item => {
+            const idMatch = String(item.id).includes(query);
+            const questionMatch = item.question.question.toLowerCase().includes(query);
+            return idMatch || questionMatch;
+        });
+    }
+
+    // Filter by category dropdown
+    if (categoryFilter) {
+        enriched = enriched.filter(item => {
+            return item.question.category && item.question.category.trim() === categoryFilter.trim();
+        });
+    }
+
+    // Sort
+    const col = allQuestionsSort.col;
+    const desc = allQuestionsSort.desc;
+    enriched.sort((a, b) => {
+        let valA = a[col];
+        let valB = b[col];
+        if (valA < valB) return desc ? 1 : -1;
+        if (valA > valB) return desc ? -1 : 1;
+        return 0;
+    });
+
+    // Render
+    enriched.forEach(item => {
+        const row = document.createElement('tr');
+        row.className = 'question-row';
+        row.onclick = (e) => {
+            if (e.target.closest('.star-toggle-btn')) return; // ignore star click
+            showQuestionDetailModal(item.id);
+        };
+        
+        const isStarred = item.starred === 1;
+        row.innerHTML = `
+            <td>
+                <button class="star-toggle-btn ${isStarred ? 'starred' : ''}" onclick="toggleStarFromTable(${item.id}, event)">
+                    <i class="${isStarred ? 'fa-solid' : 'fa-regular'} fa-star"></i>
+                </button>
+            </td>
+            <td class="col-id">${item.id}</td>
+            <td class="col-total">${item.total}</td>
+            <td class="col-correct">${item.correct}</td>
+            <td class="col-wrong">${item.wrong}</td>
+        `;
+        listContainer.appendChild(row);
+    });
+}
+
+function sortAllQuestions(column) {
+    if (allQuestionsSort.col === column) {
+        allQuestionsSort.desc = !allQuestionsSort.desc;
+    } else {
+        allQuestionsSort.col = column;
+        allQuestionsSort.desc = false;
+    }
+
+    // Update headers icons UI
+    const cols = ['id', 'total', 'correct', 'wrong', 'starred'];
+    cols.forEach(c => {
+        const iconEl = document.getElementById(`sort-icon-${c}`);
+        // For star column, we might not have a separate sort icon span, but let's handle if exists
+        if (iconEl) {
+            if (c === column) {
+                iconEl.className = 'sort-icon active';
+                iconEl.innerHTML = allQuestionsSort.desc ? '<i class="fa-solid fa-sort-down"></i>' : '<i class="fa-solid fa-sort-up"></i>';
+            } else {
+                iconEl.className = 'sort-icon';
+                iconEl.innerHTML = '<i class="fa-solid fa-sort"></i>';
+            }
+        }
+    });
+
+    renderAllQuestionsTable();
+}
+
+function filterAllQuestions() {
+    renderAllQuestionsTable();
+}
+
+function toggleStarFromTable(questionId, event) {
+    if (event) event.stopPropagation(); // prevent opening details modal
+    
+    const index = starredQuestionIds.indexOf(questionId);
+    if (index === -1) {
+        starredQuestionIds.push(questionId);
+    } else {
+        starredQuestionIds.splice(index, 1);
+    }
+    
+    localStorage.setItem(`${activeCourse}_starred_questions`, JSON.stringify(starredQuestionIds));
+    
+    // Refresh table row view
+    renderAllQuestionsTable();
+    updateWrongCountBadge();
+}
+
+// Chart.js success trend renderer
+function renderPerformanceChart() {
+    const canvas = document.getElementById('performanceChart');
+    if (!canvas) return;
+
+    const history = JSON.parse(localStorage.getItem(`${activeCourse}_test_history`)) || [];
+    const parent = canvas.parentElement;
+
+    // Remove existing placeholder if any
+    const existingPlaceholder = document.getElementById('chart-placeholder');
+    if (existingPlaceholder) existingPlaceholder.remove();
+
+    if (history.length === 0) {
+        canvas.style.display = 'none';
+        const placeholder = document.createElement('div');
+        placeholder.id = 'chart-placeholder';
+        placeholder.style.textAlign = 'center';
+        placeholder.style.color = 'var(--text-secondary)';
+        placeholder.style.padding = '50px 0';
+        placeholder.style.fontSize = '0.85rem';
+        placeholder.innerHTML = '<i class="fa-solid fa-chart-line" style="font-size: 1.5rem; margin-bottom: 8px; opacity: 0.5; display: block;"></i>Çözdüğünüz testlerin başarı grafiği burada görünecektir.';
+        parent.appendChild(placeholder);
+        return;
+    }
+
+    canvas.style.display = 'block';
+
+    // Destroy existing chart instance
+    if (window.myPerformanceChart) {
+        window.myPerformanceChart.destroy();
+    }
+
+    const labels = history.map(h => h.date);
+    const dataPoints = history.map(h => h.ratio);
+
+    // Dynamic color matches course selection
+    let themeColor = '#4299E1';
+    if (activeCourse === 'gai') themeColor = '#A855F7';
+    if (activeCourse === 'ds') themeColor = '#10B981';
+    if (activeCourse === 'isg') themeColor = '#F97316';
+
+    window.myPerformanceChart = new Chart(canvas, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Başarı (%)',
+                data: dataPoints,
+                borderColor: themeColor,
+                backgroundColor: 'rgba(255, 255, 255, 0.01)',
+                tension: 0.35,
+                fill: false,
+                borderWidth: 2,
+                pointBackgroundColor: themeColor,
+                pointBorderColor: '#0B0E14',
+                pointBorderWidth: 1.5,
+                pointRadius: 4.5,
+                pointHoverRadius: 6
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            const index = context.dataIndex;
+                            const h = history[index];
+                            return `Başarı: %${context.parsed.y} (${h.correct}/${h.total})`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    min: 0,
+                    max: 100,
+                    ticks: { color: 'var(--text-secondary)', font: { size: 9 } },
+                    grid: { color: 'rgba(255, 255, 255, 0.05)' }
+                },
+                x: {
+                    ticks: { color: 'var(--text-secondary)', font: { size: 8 } },
+                    grid: { display: false }
+                }
+            }
+        }
+    });
+}
+
+// Starred Questions Quiz Engine
+function startStarredQuestionsQuiz() {
+    if (starredQuestionIds.length === 0) return;
+
+    // Filter questions
+    const starredQuestions = allQuestions.filter(q => starredQuestionIds.includes(q.id));
+    if (starredQuestions.length === 0) return;
+
+    // Shuffle questions
+    activeQuiz.questions = [...starredQuestions].sort(() => 0.5 - Math.random());
+    activeQuiz.currentIndex = 0;
+    activeQuiz.answers = [];
+    activeQuiz.seconds = 0;
+
+    // Start Timer
+    clearInterval(activeQuiz.timer);
+    activeQuiz.timer = setInterval(() => {
+        activeQuiz.seconds++;
+        updateQuizTimer();
+    }, 1000);
+
+    // Switch Quiz views
+    document.getElementById('quiz-init-view').classList.remove('active');
+    document.getElementById('quiz-active-view').classList.add('active');
+    document.getElementById('quiz-results-view').classList.remove('active');
+
+    // Show first question
+    showQuestion();
+}
+
+

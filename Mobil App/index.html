@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Chart.js for graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -29,10 +31,18 @@
                 <i class="fa-solid fa-brain-circuit brain-icon" id="app-logo-icon"></i>
                 <span id="app-logo-title">Mobil App</span>
             </div>
-            <div class="header-status" id="header-progress-text" style="display: none;">Hazır</div>
-            <button class="change-course-btn" id="change-course-btn" onclick="backToLanding()" style="display: none;">
-                <i class="fa-solid fa-arrow-right-to-bracket"></i> Ders Seç
-            </button>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <div class="header-status" id="header-progress-text" style="display: none;">Hazır</div>
+                <button class="change-course-btn" id="change-course-btn" onclick="backToLanding()" style="display: none;">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i> Ders Seç
+                </button>
+                <button class="header-control-btn" id="theme-toggle-btn" onclick="toggleTheme()" title="Tema Değiştir">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="header-control-btn" id="settings-toggle-btn" onclick="openSettings()" title="Ayarlar" style="display: none;">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+            </div>
         </header>
 
         <!-- Main Screen Containers -->
@@ -57,6 +67,22 @@
                         <div class="menu-text">
                             <h4>Üretken Yapay Zeka</h4>
                             <p>98 soruluk istem mühendisliği ve etik hazırlığı.</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </button>
+                    <button class="menu-item subject-card ds-card" onclick="selectCourse('ds')">
+                        <div class="menu-icon subject-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <div class="menu-text">
+                            <h4>Dijital Sürdürülebilirlik</h4>
+                            <p>50 soruluk veri stratejisi, akıllı şehirler ve yeşil lojistik hazırlığı.</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </button>
+                    <button class="menu-item subject-card isg-card" onclick="selectCourse('isg')">
+                        <div class="menu-icon subject-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="menu-text">
+                            <h4>İş Sağlığı ve Güvenliği</h4>
+                            <p>331 soruluk İSG kanunları, tehlike sınıfları ve risk değerlendirmesi hazırlığı.</p>
                         </div>
                         <i class="fa-solid fa-chevron-right arrow-icon"></i>
                     </button>
@@ -104,6 +130,25 @@
                             <h3>Genel Başarı Oranın</h3>
                             <p id="dashboard-stats-summary">Henüz test çözmeye başlamadın.</p>
                         </div>
+                </div>
+
+                <!-- Category Breakdown Card -->
+                <div class="category-analysis-card" id="dashboard-category-card" style="display: none; background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+                    <h3 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 15px; color: var(--primary-light); display: flex; align-items: center; gap: 8px;">
+                        <i class="fa-solid fa-chart-simple"></i> Konu Analiz Raporu
+                    </h3>
+                    <div id="dashboard-category-bars" style="display: flex; flex-direction: column; gap: 12px;">
+                        <!-- Dynamically populated progress bars -->
+                    </div>
+                </div>
+
+                <!-- Performance Chart Card -->
+                <div class="category-analysis-card" id="dashboard-chart-card" style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+                    <h3 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 15px; color: var(--primary-light); display: flex; align-items: center; gap: 8px;" id="dashboard-chart-title">
+                        <i class="fa-solid fa-chart-line"></i> Son Testlerin Başarı Analizi
+                    </h3>
+                    <div style="position: relative; height: 180px; width: 100%;">
+                        <canvas id="performanceChart"></canvas>
                     </div>
                 </div>
 
@@ -113,6 +158,14 @@
                         <p>90 soruluk sınav soru havuzundan hemen çalışmaya başla.</p>
                     </div>
                     <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </div>
+
+                <div class="action-card isg-only-card" id="dashboard-isg-tips-card" onclick="startTipsQuizFromDashboard()" style="display: none; border-color: #F97316; margin-top: 12px; background: rgba(249, 115, 22, 0.03);">
+                    <div class="action-content">
+                        <h3 style="color: #F97316;"><i class="fa-solid fa-lightbulb"></i> Hocanın İpuçlarına Göre Sorular</h3>
+                        <p>Yavuz Hoca'nın özel ipuçları ve vurguladığı İSG konularını çalış.</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon" style="color: #F97316;"></i>
                 </div>
             </section>
 
@@ -124,6 +177,16 @@
                         <h2>Sınav Modunu Seç</h2>
                         <p>Nasıl test çözmek istersin?</p>
                     </div>
+
+                    <!-- Resume Active Quiz Card -->
+                    <div id="quiz-resume-card" class="resume-card" style="display: none;" onclick="resumeQuiz()">
+                        <div class="resume-content">
+                            <h3><i class="fa-solid fa-play"></i> Kaldığın Teste Devam Et</h3>
+                            <p id="quiz-resume-status">Soru - / -</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow-icon" style="color: #ECC94B;"></i>
+                    </div>
+
                     <div class="menu-list">
                         <button class="menu-item" onclick="startQuiz(10)">
                             <div class="menu-icon"><i class="fa-solid fa-bolt"></i></div>
@@ -146,13 +209,48 @@
                                 <p>Sınav bankasındaki 90 sorunun tamamını çöz.</p>
                             </div>
                         </button>
-                        <button class="menu-item" onclick="startQuiz(Infinity)">
-                            <div class="menu-icon"><i class="fa-solid fa-infinity"></i></div>
+                        <button class="menu-item" id="btn-wrong-quiz" onclick="startWrongQuestionsQuiz()" style="display: none; border: 1.5px solid var(--wrong-light); background: rgba(197, 48, 48, 0.04);">
+                            <div class="menu-icon" style="color: var(--wrong-light); background: rgba(197, 48, 48, 0.1);"><i class="fa-solid fa-circle-xmark"></i></div>
                             <div class="menu-text">
-                                <h4>Sonsuz Döngü</h4>
-                                <p>Siz çıkana kadar tamamen karışık sorular gelsin.</p>
+                                <h4 style="color: var(--wrong-light); font-weight: 700;">Yanlışlarımı Temizle Testi</h4>
+                                <p id="btn-wrong-quiz-desc" style="color: var(--text-secondary);">Kaydedilmiş hatalı sorularını çözerek hatalarını düzelt.</p>
                             </div>
                         </button>
+                        <button class="menu-item" id="btn-starred-quiz" onclick="startStarredQuestionsQuiz()" style="display: none; border: 1.5px solid #ECC94B; background: rgba(236, 201, 75, 0.04);">
+                            <div class="menu-icon" style="color: #ECC94B; background: rgba(236, 201, 75, 0.1);"><i class="fa-solid fa-star"></i></div>
+                            <div class="menu-text">
+                                <h4 style="color: #ECC94B; font-weight: 700;">Yıldızlı Sorular Testi</h4>
+                                <p id="btn-starred-quiz-desc" style="color: var(--text-secondary);">Yıldızla işaretlediğiniz soruları test olarak çözün.</p>
+                            </div>
+                        </button>
+                        <button class="menu-item" id="btn-category-quiz" onclick="openCategorySelection()" style="display: none;">
+                            <div class="menu-icon"><i class="fa-solid fa-folder-open"></i></div>
+                            <div class="menu-text">
+                                <h4>Konuya Göre Çöz</h4>
+                                <p>Kategorilere ayrılmış soruları konu bazlı çözün.</p>
+                            </div>
+                        </button>
+                        <button class="menu-item isg-only-btn" id="btn-isg-tips-quiz" onclick="startTipsQuiz()" style="display: none; border: 1px solid #F97316; background: rgba(249, 115, 22, 0.05);">
+                            <div class="menu-icon" style="color: #F97316;"><i class="fa-solid fa-lightbulb"></i></div>
+                            <div class="menu-text">
+                                <h4>Hocanın İpuçlarına Göre Sorular</h4>
+                                <p>Yavuz Hoca'nın sınav ipuçları ve özel ders notlarına dayalı sorular.</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category Selection View -->
+                <div id="quiz-category-view" class="quiz-view" style="display: none;">
+                    <div class="section-title">
+                        <h2>Konu Seçimi 📂</h2>
+                        <p>Hangi konudan soru çözmek istersiniz?</p>
+                    </div>
+                    <div class="menu-list" id="quiz-categories-list">
+                        <!-- Dynamic categories go here -->
+                    </div>
+                    <div class="action-btn-container" style="margin-top: 20px;">
+                        <button class="btn btn-secondary" onclick="backToQuizInit()"><i class="fa-solid fa-arrow-left"></i> Geri Dön</button>
                     </div>
                 </div>
 
@@ -163,7 +261,11 @@
                     </div>
                     <div class="quiz-header-info">
                         <span id="quiz-question-number">Soru 1 / 10</span>
-                        <button class="hint-badge-btn" id="quiz-hint-btn" onclick="showQuizHint()"><i class="fa-solid fa-lightbulb"></i> İpucu</button>
+                        <div style="display: flex; gap: 6px; align-items: center;">
+                            <button class="star-badge-btn" id="quiz-star-btn" onclick="toggleStarActiveQuestion()"><i class="fa-regular fa-star"></i> Yıldızla</button>
+                            <button class="hint-badge-btn" id="quiz-hint-btn" onclick="showQuizHint()"><i class="fa-solid fa-lightbulb"></i> İpucu</button>
+                            <button class="edit-badge-btn" id="quiz-edit-btn" onclick="openEditAnswer()"><i class="fa-solid fa-pen-to-square"></i> Cevap Değiştir</button>
+                        </div>
                         <span class="timer-badge" id="quiz-timer"><i class="fa-solid fa-clock"></i> 00:00</span>
                     </div>
 
@@ -224,8 +326,17 @@
             <!-- 3. WRONG ANSWERS SCREEN -->
             <section id="screen-wrong" class="app-screen">
                 <div class="section-title">
-                    <h2><i class="fa-solid fa-circle-xmark status-wrong"></i> Yanlış Çözdüğüm Sorular</h2>
-                    <p>Çözdüğün testlerde yanlış yaptığın sorular burada birikir. Yanlışlarını inceleyerek konuları daha iyi kavra.</p>
+                    <h2><i class="fa-solid fa-circle-xmark status-wrong"></i> Sorularım & Analiz</h2>
+                    <p>Yanlış yaptığın ve yıldızla işaretlediğin soruları buradan incele.</p>
+                </div>
+
+                <div class="sub-tab-bar">
+                    <button class="sub-tab-btn active" id="subtab-wrong" onclick="switchWrongTab('wrong')">
+                        <i class="fa-solid fa-circle-xmark"></i> Yanlışlarım
+                    </button>
+                    <button class="sub-tab-btn" id="subtab-starred" onclick="switchWrongTab('starred')">
+                        <i class="fa-solid fa-star"></i> Yıldızlılarım
+                    </button>
                 </div>
 
                 <div class="wrong-questions-count" id="wrong-questions-summary">
@@ -249,6 +360,12 @@
                     <p>Test bankasındaki soruları çözebilmeniz için gereken tüm formül ve kısa notlar.</p>
                 </div>
 
+                <!-- Live Search Bar -->
+                <div class="search-bar-container" style="position: relative; margin-bottom: 20px;">
+                    <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--text-secondary); font-size: 0.95rem;"></i>
+                    <input type="text" id="notes-search-input" placeholder="Konu başlığı veya içeriğe göre ara..." onkeyup="filterStudyNotes()" style="width: 100%; padding: 14px 16px 14px 42px; font-family: var(--font-body); font-size: 0.9rem; background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; color: var(--text-main); transition: border-color 0.2s, box-shadow 0.2s; box-sizing: border-box; outline: none;">
+                </div>
+
                 <div class="notes-container" id="notes-list">
                     <!-- Notes dynamically inserted as accordions -->
                 </div>
@@ -262,6 +379,16 @@
                         <h2>Terim Sınav Modu</h2>
                         <p>Hızlı kelime kartı testleriyle ders kavramlarını ve teorik temellerini pekiştirin.</p>
                     </div>
+
+                    <!-- Resume Active Cards Quiz Card -->
+                    <div id="cards-resume-card" class="resume-card" style="display: none;" onclick="resumeCardsQuiz()">
+                        <div class="resume-content">
+                            <h3><i class="fa-solid fa-play"></i> Kaldığın Terim Testine Devam Et</h3>
+                            <p id="cards-resume-status">Terim - / -</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow-icon" style="color: #ECC94B;"></i>
+                    </div>
+
                     <div class="menu-list">
                         <button class="menu-item" onclick="startCardsQuiz(10)">
                             <div class="menu-icon"><i class="fa-solid fa-bolt"></i></div>
@@ -351,6 +478,42 @@
                     </div>
                 </div>
             </section>
+
+            <!-- 6. ALL QUESTIONS SCREEN -->
+            <section id="screen-all-questions" class="app-screen">
+                <div class="section-title">
+                    <h2><i class="fa-solid fa-clipboard-question"></i> Tüm Sorular & İstatistikler</h2>
+                    <p>Dersin tüm sorularını, çözüm adetlerini ve başarı durumlarını listeleyin.</p>
+                </div>
+                
+                <!-- Live Search and Filter Container -->
+                <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                    <div class="search-bar-container" style="position: relative; flex: 2; margin-bottom: 0;">
+                        <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--text-secondary); font-size: 0.95rem;"></i>
+                        <input type="text" id="all-questions-search-input" placeholder="Soru metni veya ID ile ara..." onkeyup="filterAllQuestions()" style="width: 100%; padding: 14px 16px 14px 42px; font-family: var(--font-body); font-size: 0.9rem; background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; color: var(--text-main); transition: border-color 0.2s, box-shadow 0.2s; box-sizing: border-box; outline: none;">
+                    </div>
+                    <select id="all-questions-category-filter" onchange="filterAllQuestions()" style="flex: 1.2; padding: 14px 16px; font-family: var(--font-body); font-size: 0.9rem; background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; color: var(--text-main); outline: none; cursor: pointer;">
+                        <option value="">Tüm Konular</option>
+                    </select>
+                </div>
+
+                <div class="all-questions-table-container">
+                    <table class="all-questions-table">
+                        <thead>
+                            <tr>
+                                <th onclick="sortAllQuestions('starred')" style="width: 44px; padding: 12px 6px;"><i class="fa-regular fa-star" style="color: var(--text-secondary);"></i></th>
+                                <th onclick="sortAllQuestions('id')">Soru No <span id="sort-icon-id" class="sort-icon"><i class="fa-solid fa-sort"></i></span></th>
+                                <th onclick="sortAllQuestions('total')">Toplam <span id="sort-icon-total" class="sort-icon"><i class="fa-solid fa-sort"></i></span></th>
+                                <th onclick="sortAllQuestions('correct')">Doğru <span id="sort-icon-correct" class="sort-icon"><i class="fa-solid fa-sort"></i></span></th>
+                                <th onclick="sortAllQuestions('wrong')">Yanlış <span id="sort-icon-wrong" class="sort-icon"><i class="fa-solid fa-sort"></i></span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="all-questions-list">
+                            <!-- Dynamic rows -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </main>
 
         <!-- Bottom Navigation Bar -->
@@ -371,6 +534,10 @@
                 <i class="fa-solid fa-circle-xmark"></i>
                 <span>Yanlışlarım</span>
                 <span class="badge" id="wrong-count-badge" style="display: none;">0</span>
+            </button>
+            <button class="nav-item" onclick="switchTab('all-questions')" id="nav-all-questions">
+                <i class="fa-solid fa-clipboard-question"></i>
+                <span>Tüm Sorular</span>
             </button>
             <button class="nav-item" onclick="switchTab('notes')" id="nav-notes">
                 <i class="fa-solid fa-book-open"></i>
@@ -440,9 +607,138 @@
         </div>
     </div>
 
+    <!-- Question Detail Modal -->
+    <div id="question-detail-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content glass">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-circle-question"></i> Soru Detayı</h3>
+                <button class="modal-close" onclick="closeQuestionDetail()">&times;</button>
+            </div>
+            <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+                <div class="question-container" style="margin-bottom: 0; background: none; border: none; padding: 0;">
+                    <p class="question-text" id="detail-question-text" style="font-size: 1rem; margin-bottom: 15px; font-weight: 600;"></p>
+                    <div class="options-list" id="detail-options-list" style="margin-bottom: 15px;">
+                        <!-- Options -->
+                    </div>
+                </div>
+                <div class="feedback-card correct-feedback" id="detail-correct-box" style="display: block; margin-bottom: 15px; border-color: var(--success);">
+                    <div class="feedback-title" style="color: var(--success-light); font-weight: 700; font-size: 0.95rem; margin-bottom: 0;">
+                        <i class="fa-solid fa-circle-check"></i> Doğru Cevap: <span id="detail-correct-answer" style="font-weight: 800;"></span>
+                    </div>
+                </div>
+                <div class="feedback-card" id="detail-explanation-box" style="display: block; margin-bottom: 0; border-color: var(--primary);">
+                    <div class="feedback-title" style="color: var(--primary-light); font-weight: 700; font-size: 0.95rem;">
+                        <i class="fa-solid fa-circle-info"></i> Açıklama
+                    </div>
+                    <p class="feedback-text" id="detail-explanation-text" style="margin-top: 5px;"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-block" onclick="closeQuestionDetail()">Kapat</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Answer Modal -->
+    <div id="edit-answer-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content glass">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-pen-to-square"></i> Doğru Cevabı Değiştir</h3>
+                <button class="modal-close" onclick="closeEditAnswer()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 15px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">
+                    Bu sorunun (Soru ID: <strong id="edit-question-id">-</strong>) doğru cevabını değiştirmek üzeresiniz. Lütfen yeni doğru cevabı seçin:
+                </p>
+                <div class="options-select-group" style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;">
+                    <label class="select-opt-label" style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 12px; border-radius: 8px; cursor: pointer;">
+                        <input type="radio" name="new-correct-ans" value="A">
+                        <span style="font-weight: 500;">A Seçeneği</span>
+                    </label>
+                    <label class="select-opt-label" style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 12px; border-radius: 8px; cursor: pointer;">
+                        <input type="radio" name="new-correct-ans" value="B">
+                        <span style="font-weight: 500;">B Seçeneği</span>
+                    </label>
+                    <label class="select-opt-label" style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 12px; border-radius: 8px; cursor: pointer;">
+                        <input type="radio" name="new-correct-ans" value="C">
+                        <span style="font-weight: 500;">C Seçeneği</span>
+                    </label>
+                    <label class="select-opt-label" style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 12px; border-radius: 8px; cursor: pointer;">
+                        <input type="radio" name="new-correct-ans" value="D">
+                        <span style="font-weight: 500;">D Seçeneği</span>
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer" style="display: flex; gap: 10px;">
+                <button class="btn btn-secondary" onclick="closeEditAnswer()">Vazgeç</button>
+                <button class="btn btn-primary" onclick="saveAnswerOverride()">Cevabı Güncelle</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content glass">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-gear"></i> Çalışma Ayarları</h3>
+                <button class="modal-close" onclick="closeSettings()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 20px; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">
+                    Soru dağılımını ve çalışma modunu kendinize göre özelleştirin:
+                </p>
+                
+                <div class="setting-item" style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                    <div style="flex: 1; padding-right: 15px;">
+                        <h4 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 4px; color: var(--text-main);"><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--primary-light);"></i> Akıllı Soru Dağılımı</h4>
+                        <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.3;">Sık yanlış çözdüğünüz ve hiç görmediğiniz soruları öncelikli olarak karşınıza getirir.</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <span id="smart-quiz-status-text" style="font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); min-width: 50px; text-align: right; letter-spacing: 0.5px;">KAPALI</span>
+                        <label class="switch-container" style="position: relative; display: inline-block; width: 46px; height: 26px; flex-shrink: 0;">
+                            <input type="checkbox" id="setting-smart-quiz" onchange="toggleSmartQuizSetting()" style="opacity: 0; width: 0; height: 0;">
+                            <span class="slider" style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255,255,255,0.1); border: 1px solid var(--border-color); transition: .4s; border-radius: 34px;"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="setting-item" style="display: flex; flex-direction: column; gap: 10px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); padding: 15px; border-radius: 12px; margin-bottom: 15px;">
+                    <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); margin-bottom: 2px;"><i class="fa-solid fa-trash-can" style="color: var(--wrong-light);"></i> Verileri Sıfırla</h4>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.3;">Bu derse ait tüm istatistikleri, yanlış yapılan ve yıldızlı soruları sıfırlar.</p>
+                    <button class="btn btn-secondary" onclick="resetCourseData()" style="color: var(--wrong-light); border-color: rgba(197, 48, 48, 0.4); background: rgba(197, 48, 48, 0.05); padding: 10px; font-size: 0.85rem; width: 100%;">
+                        <i class="fa-solid fa-circle-exclamation"></i> Tüm Verileri Temizle
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-block" onclick="closeSettings()">Kaydet ve Kapat</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Confirm Modal -->
+    <div id="confirm-modal" class="modal-overlay" style="display: none; z-index: 1100;">
+        <div class="modal-content glass" style="max-width: 340px;">
+            <div class="modal-header" style="border-bottom: none; padding-bottom: 5px;">
+                <h3 style="color: var(--wrong-light);"><i class="fa-solid fa-circle-exclamation"></i> Emin misiniz?</h3>
+            </div>
+            <div class="modal-body" style="padding-top: 5px;">
+                <p style="font-size: 0.85rem; color: var(--text-main); line-height: 1.5; margin-bottom: 20px;">
+                    Bu derse ait tüm ilerlemeyi, istatistikleri, yanlış yapılan ve yıldızlı soruları tamamen sıfırlamak istediğinize emin misiniz? Bu işlem geri alınamaz!
+                </p>
+            </div>
+            <div class="modal-footer" style="display: flex; gap: 10px; border-top: none; padding-top: 0;">
+                <button class="btn btn-secondary" id="confirm-modal-cancel-btn" style="flex: 1; padding: 12px; font-size: 0.9rem;">Vazgeç</button>
+                <button class="btn btn-primary" id="confirm-modal-ok-btn" style="flex: 1; padding: 12px; font-size: 0.9rem; background: var(--wrong-gradient); box-shadow: 0 4px 12px rgba(197, 48, 48, 0.25);">Evet, Sıfırla</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Custom Scripts -->
     <script src="ml/notes.js"></script>
     <script src="gai/notes.js"></script>
+    <script src="ds/notes.js"></script>
+    <script src="isg/notes.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
