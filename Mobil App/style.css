@@ -113,16 +113,17 @@ body {
 /* Screens toggling */
 .app-screen {
     display: none;
-    animation: fadeIn 0.3s ease-out;
+    opacity: 0;
 }
 
 .app-screen.active {
     display: block;
+    animation: slideUpFade 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: translateY(0); }
+@keyframes slideUpFade {
+    0% { opacity: 0; transform: translateY(16px) scale(0.985); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 /* Dashboard Cards */
@@ -324,10 +325,20 @@ body {
     text-align: left;
     width: 100%;
     color: var(--text-main);
-    transition: background-color 0.2s, border-color 0.2s;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.menu-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-light);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .menu-item:active {
+    transform: scale(0.98);
     background-color: var(--bg-card-hover);
     border-color: var(--primary-light);
 }
@@ -429,12 +440,22 @@ body {
     font-family: var(--font-body);
     font-size: 0.95rem;
     cursor: pointer;
-    transition: border-color 0.2s, background-color 0.2s;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                color 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     width: 100%;
 }
 
-.option-btn:hover {
+.option-btn:hover:not(:disabled) {
     border-color: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.15);
+}
+
+.option-btn:active:not(:disabled) {
+    transform: translateY(0) scale(0.985);
 }
 
 .option-btn.selected {
@@ -447,6 +468,7 @@ body {
     background-color: rgba(72, 187, 120, 0.15);
     color: var(--success-light);
     font-weight: 600;
+    animation: popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .option-btn.wrong {
@@ -454,6 +476,20 @@ body {
     background-color: rgba(245, 101, 101, 0.15);
     color: var(--wrong-light);
     font-weight: 600;
+    animation: shake 0.35s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-2px, 0, 0); }
+    20%, 80% { transform: translate3d(3px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
 }
 
 /* Feedback card */

@@ -1003,6 +1003,15 @@ function showResults() {
     
     document.getElementById('header-progress-text').innerText = "Sonuçlar";
     updateWrongCountBadge();
+
+    // Trigger confetti for celebration
+    if (typeof confetti === 'function') {
+        confetti({
+            particleCount: 150,
+            spread: 80,
+            origin: { y: 0.6 }
+        });
+    }
 }
 
 // Wrong Questions Screen Logic
@@ -1361,6 +1370,15 @@ function showCardsResults() {
     }
     
     document.getElementById('header-progress-text').innerText = "Sonuçlar";
+
+    // Trigger confetti for celebration
+    if (typeof confetti === 'function') {
+        confetti({
+            particleCount: 150,
+            spread: 80,
+            origin: { y: 0.6 }
+        });
+    }
 }
 
 // Hint System Actions
@@ -2109,5 +2127,84 @@ function startStarredQuestionsQuiz() {
     // Show first question
     showQuestion();
 }
+
+// Progress Backup & Restore (JSON Export/Import)
+function exportUserData() {
+    if (!activeCourse) return;
+    
+    // Gather all local storage keys for this specific course
+    const prefix = `${activeCourse}_`;
+    const dataToExport = {};
+    
+    // Add active theme
+    dataToExport['app_theme'] = localStorage.getItem('app_theme') || 'dark';
+    
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key.startsWith(prefix)) {
+            dataToExport[key] = localStorage.getItem(key);
+        }
+    }
+    
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dataToExport, null, 2));
+    const downloadAnchor = document.createElement('a');
+    
+    // Format date for filename
+    const dateStr = new Date().toLocaleDateString('tr-TR').replace(/\./g, '-');
+    let courseName = "ders";
+    if (activeCourse === 'ml') courseName = "makine-ogrenmesi";
+    if (activeCourse === 'gai') courseName = "uretken-yapay-zeka";
+    if (activeCourse === 'ds') courseName = "dijital-surdurulebilirlik";
+    if (activeCourse === 'isg') courseName = "is-sagligi-guvenligi";
+    
+    downloadAnchor.setAttribute("href", dataStr);
+    downloadAnchor.setAttribute("download", `sinav-hazirlik_${courseName}_yedek_${dateStr}.json`);
+    document.body.appendChild(downloadAnchor);
+    downloadAnchor.click();
+    downloadAnchor.remove();
+}
+
+function triggerImportFile() {
+    const fileInput = document.getElementById('import-file-input');
+    if (fileInput) fileInput.click();
+}
+
+function importUserData(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            const importedData = JSON.parse(e.target.result);
+            
+            // Validate data structure
+            let importedCount = 0;
+            Object.keys(importedData).forEach(key => {
+                // Allow active theme or keys matching the course namespace
+                if (key === 'app_theme' || (activeCourse && key.startsWith(`${activeCourse}_`))) {
+                    localStorage.setItem(key, importedData[key]);
+                    importedCount++;
+                }
+            });
+            
+            if (importedCount > 0) {
+                alert("Başarılı! İlerleme verileriniz geri yüklendi. Sayfa güncellenecektir.");
+                // Reload course selection values
+                selectCourse(activeCourse);
+                closeSettings();
+            } else {
+                alert("Hata: Geçersiz yedek dosyası veya bu derse ait veri bulunamadı.");
+            }
+        } catch (err) {
+            console.error(err);
+            alert("Hata: Dosya okunamadı. Lütfen geçerli bir JSON yedek dosyası seçtiğinizden emin olun.");
+        }
+    };
+    reader.readAsText(file);
+    // Reset file input value
+    event.target.value = '';
+}
+
 
 
