@@ -1,114 +1,0 @@
-İndirgenebilir ve İndirgenemez Hata
-Toplam beklenen hata iki kaynağa ayrışır: azaltılabilenler ve azaltılamayanlar.
-
-                                                     MSE   =          )
-                                                               Bias²(f̂      +         )
-                                                                                  Var(f̂   +    σ²
-
-                                          ▲                                                      ▲
-                                    İndirgenebilir                                         İndirgenemez
-Yanlılık (Bias)
-Modelin sistematik olarak gerçek değerden sapması; yanlış varsayımlardan kaynaklanır.
-
-
-Tanım: Bias(f̂         (x)] − f(x) → Farklı eğitim setlerindeki tahminlerin ortalaması ile gerçek değer arasındaki fark.
-             , x) = E[f̂
-
-
-
-Nasıl Oluşur?                                       Belirtileri                                 Çözüm Yolları
-
-
-•     Model gerçek ilişkiyi öğrenemeyecek
-      kadar basit                                   •     Hem eğitim hem test hatası yüksek     •    Daha karmaşık model kullan
-•     Yanlış model ailesi seçimi (örn. doğrusal ≠   •     Eğitim setinde bile kötü performans   •    Daha fazla özellik (feature) ekle
-      doğrusal olmayan)                             •     Model veriyi öğrenemiyor              •    Regularizasyonu azalt (λ ↓)
-•     Eksik özellikler / yetersiz kapasite
-Varyans (Variance)
-Modelin eğitim verisindeki küçük değişimlere karşı duyarlılığı; kararsızlık ölçüsüdür.
-
-
-Tanım: Var(f̂
-            , x) = E[(f̂        (x)])²] → Tahminlerin kendi ortalamaları etrafındaki yayılımı.
-                       (x) − E[f̂
-
-
-
-Nasıl Oluşur?                                           Belirtileri                                      Çözüm Yolları
-
-
-•     Model eğitim verisine gereğinden fazla
-      uyuyor                                           •      Eğitim hatası düşük, test hatası yüksek    •    Daha fazla eğitim verisi
-•     Gürültüyü de öğreniyor — ezberleme               •      Farklı veri setlerinde tutarsız sonuçlar   •    Regularizasyon ekle (L1/L2)
-•     Parametreler aşırı serbest /                     •      Büyük train-test performans farkı          •    Dropout, Early Stopping, Ensemble
-      regularizasyon yok
-Aşırı Uyum (Overfitting)
-Model eğitim verisini, içindeki gürültüyü de dahil ederek ezberler; yeni veriye genelleyemez.
-
-
-Koşul: MSE_train ≪ MSE_test                                                       Hata: Bias² ↓       ,   Var ↑↑     →    MSE ↑
-
-
-
-Sebepler                                               Tanıma                                               Önleme
-
-
-•     Çok karmaşık model (yüksek derece               •     Eğitim skoru %99, test skoru %65 gibi
-                                                                                                            •      Regularizasyon: Ridge (L2), Lasso (L1)
-      polinom, derin ağ)                                    büyük fark
-                                                                                                            •      Erken durdurma (Early Stopping)
-•     Az eğitim verisi — gürültü öğreniliyor          •     Öğrenme eğrisinde train-val ayrışması
-                                                                                                            •      Dropout, Veri artırma, Çapraz doğrulama
-•     Regularizasyon yok veya çok zayıf               •     Yeni veri geldiğinde tahminler tutarsız
-Yetersiz Uyum (Underfitting)
-Model verideki temel yapıyı ve ilişkiyi öğrenemeyecek kadar basit ya da kısıtlıdır.
-
-
-Koşul: MSE_train ≈ MSE_test             (ikisi de yüksek)                          Hata: Bias² ↑↑      ,   Var ↓     →    MSE ↑
-
-
-
-Sebepler                                                Tanıma                                              Çözüm
-
-
-•     Çok basit model (doğrusal ≠ doğrusal             •     Hem eğitim hem test hatası yüksek ve           •      Daha karmaşık / derin model kullan
-      olmayan veri)                                          yakın                                          •      Regularizasyonu azalt (λ ↓)
-•     Aşırı güçlü regularizasyon (λ çok büyük)         •     Model veriyi açıklayamıyor                     •      Daha fazla özellik türet (Feature
-•     Yetersiz eğitim süresi / iterasyon               •     Öğrenme eğrisi düşük bir platoda takılı               Engineering)
-Sınıflandırma ve
-Kümeleme Örnekleri:
-Uygulamalar
-Bias–variance analizinin bazı uygulamaları şunlardır:
-
-1.Model Seçimi: İyi bir genelleme sağlamak için basit mi
-yoksa karmaşık bir modelin mi daha uygun olduğunu
-belirlemeye yardımcı olur.
-2.Hiperparametre Ayarı: Öğrenme oranı, düzenlileştirme
-(regularization) katsayısı veya ağaç derinliği gibi
-parametrelerin hatayı azaltacak şekilde ince ayarını
-yönlendirir.
-3.Model Değerlendirme: Eğitim ve test performansını
-karşılaştırarak underfitting (yetersiz öğrenme) ve overfitting’i
-(aşırı öğrenme) tespit etmeye yardımcı olur.
-4.Hata Analizi: Tahmin hatalarının temel nedenlerini
-belirlemeyi ve model stratejilerini buna göre geliştirmeyi
-sağlar.
-5.Topluluk (Ensemble) Öğrenme: Birden fazla modeli
-birleştirerek bias ve varyansı dengeler; böylece kararlılık ve
-doğruluk artar.
-Avantajlar
-Bias ve varyans kavramlarını anlamanın bazı avantajları şunlardır:
-
-1.Model Doğruluğunu Artırır: Görülmemiş veriler
-üzerinde tutarlı performans gösteren modeller
-geliştirmeyi sağlar.
-2.Verimli Eğitim Sürecini Destekler: Gereksiz
-derecede karmaşık veya aşırı öğrenmiş modellerden
-kaçınarak hesaplama kaynaklarını korur.
-3.Yorumlanabilirliği Artırır: Model hatalarının
-arkasındaki nedenleri anlamayı ve açıklamayı
-kolaylaştırır.
-4.Model Karmaşıklığını Yönlendirir: Farklı veri
-boyutları ve problemler için en uygun model karmaşıklık
-düzeyini bulmaya yardımcı olur.
-
