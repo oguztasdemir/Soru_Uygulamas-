@@ -58,6 +58,7 @@ function switchInstallTab(platform) {
 let activeCourse = null; // 'ml', 'gai', 'ds', or 'isg'
 let allQuestions = [];
 let allCardsQuestions = [];
+let allTipsQuestions = [];
 let activeQuiz = {
     questions: [],
     currentIndex: 0,
@@ -94,6 +95,62 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     backToLanding();
 });
+
+const ISG_CHECKLIST_DATA = [
+    { id: "c1", text: "Konu 1: Sayfa 17-23 (Ramazzini, Pott, Sanayi Devrimi) ve Sayfa 29 (Tehlike/Risk farkı)" },
+    { id: "c2", text: "Konu 4/5: KKD özellikleri (ek risk oluşturmama, ücretsiz temin, hiyerarşide son çare)" },
+    { id: "c3", text: "Konu 6/7: Kurul şartları (50+ çalışan, 6+ ay) ve periyotları (Çok tehlikeli: her ay, tehlikeli: 2 ay, az tehlikeli: 3 ay)" },
+    { id: "c4", text: "Konu 6/7: 5510 md 13 iş kazası halleri (mola, süt izni, servis) ve 3 iş günü bildirim süresi" },
+    { id: "c5", text: "Konu 8: Çalışmaktan kaçınma hakkı şartları, kurul başvurusu ve ücret hakkı" },
+    { id: "c6", text: "Konu 8: Kaza Sıklık Hızı (KSH) ve Kaza Ağırlık Hızı (KAH) formülleri (ölümde +6000 gün)" },
+    { id: "c7", text: "Konu 9: Risk değerlendirmesi 5 adımı, proaktif/reaktif farkları ve yenilenme süreleri (2-4-6 yıl)" },
+    { id: "c8", text: "Konu 9: Sayfa 139'daki risk puanı değerlendirmesi ve eylemler (15-25: Kabul Edilemez, 8-12: Dikkate Değer)" },
+    { id: "c9", text: "Konu 9B: Sayfa Z4, 114 ve 115'teki tabloların hatalı olduğu, 9A sayfa 137 ve 139'un doğru olduğu bilgisi" },
+    { id: "c10", text: "Konu 11: Haftalık 45 saat, fazla mesai 270 saat, günlük 11 saat ve gece 7.5 saat limitleri" },
+    { id: "c11", text: "Konu 11: Kıdeme göre ihbar süreleri (2-4-6-8 hafta) ve işe iade davası şartları/tazminatları" },
+    { id: "c12", text: "Yavuz Hoca: Gürültü sınırları (85/87 dBA) ve zorunlu ilkyardımcı oranları (10/15/20 çalışanda 1)" }
+];
+
+function renderISGChecklist() {
+    const container = document.getElementById('isg-checklist-items');
+    if (!container) return;
+    container.innerHTML = '';
+    
+    const checkedItems = JSON.parse(localStorage.getItem('isg_hoca_tips_checklist')) || [];
+    
+    ISG_CHECKLIST_DATA.forEach(item => {
+        const isChecked = checkedItems.includes(item.id);
+        const row = document.createElement('label');
+        row.style.display = 'flex';
+        row.style.alignItems = 'flex-start';
+        row.style.gap = '10px';
+        row.style.padding = '8px 10px';
+        row.style.backgroundColor = 'rgba(255,255,255,0.02)';
+        row.style.border = '1px solid var(--border-color)';
+        row.style.borderRadius = '8px';
+        row.style.cursor = 'pointer';
+        row.style.fontSize = '0.8rem';
+        row.style.lineHeight = '1.3';
+        row.style.transition = 'background-color 0.2s';
+        
+        row.innerHTML = `
+            <input type="checkbox" id="chk-${item.id}" ${isChecked ? 'checked' : ''} onchange="toggleISGChecklistItem('${item.id}')" style="margin-top: 2px; cursor: pointer;">
+            <span style="color: ${isChecked ? 'var(--text-secondary)' : 'var(--text-main)'}; text-decoration: ${isChecked ? 'line-through' : 'none'};">${item.text}</span>
+        `;
+        container.appendChild(row);
+    });
+}
+
+function toggleISGChecklistItem(itemId) {
+    let checkedItems = JSON.parse(localStorage.getItem('isg_hoca_tips_checklist')) || [];
+    if (checkedItems.includes(itemId)) {
+        checkedItems = checkedItems.filter(id => id !== itemId);
+    } else {
+        checkedItems.push(itemId);
+    }
+    localStorage.setItem('isg_hoca_tips_checklist', JSON.stringify(checkedItems));
+    renderISGChecklist();
+}
 
 // Subject / Course Selection Screen Router
 function selectCourse(courseId) {
@@ -179,17 +236,24 @@ function selectCourse(courseId) {
         
         loadQuestions('isg/questions.json');
         loadCards('isg/cards.json');
+        loadTipsQuestions('isg/tips_questions.json');
     }
     
-    // Show/hide ISG Hoca Tips buttons
+    // Show/hide ISG Hoca Tips buttons & Checklist
     const isgTipsCard = document.getElementById('dashboard-isg-tips-card');
     const isgTipsBtn = document.getElementById('btn-isg-tips-quiz');
+    const isgChecklistCard = document.getElementById('dashboard-isg-checklist-card');
     if (activeCourse === 'isg') {
         if (isgTipsCard) isgTipsCard.style.display = 'block';
         if (isgTipsBtn) isgTipsBtn.style.display = 'flex';
+        if (isgChecklistCard) {
+            isgChecklistCard.style.display = 'block';
+            renderISGChecklist();
+        }
     } else {
         if (isgTipsCard) isgTipsCard.style.display = 'none';
         if (isgTipsBtn) isgTipsBtn.style.display = 'none';
+        if (isgChecklistCard) isgChecklistCard.style.display = 'none';
     }
     
     // Reveal Navigation and header features
@@ -206,6 +270,7 @@ function backToLanding() {
     activeCourse = null;
     allQuestions = [];
     allCardsQuestions = [];
+    allTipsQuestions = [];
     wrongQuestionIds = [];
     starredQuestionIds = [];
     questionStats = {};
@@ -219,11 +284,13 @@ function backToLanding() {
     document.getElementById('change-course-btn').style.display = 'none';
     document.getElementById('settings-toggle-btn').style.display = 'none';
     
-    // Hide ISG Hoca Tips buttons
+    // Hide ISG Hoca Tips buttons & Checklist
     const isgTipsCard = document.getElementById('dashboard-isg-tips-card');
     const isgTipsBtn = document.getElementById('btn-isg-tips-quiz');
+    const isgChecklistCard = document.getElementById('dashboard-isg-checklist-card');
     if (isgTipsCard) isgTipsCard.style.display = 'none';
     if (isgTipsBtn) isgTipsBtn.style.display = 'none';
+    if (isgChecklistCard) isgChecklistCard.style.display = 'none';
     
     // Hide nav and show landing
     document.querySelector('.app-nav').classList.add('hidden');
@@ -330,6 +397,25 @@ function loadCards(jsonFileName) {
         })
         .catch(err => {
             console.error("Terminology cards could not be loaded:", err);
+        });
+}
+
+// Fetch Hoca tips questions from JSON file
+function loadTipsQuestions(jsonFileName) {
+    fetch(jsonFileName)
+        .then(response => response.json())
+        .then(data => {
+            allTipsQuestions = data;
+            
+            // Dynamically update the Hoca tips quiz button text to show the correct total count
+            const tipsBtn = document.getElementById('btn-isg-tips-quiz');
+            if (tipsBtn) {
+                const descText = tipsBtn.querySelector('p');
+                if (descText) descText.innerText = `Yavuz Hoca'nın sınav ipuçları ve özel ders notlarına dayalı ${allTipsQuestions.length} soru.`;
+            }
+        })
+        .catch(err => {
+            console.error("Hoca tips questions could not be loaded:", err);
         });
 }
 
@@ -640,14 +726,10 @@ function startQuiz(count) {
 }
 
 function startTipsQuiz() {
-    if (allQuestions.length === 0) return;
-
-    // Filter questions based on Hoca's tips (ID >= 308)
-    const tipsQuestions = allQuestions.filter(q => q.id >= 308);
-    if (tipsQuestions.length === 0) return;
+    if (allTipsQuestions.length === 0) return;
 
     // Set up quiz state
-    activeQuiz.questions = [...tipsQuestions].sort(() => 0.5 - Math.random());
+    activeQuiz.questions = [...allTipsQuestions].sort(() => 0.5 - Math.random());
     activeQuiz.currentIndex = 0;
     activeQuiz.answers = [];
     activeQuiz.seconds = 0;

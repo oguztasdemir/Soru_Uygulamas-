@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "question": "İş sağlığı ve güvenliğinin babası/kurucusu kabul edilen, işçilere 'Ne iş yapıyorsun?' sorusunun sorulması gerektiğini savunan ve meslek hastalıkları üzerine ilk kapsamlı kitabı yazan hekim kimdir?",
+    "options": [
+      "A) Percivall Pott",
+      "B) Bernardino Ramazzini",
+      "C) Georgius Agricola",
+      "D) Paracelsus"
+    ],
+    "answer": "B",
+    "explanation": "Bernardino Ramazzini, İSG'nin kurucusu kabul edilir ve meslek hastalıkları kitabında işçilerin çalışma ortamının sorgulanması için 'Ne iş yapıyorsun?' sorusunu hekimlik pratiğine eklemiştir."
+  },
+  {
+    "id": 2,
+    "question": "Baca temizleyicilerinde görülen skrotum kanserinin mesleki bir hastalık olduğunu kanıtlayarak ilk mesleki kanser-iş ilişkisini kuran bilim insanı kimdir?",
+    "options": [
+      "A) Bernardino Ramazzini",
+      "B) Percivall Pott",
+      "C) Robert Owen",
+      "D) Rene Laennec"
+    ],
+    "answer": "B",
+    "explanation": "Percivall Pott, baca temizleyicilerindeki skrotum kanserini analiz ederek tarihteki ilk mesleki kanser ilişkisini ortaya koymuştur."
+  },
+  {
+    "id": 3,
+    "question": "Sanayi Devrimi sonrasında İngiltere'de çocuk çalıştırılması sınırlarını belirleyen ve ilk iş müfettişlerinin görevlendirilmesine yol açan yasal düzenleme aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Fabrikalar Kanunu (Factories Act)",
+      "B) Çıraklık Kanunu",
+      "C) Madenler Kanunu",
+      "D) 4857 Sayılı Kanun"
+    ],
+    "answer": "A",
+    "explanation": "İngiltere'de sanayi devrimi sonrasındaki ağır çalışma koşullarına tepki olarak çıkarılan Fabrikalar Kanunu (Factories Act), çocuk çalıştırma sınırları ve ilk iş müfettişleri atamalarını düzenleyen dönüm noktasıdır."
+  },
+  {
+    "id": 4,
+    "question": "İş Sağlığı ve Güvenliğinin (İSG) temel amaçları düşünüldüğünde, birinci öncelikli ve en temel amaç aşağıdakilerden hangisidir?",
+    "options": [
+      "A) İşletmenin güvenliğini sağlamak",
+      "B) Üretim güvenliğini sağlamak",
+      "C) Çalışanları korumak",
+      "D) Maliyetleri azaltmak"
+    ],
+    "answer": "C",
+    "explanation": "İSG'nin üç temel amacı sırasıyla şunlardır: 1. Çalışanları korumak (en temel amaç), 2. Üretim güvenliğini sağlamak, 3. İşletme güvenliğini sağlamak."
+  },
+  {
+    "id": 5,
+    "question": "İSG amaç hiyerarşisinde 'üretim güvenliğini sağlamak' aşağıdakilerden hangisini doğrudan hedefler?",
+    "options": [
+      "A) İşyeri binalarının yangından korunmasını",
+      "B) İş kazaları nedeniyle üretimin durmasını engellemek, verimlilik ve kaliteyi korumak",
+      "C) Çalışanların sağlık raporlarının periyodik takibini yapmayı",
+      "D) Yasal mevzuat cezalarından kaçınmayı"
+    ],
+    "answer": "B",
+    "explanation": "Üretim güvenliği, iş kazaları ve duruşları engelleyerek işyerindeki üretimin aksamadan sürmesini ve verimliliği sağlamayı amaçlar."
+  },
+  {
+    "id": 6,
+    "question": "İSG amaçlarından biri olan 'işletme güvenliğini sağlamak' hangi seçenekte doğru açıklanmıştır?",
+    "options": [
+      "A) Çalışanların kişisel koruyucu donanım maliyetlerini üstlenmesini sağlamak",
+      "B) İşyeri, makine, tesis ve ekipmanların acil durumlar, yangınlar ve patlamalara karşı güvenliğini korumak",
+      "C) Haftalık çalışma süresini 45 saate düşürmek",
+      "D) Şirketin yıllık finansal karlılık hedeflerine ulaşmasını sağlamak"
+    ],
+    "answer": "B",
+    "explanation": "İşletme güvenliği, fabrikanın, makinelerin ve binaların hasar görmesini, patlamasını veya yangınla yok olmasını engellemeye yöneliktir."
+  },
+  {
+    "id": 7,
+    "question": "6331 Sayılı Kanun'a göre; işyerinde var olan ya da dışarıdan gelebilecek, çalışanı veya işyerini etkileyebilecek zarar veya hasar verme potansiyeline ne ad verilir?",
+    "options": [
+      "A) Risk",
+      "B) Tehlike",
+      "C) Kaza",
+      "D) Olay"
+    ],
+    "answer": "B",
+    "explanation": "6331 sayılı Kanun'a göre zarar verme potansiyeli 'Tehlike'dir. Risk ise bu tehlikeden kaynaklanacak olumsuz sonucun meydana gelme olasılığı ile şiddetinin bileşkesidir."
+  },
+  {
+    "id": 8,
+    "question": "ISO 45001 standardına göre 'Tehlike' tanımı aşağıdakilerden hangisinde doğru verilmiştir?",
+    "options": [
+      "A) Tehlikeli bir olayın olasılığı ve şiddetinin çarpımıdır",
+      "B) İnsanların yaralanmasına veya sağlığının bozulmasına sebep olabilecek kaynak, durum veya işlem",
+      "C) İş kazasından sonra yapılan kaza sıklık hızı hesabı",
+      "D) İş kazası ve meslek hastalığı sonrası ortaya çıkan maddi zararlar"
+    ],
+    "answer": "B",
+    "explanation": "ISO 45001 standardı tehlikeyi; yaralanma veya sağlık bozulmasına yol açabilecek kaynak, durum veya işlem (eylem) olarak tanımlar."
+  },
+  {
+    "id": 9,
+    "question": "Aşağıdaki eşleştirmelerden hangisinde sırasıyla doğru bir 'Tehlike' ve bu tehlikeden doğan 'Risk' verilmiştir?",
+    "options": [
+      "A) Düşme - Yüksekte çalışma",
+      "B) Islak zemin - Kayıp düşme neticesinde kırık oluşması",
+      "C) İşitme kaybı - Gürültülü makine",
+      "D) Elektrik çarpması - Açık kablo"
+    ],
+    "answer": "B",
+    "explanation": "Islak zemin bir 'Tehlike' (zarar verme potansiyeli), ıslak zemin üzerinde kayıp düşerek kırık oluşması ise bu tehlikeden kaynaklanan 'Risk'tir. Diğer seçeneklerde tehlike ve risk yer değiştirmiştir."
+  },
+  {
+    "id": 10,
+    "question": "Risk düzeyinin (Risk Skoru) iki temel boyutu aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Frekans ve Süre",
+      "B) Olasılık (Sıklık) ve Şiddet (Sağlığa/Sisteme gelen zararın büyüklüğü)",
+      "C) Tehlike Sayısı ve Çalışan Sayısı",
+      "D) Maliyet ve Saptanabilirlik"
+    ],
+    "answer": "B",
+    "explanation": "Risk iki boyuttan oluşur: Bir olayın gerçekleşme olasılığı (sıklığı) ve gerçekleştikten sonra yol açacağı hasarın şiddeti (zararın büyüklüğü)."
+  },
+  {
+    "id": 11,
+    "question": "L-Tipi risk değerlendirme matrisinde (5x5 Matris) risk puanı nasıl hesaplanır?",
+    "options": [
+      "A) Risk = İhtimal × Frekans × Şiddet",
+      "B) Risk = Olasılık × Şiddet",
+      "C) Risk = Olasılık × Şiddet × Saptanabilirlik",
+      "D) Risk = Tehlike × Kırılganlık / Yönetilebilirlik"
+    ],
+    "answer": "B",
+    "explanation": "L-Tipi matris formülü: Risk Puanı = Olasılık (O) x Şiddet (Ş) şeklinde hesaplanır. Her iki parametre de 1 ile 5 arasında puanlanır."
+  },
+  {
+    "id": 12,
+    "question": "5x5 L-Tipi risk matrisinde olasılık ve şiddet değerleri en fazla kaç puan olabilir ve bu matristen elde edilebilecek maksimum risk skoru kaçtır?",
+    "options": [
+      "A) Maksimum Olasılık 5, Şiddet 5, Maksimum Risk Skoru 25",
+      "B) Maksimum Olasılık 10, Şiddet 10, Maksimum Risk Skoru 100",
+      "C) Maksimum Olasılık 5, Şiddet 5, Maksimum Risk Skoru 10",
+      "D) Maksimum Olasılık 10, Şiddet 100, Maksimum Risk Skoru 1000"
+    ],
+    "answer": "A",
+    "explanation": "5x5 matrisinde parametreler 1-5 arası puan alır, dolayısıyla maksimum olasılık 5 ve maksimum şiddet 5 olup en yüksek risk skoru 5 x 5 = 25'tir."
+  },
+  {
+    "id": 13,
+    "question": "L-Tipi risk değerlendirme matrisi (5x5) hangi durumlarda ve hangi tip işletmelerde tercih edilen bir risk analiz yöntemidir?",
+    "options": [
+      "A) Çok karmaşık ve büyük kimya tesislerinde",
+      "B) Tasarım aşamasındaki yazılım geliştirme projelerinde",
+      "C) Küçük ve karmaşık olmayan işletmelerde, tek başına çalışan analistler tarafından",
+      "D) Havacılık ve nükleer sanayii risk analizlerinde"
+    ],
+    "answer": "C",
+    "explanation": "L-Tipi matris basit, yarı-nicel bir yöntem olup özellikle karmaşık olmayan küçük işletmelerde tek başına çalışan analistlerce hızlı tespit için kullanılır."
+  },
+  {
+    "id": 14,
+    "question": "L-Tipi risk değerlendirme matrisinde olasılık tablosuna göre, bir tehlikenin 'Haftada bir veya daha az' gerçekleşme durumu hangi olasılık derecesi ve puanı ile temsil edilir?",
+    "options": [
+      "A) Çok Küçük (1) / Yılda bir",
+      "B) Küçük (2) / Ayda bir",
+      "C) Orta (3) / Haftada bir veya daha az",
+      "D) Yüksek (4) / Her gün"
+    ],
+    "answer": "C",
+    "explanation": "9A ders notu Sayfa 135 Olasılık tablosuna göre 'Haftada bir veya daha az' gerçekleşen olaylar Orta (3) olasılık puanı ile temsil edilir."
+  },
+  {
+    "id": 15,
+    "question": "Fine-Kinney risk değerlendirme yöntemini klasik 5x5 matristen ayıran en temel fark nedir?",
+    "options": [
+      "A) Sadece ölümlü kazaları hesaplaması",
+      "B) Risk hesabına 'Frekans' (tehlike kaynağıyla karşılaşma sıklığı) parametresini eklemesi",
+      "C) Nitel bir analiz yöntemi olması",
+      "D) Mantıksal VE/VEYA kapılarını kullanması"
+    ],
+    "answer": "B",
+    "explanation": "Fine-Kinney yöntemi klasik matrislerden farklı olarak risk denklemine maruziyet sıklığı olan 'Frekans' parametresini katar."
+  },
+  {
+    "id": 16,
+    "question": "Fine-Kinney risk değerlendirme metodunun risk değeri formülü aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Risk = Olasılık × Şiddet",
+      "B) Risk = İhtimal (O) × Frekans (F) × Şiddet (Ş)",
+      "C) Risk = Olasılık × Şiddet × Saptanabilirlik",
+      "D) Risk = (Tehlike × Kırılganlık) / Yönetilebilirlik"
+    ],
+    "answer": "B",
+    "explanation": "Fine-Kinney metodunda risk değeri: İhtimal (Olasılık) x Frekans (Maruziyet Sıklığı) x Şiddet formülüyle hesaplanır."
+  },
+  {
+    "id": 17,
+    "question": "Fine-Kinney şiddet tablosunda 'Birden çok ölüm' durumu kaç puan ile temsil edilir?",
+    "options": [
+      "A) 15 puan",
+      "B) 40 puan",
+      "C) 100 puan",
+      "D) 1000 puan"
+    ],
+    "answer": "C",
+    "explanation": "Fine-Kinney şiddet tablosunda 'Dile getirilmeyecek kadar hafif hasar' 1 puan iken, 'Ölüm' 15 veya 40 puanla, 'Birden çok ölüm' ise en yüksek şiddet olan 100 puanla temsil edilir."
+  },
+  {
+    "id": 18,
+    "question": "Fine-Kinney risk değerlendirme yönteminde tehlikeye maruz kalma sıklığını ifade eden 'Frekans' parametresinin en yüksek değeri hangi durum için verilir?",
+    "options": [
+      "A) Yılda birkaç kez",
+      "B) Ayda bir kez",
+      "C) Sürekli veya günde birçok kez",
+      "D) Haftada bir kez"
+    ],
+    "answer": "C",
+    "explanation": "Frekans parametresi maruziyet sıklığı arttıkça büyür. Sürekli veya günde birçok kez gerçekleşen maruziyetler en yüksek frekans puanı (10) alır."
+  },
+  {
+    "id": 19,
+    "question": "Özellikle otomotiv ve havacılık gibi üretim sektörlerinde tasarım ve montaj hatalarını sıfırlamak için kullanılan FMEA (Hata Türleri ve Etkileri Analizi) metodunda Risk Öncelik Sayısı (RÖS) nasıl hesaplanır?",
+    "options": [
+      "A) RÖS = Olasılık × Şiddet",
+      "B) RÖS = İhtimal × Frekans × Şiddet",
+      "C) RÖS = Olasılık (O) × Şiddet (S) × Saptanabilirlik (D)",
+      "D) RÖS = Tehlike × Kırılganlık / Yönetilebilirlik"
+    ],
+    "answer": "C",
+    "explanation": "FMEA metodunda Risk Öncelik Sayısı (RÖS - Risk Priority Number): Olasılık (Occurrence) x Şiddet (Severity) x Saptanabilirlik (Detection) çarpımıyla bulunur."
+  },
+  {
+    "id": 20,
+    "question": "FMEA metodolojisinde her parametre 1 ile 10 arasında puanlandığıne göre, Risk Öncelik Sayısının (RÖS) alabileceği maksimum değer kaçtır ve hangi sınır değer aşıldığında düzeltici aksiyon alınmalıdır?",
+    "options": [
+      "A) Maksimum RÖS 100, aksiyon sınırı 50",
+      "B) Maksimum RÖS 1000, aksiyon sınırı 100",
+      "C) Maksimum RÖS 25, aksiyon sınırı 15",
+      "D) Maksimum RÖS 500, aksiyon sınırı 200"
+    ],
+    "answer": "B",
+    "explanation": "Her parametre 1-10 arası puan aldığı için maksimum RÖS = 10 x 10 x 10 = 1000'dir. FMEA standartlarına göre RÖS değeri 100'ün üzerine çıktığında mutlaka düzeltici aksiyon alınması planlanmalıdır."
+  },
+  {
+    "id": 21,
+    "question": "FMEA metodolojisinde yer alan 'Saptanabilirlik (D - Detection)' parametresinin anlamı nedir?",
+    "options": [
+      "A) Tehlikeli olayın gerçekleşme olasılığıdır",
+      "B) Hatanın sistem tarafından fark edilme / müşteriye ulaşmadan önce yakalanma ihtimalidir",
+      "C) Hatadan dolayı ölecek insan sayısıdır",
+      "D) Tehlike sınırındaki gürültü miktarıdır"
+    ],
+    "answer": "B",
+    "explanation": "Saptanabilirlik (D), arızanın veya hatanın müşteri aşamasına varmadan, üretim bandında kontrol mekanizmalarıyla fark edilip saptanabilme derecesidir."
+  },
+  {
+    "id": 22,
+    "question": "FMEA çalışmasında, eğer bir arızanın veya hatanın kontrol sistemleri tarafından fark edilmesi ve saptanması ÇOK KOLAY ise saptanabilirlik (D) puanı nasıl belirlenmelidir?",
+    "options": [
+      "A) En yüksek puan verilmelidir (10)",
+      "B) Çok düşük puan verilmelidir (1 veya 2)",
+      "C) Şiddet puanı ile eşitlenmelidir",
+      "D) Puanlama dışı bırakılmalıdır"
+    ],
+    "answer": "B",
+    "explanation": "FMEA'da hata kolayca fark ediliyorsa (saptanabiliyorsa) risk azdır. Bu yüzden saptanabilirlik (D) derecesi düşük puanlanır (1 veya 2). Hatanın fark edilmesi imkansızsa en yüksek risk puanı olan 10 verilir."
+  },
+  {
+    "id": 23,
+    "question": "Kimya, petrokimya ve nükleer tesisler gibi karmaşık akışkan hatlarına sahip proses endüstrilerinde, akış parametrelerine (sıcaklık, basınç, debi) kılavuz kelimeler uygulanarak sapmaları inceleyen ve beyin fırtınası temelli olan risk analizi yöntemi hangisidir?",
+    "options": [
+      "A) FMEA",
+      "B) FTA",
+      "C) HAZOP (Tehlike ve İşletilebilirlik Analizi)",
+      "D) Fine-Kinney"
+    ],
+    "answer": "C",
+    "explanation": "HAZOP (Hazard and Operability), karmaşık kimyasal tesislerdeki akışkan sistemlerindeki basınç, sıcaklık ve akış sapmalarını kılavuz kelimeler kullanarak inceleyen en yaygın yöntemdir."
+  },
+  {
+    "id": 24,
+    "question": "HAZOP (Tehlike ve İşletilebilirlik Analizi) metodolojisinde kullanılan 'Fazla', 'Eksik', 'Ters', 'Hiç' gibi kelimeler neyi ifade eder?",
+    "options": [
+      "A) Risk seviyesi adlarını",
+      "B) Kılavuz Kelimeleri (Guide Words)",
+      "C) Şiddet katsayılarını",
+      "D) Hata kapısı türlerini"
+    ],
+    "answer": "B",
+    "explanation": "HAZOP analizinde borulardaki akışı yorumlamak için kullanılan 'Fazla', 'Eksik', 'Ters', 'Hiç' gibi kavramlara Kılavuz Kelimeler (Guide Words) adı verilir. Bunlar parametrelerle birleşerek sapmaları (Örn: Fazla + Sıcaklık = Aşırı Isınma) oluşturur."
+  },
+  {
+    "id": 25,
+    "question": "HAZOP analizinde 'Sıcaklık' proses parametresi ile 'Eksik / Düşük' kılavuz kelimesi birleştirildiğinde hangi sapma ve tehlike modeli incelenmiş olur?",
+    "options": [
+      "A) Süreçte aşırı ısınma ve patlama riski",
+      "B) Sistemde donma veya reaksiyonun yavaşlaması/durması riski",
+      "C) Akış hızının aşırı artması",
+      "D) Borularda yüksek basınç oluşumu"
+    ],
+    "answer": "B",
+    "explanation": "Parametre + kılavuz kelime sapmayı verir. Sıcaklık + Eksik = Sıcaklık Düşüşü (Donma, kristalleşme veya reaksiyon durması riskleri)."
+  },
+  {
+    "id": 26,
+    "question": "İstenmeyen bir tepe olayın (örneğin patlama veya yangın) ortaya çıkış nedenlerini geriye doğru mantıksal VE / VEYA kapılarıyla sorgulayan, kantitatif (nicel) ve tümdengelimli (yukarıdan aşağıya) analiz metodu hangisidir?",
+    "options": [
+      "A) ETA (Olay Ağacı Analizi)",
+      "B) FMEA",
+      "C) HAZOP",
+      "D) FTA (Hata Ağacı Analizi)"
+    ],
+    "answer": "D",
+    "explanation": "FTA (Fault Tree Analysis), tepe olaydan yola çıkarak mantık kapılarıyla (AND, OR) kök nedenlere inen tümdengelimci (Top-down) bir hata analiz yöntemidir."
+  },
+  {
+    "id": 27,
+    "question": "Hata Ağacı Analizinde (FTA) kullanılan 'VE' kapısı (AND gate) neyi ifade eder?",
+    "options": [
+      "A) Altındaki giriş olaylarından sadece birinin gerçekleşmesinin tepe olayı tetiklemeye yettiğini",
+      "B) Tepe olayın oluşması için kapıya bağlı tüm alt giriş olaylarının aynı anda gerçekleşmesinin zorunlu olduğunu",
+      "C) Kaza olasılığının tamamen ortadan kalktığını",
+      "D) Akış yönünün tersine döndüğünü"
+    ],
+    "answer": "B",
+    "explanation": "VE (AND) kapısı, çıkış olayının gerçekleşmesi için tüm alt girdilerin/koşulların eksiksiz olarak aynı anda gerçekleşmesinin zorunlu olduğunu gösterir."
+  },
+  {
+    "id": 28,
+    "question": "Hata Ağacı Analizinde (FTA) kullanılan 'VEYA' kapısı (OR gate) neyi ifade eder?",
+    "options": [
+      "A) Giriş olaylarının tamamı gerçekleşse bile tepe olayın oluşmayacağını",
+      "B) Çıkış olayının gerçekleşmesi için giriş olaylarından en az birinin gerçekleşmesinin yeterli olduğunu",
+      "C) Sistemin tamamen güvenli modda olduğunu",
+      "D) Analizin ileriye doğru (tümevarımcı) çalışacağını"
+    ],
+    "answer": "B",
+    "explanation": "VEYA (OR) kapısı, alt olaylardan herhangi bir tanesinin bile gerçekleşmesinin çıkış olayını tetiklemek için yeterli olduğunu gösterir."
+  },
+  {
+    "id": 29,
+    "question": "FTA (Hata Ağacı Analizi) metodolojisiyle ilgili aşağıdaki yargılardan hangisi yanlıştır?",
+    "options": [
+      "A) Yukarıdan aşağıya (tümdengelimli) çalışır.",
+      "B) Mantıksal kapılar (VE/VEYA) kullanılarak alt olayların olasılıkları çarpılarak veya toplanarak matematiksel tepe olasılığı hesaplanabilir.",
+      "C) Başlatıcı bir olayla başlayarak güvenlik bariyerlerinin başarısını ileriye doğru tümevarımlı olarak inceler.",
+      "D) İstenmeyen bir nihai olaydan (tepe olay) başlayarak kök nedenlere iner."
+    ],
+    "answer": "C",
+    "explanation": "Başlatıcı olayla başlayıp ileriye doğru güvenlik bariyerlerinin başarısını sorgulayan tümevarımcı metot FTA değil, ETA (Olay Ağacı Analizi) metodudur."
+  },
+  {
+    "id": 30,
+    "question": "Başlatıcı bir olaydan (örneğin borunun delinmesi veya gaz sızıntısı) yola çıkarak, güvenlik bariyerlerinin çalışıp çalışmama durumuna göre zincirleme sonuçları ileriye doğru inceleyen, tümevarımlı (aşağıdan yukarıya) analiz yöntemi hangisidir?",
+    "options": [
+      "A) FTA",
+      "B) ETA (Olay Ağacı Analizi)",
+      "C) HAZOP",
+      "D) FMEA"
+    ],
+    "answer": "B",
+    "explanation": "ETA (Event Tree Analysis), başlangıç olayından itibaren güvenlik sistemlerinin (bariyerlerinin) tepkisine göre olası tüm sonuçları tümevarımla (Bottom-up/ileriye doğru) analiz eden yöntemdir."
+  },
+  {
+    "id": 31,
+    "question": "ETA (Olay Ağacı Analizi) metodunda ana tepe olayı tetikleyen ilk etmene ne ad verilir ve analiz yönü nasıldır?",
+    "options": [
+      "A) Sonuç olayı - Geriye doğru",
+      "B) Başlatıcı olay (Initiating Event) - İleriye doğru",
+      "C) Saptanabilirlik kriteri - Yukarıdan aşağıya",
+      "D) Frekans değeri - Geriye doğru"
+    ],
+    "answer": "B",
+    "explanation": "ETA başlatıcı olayla başlar ve ileriye doğru güvenlik bariyerlerinin çalışması/çalışmaması dallanmalarini inceleyerek sonuca ulaşır."
+  },
+  {
+    "id": 32,
+    "question": "Olay Ağacı Analizi (ETA) ile Hata Ağacı Analizi (FTA) yöntemlerinin bir araya getirilmesiyle oluşturulan karma analiz metodu aşağıdakilerden hangisidir?",
+    "options": [
+      "A) FMEA",
+      "B) HAZOP",
+      "C) Neden-Sonuç Analizi (Cause-Consequence Analysis)",
+      "D) Fine-Kinney"
+    ],
+    "answer": "C",
+    "explanation": "FTA (geriye doğru kök neden arama) ve ETA (ileriye doğru sonuç izleme) yöntemlerinin birleşimi Neden-Sonuç Analizi olarak adlandırılır."
+  },
+  {
+    "id": 33,
+    "question": "Mevzuata göre, bir işyerinde İş Sağlığı ve Güvenliği (İSG) kurulunun kurulmasının zorunlu olması için hangi iki şartın bir arada bulunması gerekir?",
+    "options": [
+      "A) En az 10 çalışan olması ve işin 1 aydan fazla sürmesi",
+      "B) En az 50 çalışan bulunması ve işin niteliği gereği 6 aydan fazla süren sürekli işlerin yapılması",
+      "C) İşyerinin çok tehlikeli sınıfta olması ve en az 20 çalışan barındırması",
+      "D) En az 100 çalışan olması ve sendikalı işyeri olması"
+    ],
+    "answer": "B",
+    "explanation": "6331 sayılı Kanun uyarınca, kurul kurulabilmesi için işyerinde fiilen en az 50 çalışanın bulunması ve işin niteliği gereği 6 aydan fazla süren sürekli işlerin yapılması koşullarının bir arada sağlanması gerekir."
+  },
+  {
+    "id": 34,
+    "question": "İSG Kurulları yönetmeliğine göre, kurul kararlarının geçerli olabilmesi için toplantı ve karar yeter sayıları nasıl olmalıdır?",
+    "options": [
+      "A) Kurul üye tam sayısının 1/3'ü ile toplanır, katılanların oy birliğiyle karar alır.",
+      "B) Kurul üye tam sayısının salt çoğunluğu ile toplanır, katılanların salt çoğunluğu ile karar alır. Oyların eşitliği halinde başkanın oyu kararı belirler.",
+      "C) Kurul en az 3 kişiyle toplanır ve kurul sekreterinin kararı esastır.",
+      "D) Sadece işyeri hekimi ve iş güvenliği uzmanının katılımı ile karar alınabilir."
+    ],
+    "answer": "B",
+    "explanation": "Kurul üye tam sayısının salt çoğunluğuyla toplanır, oy çokluğuyla karar alır. Eşitlik halinde kurul başkanının (işveren veya vekili) oyu belirleyicidir."
+  },
+  {
+    "id": 35,
+    "question": "İSG Kurullarında sekreterlik göreviyle ilgili olarak aşağıdakilerden hangisi yasal bir kuraldır?",
+    "options": [
+      "A) Kurul sekreteri her zaman insan kaynakları yöneticisidir.",
+      "B) Kurul sekreteri iş güvenliği uzmanıdır. Tam süreli uzman çalıştırma zorunluluğu olmayan hallerde ise işveren veya vekili sekreterliği yürütür.",
+      "C) Kurul sekreteri işyeri hekimidir.",
+      "D) Kurul sekreteri çalışan temsilcisidir."
+    ],
+    "answer": "B",
+    "explanation": "Kurul sekreteri iş güvenliği uzmanıdır. Ancak tam süreli uzman bulunmayan (daha küçük) işletmelerde sekreterlik görevini işveren veya vekili üstlenir."
+  },
+  {
+    "id": 36,
+    "question": "İSG Kurullarının olağan toplantı periyodu yasal olarak ayda en az bir keredir. Ancak kurul, tehlike sınıfını dikkate alarak olağan toplantı sürelerini uzatabilir. Bu kapsamda tehlike sınıflarına göre maksimum uzatılabilecek toplantı periyotları hangi seçenekte doğru eşleştirilmiştir?",
+    "options": [
+      "A) Çok Tehlikeli: 2 ay - Tehlikeli: 4 ay - Az Tehlikeli: 6 ay",
+      "B) Çok Tehlikeli: Her ay (uzatılamaz) - Tehlikeli: En geç 2 ayda bir - Az Tehlikeli: En geç 3 ayda bir",
+      "C) Çok Tehlikeli: 3 ay - Tehlikeli: 3 ay - Az Tehlikeli: 6 ay",
+      "D) Çok Tehlikeli: Her ay - Tehlikeli: Her ay - Az Tehlikeli: En geç 2 ayda bir"
+    ],
+    "answer": "B",
+    "explanation": "Çok Tehlikeli sınıfta toplantı süresi uzatılamaz (her ay toplanır). Tehlikeli sınıfta en geç 2 ayda bir, Az Tehlikeli sınıfta ise en geç 3 ayda bir toplanacak şekilde süre uzatılabilir."
+  },
+  {
+    "id": 37,
+    "question": "Aşağıdakilerden hangisi yasal olarak İSG Kurulunda oy hakkı bulunan kurul üyeleri arasında yer almaz?",
+    "options": [
+      "A) İşyeri Hekimi",
+      "B) İş Güvenliği Uzmanı",
+      "C) Çalışan Temsilcisi",
+      "D) Dışarıdan davet edilen ve görüşü alınan taşeron firma çalışanı veya misafir uzman"
+    ],
+    "answer": "D",
+    "explanation": "Dışarıdan çağrılan danışmanlar veya misafirlerin kurul kararlarında oy hakkı yoktur. Yasal kurul üyeleri (İşveren vekili, hekim, uzman, insan kaynakları müdürü, çalışan temsilcisi, başformen) oy hakkına sahiptir."
+  },
+  {
+    "id": 38,
+    "question": "5510 Sayılı Kanun Madde 13 kapsamında iş kazası tanımları dikkate alındığında, bir çalışanın öğle yemeği molasında işyeri bahçesinde (avlusunda) dinlenirken düşerek ayağını kırması olayı hakkında yapılan hukuki değerlendirmelerden hangisi doğrudur?",
+    "options": [
+      "A) Mola saati çalışma süresinden sayılmadığı için iş kazası değildir.",
+      "B) Çalışan kendi rızasıyla dinlendiği ve o sırada iş üretmediği için iş kazası sayılmaz.",
+      "C) İşyeri sınırları (avlu, bahçe dahil) içinde gerçekleştiği için yasal olarak iş kazasıdır.",
+      "D) Sadece Çok Tehlikeli işyerlerinde mola kazaları iş kazası sayılır."
+    ],
+    "answer": "C",
+    "explanation": "5510 sayılı Kanun uyarınca, kazanın sigortalının işyerinde bulunduğu sırada meydana gelmesi yeterlidir. İşyerinin avlu, bahçe, yemekhane gibi dinlenme alanları da yasal işyeri sınırları içinde kabul edildiğinden bu bir iş kazasıdır."
+  },
+  {
+    "id": 39,
+    "question": "Emziren bir kadın çalışanın, mevzuatın kendisine tanıdığı günlük süt izni saatinde çocuğuna süt vermek amacıyla işyeri dışındaki evine giderken yolda trafik kazası geçirmesi durumunun yasal statüsü aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      "A) İşyeri dışında ve mesai saatleri dışında olduğu için iş kazası sayılmaz.",
+      "B) Kadın çalışanın çocuğuna süt vermek için ayrılan zamanlarda (süt iznindeyken) geçirdiği tüm kazalar yasal olarak iş kazasıdır.",
+      "C) Sadece işverenin tahsis ettiği servis aracıyla eve gidiyorsa iş kazası sayılır.",
+      "D) İş kanununda süt iznindeki kazalara yönelik bir düzenleme yoktur."
+    ],
+    "answer": "B",
+    "explanation": "5510 Sayılı Kanun Madde 13/d bendi uyarınca, emziren kadın sigortalının çocuğuna süt vermek için ayrılan zamanlarda (süt iznindeyken) geçirdiği her türlü kaza yasal olarak iş kazası kabul edilir."
+  },
+  {
+    "id": 40,
+    "question": "Aşağıdaki ulaşım durumlarının hangisinde gerçekleşen kaza 5510 sayılı Kanun kapsamında 'İş Kazası' olarak nitelendirilir?",
+    "options": [
+      "A) Çalışanın kendi şahsi otomobiliyle sabah işe giderken kaza yapması",
+      "B) Çalışanın iş çıkışı toplu taşıma (metro/belediye otobüsü) kullanırken kaza geçirmesi",
+      "C) İşverence sağlanan bir taşıtla (personel servisi) işin yapıldığı yere gidiş gelişi sırasında meydana gelen kaza",
+      "D) İşçinin işe gitmek üzere evinden çıkıp otobüs durağına yürürken kaldırımda düşmesi"
+    ],
+    "answer": "C",
+    "explanation": "5510 sayılı Kanun'un 13. maddesi gereği, sigortalıların işverence sağlanan toplu bir taşıtla işin yapıldığı yere götürülüp getirilmesi (servis kazaları) esnasında meydana gelen kazalar iş kazasıdır. Bireysel ulaşımlar kapsam dışıdır."
+  },
+  {
+    "id": 41,
+    "question": "İşyerinde meydana gelen bir iş kazasını, işveren kazadan sonraki en geç kaç iş günü içinde Sosyal Güvenlik Kurumu'na (SGK) bildirmekle yükümlüdür?",
+    "options": [
+      "A) Kazanın olduğu gün derhal",
+      "B) Kazadan sonraki en geç 3 iş günü içinde",
+      "C) Kazadan sonraki en geç 5 iş günü içinde",
+      "D) Kazadan sonraki en geç 10 gün içinde"
+    ],
+    "answer": "B",
+    "explanation": "İşveren, iş kazalarını kazadan sonraki en geç 3 iş günü içinde Sosyal Güvenlik Kurumu'na (SGK) resmi olarak bildirmek zorundadır."
+  },
+  {
+    "id": 42,
+    "question": "Bir kazanın 'İş Kazası' sayılabilmesi için illiyet bağı (nedensellik bağı) ve yasal koşullar düşünüldüğünde hangisi yanlıştır?",
+    "options": [
+      "A) Kazaya uğrayanın 5510 sayılı Kanun kapsamında sigortalı olması gerekir.",
+      "B) Kazanın işyerinde veya işverenin yürütmekte olduğu iş nedeniyle olması gerekir.",
+      "C) Kaza sonucunda sigortalının bedenen veya ruhen engelli hale gelmesi (zarar görmesi) gerekir.",
+      "D) İş kazası sayılması için mutlaka işçinin o sırada kendi asıl görev tanımındaki işi yapıyor olması şarttır."
+    ],
+    "answer": "D",
+    "explanation": "Kaza anında çalışanın kendi asıl işini yapıp yapmadığı önemli değildir. İşyerinde bulunması veya görevli gönderilmesi durumunda maruz kaldığı kazalar yasal olarak iş kazasıdır."
+  },
+  {
+    "id": 43,
+    "question": "6331 Sayılı Kanun Madde 13 kapsamında, çalışanların 'Çalışmaktan Kaçınma Hakkı'nı kullanabilmesi için karşı karşıya kalması gereken yasal durum hangisidir?",
+    "options": [
+      "A) Çalışma ortamının sıcak olmaması",
+      "B) Ciddi ve yakın bir tehlike ile karşı karşıya kalınması",
+      "C) Fazla mesai ücretinin zamanında ödenmemesi",
+      "D) Yıllık izin gün sayısının yetersiz bulunması"
+    ],
+    "answer": "B",
+    "explanation": "Çalışanlar ciddi ve yakın bir tehlike ile karşı karşıya kaldıklarında yasal olarak çalışmaktan kaçınma hakkını talep edebilirler."
+  },
+  {
+    "id": 44,
+    "question": "Çalışmaktan kaçınma hakkını kullanmak isteyen bir işçi, işyerinde kurul bulunuyorsa durumun tespiti ve tedbir alınması için öncelikle nereye başvurmalıdır?",
+    "options": [
+      "A) Doğrudan Çalışma Bakanlığına",
+      "B) İş sağlığı ve güvenliği kuruluna",
+      "C) Doğrudan iş mahkemesine",
+      "D) Polis veya Jandarmaya"
+    ],
+    "answer": "B",
+    "explanation": "İşyerinde kurul varsa çalışan kurulun tespitini talep etmelidir. Kurul yoksa doğrudan işverene başvurarak durumun tespitini ve tedbir alınmasını ister."
+  },
+  {
+    "id": 45,
+    "question": "Çalışmaktan kaçınma hakkını kullanan ve gerekli tedbirler alınana kadar çalışmayan işçilerin bu süreçteki hakları hakkında aşağıdakilerden hangisi yasal kuraldır?",
+    "options": [
+      "A) Çalışmadıkları günlerin ücretleri kesilir.",
+      "B) Çalışmaktan kaçındıkları dönemdeki ücretleri ödenmeye devam eder ve yasal hakları kısıtlanamaz.",
+      "C) İşveren bu işçileri tazminatsız derhal işten çıkarabilir.",
+      "D) İşçilere idari ceza uygulanır."
+    ],
+    "answer": "B",
+    "explanation": "Yasa gereği, çalışmaktan kaçınan çalışanların ücretleri ve diğer hakları bu süreçte aynen ödenmeye devam eder; hakları kısıtlanamaz."
+  },
+  {
+    "id": 46,
+    "question": "İşyerindeki ciddi ve yakın tehlikenin önlenemez olduğu durumlarda, çalışanların sahip olduğu en radikal yasal hak hangisidir?",
+    "options": [
+      "A) İş sözleşmesini haklı nedenle derhal feshedebilirler.",
+      "B) Bakanlığa şikayet edip fabrikanın kapatılmasını isteyebilirler.",
+      "C) İşvereni doğrudan hapse attırabilirler.",
+      "D) Ücretsiz izne ayrılmak zorundadırlar."
+    ],
+    "answer": "A",
+    "explanation": "Tehlikenin önlenemez olduğu durumlarda, çalışanlar iş sözleşmelerini haklı nedenle derhal (bildirim süresi beklemeksizin) feshetme hakkına sahiptir."
+  },
+  {
+    "id": 47,
+    "question": "İşyerindeki kazaların sıklık derecesini standart sanayi kabulleri çerçevesinde ölçmek için kullanılan Kaza Sıklık Hızı (KSH) formülü hangisidir?",
+    "options": [
+      "A) KSH = (Kaza Sayısı × 1.000) / Toplam Fiili Çalışma Saati",
+      "B) KSH = (Toplam İş Kazası Sayısı × 1.000.000) / Toplam Fiili Çalışma Saati (Adam-Saat)",
+      "C) KSH = (Kayıp Gün Sayısı × 1.000) / Toplam Çalışan Sayısı",
+      "D) KSH = Olasılık × Şiddet × Frekans"
+    ],
+    "answer": "B",
+    "explanation": "KSH = (Toplam İş Kazası Sayısı x 1.000.000) / Toplam Fiili Çalışma Saati (Adam-Saat) formülü ile hesaplanır. 1.000.000 katsayısı uluslararası standarttır."
+  },
+  {
+    "id": 48,
+    "question": "Kazaların işgücü kaybı açısından ne kadar şiddetli olduğunu ölçmek amacıyla kullanılan Kaza Ağırlık Hızı (KAH) formülü hangisidir?",
+    "options": [
+      "A) KAH = (Kayıp İş Günü Sayısı × 1.000) / Toplam Fiili Çalışma Saati (Adam-Saat)",
+      "B) KAH = (Kaza Sayısı × 1.000.000) / Toplam Çalışma Saati",
+      "C) KAH = (Ölümlü Kaza Sayısı × 6.000) / Toplam Çalışan Sayısı",
+      "D) KAH = Olasılık × Şiddet"
+    ],
+    "answer": "A",
+    "explanation": "KAH = (Kayıp İş Günü Sayısı x 1.000) / Toplam Fiili Çalışma Saati (Adam-Saat) formülüyle hesaplanır."
+  },
+  {
+    "id": 49,
+    "question": "Kaza Ağırlık Hızı (KAH) hesaplanırken, ölümlü iş kazalarında veya çalışanın tamamen malul kaldığı (uzuv kaybı vb.) durumlarda kayıp gün sayısına yasal olarak doğrudan kaç gün eklenir?",
+    "options": [
+      "A) 365 gün",
+      "B) 1000 gün",
+      "C) 6000 gün",
+      "D) 7500 gün"
+    ],
+    "answer": "C",
+    "explanation": "Ölümlü veya tam maluliyetle sonuçlanan iş kazalarında, fiili kayıp gün sayısına bakılmaksızın istatistik standartları gereği doğrudan 6000 gün kayıp eklenir."
+  },
+  {
+    "id": 50,
+    "question": "Bir fabrikada 500.000 saat fiili çalışma yapılmış, bu süreçte 3 iş kazası olmuş ve toplamda 12 gün işgücü kaybı yaşanmıştır. Bu fabrikadaki Kaza Sıklık Hızı (KSH) kaçtır?",
+    "options": [
+      "A) 6",
+      "B) 12",
+      "C) 24",
+      "D) 30"
+    ],
+    "answer": "A",
+    "explanation": "KSH = (3 x 1.000.000) / 500.000 = 3.000.000 / 500.000 = 6 olarak hesaplanır."
+  },
+  {
+    "id": 51,
+    "question": "Bir işletmede toplam 1.000.000 saat fiili çalışma yapılmış, bu süreçte 1 adet ölümlü iş kazası meydana gelmiş ve ölen kişi dışında başka bir kayıp gün olmamıştır. Bu işletmenin Kaza Ağırlık Hızı (KAH) kaçtır?",
+    "options": [
+      "A) 1",
+      "B) 6",
+      "C) 60",
+      "D) 6000"
+    ],
+    "answer": "B",
+    "explanation": "Ölümlü kazalarda kayıp gün sayısı 6000 kabul edilir. KAH = (6000 x 1000) / 1.000.000 = 6.000.000 / 1.000.000 = 6 olarak hesaplanır."
+  },
+  {
+    "id": 52,
+    "question": "Tehlikeleri henüz kaza veya meslek hastalığı gerçekleşmeden önce öngörüp risk analizleriyle önleyici tedbirler alma anlayışına ne ad verilir?",
+    "options": [
+      "A) Reaktif (Tepkisel) Yaklaşım",
+      "B) Proaktif (Önleyici) Yaklaşım",
+      "C) İyileştirici Yaklaşım",
+      "D) Algısal Yaklaşım"
+    ],
+    "answer": "B",
+    "explanation": "Tehlikeleri önceden analiz edip kaza gerçekleşmeden önlem alma anlayışına proaktif (önleyici) yaklaşım denir."
+  },
+  {
+    "id": 53,
+    "question": "İSG çalışmalarında kazalar ve meslek hastalıkları oluştuktan sonra inceleme yapıp tedbir almaya çalışan, can ve mal kayıplarını engellemede etkisiz olan geleneksel yaklaşım hangisidir?",
+    "options": [
+      "A) Proaktif Yaklaşım",
+      "B) Reaktif (Tepkisel) Yaklaşım",
+      "C) Davranışsal Yaklaşım",
+      "D) Süreçsel Yaklaşım"
+    ],
+    "answer": "B",
+    "explanation": "Olay gerçekleştikten sonra tepki veren, kaza sonrası önlem almaya odaklanan geleneksel anlayışa reaktif yaklaşım denir."
+  },
+  {
+    "id": 54,
+    "question": "Aşağıdakilerden hangisi risk değerlendirmesi yapmanın proaktif (önleyici) niteliğini en doğru şekilde açıklar?",
+    "options": [
+      "A) Kazalar oluştuktan sonra mahkemeye delil sunmaktır.",
+      "B) Mümkünse henüz hiç kimse yaralanmadan veya hastalanmadan, tehlikeleri öngörüp önlemleri en başından almaktır.",
+      "C) İşverenin ceza almasını engellemek için evrak düzenlemektir.",
+      "D) SGK prim oranlarını düşürmektir."
+    ],
+    "answer": "B",
+    "explanation": "Risk değerlendirmesi proaktif bir araçtır; amacı kaza veya meslek hastalığı meydana gelmeden tehlikeyi sezip önlem almaktır."
+  },
+  {
+    "id": 55,
+    "question": "L-Tipi Risk matrisinde hesaplanan risk puanının '15, 16, 20, 25' çıkması durumunda, ders notu Sayfa 139'da belirtilen yasal hüküm ve eylem planı nedir?",
+    "options": [
+      "A) Kabul edilebilir risk seviyesidir, çalışma aynen devam eder.",
+      "B) Kabul Edilemez Risk sınıfındadır; iş derhal durdurulur ve risk kabul edilebilir seviyeye çekilmeden çalışmaya başlanamaz.",
+      "C) Dikkate değer risk seviyesidir, acil tedbir planlanarak 1 ay içinde düzeltilir.",
+      "D) Bu puanlar matris hatasını gösterir, hesaplama tekrarlanır."
+    ],
+    "answer": "B",
+    "explanation": "Sayfa 139'a göre 15-25 puan arası riskler 'Kabul Edilemez Risk' sınıfındadır. İş durdurulur, risk düşürülene kadar çalışmaya başlanamaz."
+  },
+  {
+    "id": 56,
+    "question": "Matris risk tablosuna (Sayfa 139) göre risk puanının '8, 9, 10, 12' çıkması durumundaki risk sınıfı ve yapılması gereken eylem hangisidir?",
+    "options": [
+      "A) Kabul edilebilir risk - Herhangi bir tedbire gerek yoktur.",
+      "B) Kabul edilemez risk - İşyeri tamamen kapatılır.",
+      "C) Dikkate Değer Risk - Bu risklere mümkün olduğu kadar çabuk müdahale edilmeli, acil eylem planlanmalı ve ilave kontrol tedbirleri alınmalıdır.",
+      "D) Düşük risk - Sadece uyarı levhası asılması yeterlidir."
+    ],
+    "answer": "C",
+    "explanation": "8-12 puan arası riskler 'Dikkate Değer Risk' olarak sınıflandırılır. Hızlıca müdahale edilip risk azaltılmalıdır."
+  },
+  {
+    "id": 57,
+    "question": "L-Tipi risk değerlendirme matrisinde risk skoru '1, 2, 3, 4, 5, 6' olarak hesaplanan bir tehlike için yapılması gereken eylem hangisidir?",
+    "options": [
+      "A) Kabul edilemez risk olduğu için iş durdurulur.",
+      "B) Kabul Edilebilir Risk sınıfındadır; acil tedbir gerektirmeyebilir ancak mevcut kontrol önlemleri sürdürülmeli ve iyileştirmeye devam edilmelidir.",
+      "C) Risk analizi listesinden tamamen çıkarılır.",
+      "D) Çalışana ek ödeme yapılarak risk üstlendirilir."
+    ],
+    "answer": "B",
+    "explanation": "1-6 puan arası 'Kabul Edilebilir Risk'tir. Acil önlem gerekmeyebilir ancak mevcut güvenlik seviyesi korunmalı ve izlenmelidir."
+  },
+  {
+    "id": 58,
+    "question": "Risk Yönetimi konusuna çalışırken Konu 9B ders notundaki hangi sayfalar hatalıdır ve doğru değerler için hangi ders notuna bakılmalıdır?",
+    "options": [
+      "A) 9B notu tamamen doğrudur.",
+      "B) 9B sayfa Z4, 114 ve 115'teki tablolar ve değerler hatalıdır; doğrusu için 9A sayfa 137 ve 139 kullanılmalıdır.",
+      "C) 9B sayfa 20 ve 30 hatalıdır; doğrusu için Ekstra.pdf sayfa 10'a bakılmalıdır.",
+      "D) 9B sayfa 50 hatalıdır; doğrusu için 10.pdf notuna çalışılmalıdır."
+    ],
+    "answer": "B",
+    "explanation": "9B ders notundaki sayfa Z4, 114 ve 115 değerleri hatalı ve tabloları yanlıştır. Doğru tablolar için 9A sayfa 137 ve 139'a çalışılması gerekmektedir."
+  },
+  {
+    "id": 59,
+    "question": "İSG Risk Değerlendirmesi Yönetmeliği'ne göre; risk değerlendirmeleri, işyerinin tehlike sınıfına göre en geç hangi sürelerde tamamen yenilenmek zorundadır?",
+    "options": [
+      "A) Çok Tehlikeli: 1 yıl - Tehlikeli: 2 yıl - Az Tehlikeli: 3 yıl",
+      "B) Çok Tehlikeli: 2 yılda bir - Tehlikeli: 4 yılda bir - Az Tehlikeli: 6 yılda bir",
+      "C) Çok Tehlikeli: 3 yıl - Tehlikeli: 5 yıl - Az Tehlikeli: 7 yıl",
+      "D) Tehlike sınıfına bakılmaksızın her yıl yenilenmelidir."
+    ],
+    "answer": "B",
+    "explanation": "Yasal yenilenme süreleri sırasıyla Çok Tehlikeli sınıfta en geç 2 yılda bir, Tehlikeli sınıfta en geç 4 yılda bir, Az Tehlikeli sınıfta ise en geç 6 yılda birdir."
+  },
+  {
+    "id": 60,
+    "question": "4857 Sayılı İş Kanunu'na göre, aksi kararlaştırılmamışsa haftalık normal çalışma süresi en fazla kaç saattir?",
+    "options": [
+      "A) 40 saat",
+      "B) 45 saat",
+      "C) 48 saat",
+      "D) 54 saat"
+    ],
+    "answer": "B",
+    "explanation": "4857 Sayılı İş Kanunu uyarınca haftalık normal çalışma süresi en fazla 45 saattir."
+  },
+  {
+    "id": 61,
+    "question": "4857 Sayılı İş Kanunu'na göre, bir işçiye yılda en fazla kaç saat fazla çalışma (mesai) yaptırılabilir?",
+    "options": [
+      "A) 90 saat",
+      "B) 180 saat",
+      "C) 270 saat",
+      "D) 360 saat"
+    ],
+    "answer": "C",
+    "explanation": "İş Kanunu uyarınca fazla çalışma süresinin toplamı bir yılda 270 saatten fazla olamaz."
+  },
+  {
+    "id": 62,
+    "question": "İş Kanunu uyarınca, fazla mesailer dahil bir işçinin günlük çalışma süresi hiçbir koşulda kaç saati aşamaz?",
+    "options": [
+      "A) 9 saat",
+      "B) 11 saat",
+      "C) 12 saat",
+      "D) 15 saat"
+    ],
+    "answer": "B",
+    "explanation": "Günlük çalışma süresi, fazla çalışma süreleri dahil edilse dahi hiçbir koşulda günlük 11 saati aşamaz."
+  },
+  {
+    "id": 63,
+    "question": "İş Kanunu'na göre gece çalışmaları (20.00 - 06.00 saatleri arası) günde en fazla kaç saati geçemez?",
+    "options": [
+      "A) 7.5 saat",
+      "B) 8 saat",
+      "C) 9 saat",
+      "D) 11 saat"
+    ],
+    "answer": "A",
+    "explanation": "Çalisanların gece çalışmaları günde yedi buçuk saati geçemez (turizm, özel güvenlik, sağlık vb. istisnai sektörler hariç)."
+  },
+  {
+    "id": 64,
+    "question": "Belirsiz süreli iş sözleşmelerinin feshinden önce karşı tarafa bildirim yapılması gereken yasal ihbar süreleri düşünüldüğünde, kıdemi '6 aydan az' sürmüş bir işçi için ihbar süresi ne kadardır?",
+    "options": [
+      "A) 2 hafta (14 gün)",
+      "B) 4 hafta (28 gün)",
+      "C) 6 hafta (42 gün)",
+      "D) 8 hafta (56 gün)"
+    ],
+    "answer": "A",
+    "explanation": "Kıdemi 6 aydan az olan çalışanlar için yasal ihbar bildirim süresi 2 haftadır (14 gün)."
+  },
+  {
+    "id": 65,
+    "question": "İş Kanunu'na göre, kıdemi '6 ay ile 1.5 yıl (dahil)' arasında olan bir işçi için ihbar öneli süresi kaç haftadır?",
+    "options": [
+      "A) 2 hafta",
+      "B) 4 hafta (28 gün)",
+      "C) 6 hafta",
+      "D) 8 hafta"
+    ],
+    "answer": "B",
+    "explanation": "Kıdemi 6 aydan 1.5 yıla kadar sürmüş olan çalışanlar için bildirim süresi 4 haftadır."
+  },
+  {
+    "id": 66,
+    "question": "İş Kanunu'na göre, kıdemi '1.5 yıl ile 3 yıl (dahil)' arasında olan bir çalışan için ihbar süresi kaç haftadır?",
+    "options": [
+      "A) 4 hafta",
+      "B) 6 hafta (42 gün)",
+      "C) 8 hafta",
+      "D) 10 hafta"
+    ],
+    "answer": "B",
+    "explanation": "Kıdemi 1.5 yıldan 3 yıla kadar sürmüş çalışanlar için bildirim süresi 6 haftadır."
+  },
+  {
+    "id": 67,
+    "question": "İş Kanunu'na göre, kıdemi '3 yıldan fazla' sürmüş bir çalışan için yasal ihbar öneli bildirim süresi ne kadardır?",
+    "options": [
+      "A) 6 hafta",
+      "B) 8 hafta (56 gün)",
+      "C) 12 hafta",
+      "D) 16 hafta"
+    ],
+    "answer": "B",
+    "explanation": "Kıdemi 3 yıldan fazla sürmüş olan çalışanlar için yasal ihbar bildirim süresi 8 haftadır (56 gün)."
+  },
+  {
+    "id": 68,
+    "question": "4857 Sayılı Kanun kapsamında iş güvencesinden yararlanarak 'İşe İade Davası' açabilmek için işyerinde en az kaç işçi çalışıyor olmalı ve işçinin en az ne kadar kıdemi bulunmalıdır?",
+    "options": [
+      "A) En az 10 işçi - 1 yıl kıdem",
+      "B) En az 30 işçi - 6 ay kıdem",
+      "C) En az 50 işçi - 1 yıl kıdem",
+      "D) Herhangi bir sınır yoktur."
+    ],
+    "answer": "B",
+    "explanation": "İşe iade davası açabilmenin ön koşulu, işyerinde en az 30 işçi çalıştırılması ve fesih tarihinde işçinin en az 6 aylık kıdeminin bulunmasıdır."
+  },
+  {
+    "id": 69,
+    "question": "İş güvencesi kapsamında haksız fesih bildirimine karşı, işçi fesih bildiriminin tebliğinden itibaren en geç ne kadar süre içinde dava açmalıdır?",
+    "options": [
+      "A) 15 gün içinde",
+      "B) 1 ay içinde",
+      "C) 3 iş günü içinde",
+      "D) 1 yıl içinde"
+    ],
+    "answer": "B",
+    "explanation": "İşçi, fesih bildiriminin tebliğinden itibaren 1 ay içinde arabulucuya başvurmalı, anlaşamama halinde iş mahkemesinde dava açmalıdır."
+  },
+  {
+    "id": 70,
+    "question": "İşe iade davasını kazanan işçiyi, mahkeme kararının tebliğinden sonra işveren başvurudan itibaren en geç kaç ay içinde işe başlatmak zorundadır? Başlatmazsa yasal yaptırım ne olur?",
+    "options": [
+      "A) 3 ay içinde başlatmalı; aksi halde para cezası öder.",
+      "B) 1 ay içinde başlatmalı; başlatmazsa en az 4 aylık ve en çok 8 aylık ücreti tutarında işe başlatmama tazminatı ödemekle yükümlü tutulur.",
+      "C) 15 gün içinde başlatmalı; aksi halde hapis cezası alır.",
+      "D) Derhal başlatmalı; aksi halde kıdem tazminatı ikiye katlanır."
+    ],
+    "answer": "B",
+    "explanation": "İşveren işçiyi 1 ay içinde işe başlatmalıdır. Başlatmadığı takdirde mahkemece belirlenen 4 ila 8 aylık ücret tutarındaki işe başlatmama tazminatını öder."
+  },
+  {
+    "id": 71,
+    "question": "İşe iade davası sonucunda işçinin boşta geçen süresi için en çok kaç aya kadar olan ücret ve diğer hakları işverence ödenir?",
+    "options": [
+      "A) En çok 2 aya kadar",
+      "B) En çok 4 aya kadar",
+      "C) En çok 6 aya kadar",
+      "D) Dava süresinin tamamı için"
+    ],
+    "answer": "B",
+    "explanation": "Kararın kesinleşmesine kadar çalıştırılmadığı süre için işçiye en çok 4 aya kadar doğmuş bulunan ücret ve diğer hakları ödenir."
+  },
+  {
+    "id": 72,
+    "question": "Çalışanların Gürültü Maruziyet Yönetmeliği'ne göre, yasal en yüksek maruziyet etkin eylem değeri ve günlük maruziyet sınır değeri sırasıyla kaç dB(A) olarak belirlenmiştir?",
+    "options": [
+      "A) 80 dB(A) ve 85 dB(A)",
+      "B) 85 dB(A) ve 87 dB(A)",
+      "C) 75 dB(A) ve 80 dB(A)",
+      "D) 90 dB(A) ve 95 dB(A)"
+    ],
+    "answer": "B",
+    "explanation": "Gürültü yönetmeliğinde en yüksek maruziyet etkin eylem değeri 85 dB(A), günlük maruziyet sınır değeri ise 87 dB(A) olarak belirlenmiştir."
+  },
+  {
+    "id": 73,
+    "question": "İlkyardım Yönetmeliği ve Yavuz Hoca'nın özel notuna göre, işyerinin tehlike sınıflarına göre çalıştırılması gereken zorunlu ilkyardımcı oranları (ilkyardımcı sayısı) sırasıyla nasıl olmalıdır?",
+    "options": [
+      "A) Az Tehlikeli: 10 çalışan için 1 - Tehlikeli: 15 için 1 - Çok Tehlikeli: 20 için 1",
+      "B) Az Tehlikeli: 20 çalışan için 1 - Tehlikeli: 15 için 1 - Çok Tehlikeli: 10 çalışan için 1",
+      "C) Az Tehlikeli: 30 çalışan için 1 - Tehlikeli: 20 için 1 - Çok Tehlikeli: 10 çalışan için 1",
+      "D) Sınıfa bakılmaksızın her 50 çalışana 1 ilkyardımcı"
+    ],
+    "answer": "B",
+    "explanation": "İlkyardımcı zorunluluğu: Az Tehlikeli sınıfta her 20 çalışan için 1, Tehlikeli sınıfta her 15 çalışan için 1, Çok Tehlikeli sınıfta ise her 10 çalışan için 1 ilkyardımcıdır."
+  },
+  {
+    "id": 74,
+    "question": "Heinrich'in Domino Etkisi Kuramına göre, kazaların meydana gelmesini engellemek için aradan çekilmesi gereken en zayıf ve kritik halka (domino taşı) hangisidir?",
+    "options": [
+      "A) Sosyal çevre ve kalıtım",
+      "B) İnsanın kişisel kusurları",
+      "C) Güvensiz Hareketler ve Güvensiz Koşullar (Tehlikeli Durum-Davranış)",
+      "D) Kazanın kendisi"
+    ],
+    "answer": "C",
+    "explanation": "Domino kuramında, üçüncü domino taşı olan 'Güvensiz Hareket ve Güvensiz Koşullar' zincirden çekildiğinde kaza meydana gelmez ve zincir kırılır."
+  },
+  {
+    "id": 75,
+    "question": "Heinrich'in 1-29-300 Kaza Piramidi modeline göre, ağır yaralanmalı veya ölümcül 1 büyük kazayı önlemenin temel şartı nedir?",
+    "options": [
+      "A) Sadece ölümlü kazaların hukuki raporlarına çalışmak",
+      "B) Piramidin tabanını oluşturan 300 yaralanmasız (ramak kala) olay ve 29 hafif yaralanmalı kazanın nedenlerini inceleyip yok etmek",
+      "C) Çalışan sayısını azaltmak",
+      "D) KKD kullanımını isteğe bağlı kılmak"
+    ],
+    "answer": "B",
+    "explanation": "Kaza piramidine göre her 1 ağır kazanın altında 29 hafif ve 300 yaralanmasız ramak kala olay yatar. Büyük kazayı önlemek, tabandaki ramak kalaları ve küçük olayları engellemekten geçer."
+  },
+  {
+    "id": 76,
+    "question": "NACE koduna göre 'Çok Tehlikeli' sınıfta yer alan bir tünel şantiyesinde, yasal risk değerlendirmesi kaç yılda bir tamamen yenilenmeli ve İSG kurulu en geç hangi periyotla toplanmalıdır?",
+    "options": [
+      "A) Risk değerlendirmesi 6 yılda bir - İSG kurulu 3 ayda bir",
+      "B) Risk değerlendirmesi 4 yılda bir - İSG kurulu 2 ayda bir",
+      "C) Risk değerlendirmesi 2 yılda bir - İSG kurulu her ay",
+      "D) Risk değerlendirmesi her yıl - İSG kurulu 15 günde bir"
+    ],
+    "answer": "C",
+    "explanation": "Çok Tehlikeli sınıftaki işyerlerinde risk değerlendirmesi en geç 2 yılda bir yenilenmeli ve İSG kurulu toplantıları her ay (periyot uzatılmaksızın) yapılmalıdır."
+  },
+  {
+    "id": 77,
+    "question": "NACE koduna göre 'Tehlikeli' sınıfta faaliyet gösteren bir gıda işleme fabrikasında, çalışanların alması gereken temel İSG eğitim süresi asgari kaç saattir ve eğitim en geç hangi periyotla tekrarlanmalıdır?",
+    "options": [
+      "A) En az 8 saat - 3 yılda bir",
+      "B) En az 12 saat - 2 yılda bir",
+      "C) En az 16 saat - Yılda bir",
+      "D) En az 24 saat - 5 yılda bir"
+    ],
+    "answer": "B",
+    "explanation": "Tehlikeli sınıfta yer alan işyerlerinde çalışanların temel İSG eğitim süresi asgari 12 saattir ve bu eğitimler en geç 2 yılda bir yenilenmelidir."
+  },
+  {
+    "id": 78,
+    "question": "NACE koduna göre 'Az Tehlikeli' sınıftaki bir banka genel müdürlük ofisinde 200 çalışan bulunmaktadır. Bu işyerinde yasal olarak en az kaç ilkyardımcı bulunmalı ve İSG kurulu toplantıları en geç hangi aralıkla yapılabilmelidir?",
+    "options": [
+      "A) 10 ilkyardımcı - En geç 3 ayda bir",
+      "B) 15 ilkyardımcı - En geç 2 ayda bir",
+      "C) 20 ilkyardımcı - Her ay",
+      "D) 5 ilkyardımcı - En geç 6 ayda bir"
+    ],
+    "answer": "A",
+    "explanation": "Az Tehlikeli sınıfta her 20 çalışan için 1 ilkyardımcı zorunludur (200 / 20 = 10 ilkyardımcı). Toplantılar ise az tehlikeli sınıfta en geç 3 ayda bir olacak şekilde planlanabilir."
+  },
+  {
+    "id": 79,
+    "question": "OHS final sınavına hazırlanan bir öğrenci, hangi ders notundaki tablolardaki risk yönetimi değerlerinin hatalı olduğunu bilmeli ve doğrusu için nereye çalışmalıdır?",
+    "options": [
+      "A) 9A.pdf hatalıdır; doğrusu için 9B.pdf sayfa 139'a bakılmalıdır.",
+      "B) 9B.pdf sayfa Z4, 114 ve 115 hatalıdır; doğrusu için 9A.pdf sayfa 137 ve 139 kullanılmalıdır.",
+      "C) Ekstra.pdf hatalıdır; doğrusu için 1.pdf sayfa 17'ye bakılmalıdır.",
+      "D) 11.pdf hatalıdır; doğrusu için 10.pdf kullanılmalıdır."
+    ],
+    "answer": "B",
+    "explanation": "Hocanın 2.txt duyurusunda belirttiği gibi, 9B notunun sayfa Z4, 114 ve 115'indeki risk yönetimi değerleri ve tabloları hatalıdır. Doğrusu için 9A.pdf sayfa 137 ve 139 kullanılmalıdır."
+  },
+  {
+    "id": 80,
+    "question": "Risk Yönetimi ders notu 9B'deki hatalı matris verileri düşünüldüğünde, doğru risk değerlendirme tabloları (olasılık, şiddet ve risk puanı dereceleri) için çalışılması gereken asıl kaynak ve sayfa aralıkları hangisidir?",
+    "options": [
+      "A) 9B.pdf sayfa 74 ve 114",
+      "B) 9A.pdf sayfa 135, 137, 139",
+      "C) Ekstra.pdf sayfa 2 ve 4",
+      "D) 10.pdf sayfa 95"
+    ],
+    "answer": "B",
+    "explanation": "Hocanın resmi final yönergesinde belirtildiği üzere, risk olasılık ve şiddet değerleri için 9A.pdf sayfa 135 ve 136, doğru risk matrisi puan değerlendirme eylemleri için ise 9A.pdf sayfa 137 ve 139 çalışılmalıdır."
+  },
+  {
+    "id": 81,
+    "question": "9A ders notu sayfa 139'daki risk puanı değerlendirmesi tablosuna göre, yapılan risk analizi sonucunda risk puanı '15' olarak hesaplanan bir tehlike hakkında verilecek yasal karar nedir?",
+    "options": [
+      "A) Kabul edilebilir risk - Mevcut kontrollerle devam edilir.",
+      "B) Dikkate değer risk - Çabuk müdahale edilmelidir.",
+      "C) Kabul edilemez risk - Risk kabul edilebilir seviyeye çekilene kadar çalışma derhal durdurulur / başlanmaz.",
+      "D) Tolore edilebilir risk - Herhangi bir aksiyon gerekmez."
+    ],
+    "answer": "C",
+    "explanation": "9A sayfa 139 tablosuna göre 15, 16, 20, 25 puan alan riskler 'Kabul Edilemez Risk'tir. Risk azaltılana kadar iş durdurulur ve çalışmaya başlanamaz."
+  },
+  {
+    "id": 82,
+    "question": "9A ders notu sayfa 139'daki risk puanı değerlendirmesi tablosuna göre, hesaplanan risk skoru '9' çıkan bir tehlike hangi sınıfa girer ve yapılması gereken işlem nedir?",
+    "options": [
+      "A) Kabul Edilebilir Risk - Acil tedbir gerektirmez.",
+      "B) Dikkate Değer Risk - Mümkün olduğu kadar çabuk müdahale edilmeli, acil eylem planlanmalı ve ilave tedbirler alınmalıdır.",
+      "C) Kabul Edilemez Risk - İş derhal durdurulmalıdır.",
+      "D) Önemsiz Risk - Tablodan çıkarılır."
+    ],
+    "answer": "B",
+    "explanation": "Risk puanı 8, 9, 10, 12 olan durumlar 'Dikkate Değer Risk'tir. Çabuk müdahale edilmeli ve ek tedbirler planlanmalıdır."
+  },
+  {
+    "id": 83,
+    "question": "Hocanın final çalışma önerisinde belirttiği üzere, Alpaslan Hoca'nın ders notunda örnek test soruları hangi sayfadan itibaren başlamaktadır?",
+    "options": [
+      "A) Sayfa 50'den itibaren",
+      "B) Sayfa 100'den itibaren",
+      "C) Sayfa 139'dan itibaren",
+      "D) Sayfa 240'tan itibaren"
+    ],
+    "answer": "D",
+    "explanation": "5.txt/5.png duyurusunda hocanın çalışma tekniği önerisinde Alpaslan Hoca ders notu sonlarında Sayfa 240'tan itibaren örnek test soruları olduğu yazılmıştır."
+  },
+  {
+    "id": 84,
+    "question": "Classroom duyurularındaki test soru örnekleri arama tavsiyesine göre, Google'da yapılması önerilen arama kelime kalıpları arasında hangisi yer almaz?",
+    "options": [
+      "A) 'isg soru; acil durum planı'",
+      "B) 'isg soru; risk yönetimi'",
+      "C) 'isg soru; iş kazası'",
+      "D) 'isg soru; vergi hukuku cezaları'"
+    ],
+    "answer": "D",
+    "explanation": "Duyuruda 'isg soru; acil durum planı', 'isg soru; risk yönetimi', 'isg soru; kazası...' vb. aramalar tavsiye edilmiş olup, vergi hukuku kapsam dışıdır."
+  },
+  {
+    "id": 85,
+    "question": "İSG sınav yönergesinde, hangi iki yasal mevzuat hariç olmak üzere diğer tüm yönetmeliklerin ceza süreleri, kanun tarihleri ve numaralarının ezberlenmeyeceği belirtilmiştir?",
+    "options": [
+      "A) 6331 Sayılı OHS Kanunu ve 4857 Sayılı İş Kanunu",
+      "B) 5510 Sayılı Kanun ve 1593 Sayılı Hıfzıssıhha Kanunu",
+      "C) ISO 45001 ve OHSAS 18001",
+      "D) Borçlar Kanunu ve Medeni Kanun"
+    ],
+    "answer": "A",
+    "explanation": "Hocanın 7.txt duyurusunda belirttiği gibi, 6331 ve 4857 sayılı kanunlar hariç iş hukukundaki diğer kanun numaraları, tarihleri, ceza süreleri ve net tazminat miktarları ezberlenmeyecek, genel olarak anlaşılmaya çalışılacaktır."
+  },
+  {
+    "id": 86,
+    "question": "OHS müfredatındaki Konu 10 ve 11 ile ilgili olarak yasal sorumluluklar ve ders notu çalışma düzeyleri düşünüldüğünde hangisi doğrudur?",
+    "options": [
+      "A) Konu 10 ve 11'in tamamındaki tüm ceza miktarları kuruşu kuruşuna ezberlenmelidir.",
+      "B) Konu 10, 11 ders notumuzdur; detaylara boğulmadan çalışılmalı, 6331 ve 4857 dışındaki ceza süreleri ve tarihleri ezberlenmemelidir.",
+      "C) Konu 10 ve 11 final sınavına dahil değildir.",
+      "D) Sadece kanunların yürürlük tarihleri sorulacaktır."
+    ],
+    "answer": "B",
+    "explanation": "Duyuru 7'de Konu 10 ve 11'in ders notumuz olduğu ancak detaylara, ceza miktarlarına veya diğer kanun numaralarına girilmeden genel hatlarıyla çalışılması gerektiği vurgulanmıştır."
+  },
+  {
+    "id": 87,
+    "question": "İş sözleşmesinin yasal olarak oluşabilmesi için gereken 3 temel kurucu unsurdan (ücret, işgörme, bağımlılık) biri olan 'işgörme' neyi ifade eder?",
+    "options": [
+      "A) İşverenin işçiye maaş ödemesini",
+      "B) İşçinin işverene bağımlı olarak zihinsel veya bedensel bir faaliyeti fiilen yapmayı üstlenmesini",
+      "C) İşverenin işyerini sigortalatmasını",
+      "D) İşçinin kendi nam ve hesabına çalışmasını"
+    ],
+    "answer": "B",
+    "explanation": "İşgörme borcu, işçinin iş sözleşmesi uyarınca işveren için fiziksel, zihinsel veya bedensel bir işi yapmayı üstlenmesidir."
+  },
+  {
+    "id": 88,
+    "question": "İş sözleşmesinde işçinin yerine getirdiği işgörme borcuna karşılık olarak işverenin ödemekle yükümlü olduğu asli edim (borç) aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Bağımlılık",
+      "B) Ücret",
+      "C) KKD temini",
+      "D) Sağlık raporu"
+    ],
+    "answer": "B",
+    "explanation": "İş sözleşmesinin kurucu unsurlarından olan ücret, işçinin yaptığı işin karşılığı olarak işverence ödenen maddi bedeldir."
+  },
+  {
+    "id": 89,
+    "question": "İş sözleşmesini diğer iş görme sözleşmelerinden (eser sözleşmesi, vekalet vb.) ayıran en belirgin ve karakteristik kurucu unsur hangisidir?",
+    "options": [
+      "A) Ücret ödenmesi",
+      "B) İşin bedensel olması",
+      "C) Bağımlılık (işçinin işverenin emir, talimat ve denetimi altında çalışması)",
+      "D) İş sözleşmesinin yazılı yapılması"
+    ],
+    "answer": "C",
+    "explanation": "Bağımlılık unsuru, işçinin işverenin yönetim, denetim, emir ve talimat alanı içerisinde çalışmasını ifade eder ve iş sözleşmesini diğer sözleşmelerden ayıran en kritik unsurdur."
+  },
+  {
+    "id": 90,
+    "question": "İş Kanunu'na göre, işyerinde işe başladığı günden itibaren deneme süresi de içinde olmak üzere en az 1 yıl çalışmış olan işçilere verilen yıllık ücretli izin hakkı kapsamında kıdemi '1 yıldan 5 yıla kadar (5 yıl dahil)' olan işçilere verilecek yıllık izin süresi asgari kaç gündür?",
+    "options": [
+      "A) 12 gün",
+      "B) 14 gün",
+      "C) 20 gün",
+      "D) 26 gün"
+    ],
+    "answer": "B",
+    "explanation": "İş Kanunu uyarınca kıdemi 1 yıldan 5 yıla kadar (5 yıl dahil) olan işçilere verilecek yıllık ücretli izin süresi 14 günden az olamaz."
+  },
+  {
+    "id": 91,
+    "question": "İş Kanunu uyarınca, kıdemi '5 yıldan fazla 15 yıldan az' olan bir işçiye verilecek yıllık ücretli izin süresi asgari kaç gündür?",
+    "options": [
+      "A) 14 gün",
+      "B) 18 gün",
+      "C) 20 gün",
+      "D) 24 gün"
+    ],
+    "answer": "C",
+    "explanation": "İş Kanunu'na göre kıdemi 5 yıldan fazla 15 yıldan az olan işçilere verilecek yıllık ücretli izin süresi 20 günden az olamaz."
+  },
+  {
+    "id": 92,
+    "question": "İş Kanunu uyarınca, kıdemi '15 yıl (dahil) ve daha fazla' olan bir çalışan yasal olarak en az kaç gün yıllık ücretli izin hakkına sahiptir?",
+    "options": [
+      "A) 20 gün",
+      "B) 22 gün",
+      "C) 26 gün",
+      "D) 30 gün"
+    ],
+    "answer": "C",
+    "explanation": "İş Kanunu uyarınca kıdemi 15 yıl ve daha fazla olan çalışanların yıllık ücretli izin hakkı 26 günden az olamaz."
+  },
+  {
+    "id": 93,
+    "question": "İş Kanunu yıllık izin koruyucu hükümleri uyarınca; yaşları kaç ve daha küçük işçiler ile kaç ve daha yukarı yaştaki işçilerin yıllık ücretli izin süreleri hiçbir koşulda 20 günden az olamaz?",
+    "options": [
+      "A) 15 yaş ve altı - 55 yaş ve üstü",
+      "B) 18 yaş ve altı - 50 yaş ve üstü",
+      "C) 20 yaş ve altı - 60 yaş ve üstü",
+      "D) 16 yaş ve altı - 45 yaş ve üstü"
+    ],
+    "answer": "B",
+    "explanation": "İş Kanunu uyarınca 18 ve daha küçük yaştaki işçiler ile 50 ve daha yukarı yaştaki işçilere verilecek yıllık ücretli izin süresi 20 günden az olamaz."
+  },
+  {
+    "id": 94,
+    "question": "Yıllık ücretli izinlerin işveren tarafından bölünerek kullandırılmasıyla ilgili yasal kural aşağıdakilerden hangisidir?",
+    "options": [
+      "A) İzinler hiçbir şekilde bölünemez, tek seferde kullanılmalıdır.",
+      "B) İzin süreleri tarafların anlaşmasıyla bir bölümü 10 günden az olmamak üzere en çok üçe bölünebilir.",
+      "C) İstenildiği kadar güne serbestçe bölünebilir.",
+      "D) Sadece Çok Tehlikeli işyerlerinde bölünmesine izin verilir."
+    ],
+    "answer": "B",
+    "explanation": "Yasal olarak yıllık izinler bölünemez. Ancak tarafların karşılıklı anlaşması ile bir bölümü 10 günden az olmamak üzere en fazla üçe bölünerek kullandırılabilir."
+  },
+  {
+    "id": 95,
+    "question": "Kişisel Koruyucu Donanımların (KKD) tedarik edilmesi, maliyeti ve işyerinde kullandırılmasıyla ilgili yasal kurallar düşünüldüğünde hangisi yanlıştır?",
+    "options": [
+      "A) KKD'ler kendisi ek bir risk oluşturmadan ilgili riski önlemeye uygun olmalıdır.",
+      "B) KKD'lerin tüm temin, bakım ve temizlik maliyeti işveren tarafından karşılanmalı, işçiye yansıtılmamalıdır.",
+      "C) KKD'lerin maliyeti yüksekse yarısı işçi maaşından kesilebilir.",
+      "D) KKD kullanımı, riskleri önlemek için hiyerarşide en son başvurulacak yöntemdir."
+    ],
+    "answer": "C",
+    "explanation": "6331 sayılı İSG Kanunu uyarınca İSG tedbirlerinin ve KKD'lerin maliyeti hiçbir şekilde çalışanlara yansıtılamaz, işveren ücretsiz sağlamak zorundadır."
+  },
+  {
+    "id": 96,
+    "question": "Kişisel koruyucu donanım (KKD) tasarımı ve kullanımında 'ek risk oluşturmama' şartı neyi ifade eder?",
+    "options": [
+      "A) KKD'nin piyasadaki en ucuz koruyucu olması gerektiğini",
+      "B) KKD'nin çalışanı korurken hareket kısıtlılığı, görüş engeli veya solunum zorluğu gibi yeni tehlikeler yaratmaması gerektiğini",
+      "C) KKD'nin sadece acil durumlarda giyilmesi gerektiğini",
+      "D) KKD'nin renginin uyarı renklerinde olmasını"
+    ],
+    "answer": "B",
+    "explanation": "KKD'ler çalışanı mevcut tehlikeden korurken kendisi ek bir yük, tehlike veya engelleme yaratmamalıdır."
+  },
+  {
+    "id": 97,
+    "question": "İSG risk kontrol hiyerarşisinde 'Kişisel Koruyucu Donanım (KKD) kullanımı' kaçıncı sırada yer alır ve koruma etkinliği nasıldır?",
+    "options": [
+      "A) 1. sıradadır ve en etkili korumayı sağlar.",
+      "B) 2. sıradadır ve tehlikeyi kaynağında yok eder.",
+      "C) En son (5.) sıradadır; sadece kişiyi korur, kaynağa müdahale etmediği için en az korumayı sağlar.",
+      "D) HAZOP analizi ile eş değer korumaya sahiptir."
+    ],
+    "answer": "C",
+    "explanation": "KKD kullanımı hiyerarşide en son çaredir. Kaynaktaki tehlikeyi yok etmediği, sadece kişiyi sınırlı koruduğu için öncelik her zaman eliminasyon veya toplu korumadadır."
+  },
+  {
+    "id": 98,
+    "question": "İşyerinde çalışanların kişisel koruyucu donanımları (KKD) kullanma yükümlülükleri ve denetimi hakkında hangisi yasal olarak doğrudur?",
+    "options": [
+      "A) Çalışanlar KKD kullanıp kullanmamakta tamamen serbesttir.",
+      "B) İşveren KKD'yi teslim ettikten sonra takip etmekle yükümlü değildir.",
+      "C) Çalışanlar kendilerine verilen KKD'yi talimatlara uygun kullanmak ve korumakla; işveren ise kullanımını gözetmek ve denetlemekle yükümlüdür.",
+      "D) KKD denetimini sadece Çalışma Bakanlığı müfettişleri yapar, işveren karışamaz."
+    ],
+    "answer": "C",
+    "explanation": "Çalışanlar KKD'leri doğru kullanmak, korumak ve hasar durumunda bildirmekle yükümlüdür. İşveren ise bu donanımların kullanımını sürekli gözetmek ve denetlemek zorundadır."
+  },
+  {
+    "id": 99,
+    "question": "Bir tekstil fabrikasında dikiş makinelerinin dönen kayış kısımlarının açıkta olduğu tespit edilmiştir. Bu durum İSG kuramlarına göre aşağıdakilerden hangisidir?",
+    "options": [
+      "A) Tehlikeli Davranış (Güvensiz Hareket)",
+      "B) Tehlikeli Durum (Güvensiz Koşul)",
+      "C) İş Kazası Sonucu",
+      "D) Ramak Kala Olay"
+    ],
+    "answer": "B",
+    "explanation": "Ekipmanların, makinelerin veya fiziki çevrenin korumasız ve arızalı olması fiziksel bir 'Tehlikeli Durum' (güvensiz koşul) örneğidir."
+  },
+  {
+    "id": 100,
+    "question": "Bir depo çalışanının, forklift geçerken güvenlik şeridinin dışına çıkarak baret takmadan malzeme raflarına tırmanması olayı İSG teorisinde nasıl nitelendirilir?",
+    "options": [
+      "A) Tehlikeli Durum",
+      "B) Tehlikeli Davranış (Güvensiz Hareket)",
+      "C) Meslek Hastalığı",
+      "D) Mühendislik Önlemi"
+    ],
+    "answer": "B",
+    "explanation": "Çalışanın güvenlik kurallarını bilerek veya bilmeyerek ihlal etmesi, KKD kullanmaması ve tehlikeli şekilde hareket etmesi 'Tehlikeli Davranış'tır."
+  },
+  {
+    "id": 101,
+    "question": "Bir kimyasal madde üretim hattında, reaktörün sıcaklık kontrol göstergesinin arızalı olduğu fark edilmiş ancak üretime devam edilmiştir. Bir süre sonra yüksek sıcaklık nedeniyle sızıntı yaşanmış ve bir çalışan yaralanmıştır. Bu kaza zincirinde proaktif yaklaşım nerede eksik kalmıştır?",
+    "options": [
+      "A) Kaza sonrası ambulans çağırma aşamasında",
+      "B) Göstergenin arızalı olduğunun tespit edilip (tehlikeli durum) üretime başlanmadan önce arızanın giderilip önlem alınması aşamasında",
+      "C) Kaza raporunun hazırlanması aşamasında",
+      "D) İşçinin tazminatının hesaplanması aşamasında"
+    ],
+    "answer": "B",
+    "explanation": "Proaktif yaklaşım kaza olmadan önce önlem almayı hedefler. Gösterge arızası (tehlikeli durum) fark edildiği an üretim durdurulup gösterge tamir edilseydi kaza engellenmiş olurdu."
+  },
+  {
+    "id": 102,
+    "question": "İşyerinin NACE koduna göre belirlenen tehlike sınıfı, iş sağlığı ve güvenliği profesyonellerinin (iş güvenliği uzmanı ve işyeri hekimi) hangi yasal yükümlülüğünü doğrudan belirler?",
+    "options": [
+      "A) Şirketin ödeyeceği vergi dilimini",
+      "B) Çalışan başına aylık asgari çalışma (hizmet) sürelerini",
+      "C) Uzman ve hekimin alacağı aylık maaş miktarını",
+      "D) Şirketin şube sayısını"
+    ],
+    "answer": "B",
+    "explanation": "Uzman ve hekimin çalışan başına ayda kaç dakika hizmet vereceği (Örn: Çok Tehlikeli sınıfta uzman çalışan başına en az 40 dk) işyerinin tehlike sınıfına göre belirlenir."
+  },
+  {
+    "id": 103,
+    "question": "Tehlike sınıfı ve NACE kodu bilgisi, İSG mevzuatındaki hangi yasal dokümanın yenilenme periyotlarını (yıl olarak geçerlilik sürelerini) belirleyen temel unsurdur?",
+    "options": [
+      "A) Yıllık bilanço raporları",
+      "B) Risk Değerlendirmesi ve Acil Durum Planı",
+      "C) Çalışanların iş sözleşmeleri",
+      "D) İSG Kurulunun toplantı tutanakları"
+    ],
+    "answer": "B",
+    "explanation": "Risk değerlendirmesi ve acil durum planlarının geçerlilik/yenilenme süreleri tehlike sınıfına bağlıdır (Çok tehlikeli: 2, tehlikeli: 4, az tehlikeli: 6 yılda bir)."
+  },
+  {
+    "id": 104,
+    "question": "Acil durum planlarının uygulanabilirliğini test etmek, çalışanların rollerini pekiştirmek amacıyla işyerlerinde yasal olarak en geç hangi sıklıkla tahliye ve yangın tatbikatı yapılmalıdır?",
+    "options": [
+      "A) 6 ayda bir",
+      "B) Yılda en az bir kez",
+      "C) 2 yılda bir",
+      "D) Sadece denetim olacağı günlerde"
+    ],
+    "answer": "B",
+    "explanation": "İSG mevzuatı gereğince işyerlerinde hazırlanan acil durum planları uyarınca en geç yılda bir kez olmak üzere düzenli tatbikatlar yapılmalıdır."
+  },
+  {
+    "id": 105,
+    "question": "İşyerlerinde Acil Durumlar Hakkında Yönetmeliğe göre, acil durum planı kapsamında oluşturulması zorunlu olan destek ekipleri (acil durum ekipleri) hangi seçenekte doğru verilmiştir?",
+    "options": [
+      "A) Temizlik, danışma ve güvenlik ekipleri",
+      "B) Söndürme, kurtarma, koruma ve ilk yardım ekipleri",
+      "C) Lojistik, sevkiyat ve depolama ekipleri",
+      "D) Bilişim, finans ve halkla ilişkiler ekipleri"
+    ],
+    "answer": "B",
+    "explanation": "Yönetmeliğe göre işyerlerinde söndürme, kurtarma, koruma ve ilk yardım ekipleri kurulması zorunludur."
+  },
+  {
+    "id": 106,
+    "question": "Bir işyerinde hazırlanan 'Acil Durum Planı'nın tehlike sınıflarına göre tamamen yenilenme süreleri en geç kaç yılda birdir?",
+    "options": [
+      "A) Çok Tehlikeli: 1 yıl - Tehlikeli: 2 yıl - Az Tehlikeli: 3 yıl",
+      "B) Çok Tehlikeli: 2 yıl - Tehlikeli: 4 yıl - Az Tehlikeli: 6 yıl",
+      "C) Sınıfa bakılmaksızın her yıl yenilenmelidir.",
+      "D) İşletme açık kaldığı sürece yenilenmesine gerek yoktur."
+    ],
+    "answer": "B",
+    "explanation": "Acil durum planlarının tamamen yenilenme süreleri, risk değerlendirmesi yenilenme süreleriyle aynıdır: Çok tehlikeli sınıfta 2, tehlikeli sınıfta 4, az tehlikeli sınıfta ise en geç 6 yılda birdir."
+  },
+  {
+    "id": 107,
+    "question": "İSG mevzuatına göre gürültülü ortamlarda çalışanların kulak koruyucu donanım (kulaklık) kullanmasının yasal olarak zorunlu hale geldiği gürültü maruziyet sınır değeri kaç dB(A)'dir?",
+    "options": [
+      "A) 80 dB(A)",
+      "B) 85 dB(A)",
+      "C) 87 dB(A)",
+      "D) 90 dB(A)"
+    ],
+    "answer": "C",
+    "explanation": "85 dB(A)'de işveren kulak koruyucuyu sağlamakla yükümlüdür, ancak gürültünün fiilen 87 dB(A) günlük sınır değerini aşması durumunda kulaklık kullanımı yasal olarak zorunludur."
+  },
+  {
+    "id": 108,
+    "question": "Çok Tehlikeli sınıfta yer alan bir maden ocağında 35 çalışan bulunmaktadır. İlkyardım Yönetmeliği'ne göre bu işyerinde en az kaç ilkyardımcı bulundurulması zorunludur?",
+    "options": [
+      "A) 2 ilkyardımcı",
+      "B) 3 ilkyardımcı",
+      "C) 4 ilkyardımcı",
+      "D) 5 ilkyardımcı"
+    ],
+    "answer": "C",
+    "explanation": "Çok tehlikeli sınıfta her 10 çalışan için 1 ilkyardımcı gerekir. 35 / 10 = 3.5 -> Küsurat yukarı yuvarlanarak en az 4 ilkyardımcı görevlendirilmesi zorunludur."
+  },
+  {
+    "id": 109,
+    "question": "Tehlikeli sınıfta faaliyet gösteren bir boya fabrikasında 45 çalışan bulunmaktadır. Bu fabrikada yasal olarak görevlendirilmesi gereken asgari ilkyardımcı sayısı kaçtır?",
+    "options": [
+      "A) 2 ilkyardımcı",
+      "B) 3 ilkyardımcı",
+      "C) 4 ilkyardımcı",
+      "D) 5 ilkyardımcı"
+    ],
+    "answer": "B",
+    "explanation": "Tehlikeli sınıfta her 15 çalışan için 1 ilkyardımcı istenir. 45 / 15 = 3 ilkyardımcı görevlendirilmesi tam olarak yeterlidir."
+  },
+  {
+    "id": 110,
+    "question": "Az Tehlikeli sınıfta yer alan bir çağrı merkezinde 65 çalışan bulunmaktadır. Yasal mevzuata göre bu işyerinde en az kaç adet sertifikalı ilkyardımcı bulunmalıdır?",
+    "options": [
+      "A) 2 ilkyardımcı",
+      "B) 3 ilkyardımcı",
+      "C) 4 ilkyardımcı",
+      "D) 5 ilkyardımcı"
+    ],
+    "answer": "C",
+    "explanation": "Az tehlikeli sınıfta her 20 çalışana 1 ilkyardımcı gerekir. 65 / 20 = 3.25 -> Yukarı yuvarlanarak en az 4 ilkyardımcı bulunmalıdır."
+  },
+  {
+    "id": 111,
+    "question": "Heinrich'in Domino Etkisi Kuramına göre, kazaya giden süreçteki 5 taşın sırasıyla doğru dizilimi hangisidir?",
+    "options": [
+      "A) İnsan Hatası - Çevre - Kaza - Tehlikeli Hareket - Yaralanma",
+      "B) Kalıtımsal Özellikler/Sosyal Çevre - Kişisel Kusurlar (İnsan Hatası) - Güvensiz Hareket/Koşul - Kaza - Yaralanma/Hasar",
+      "C) Kaza - Yaralanma - Güvensiz Hareket - Kişisel Kusur - Çevre",
+      "D) Tehlike - Risk - Kaza - Hasar - Maluliyet"
+    ],
+    "answer": "B",
+    "explanation": "Heinrich'in kuramına göre sıralama: 1. Kalıtım/Sosyal Çevre, 2. Kişisel Kusurlar, 3. Güvensiz Hareket/Koşul, 4. Kaza, 5. Yaralanma/Hasar şeklindedir."
+  },
+  {
+    "id": 112,
+    "question": "Domino Etkisi Kuramına göre, bir inşaat işçisinin 'yüksekte çalışırken emniyet kemerini bağlamaması' durumu hangi taşa (zincir halkasına) karşılık gelir?",
+    "options": [
+      "A) 1. Taş: Kalıtım ve Sosyal Çevre",
+      "B) 2. Taş: Kişisel Kusur (İnsan Hatası)",
+      "C) 3. Taş: Güvensiz Hareket (Tehlikeli Davranış)",
+      "D) 4. Taş: Kaza"
+    ],
+    "answer": "C",
+    "explanation": "İşçinin baretini takmaması, kemer bağlamaması gibi kurallara uymayan davranışları 3. Taş olan 'Güvensiz Hareket' kapsamındadır."
+  },
+  {
+    "id": 113,
+    "question": "Domino Etkisi Kuramına göre, 'işyerindeki bir pres makinesinin baskı kısmında koruyucu siperlik bulunmaması' durumu hangi taşa karşılık gelir?",
+    "options": [
+      "A) 2. Taş: Kişisel Kusurlar",
+      "B) 3. Taş: Güvensiz Durum (Tehlikeli Koşul)",
+      "C) 4. Taş: Kaza",
+      "D) 5. Taş: Yaralanma"
+    ],
+    "answer": "B",
+    "explanation": "Makinelerdeki koruyucu eksikliği, açık kablolar veya kaygan zeminler fiziksel ortam hatası olduğundan 3. Taş olan 'Güvensiz Durum'dur."
+  },
+  {
+    "id": 114,
+    "question": "Prof. Dr. Alpaslan Hamdi Kuzucuoğlu'nun Risk Yönetimi sunumunda (`Ekstra.pdf`) geçen ve riski matematiksel açıklayan $R = (T \\times K) / Y$ formülündeki 'K' harfi neyi temsil eder?",
+    "options": [
+      "A) Kaza Sayısı",
+      "B) Kırılganlık / Zarar Görebilirlik (Vulnerability)",
+      "C) Kabul Edilebilir Risk",
+      "D) Kalıtımsal Faktörler"
+    ],
+    "answer": "B",
+    "explanation": "Formüldeki K (Kırılganlık / Zarar görebilirlik), sistemin veya çalışanın tehlikeden etkilenme derecesini (kırılganlığını) temsil eder."
+  },
+  {
+    "id": 115,
+    "question": "Kuzucuoğlu'nun risk modelinde yer alan $R = (T \\times K) / Y$ formülündeki 'Y' harfi neyi tanımlar?",
+    "options": [
+      "A) Yaralanma Oranı",
+      "B) Yıllık Çalışma Saati",
+      "C) Yönetilebilirlik (Manageability)",
+      "D) Yaş Faktörü"
+    ],
+    "answer": "C",
+    "explanation": "Formüldeki Y (Yönetilebilirlik), tehlike ve kırılganlığa karşı alınan yönetimsel, idari ve teknik kontrol gücünü temsil eder."
+  },
+  {
+    "id": 116,
+    "question": "Kuzucuoğlu risk modeli formülü $R = (T \\times K) / Y$ düşünüldüğünde, sistemdeki nihai risk puanını düşürmek için hangi aksiyonun alınması gerekir?",
+    "options": [
+      "A) Kırılganlığı (K) artırmak",
+      "B) Yönetilebilirliği (Y) artırarak paydadaki değeri büyütmek",
+      "C) Tehlikeyi (T) artırmak",
+      "D) Formülden Y harfini çıkarmak"
+    ],
+    "answer": "B",
+    "explanation": "Yönetilebilirlik (Y) paydada yer alır. Kontrolleri artırıp yönetilebilirliği (Y) yükseltmek risk skorunu (R) düşürür."
+  },
+  {
+    "id": 117,
+    "question": "4857 Sayılı İş Kanunu'na göre, işyerlerinde uygulanan ara dinlenmesi (mola) süreleri günlük çalışma sürelerine göre asgari ne kadar olarak belirlenmiştir?",
+    "options": [
+      "A) 4 saat ve daha az işlerde 15 dk; 4-7.5 saat arası işlerde 30 dk; 7.5 saatten fazla işlerde 1 saat",
+      "B) Sınırsız mola hakkı vardır.",
+      "C) Tüm gün için sadece 30 dakikadır.",
+      "D) 8 saat çalışanlar için en az 2 saattir."
+    ],
+    "answer": "A",
+    "explanation": "İş Kanunu md. 68 uyarınca ara dinlenmesi: 4 saat veya daha kısa işlerde 15 dk, 4 ila 7.5 saat (dahil) işlerde 30 dk, 7.5 saatten fazla süren işlerde ise en az 1 saat olmak zorundadır."
+  },
+  {
+    "id": 118,
+    "question": "İş Kanunu ara dinlenmesi hükümleri dikkate alındığında, günlük 8 saat fiilen çalışan bir işçinin yasal ara dinlenme süresi en az ne kadardır ve bu süre çalışma süresinden sayılır mı?",
+    "options": [
+      "A) En az 1 saattir ve çalışma süresinden sayılır.",
+      "B) En az 1 saattir ve çalışma süresinden sayılmaz (ücrete dahil değildir).",
+      "C) 30 dakikadır ve çalışma süresinden sayılmaz.",
+      "D) 45 dakikadır ve çalışma süresinden sayılır."
+    ],
+    "answer": "B",
+    "explanation": "7.5 saati aşan günlük çalışmalarda ara dinlenmesi en az 1 saattir. Ara dinlenmeleri çalışma süresinden sayılmaz ve işçinin serbest zamanıdır."
+  },
+  {
+    "id": 119,
+    "question": "İş sözleşmesiyle haftalık çalışma süresinin yasal sınırın altında (örneğin 40 saat) belirlendiği durumlarda, 40 saat ile yasal sınır olan 45 saat arasında yapılan çalışmalara ne ad verilir?",
+    "options": [
+      "A) Fazla Çalışma",
+      "B) Fazla Sürelerle Çalışma",
+      "C) Deneme Süresi Çalışması",
+      "D) Gece Çalışması"
+    ],
+    "answer": "B",
+    "explanation": "Haftalık çalışma süresinin sözleşmeyle 45 saatin altında belirlendiği hallerde, bu süreyi aşan ve 45 saate kadar olan çalışmalara 'Fazla Sürelerle Çalışma' denir."
+  },
+  {
+    "id": 120,
+    "question": "İş Kanunu'na göre, fazla sürelerle çalışmalarda (sözleşmeli süre ile 45 saat arası) her bir saat fazla çalışma için işçiye ödenecek ücret, normal çalışma ücretinin yüzde kaç fazlasıdır?",
+    "options": [
+      "A) Yüzde 25 fazlasıdır.",
+      "B) Yüzde 50 fazlasıdır.",
+      "C) Yüzde 100 fazlasıdır.",
+      "D) Ek ödeme yapılmaz."
+    ],
+    "answer": "A",
+    "explanation": "Fazla sürelerle çalışmalarda her fazla saat için ücret %25 zamlı ödenir. 45 saati aşan 'Fazla Çalışma'larda ise ücret %50 zamlı ödenir."
+  },
+  {
+    "id": 121,
+    "question": "İSG kurul toplantısında bir konuda oylama yapılmış ve oylar eşit çıkmıştır. Bu durumda yasal olarak karar nasıl belirlenir?",
+    "options": [
+      "A) Karar ertelenir ve bir sonraki toplantıya bırakılır.",
+      "B) Kurul başkanının (işveren veya vekilinin) oyu kararı belirler.",
+      "C) Kurul sekreterinin oyu iki oy sayılır.",
+      "D) Kurul feshedilir."
+    ],
+    "answer": "B",
+    "explanation": "İSG Kurulları yönetmeliğine göre oyların eşitliği halinde başkanın (işverenin veya vekilinin) oyu kararı belirler."
+  },
+  {
+    "id": 122,
+    "question": "İSG Kurulu toplantısında oy çokluğu ile alınan kararların işveren açısından hukuki niteliği nedir?",
+    "options": [
+      "A) Sadece tavsiye niteliğindedir, işveren uymak zorunda değildir.",
+      "B) Kurul kararları işveren ve çalışanlar için bağlayıcıdır, işveren bu kararları uygulamakla yükümlüdür.",
+      "C) Kararlar sadece Çalışma Bakanlığı onaylarsa bağlayıcı olur.",
+      "D) Kararlar sadece Çok Tehlikeli sınıfta bağlayıcıdır."
+    ],
+    "answer": "B",
+    "explanation": "İSG Kurulu kararları işveren için bağlayıcıdır. Kurulun aldığı kararlar doğrultusundaki tedbirleri işveren yerine getirmek zorundadır."
+  },
+  {
+    "id": 123,
+    "question": "İSG kurulunda çalışanların görüşlerini yansıtmak amacıyla kurulda yer alan ve üyeler arasında bulunan temsilciye ne ad verilir?",
+    "options": [
+      "A) Başformen",
+      "B) Çalışan Temsilcisi",
+      "C) Sendika Avukatı",
+      "D) Sivil Savunma Uzmanı"
+    ],
+    "answer": "B",
+    "explanation": "Kurulda çalışanları temsil etmek üzere çalışan temsilcisi yer alır. Çalışan sayısına göre temsilci sayısı yasal olarak belirlenir."
+  },
+  {
+    "id": 124,
+    "question": "İşyerinde ciddi ve yakın bir tehlike nedeniyle çalışmaktan kaçınma hakkını kullanan bir işçiyi, bu hakkını kullandığı gerekçesiyle işveren işten çıkarabilir mi?",
+    "options": [
+      "A) Evet, işveren istediği zaman tazminatsız çıkarabilir.",
+      "B) Hayır, çalışmaktan kaçınma hakkının yasal kullanımı nedeniyle iş sözleşmesi feshedilemez, aksi fesih haksız fesih sayılır.",
+      "C) Sadece Az Tehlikeli işyerlerinde çıkarabilir.",
+      "D) Sadece işçi yazılı izin almamışsa çıkarabilir."
+    ],
+    "answer": "B",
+    "explanation": "Çalışmaktan kaçınma hakkı yasal bir haktır. Bu hakkın kullanılması nedeniyle çalışanın iş sözleşmesi feshedilemez, ücreti kesilemez."
+  },
+  {
+    "id": 125,
+    "question": "Ciddi ve yakın tehlike durumunda çalışanın başvurusu üzerine kurul veya işveren gerekli tedbiri almazsa, işçi hangi yasal hakkını kullanarak iş sözleşmesini derhal sonlandırabilir?",
+    "options": [
+      "A) Anlaşmalı fesih",
+      "B) Haklı nedenle derhal fesih hakkı",
+      "C) Askıya alma hakkı",
+      "D) İhbar süreli fesih"
+    ],
+    "answer": "B",
+    "explanation": "Tedbir alınmaması halinde çalışan iş sözleşmesini yasal olarak haklı nedenle derhal feshetme hakkına sahip olur ve kıdem tazminatını talep edebilir."
+  },
+  {
+    "id": 126,
+    "question": "Sanayi devrimi döneminde, fabrikasında günde 8 saatlik çalışma sınırını savunan, çocuk işçi çalıştırmayan ve işçiler için ilk kez İSG sosyal reformları öneren işveren kimdir?",
+    "options": [
+      "A) Bernardino Ramazzini",
+      "B) Robert Owen",
+      "C) Thomas Edison",
+      "D) Henry Ford"
+    ],
+    "answer": "B",
+    "explanation": "Robert Owen, sanayi devrimi sırasında kendi fabrikasında günde 8 saatlik çalışma limitini uygulayan ve çocuk çalıştırmayı yasaklayan öncü bir sosyal reformcudur."
+  },
+  {
+    "id": 127,
+    "question": "Osmanlı İmparatorluğu döneminde 1865 yılında çıkarılan, maden işçilerinin çalışma koşullarını düzenleyen, dinlenme süreleri ve hekim bulundurma zorunluluğu getiren ilk yasal belge hangisidir?",
+    "options": [
+      "A) Tanzimat Fermanı",
+      "B) Dilaver Paşa Nizamnamesi",
+      "C) Maadin Nizamnamesi",
+      "D) Mecelle"
+    ],
+    "answer": "B",
+    "explanation": "1865 tarihli Dilaver Paşa Nizamnamesi, Ereğli kömür havzasındaki maden işçilerinin haklarını, dinlenme saatlerini ve hekim zorunluluğunu düzenleyen ilk Osmanlı belgesidir."
+  },
+  {
+    "id": 128,
+    "question": "Osmanlı döneminde 1869 yılında yürürlüğe giren ve kömür dışındaki diğer tüm madenleri de kapsayan, iş kazalarında tazminat ödenmesini yasal hükme bağlayan ilk nizamname hangisidir?",
+    "options": [
+      "A) Dilaver Paşa Nizamnamesi",
+      "B) Maadin Nizamnamesi",
+      "C) Kanun-i Esasi",
+      "D) Polis Nizamnamesi"
+    ],
+    "answer": "B",
+    "explanation": "1869 tarihli Maadin Nizamnamesi, tüm madenleri kapsayarak iş kazalarında işverenin tazminat ödeme zorunluluğunu getiren tarihi bir belgedir."
+  },
+  {
+    "id": 129,
+    "question": "Bir otomotiv boyahanesinde zehirli solvent bazlı boyaların yerine su bazlı boyaların kullanılmaya başlanması, risk kontrol önlemlerinin hiyerarşik sıralamasında hangi basamağa girer?",
+    "options": [
+      "A) Eliminasyon (Tehlikenin ortadan kaldırılması)",
+      "B) İkame (Substitution - Tehlikeli olanın daha az tehlikeliyle değiştirilmesi)",
+      "C) Mühendislik Önlemi (Toplu Koruma)",
+      "D) İdari Önlem"
+    ],
+    "answer": "B",
+    "explanation": "Tehlikeli bir kimyasalın yerine daha az tehlikeli bir kimyasal koymak klasik bir 'İkame' (Substitution) örneğidir."
+  },
+  {
+    "id": 130,
+    "question": "Aşağıdaki uygulamalardan hangisi risk kontrol hiyerarşisinde 'Mühendislik Önlemleri / Toplu Koruma' kapsamında değerlendirilir?",
+    "options": [
+      "A) Kimyasal tankerini tamamen kaldırmak",
+      "B) Gürültülü makinenin etrafına ses yalıtımlı kabin yapmak ve genel havalandırma kurmak",
+      "C) Çalışanlara kulak tıkacı dağıtmak",
+      "D) Vardiya saatlerini düzenlemek"
+    ],
+    "answer": "B",
+    "explanation": "Fiziksel bariyerler, yalıtımlar, havalandırma sistemleri tehlike kaynağına müdahale eden mühendislik/toplu koruma önlemleridir."
+  },
+  {
+    "id": 131,
+    "question": "Aşağıdakilerden hangisi risk kontrol hiyerarşisinde 'İdari Önlemler / İşaretler / Uyarılar' basamağına bir örnektir?",
+    "options": [
+      "A) Tehlikeli asidi kullanmayı bırakmak",
+      "B) Rotasyonel (vardiyalı) çalışma yaptırarak işçinin tehlikeye maruz kalma süresini azaltmak",
+      "C) Çelik burunlu ayakkabı giymek",
+      "D) Kaynaktan uzaklaştırmak"
+    ],
+    "answer": "B",
+    "explanation": "Çalışma saatlerinin düzenlenmesi, vardiyalar, rotasyonlar, eğitimler ve uyarı levhaları asılması idari önlemler basamağına girer."
+  },
+  {
+    "id": 132,
+    "question": "İşyerinde zamanla tehlikeli durumların çalışanlar tarafından normal karşılanması, tehlikelere karşı duyarlılığın azalması durumuna ne ad verilir?",
+    "options": [
+      "A) Proaktif algı",
+      "B) Kanıksama (Alışma / Habituation)",
+      "C) Bilişsel yetkinlik",
+      "D) Risk yönetimi"
+    ],
+    "answer": "B",
+    "explanation": "İSG psikolojisinde, tehlikeli ortamlarda uzun süre çalıştıktan sonra tehlikeleri fark etmeme ve alışma durumuna 'Kanıksama' (Habituation) denir."
+  },
+  {
+    "id": 133,
+    "question": "Bir çalışanın tehlike algısını (öznel risk algısını) geçici olarak en yüksek seviyeye çıkaran faktör aşağıdakilerden hangisidir?",
+    "options": [
+      "A) İşyerinde yakın zamanda ciddi yaralanmalı bir iş kazasının yaşanması",
+      "B) Şirketin NACE kodunun değişmesi",
+      "C) Kulaklık renginin mavi olması",
+      "D) Maaşının artırılması"
+    ],
+    "answer": "A",
+    "explanation": "Kaza yaşanmasıyla birlikte algılanan risk düzeyi ani şekilde yükselir. Bu yükselme kazanın ciddiyeti ile doğru orantılıdır."
+  },
+  {
+    "id": 134,
+    "question": "Dağcıların veya sirk cambazlarının risk algılarının normal insanlara göre düşük olması, İSG teorisine göre ne tür bir davranışsal tehlike doğurur?",
+    "options": [
+      "A) İş kazalarını tamamen sıfırlar.",
+      "B) Deneyimden kaynaklanan aşırı özgüvenle birlikte risk azaltıcı önlemlerin göz ardı edilmesine yol açabilir.",
+      "C) KKD kullanım maliyetlerini düşürür.",
+      "D) İSG uzmanının işini kolaylaştırır."
+    ],
+    "answer": "B",
+    "explanation": "Deneyim kaynaklı düşük risk algısı aşırı özgüvene yol açarak işçilerin kuralları kanıksamasına ve önlemleri ihmal etmesine sebep olur."
+  },
+  {
+    "id": 135,
+    "question": "Belirsiz süreli iş sözleşmesini yasal ihbar sürelerini beklemeksizin derhal feshetmek isteyen tarafın karşı tarafa ödemesi gereken tazminat hangisidir?",
+    "options": [
+      "A) Kıdem Tazminatı",
+      "B) İhbar Tazminatı (İhbar öneline ait ücretin peşin ödenmesi)",
+      "C) İşe Başlatmama Tazminatı",
+      "D) Kötüniyet Tazminatı"
+    ],
+    "answer": "B",
+    "explanation": "İhbar süresini beklemek istemeyen taraf, bu süreye karşılık gelen ücreti peşin ödeyerek sözleşmeyi feshedebilir. Buna ihbar tazminatı denir."
+  },
+  {
+    "id": 136,
+    "question": "Kıdemi 4 yıl olan bir işçiyi ihbar süresi tanımadan derhal işten çıkarmak isteyen işveren, işçiye kaç haftalık ücreti tutarında ihbar tazminatı ödemelidir?",
+    "options": [
+      "A) 2 haftalık",
+      "B) 4 haftalık",
+      "C) 6 haftalık",
+      "D) 8 haftalık"
+    ],
+    "answer": "D",
+    "explanation": "Kıdemi 3 yıldan fazla olan işçinin ihbar süresi 8 haftadır. İhbar süresi verilmediği için 8 haftalık ücret ihbar tazminatı olarak peşin ödenmelidir."
+  },
+  {
+    "id": 137,
+    "question": "İşe iade davasını kazanan işçi, kesinleşen mahkeme kararının tebliğinden itibaren en geç kaç iş günü içinde işe başlatılması için işverene başvurmak zorundadır?",
+    "options": [
+      "A) 3 iş günü",
+      "B) 5 iş günü",
+      "C) 10 iş günü",
+      "D) 30 gün"
+    ],
+    "answer": "C",
+    "explanation": "İşçi, kesinleşen mahkeme kararının kendisine tebliğinden itibaren 10 iş günü içinde işe başlatılması için işverene başvurmalıdır. Aksi halde hakkını kaybeder."
+  },
+  {
+    "id": 138,
+    "question": "Yavuz Hoca'nın final sınavı duyurularına göre, İSG final sınavında toplam kaç soru sorulacaktır, bu soruların kaç tanesi bonus (ekstra) sorudur ve her soru kaç puandır?",
+    "options": [
+      "A) 20 soru - 0 bonus - 5 puan",
+      "B) 25 soru - 2 bonus - 4 puan",
+      "C) 27 soru - 2 bonus - 4 puan",
+      "D) 30 soru - 5 bonus - 3.3 puan"
+    ],
+    "answer": "C",
+    "explanation": "Yavuz Hoca'nın 20.txt duyurusuna göre sınavda toplam 27 soru olup, bunlardan 2 tanesi bonus sorudur ve her soru 4 puandır."
+  },
+  {
+    "id": 139,
+    "question": "Yavuz Hoca'nın final sınavı çalışma yönergesine göre, aşağıdaki ders konularından hangileri final sınavı kapsamına DAHİL EDİLMEMİŞTİR?",
+    "options": [
+      "A) Konu 1 ve Konu 4/5",
+      "B) Konu 2 ve Konu 3",
+      "C) Konu 6/7 ve Konu 8",
+      "D) Konu 9 ve Konu 11"
+    ],
+    "answer": "B",
+    "explanation": "1.txt duyurusuna göre Konu 2 ve Konu 3 final sınavına dahil değildir, öğrenciler bu konulara çalışmak zorunda değildir."
+  },
+  {
+    "id": 140,
+    "question": "Yavuz Hoca'nın 1.txt ve 20.txt duyurularına göre, İSG final sınavının tarihi, saati ve ağırlıklı konuları hakkında aşağıdakilerden hangisi doğrudur?",
+    "options": [
+      "A) 10 Haziran Saat 16.30 - Konu 6/7 ve Konu 9 ağırlıktadır",
+      "B) 15 Haziran Saat 10.00 - Konu 1 ve Konu 8 ağırlıktadır",
+      "C) 10 Haziran Saat 14.00 - Konu 4/5 ve Konu 11 ağırlıktadır",
+      "D) 20 Haziran Saat 16.30 - Konu 2 ve Konu 3 ağırlıktadır"
+    ],
+    "answer": "A",
+    "explanation": "1.txt ve 20.txt duyurularına göre sınav 10 Haziran saat 16.30'da yapılacak olup (dekanlık kararıyla değişme ihtimali saklıdır), sınav Konu 6/7 ve özellikle Konu 9 ağırlıklıdır."
+  },
+  {
+    "id": 141,
+    "question": "İşyerlerinin yasal olarak yaptıkları ana faaliyete göre aldıkları NACE kodlarının kelime anlamı ve kapsamı hangisidir?",
+    "options": [
+      "A) Ulusal Çalışan Eğitimi Standardı",
+      "B) Avrupa Birliği Ekonomik Faaliyetlerin Sınıflandırılması",
+      "C) Türkiye İş Hukuku Tazminat Sınırları",
+      "D) Uluslararası Baret Kalite Standardı"
+    ],
+    "answer": "B",
+    "explanation": "NACE, Avrupa Birliği'nde ekonomik faaliyetlerin istatistiki olarak sınıflandırılması amacıyla kullanılan kodlama sistemidir."
+  },
+  {
+    "id": 142,
+    "question": "Aşağıdaki iş kollarından hangisi NACE kodları tebliğine göre doğrudan 'Çok Tehlikeli' sınıfa girer?",
+    "options": [
+      "A) Gıda fabrikası ve paketleme tesisleri",
+      "B) Tünel, baraj, köprü inşaat şantiyeleri ve yer altı maden ocakları",
+      "C) Diş poliklinikleri ve tıp merkezleri",
+      "D) Perakende satış mağazaları"
+    ],
+    "answer": "B",
+    "explanation": "Madenler, ağır sanayi ve inşaat şantiyeleri yasal olarak Çok Tehlikeli sınıfta değerlendirilir."
+  },
+  {
+    "id": 143,
+    "question": "Diş klinikleri, mobilya imalathaneleri ve gıda işleme tesisleri NACE kodları tebliğine göre hangi tehlike sınıfında yer alır?",
+    "options": [
+      "A) Az Tehlikeli",
+      "B) Tehlikeli",
+      "C) Çok Tehlikeli",
+      "D) Tehlikesiz"
+    ],
+    "answer": "B",
+    "explanation": "Diş poliklinikleri, mobilya üretimi ve gıda işleme fabrikaları yasal olarak Tehlikeli sınıftadır."
+  },
+  {
+    "id": 144,
+    "question": "Büro ve ofis faaliyetleri, bankalar, okullar ve perakende satış yapan mağazalar NACE kodlarına göre hangi tehlike sınıfında yer almaktadır?",
+    "options": [
+      "A) Az Tehlikeli",
+      "B) Tehlikeli",
+      "C) Çok Tehlikeli",
+      "D) Sorumluluk Dışı"
+    ],
+    "answer": "A",
+    "explanation": "Büro faaliyetleri, okullar, bankalar ve perakende ticaret yasal olarak Az Tehlikeli sınıfa girer."
+  },
+  {
+    "id": 145,
+    "question": "Çok Tehlikeli sınıftaki bir inşaat şantiyesinde çalışan bir işçinin alması gereken temel İSG eğitimi asgari kaç saattir ve eğitim hangi periyotla tekrarlanmalıdır?",
+    "options": [
+      "A) En az 8 saat - 3 yılda bir",
+      "B) En az 12 saat - 2 yılda bir",
+      "C) En az 16 saat - Yılda en az bir defa",
+      "D) En az 20 saat - 5 yılda bir"
+    ],
+    "answer": "C",
+    "explanation": "Çok Tehlikeli sınıftaki çalışanların temel İSG eğitimi asgari 16 saattir ve bu eğitim yılda en az bir defa yenilenmek zorundadır."
+  },
+  {
+    "id": 146,
+    "question": "Tehlikeli sınıftaki bir imalathanede çalışan işçinin alması gereken temel İSG eğitimi asgari kaç saattir ve eğitim hangi periyotla tekrarlanır?",
+    "options": [
+      "A) En az 8 saat - 3 yılda bir",
+      "B) En az 12 saat - En geç 2 yılda bir",
+      "C) En az 16 saat - Yılda bir",
+      "D) En az 12 saat - 5 yılda bir"
+    ],
+    "answer": "B",
+    "explanation": "Tehlikeli sınıfta yer alan çalışanların temel İSG eğitimleri asgari 12 saattir ve en geç 2 yılda bir yenilenmelidir."
+  },
+  {
+    "id": 147,
+    "question": "Az Tehlikeli sınıftaki bir perakende mağazasında çalışan tezgahtarın alması gereken temel İSG eğitimi asgari kaç saattir ve en geç hangi periyotla yenilenmelidir?",
+    "options": [
+      "A) En az 8 saat - En geç 3 yılda bir",
+      "B) En az 10 saat - 2 yılda bir",
+      "C) En az 12 saat - Yılda bir",
+      "D) En az 16 saat - 5 yılda bir"
+    ],
+    "answer": "A",
+    "explanation": "Az Tehlikeli sınıfta temel İSG eğitimi asgari 8 saattir ve bu eğitim en geç 3 yılda bir yenilenmelidir."
+  },
+  {
+    "id": 148,
+    "question": "Yavuz Hoca'nın 17.txt duyurusuna göre, final sınavındaki konular ve kavramlar arası ilişkiler hakkında temel kural nedir ve bu kuralın tek istisnası hangisidir?",
+    "options": [
+      "A) Ders notlarında yazmayan her mantıklı ilişki doğru kabul edilebilir; istisnası yoktur.",
+      "B) Sadece ders notlarında belirtilen ilişkiler geçerlidir, notlarda geçmeyen mantıksal çıkarımlar kullanılmamalıdır; tek istisnası NACE kodunun birçok konuyla ilişkili olmasıdır.",
+      "C) Sadece internetten bulunan İSG sorularındaki ilişkiler esastır; istisnası Borçlar Kanunudur.",
+      "D) Tüm ders notları bağımsızdır, hiçbir konu ilişkili değildir; istisnası iş kazalarıdır."
+    ],
+    "answer": "B",
+    "explanation": "17.txt duyurusuna göre, ders notlarımızda 'şu şunla ilişkilidir' diye belirtilmeyen bir konu sınavda ilişkili kabul edilmeyecektir. Bunun tek istisnası, birçok konuyla ilişkili olan NACE kodudur. Sınav soruları strictly ders notlarına göre hazırlanmıştır."
+  },
+  {
+    "id": 149,
+    "question": "Yavuz Hoca'nın 5.txt çalışma tekniği önerisine göre, final sınavı öncesinde daha zor test soru örnekleri görmek isteyen öğrencilerin Google'da yapması önerilen arama formatı nasıldır?",
+    "options": [
+      "A) 'isg soru; acil durum planı', 'isg soru; risk yönetimi' gibi noktalı virgüllü kalıplarla arama yapmak",
+      "B) Sadece 'isg nedir' araması yapmak",
+      "C) '4857 sayılı kanun ceza miktarları' araması yapmak",
+      "D) 'alpaslan hoca sınav soruları pdf' araması yapmak"
+    ],
+    "answer": "A",
+    "explanation": "Hoca 5.txt duyurusunda Google'da 'isg soru; acil durum planı', 'isg soru; risk yönetimi', 'isg soru; kazası...' vb. şeklinde arama yaparak değişik ve zor test sorularına çalışılmasını önermiştir."
+  },
+  {
+    "id": 150,
+    "question": "Yavuz Hoca'nın 11.txt ve ders notu 9A sayfa 147-149'daki vurgusuna göre, risk kontrol önlemlerinin hiyerarşik sıralaması (etkinlik sırası) en etkiliden en az etkiliye doğru nasıl olmalıdır?",
+    "options": [
+      "A) KKD - İdari Önlemler - Mühendislik Önlemleri - İkame - Eliminasyon",
+      "B) Eliminasyon - İkame - Mühendislik Önlemleri - İdari Önlemler - KKD",
+      "C) İkame - Eliminasyon - İdari Önlemler - KKD - Mühendislik Önlemleri",
+      "D) Mühendislik Önlemleri - Eliminasyon - İkame - KKD - İdari Önlemler"
+    ],
+    "answer": "B",
+    "explanation": "Sayfa 147-149 tablolarındaki risk kontrol hiyerarşisi sırası hayati önemdedir: 1. Eliminasyon (Kaynağında yok etme), 2. İkame (Tehlikesizle değiştirme), 3. Mühendislik önlemleri (Toplu koruma), 4. İdari önlemler (Eğitim, rotasyon, uyarı), 5. KKD (Kişisel koruma)."
+  }
+]

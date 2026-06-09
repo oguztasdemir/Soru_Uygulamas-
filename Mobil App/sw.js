@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ml-app-v3';
+const CACHE_NAME = 'ml-app-v4';
 const ASSETS = [
   'index.html',
   'style.css',
@@ -11,6 +11,7 @@ const ASSETS = [
   'gai/questions.json',
   'ds/questions.json',
   'isg/questions.json',
+  'isg/tips_questions.json',
   'ml/cards.json',
   'gai/cards.json',
   'ds/cards.json',
