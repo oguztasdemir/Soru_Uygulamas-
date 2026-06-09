@@ -685,15 +685,15 @@
   },
   {
     "id": 58,
-    "question": "Risk Yönetimi konusuna çalışırken Konu 9B ders notundaki hangi sayfalar hatalıdır ve doğru değerler için hangi ders notuna bakılmalıdır?",
+    "question": "4857 sayılı İş Kanunu'na göre, kıdemi fiilen 1 yıldır çalışan bir işçinin sözleşmesi feshedilecektir. Yasal ihbar süresi ne kadardır?",
     "options": [
-      "A) 9B notu tamamen doğrudur.",
-      "B) 9B sayfa Z4, 114 ve 115'teki tablolar ve değerler hatalıdır; doğrusu için 9A sayfa 137 ve 139 kullanılmalıdır.",
-      "C) 9B sayfa 20 ve 30 hatalıdır; doğrusu için Ekstra.pdf sayfa 10'a bakılmalıdır.",
-      "D) 9B sayfa 50 hatalıdır; doğrusu için 10.pdf notuna çalışılmalıdır."
+      "A) 2 hafta",
+      "B) 4 hafta",
+      "C) 6 hafta",
+      "D) 8 hafta"
     ],
     "answer": "B",
-    "explanation": "9B ders notundaki sayfa Z4, 114 ve 115 değerleri hatalı ve tabloları yanlıştır. Doğru tablolar için 9A sayfa 137 ve 139'a çalışılması gerekmektedir."
+    "explanation": "Kıdemi 6 ay ile 1.5 yıl arasında olan çalışanların ihbar (fesih bildirim) süresi 4 haftadır."
   },
   {
     "id": 59,
@@ -937,27 +937,27 @@
   },
   {
     "id": 79,
-    "question": "OHS final sınavına hazırlanan bir öğrenci, hangi ders notundaki tablolardaki risk yönetimi değerlerinin hatalı olduğunu bilmeli ve doğrusu için nereye çalışmalıdır?",
+    "question": "4857 sayılı İş Kanunu'na göre, kıdemi 4 yıl olan bir işçinin uyması gereken yasal ihbar süresi ne kadardır?",
     "options": [
-      "A) 9A.pdf hatalıdır; doğrusu için 9B.pdf sayfa 139'a bakılmalıdır.",
-      "B) 9B.pdf sayfa Z4, 114 ve 115 hatalıdır; doğrusu için 9A.pdf sayfa 137 ve 139 kullanılmalıdır.",
-      "C) Ekstra.pdf hatalıdır; doğrusu için 1.pdf sayfa 17'ye bakılmalıdır.",
-      "D) 11.pdf hatalıdır; doğrusu için 10.pdf kullanılmalıdır."
+      "A) 2 hafta",
+      "B) 4 hafta",
+      "C) 6 hafta",
+      "D) 8 hafta"
     ],
-    "answer": "B",
-    "explanation": "Hocanın 2.txt duyurusunda belirttiği gibi, 9B notunun sayfa Z4, 114 ve 115'indeki risk yönetimi değerleri ve tabloları hatalıdır. Doğrusu için 9A.pdf sayfa 137 ve 139 kullanılmalıdır."
+    "answer": "D",
+    "explanation": "Kıdemi 3 yıldan fazla sürmüş olan çalışanların ihbar süresi 8 haftadır."
   },
   {
     "id": 80,
-    "question": "Risk Yönetimi ders notu 9B'deki hatalı matris verileri düşünüldüğünde, doğru risk değerlendirme tabloları (olasılık, şiddet ve risk puanı dereceleri) için çalışılması gereken asıl kaynak ve sayfa aralıkları hangisidir?",
+    "question": "4857 sayılı İş Kanunu'na göre, kıdemi 2 yıl olan bir işçinin yasal ihbar süresi ne kadardır?",
     "options": [
-      "A) 9B.pdf sayfa 74 ve 114",
-      "B) 9A.pdf sayfa 135, 137, 139",
-      "C) Ekstra.pdf sayfa 2 ve 4",
-      "D) 10.pdf sayfa 95"
+      "A) 2 hafta",
+      "B) 4 hafta",
+      "C) 6 hafta",
+      "D) 8 hafta"
     ],
-    "answer": "B",
-    "explanation": "Hocanın resmi final yönergesinde belirtildiği üzere, risk olasılık ve şiddet değerleri için 9A.pdf sayfa 135 ve 136, doğru risk matrisi puan değerlendirme eylemleri için ise 9A.pdf sayfa 137 ve 139 çalışılmalıdır."
+    "answer": "C",
+    "explanation": "Kıdemi 1.5 yıl ile 3 yıl arasında olan çalışanlar için ihbar süresi 6 haftadır."
   },
   {
     "id": 81,
@@ -985,51 +985,51 @@
   },
   {
     "id": 83,
-    "question": "Hocanın final çalışma önerisinde belirttiği üzere, Alpaslan Hoca'nın ders notunda örnek test soruları hangi sayfadan itibaren başlamaktadır?",
+    "question": "4857 sayılı İş Kanunu'na göre, kıdemi 3 ay olan bir işçinin yasal ihbar süresi kaç haftadır?",
     "options": [
-      "A) Sayfa 50'den itibaren",
-      "B) Sayfa 100'den itibaren",
-      "C) Sayfa 139'dan itibaren",
-      "D) Sayfa 240'tan itibaren"
+      "A) 2 hafta",
+      "B) 4 hafta",
+      "C) 6 hafta",
+      "D) 8 hafta"
     ],
-    "answer": "D",
-    "explanation": "5.txt/5.png duyurusunda hocanın çalışma tekniği önerisinde Alpaslan Hoca ders notu sonlarında Sayfa 240'tan itibaren örnek test soruları olduğu yazılmıştır."
+    "answer": "A",
+    "explanation": "Kıdemi 6 aydan az sürmüş olan çalışanların yasal ihbar süresi 2 haftadır."
   },
   {
     "id": 84,
-    "question": "Classroom duyurularındaki test soru örnekleri arama tavsiyesine göre, Google'da yapılması önerilen arama kelime kalıpları arasında hangisi yer almaz?",
+    "question": "İşe iade davasını kazanan işçiyi işveren 1 ay içinde işe başlatmazsa ödemek zorunda kalacağı tazminat limiti nedir?",
     "options": [
-      "A) 'isg soru; acil durum planı'",
-      "B) 'isg soru; risk yönetimi'",
-      "C) 'isg soru; iş kazası'",
-      "D) 'isg soru; vergi hukuku cezaları'"
+      "A) En az 1, en çok 3 aylık ücreti tutarında",
+      "B) En az 4, en çok 8 aylık ücreti tutarında",
+      "C) En az 6, en çok 12 aylık ücreti tutarında",
+      "D) Sabit 10 aylık ücret tutarı"
     ],
-    "answer": "D",
-    "explanation": "Duyuruda 'isg soru; acil durum planı', 'isg soru; risk yönetimi', 'isg soru; kazası...' vb. aramalar tavsiye edilmiş olup, vergi hukuku kapsam dışıdır."
+    "answer": "B",
+    "explanation": "Mahkeme kararı uyarınca işe başlatmama tazminatı en az 4 aylık, en çok 8 aylık ücret tutarında belirlenir."
   },
   {
     "id": 85,
-    "question": "İSG sınav yönergesinde, hangi iki yasal mevzuat hariç olmak üzere diğer tüm yönetmeliklerin ceza süreleri, kanun tarihleri ve numaralarının ezberlenmeyeceği belirtilmiştir?",
+    "question": "İş Kanunu'na göre, günlük çalışma süresi (fazla mesai dahil) hiçbir koşulda kaç saati aşamaz?",
     "options": [
-      "A) 6331 Sayılı OHS Kanunu ve 4857 Sayılı İş Kanunu",
-      "B) 5510 Sayılı Kanun ve 1593 Sayılı Hıfzıssıhha Kanunu",
-      "C) ISO 45001 ve OHSAS 18001",
-      "D) Borçlar Kanunu ve Medeni Kanun"
+      "A) 9 saat",
+      "B) 11 saat",
+      "C) 12 saat",
+      "D) 15 saat"
     ],
-    "answer": "A",
-    "explanation": "Hocanın 7.txt duyurusunda belirttiği gibi, 6331 ve 4857 sayılı kanunlar hariç iş hukukundaki diğer kanun numaraları, tarihleri, ceza süreleri ve net tazminat miktarları ezberlenmeyecek, genel olarak anlaşılmaya çalışılacaktır."
+    "answer": "B",
+    "explanation": "Yasa gereği günlük toplam çalışma süresi 11 saati aşamaz."
   },
   {
     "id": 86,
-    "question": "OHS müfredatındaki Konu 10 ve 11 ile ilgili olarak yasal sorumluluklar ve ders notu çalışma düzeyleri düşünüldüğünde hangisi doğrudur?",
+    "question": "İş Kanunu'na göre, bir işçiye yaptırılabilecek fazla çalışmanın (mesai) yıllık toplam sınırı kaç saattir?",
     "options": [
-      "A) Konu 10 ve 11'in tamamındaki tüm ceza miktarları kuruşu kuruşuna ezberlenmelidir.",
-      "B) Konu 10, 11 ders notumuzdur; detaylara boğulmadan çalışılmalı, 6331 ve 4857 dışındaki ceza süreleri ve tarihleri ezberlenmemelidir.",
-      "C) Konu 10 ve 11 final sınavına dahil değildir.",
-      "D) Sadece kanunların yürürlük tarihleri sorulacaktır."
+      "A) 180 saat",
+      "B) 220 saat",
+      "C) 270 saat",
+      "D) 300 saat"
     ],
-    "answer": "B",
-    "explanation": "Duyuru 7'de Konu 10 ve 11'in ders notumuz olduğu ancak detaylara, ceza miktarlarına veya diğer kanun numaralarına girilmeden genel hatlarıyla çalışılması gerektiği vurgulanmıştır."
+    "answer": "C",
+    "explanation": "Fazla çalışma süresinin toplamı bir yılda 270 saatten fazla olamaz."
   },
   {
     "id": 87,
@@ -1645,39 +1645,39 @@
   },
   {
     "id": 138,
-    "question": "Yavuz Hoca'nın final sınavı duyurularına göre, İSG final sınavında toplam kaç soru sorulacaktır, bu soruların kaç tanesi bonus (ekstra) sorudur ve her soru kaç puandır?",
+    "question": "İş Kanunu'na göre günlük normal dinlenme saatleri dışında kalan gece çalışmaları en fazla kaç saati aşamaz?",
     "options": [
-      "A) 20 soru - 0 bonus - 5 puan",
-      "B) 25 soru - 2 bonus - 4 puan",
-      "C) 27 soru - 2 bonus - 4 puan",
-      "D) 30 soru - 5 bonus - 3.3 puan"
+      "A) 6 saat",
+      "B) 7.5 saat",
+      "C) 9 saat",
+      "D) 11 saat"
     ],
-    "answer": "C",
-    "explanation": "Yavuz Hoca'nın 20.txt duyurusuna göre sınavda toplam 27 soru olup, bunlardan 2 tanesi bonus sorudur ve her soru 4 puandır."
+    "answer": "B",
+    "explanation": "İş Kanunu Madde 69'a göre, gece çalışmaları günde yedi buçuk (7.5) saati geçemez."
   },
   {
     "id": 139,
-    "question": "Yavuz Hoca'nın final sınavı çalışma yönergesine göre, aşağıdaki ders konularından hangileri final sınavı kapsamına DAHİL EDİLMEMİŞTİR?",
+    "question": "İSG Kanunu uyarınca, 'Çok Tehlikeli' sınıftaki işyerinde çalışanların periyodik sağlık raporları en geç kaç yılda bir yenilenmelidir?",
     "options": [
-      "A) Konu 1 ve Konu 4/5",
-      "B) Konu 2 ve Konu 3",
-      "C) Konu 6/7 ve Konu 8",
-      "D) Konu 9 ve Konu 11"
+      "A) Yılda bir",
+      "B) 2 yılda bir",
+      "C) 3 yılda bir",
+      "D) 5 yılda bir"
     ],
-    "answer": "B",
-    "explanation": "1.txt duyurusuna göre Konu 2 ve Konu 3 final sınavına dahil değildir, öğrenciler bu konulara çalışmak zorunda değildir."
+    "answer": "A",
+    "explanation": "Çok Tehlikeli sınıftaki işyerlerinde çalışanların periyodik sağlık raporları yılda en az bir kez yenilenmelidir."
   },
   {
     "id": 140,
-    "question": "Yavuz Hoca'nın 1.txt ve 20.txt duyurularına göre, İSG final sınavının tarihi, saati ve ağırlıklı konuları hakkında aşağıdakilerden hangisi doğrudur?",
+    "question": "İSG Kanunu uyarınca, 'Tehlikeli' sınıftaki işyerinde çalışanların periyodik sağlık raporları en geç kaç yılda bir yenilenmelidir?",
     "options": [
-      "A) 10 Haziran Saat 16.30 - Konu 6/7 ve Konu 9 ağırlıktadır",
-      "B) 15 Haziran Saat 10.00 - Konu 1 ve Konu 8 ağırlıktadır",
-      "C) 10 Haziran Saat 14.00 - Konu 4/5 ve Konu 11 ağırlıktadır",
-      "D) 20 Haziran Saat 16.30 - Konu 2 ve Konu 3 ağırlıktadır"
+      "A) Yılda bir",
+      "B) 2 yılda bir",
+      "C) 3 yılda bir",
+      "D) 5 yılda bir"
     ],
-    "answer": "A",
-    "explanation": "1.txt ve 20.txt duyurularına göre sınav 10 Haziran saat 16.30'da yapılacak olup (dekanlık kararıyla değişme ihtimali saklıdır), sınav Konu 6/7 ve özellikle Konu 9 ağırlıklıdır."
+    "answer": "C",
+    "explanation": "Tehlikeli sınıftaki işyerlerinde periyodik sağlık raporları en geç 3 yılda bir yenilenmek zorundadır."
   },
   {
     "id": 141,
@@ -1765,27 +1765,27 @@
   },
   {
     "id": 148,
-    "question": "Yavuz Hoca'nın 17.txt duyurusuna göre, final sınavındaki konular ve kavramlar arası ilişkiler hakkında temel kural nedir ve bu kuralın tek istisnası hangisidir?",
+    "question": "İSG Kanunu uyarınca, 'Az Tehlikeli' sınıftaki işyerinde çalışanların periyodik sağlık raporları en geç kaç yılda bir yenilenmelidir?",
     "options": [
-      "A) Ders notlarında yazmayan her mantıklı ilişki doğru kabul edilebilir; istisnası yoktur.",
-      "B) Sadece ders notlarında belirtilen ilişkiler geçerlidir, notlarda geçmeyen mantıksal çıkarımlar kullanılmamalıdır; tek istisnası NACE kodunun birçok konuyla ilişkili olmasıdır.",
-      "C) Sadece internetten bulunan İSG sorularındaki ilişkiler esastır; istisnası Borçlar Kanunudur.",
-      "D) Tüm ders notları bağımsızdır, hiçbir konu ilişkili değildir; istisnası iş kazalarıdır."
+      "A) Yılda bir",
+      "B) 3 yılda bir",
+      "C) 5 yılda bir",
+      "D) 7 yılda bir"
     ],
-    "answer": "B",
-    "explanation": "17.txt duyurusuna göre, ders notlarımızda 'şu şunla ilişkilidir' diye belirtilmeyen bir konu sınavda ilişkili kabul edilmeyecektir. Bunun tek istisnası, birçok konuyla ilişkili olan NACE kodudur. Sınav soruları strictly ders notlarına göre hazırlanmıştır."
+    "answer": "C",
+    "explanation": "Az Tehlikeli sınıftaki işyerlerinde periyodik sağlık raporları en geç 5 yılda bir yenilenir."
   },
   {
     "id": 149,
-    "question": "Yavuz Hoca'nın 5.txt çalışma tekniği önerisine göre, final sınavı öncesinde daha zor test soru örnekleri görmek isteyen öğrencilerin Google'da yapması önerilen arama formatı nasıldır?",
+    "question": "4857 sayılı İş Kanunu'na göre, temel çocuk çalıştırma yaş sınırı kaçtır?",
     "options": [
-      "A) 'isg soru; acil durum planı', 'isg soru; risk yönetimi' gibi noktalı virgüllü kalıplarla arama yapmak",
-      "B) Sadece 'isg nedir' araması yapmak",
-      "C) '4857 sayılı kanun ceza miktarları' araması yapmak",
-      "D) 'alpaslan hoca sınav soruları pdf' araması yapmak"
+      "A) 12 yaşını doldurmamış olmak",
+      "B) 15 yaşını doldurmamış çocukların çalıştırılması yasaktır",
+      "C) 18 yaşını doldurana kadar her iş yasaktır",
+      "D) Yaş sınırı yoktur"
     ],
-    "answer": "A",
-    "explanation": "Hoca 5.txt duyurusunda Google'da 'isg soru; acil durum planı', 'isg soru; risk yönetimi', 'isg soru; kazası...' vb. şeklinde arama yaparak değişik ve zor test sorularına çalışılmasını önermiştir."
+    "answer": "B",
+    "explanation": "İş Kanunu md. 71 uyarınca 15 yaşını doldurmamış çocukların çalıştırılması yasaktır."
   },
   {
     "id": 150,
