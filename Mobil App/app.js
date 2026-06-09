@@ -235,7 +235,7 @@ function selectCourse(courseId) {
         studyNotes = studyNotesISG;
         
         loadQuestions('isg/questions.json');
-        loadCards('isg/cards.json');
+        loadCards('isg/tips_questions.json');
         loadTipsQuestions('isg/tips_questions.json');
     }
     
@@ -260,6 +260,16 @@ function selectCourse(courseId) {
     document.querySelector('.app-nav').classList.remove('hidden');
     document.getElementById('change-course-btn').style.display = 'flex';
     document.getElementById('settings-toggle-btn').style.display = 'flex';
+    
+    // Toggle nav-cards visibility based on whether it is ISG
+    const cardsNavBtn = document.getElementById('nav-cards');
+    if (cardsNavBtn) {
+        if (activeCourse === 'isg') {
+            cardsNavBtn.style.display = 'flex';
+        } else {
+            cardsNavBtn.style.display = 'none';
+        }
+    }
     
     switchTab('dashboard');
 }
@@ -389,10 +399,40 @@ function loadCards(jsonFileName) {
             
             // Dynamically update the terminology quiz buttons
             const fullCardsBtn = document.getElementById('cards-full-btn');
-            if (fullCardsBtn) {
-                fullCardsBtn.setAttribute('onclick', `startCardsQuiz(${allCardsQuestions.length})`);
-                fullCardsBtn.querySelector('h4').innerText = `Tam Terim Sınavı (${allCardsQuestions.length} Terim)`;
-                fullCardsBtn.querySelector('p').innerText = `Sistemdeki ${allCardsQuestions.length} terimin tamamını çöz.`;
+            const opt10Title = document.getElementById('cards-opt-10-title');
+            const opt10Desc = document.getElementById('cards-opt-10-desc');
+            const opt25Title = document.getElementById('cards-opt-25-title');
+            const opt25Desc = document.getElementById('cards-opt-25-desc');
+            const screenTitle = document.getElementById('cards-screen-title');
+            const screenDesc = document.getElementById('cards-screen-desc');
+            const resumeTitleText = document.getElementById('cards-resume-title-text');
+            
+            if (activeCourse === 'isg') {
+                if (screenTitle) screenTitle.innerText = "İpucu Testi";
+                if (screenDesc) screenDesc.innerText = "Yavuz Hoca'nın sınav ipuçlarına ve özel ders notlarına dayalı sorularla çalışın.";
+                if (resumeTitleText) resumeTitleText.innerText = "Kaldığın İpucu Testine Devam Et";
+                if (opt10Title) opt10Title.innerText = "Hızlı İpucu Testi (10 Soru)";
+                if (opt10Desc) opt10Desc.innerText = "İpuçlarından rastgele seçilmiş 10 soru çöz.";
+                if (opt25Title) opt25Title.innerText = "Yarı İpucu Testi (25 Soru)";
+                if (opt25Desc) opt25Desc.innerText = "İpuçlarından rastgele seçilmiş 25 soru çöz.";
+                if (fullCardsBtn) {
+                    fullCardsBtn.setAttribute('onclick', `startCardsQuiz(${allCardsQuestions.length})`);
+                    fullCardsBtn.querySelector('h4').innerText = `Full Test (${allCardsQuestions.length} Soru)`;
+                    fullCardsBtn.querySelector('p').innerText = `Hocanın hazırladığı ${allCardsQuestions.length} sorunun tamamını çöz.`;
+                }
+            } else {
+                if (screenTitle) screenTitle.innerText = "Terim Sınav Modu";
+                if (screenDesc) screenDesc.innerText = "Hızlı kelime kartı testleriyle ders kavramlarını ve teorik temellerini pekiştirin.";
+                if (resumeTitleText) resumeTitleText.innerText = "Kaldığın Terim Testine Devam Et";
+                if (opt10Title) opt10Title.innerText = "Hızlı Terim Testi (10 Terim)";
+                if (opt10Desc) opt10Desc.innerText = "Karışık seçilmiş 10 terim sorusunu yanıtla.";
+                if (opt25Title) opt25Title.innerText = "Yarı Terim Testi (25 Terim)";
+                if (opt25Desc) opt25Desc.innerText = "Karışık seçilmiş 25 terim sorusunu yanıtla.";
+                if (fullCardsBtn) {
+                    fullCardsBtn.setAttribute('onclick', `startCardsQuiz(${allCardsQuestions.length})`);
+                    fullCardsBtn.querySelector('h4').innerText = `Tam Terim Sınavı (${allCardsQuestions.length} Terim)`;
+                    fullCardsBtn.querySelector('p').innerText = `Sistemdeki ${allCardsQuestions.length} terimin tamamını çöz.`;
+                }
             }
         })
         .catch(err => {
@@ -1278,14 +1318,20 @@ function showCardsQuestion() {
 
     // Header Info & Progress
     const totalCount = activeCardsQuiz.questions.length;
-    const indexText = `Terim ${activeCardsQuiz.currentIndex + 1} / ${totalCount}`;
+    const indexText = activeCourse === 'isg' ? 
+        `Soru ${activeCardsQuiz.currentIndex + 1} / ${totalCount}` : 
+        `Terim ${activeCardsQuiz.currentIndex + 1} / ${totalCount}`;
     document.getElementById('cards-question-number').innerText = indexText;
     
     const progressPercent = ((activeCardsQuiz.currentIndex) / totalCount) * 100;
     document.getElementById('cards-progress-fill').style.width = `${progressPercent}%`;
 
     // Question Text
-    document.getElementById('cards-question-text').innerText = `${question.question}`;
+    if (activeCourse === 'isg') {
+        document.getElementById('cards-question-text').innerHTML = `${question.id}. ${question.question}`;
+    } else {
+        document.getElementById('cards-question-text').innerText = `${question.question}`;
+    }
 
     // Options list
     const optionsContainer = document.getElementById('cards-options-list');
@@ -1434,18 +1480,34 @@ function showCardsResults() {
     const titleContainer = document.getElementById('cards-result-title');
     const textContainer = document.getElementById('cards-result-text');
 
-    if (ratio >= 80) {
-        emojiContainer.innerText = '🏆';
-        titleContainer.innerText = 'Harika Terim Bilgisi!';
-        textContainer.innerText = `Terimlere tamamen hakimsin! Başarı oranınız %${ratio}.`;
-    } else if (ratio >= 50) {
-        emojiContainer.innerText = '👍';
-        titleContainer.innerText = 'Güzel Deneme!';
-        textContainer.innerText = `Terimleri biraz daha gözden geçirmelisin. Başarı oranınız %${ratio}.`;
+    if (activeCourse === 'isg') {
+        if (ratio >= 80) {
+            emojiContainer.innerText = '🏆';
+            titleContainer.innerText = 'Harika Skor!';
+            textContainer.innerText = `Sınav ipuçlarına tamamen hakimsin! Başarı oranınız %${ratio}.`;
+        } else if (ratio >= 50) {
+            emojiContainer.innerText = '👍';
+            titleContainer.innerText = 'Güzel Deneme!';
+            textContainer.innerText = `İpuçlarını biraz daha gözden geçirmelisin. Başarı oranınız %${ratio}.`;
+        } else {
+            emojiContainer.innerText = '📚';
+            titleContainer.innerText = 'Tekrar Zamanı!';
+            textContainer.innerText = `Hoca ipuçlarını çalışarak tekrar dene. Başarı oranınız %${ratio}.`;
+        }
     } else {
-        emojiContainer.innerText = '📚';
-        titleContainer.innerText = 'Tekrar Zamanı!';
-        textContainer.innerText = `Ders notlarını ve kartları çalışarak tekrar dene. Başarı oranınız %${ratio}.`;
+        if (ratio >= 80) {
+            emojiContainer.innerText = '🏆';
+            titleContainer.innerText = 'Harika Terim Bilgisi!';
+            textContainer.innerText = `Terimlere tamamen hakimsin! Başarı oranınız %${ratio}.`;
+        } else if (ratio >= 50) {
+            emojiContainer.innerText = '👍';
+            titleContainer.innerText = 'Güzel Deneme!';
+            textContainer.innerText = `Terimleri biraz daha gözden geçirmelisin. Başarı oranınız %${ratio}.`;
+        } else {
+            emojiContainer.innerText = '📚';
+            titleContainer.innerText = 'Tekrar Zamanı!';
+            textContainer.innerText = `Ders notlarını ve kartları çalışarak tekrar dene. Başarı oranınız %${ratio}.`;
+        }
     }
     
     // Trigger confetti for celebration
@@ -1751,7 +1813,11 @@ function updateCardsResumeCard() {
         const total = activeCardsQuiz.questions.length;
         const min = String(Math.floor(activeCardsQuiz.seconds / 60)).padStart(2, '0');
         const sec = String(activeCardsQuiz.seconds % 60).padStart(2, '0');
-        document.getElementById('cards-resume-status').innerText = `Terim ${current} / ${total} - Geçen Süre: ${min}:${sec}`;
+        if (activeCourse === 'isg') {
+            document.getElementById('cards-resume-status').innerText = `Soru ${current} / ${total} - Geçen Süre: ${min}:${sec}`;
+        } else {
+            document.getElementById('cards-resume-status').innerText = `Terim ${current} / ${total} - Geçen Süre: ${min}:${sec}`;
+        }
     } else {
         resumeCard.style.display = 'none';
     }

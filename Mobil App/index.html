@@ -390,15 +390,15 @@
                 <!-- Terminology Quiz Mode Selection -->
                 <div id="cards-init-view" class="quiz-view active">
                     <div class="section-title">
-                        <h2>Terim Sınav Modu</h2>
-                        <p>Hızlı kelime kartı testleriyle ders kavramlarını ve teorik temellerini pekiştirin.</p>
+                        <h2 id="cards-screen-title">İpucu Testi</h2>
+                        <p id="cards-screen-desc">Yavuz Hoca'nın sınav ipuçlarına ve özel ders notlarına dayalı sorularla çalışın.</p>
                     </div>
 
                     <!-- Resume Active Cards Quiz Card -->
                     <div id="cards-resume-card" class="resume-card" style="display: none;" onclick="resumeCardsQuiz()">
                         <div class="resume-content">
-                            <h3><i class="fa-solid fa-play"></i> Kaldığın Terim Testine Devam Et</h3>
-                            <p id="cards-resume-status">Terim - / -</p>
+                            <h3><i class="fa-solid fa-play"></i> <span id="cards-resume-title-text">Kaldığın İpucu Testine Devam Et</span></h3>
+                            <p id="cards-resume-status">Soru - / -</p>
                         </div>
                         <i class="fa-solid fa-chevron-right arrow-icon" style="color: #ECC94B;"></i>
                     </div>
@@ -407,22 +407,22 @@
                         <button class="menu-item" onclick="startCardsQuiz(10)">
                             <div class="menu-icon"><i class="fa-solid fa-bolt"></i></div>
                             <div class="menu-text">
-                                <h4>Hızlı Terim Testi (10 Terim)</h4>
-                                <p>Karışık seçilmiş 10 terim sorusunu yanıtla.</p>
+                                <h4 id="cards-opt-10-title">Hızlı İpucu Testi (10 Soru)</h4>
+                                <p id="cards-opt-10-desc">İpuçlarından rastgele seçilmiş 10 soru çöz.</p>
                             </div>
                         </button>
                         <button class="menu-item" onclick="startCardsQuiz(25)">
                             <div class="menu-icon"><i class="fa-solid fa-list-check"></i></div>
                             <div class="menu-text">
-                                <h4>Yarı Terim Testi (25 Terim)</h4>
-                                <p>Karışık seçilmiş 25 terim sorusunu yanıtla.</p>
+                                <h4 id="cards-opt-25-title">Yarı İpucu Testi (25 Soru)</h4>
+                                <p id="cards-opt-25-desc">İpuçlarından rastgele seçilmiş 25 soru çöz.</p>
                             </div>
                         </button>
-                        <button class="menu-item" id="cards-full-btn" onclick="startCardsQuiz(20)">
+                        <button class="menu-item" id="cards-full-btn" onclick="startCardsQuiz(150)">
                             <div class="menu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                             <div class="menu-text">
-                                <h4>Tam Terim Sınavı (20 Terim)</h4>
-                                <p>Sistemdeki tüm terimleri çöz.</p>
+                                <h4 id="cards-opt-full-title">Full Test (150 Soru)</h4>
+                                <p id="cards-opt-full-desc">Hocanın hazırladığı 150 ipucu sorusunun tamamını çöz.</p>
                             </div>
                         </button>
                     </div>
@@ -434,13 +434,13 @@
                         <div class="progress-fill" id="cards-progress-fill" style="width: 0%"></div>
                     </div>
                     <div class="quiz-header-info">
-                        <span id="cards-question-number">Terim 1 / 10</span>
+                        <span id="cards-question-number">Soru 1 / 10</span>
                         <button class="hint-badge-btn" id="cards-hint-btn" onclick="showCardsHint()"><i class="fa-solid fa-lightbulb"></i> İpucu</button>
                         <span class="timer-badge" id="cards-timer"><i class="fa-solid fa-clock"></i> 00:00</span>
                     </div>
 
                     <div class="question-container">
-                        <p class="question-text" id="cards-question-text">Terim sorusu yükleniyor...</p>
+                        <p class="question-text" id="cards-question-text">Soru yükleniyor...</p>
                         <div class="hint-text-box" id="cards-hint-text-box" style="display: none;">
                             <i class="fa-solid fa-wand-magic-sparkles"></i> <span id="cards-hint-text">İpucu...</span>
                         </div>
@@ -469,7 +469,7 @@
                             🎉
                         </div>
                         <h2 id="cards-result-title">Tebrikler!</h2>
-                        <p id="cards-result-text">Terim testini başarıyla tamamladın.</p>
+                        <p id="cards-result-text">İpucu testini başarıyla tamamladın.</p>
                         
                         <div class="result-stats">
                             <div class="res-stat-item">
@@ -541,8 +541,8 @@
                 <span>Sınav Çöz</span>
             </button>
             <button class="nav-item" onclick="switchTab('cards')" id="nav-cards">
-                <i class="fa-solid fa-clone"></i>
-                <span>Terim Testi</span>
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>İpucu Testi</span>
             </button>
             <button class="nav-item" onclick="switchTab('wrong')" id="nav-wrong">
                 <i class="fa-solid fa-circle-xmark"></i>
