@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ml-app-v5';
+const CACHE_NAME = 'ml-app-v6';
 const ASSETS = [
   'index.html',
   'style.css',

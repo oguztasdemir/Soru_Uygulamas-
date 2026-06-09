@@ -235,8 +235,8 @@ function selectCourse(courseId) {
         studyNotes = studyNotesISG;
         
         loadQuestions('isg/questions.json');
-        loadCards('isg/tips_questions.json');
-        loadTipsQuestions('isg/tips_questions.json');
+        loadCards('isg/cards.json');
+        loadTipsQuestions('isg/cards.json');
     }
     
     // Show/hide ISG Hoca Tips buttons & Checklist
